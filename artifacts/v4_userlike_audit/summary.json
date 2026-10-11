@@ -1,0 +1,39 @@
+{
+  "gold_total": 45,
+  "sample_total": 327,
+  "gold_user_like_counts": {
+    "ASSISTANT_LIKE": 20,
+    "USER_LIKE": 24,
+    "AMBIGUOUS": 1
+  },
+  "gold_naturalness_counts": {
+    "NATURAL": 38,
+    "PLAUSIBLE_BUT_AWKWARD": 7
+  },
+  "gold_direction_counts": {
+    "SYSTEM_TO_USER": 20,
+    "USER_TO_SYSTEM": 24,
+    "AMBIGUOUS": 1
+  },
+  "sample_user_like_counts": {
+    "ASSISTANT_LIKE": 182,
+    "AMBIGUOUS": 23,
+    "USER_LIKE": 122
+  },
+  "sample_naturalness_counts": {
+    "NATURAL": 220,
+    "PLAUSIBLE_BUT_AWKWARD": 107
+  },
+  "sample_meta_count": 132,
+  "sample_high_meta_count": 132,
+  "strict_gold": 24,
+  "acceptable_gold": 24,
+  "excluded_gold": 21,
+  "strict_meta_pairs": 40,
+  "strict_gold_with_meta_pair": 21,
+  "acceptable_meta_pairs": 40,
+  "acceptable_gold_with_meta_pair": 21,
+  "assistantlike_diagnostic_pairs": 33,
+  "gold_internal_lexical_flags": 0,
+  "gold_assistant_lexical_flags": 1
+}

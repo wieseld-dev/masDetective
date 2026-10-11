@@ -1,0 +1,12 @@
+{
+  "mean_oracle_k_role_recall": 0.2505208333333333,
+  "mean_role_auc": 0.5339389662114846,
+  "mean_role_brier": 0.17366291633245357,
+  "mean_role_log_loss": 0.5312891703865548,
+  "mean_true_false_margin": 0.011186110429042741,
+  "note": "K is intentionally uniform and is not used in policy state updates or reward during phase 1.",
+  "phase": "role_only",
+  "round": 1,
+  "sessions": 32,
+  "split": "dev"
+}

@@ -1,0 +1,153 @@
+{
+  "experiment": "belief_targeted_selector_v1",
+  "purpose": "Choose the candidate query expected to improve the current role belief most.",
+  "decision_time_inputs": [
+    "current role belief",
+    "public interaction history",
+    "candidate query text",
+    "round"
+  ],
+  "decision_time_forbidden": [
+    "future MAS response",
+    "future sensor fingerprint",
+    "truth roles",
+    "activation",
+    "realized gain"
+  ],
+  "training_label_only": "realized downstream AUC gain produced offline after the fixed sensor and belief updater",
+  "fit_systems": 403,
+  "internal_dev_systems": 70,
+  "ensemble_seeds": [
+    20261008,
+    20261019,
+    20261031,
+    20261113,
+    20261127
+  ],
+  "seed_training": {
+    "20261008": {
+      "best_epoch": 13,
+      "best_dev_selected": 0.04971918601502109
+    },
+    "20261019": {
+      "best_epoch": 7,
+      "best_dev_selected": 0.04794892869960791
+    },
+    "20261031": {
+      "best_epoch": 11,
+      "best_dev_selected": 0.047491361455590915
+    },
+    "20261113": {
+      "best_epoch": 10,
+      "best_dev_selected": 0.048728285753231605
+    },
+    "20261127": {
+      "best_epoch": 11,
+      "best_dev_selected": 0.04505704223541213
+    }
+  },
+  "heuristic_uncertainty_semantic": {
+    "val": {
+      "states": 424,
+      "mean_selected_gain": 0.03343195274125187,
+      "mean_random_gain": 0.025556750467073452,
+      "mean_oracle_gain": 0.1330668998087036,
+      "delta_selected_minus_random": 0.00787520227417842,
+      "mean_regret": 0.09963494706745171,
+      "oracle_top1_hit": 0.1650943396226415,
+      "mean_spearman": 0.045404858130667025,
+      "pair_accuracy": 0.518463998367527,
+      "oracle_signal_captured": 0.0732507797859507,
+      "bootstrap": {
+        "systems": 84,
+        "delta": 0.00972362014022471,
+        "ci95": [
+          0.000468823127594409,
+          0.0195116997632543
+        ],
+        "p_boot_gt_zero": 0.9802,
+        "two_sided_p": 0.03960000000000008
+      }
+    },
+    "challenge": {
+      "states": 715,
+      "mean_selected_gain": 0.02850042758704899,
+      "mean_random_gain": 0.029052938600092486,
+      "mean_oracle_gain": 0.13387891065355365,
+      "delta_selected_minus_random": -0.0005525110130434954,
+      "mean_regret": 0.10537848306650466,
+      "oracle_top1_hit": 0.13846153846153847,
+      "mean_spearman": 0.0188371870468396,
+      "pair_accuracy": 0.5060774024494118,
+      "oracle_signal_captured": -0.005270745429021305,
+      "bootstrap": {
+        "systems": 139,
+        "delta": 0.0007117355915644834,
+        "ci95": [
+          -0.006892873138423293,
+          0.00850948471649099
+        ],
+        "p_boot_gt_zero": 0.5703,
+        "two_sided_p": 0.8593999999999999
+      }
+    }
+  },
+  "learned_selector": {
+    "val": {
+      "states": 424,
+      "mean_selected_gain": 0.0392880459900348,
+      "mean_random_gain": 0.025556750467073452,
+      "mean_oracle_gain": 0.1330668998087036,
+      "delta_selected_minus_random": 0.013731295522961345,
+      "mean_regret": 0.0937788538186688,
+      "oracle_top1_hit": 0.16273584905660377,
+      "mean_spearman": 0.10547505294512931,
+      "pair_accuracy": 0.5430223110249071,
+      "oracle_signal_captured": 0.12772092315980352,
+      "bootstrap": {
+        "systems": 84,
+        "delta": 0.012201342529591116,
+        "ci95": [
+          0.0037469587561321945,
+          0.020570907641790624
+        ],
+        "p_boot_gt_zero": 0.9976,
+        "two_sided_p": 0.0047999999999999154
+      }
+    },
+    "challenge": {
+      "states": 715,
+      "mean_selected_gain": 0.038467763618963376,
+      "mean_random_gain": 0.029052938600092486,
+      "mean_oracle_gain": 0.13387891065355365,
+      "delta_selected_minus_random": 0.00941482501887089,
+      "mean_regret": 0.09541114703459026,
+      "oracle_top1_hit": 0.16223776223776223,
+      "mean_spearman": 0.052906366950576086,
+      "pair_accuracy": 0.5208809253207307,
+      "oracle_signal_captured": 0.08981385847840587,
+      "bootstrap": {
+        "systems": 139,
+        "delta": 0.008471665400574866,
+        "ci95": [
+          0.0015594173767781276,
+          0.015315621390435007
+        ],
+        "p_boot_gt_zero": 0.9923,
+        "two_sided_p": 0.01540000000000008
+      }
+    }
+  },
+  "reference_v41": {
+    "val_v41_9perm": {
+      "selected": 0.04108572447484074,
+      "random": 0.0255567500305335,
+      "oracle": 0.13306689815802952
+    },
+    "challenge_v41_9perm": {
+      "selected": 0.03292611027735462,
+      "random": 0.029052938012214025,
+      "oracle": 0.13387890898694066
+    }
+  }
+}

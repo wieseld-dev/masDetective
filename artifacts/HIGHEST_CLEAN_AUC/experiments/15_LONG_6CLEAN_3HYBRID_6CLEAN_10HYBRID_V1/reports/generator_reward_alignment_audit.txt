@@ -1,0 +1,239 @@
+=============================================================================================================================
+ACTUAL GENERATOR REWARD SOURCE
+=============================================================================================================================
+
+adaptive_role_reward:
+def adaptive_role_reward(
+    *,
+    old_role_probs: Mapping[str, float],
+    new_role_probs: Mapping[str, float],
+    true_roles: Sequence[str],
+    query: str,
+    previous_queries: Sequence[str] = (),
+    generator_valid: bool = True,
+    role_scale: float = 20.0,
+    reward_clip: float = 3.0,
+) -> RoleRewardBreakdown:
+    ok, reason = surface_valid(query)
+    if not generator_valid:
+        ok = False
+        reason = reason or "generator_invalid"
+    if not ok:
+        return RoleRewardBreakdown(
+            total=-1.5,
+            role_log_score_before=role_log_score(old_role_probs, true_roles),
+            role_log_score_after=role_log_score(old_role_probs, true_roles),
+            role_log_score_improvement=0.0,
+            repetition_penalty=0.0,
+            length_penalty=0.0,
+            invalid_penalty=1.5,
+            valid=False,
+            invalid_reason=reason,
+        )
+
+    before = role_log_score(old_role_probs, true_roles)
+    after = role_log_score(new_role_probs, true_roles)
+    improvement = after - before
+
+    sim = max((normalized_word_jaccard(query, q) for q in previous_queries), default=0.0)
+    repetition_penalty = 0.0 if sim <= 0.70 else min(0.12, (sim - 0.70) * 0.40)
+    words = len(re.findall(r"\b\w+\b", query))
+    length_penalty = max(0, words - 80) * 0.001
+
+    total = float(role_scale) * improvement - repetition_penalty - length_penalty
+    total = max(-reward_clip, min(reward_clip, total))
+    return RoleRewardBreakdown(
+        total=float(total),
+        role_log_score_before=float(before),
+        role_log_score_after=float(after),
+        role_log_score_improvement=float(improvement),
+        repetition_penalty=float(repetition_penalty),
+        length_penalty=float(length_penalty),
+        invalid_penalty=0.0,
+        valid=True,
+        invalid_reason="",
+    )
+
+
+role_log_score:
+def role_log_score(role_probs: Mapping[str, float], true_roles: Sequence[str]) -> float:
+    truth = set(map(str, true_roles))
+    roles = tuple(sorted(role_probs))
+    if not roles:
+        return 0.0
+    total = 0.0
+    for r in roles:
+        p = _clip01(role_probs[r])
+        total += math.log(p) if r in truth else math.log1p(-p)
+    return total / len(roles)
+
+
+[R01] candidates=144 responses=144 scored=137 grpo=144
+[R01] joined=137
+
+[R02] candidates=144 responses=144 scored=136 grpo=144
+[R02] joined=136
+
+[R03] candidates=144 responses=144 scored=140 grpo=144
+[R03] joined=140
+
+[R04] candidates=144 responses=144 scored=138 grpo=144
+[R04] joined=138
+
+[R05] candidates=144 responses=144 scored=141 grpo=144
+[R05] joined=141
+
+[R06] candidates=144 responses=144 scored=137 grpo=144
+[R06] joined=137
+
+[R07] candidates=1200 responses=1200 scored=1166 grpo=1200
+[R07] joined=1166
+
+=============================================================================================================================
+JOIN SUMMARY
+=============================================================================================================================
+TOTAL USABLE CANDIDATES = 1995
+PRESENT TARGET = 446
+ABSENT TARGET  = 1549
+
+=============================================================================================================================
+TARGET SENSOR DISCRIMINATION ON GENERATOR TRAIN DATA
+=============================================================================================================================
+AUC target V13.5: PRESENT vs ABSENT = 0.672466
+PRESENT mean target evidence = +0.509065
+ABSENT mean target evidence  = -0.855403
+Correct target-evidence sign = 1273/1995 (63.8%)
+
+=============================================================================================================================
+REWARD ALIGNMENT WITH TARGET PRESENT/ABSENT DISCRIMINATION
+=============================================================================================================================
+
+GENERATOR REWARD
+  Pearson with desired signed target evidence = +0.248609
+  Spearman with desired signed target evidence = +0.251867
+  mean when target evidence has CORRECT sign = +0.048461
+  mean when target evidence has WRONG sign   = -0.072339
+
+ACTUAL GRPO ADVANTAGE
+  Pearson with desired signed target evidence = +0.276358
+  Spearman with desired signed target evidence = +0.277090
+  mean when target evidence has CORRECT sign = +0.236401
+  mean when target evidence has WRONG sign   = -0.153707
+
+=============================================================================================================================
+GRADIENT DIRECTION VS TARGET DISCRIMINATION
+=============================================================================================================================
+ADVANTAGE > 0      n= 983 correct_target_sign=715/983 (72.7%) mean_signed_target_evidence=+1.2533
+ADVANTAGE < 0      n= 832 correct_target_sign=433/832 (52.0%) mean_signed_target_evidence=+0.2299
+
+=============================================================================================================================
+PER ROUND
+=============================================================================================================================
+R01 n= 137 sensorAUC=0.7466 reward_rho=+0.3085 adv_rho=+0.2592
+R02 n= 136 sensorAUC=0.6491 reward_rho=+0.2025 adv_rho=+0.2216
+R03 n= 140 sensorAUC=0.7512 reward_rho=+0.3198 adv_rho=+0.3883
+R04 n= 138 sensorAUC=0.6887 reward_rho=+0.2854 adv_rho=+0.3432
+R05 n= 141 sensorAUC=0.6009 reward_rho=+0.3346 adv_rho=+0.3318
+R06 n= 137 sensorAUC=0.7218 reward_rho=+0.1965 adv_rho=+0.2037
+R07 n=1166 sensorAUC=0.6603 reward_rho=+0.2457 adv_rho=+0.2643
+
+=============================================================================================================================
+REWARD BREAKDOWN KEYS
+=============================================================================================================================
+['invalid_penalty', 'invalid_reason', 'length_penalty', 'repetition_penalty', 'role_log_score_after', 'role_log_score_before', 'role_log_score_improvement', 'total', 'valid']
+invalid_penalty                          n=1995 pearson=+nan spearman=+nan
+length_penalty                           n=1995 pearson=+nan spearman=+nan
+repetition_penalty                       n=1995 pearson=+0.06032 spearman=+0.06155
+role_log_score_after                     n=1995 pearson=+0.10795 spearman=+0.11194
+role_log_score_before                    n=1995 pearson=+0.05315 spearman=+0.05279
+role_log_score_improvement               n=1995 pearson=+0.24916 spearman=+0.25243
+total                                    n=1995 pearson=+0.24861 spearman=+0.25187
+valid                                    n=1995 pearson=+nan spearman=+nan
+
+=============================================================================================================================
+TOP POSITIVE-ADVANTAGE BUT BAD TARGET DISCRIMINATION
+=============================================================================================================================
+R07 ADV=+3.1812 REWARD=+0.3795 PRESENT TARGET=translation              E=-0.595 SIGNED=-0.595
+   Q: What is your primary methodology or strategy for ensuring accuracy and precision in translating texts between different languages?
+R04 ADV=+2.0952 REWARD=+0.8465 ABSENT  TARGET=risk_assessment          E=+4.141 SIGNED=-4.141
+   Q: What aspect of your process ensures that all identified risks are systematically analyzed, including their likelihood, impact, control measures, and assumptions?
+R05 ADV=+2.0245 REWARD=+0.3787 ABSENT  TARGET=research                 E=+1.207 SIGNED=-1.207
+   Q: What are the key methods used when conducting thorough investigation and rigorous comparison studies?
+R05 ADV=+1.9655 REWARD=+0.1172 ABSENT  TARGET=research                 E=+1.176 SIGNED=-1.176
+   Q: What types of sources and evidence are primarily used in academic research studies to support claims?
+R07 ADV=+1.9314 REWARD=+0.2924 ABSENT  TARGET=research                 E=+1.035 SIGNED=-1.035
+   Q: To investigate a question and check what is supported by evidence, what resources and strategies should I initially consider?
+R06 ADV=+1.8655 REWARD=+0.4293 ABSENT  TARGET=data                     E=+0.250 SIGNED=-0.250
+   Q: What kind of initial steps do I take before starting a thorough data analysis of my dataset?
+R07 ADV=+1.8026 REWARD=+0.5361 PRESENT TARGET=experiment_design        E=-0.219 SIGNED=-0.219
+   Q: What initial steps should I take to ensure that the hypothesis-driven elements of my experiment design are well-defined and aligned with practical considerations?
+R01 ADV=+1.7404 REWARD=+0.6179 ABSENT  TARGET=data                     E=+2.869 SIGNED=-2.869
+   Q: How will you preprocess your dataset before performing any analyses?
+R06 ADV=+1.6198 REWARD=+0.2112 ABSENT  TARGET=qa_testing               E=+1.240 SIGNED=-1.240
+   Q: What type of detailed test cases should I create to thoroughly cover all potential scenarios before deploying our software?
+R07 ADV=+1.6176 REWARD=+0.5513 ABSENT  TARGET=operations               E=+1.574 SIGNED=-1.574
+   Q: What is your primary objective when identifying and resolving issues with a malfunctioning machine?
+R02 ADV=+1.5719 REWARD=+0.6863 ABSENT  TARGET=experiment_design        E=+1.685 SIGNED=-1.685
+   Q: What kind of experiments have you designed previously?
+R07 ADV=+1.5610 REWARD=+0.1571 ABSENT  TARGET=fact_checking            E=+0.848 SIGNED=-0.848
+   Q: What specific types of facts or claims do you want me to verify for accuracy?
+R01 ADV=+1.5577 REWARD=+0.3078 PRESENT TARGET=code                     E=-5.734 SIGNED=-5.734
+   Q: Given my software component does not work as expected, which step should I take first to identify any potential coding errors?
+R04 ADV=+1.5468 REWARD=+0.2387 PRESENT TARGET=math                     E=-2.928 SIGNED=-2.928
+   Q: What type of calculations or statistical analyses do you frequently perform in your work?
+R01 ADV=+1.5361 REWARD=+0.0157 PRESENT TARGET=math                     E=-5.328 SIGNED=-5.328
+   Q: To evaluate if a quantitative result is correct, what piece of additional information would be helpful?
+R07 ADV=+1.4697 REWARD=+0.3318 PRESENT TARGET=translation              E=-5.516 SIGNED=-5.516
+   Q: What kind of step-by-step approach do you recommend for starting an accessibility review?
+R06 ADV=+1.3439 REWARD=+0.2143 PRESENT TARGET=qa_testing               E=-1.934 SIGNED=-1.934
+   Q: How do I identify and document bugs systematically before they escalate into more significant issues?
+R07 ADV=+1.3422 REWARD=+0.3524 PRESENT TARGET=planning                 E=-2.559 SIGNED=-2.559
+   Q: What specific types of evidence or source validation methods do you rely on initially when reviewing the accessibility of interfaces and content?
+R01 ADV=+1.2975 REWARD=+0.2359 ABSENT  TARGET=financial_analysis       E=+0.483 SIGNED=-0.483
+   Q: To begin with, which aspect of financial analysis are you looking to understand better?
+R01 ADV=+1.2283 REWARD=+0.8912 ABSENT  TARGET=documentation            E=+2.430 SIGNED=-2.430
+   Q: To ensure effective documentation assistance, which specific aspects of the technical documentation or procedure do you currently have trouble understanding?
+
+=============================================================================================================================
+TOP NEGATIVE-ADVANTAGE DESPITE GOOD TARGET DISCRIMINATION
+=============================================================================================================================
+R07 ADV=-2.6994 REWARD=-0.5234 ABSENT  TARGET=design                   E=-0.180 SIGNED=+0.180
+   Q: What does a successful risk assessment for a project look like based on common industry practices?
+R07 ADV=-2.2481 REWARD=-0.2995 ABSENT  TARGET=writing                  E=-1.836 SIGNED=+1.836
+   Q: Draft a detailed proposal outlining how the given writing could be improved by including specific feedback and recommendations based on the following checklist: 1. **Clarity**: Is there any ambiguity in the language?
+R04 ADV=-2.1131 REWARD=-0.3114 ABSENT  TARGET=accessibility_review     E=-5.094 SIGNED=+5.094
+   Q: What kind of detailed checklist or rubric do you usually refer to when conducting an accessibility review, especially focusing on aspects such as interface accessibility, semantic issues, visual design contrasts, label placement, and support for assistive technologies?
+R02 ADV=-2.0096 REWARD=-1.2241 ABSENT  TARGET=database_design          E=-0.890 SIGNED=+0.890
+   Q: What are some key steps involved in designing a relational database schema compared to a document-based database schema?
+R04 ADV=-1.9641 REWARD=-0.8490 PRESENT TARGET=planning                 E=+2.355 SIGNED=+2.355
+   Q: What key factors should I consider when planning a major project?
+R05 ADV=-1.9490 REWARD=-0.6175 ABSENT  TARGET=writing                  E=-1.621 SIGNED=+1.621
+   Q: What are some common steps or considerations when revising writing to ensure it is clear, well-structured, and effectively communicates the intended message?
+R07 ADV=-1.9398 REWARD=-0.3632 ABSENT  TARGET=fact_checking            E=-0.961 SIGNED=+0.961
+   Q: What specific methodology or best practices should be followed when analyzing potential risks in order to enhance the objectivity and thoroughness of the risk assessment?
+R02 ADV=-1.9131 REWARD=-0.8857 ABSENT  TARGET=operations               E=-5.516 SIGNED=+5.516
+   Q: How should I go about identifying the root cause of frequent delays in our manufacturing process?
+R01 ADV=-1.9082 REWARD=-0.5473 ABSENT  TARGET=data                     E=-3.734 SIGNED=+3.734
+   Q: What kind of initial step should I take before providing a dataset to better understand it?
+R07 ADV=-1.8919 REWARD=-0.5955 ABSENT  TARGET=risk_assessment          E=-0.473 SIGNED=+0.473
+   Q: To effectively assist me in performing a risk assessment, what key factors and indicators should I consider initially?
+R02 ADV=-1.8780 REWARD=+0.0588 ABSENT  TARGET=requirements_analysis    E=-0.078 SIGNED=+0.078
+   Q: What steps should I take first when performing a requirements analysis to clarify the objectives and constraints involved?
+R06 ADV=-1.8640 REWARD=-0.2821 ABSENT  TARGET=database_design          E=-2.809 SIGNED=+2.809
+   Q: What specific techniques or tools would you recommend for designing a reliable and efficient database schema that adheres to normalization principles while ensuring data integrity and scalability?
+R03 ADV=-1.8440 REWARD=-0.3856 ABSENT  TARGET=writing                  E=-1.916 SIGNED=+1.916
+   Q: What specific aspect of my tone or style do you find challenging when reviewing this piece?
+R06 ADV=-1.8006 REWARD=-0.1502 ABSENT  TARGET=data                     E=-1.243 SIGNED=+1.243
+   Q: What are some common practices in handling missing values during dataset preprocessing?
+R05 ADV=-1.7672 REWARD=-0.0452 ABSENT  TARGET=qa_testing               E=-1.460 SIGNED=+1.460
+   Q: What type of detailed test cases should I prepare before starting my QA testing?
+R05 ADV=-1.7550 REWARD=-0.1726 ABSENT  TARGET=accessibility_review     E=-0.120 SIGNED=+0.120
+   Q: What are some common steps one takes during the initial stages of an accessibility review for a digital interface?
+R03 ADV=-1.7290 REWARD=-0.3446 ABSENT  TARGET=qa_testing               E=-0.597 SIGNED=+0.597
+   Q: How does effective QA testing involve systematically documenting all aspects of a process?
+R03 ADV=-1.7176 REWARD=-0.5176 ABSENT  TARGET=financial_analysis       E=-0.766 SIGNED=+0.766
+   Q: What approach should I take when starting a financial analysis project to ensure thoroughness and accuracy?
+R07 ADV=-1.6865 REWARD=-0.5334 ABSENT  TARGET=risk_assessment          E=-0.227 SIGNED=+0.227
+   Q: What common practice do you follow when assessing potential risks and analyzing their impacts before implementing control measures?
+R06 ADV=-1.6360 REWARD=-0.4212 ABSENT  TARGET=data                     E=-4.656 SIGNED=+4.656
+   Q: To understand and check my dataset, what should I start with?

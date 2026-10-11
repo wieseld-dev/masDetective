@@ -1,0 +1,65 @@
+{
+  "sha256": "bdb9c18c2261d67722ac3dc7320e73542c203bdba01b347bff475ff96a3e1850",
+  "systems": [
+    {
+      "session_id": "matched_r7_v1__simple5_01_code_plan_research",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "code",
+        "fact_checking",
+        "research"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "matched_r7_v1__simple5_02_risk_access_translation",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "risk_assessment",
+        "financial_analysis",
+        "translation"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "matched_r7_v1__simple5_03_data_db_requirements",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "data",
+        "database_design",
+        "experiment_design"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "matched_r7_v1__simple5_04_support_incident_ops",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "customer_support_triage",
+        "experiment_design",
+        "operations"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "matched_r7_v1__simple5_05_docs_qa_writing",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "documentation",
+        "research",
+        "writing"
+      ],
+      "k": 3
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+============================================================================================================
+FIXED-DAG HELD-OUT SPECTRAL PROBE RANKING
+============================================================================================================
+42 frozen train probes | 18 frozen held-out probes | 5 DAGs | 10 DAG contrasts | latent_dim=16
+
+------------------------------------------------------------------------------------------------------------
+COMPOSED PATH OPERATOR
+------------------------------------------------------------------------------------------------------------
+chain        vs star         | rho=+0.098 | lift20=1.544x | capture=0.385 | oracle=2.415x
+chain        vs tree         | rho=-0.240 | lift20=0.726x | capture=-0.148 | oracle=2.844x
+chain        vs complete_dag | rho=+0.065 | lift20=0.969x | capture=-0.036 | oracle=1.864x
+chain        vs random_dag   | rho=-0.061 | lift20=1.223x | capture=0.279 | oracle=1.801x
+star         vs tree         | rho=+0.026 | lift20=0.951x | capture=-0.034 | oracle=2.445x
+star         vs complete_dag | rho=+0.276 | lift20=1.563x | capture=0.605 | oracle=1.931x
+star         vs random_dag   | rho=+0.391 | lift20=1.760x | capture=0.673 | oracle=2.130x
+tree         vs complete_dag | rho=-0.290 | lift20=0.853x | capture=-0.119 | oracle=2.234x
+tree         vs random_dag   | rho=+0.251 | lift20=1.297x | capture=0.220 | oracle=2.347x
+complete_dag vs random_dag   | rho=-0.026 | lift20=0.797x | capture=-0.231 | oracle=1.876x
+
+MACRO spectral rho       = +0.0489 CI=[-0.0795,+0.1759]
+MACRO spectral lift@20   = 1.1685x CI=[0.9633,1.3825]
+positive-rho pairs       = 6/10
+lift>1 pairs             = 5/10
+oracle-opportunity capture = 0.159
+prediction-disagreement rho = -0.0338
+prediction-disagreement lift = 0.9074x
+
+UNIFORM MULTI-HYPOTHESIS: rho=-0.1063 lift20=1.0558x capture=0.062
+SHUFFLE NULL: rho mean=-0.0015, 95th=+0.1234; lift mean=0.9986x, 95th=1.2248x
+RANDOM-K NULL: rho mean=+0.0000, 95th=+0.1238; lift mean=1.0045x, 95th=1.2255x
+
+------------------------------------------------------------------------------------------------------------
+DIRECT GRAPH MAP
+------------------------------------------------------------------------------------------------------------
+chain        vs star         | rho=+0.007 | lift20=1.200x | capture=0.141 | oracle=2.415x
+chain        vs tree         | rho=-0.373 | lift20=0.682x | capture=-0.173 | oracle=2.844x
+chain        vs complete_dag | rho=-0.073 | lift20=0.771x | capture=-0.265 | oracle=1.864x
+chain        vs random_dag   | rho=+0.071 | lift20=1.329x | capture=0.411 | oracle=1.801x
+star         vs tree         | rho=-0.199 | lift20=0.636x | capture=-0.252 | oracle=2.445x
+star         vs complete_dag | rho=-0.261 | lift20=0.740x | capture=-0.279 | oracle=1.931x
+star         vs random_dag   | rho=+0.009 | lift20=0.807x | capture=-0.170 | oracle=2.130x
+tree         vs complete_dag | rho=-0.207 | lift20=0.540x | capture=-0.373 | oracle=2.234x
+tree         vs random_dag   | rho=-0.073 | lift20=1.026x | capture=0.019 | oracle=2.347x
+complete_dag vs random_dag   | rho=+0.133 | lift20=0.977x | capture=-0.026 | oracle=1.876x
+
+MACRO spectral rho       = -0.0966 CI=[-0.1920,-0.0054]
+MACRO spectral lift@20   = 0.8707x CI=[0.7291,1.0244]
+positive-rho pairs       = 4/10
+lift>1 pairs             = 3/10
+oracle-opportunity capture = -0.097
+prediction-disagreement rho = -0.0275
+prediction-disagreement lift = 0.7785x
+
+UNIFORM MULTI-HYPOTHESIS: rho=-0.1496 lift20=0.9883x capture=-0.013
+SHUFFLE NULL: rho mean=-0.0005, 95th=+0.1272; lift mean=0.9970x, 95th=1.2196x
+RANDOM-K NULL: rho mean=+0.0000, 95th=+0.1238; lift mean=1.0045x, 95th=1.2255x
+
+============================================================================================================
+RANKING VERDICT: FIXED_DAG_RANKING_NO_GO
+Even the direct graph-map upper baseline does not reliably rank held-out DAG-separating probes. The current latent representation / candidate bank lacks sufficient DAG signal.
+============================================================================================================

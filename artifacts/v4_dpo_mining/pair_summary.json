@@ -1,0 +1,20 @@
+{
+  "mined_total": 360,
+  "judged_valid": 327,
+  "successful_judgments": 327,
+  "failed_judgments": 0,
+  "labels": {
+    "NON_META": 195,
+    "META": 132
+  },
+  "confidences": {
+    "HIGH": 327
+  },
+  "high_confidence_meta_negatives": 132,
+  "gold_prompts_total": 45,
+  "gold_prompts_with_at_least_1_negative": 41,
+  "gold_prompts_with_2_negatives": 38,
+  "dpo_pairs": 79,
+  "max_pairs_per_gold_prompt": 2,
+  "judge_model": "gpt-4o-mini-2024-07-18"
+}

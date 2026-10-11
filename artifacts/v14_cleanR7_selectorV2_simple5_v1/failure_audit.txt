@@ -1,0 +1,869 @@
+========================================================================================================================
+SIMPLE-5 FAILURE AUDIT
+========================================================================================================================
+
+########################################################################################################################
+ROUND 1
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['research'] (1/8)
+SELECTED CANDIDATE  : 4
+SELECTED FOCUS      : database_design <<< FALSE
+ACTIVATED EVAL-ONLY : ['code', 'planning']
+AUC                 : 0.5000 -> 0.5098 (+0.0098)
+SELECTED QUERY      : What specific aspect of your database design challenge do you want me to start helping with first?
+
+POOL:
+  cand=00 focus=research                     valid=True  [TRUE-FOCUS]
+  cand=01 focus=data                         valid=False
+  cand=02 focus=incident_management          valid=True 
+  cand=03 focus=risk_assessment              valid=True 
+  cand=04 focus=database_design              valid=True  [SELECTED]
+  cand=05 focus=math                         valid=True 
+  cand=06 focus=translation                  valid=True 
+  cand=07 focus=design                       valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : ['risk_assessment'] (1/8)
+SELECTED CANDIDATE  : 6
+SELECTED FOCUS      : incident_management <<< FALSE
+ACTIVATED EVAL-ONLY : ['risk_assessment']
+AUC                 : 0.5000 -> 0.4902 (-0.0098)
+SELECTED QUERY      : What specific aspect of incident management am I focusing on when I need help?
+
+POOL:
+  cand=00 focus=fact_checking                valid=True 
+  cand=01 focus=requirements_analysis        valid=False
+  cand=02 focus=customer_support_triage      valid=True 
+  cand=03 focus=financial_analysis           valid=True 
+  cand=04 focus=research                     valid=True 
+  cand=05 focus=data                         valid=True 
+  cand=06 focus=incident_management          valid=True  [SELECTED]
+  cand=07 focus=risk_assessment              valid=True  [TRUE-FOCUS]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : ['requirements_analysis'] (1/8)
+SELECTED CANDIDATE  : 1
+SELECTED FOCUS      : qa_testing <<< FALSE
+ACTIVATED EVAL-ONLY : ['data', 'requirements_analysis']
+AUC                 : 0.5000 -> 0.5882 (+0.0882)
+SELECTED QUERY      : For your qa_testing task, which specific aspect of testing processes or results would you like detailed guidance on?
+
+POOL:
+  cand=00 focus=experiment_design            valid=True 
+  cand=01 focus=qa_testing                   valid=True  [SELECTED]
+  cand=02 focus=code                         valid=True 
+  cand=03 focus=fact_checking                valid=True 
+  cand=04 focus=requirements_analysis        valid=True  [TRUE-FOCUS]
+  cand=05 focus=customer_support_triage      valid=True 
+  cand=06 focus=financial_analysis           valid=True 
+  cand=07 focus=research                     valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : ['customer_support_triage', 'incident_management'] (2/8)
+SELECTED CANDIDATE  : 6
+SELECTED FOCUS      : risk_assessment <<< FALSE
+ACTIVATED EVAL-ONLY : ['customer_support_triage', 'incident_management']
+AUC                 : 0.5000 -> 0.6471 (+0.1471)
+SELECTED QUERY      : What key information would you like me to gather first when performing a risk assessment?
+
+POOL:
+  cand=00 focus=requirements_analysis        valid=True 
+  cand=01 focus=customer_support_triage      valid=True  [TRUE-FOCUS]
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=research                     valid=True 
+  cand=04 focus=data                         valid=True 
+  cand=05 focus=incident_management          valid=True  [TRUE-FOCUS]
+  cand=06 focus=risk_assessment              valid=True  [SELECTED]
+  cand=07 focus=database_design              valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 4
+SELECTED FOCUS      : risk_assessment <<< FALSE
+ACTIVATED EVAL-ONLY : ['documentation']
+AUC                 : 0.5000 -> 0.4510 (-0.0490)
+SELECTED QUERY      : What specific kind of risk assessment report or analysis would you like me to review first?
+
+POOL:
+  cand=00 focus=financial_analysis           valid=True 
+  cand=01 focus=research                     valid=True 
+  cand=02 focus=data                         valid=True 
+  cand=03 focus=incident_management          valid=True 
+  cand=04 focus=risk_assessment              valid=True  [SELECTED]
+  cand=05 focus=database_design              valid=True 
+  cand=06 focus=math                         valid=True 
+  cand=07 focus=translation                  valid=True 
+
+########################################################################################################################
+ROUND 2
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 4
+SELECTED FOCUS      : design <<< FALSE
+ACTIVATED EVAL-ONLY : ['planning', 'research']
+AUC                 : 0.5098 -> 0.7255 (+0.2157)
+SELECTED QUERY      : What tools or methods would you find most helpful when starting to address issues related to improving user interactions with your product?
+
+POOL:
+  cand=00 focus=documentation                valid=True 
+  cand=01 focus=operations                   valid=True 
+  cand=02 focus=accessibility_review         valid=True 
+  cand=03 focus=qa_testing                   valid=True 
+  cand=04 focus=design                       valid=True  [SELECTED]
+  cand=05 focus=fact_checking                valid=True 
+  cand=06 focus=experiment_design            valid=True 
+  cand=07 focus=incident_management          valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : ['accessibility_review'] (1/8)
+SELECTED CANDIDATE  : 7
+SELECTED FOCUS      : qa_testing <<< FALSE
+ACTIVATED EVAL-ONLY : ['risk_assessment']
+AUC                 : 0.4902 -> 0.4706 (-0.0196)
+SELECTED QUERY      : What steps should I take next in a QA testing session?
+
+POOL:
+  cand=00 focus=customer_support_triage      valid=True 
+  cand=01 focus=code                         valid=False
+  cand=02 focus=operations                   valid=True 
+  cand=03 focus=database_design              valid=True 
+  cand=04 focus=experiment_design            valid=True 
+  cand=05 focus=incident_management          valid=True 
+  cand=06 focus=accessibility_review         valid=True  [TRUE-FOCUS]
+  cand=07 focus=qa_testing                   valid=True  [SELECTED]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : ['requirements_analysis'] (1/8)
+SELECTED CANDIDATE  : 1
+SELECTED FOCUS      : writing <<< FALSE
+ACTIVATED EVAL-ONLY : ['requirements_analysis']
+AUC                 : 0.5882 -> 0.5294 (-0.0588)
+SELECTED QUERY      : What specific type of feedback or advice would you most appreciate regarding my writing?
+
+POOL:
+  cand=00 focus=math                         valid=True 
+  cand=01 focus=writing                      valid=True  [SELECTED]
+  cand=02 focus=requirements_analysis        valid=True  [TRUE-FOCUS]
+  cand=03 focus=customer_support_triage      valid=True 
+  cand=04 focus=research                     valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=accessibility_review         valid=True 
+  cand=07 focus=documentation                valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 3
+SELECTED FOCUS      : code <<< FALSE
+ACTIVATED EVAL-ONLY : ['incident_management']
+AUC                 : 0.6471 -> 0.8235 (+0.1765)
+SELECTED QUERY      : What specific steps do you need assistance with when diagnosing the unexpected behavior of your software component?
+
+POOL:
+  cand=00 focus=writing                      valid=False
+  cand=01 focus=requirements_analysis        valid=True 
+  cand=02 focus=database_design              valid=True 
+  cand=03 focus=code                         valid=True  [SELECTED]
+  cand=04 focus=documentation                valid=True 
+  cand=05 focus=design                       valid=True 
+  cand=06 focus=accessibility_review         valid=True 
+  cand=07 focus=research                     valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 7
+SELECTED FOCUS      : experiment_design <<< FALSE
+ACTIVATED EVAL-ONLY : ['writing']
+AUC                 : 0.4510 -> 0.5686 (+0.1176)
+SELECTED QUERY      : What key aspects should be considered when designing an experiment according to your experience and expertise?
+
+POOL:
+  cand=00 focus=requirements_analysis        valid=True 
+  cand=01 focus=research                     valid=True 
+  cand=02 focus=customer_support_triage      valid=True 
+  cand=03 focus=risk_assessment              valid=True 
+  cand=04 focus=translation                  valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=fact_checking                valid=True 
+  cand=07 focus=experiment_design            valid=True  [SELECTED]
+
+########################################################################################################################
+ROUND 3
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['research'] (1/8)
+SELECTED CANDIDATE  : 3
+SELECTED FOCUS      : translation <<< FALSE
+ACTIVATED EVAL-ONLY : ['research']
+AUC                 : 0.7255 -> 0.7843 (+0.0588)
+SELECTED QUERY      : What principles or methodologies would you apply first during the initial stages of translating documents between different languages?
+
+POOL:
+  cand=00 focus=documentation                valid=True 
+  cand=01 focus=research                     valid=True  [TRUE-FOCUS]
+  cand=02 focus=fact_checking                valid=True 
+  cand=03 focus=translation                  valid=True  [SELECTED]
+  cand=04 focus=operations                   valid=True 
+  cand=05 focus=math                         valid=True 
+  cand=06 focus=qa_testing                   valid=True 
+  cand=07 focus=design                       valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 4
+SELECTED FOCUS      : documentation <<< FALSE
+ACTIVATED EVAL-ONLY : ['accessibility_review']
+AUC                 : 0.4706 -> 0.6863 (+0.2157)
+SELECTED QUERY      : What kind of guidance should I seek for my documentation task?
+
+POOL:
+  cand=00 focus=design                       valid=True 
+  cand=01 focus=code                         valid=False
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=fact_checking                valid=True 
+  cand=04 focus=documentation                valid=True  [SELECTED]
+  cand=05 focus=incident_management          valid=True 
+  cand=06 focus=qa_testing                   valid=True 
+  cand=07 focus=experiment_design            valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : ['database_design'] (1/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : qa_testing <<< FALSE
+ACTIVATED EVAL-ONLY : ['requirements_analysis']
+AUC                 : 0.5294 -> 0.6471 (+0.1176)
+SELECTED QUERY      : What kind of details would you typically expect when starting a QA testing task?
+
+POOL:
+  cand=00 focus=code                         valid=True 
+  cand=01 focus=research                     valid=True 
+  cand=02 focus=qa_testing                   valid=True  [SELECTED]
+  cand=03 focus=math                         valid=True 
+  cand=04 focus=documentation                valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=database_design              valid=True  [TRUE-FOCUS]
+  cand=07 focus=translation                  valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : ['customer_support_triage'] (1/8)
+SELECTED CANDIDATE  : 1
+SELECTED FOCUS      : requirements_analysis <<< FALSE
+ACTIVATED EVAL-ONLY : ['customer_support_triage', 'incident_management']
+AUC                 : 0.8235 -> 0.6863 (-0.1373)
+SELECTED QUERY      : What tools or resources will you need specifically for this requirements analysis task before we begin working on it together?
+
+POOL:
+  cand=00 focus=accessibility_review         valid=True 
+  cand=01 focus=requirements_analysis        valid=True  [SELECTED]
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=qa_testing                   valid=True 
+  cand=04 focus=math                         valid=True 
+  cand=05 focus=planning                     valid=True 
+  cand=06 focus=translation                  valid=True 
+  cand=07 focus=customer_support_triage      valid=True  [TRUE-FOCUS]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : ['documentation'] (1/8)
+SELECTED CANDIDATE  : 6
+SELECTED FOCUS      : data <<< FALSE
+ACTIVATED EVAL-ONLY : ['documentation', 'qa_testing']
+AUC                 : 0.5686 -> 0.6667 (+0.0980)
+SELECTED QUERY      : What specific kinds of analyses or diagnostics would you like to perform with my dataset before we proceed?
+
+POOL:
+  cand=00 focus=incident_management          valid=True 
+  cand=01 focus=database_design              valid=True 
+  cand=02 focus=documentation                valid=True  [TRUE-FOCUS]
+  cand=03 focus=design                       valid=True 
+  cand=04 focus=accessibility_review         valid=True 
+  cand=05 focus=math                         valid=True 
+  cand=06 focus=data                         valid=True  [SELECTED]
+  cand=07 focus=code                         valid=True 
+
+########################################################################################################################
+ROUND 4
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['research', 'code'] (2/8)
+SELECTED CANDIDATE  : 7
+SELECTED FOCUS      : risk_assessment <<< FALSE
+ACTIVATED EVAL-ONLY : ['planning', 'research']
+AUC                 : 0.7843 -> 0.7059 (-0.0784)
+SELECTED QUERY      : What kind of specific information regarding risk identification, quantification, and management would be necessary at the beginning of a risk assessment project?
+
+POOL:
+  cand=00 focus=qa_testing                   valid=True 
+  cand=01 focus=research                     valid=True  [TRUE-FOCUS]
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=translation                  valid=True 
+  cand=04 focus=operations                   valid=True 
+  cand=05 focus=code                         valid=True  [TRUE-FOCUS]
+  cand=06 focus=documentation                valid=True 
+  cand=07 focus=risk_assessment              valid=True  [SELECTED]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 5
+SELECTED FOCUS      : financial_analysis <<< FALSE
+ACTIVATED EVAL-ONLY : ['risk_assessment']
+AUC                 : 0.6863 -> 0.7059 (+0.0196)
+SELECTED QUERY      : What specific type of financial data analysis service would you like to receive for your needs?
+
+POOL:
+  cand=00 focus=math                         valid=True 
+  cand=01 focus=writing                      valid=True 
+  cand=02 focus=operations                   valid=True 
+  cand=03 focus=fact_checking                valid=True 
+  cand=04 focus=documentation                valid=True 
+  cand=05 focus=financial_analysis           valid=True  [SELECTED]
+  cand=06 focus=design                       valid=True 
+  cand=07 focus=experiment_design            valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 5
+SELECTED FOCUS      : operations <<< FALSE
+ACTIVATED EVAL-ONLY : ['requirements_analysis']
+AUC                 : 0.6471 -> 0.6078 (-0.0392)
+SELECTED QUERY      : What initial steps would you take before beginning a QA testing task?
+
+POOL:
+  cand=00 focus=writing                      valid=True 
+  cand=01 focus=documentation                valid=True 
+  cand=02 focus=qa_testing                   valid=True 
+  cand=03 focus=research                     valid=True 
+  cand=04 focus=design                       valid=True 
+  cand=05 focus=operations                   valid=True  [SELECTED]
+  cand=06 focus=accessibility_review         valid=True 
+  cand=07 focus=code                         valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 1
+SELECTED FOCUS      : requirements_analysis <<< FALSE
+ACTIVATED EVAL-ONLY : ['customer_support_triage', 'incident_management']
+AUC                 : 0.6863 -> 0.6471 (-0.0392)
+SELECTED QUERY      : What kind of insights or outputs would you expect from the requirements analysis process before diving into the specifics of identifying symptoms and assessing impacts?
+
+POOL:
+  cand=00 focus=experiment_design            valid=True 
+  cand=01 focus=requirements_analysis        valid=True  [SELECTED]
+  cand=02 focus=database_design              valid=True 
+  cand=03 focus=planning                     valid=True 
+  cand=04 focus=fact_checking                valid=True 
+  cand=05 focus=accessibility_review         valid=True 
+  cand=06 focus=qa_testing                   valid=True 
+  cand=07 focus=documentation                valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : ['documentation', 'writing'] (2/8)
+SELECTED CANDIDATE  : 1
+SELECTED FOCUS      : customer_support_triage <<< FALSE
+ACTIVATED EVAL-ONLY : ['documentation', 'qa_testing']
+AUC                 : 0.6667 -> 0.5686 (-0.0980)
+SELECTED QUERY      : What specific techniques and tools would you find particularly useful for analyzing the effectiveness and relevance of different methods in tackling various types of challenges during the customer support triage process?
+
+POOL:
+  cand=00 focus=documentation                valid=True  [TRUE-FOCUS]
+  cand=01 focus=customer_support_triage      valid=True  [SELECTED]
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=research                     valid=True 
+  cand=04 focus=accessibility_review         valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=writing                      valid=True  [TRUE-FOCUS]
+  cand=07 focus=code                         valid=False
+
+########################################################################################################################
+ROUND 5
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['research'] (1/8)
+SELECTED CANDIDATE  : 0
+SELECTED FOCUS      : qa_testing <<< FALSE
+ACTIVATED EVAL-ONLY : ['research']
+AUC                 : 0.7059 -> 0.6863 (-0.0196)
+SELECTED QUERY      : What specific aspects of QA testing should I focus on before proceeding with my task?
+
+POOL:
+  cand=00 focus=qa_testing                   valid=True  [SELECTED]
+  cand=01 focus=requirements_analysis        valid=True 
+  cand=02 focus=customer_support_triage      valid=True 
+  cand=03 focus=documentation                valid=True 
+  cand=04 focus=research                     valid=True  [TRUE-FOCUS]
+  cand=05 focus=math                         valid=True 
+  cand=06 focus=experiment_design            valid=True 
+  cand=07 focus=design                       valid=False
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : ['translation', 'accessibility_review'] (2/8)
+SELECTED CANDIDATE  : 3
+SELECTED FOCUS      : design <<< FALSE
+ACTIVATED EVAL-ONLY : ['accessibility_review']
+AUC                 : 0.7059 -> 0.6863 (-0.0196)
+SELECTED QUERY      : What factors should be considered when designing effective interfaces?
+
+POOL:
+  cand=00 focus=requirements_analysis        valid=True 
+  cand=01 focus=translation                  valid=True  [TRUE-FOCUS]
+  cand=02 focus=operations                   valid=True 
+  cand=03 focus=design                       valid=True  [SELECTED]
+  cand=04 focus=customer_support_triage      valid=True 
+  cand=05 focus=accessibility_review         valid=True  [TRUE-FOCUS]
+  cand=06 focus=code                         valid=True 
+  cand=07 focus=database_design              valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 0
+SELECTED FOCUS      : financial_analysis <<< FALSE
+ACTIVATED EVAL-ONLY : ['data', 'requirements_analysis']
+AUC                 : 0.6078 -> 0.5490 (-0.0588)
+SELECTED QUERY      : What information specifically do you need at the onset of your financial analysis to start providing effective assistance?
+
+POOL:
+  cand=00 focus=financial_analysis           valid=True  [SELECTED]
+  cand=01 focus=design                       valid=True 
+  cand=02 focus=qa_testing                   valid=True 
+  cand=03 focus=math                         valid=True 
+  cand=04 focus=writing                      valid=True 
+  cand=05 focus=planning                     valid=True 
+  cand=06 focus=accessibility_review         valid=True 
+  cand=07 focus=documentation                valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : ['customer_support_triage'] (1/8)
+SELECTED CANDIDATE  : 7
+SELECTED FOCUS      : documentation <<< FALSE
+ACTIVATED EVAL-ONLY : ['customer_support_triage']
+AUC                 : 0.6471 -> 0.5686 (-0.0784)
+SELECTED QUERY      : What specific aspects of technical documentation or procedures do you need guidance on?
+
+POOL:
+  cand=00 focus=accessibility_review         valid=True 
+  cand=01 focus=requirements_analysis        valid=True 
+  cand=02 focus=math                         valid=True 
+  cand=03 focus=customer_support_triage      valid=True  [TRUE-FOCUS]
+  cand=04 focus=fact_checking                valid=True 
+  cand=05 focus=code                         valid=True 
+  cand=06 focus=experiment_design            valid=True 
+  cand=07 focus=documentation                valid=True  [SELECTED]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : ['documentation'] (1/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : incident_management <<< FALSE
+ACTIVATED EVAL-ONLY : ['documentation', 'qa_testing']
+AUC                 : 0.5686 -> 0.5882 (+0.0196)
+SELECTED QUERY      : What common steps or processes typically precede starting the incident management task?
+
+POOL:
+  cand=00 focus=fact_checking                valid=True 
+  cand=01 focus=accessibility_review         valid=True 
+  cand=02 focus=incident_management          valid=True  [SELECTED]
+  cand=03 focus=research                     valid=True 
+  cand=04 focus=customer_support_triage      valid=True 
+  cand=05 focus=math                         valid=True 
+  cand=06 focus=documentation                valid=True  [TRUE-FOCUS]
+  cand=07 focus=translation                  valid=True 
+
+########################################################################################################################
+ROUND 6
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['research'] (1/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : math <<< FALSE
+ACTIVATED EVAL-ONLY : ['research']
+AUC                 : 0.6863 -> 0.6667 (-0.0196)
+SELECTED QUERY      : What are some specific metrics or indicators that would help you determine if a calculated result is accurate?
+
+POOL:
+  cand=00 focus=qa_testing                   valid=True 
+  cand=01 focus=operations                   valid=True 
+  cand=02 focus=math                         valid=True  [SELECTED]
+  cand=03 focus=writing                      valid=True 
+  cand=04 focus=research                     valid=True  [TRUE-FOCUS]
+  cand=05 focus=customer_support_triage      valid=True 
+  cand=06 focus=translation                  valid=True 
+  cand=07 focus=financial_analysis           valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 6
+SELECTED FOCUS      : writing <<< FALSE
+ACTIVATED EVAL-ONLY : ['risk_assessment']
+AUC                 : 0.6863 -> 0.6863 (+0.0000)
+SELECTED QUERY      : What specific aspects of writing style and coherence do you aim to enhance?
+
+POOL:
+  cand=00 focus=research                     valid=True 
+  cand=01 focus=experiment_design            valid=True 
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=math                         valid=True 
+  cand=04 focus=data                         valid=True 
+  cand=05 focus=operations                   valid=False
+  cand=06 focus=writing                      valid=True  [SELECTED]
+  cand=07 focus=customer_support_triage      valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : ['database_design'] (1/8)
+SELECTED CANDIDATE  : 4
+SELECTED FOCUS      : research <<< FALSE
+ACTIVATED EVAL-ONLY : ['requirements_analysis']
+AUC                 : 0.5490 -> 0.5686 (+0.0196)
+SELECTED QUERY      : What are some common practices or tools used for researching evidence, sources, and comparison during this type of analysis?
+
+POOL:
+  cand=00 focus=incident_management          valid=True 
+  cand=01 focus=math                         valid=True 
+  cand=02 focus=planning                     valid=True 
+  cand=03 focus=accessibility_review         valid=True 
+  cand=04 focus=research                     valid=True  [SELECTED]
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=database_design              valid=True  [TRUE-FOCUS]
+  cand=07 focus=documentation                valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 0
+SELECTED FOCUS      : research <<< FALSE
+ACTIVATED EVAL-ONLY : ['customer_support_triage', 'incident_management']
+AUC                 : 0.5686 -> 0.5686 (+0.0000)
+SELECTED QUERY      : What specific areas or components of the technical documentation or procedures do you want assistance in analyzing, such as content clarification, organization, accuracy, or formatting?
+
+POOL:
+  cand=00 focus=research                     valid=True  [SELECTED]
+  cand=01 focus=risk_assessment              valid=True 
+  cand=02 focus=fact_checking                valid=True 
+  cand=03 focus=data                         valid=True 
+  cand=04 focus=writing                      valid=False
+  cand=05 focus=financial_analysis           valid=True 
+  cand=06 focus=planning                     valid=True 
+  cand=07 focus=requirements_analysis        valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : ['writing', 'qa_testing'] (2/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : qa_testing <<< TRUE
+ACTIVATED EVAL-ONLY : ['documentation']
+AUC                 : 0.5882 -> 0.7647 (+0.1765)
+SELECTED QUERY      : What specific type of logs or records will you be focusing on for troubleshooting purposes?
+
+POOL:
+  cand=00 focus=writing                      valid=True  [TRUE-FOCUS]
+  cand=01 focus=risk_assessment              valid=True 
+  cand=02 focus=qa_testing                   valid=True  [TRUE-FOCUS,SELECTED]
+  cand=03 focus=fact_checking                valid=False
+  cand=04 focus=accessibility_review         valid=True 
+  cand=05 focus=incident_management          valid=True 
+  cand=06 focus=customer_support_triage      valid=True 
+  cand=07 focus=translation                  valid=True 
+
+########################################################################################################################
+ROUND 7
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['research'] (1/8)
+SELECTED CANDIDATE  : 0
+SELECTED FOCUS      : qa_testing <<< FALSE
+ACTIVATED EVAL-ONLY : ['planning', 'research']
+AUC                 : 0.6667 -> 0.6667 (+0.0000)
+SELECTED QUERY      : What specific type of information or guidance would you need to get started with a QA testing task?
+
+POOL:
+  cand=00 focus=qa_testing                   valid=True  [SELECTED]
+  cand=01 focus=requirements_analysis        valid=True 
+  cand=02 focus=risk_assessment              valid=True 
+  cand=03 focus=documentation                valid=True 
+  cand=04 focus=math                         valid=True 
+  cand=05 focus=incident_management          valid=True 
+  cand=06 focus=writing                      valid=True 
+  cand=07 focus=research                     valid=True  [TRUE-FOCUS]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 7
+SELECTED FOCUS      : qa_testing <<< FALSE
+ACTIVATED EVAL-ONLY : ['risk_assessment']
+AUC                 : 0.6863 -> 0.6667 (-0.0196)
+SELECTED QUERY      : What specific aspects of test case development do you need assistance with?
+
+POOL:
+  cand=00 focus=design                       valid=True 
+  cand=01 focus=code                         valid=True 
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=incident_management          valid=True 
+  cand=04 focus=data                         valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=math                         valid=True 
+  cand=07 focus=qa_testing                   valid=True  [SELECTED]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : ['database_design', 'data'] (2/8)
+SELECTED CANDIDATE  : 0
+SELECTED FOCUS      : risk_assessment <<< FALSE
+ACTIVATED EVAL-ONLY : ['requirements_analysis']
+AUC                 : 0.5686 -> 0.5098 (-0.0588)
+SELECTED QUERY      : What factors should I consider first when performing a risk assessment?
+
+POOL:
+  cand=00 focus=risk_assessment              valid=True  [SELECTED]
+  cand=01 focus=research                     valid=True 
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=accessibility_review         valid=True 
+  cand=04 focus=customer_support_triage      valid=True 
+  cand=05 focus=planning                     valid=True 
+  cand=06 focus=database_design              valid=True  [TRUE-FOCUS]
+  cand=07 focus=data                         valid=True  [TRUE-FOCUS]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 3
+SELECTED FOCUS      : planning <<< FALSE
+ACTIVATED EVAL-ONLY : ['customer_support_triage']
+AUC                 : 0.5686 -> 0.5294 (-0.0392)
+SELECTED QUERY      : First, please tell me which aspect(s) of the technical documentation or procedures you are particularly interested in clarifying, organizing, verifying, or ensuring accuracy?
+
+POOL:
+  cand=00 focus=research                     valid=True 
+  cand=01 focus=writing                      valid=True 
+  cand=02 focus=financial_analysis           valid=True 
+  cand=03 focus=planning                     valid=True  [SELECTED]
+  cand=04 focus=risk_assessment              valid=False
+  cand=05 focus=fact_checking                valid=True 
+  cand=06 focus=data                         valid=True 
+  cand=07 focus=design                       valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : ['qa_testing'] (1/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : qa_testing <<< TRUE
+ACTIVATED EVAL-ONLY : ['qa_testing']
+AUC                 : 0.7647 -> 0.8039 (+0.0392)
+SELECTED QUERY      : What specific aspect of the QA testing process would you like to focus on first?
+
+POOL:
+  cand=00 focus=research                     valid=True 
+  cand=01 focus=risk_assessment              valid=True 
+  cand=02 focus=qa_testing                   valid=True  [TRUE-FOCUS,SELECTED]
+  cand=03 focus=database_design              valid=True 
+  cand=04 focus=accessibility_review         valid=True 
+  cand=05 focus=experiment_design            valid=True 
+  cand=06 focus=fact_checking                valid=False
+  cand=07 focus=translation                  valid=True 
+
+########################################################################################################################
+ROUND 8
+########################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES          : ['code', 'planning', 'research']
+TRUE FOCUS IN POOL  : ['code', 'research'] (2/8)
+SELECTED CANDIDATE  : 5
+SELECTED FOCUS      : customer_support_triage <<< FALSE
+ACTIVATED EVAL-ONLY : ['planning', 'research']
+AUC                 : 0.6667 -> 0.6667 (+0.0000)
+SELECTED QUERY      : What steps or strategies would you typically follow first to begin analyzing and triaging potential customer support issues?
+
+POOL:
+  cand=00 focus=code                         valid=True  [TRUE-FOCUS]
+  cand=01 focus=operations                   valid=True 
+  cand=02 focus=fact_checking                valid=True 
+  cand=03 focus=experiment_design            valid=True 
+  cand=04 focus=research                     valid=True  [TRUE-FOCUS]
+  cand=05 focus=customer_support_triage      valid=True  [SELECTED]
+  cand=06 focus=writing                      valid=True 
+  cand=07 focus=math                         valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES          : ['accessibility_review', 'risk_assessment', 'translation']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : financial_analysis <<< FALSE
+ACTIVATED EVAL-ONLY : ['risk_assessment']
+AUC                 : 0.6667 -> 0.6471 (-0.0196)
+SELECTED QUERY      : What key pieces of information do you need to start performing financial analyses effectively?
+
+POOL:
+  cand=00 focus=writing                      valid=True 
+  cand=01 focus=data                         valid=True 
+  cand=02 focus=financial_analysis           valid=True  [SELECTED]
+  cand=03 focus=math                         valid=True 
+  cand=04 focus=fact_checking                valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=database_design              valid=True 
+  cand=07 focus=qa_testing                   valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES          : ['data', 'database_design', 'requirements_analysis']
+TRUE FOCUS IN POOL  : ['data'] (1/8)
+SELECTED CANDIDATE  : 6
+SELECTED FOCUS      : code <<< FALSE
+ACTIVATED EVAL-ONLY : ['data', 'requirements_analysis']
+AUC                 : 0.5098 -> 0.5098 (+0.0000)
+SELECTED QUERY      : I have a software component that is not behaving as expected. How should I proceed to troubleshoot and identify any issues?
+
+POOL:
+  cand=00 focus=accessibility_review         valid=True 
+  cand=01 focus=customer_support_triage      valid=True 
+  cand=02 focus=risk_assessment              valid=True 
+  cand=03 focus=fact_checking                valid=True 
+  cand=04 focus=math                         valid=True 
+  cand=05 focus=operations                   valid=True 
+  cand=06 focus=code                         valid=True  [SELECTED]
+  cand=07 focus=data                         valid=True  [TRUE-FOCUS]
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES          : ['customer_support_triage', 'incident_management', 'operations']
+TRUE FOCUS IN POOL  : [] (0/8)
+SELECTED CANDIDATE  : 2
+SELECTED FOCUS      : financial_analysis <<< FALSE
+ACTIVATED EVAL-ONLY : ['operations']
+AUC                 : 0.5294 -> 0.7451 (+0.2157)
+SELECTED QUERY      : First, please describe how the budgets and financial statements will be used in our analysis?
+
+POOL:
+  cand=00 focus=data                         valid=True 
+  cand=01 focus=design                       valid=True 
+  cand=02 focus=financial_analysis           valid=True  [SELECTED]
+  cand=03 focus=planning                     valid=False
+  cand=04 focus=writing                      valid=True 
+  cand=05 focus=fact_checking                valid=True 
+  cand=06 focus=translation                  valid=True 
+  cand=07 focus=requirements_analysis        valid=True 
+
+------------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES          : ['documentation', 'qa_testing', 'writing']
+TRUE FOCUS IN POOL  : ['writing', 'documentation'] (2/8)
+SELECTED CANDIDATE  : 1
+SELECTED FOCUS      : customer_support_triage <<< FALSE
+ACTIVATED EVAL-ONLY : ['documentation', 'writing']
+AUC                 : 0.8039 -> 0.7059 (-0.0980)
+SELECTED QUERY      : What kind of information or context should I collect initially to ensure that the diagnostic context provided will be relevant to solving the user-reported problem accurately during the customer support triage process?
+
+POOL:
+  cand=00 focus=math                         valid=True 
+  cand=01 focus=customer_support_triage      valid=True  [SELECTED]
+  cand=02 focus=writing                      valid=True  [TRUE-FOCUS]
+  cand=03 focus=documentation                valid=True  [TRUE-FOCUS]
+  cand=04 focus=accessibility_review         valid=True 
+  cand=05 focus=requirements_analysis        valid=True 
+  cand=06 focus=database_design              valid=True 
+  cand=07 focus=translation                  valid=True 
+
+========================================================================================================================
+SUMMARY
+========================================================================================================================
+
+simple5_01_code_plan_research
+  true-role appearances in pools = 9
+  selector chose true-focus      = 0/8
+  true activations across rounds = 13
+  AUC                            = 0.5000 -> 0.6667
+
+simple5_02_risk_access_translation
+  true-role appearances in pools = 4
+  selector chose true-focus      = 0/8
+  true activations across rounds = 8
+  AUC                            = 0.5000 -> 0.6471
+
+simple5_03_data_db_requirements
+  true-role appearances in pools = 7
+  selector chose true-focus      = 0/8
+  true activations across rounds = 11
+  AUC                            = 0.5000 -> 0.5098
+
+simple5_04_support_incident_ops
+  true-role appearances in pools = 4
+  selector chose true-focus      = 0/8
+  true activations across rounds = 12
+  AUC                            = 0.5000 -> 0.7451
+
+simple5_05_docs_qa_writing
+  true-role appearances in pools = 9
+  selector chose true-focus      = 2/8
+  true activations across rounds = 12
+  AUC                            = 0.5000 -> 0.7059

@@ -1,0 +1,19 @@
+Stage 10 resumed after Stage 9 strict gate failure.
+
+Original Stage 9 gate:
+  role_log_loss = 0.6391365284430371
+  hard threshold = 0.62
+
+Stage 9 dev still showed progressive improvement:
+  role_log_loss: 0.672119 -> 0.639137
+  role_brier:    0.237283 -> 0.223515
+  role_auc:      0.557171 -> 0.671322
+  margin:        0.009917 -> 0.041993
+  recall@k:      0.449735 -> 0.535384
+
+Purpose of resume:
+  complete Stage 10 for generator / active-probing evaluation.
+
+The failed Stage 9 gate is not relabeled as PASS.
+Stage 10 final gate is diagnostic (strict=0).
+Untouched final test remains unscheduled.

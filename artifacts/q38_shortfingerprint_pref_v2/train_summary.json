@@ -1,0 +1,15 @@
+{
+  "base_model": "Qwen/Qwen3.8-27B",
+  "start_adapter": "artifacts/q38_online_r7match_v1/checkpoints/round_05/policy",
+  "train_pairs": 253,
+  "val_pairs": 26,
+  "lr": 5e-06,
+  "beta": 0.1,
+  "grad_acc": 4,
+  "epochs": 1,
+  "optimizer_steps": 64,
+  "train_seconds": 1361.5697584152222,
+  "val_preference_accuracy": 0.8846153846153846,
+  "val_mean_relative_margin": 0.72000379803089,
+  "peak_vram_gib": 56.69217586517334
+}

@@ -1,0 +1,56 @@
+{
+  "experiment": "q38_vs_r7_generator_ab_v1",
+  "same_prompt_content": true,
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "financial_analysis",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation",
+    "customer_support_triage"
+  ],
+  "n_per_role": 5,
+  "temperature": 0.85,
+  "top_p": 0.95,
+  "max_new_tokens": 96,
+  "arms": {
+    "R7_QWEN25_1P5B": {
+      "adapter": "artifacts/v14_adaptive_role_v1/checkpoints/round_07/policy",
+      "n": 100,
+      "empty": 0,
+      "single_question_valid": 94,
+      "single_question_valid_rate": 0.94,
+      "unique": 99,
+      "unique_rate": 0.99,
+      "mean_words": 17.23,
+      "literal_target_phrase_count": 55,
+      "literal_target_phrase_rate": 0.55
+    },
+    "QWEN38_27B_BASE": {
+      "model": "Qwen/Qwen3.8-27B",
+      "n": 100,
+      "empty": 0,
+      "single_question_valid": 100,
+      "single_question_valid_rate": 1.0,
+      "unique": 100,
+      "unique_rate": 1.0,
+      "mean_words": 35.96,
+      "literal_target_phrase_count": 11,
+      "literal_target_phrase_rate": 0.11
+    }
+  }
+}

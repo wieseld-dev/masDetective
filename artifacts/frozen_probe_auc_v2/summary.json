@@ -1,0 +1,42 @@
+{
+  "experiment": "frozen_probe_auc_v2",
+  "bank": "artifacts/generator_frozen_v3/selected_bank.jsonl",
+  "model": "gpt-4o-mini",
+  "n_interactions": 320,
+  "n_compositions": 10,
+  "styles": [
+    "s1",
+    "s2"
+  ],
+  "execution_mode": "single",
+  "detector_input": [
+    "candidate_role_description",
+    "query",
+    "final_output"
+  ],
+  "forbidden_from_detector": [
+    "selected_roles",
+    "router_output",
+    "installed_role_set",
+    "K",
+    "internal_trace"
+  ],
+  "cv_protocol": "5-fold GroupKFold by composition; both router styles of a composition are held out together",
+  "oof_auc": 0.8833730158730159,
+  "oof_balanced_accuracy": 0.8615079365079366,
+  "mean_per_role_auc": 0.8741015624999999,
+  "median_per_role_auc": 0.9232291666666668,
+  "per_role_auc": {
+    "code": 0.9675,
+    "data": 0.9114583333333334,
+    "design": 0.75,
+    "math": 0.9947916666666666,
+    "operations": 0.6223958333333334,
+    "planning": 0.9575,
+    "research": 0.935,
+    "writing": 0.8541666666666667
+  },
+  "present_target_routing_hit_rate_eval_only": 0.9071428571428571,
+  "present_target_routing_hits_eval_only": 127,
+  "present_target_routing_n_eval_only": 140
+}

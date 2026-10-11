@@ -1,0 +1,112 @@
+{
+  "root": "artifacts/adaptive_v11_curriculum_v2",
+  "parents": 20,
+  "total_groups_seen": 3528,
+  "kept_groups": 3528,
+  "focus_parse_fail_rows": 0,
+  "missing_state_groups": 0,
+  "noise": 0.1,
+  "all_rounds_one_step_conditional_on_actual_history": {
+    "count": {
+      "groups": 3528,
+      "top1_oracle_match_rate": 0.5634920634920635,
+      "mean_new_exposed": 0.6882086167800453,
+      "mean_oracle_new_exposed": 1.1465419501133787,
+      "mean_regret": 0.4583333333333333,
+      "mean_within_group_spearman": -0.028336228947828206,
+      "spearman_groups": 2188
+    },
+    "identity": {
+      "groups": 3528,
+      "top1_oracle_match_rate": 0.5634920634920635,
+      "mean_new_exposed": 0.6882086167800453,
+      "mean_oracle_new_exposed": 1.1465419501133787,
+      "mean_regret": 0.4583333333333333,
+      "mean_within_group_spearman": -0.03426891513417754,
+      "spearman_groups": 2188
+    },
+    "trace": {
+      "groups": 3528,
+      "top1_oracle_match_rate": 0.5634920634920635,
+      "mean_new_exposed": 0.6882086167800453,
+      "mean_oracle_new_exposed": 1.1465419501133787,
+      "mean_regret": 0.4583333333333333,
+      "mean_within_group_spearman": -0.03402494354971073,
+      "spearman_groups": 2188
+    },
+    "eig1": {
+      "groups": 3528,
+      "top1_oracle_match_rate": 0.21541950113378686,
+      "mean_new_exposed": 0.685374149659864,
+      "mean_oracle_new_exposed": 1.1465419501133787,
+      "mean_regret": 0.46116780045351474,
+      "mean_within_group_spearman": -0.044620419289336924,
+      "spearman_groups": 2265
+    },
+    "variance": {
+      "groups": 3528,
+      "top1_oracle_match_rate": 0.5634920634920635,
+      "mean_new_exposed": 0.6882086167800453,
+      "mean_oracle_new_exposed": 1.1465419501133787,
+      "mean_regret": 0.4583333333333333,
+      "mean_within_group_spearman": -0.028886565501789894,
+      "spearman_groups": 2188
+    }
+  },
+  "round_1_clean_comparison": {
+    "count": {
+      "groups": 696,
+      "top1_oracle_match_rate": 0.9152298850574713,
+      "mean_new_exposed": 1.8922413793103448,
+      "mean_oracle_new_exposed": 1.9899425287356323,
+      "mean_regret": 0.09770114942528736,
+      "mean_within_group_spearman": null,
+      "spearman_groups": 0
+    },
+    "identity": {
+      "groups": 696,
+      "top1_oracle_match_rate": 0.9152298850574713,
+      "mean_new_exposed": 1.8922413793103448,
+      "mean_oracle_new_exposed": 1.9899425287356323,
+      "mean_regret": 0.09770114942528736,
+      "mean_within_group_spearman": null,
+      "spearman_groups": 0
+    },
+    "trace": {
+      "groups": 696,
+      "top1_oracle_match_rate": 0.9152298850574713,
+      "mean_new_exposed": 1.8922413793103448,
+      "mean_oracle_new_exposed": 1.9899425287356323,
+      "mean_regret": 0.09770114942528736,
+      "mean_within_group_spearman": null,
+      "spearman_groups": 0
+    },
+    "eig1": {
+      "groups": 696,
+      "top1_oracle_match_rate": 0.9152298850574713,
+      "mean_new_exposed": 1.8922413793103448,
+      "mean_oracle_new_exposed": 1.9899425287356323,
+      "mean_regret": 0.09770114942528736,
+      "mean_within_group_spearman": -0.03448578392471888,
+      "spearman_groups": 77
+    },
+    "variance": {
+      "groups": 696,
+      "top1_oracle_match_rate": 0.9152298850574713,
+      "mean_new_exposed": 1.8922413793103448,
+      "mean_oracle_new_exposed": 1.9899425287356323,
+      "mean_regret": 0.09770114942528736,
+      "mean_within_group_spearman": null,
+      "spearman_groups": 0
+    }
+  },
+  "notes": {
+    "count": "Expected covariance reduction along the all-ones/count direction.",
+    "identity": "Expected covariance reduction orthogonal to count.",
+    "trace": "Expected total covariance trace reduction.",
+    "eig1": "Expected reduction along top identity-ambiguity eigenvector.",
+    "variance": "Raw predictive variance a^T Sigma a; no noise-normalized reduction.",
+    "validity": "Round 1 is cleanest. Later rounds condition on states produced by the original policy.",
+    "probe_vector": "Parsed pre-execution V11 focus-region roles from each candidate prompt; hidden selected_roles are used only as oracle outcomes."
+  }
+}

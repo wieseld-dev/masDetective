@@ -1,0 +1,56 @@
+{
+  "gold_count": 17,
+  "gold_ids": [
+    2,
+    6,
+    8,
+    9,
+    10,
+    16,
+    23,
+    24,
+    26,
+    27,
+    32,
+    33,
+    35,
+    37,
+    39,
+    43,
+    44
+  ],
+  "families": [
+    "DIRECTION",
+    "META",
+    "DANGLING"
+  ],
+  "api_calls": 306,
+  "candidate_count": 6120,
+  "per_gold": {
+    "2": 360,
+    "6": 360,
+    "8": 360,
+    "9": 360,
+    "10": 360,
+    "16": 360,
+    "23": 360,
+    "24": 360,
+    "26": 360,
+    "27": 360,
+    "32": 360,
+    "33": 360,
+    "35": 360,
+    "37": 360,
+    "39": 360,
+    "43": 360,
+    "44": 360
+  },
+  "per_family": {
+    "DIRECTION": 2040,
+    "META": 2040,
+    "DANGLING": 2040
+  },
+  "gold_unchanged": true,
+  "local_generator_imported": false,
+  "local_generator_modified": false
+}

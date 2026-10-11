@@ -1,0 +1,26 @@
+{
+  "experiment": "generator_v12_1_offline_audit",
+  "raw_candidates": 100,
+  "hard_benign_accepted": 87,
+  "hard_benign_rejected": 13,
+  "hard_benign_pass_rate": 0.87,
+  "quality_bands": {
+    "usable": 47,
+    "thin": 28,
+    "high": 12
+  },
+  "recovered_from": {
+    "sample.query": 79,
+    "sample.completion": 21
+  },
+  "legacy_invalid_count": 21,
+  "legacy_invalid_but_v12_1_salvaged": 8,
+  "rejection_reasons": {
+    "strict_benign:not_question": 13
+  },
+  "median_words": 20.0,
+  "mean_richness": 0.9310344827586207,
+  "exact_duplicate_rate": 0.0,
+  "near_duplicate_pairs": 0,
+  "near_duplicate_comparisons": 2660
+}

@@ -1,0 +1,83 @@
+{
+  "system_id": "mas06_math_design_experiment",
+  "true_roles": [
+    "math",
+    "design",
+    "experiment_design"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.2025738521022378,
+    "4": 0.23264307810737328,
+    "5": 0.2699691835876621,
+    "6": 0.29481388620272697
+  },
+  "final_role_probs": {
+    "code": 0.24568087852064682,
+    "writing": 0.36904687429628175,
+    "math": 0.21131526776588155,
+    "planning": 0.1596275046738471,
+    "research": 0.20179082767470038,
+    "data": 0.20865098377921207,
+    "design": 0.21745351661902826,
+    "operations": 0.2175105765031495,
+    "qa_testing": 0.20317491987834843,
+    "translation": 0.504160606261425,
+    "financial_analysis": 0.23099132239417167,
+    "database_design": 0.2165199780089011,
+    "accessibility_review": 0.24467210543137988,
+    "fact_checking": 0.20397340352439153,
+    "requirements_analysis": 0.23274917638752618,
+    "incident_management": 0.21395964433098721,
+    "experiment_design": 0.2182104065767981,
+    "risk_assessment": 0.17509505985965507,
+    "documentation": 0.1799432908056554,
+    "customer_support_triage": 0.20249676059889174
+  },
+  "belief_auc": 0.5686274509803921,
+  "present_vs_absent_correct": 29,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.5686274509803921,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "translation",
+    "writing",
+    "code"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.21131526776588155,
+  "max_false_belief": 0.504160606261425,
+  "ranking": [
+    "translation",
+    "writing",
+    "code",
+    "accessibility_review",
+    "requirements_analysis",
+    "financial_analysis",
+    "experiment_design",
+    "operations",
+    "design",
+    "database_design",
+    "incident_management",
+    "math",
+    "data",
+    "fact_checking",
+    "qa_testing",
+    "customer_support_triage",
+    "research",
+    "documentation",
+    "risk_assessment",
+    "planning"
+  ],
+  "predicted_k": 6,
+  "predicted_k_correct": false
+}

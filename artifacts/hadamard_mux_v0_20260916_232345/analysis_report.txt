@@ -1,0 +1,36 @@
+==============================================================================
+HADAMARD SEMANTIC DEMULTIPLEXING V0
+==============================================================================
+Design systems      : 8
+New MAS queries     : 224
+Mux scored rows     : 224
+Matched mux rows    : 224
+
+STYLE: numbered
+  v135: n=8 top1=0.500 [95% 0.281,0.719] (chance=.250)
+      centered true cosine=0.298 margin=+0.016 perm-p=0.00070
+      order cosine=0.379 pair-additive=0.578 all4-additive=-0.087
+  v134: n=8 top1=0.469 [95% 0.344,0.594] (chance=.250)
+      centered true cosine=0.415 margin=-0.210 perm-p=0.00230
+      order cosine=0.990 pair-additive=0.986 all4-additive=0.994
+  concat: n=8 top1=0.625 [95% 0.500,0.719] (chance=.250)
+      centered true cosine=0.446 margin=+0.163 perm-p=0.00010
+      order cosine=0.936 pair-additive=0.805 all4-additive=0.692
+
+STYLE: requirements
+  v135: n=8 top1=0.312 [95% 0.188,0.469] (chance=.250)
+      centered true cosine=0.089 margin=-0.334 perm-p=0.16018
+      order cosine=0.309 pair-additive=0.504 all4-additive=0.289
+  v134: n=8 top1=0.406 [95% 0.219,0.594] (chance=.250)
+      centered true cosine=0.342 margin=-0.285 perm-p=0.00920
+      order cosine=0.922 pair-additive=0.975 all4-additive=0.988
+  concat: n=8 top1=0.406 [95% 0.281,0.531] (chance=.250)
+      centered true cosine=0.259 margin=-0.091 perm-p=0.00190
+      order cosine=0.814 pair-additive=0.792 all4-additive=0.743
+
+PRE-REGISTERED HEURISTIC GATE
+  numbered: top1=0.625 p=9.999000099990002e-05 order=0.9355872131750124 PASS=True
+  requirements: top1=0.40625 p=0.0018998100189981002 order=0.8136279494059508 PASS=False
+
+OVERALL: NO PASS — inspect channel/style-specific results before extending the idea.
+==============================================================================

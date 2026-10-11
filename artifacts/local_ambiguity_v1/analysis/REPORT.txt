@@ -1,0 +1,36 @@
+========================================================================================================
+LOCAL AMBIGUITY ACTIVE PROBING V1
+========================================================================================================
+pairs=8 | systems=32 | observations=384
+Controlled design: K=5 for every system; only A/B slots change; mode=fanout2.
+
+SENSOR IDENTIFIABILITY
+  A-presence AUC             = 0.5630
+  B-presence AUC             = 0.5764
+  4-state local accuracy     = 0.2526 (chance=.2500)
+  matched A->pA effect       = +0.011398
+  matched B->pB effect       = +0.016111
+
+DOES PROBE VALUE DEPEND ON CURRENT BELIEF?
+  pairs where best probe TYPE switches across belief states = 6/8 (0.750)
+  best type matches intended local experiment = 0.312 (chance≈.250)
+  mean adaptive TYPE gain    = +0.007119
+  type gain 95% pair CI      = [+0.001898,+0.013464]
+  positive type-gain pairs   = 6/8
+  mean adaptive QUERY gain   = +0.011731
+  query gain 95% pair CI     = [+0.003355,+0.022305]
+
+BEST TYPE BY PAIR / BELIEF
+  p01 | A_TEST:BOUNDARY | B_TEST:B_DOMINANT | A_VS_B:BOUNDARY | BOTH_TEST:B_DOMINANT | gain=+0.00732
+  p02 | A_TEST:B_DOMINANT | B_TEST:B_DOMINANT | A_VS_B:B_DOMINANT | BOTH_TEST:B_DOMINANT | gain=+0.00000
+  p03 | A_TEST:JOINT | B_TEST:JOINT | A_VS_B:JOINT | BOTH_TEST:JOINT | gain=+0.00000
+  p04 | A_TEST:A_DOMINANT | B_TEST:BOUNDARY | A_VS_B:BOUNDARY | BOTH_TEST:B_DOMINANT | gain=+0.02377
+  p05 | A_TEST:B_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | gain=+0.00221
+  p06 | A_TEST:B_DOMINANT | B_TEST:BOUNDARY | A_VS_B:JOINT | BOTH_TEST:JOINT | gain=+0.01800
+  p07 | A_TEST:JOINT | B_TEST:BOUNDARY | A_VS_B:BOUNDARY | BOTH_TEST:JOINT | gain=+0.00169
+  p08 | A_TEST:B_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:BOUNDARY | BOTH_TEST:A_DOMINANT | gain=+0.00397
+
+========================================================================================================
+VERDICT: SENSOR_NO_GO
+The current Judge/belief sensor cannot reliably distinguish the matched A/B presence states. Do not train a selector yet.
+========================================================================================================

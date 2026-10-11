@@ -1,0 +1,349 @@
+{
+  "experiment": "activation_installed_only_audit_v1",
+  "final_val_systems": 84,
+  "final_val_rows": 3200,
+  "models": {
+    "A0_PUBLIC": {
+      "threshold": 0.4700000000000001,
+      "installed_only": {
+        "macro_auc": 0.7561630220820963,
+        "macro_ap": 0.6201130615524209,
+        "macro_f1": 0.5690965189885487,
+        "micro_auc": 0.7919830539944898,
+        "micro_ap": 0.616106238386504,
+        "micro_f1": 0.5852304275402554,
+        "installed_pair_count": 17902,
+        "activation_prevalence_given_installed": 0.31683610769746395,
+        "per_role": {
+          "code": {
+            "n_installed": 1020,
+            "activation_prevalence_given_installed": 0.27352941036224365,
+            "auc": 0.7772360319049623,
+            "ap": 0.5946999528402257,
+            "f1": 0.5355805243445693
+          },
+          "writing": {
+            "n_installed": 946,
+            "activation_prevalence_given_installed": 0.4038054943084717,
+            "auc": 0.7242675726857526,
+            "ap": 0.6190596762107662,
+            "f1": 0.6
+          },
+          "math": {
+            "n_installed": 1034,
+            "activation_prevalence_given_installed": 0.12185686826705933,
+            "auc": 0.9082188308509894,
+            "ap": 0.6921782619329802,
+            "f1": 0.6175115207373272
+          },
+          "planning": {
+            "n_installed": 782,
+            "activation_prevalence_given_installed": 0.6649616360664368,
+            "auc": 0.7227980035231943,
+            "ap": 0.8239863771079137,
+            "f1": 0.6589595375722543
+          },
+          "research": {
+            "n_installed": 696,
+            "activation_prevalence_given_installed": 0.6321839094161987,
+            "auc": 0.6192959872159092,
+            "ap": 0.7079838164872285,
+            "f1": 0.6642685851318945
+          },
+          "data": {
+            "n_installed": 522,
+            "activation_prevalence_given_installed": 0.5344827771186829,
+            "auc": 0.7063291886071656,
+            "ap": 0.7090461134485553,
+            "f1": 0.612
+          },
+          "design": {
+            "n_installed": 1044,
+            "activation_prevalence_given_installed": 0.24904213845729828,
+            "auc": 0.786857339089482,
+            "ap": 0.562244599642874,
+            "f1": 0.5577264653641207
+          },
+          "operations": {
+            "n_installed": 566,
+            "activation_prevalence_given_installed": 0.41872790455818176,
+            "auc": 0.7124773960216999,
+            "ap": 0.663860504346056,
+            "f1": 0.5754716981132075
+          },
+          "qa_testing": {
+            "n_installed": 974,
+            "activation_prevalence_given_installed": 0.13757699728012085,
+            "auc": 0.6697761194029852,
+            "ap": 0.2542700162599438,
+            "f1": 0.20765027322404372
+          },
+          "translation": {
+            "n_installed": 1204,
+            "activation_prevalence_given_installed": 0.0514950156211853,
+            "auc": 0.8941302751256992,
+            "ap": 0.6369031370982425,
+            "f1": 0.5894736842105263
+          },
+          "financial_analysis": {
+            "n_installed": 1250,
+            "activation_prevalence_given_installed": 0.2720000147819519,
+            "auc": 0.8035649644473174,
+            "ap": 0.6199988181413427,
+            "f1": 0.6134453781512605
+          },
+          "database_design": {
+            "n_installed": 696,
+            "activation_prevalence_given_installed": 0.2916666567325592,
+            "auc": 0.7483088360195445,
+            "ap": 0.6233055780640646,
+            "f1": 0.536723163841808
+          },
+          "accessibility_review": {
+            "n_installed": 848,
+            "activation_prevalence_given_installed": 0.22051887214183807,
+            "auc": 0.8695381329536354,
+            "ap": 0.7341509435804467,
+            "f1": 0.6598984771573604
+          },
+          "fact_checking": {
+            "n_installed": 940,
+            "activation_prevalence_given_installed": 0.3787234127521515,
+            "auc": 0.6472217946744652,
+            "ap": 0.508731193614488,
+            "f1": 0.3917525773195876
+          },
+          "requirements_analysis": {
+            "n_installed": 718,
+            "activation_prevalence_given_installed": 0.4484679698944092,
+            "auc": 0.7285039839387666,
+            "ap": 0.6329719512963365,
+            "f1": 0.5724258289703316
+          },
+          "incident_management": {
+            "n_installed": 884,
+            "activation_prevalence_given_installed": 0.2375565618276596,
+            "auc": 0.847647308181433,
+            "ap": 0.6774502403417588,
+            "f1": 0.6623093681917211
+          },
+          "experiment_design": {
+            "n_installed": 940,
+            "activation_prevalence_given_installed": 0.228723406791687,
+            "auc": 0.761879711307137,
+            "ap": 0.49887644289109967,
+            "f1": 0.5152129817444219
+          },
+          "risk_assessment": {
+            "n_installed": 864,
+            "activation_prevalence_given_installed": 0.3993055522441864,
+            "auc": 0.7173382480243501,
+            "ap": 0.5712594020351376,
+            "f1": 0.6156028368794326
+          },
+          "documentation": {
+            "n_installed": 924,
+            "activation_prevalence_given_installed": 0.43614718317985535,
+            "auc": 0.7420926544200644,
+            "ap": 0.693740286768013,
+            "f1": 0.6135135135135135
+          },
+          "customer_support_triage": {
+            "n_installed": 1050,
+            "activation_prevalence_given_installed": 0.35428571701049805,
+            "auc": 0.7357780632473753,
+            "ap": 0.5775439189409434,
+            "f1": 0.5824039653035935
+          }
+        }
+      },
+      "within_installed_top1": {
+        "states_with_activation": 3200,
+        "predicted_top1_hit": 0.7165625,
+        "random_within_installed_expected": 0.355203125,
+        "lift": 0.361359375
+      },
+      "mean_prediction_absent_roles": 0.28707030415534973,
+      "mean_prediction_installed_roles": 0.317884624004364
+    },
+    "A1_PLUS_TRUE_INSTALLED_Z": {
+      "threshold": 0.7200000000000002,
+      "installed_only": {
+        "macro_auc": 0.861174342682574,
+        "macro_ap": 0.7705523891013613,
+        "macro_f1": 0.680125617158107,
+        "micro_auc": 0.8802434344896305,
+        "micro_ap": 0.7860790944659867,
+        "micro_f1": 0.7004608294930875,
+        "installed_pair_count": 17902,
+        "activation_prevalence_given_installed": 0.31683610769746395,
+        "per_role": {
+          "code": {
+            "n_installed": 1020,
+            "activation_prevalence_given_installed": 0.27352941036224365,
+            "auc": 0.8512423877449344,
+            "ap": 0.7250723239721864,
+            "f1": 0.632258064516129
+          },
+          "writing": {
+            "n_installed": 946,
+            "activation_prevalence_given_installed": 0.4038054943084717,
+            "auc": 0.8207641751141806,
+            "ap": 0.7464732663546072,
+            "f1": 0.7064220183486238
+          },
+          "math": {
+            "n_installed": 1034,
+            "activation_prevalence_given_installed": 0.12185686826705933,
+            "auc": 0.9309663659883926,
+            "ap": 0.7711574956152063,
+            "f1": 0.643312101910828
+          },
+          "planning": {
+            "n_installed": 782,
+            "activation_prevalence_given_installed": 0.6649616360664368,
+            "auc": 0.8760936582501468,
+            "ap": 0.919005302441557,
+            "f1": 0.8625235404896422
+          },
+          "research": {
+            "n_installed": 696,
+            "activation_prevalence_given_installed": 0.6321839094161987,
+            "auc": 0.758114346590909,
+            "ap": 0.8378436611635255,
+            "f1": 0.7810894141829393
+          },
+          "data": {
+            "n_installed": 522,
+            "activation_prevalence_given_installed": 0.5344827771186829,
+            "auc": 0.8294024809357347,
+            "ap": 0.8499803809918207,
+            "f1": 0.7486818980667839
+          },
+          "design": {
+            "n_installed": 1044,
+            "activation_prevalence_given_installed": 0.24904213845729828,
+            "auc": 0.870216836734694,
+            "ap": 0.7371024959254874,
+            "f1": 0.612859097127223
+          },
+          "operations": {
+            "n_installed": 566,
+            "activation_prevalence_given_installed": 0.41872790455818176,
+            "auc": 0.8804073204827312,
+            "ap": 0.8457437963828687,
+            "f1": 0.75
+          },
+          "qa_testing": {
+            "n_installed": 974,
+            "activation_prevalence_given_installed": 0.13757699728012085,
+            "auc": 0.7899786780383795,
+            "ap": 0.43709527226387956,
+            "f1": 0.40828402366863903
+          },
+          "translation": {
+            "n_installed": 1204,
+            "activation_prevalence_given_installed": 0.0514950156211853,
+            "auc": 0.9415993446697926,
+            "ap": 0.6908485974718064,
+            "f1": 0.5981308411214953
+          },
+          "financial_analysis": {
+            "n_installed": 1250,
+            "activation_prevalence_given_installed": 0.2720000147819519,
+            "auc": 0.9302682611506141,
+            "ap": 0.8546124133143889,
+            "f1": 0.7416563658838071
+          },
+          "database_design": {
+            "n_installed": 696,
+            "activation_prevalence_given_installed": 0.2916666567325592,
+            "auc": 0.8369288262272804,
+            "ap": 0.7196524968608021,
+            "f1": 0.6431924882629108
+          },
+          "accessibility_review": {
+            "n_installed": 848,
+            "activation_prevalence_given_installed": 0.22051887214183807,
+            "auc": 0.9318404297491243,
+            "ap": 0.8618455394768785,
+            "f1": 0.7373493975903614
+          },
+          "fact_checking": {
+            "n_installed": 940,
+            "activation_prevalence_given_installed": 0.3787234127521515,
+            "auc": 0.739071879328921,
+            "ap": 0.6291175154419254,
+            "f1": 0.6038647342995169
+          },
+          "requirements_analysis": {
+            "n_installed": 718,
+            "activation_prevalence_given_installed": 0.4484679698944092,
+            "auc": 0.8608287847418281,
+            "ap": 0.8337087875343727,
+            "f1": 0.7442455242966752
+          },
+          "incident_management": {
+            "n_installed": 884,
+            "activation_prevalence_given_installed": 0.2375565618276596,
+            "auc": 0.9296523950826621,
+            "ap": 0.8254075168936463,
+            "f1": 0.6510851419031719
+          },
+          "experiment_design": {
+            "n_installed": 940,
+            "activation_prevalence_given_installed": 0.228723406791687,
+            "auc": 0.8703448275862069,
+            "ap": 0.6988251178598682,
+            "f1": 0.5752608047690015
+          },
+          "risk_assessment": {
+            "n_installed": 864,
+            "activation_prevalence_given_installed": 0.3993055522441864,
+            "auc": 0.8267850660411604,
+            "ap": 0.758374983483896,
+            "f1": 0.7063020214030915
+          },
+          "documentation": {
+            "n_installed": 924,
+            "activation_prevalence_given_installed": 0.43614718317985535,
+            "auc": 0.848459014207265,
+            "ap": 0.8226402106072543,
+            "f1": 0.736732570239334
+          },
+          "customer_support_triage": {
+            "n_installed": 1050,
+            "activation_prevalence_given_installed": 0.35428571701049805,
+            "auc": 0.9005217749865195,
+            "ap": 0.8465406079712459,
+            "f1": 0.7192622950819673
+          }
+        }
+      },
+      "within_installed_top1": {
+        "states_with_activation": 3200,
+        "predicted_top1_hit": 0.8,
+        "random_within_installed_expected": 0.355203125,
+        "lift": 0.44479687500000004
+      },
+      "mean_prediction_absent_roles": 0.009603617712855339,
+      "mean_prediction_installed_roles": 0.5640519857406616
+    }
+  },
+  "membership_only_baseline": {
+    "micro_auc": 0.8951618433685365,
+    "micro_ap": 0.31683610769746395,
+    "activation_prevalence": 0.0886249989271164,
+    "installed_prevalence": 0.2797187566757202
+  },
+  "comparison": {
+    "delta_installed_macro_auc": 0.10501132060047769,
+    "delta_installed_macro_ap": 0.1504393275489404,
+    "delta_installed_micro_auc": 0.08826038049514073,
+    "delta_installed_micro_ap": 0.16997285607948265
+  },
+  "decision": {
+    "verdict": "STRONG_ROUTING_SIGNAL_BEYOND_MEMBERSHIP",
+    "question": "Can A1 predict routing among roles known to be installed, rather than merely eliminate absent roles?"
+  }
+}

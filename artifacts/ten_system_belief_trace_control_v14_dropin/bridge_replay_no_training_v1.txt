@@ -1,0 +1,110 @@
+
+======================================================================================================================
+NO-TRAINING REPLAY: V14 OBSERVATIONS → ROLE EVIDENCE
+======================================================================================================================
+
+AGGREGATE
+----------------------------------------------------------------------------------------------------------------------
+A_historical_bayes              meanAUC=0.6255  median=0.5686  range=0.3333-1.0000  Top3Exact=1/10
+B_allrole_mean_sensor           meanAUC=0.6314  median=0.6176  range=0.4314-0.8627  Top3Exact=0/10
+C_target_mean_sensor            meanAUC=0.5941  median=0.5882  range=0.3725-0.7647  Top3Exact=0/10
+D_target_asym_neg025            meanAUC=0.5765  median=0.5882  range=0.3725-0.7255  Top3Exact=0/10
+E_target_positive_only          meanAUC=0.5343  median=0.5196  range=0.3824-0.6667  Top3Exact=0/10
+
+======================================================================================================================
+PER SYSTEM
+======================================================================================================================
+
+mas01_code_plan_research
+TRUE: ['code', 'planning', 'research']
+TARGET COUNTS: {"design": 1, "financial_analysis": 3, "incident_management": 1, "translation": 3}
+  A_historical_bayes           AUC=0.3333  TOP3=['translation', 'writing', 'requirements_analysis']  exact=False
+  B_allrole_mean_sensor        AUC=0.5490  TOP3=['research', 'writing', 'requirements_analysis']  exact=False
+  C_target_mean_sensor         AUC=0.5588  TOP3=['incident_management', 'code', 'writing']  exact=False
+  D_target_asym_neg025         AUC=0.5588  TOP3=['incident_management', 'code', 'writing']  exact=False
+  E_target_positive_only       AUC=0.4706  TOP3=['incident_management', 'code', 'writing']  exact=False
+
+mas02_risk_access_translation
+TRUE: ['accessibility_review', 'risk_assessment', 'translation']
+TARGET COUNTS: {"accessibility_review": 1, "customer_support_triage": 3, "documentation": 1, "incident_management": 1, "requirements_analysis": 1, "writing": 1}
+  A_historical_bayes           AUC=1.0000  TOP3=['accessibility_review', 'risk_assessment', 'translation']  exact=True
+  B_allrole_mean_sensor        AUC=0.7059  TOP3=['risk_assessment', 'accessibility_review', 'customer_support_triage']  exact=False
+  C_target_mean_sensor         AUC=0.7647  TOP3=['accessibility_review', 'code', 'math']  exact=False
+  D_target_asym_neg025         AUC=0.7059  TOP3=['customer_support_triage', 'accessibility_review', 'code']  exact=False
+  E_target_positive_only       AUC=0.6275  TOP3=['customer_support_triage', 'accessibility_review', 'code']  exact=False
+
+mas03_data_db_requirements
+TRUE: ['data', 'database_design', 'requirements_analysis']
+TARGET COUNTS: {"accessibility_review": 2, "data": 1, "risk_assessment": 5}
+  A_historical_bayes           AUC=0.7451  TOP3=['planning', 'risk_assessment', 'requirements_analysis']  exact=False
+  B_allrole_mean_sensor        AUC=0.6863  TOP3=['requirements_analysis', 'planning', 'risk_assessment']  exact=False
+  C_target_mean_sensor         AUC=0.7059  TOP3=['data', 'code', 'writing']  exact=False
+  D_target_asym_neg025         AUC=0.6667  TOP3=['data', 'risk_assessment', 'code']  exact=False
+  E_target_positive_only       AUC=0.6471  TOP3=['data', 'risk_assessment', 'code']  exact=False
+
+mas04_support_incident_ops
+TRUE: ['customer_support_triage', 'incident_management', 'operations']
+TARGET COUNTS: {"data": 1, "database_design": 1, "documentation": 2, "incident_management": 1, "risk_assessment": 2, "writing": 1}
+  A_historical_bayes           AUC=0.5686  TOP3=['risk_assessment', 'database_design', 'requirements_analysis']  exact=False
+  B_allrole_mean_sensor        AUC=0.5490  TOP3=['risk_assessment', 'requirements_analysis', 'writing']  exact=False
+  C_target_mean_sensor         AUC=0.3725  TOP3=['writing', 'data', 'code']  exact=False
+  D_target_asym_neg025         AUC=0.3725  TOP3=['writing', 'data', 'code']  exact=False
+  E_target_positive_only       AUC=0.4118  TOP3=['writing', 'data', 'risk_assessment']  exact=False
+
+mas05_docs_qa_writing
+TRUE: ['documentation', 'qa_testing', 'writing']
+TARGET COUNTS: {"accessibility_review": 2, "customer_support_triage": 1, "database_design": 2, "incident_management": 1, "risk_assessment": 1, "translation": 1}
+  A_historical_bayes           AUC=0.5686  TOP3=['accessibility_review', 'translation', 'writing']  exact=False
+  B_allrole_mean_sensor        AUC=0.5490  TOP3=['customer_support_triage', 'writing', 'data']  exact=False
+  C_target_mean_sensor         AUC=0.5000  TOP3=['customer_support_triage', 'risk_assessment', 'accessibility_review']  exact=False
+  D_target_asym_neg025         AUC=0.4412  TOP3=['customer_support_triage', 'risk_assessment', 'accessibility_review']  exact=False
+  E_target_positive_only       AUC=0.3824  TOP3=['customer_support_triage', 'risk_assessment', 'accessibility_review']  exact=False
+
+mas06_math_design_experiment
+TRUE: ['design', 'experiment_design', 'math']
+TARGET COUNTS: {"database_design": 3, "experiment_design": 2, "qa_testing": 1, "translation": 2}
+  A_historical_bayes           AUC=0.5098  TOP3=['translation', 'experiment_design', 'database_design']  exact=False
+  B_allrole_mean_sensor        AUC=0.4314  TOP3=['experiment_design', 'requirements_analysis', 'database_design']  exact=False
+  C_target_mean_sensor         AUC=0.6863  TOP3=['experiment_design', 'qa_testing', 'code']  exact=False
+  D_target_asym_neg025         AUC=0.6863  TOP3=['experiment_design', 'qa_testing', 'code']  exact=False
+  E_target_positive_only       AUC=0.6275  TOP3=['experiment_design', 'qa_testing', 'database_design']  exact=False
+
+mas07_fact_finance_research
+TRUE: ['fact_checking', 'financial_analysis', 'research']
+TARGET COUNTS: {"database_design": 2, "design": 1, "research": 1, "translation": 4}
+  A_historical_bayes           AUC=0.3922  TOP3=['translation', 'experiment_design', 'writing']  exact=False
+  B_allrole_mean_sensor        AUC=0.6863  TOP3=['research', 'writing', 'fact_checking']  exact=False
+  C_target_mean_sensor         AUC=0.7255  TOP3=['research', 'code', 'writing']  exact=False
+  D_target_asym_neg025         AUC=0.7255  TOP3=['research', 'code', 'writing']  exact=False
+  E_target_positive_only       AUC=0.6667  TOP3=['research', 'code', 'writing']  exact=False
+
+mas08_access_db_ops
+TRUE: ['accessibility_review', 'database_design', 'operations']
+TARGET COUNTS: {"experiment_design": 2, "math": 1, "translation": 5}
+  A_historical_bayes           AUC=0.9412  TOP3=['accessibility_review', 'translation', 'database_design']  exact=False
+  B_allrole_mean_sensor        AUC=0.7843  TOP3=['accessibility_review', 'database_design', 'fact_checking']  exact=False
+  C_target_mean_sensor         AUC=0.5882  TOP3=['code', 'writing', 'planning']  exact=False
+  D_target_asym_neg025         AUC=0.5882  TOP3=['code', 'writing', 'planning']  exact=False
+  E_target_positive_only       AUC=0.4706  TOP3=['experiment_design', 'code', 'writing']  exact=False
+
+mas09_plan_translation_docs
+TRUE: ['documentation', 'planning', 'translation']
+TARGET COUNTS: {"customer_support_triage": 1, "documentation": 2, "experiment_design": 1, "translation": 2, "writing": 2}
+  A_historical_bayes           AUC=0.3922  TOP3=['documentation', 'writing', 'experiment_design']  exact=False
+  B_allrole_mean_sensor        AUC=0.5098  TOP3=['writing', 'documentation', 'customer_support_triage']  exact=False
+  C_target_mean_sensor         AUC=0.4510  TOP3=['experiment_design', 'customer_support_triage', 'documentation']  exact=False
+  D_target_asym_neg025         AUC=0.4314  TOP3=['experiment_design', 'customer_support_triage', 'documentation']  exact=False
+  E_target_positive_only       AUC=0.5686  TOP3=['experiment_design', 'customer_support_triage', 'documentation']  exact=False
+
+mas10_code_risk_support
+TRUE: ['code', 'customer_support_triage', 'risk_assessment']
+TARGET COUNTS: {"documentation": 5, "financial_analysis": 1, "translation": 2}
+  A_historical_bayes           AUC=0.8039  TOP3=['translation', 'writing', 'risk_assessment']  exact=False
+  B_allrole_mean_sensor        AUC=0.8627  TOP3=['writing', 'customer_support_triage', 'documentation']  exact=False
+  C_target_mean_sensor         AUC=0.5882  TOP3=['code', 'writing', 'math']  exact=False
+  D_target_asym_neg025         AUC=0.5882  TOP3=['code', 'writing', 'math']  exact=False
+  E_target_positive_only       AUC=0.4706  TOP3=['documentation', 'code', 'writing']  exact=False
+
+======================================================================================================================
+Saved: artifacts/ten_system_belief_trace_control_v14_dropin/bridge_replay_no_training_v1.json
+======================================================================================================================

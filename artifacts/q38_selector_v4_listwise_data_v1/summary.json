@@ -1,0 +1,16 @@
+{
+  "protocol": "Q38 Selector V4 listwise",
+  "source": "artifacts/llm_selector_v3_auc_data",
+  "target": "best realized role-AUC candidate; training filtered by pairwise margin",
+  "min_gap_pairs": 2.0,
+  "permutations_per_state": 5,
+  "train_examples": 7165,
+  "strong_train_states": 1433,
+  "all_train_states": 2389,
+  "val_states": 424,
+  "challenge_states": 715,
+  "train_systems": 473,
+  "val_systems": 84,
+  "challenge_systems": 139,
+  "mean_strong_gap_pairs": 5.314026517794836
+}

@@ -1,0 +1,14 @@
+{
+  "source_rows": 4350,
+  "output_rows": 2920,
+  "label_counts": {
+    "BENIGN": 2113,
+    "CAPABILITY": 455,
+    "TAXONOMY": 77,
+    "REVERSED_DIRECTION": 213,
+    "NONSTANDALONE": 22,
+    "INTERNAL_META": 40
+  },
+  "dropped": 1630,
+  "philosophy": "Conservative: ambiguous historical examples are dropped, never automatically relabeled into another class."
+}

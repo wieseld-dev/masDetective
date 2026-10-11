@@ -1,0 +1,99 @@
+{
+  "experiment": "edit_conditioned_probe_value_v0",
+  "n_cases": 1335,
+  "source_counts": {
+    "v11": 828,
+    "v13": 507
+  },
+  "unique_query_groups": 332,
+  "oof": {
+    "target_only": {
+      "rho": 0.11266045153176284,
+      "top20_gain": 0.07356692494615158
+    },
+    "q_only": {
+      "rho": 0.08579813937366922,
+      "top20_gain": 0.03211400470461856
+    },
+    "q_edit": {
+      "rho": 0.12632176634539402,
+      "top20_gain": 0.08133568014722437
+    },
+    "q_edit_context": {
+      "rho": 0.13110194372766149,
+      "top20_gain": 0.03172037493387825
+    }
+  },
+  "paired_tests": {
+    "q_edit_minus_q_only": {
+      "rho_delta": 0.040523626971724805,
+      "p": 0.08739126087391261
+    },
+    "q_edit_context_minus_q_only": {
+      "rho_delta": 0.04530380435399227,
+      "p": 0.06779322067793221
+    },
+    "q_edit_context_minus_q_edit": {
+      "rho_delta": 0.004780177382267464,
+      "p": 0.37166283371662834
+    }
+  },
+  "cross_source": {
+    "v11_to_v13": {
+      "target_only": {
+        "n_train": 828,
+        "n_test": 507,
+        "rho": 0.042917179889273405,
+        "top20_gain": 0.017185925753700704
+      },
+      "q_only": {
+        "n_train": 828,
+        "n_test": 507,
+        "rho": -0.002786399061860791,
+        "top20_gain": 0.055219716345035974
+      },
+      "q_edit": {
+        "n_train": 828,
+        "n_test": 507,
+        "rho": 0.04882393067427967,
+        "top20_gain": 0.035204991087344095
+      },
+      "q_edit_context": {
+        "n_train": 828,
+        "n_test": 507,
+        "rho": 0.04882393067427967,
+        "top20_gain": 0.035204991087344095
+      }
+    },
+    "v13_to_v11": {
+      "target_only": {
+        "n_train": 507,
+        "n_test": 828,
+        "rho": 0.05688802616016811,
+        "top20_gain": 0.05520024475167895
+      },
+      "q_only": {
+        "n_train": 507,
+        "n_test": 828,
+        "rho": 0.028341695488547872,
+        "top20_gain": 0.024897655919931316
+      },
+      "q_edit": {
+        "n_train": 507,
+        "n_test": 828,
+        "rho": 0.04826869240292741,
+        "top20_gain": 0.04566512725630456
+      },
+      "q_edit_context": {
+        "n_train": 507,
+        "n_test": 828,
+        "rho": 0.0824245232497898,
+        "top20_gain": 0.05795370114071763
+      }
+    }
+  },
+  "decision": {
+    "pass": false,
+    "criterion": "q+edit+context grouped-OOF rho >= q-only rho + .10, paired p<=.05, and cross-source improvement >=.03 in both V11\u2192V13 and V13\u2192V11."
+  }
+}

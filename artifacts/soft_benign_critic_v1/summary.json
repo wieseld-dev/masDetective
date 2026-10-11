@@ -1,0 +1,21 @@
+{
+  "examples": 260,
+  "positive": 48,
+  "negative": 212,
+  "conflicting_exact_duplicates_removed": 0,
+  "oof_auc": 0.6850432389937107,
+  "oof_average_precision": 0.34555525543326326,
+  "oof_brier": 0.20114881805161192,
+  "oof_accuracy_at_0_5": 0.7192307692307692,
+  "positive_score_quantiles": {
+    "q10": 0.3386059790849686,
+    "median": 0.499521404504776,
+    "q90": 0.656033092737198
+  },
+  "negative_score_quantiles": {
+    "q10": 0.2842544198036194,
+    "median": 0.41219180822372437,
+    "q90": 0.5647519290447235
+  },
+  "score_semantics": "continuous preference for ordinary benign user-like query; NOT a hard validity gate"
+}

@@ -1,0 +1,56 @@
+{
+  "base_adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "positive_count": 17,
+  "positive_gold_ids": [
+    2,
+    6,
+    8,
+    9,
+    10,
+    16,
+    23,
+    24,
+    26,
+    27,
+    32,
+    33,
+    35,
+    37,
+    39,
+    43,
+    44
+  ],
+  "preference_count": 8,
+  "direction_pairs": 6,
+  "meta_pairs": 2,
+  "preference_gold_ids": [
+    2,
+    8,
+    10,
+    16,
+    32,
+    43
+  ],
+  "unique_preference_gold": 6,
+  "selection": {
+    "direction": {
+      "2": 1,
+      "8": 1,
+      "10": 3,
+      "16": 1,
+      "32": 1,
+      "43": 1
+    },
+    "meta": {
+      "10": 2,
+      "32": 1
+    }
+  },
+  "notes": [
+    "Positive anchors are V3 candidates with positive membership/elimination signal and passed manual audit.",
+    "Preference pairs use byte-identical generator prompts.",
+    "Chosen side is always one of the manually approved informative Gold positives.",
+    "Rejected side passed automatic high-precision filtering and manual topic/direction or META audit.",
+    "Synthetic clean alternatives without MAS reward are NOT used as positive anchors."
+  ]
+}

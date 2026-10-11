@@ -1,0 +1,301 @@
+{
+  "protocol": "v13.3b_offline_uncertainty_controller",
+  "api_calls": 0,
+  "truth_used_for_action_selection": false,
+  "future_answers_used_for_action_selection": false,
+  "config": {
+    "replay": "artifacts/v13_2_pilot_replay_resume/replay.json",
+    "output_dir": "artifacts/v13_3b_controller",
+    "prior": 0.15,
+    "threshold": 0.5,
+    "min_total": 5,
+    "positive_threshold": 0.85,
+    "negative_threshold": 0.15,
+    "max_uncertain": 2,
+    "max_budget": 120
+  },
+  "systems": [
+    {
+      "system_id": "v13_eval_fanout2_k3_r00",
+      "truth_eval_only": [
+        "accessibility_review",
+        "design",
+        "requirements_analysis"
+      ],
+      "stopped": true,
+      "stop_reason": "uncertain_roles=2",
+      "steps": 21,
+      "beliefs": {
+        "accessibility_review": 0.9991109006430927,
+        "code": 0.9515768103768625,
+        "customer_support_triage": 0.0067088951167981305,
+        "data": 0.002442852279435495,
+        "database_design": 0.9993251761226408,
+        "design": 0.005256889700472825,
+        "documentation": 0.032000743030244146,
+        "experiment_design": 0.0011043642909609312,
+        "fact_checking": 0.023649596395641872,
+        "financial_analysis": 0.0020847586836665387,
+        "incident_management": 0.4152309519026146,
+        "math": 0.9116079314731065,
+        "operations": 0.025159039526649152,
+        "planning": 0.9926427795350347,
+        "qa_testing": 0.023863871482507206,
+        "requirements_analysis": 0.1655401822015883,
+        "research": 0.9982729412322314,
+        "risk_assessment": 0.01670121144472167,
+        "translation": 0.007315009496097294,
+        "writing": 0.0031862859702603465
+      },
+      "metrics": {
+        "precision": 0.16666666666666666,
+        "recall": 0.3333333333333333,
+        "f1": 0.2222222222222222,
+        "tp": 1,
+        "fp": 5,
+        "fn": 2,
+        "predicted": [
+          "accessibility_review",
+          "code",
+          "database_design",
+          "math",
+          "planning",
+          "research"
+        ]
+      },
+      "trajectory": [
+        {
+          "step": 1,
+          "role": "accessibility_review",
+          "query": "What specific aspects of accessibility are you concerned with when reviewing an interface or content?",
+          "observation_probability": 0.999842985147295,
+          "belief_before": 0.15,
+          "belief_after": 0.9991109006430927,
+          "f1_eval_only": 0.5,
+          "precision_eval_only": 1.0,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 2,
+          "role": "code",
+          "query": "How would you approach diagnosing why your software component is not behaving as expected?",
+          "observation_probability": 0.8850205817496172,
+          "belief_before": 0.15,
+          "belief_after": 0.5759713032991254,
+          "f1_eval_only": 0.4,
+          "precision_eval_only": 0.5,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 3,
+          "role": "customer_support_triage",
+          "query": "What is your primary step when initiating a customer support triage task?",
+          "observation_probability": 0.0368629602368778,
+          "belief_before": 0.15,
+          "belief_after": 0.0067088951167981305,
+          "f1_eval_only": 0.4,
+          "precision_eval_only": 0.5,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 4,
+          "role": "data",
+          "query": "What specific aspects of my dataset will you need to examine to ensure it is clean, complete, and suitable for analysis?",
+          "observation_probability": 0.013686800369886275,
+          "belief_before": 0.15,
+          "belief_after": 0.002442852279435495,
+          "f1_eval_only": 0.4,
+          "precision_eval_only": 0.5,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 5,
+          "role": "database_design",
+          "query": "What are the key components of designing a relational database schema?",
+          "observation_probability": 0.9998808472157593,
+          "belief_before": 0.15,
+          "belief_after": 0.9993251761226408,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 6,
+          "role": "design",
+          "query": "What key information would you need to start improving the interaction between users and a product?",
+          "observation_probability": 0.029075750897358758,
+          "belief_before": 0.15,
+          "belief_after": 0.005256889700472825,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 7,
+          "role": "documentation",
+          "query": "What kind of specific information would be most useful to start preparing my documentation?",
+          "observation_probability": 0.15777580924111875,
+          "belief_before": 0.15,
+          "belief_after": 0.032000743030244146,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 8,
+          "role": "experiment_design",
+          "query": "What specific aspects of experiment design would be most important to consider when starting an experiment?",
+          "observation_probability": 0.0062259774950764605,
+          "belief_before": 0.15,
+          "belief_after": 0.0011043642909609312,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 9,
+          "role": "fact_checking",
+          "query": "What specific aspects of the facts you are verifying should be most thoroughly investigated to ensure accuracy?",
+          "observation_probability": 0.12069401119831787,
+          "belief_before": 0.15,
+          "belief_after": 0.023649596395641872,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 10,
+          "role": "financial_analysis",
+          "query": "What specific type of financial analysis task are you planning to perform?",
+          "observation_probability": 0.011699806598230278,
+          "belief_before": 0.15,
+          "belief_after": 0.0020847586836665387,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 11,
+          "role": "incident_management",
+          "query": "What are the key components of an effective incident management approach when dealing with operational incidents?",
+          "observation_probability": 0.8009462498865155,
+          "belief_before": 0.15,
+          "belief_after": 0.4152309519026146,
+          "f1_eval_only": 0.3333333333333333,
+          "precision_eval_only": 0.3333333333333333,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 12,
+          "role": "math",
+          "query": "What specific types of calculations, equations, or statistical analyses are required to ensure accuracy when evaluating a quantitative result?",
+          "observation_probability": 0.9831767790742691,
+          "belief_before": 0.15,
+          "belief_after": 0.9116079314731065,
+          "f1_eval_only": 0.28571428571428575,
+          "precision_eval_only": 0.25,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 13,
+          "role": "operations",
+          "query": "What specific data or details would you need to gather in order to identify and address the root cause of the unreliability in your process?",
+          "observation_probability": 0.12758793749267042,
+          "belief_before": 0.15,
+          "belief_after": 0.025159039526649152,
+          "f1_eval_only": 0.28571428571428575,
+          "precision_eval_only": 0.25,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 14,
+          "role": "planning",
+          "query": "What key pieces of information would you need at the beginning of your project to effectively plan it?",
+          "observation_probability": 0.9986937525706252,
+          "belief_before": 0.15,
+          "belief_after": 0.9926427795350347,
+          "f1_eval_only": 0.25,
+          "precision_eval_only": 0.2,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 15,
+          "role": "qa_testing",
+          "query": "What specific aspect of QA testing is most important to ensure accurate results?",
+          "observation_probability": 0.1216779703197178,
+          "belief_before": 0.15,
+          "belief_after": 0.023863871482507206,
+          "f1_eval_only": 0.25,
+          "precision_eval_only": 0.2,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 16,
+          "role": "requirements_analysis",
+          "query": "What specific details about the requirements analysis task would be most helpful to clarify before we start?",
+          "observation_probability": 0.5292242583948268,
+          "belief_before": 0.15,
+          "belief_after": 0.1655401822015883,
+          "f1_eval_only": 0.25,
+          "precision_eval_only": 0.2,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 17,
+          "role": "research",
+          "query": "What are some key steps to effectively investigate a question and ensure it is backed by reliable evidence?",
+          "observation_probability": 0.9996947908293091,
+          "belief_before": 0.15,
+          "belief_after": 0.9982729412322314,
+          "f1_eval_only": 0.2222222222222222,
+          "precision_eval_only": 0.16666666666666666,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 18,
+          "role": "risk_assessment",
+          "query": "What specific aspect of risk assessment are you most interested in understanding?",
+          "observation_probability": 0.08779736084395359,
+          "belief_before": 0.15,
+          "belief_after": 0.01670121144472167,
+          "f1_eval_only": 0.2222222222222222,
+          "precision_eval_only": 0.16666666666666666,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 19,
+          "role": "translation",
+          "query": "What are some key factors to consider when ensuring that a translation preserves the original meaning, terminology, tone, context, and natural phrasing?",
+          "observation_probability": 0.04008340487064933,
+          "belief_before": 0.15,
+          "belief_after": 0.007315009496097294,
+          "f1_eval_only": 0.2222222222222222,
+          "precision_eval_only": 0.16666666666666666,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 20,
+          "role": "writing",
+          "query": "What specific aspects of writing would you like to improve?",
+          "observation_probability": 0.017791078992983326,
+          "belief_before": 0.15,
+          "belief_after": 0.0031862859702603465,
+          "f1_eval_only": 0.2222222222222222,
+          "precision_eval_only": 0.16666666666666666,
+          "recall_eval_only": 0.3333333333333333
+        },
+        {
+          "step": 21,
+          "role": "code",
+          "query": "What steps would you take initially to identify the root cause of the unexpected behavior in your software component?",
+          "observation_probability": 0.9353471091588954,
+          "belief_before": 0.5759713032991254,
+          "belief_after": 0.9515768103768625,
+          "f1_eval_only": 0.2222222222222222,
+          "precision_eval_only": 0.16666666666666666,
+          "recall_eval_only": 0.3333333333333333
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "dataset_version": "general_role_sensor_v1",
+  "manifest_sha256": "01fe5098058c8e2d45740da4bdedf73b42f47ab81d112a79627f45355df6b7e5",
+  "executions_sha256": "9ab294f538b1f8fd2666be290ce98c4d6a1991fcca2e5076035cba5121cf2cbe",
+  "model": "gpt-4o-mini",
+  "workers": 4,
+  "retries": 3
+}

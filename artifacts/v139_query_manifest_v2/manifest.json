@@ -1,0 +1,4860 @@
+{
+  "protocol": "v139_same_query_causal_userlike_v2",
+  "seed": 1392026,
+  "model": "gpt-4o-mini",
+  "target_accepted_per_pair": 60,
+  "final_queries_per_pair": 52,
+  "train_per_pair": 40,
+  "val_per_pair": 6,
+  "test_locked_per_pair": 6,
+  "dual_auditor_required": true,
+  "pairs": [
+    {
+      "role_a": "code",
+      "role_b": "planning",
+      "accepted_available": 89,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "72c64276d67bf392",
+          "query": "Can you provide examples of effective risk management strategies for software projects?",
+          "split": "train"
+        },
+        {
+          "query_id": "107337d7293c1795",
+          "query": "What milestones are typical for launching a new product?",
+          "split": "train"
+        },
+        {
+          "query_id": "2d014d8e39ae5969",
+          "query": "What techniques can I use to ensure my project stays on track?",
+          "split": "train"
+        },
+        {
+          "query_id": "c692096f938705cc",
+          "query": "I need to prioritize my tasks for the week; what criteria should I use?",
+          "split": "train"
+        },
+        {
+          "query_id": "b3234532b9bbb6f2",
+          "query": "Can you recommend a project management tool that helps track milestones and dependencies?",
+          "split": "train"
+        },
+        {
+          "query_id": "96db887c2f9e4f5b",
+          "query": "I need to refactor some code for efficiency, but I'm unsure where to start. Can you guide me?",
+          "split": "train"
+        },
+        {
+          "query_id": "b56b326f0df2e1a1",
+          "query": "How can I break down a complex feature into smaller, actionable items for developers?",
+          "split": "train"
+        },
+        {
+          "query_id": "c2317dd6aef94ebd",
+          "query": "How do I decide on the best programming language for a new software project?",
+          "split": "train"
+        },
+        {
+          "query_id": "de7e63d40b8751c6",
+          "query": "Can you explain how to use Docker for deploying a web application?",
+          "split": "train"
+        },
+        {
+          "query_id": "350fff210e27342b",
+          "query": "I'm unsure about the most efficient way to gather user requirements. What approaches can I take?",
+          "split": "train"
+        },
+        {
+          "query_id": "38ae57a8c21815f6",
+          "query": "I need help optimizing an algorithm; what approaches should I consider?",
+          "split": "train"
+        },
+        {
+          "query_id": "13979f9f18412f1d",
+          "query": "I need to integrate a payment system into my website. What should I consider?",
+          "split": "train"
+        },
+        {
+          "query_id": "e82059fdffb70816",
+          "query": "How can I structure a business proposal to attract investors?",
+          "split": "train"
+        },
+        {
+          "query_id": "5b30f52ea5ddce4e",
+          "query": "I'd like to deploy my web application to a cloud service. What steps should I take?",
+          "split": "train"
+        },
+        {
+          "query_id": "366a1b49250defbb",
+          "query": "What steps should I take to organize my study schedule for the upcoming exams?",
+          "split": "train"
+        },
+        {
+          "query_id": "6715ffee7c8201fc",
+          "query": "How can I prioritize tasks in a project where some dependencies are not clear yet?",
+          "split": "train"
+        },
+        {
+          "query_id": "6f514b6cff62cdf3",
+          "query": "How can I set up continuous integration for my software project?",
+          "split": "train"
+        },
+        {
+          "query_id": "8b8d147492bd8612",
+          "query": "How do I start a small garden, and what resources do I need?",
+          "split": "train"
+        },
+        {
+          "query_id": "43a34abd149945d9",
+          "query": "I'm looking to enhance user experience in my app. Any suggestions on where to start?",
+          "split": "train"
+        },
+        {
+          "query_id": "9138a320c334e692",
+          "query": "I need to create a simple HTML page with a form. Can you show me how to implement the form validation?",
+          "split": "train"
+        },
+        {
+          "query_id": "f888dd3c23c73a48",
+          "query": "What steps should I follow to debug an issue in my Java code that throws a null pointer exception?",
+          "split": "train"
+        },
+        {
+          "query_id": "f83b8f825534c13b",
+          "query": "What are some common pitfalls when working on a software development project that I should be aware of?",
+          "split": "train"
+        },
+        {
+          "query_id": "51c80af27d7c5195",
+          "query": "How do I handle version control for a collaborative project?",
+          "split": "train"
+        },
+        {
+          "query_id": "8537928469820ade",
+          "query": "How do I properly document my code to make it easier for others to understand?",
+          "split": "train"
+        },
+        {
+          "query_id": "973cad96f54ea9df",
+          "query": "What techniques can I use to improve performance in a JavaScript application?",
+          "split": "train"
+        },
+        {
+          "query_id": "a09ae96df64fb389",
+          "query": "What tools can I use to measure the performance of my web application?",
+          "split": "train"
+        },
+        {
+          "query_id": "9eeafa049662a1cc",
+          "query": "What should I consider when planning a community event to ensure its success?",
+          "split": "train"
+        },
+        {
+          "query_id": "73dae2d803a37aaf",
+          "query": "What's the best way to document my software project so others can understand it easily?",
+          "split": "train"
+        },
+        {
+          "query_id": "cbb14845005d4b11",
+          "query": "Can you help me create a survey to gather user feedback for my app?",
+          "split": "train"
+        },
+        {
+          "query_id": "23d0c18936b85d29",
+          "query": "Can you help me write a Python script that pulls data from an API and saves it to a CSV file?",
+          "split": "train"
+        },
+        {
+          "query_id": "269db55232859eed",
+          "query": "What should I include in a project timeline for my home renovation?",
+          "split": "train"
+        },
+        {
+          "query_id": "ed4118fea1a5a75c",
+          "query": "Can you list potential risks I should keep in mind for my new business venture?",
+          "split": "train"
+        },
+        {
+          "query_id": "2c19883b27805198",
+          "query": "What factors should I consider when estimating the time needed for a project?",
+          "split": "train"
+        },
+        {
+          "query_id": "d3160fecd6791c54",
+          "query": "Can you suggest ways to improve the user experience on my website?",
+          "split": "train"
+        },
+        {
+          "query_id": "fa16dafb236add2e",
+          "query": "What are some common pitfalls when setting goals for a team?",
+          "split": "train"
+        },
+        {
+          "query_id": "52447a69d06c6a8f",
+          "query": "How can I set realistic goals for my software project?",
+          "split": "train"
+        },
+        {
+          "query_id": "ed2c515fbc0e66df",
+          "query": "Can you suggest a simple project management tool that helps track tasks and progress?",
+          "split": "train"
+        },
+        {
+          "query_id": "0e3b94638ba956bc",
+          "query": "How can I efficiently handle version control in a team setting?",
+          "split": "train"
+        },
+        {
+          "query_id": "f791911cf0ae11a6",
+          "query": "How can I automate testing for my application to save time?",
+          "split": "train"
+        },
+        {
+          "query_id": "e94d6f6951360e5e",
+          "query": "What are the key components of a successful project kickoff meeting?",
+          "split": "train"
+        },
+        {
+          "query_id": "52d6cdfbd9b95bb2",
+          "query": "I'm learning about RESTful APIs. Can you show me a simple example of implementing one?",
+          "split": "val"
+        },
+        {
+          "query_id": "40bde9f95b364733",
+          "query": "How can I implement error handling in my Python scripts?",
+          "split": "val"
+        },
+        {
+          "query_id": "0a15b5cc961610e0",
+          "query": "How can I make my code more readable and maintainable?",
+          "split": "val"
+        },
+        {
+          "query_id": "cf250f6cd214ab4d",
+          "query": "How can I manage dependencies in a large codebase effectively?",
+          "split": "val"
+        },
+        {
+          "query_id": "139df85f89aafd74",
+          "query": "How can I retrieve data from a MySQL database with specific filter criteria?",
+          "split": "val"
+        },
+        {
+          "query_id": "9ab2d9c4fd59c9e0",
+          "query": "What resources do you suggest for learning about agile project management?",
+          "split": "val"
+        },
+        {
+          "query_id": "927627a66c914bc8",
+          "query": "What resources can I use to learn about effective time management strategies?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "98a9a0e24b836eba",
+          "query": "I want to visualize my project timelines. Are there tools you recommend for creating Gantt charts?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "8aaf66d80f24144a",
+          "query": "What should I do if I'm falling behind on project deadlines due to unforeseen circumstances?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "c067e6a7bb14d92f",
+          "query": "What are the best practices for testing software to ensure all features work correctly?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "4bfa8df1fcf6e6d1",
+          "query": "Can you help me with setting up a continuous integration pipeline?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "e2c3276b78297dfc",
+          "query": "Can you help me enhance the functionality of my Excel spreadsheet?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "code",
+      "role_b": "qa_testing",
+      "accepted_available": 74,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "7de3efb5aa732491",
+          "query": "I would like to write unit tests for my functions; what best practices should I follow?",
+          "split": "train"
+        },
+        {
+          "query_id": "0ca3a4b9e91da979",
+          "query": "Can you help me outline a testing strategy for a new data import feature?",
+          "split": "train"
+        },
+        {
+          "query_id": "04d53e1a9b4d2ceb",
+          "query": "I'm looking for ways to optimize my SQL queries for better performance; any tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "6a2620284bc8463c",
+          "query": "Can you help me troubleshoot a Python script that keeps throwing an error when I run it?",
+          "split": "train"
+        },
+        {
+          "query_id": "40899504d9097315",
+          "query": "Can you give me tips on optimizing my code for better readability and maintenance?",
+          "split": "train"
+        },
+        {
+          "query_id": "f71daeeeb7f9c226",
+          "query": "I'm having trouble with a SQL query that doesn't return the expected results. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "18fbee329f80767e",
+          "query": "Can you outline a plan for testing a new feature in my mobile app?",
+          "split": "train"
+        },
+        {
+          "query_id": "07f3f5de1241cbc9",
+          "query": "I'm trying to understand how to handle exceptions properly in my code. Any tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "b7c02a159605b665",
+          "query": "How can I validate that my software meets user requirements effectively?",
+          "split": "train"
+        },
+        {
+          "query_id": "d392d6ac7e81ae48",
+          "query": "How can I create test cases for a new feature I'm developing in my app?",
+          "split": "train"
+        },
+        {
+          "query_id": "07e2bed8834acef5",
+          "query": "Can you suggest some resources for learning about software testing methodologies?",
+          "split": "train"
+        },
+        {
+          "query_id": "3d7dfe25593944d8",
+          "query": "What are some effective methods for verifying user input in a web application?",
+          "split": "train"
+        },
+        {
+          "query_id": "bae683b30b96477f",
+          "query": "How do I approach testing for security vulnerabilities in my app?",
+          "split": "train"
+        },
+        {
+          "query_id": "1e6d9d6806265915",
+          "query": "What are some edge cases I should consider when testing my new login system?",
+          "split": "train"
+        },
+        {
+          "query_id": "1d290c3997f7cb9c",
+          "query": "How do I determine if my application is functioning as intended after a significant code change?",
+          "split": "train"
+        },
+        {
+          "query_id": "0af3628ee26ef200",
+          "query": "What steps should I take to verify that my recent update didn't break any existing functionality?",
+          "split": "train"
+        },
+        {
+          "query_id": "647e61ccd6b1238f",
+          "query": "Can you review my code for potential performance improvements?",
+          "split": "train"
+        },
+        {
+          "query_id": "b2bd862975524a31",
+          "query": "I need help with writing a function that validates user input; what should I consider?",
+          "split": "train"
+        },
+        {
+          "query_id": "3b31da4c8595b1cc",
+          "query": "I'm trying to understand why my website is loading slowly; could you suggest some ways to identify the problem?",
+          "split": "train"
+        },
+        {
+          "query_id": "f1f49810f0ba79fe",
+          "query": "I'm trying to understand how to catch exceptions in my code; any examples?",
+          "split": "train"
+        },
+        {
+          "query_id": "00537fc95f43d791",
+          "query": "What strategies can I use to check for reproducible defects in my application?",
+          "split": "train"
+        },
+        {
+          "query_id": "91eba9ff4163abf0",
+          "query": "What steps should I follow to test the new features in our software update?",
+          "split": "train"
+        },
+        {
+          "query_id": "fc02cbbf5ce06409",
+          "query": "What strategies can I use to ensure thorough regression testing for updates?",
+          "split": "train"
+        },
+        {
+          "query_id": "22495ba8effff3cc",
+          "query": "I'm looking for advice on how to handle error messages in my application. Any recommendations?",
+          "split": "train"
+        },
+        {
+          "query_id": "b2bb202d33133702",
+          "query": "What tools can I use to automatically check for bugs in my code?",
+          "split": "train"
+        },
+        {
+          "query_id": "7a184ff615e4ca90",
+          "query": "What are some effective techniques for stress testing my application?",
+          "split": "train"
+        },
+        {
+          "query_id": "3e59adfe635043f3",
+          "query": "How can I simulate network issues for testing purposes?",
+          "split": "train"
+        },
+        {
+          "query_id": "34c58fb60daa8ee9",
+          "query": "Can you explain how to implement error handling in my Java code?",
+          "split": "train"
+        },
+        {
+          "query_id": "9d8a141ee9fb2b2d",
+          "query": "Can you provide guidance on implementing version control for my code?",
+          "split": "train"
+        },
+        {
+          "query_id": "dcbcac5292146444",
+          "query": "How do I ensure that my application is accessible to users with disabilities?",
+          "split": "train"
+        },
+        {
+          "query_id": "ffafe0eea2988595",
+          "query": "How do I organize my testing process for an agile development cycle?",
+          "split": "train"
+        },
+        {
+          "query_id": "03affeba3f739412",
+          "query": "My database query isn't returning the expected results; how can I debug it?",
+          "split": "train"
+        },
+        {
+          "query_id": "b54aa534988ce372",
+          "query": "Can you help me outline the testing phases for a new software release?",
+          "split": "train"
+        },
+        {
+          "query_id": "4539a73fe67a468d",
+          "query": "What’s the best way to test API endpoints for reliability?",
+          "split": "train"
+        },
+        {
+          "query_id": "f5758db9b82bfd8c",
+          "query": "What are some common mistakes to avoid when writing test scripts?",
+          "split": "train"
+        },
+        {
+          "query_id": "55f73922e6dcc8f1",
+          "query": "What should I consider when testing for accessibility in my web application?",
+          "split": "train"
+        },
+        {
+          "query_id": "a1051e37e4a16b1d",
+          "query": "What are some methods for identifying potential security vulnerabilities in my code?",
+          "split": "train"
+        },
+        {
+          "query_id": "83084eb0329cbb59",
+          "query": "Can you help me create a checklist for quality assurance before deploying my software?",
+          "split": "train"
+        },
+        {
+          "query_id": "0c97b7fb5616d2c7",
+          "query": "What common issues should I look for when debugging a front-end web application?",
+          "split": "train"
+        },
+        {
+          "query_id": "2fe62250db7f8189",
+          "query": "What are some strategies for writing comprehensive documentation for my software?",
+          "split": "train"
+        },
+        {
+          "query_id": "7de38fc9ede73473",
+          "query": "How do I write effective test cases for a login feature?",
+          "split": "val"
+        },
+        {
+          "query_id": "296f993e1352a129",
+          "query": "What are the best ways to document test cases for a software project?",
+          "split": "val"
+        },
+        {
+          "query_id": "ab97d591c407f3eb",
+          "query": "I need help identifying possible failure points in my application’s workflow. Can you assist?",
+          "split": "val"
+        },
+        {
+          "query_id": "2265f7db79617811",
+          "query": "What is the best way to automate my testing process?",
+          "split": "val"
+        },
+        {
+          "query_id": "66904f81c7763d26",
+          "query": "I'm trying to understand why a particular function in my app is returning null. Any suggestions?",
+          "split": "val"
+        },
+        {
+          "query_id": "b8f77298cd29c987",
+          "query": "What should I do if I encounter a defect that I can't reproduce?",
+          "split": "val"
+        },
+        {
+          "query_id": "63d7eb5ab8026e28",
+          "query": "How can I ensure that my application behaves as expected across different browsers?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "bb16be51f2901889",
+          "query": "How can I test my application for compatibility with older devices?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "4e8cf3274ab09323",
+          "query": "Can you explain how to use assertions in tests to catch errors?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "55fbbea4805f3865",
+          "query": "How can I ensure that my application meets performance benchmarks?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "d0449b8a6fa88b01",
+          "query": "How do I identify and handle boundary conditions when testing?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "5bab676502958b4e",
+          "query": "What are the key performance indicators I should track for my software?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "planning",
+      "role_b": "database_design",
+      "accepted_available": 71,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "29afb8847b77de7f",
+          "query": "How can I design a user-friendly database for managing customer orders?",
+          "split": "train"
+        },
+        {
+          "query_id": "07f7a754f5b97a4f",
+          "query": "What milestones should I set for my personal fitness goals over the next few months?",
+          "split": "train"
+        },
+        {
+          "query_id": "204d5f32e2fca76d",
+          "query": "Can you suggest ways to visualize my project's timeline and milestones?",
+          "split": "train"
+        },
+        {
+          "query_id": "e6d6c6e7ed5cfc40",
+          "query": "Can you guide me on how to structure data for better retrieval in a reporting system?",
+          "split": "train"
+        },
+        {
+          "query_id": "11c2b03b6153afbc",
+          "query": "I need to understand how to analyze risks associated with software development projects—any advice?",
+          "split": "train"
+        },
+        {
+          "query_id": "c758a42cf878268b",
+          "query": "Can you suggest a framework for reviewing my project’s progress and dependencies?",
+          "split": "train"
+        },
+        {
+          "query_id": "eaadc663175eae0d",
+          "query": "How can I organize my project tasks to make sure I'm hitting all my deadlines?",
+          "split": "train"
+        },
+        {
+          "query_id": "bdf7dda251602ed3",
+          "query": "I'm planning a community garden and need to outline the tasks involved. Any suggestions?",
+          "split": "train"
+        },
+        {
+          "query_id": "07e5f89f13ab5f9e",
+          "query": "What are some common pitfalls to avoid when setting project milestones?",
+          "split": "train"
+        },
+        {
+          "query_id": "074a17c530ddff61",
+          "query": "Can you help me design a data model that aligns with my application's needs?",
+          "split": "train"
+        },
+        {
+          "query_id": "8cbab90c4ae70f21",
+          "query": "I need advice on how to allocate resources for a community event. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "eba598d88f2f8011",
+          "query": "How can I create a database schema for a recipe collection that captures ingredients and instructions?",
+          "split": "train"
+        },
+        {
+          "query_id": "a8fdb90c58b9c518",
+          "query": "I'm trying to create a simple database for a library; how should I design the tables and their relationships?",
+          "split": "train"
+        },
+        {
+          "query_id": "cb7c994b101d3189",
+          "query": "I want to break down my goals for the year into manageable tasks—how should I do that?",
+          "split": "train"
+        },
+        {
+          "query_id": "078e99d4604cf45b",
+          "query": "Can you help me brainstorm ways to structure my event registration data?",
+          "split": "train"
+        },
+        {
+          "query_id": "8c94e50f72f4ce5e",
+          "query": "I'm looking for a way to track the progress of my team on various assignments; any recommendations?",
+          "split": "train"
+        },
+        {
+          "query_id": "cea9e8663a0cfd0f",
+          "query": "How do I create dependencies between tasks in my project plan?",
+          "split": "train"
+        },
+        {
+          "query_id": "a7adb5616f36ef02",
+          "query": "Can you explain the best practices for normalizing a database schema?",
+          "split": "train"
+        },
+        {
+          "query_id": "610817a6d4421cc8",
+          "query": "How can I ensure my data model supports future growth and changes?",
+          "split": "train"
+        },
+        {
+          "query_id": "dba1e19a0f7c2d7c",
+          "query": "Can you suggest a method to visualize dependencies between tasks in a timeline?",
+          "split": "train"
+        },
+        {
+          "query_id": "bd973eeb4cd67f61",
+          "query": "How do I approach identifying potential risks in my home renovation project?",
+          "split": "train"
+        },
+        {
+          "query_id": "4528c0ba8743c7b4",
+          "query": "How do I manage and track resource allocation across multiple projects?",
+          "split": "train"
+        },
+        {
+          "query_id": "4cdbd34830c40f74",
+          "query": "How can I categorize tasks to improve my productivity?",
+          "split": "train"
+        },
+        {
+          "query_id": "77ce5baac996de82",
+          "query": "What are the steps involved in creating a Gantt chart for my project timeline?",
+          "split": "train"
+        },
+        {
+          "query_id": "239939464e8442db",
+          "query": "Can you help me break down my project into manageable tasks and set deadlines for each one?",
+          "split": "train"
+        },
+        {
+          "query_id": "c37e16456280ef84",
+          "query": "What should I include when documenting the relationships between different entities in my database?",
+          "split": "train"
+        },
+        {
+          "query_id": "a71dbcbe1ae585da",
+          "query": "How can I effectively communicate dependencies between different tasks in my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "63455fe8d7fdd617",
+          "query": "What's the best way to outline the steps needed to achieve my financial goals?",
+          "split": "train"
+        },
+        {
+          "query_id": "f8ff0d86433cdc2c",
+          "query": "What is the best way to set clear priorities among competing tasks?",
+          "split": "train"
+        },
+        {
+          "query_id": "9a024df1d949c600",
+          "query": "How can I analyze project outcomes to improve my future planning?",
+          "split": "train"
+        },
+        {
+          "query_id": "65a0474fc69ecad9",
+          "query": "Can you suggest methods for modeling relationships in my data?",
+          "split": "train"
+        },
+        {
+          "query_id": "6d1288fdf4700daf",
+          "query": "What considerations are essential when developing constraints in a data model?",
+          "split": "train"
+        },
+        {
+          "query_id": "f5e33ca504041c61",
+          "query": "What techniques can I use to break down a writing project into manageable sections?",
+          "split": "train"
+        },
+        {
+          "query_id": "db19079224adecd9",
+          "query": "How should I structure my data to ensure efficient queries for my application?",
+          "split": "train"
+        },
+        {
+          "query_id": "2e91fada0ae9a772",
+          "query": "What are the steps to ensure clear documentation of project milestones and deliverables?",
+          "split": "train"
+        },
+        {
+          "query_id": "e64aead453fa3c38",
+          "query": "How do I set clear milestones for my academic research project?",
+          "split": "train"
+        },
+        {
+          "query_id": "b252638f6c1c1b06",
+          "query": "Could you suggest a way to document changes in my project as I go along?",
+          "split": "train"
+        },
+        {
+          "query_id": "dc6fc3703244a070",
+          "query": "How do I create a query that pulls specific customer information from my database?",
+          "split": "train"
+        },
+        {
+          "query_id": "b93ebc51c3ef29af",
+          "query": "What checkpoints should I consider while monitoring my project's progress?",
+          "split": "train"
+        },
+        {
+          "query_id": "7bb4de76cba3cb14",
+          "query": "What are some effective methods to prioritize tasks for my upcoming event planning?",
+          "split": "train"
+        },
+        {
+          "query_id": "f57b339e93c304f7",
+          "query": "What steps should I take to manage project risks more effectively?",
+          "split": "val"
+        },
+        {
+          "query_id": "e22c92a645fc1d45",
+          "query": "Do you have any strategies for managing project deadlines effectively?",
+          "split": "val"
+        },
+        {
+          "query_id": "37ca1a9df5cf4f2d",
+          "query": "What are the key considerations for creating constraints in a database?",
+          "split": "val"
+        },
+        {
+          "query_id": "9ffd4cf9c5d26698",
+          "query": "I'm looking for tips on decomposing a large project into smaller tasks—any ideas?",
+          "split": "val"
+        },
+        {
+          "query_id": "20631478740fbddb",
+          "query": "How can I balance workloads among my team members for an upcoming project?",
+          "split": "val"
+        },
+        {
+          "query_id": "b3ea117d3eab3a58",
+          "query": "What milestones should I define for a new product launch?",
+          "split": "val"
+        },
+        {
+          "query_id": "302efb418d2c03b4",
+          "query": "What techniques can I use to assess the risks associated with my vacation plans?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "229a04ea468e07aa",
+          "query": "I’m unsure how to define the keys for my new data tables—what should I consider?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "e34e9d17ac3b9ff9",
+          "query": "What should I think about when designing a schema for user accounts in an app?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "3c2d70cc2f8adb99",
+          "query": "What are some effective ways to prioritize tasks for my upcoming event?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "e25f2f28443d362a",
+          "query": "Could you help me draft a plan for my writing project with clear goals and deadlines?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "6d94a1c1cfa72105",
+          "query": "How can I choose the right indexes to improve my query performance?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "planning",
+      "role_b": "research",
+      "accepted_available": 74,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "5591572a5ded0f4c",
+          "query": "Can you help me create a timeline for my project with key milestones and deadlines?",
+          "split": "train"
+        },
+        {
+          "query_id": "3175eb3101a31c5a",
+          "query": "What methods can I use to compare prices for the products I want to buy?",
+          "split": "train"
+        },
+        {
+          "query_id": "b5670c43fbaa13f6",
+          "query": "What are the steps I should follow to successfully host a webinar?",
+          "split": "train"
+        },
+        {
+          "query_id": "fe30a8c23e942625",
+          "query": "What are the benefits and drawbacks of various exercise routines for beginners?",
+          "split": "train"
+        },
+        {
+          "query_id": "75c7e47cd2e2cad1",
+          "query": "I'm looking for a comparison of different productivity apps to see which might work best for my team.",
+          "split": "train"
+        },
+        {
+          "query_id": "e7e62236d61633fd",
+          "query": "Please list the risks associated with starting a small business.",
+          "split": "train"
+        },
+        {
+          "query_id": "8f68f32774049ce4",
+          "query": "What should I include in my research about climate change to ensure it’s well-rounded?",
+          "split": "train"
+        },
+        {
+          "query_id": "d3dc163e684f9398",
+          "query": "Can you suggest a method for organizing my personal finances effectively?",
+          "split": "train"
+        },
+        {
+          "query_id": "2562c6ce7b80913b",
+          "query": "I'm trying to write a research paper; how can I synthesize multiple sources into a coherent argument?",
+          "split": "train"
+        },
+        {
+          "query_id": "d2ee5c91452cea7c",
+          "query": "What should I look for when assessing the reliability of research studies?",
+          "split": "train"
+        },
+        {
+          "query_id": "3a65939ceb4bb98b",
+          "query": "What methods can I use to evaluate the reliability of sources in an academic paper?",
+          "split": "train"
+        },
+        {
+          "query_id": "609d9d67da8ab90c",
+          "query": "Can you help me outline a business plan for my new startup idea?",
+          "split": "train"
+        },
+        {
+          "query_id": "ab303e8e3407cafe",
+          "query": "Could you provide a synthesis of recent studies on digital marketing trends?",
+          "split": "train"
+        },
+        {
+          "query_id": "5be79622484a3c28",
+          "query": "Can you help me evaluate a claim about the benefits of meditation based on scientific studies?",
+          "split": "train"
+        },
+        {
+          "query_id": "d82cdef412a9ba61",
+          "query": "How can I assess the strengths and weaknesses of different marketing strategies for my small business?",
+          "split": "train"
+        },
+        {
+          "query_id": "c5168bf1f5c66487",
+          "query": "How do I prioritize tasks effectively when managing a busy schedule?",
+          "split": "train"
+        },
+        {
+          "query_id": "cb3aa7530040d8c4",
+          "query": "I'd like guidance on how to compare different career paths in technology.",
+          "split": "train"
+        },
+        {
+          "query_id": "549b67c331a1646e",
+          "query": "What are the key components of a successful marketing campaign for a local business?",
+          "split": "train"
+        },
+        {
+          "query_id": "f3a9d20cbdc2c6b1",
+          "query": "Can you help me outline the steps involved in creating a podcast?",
+          "split": "train"
+        },
+        {
+          "query_id": "900511682ea419db",
+          "query": "What are the main steps I should take to organize a community event?",
+          "split": "train"
+        },
+        {
+          "query_id": "6622ea9b3ce914c0",
+          "query": "How can I evaluate the credibility of an online course before enrolling?",
+          "split": "train"
+        },
+        {
+          "query_id": "48d710aa570660b4",
+          "query": "What are some effective ways to monitor progress in a long-term project?",
+          "split": "train"
+        },
+        {
+          "query_id": "fa2da8ce1d6d02ad",
+          "query": "Can you suggest methods for analyzing customer feedback effectively?",
+          "split": "train"
+        },
+        {
+          "query_id": "e988dbc33cd23a25",
+          "query": "Can you help me outline the key components of a successful business plan?",
+          "split": "train"
+        },
+        {
+          "query_id": "711a1c981233da09",
+          "query": "I’m interested in starting a garden. Can you break down the key resources and steps I need for planning it?",
+          "split": "train"
+        },
+        {
+          "query_id": "356b0b218977993a",
+          "query": "Can you provide a framework for evaluating new software we might implement at work?",
+          "split": "train"
+        },
+        {
+          "query_id": "399afc9a2613723a",
+          "query": "What milestones should I set for a personal fitness goal over the next few months?",
+          "split": "train"
+        },
+        {
+          "query_id": "280154a4b9bef50d",
+          "query": "I'd like to compare different software options for project management. What factors should I evaluate?",
+          "split": "train"
+        },
+        {
+          "query_id": "65432e186a6dea42",
+          "query": "I'd like to know the best practices for synthesizing data from multiple sources.",
+          "split": "train"
+        },
+        {
+          "query_id": "49ce40a5bc59bd3f",
+          "query": "How can I prioritize my goals for professional development this year?",
+          "split": "train"
+        },
+        {
+          "query_id": "fc92771fdedbd893",
+          "query": "What evidence should I gather to support my thesis in my upcoming essay?",
+          "split": "train"
+        },
+        {
+          "query_id": "9b5739b43cdddcaf",
+          "query": "What steps should I take to ensure I meet my academic goals this semester?",
+          "split": "train"
+        },
+        {
+          "query_id": "03d85383b043afc6",
+          "query": "Can you suggest a structure for a research paper on renewable energy?",
+          "split": "train"
+        },
+        {
+          "query_id": "1f5e2cd48cc8b479",
+          "query": "Can you provide tips on how to break a big project into smaller, manageable tasks?",
+          "split": "train"
+        },
+        {
+          "query_id": "b20f333bc80145b5",
+          "query": "What are the critical elements to include in a proposal for a community grant?",
+          "split": "train"
+        },
+        {
+          "query_id": "63c73695cde14c21",
+          "query": "How can I break down my writing project into manageable tasks?",
+          "split": "train"
+        },
+        {
+          "query_id": "6ae7bc67e30b43eb",
+          "query": "Could you compare the top fitness trackers on the market right now?",
+          "split": "train"
+        },
+        {
+          "query_id": "919ed4deeb3d1646",
+          "query": "Can you help me identify potential risks in my investment strategy?",
+          "split": "train"
+        },
+        {
+          "query_id": "7ba9f1f81a5b5824",
+          "query": "What are some key factors to consider when planning a family vacation?",
+          "split": "train"
+        },
+        {
+          "query_id": "df41f43c8c9ecefe",
+          "query": "What are the key steps I should take to organize a community event, and what resources do I need?",
+          "split": "train"
+        },
+        {
+          "query_id": "49e34d4b766bfa59",
+          "query": "How can I break down the process of writing a book into actionable milestones?",
+          "split": "val"
+        },
+        {
+          "query_id": "cfc160bc7ba79c4d",
+          "query": "What are some reliable sources to support my argument on climate change?",
+          "split": "val"
+        },
+        {
+          "query_id": "0366c531898169a4",
+          "query": "Can you help me identify dependencies and resources needed for my DIY home project?",
+          "split": "val"
+        },
+        {
+          "query_id": "fbe4d37928382be2",
+          "query": "What are some optional features I should look for when selecting a new smartphone?",
+          "split": "val"
+        },
+        {
+          "query_id": "d0c4605d6ef0a31b",
+          "query": "What resources do I need to prepare for my upcoming presentation?",
+          "split": "val"
+        },
+        {
+          "query_id": "fb583a337d436792",
+          "query": "What are the main steps involved in conducting a scientific experiment?",
+          "split": "val"
+        },
+        {
+          "query_id": "cb3d898492f3c174",
+          "query": "Can you help me create a timeline for my project that includes major milestones and deadlines?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "a839d027af86ff80",
+          "query": "What resources do I need to develop a mobile app?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "6814816e63d15ca6",
+          "query": "I'd like to gather evidence supporting the importance of early childhood education.",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "48adb66584c9f810",
+          "query": "I need to choose a charity to donate to; how can I assess their impact and effectiveness?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "46f69402079d59a7",
+          "query": "How do I prioritize tasks when managing multiple projects at once?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "0a4063a90d581e58",
+          "query": "Could you help me identify the dependencies in my project timeline?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "planning",
+      "role_b": "risk_assessment",
+      "accepted_available": 85,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "833a524ad780d84c",
+          "query": "What methods can I use to evaluate project risks and their impact?",
+          "split": "train"
+        },
+        {
+          "query_id": "f2f95ba5f3c7f129",
+          "query": "Can you help me identify key milestones for launching my blog?",
+          "split": "train"
+        },
+        {
+          "query_id": "0a9080454d0e66ea",
+          "query": "Can you help me list potential risks with a new software deployment?",
+          "split": "train"
+        },
+        {
+          "query_id": "bf35af5a46958693",
+          "query": "How can I evaluate the likelihood and impact of risks in my business plan?",
+          "split": "train"
+        },
+        {
+          "query_id": "9aa7edebaf3ea534",
+          "query": "How can I better manage competing priorities in my work schedule?",
+          "split": "train"
+        },
+        {
+          "query_id": "c2412577ea5f6cdb",
+          "query": "What steps should I take to ensure the success of our new marketing initiative?",
+          "split": "train"
+        },
+        {
+          "query_id": "17b5ee68000f9e4c",
+          "query": "How do I identify the dependencies in my project timeline?",
+          "split": "train"
+        },
+        {
+          "query_id": "891e7170bdd4b7c9",
+          "query": "What resources can I rely on for my upcoming presentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "c01444d77efbb469",
+          "query": "How do I determine the best order for completing tasks in a large project?",
+          "split": "train"
+        },
+        {
+          "query_id": "b5922ada2e217228",
+          "query": "What are some potential challenges I might face when organizing a charity fundraiser?",
+          "split": "train"
+        },
+        {
+          "query_id": "cf481cdf2fdfd612",
+          "query": "What factors should I consider when evaluating the risks of an investment?",
+          "split": "train"
+        },
+        {
+          "query_id": "dbb11a23675080dd",
+          "query": "What are some common risks in organizing a community event?",
+          "split": "train"
+        },
+        {
+          "query_id": "adcf9aa2a16a4b75",
+          "query": "What are the potential impacts of underestimating the costs in my project budget?",
+          "split": "train"
+        },
+        {
+          "query_id": "cfdd1e9d4a94e5da",
+          "query": "How can I effectively allocate resources for my charity event?",
+          "split": "train"
+        },
+        {
+          "query_id": "2e5fbae59a28ef1f",
+          "query": "Can you suggest ways to minimize disruptions during my project execution?",
+          "split": "train"
+        },
+        {
+          "query_id": "470f82a632c5fd12",
+          "query": "What should I include in my project risk management plan?",
+          "split": "train"
+        },
+        {
+          "query_id": "3b6cb123da94b98e",
+          "query": "What controls would best help me monitor my project’s progress?",
+          "split": "train"
+        },
+        {
+          "query_id": "eaccf14494ccacd0",
+          "query": "How should I structure my experiment to track key milestones effectively?",
+          "split": "train"
+        },
+        {
+          "query_id": "99b1462a73cba935",
+          "query": "What are the best practices for managing resources in a team setting?",
+          "split": "train"
+        },
+        {
+          "query_id": "0744d8da90a5b86d",
+          "query": "How do I assess the risks in my investment strategy?",
+          "split": "train"
+        },
+        {
+          "query_id": "a2485c0477bcefc0",
+          "query": "Help me identify the critical tasks for my thesis submission next semester.",
+          "split": "train"
+        },
+        {
+          "query_id": "488e9c1e944aab22",
+          "query": "What kind of controls should I establish to manage risks in my new business?",
+          "split": "train"
+        },
+        {
+          "query_id": "4c78b308615046bf",
+          "query": "Can you suggest a way to track milestones for my ongoing education?",
+          "split": "train"
+        },
+        {
+          "query_id": "b8f55419bf38b636",
+          "query": "Can you help me identify the most critical tasks for my home office setup?",
+          "split": "train"
+        },
+        {
+          "query_id": "3334208d1cbd1c42",
+          "query": "How can I evaluate the potential impact of new technology on my business?",
+          "split": "train"
+        },
+        {
+          "query_id": "8acdd8625bec7c76",
+          "query": "What steps can I take to manage dependencies in my personal life?",
+          "split": "train"
+        },
+        {
+          "query_id": "4c18916bc9c0a9c3",
+          "query": "Can you give me tips on how to organize my tasks for upcoming exams?",
+          "split": "train"
+        },
+        {
+          "query_id": "14ddfb9a552b0bef",
+          "query": "What resources should I budget for my upcoming family reunion?",
+          "split": "train"
+        },
+        {
+          "query_id": "dde3f3076622302f",
+          "query": "What should I include in my project checklist to keep things on track?",
+          "split": "train"
+        },
+        {
+          "query_id": "c81291fdba8a4f01",
+          "query": "Can you give examples of how to break down a large goal into smaller tasks?",
+          "split": "train"
+        },
+        {
+          "query_id": "ffdc9f55fb46f87b",
+          "query": "What factors should I consider when deciding which project to start first?",
+          "split": "train"
+        },
+        {
+          "query_id": "a55f302e3e85c335",
+          "query": "What factors should I consider when assessing the impact of delays in my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "cb833fc2f1b5da4f",
+          "query": "What milestones should I set for my fitness journey?",
+          "split": "train"
+        },
+        {
+          "query_id": "80ea297bccd2be5f",
+          "query": "What are some controls I can implement to minimize risks in my online business?",
+          "split": "train"
+        },
+        {
+          "query_id": "474d442f062aae07",
+          "query": "I need to create a timeline for my research project; what should I include?",
+          "split": "train"
+        },
+        {
+          "query_id": "a386eb1bf11a7586",
+          "query": "What steps should I take to create a robust project timeline?",
+          "split": "train"
+        },
+        {
+          "query_id": "cbc6514b8c67c6a9",
+          "query": "What should I keep in mind when scheduling meetings to avoid conflicts?",
+          "split": "train"
+        },
+        {
+          "query_id": "80ed1ff8ee8ef8c2",
+          "query": "What resources do I need to complete my home renovation effectively?",
+          "split": "train"
+        },
+        {
+          "query_id": "833c18b73e182d8e",
+          "query": "How can I ensure I allocate my budget wisely for home repairs?",
+          "split": "train"
+        },
+        {
+          "query_id": "12f82dcec807ddf1",
+          "query": "How can I create an effective timeline for my freelance projects?",
+          "split": "train"
+        },
+        {
+          "query_id": "0218b32ecdddb503",
+          "query": "Can you help me break down the steps needed to plan a family vacation?",
+          "split": "val"
+        },
+        {
+          "query_id": "01cbb7c4397735b2",
+          "query": "Can you suggest some potential risks I might encounter while launching my new app?",
+          "split": "val"
+        },
+        {
+          "query_id": "e19a6f4344b7fa10",
+          "query": "What are some common risks associated with starting a new hobby or project?",
+          "split": "val"
+        },
+        {
+          "query_id": "9da033ef85a3387d",
+          "query": "Can you help me prioritize the tasks for my volunteer work this month?",
+          "split": "val"
+        },
+        {
+          "query_id": "35aee1a93ef7a509",
+          "query": "What are some strategies to manage dependencies in my team’s workflow?",
+          "split": "val"
+        },
+        {
+          "query_id": "65ba4e39f910c8d3",
+          "query": "How can I effectively allocate resources for my team’s upcoming project?",
+          "split": "val"
+        },
+        {
+          "query_id": "be870f1113c70467",
+          "query": "What milestones should I set for my fitness journey this year?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "2e7c9917f70fb4f1",
+          "query": "What are the essential components of a project plan for my startup?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "15bfe29ad956a29c",
+          "query": "What is a good approach to evaluate the likelihood of project delays?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "7f11841877184384",
+          "query": "What is a reasonable timeline for completing my home gardening project?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "70a64975c062cd08",
+          "query": "What should I consider when creating a roadmap for my career goals?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "03b5fe9531629773",
+          "query": "How can I anticipate potential roadblocks in my current project?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "planning",
+      "role_b": "requirements_analysis",
+      "accepted_available": 77,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "f64d9fb763ca8dbd",
+          "query": "How should I approach resource allocation for a team project?",
+          "split": "train"
+        },
+        {
+          "query_id": "e62e4b3457e9d6a0",
+          "query": "Could you help me draft an outline for discussing project priorities with my team?",
+          "split": "train"
+        },
+        {
+          "query_id": "bb471a6772dac4a5",
+          "query": "What factors should I consider when prioritizing tasks in a team project?",
+          "split": "train"
+        },
+        {
+          "query_id": "8e504ea36048abba",
+          "query": "What factors should I consider when determining deadlines for my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "f7e10aa4def2e465",
+          "query": "What are the key milestones I should consider for launching my new app?",
+          "split": "train"
+        },
+        {
+          "query_id": "eabec2810fe6c80f",
+          "query": "What should I look for when defining the scope of my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "3a0719b656585531",
+          "query": "How do I determine which tasks are high priority in my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "07da4aba2e8281b6",
+          "query": "I need insights on how to communicate constraints effectively to my project team.",
+          "split": "train"
+        },
+        {
+          "query_id": "884ed3cdc9da00d4",
+          "query": "Can you suggest a way to break down my goals into actionable tasks?",
+          "split": "train"
+        },
+        {
+          "query_id": "25913ba5711a9337",
+          "query": "Can you suggest a method for tracking my progress against project milestones?",
+          "split": "train"
+        },
+        {
+          "query_id": "3fab1ee5030e74bd",
+          "query": "How can I effectively allocate resources for my upcoming marketing campaign?",
+          "split": "train"
+        },
+        {
+          "query_id": "96ada34e70cd1640",
+          "query": "Can you help me set up a project plan that includes all key dependencies?",
+          "split": "train"
+        },
+        {
+          "query_id": "aa23b082e3cdda8c",
+          "query": "What are the key elements to consider when breaking down a complex project into manageable tasks?",
+          "split": "train"
+        },
+        {
+          "query_id": "0d2857d9413744c0",
+          "query": "Can you help me outline the key milestones for my academic thesis project?",
+          "split": "train"
+        },
+        {
+          "query_id": "e87ce7125a8168b1",
+          "query": "I need to create a timeline for my home renovation. What should I include?",
+          "split": "train"
+        },
+        {
+          "query_id": "853f8a8790681e2c",
+          "query": "How should I document constraints in my project to avoid confusion later?",
+          "split": "train"
+        },
+        {
+          "query_id": "6d8f7ca930105679",
+          "query": "Can you help me decide on the main features for my new product?",
+          "split": "train"
+        },
+        {
+          "query_id": "e6e898d2f1cee8d9",
+          "query": "How should I prioritize feedback from various stakeholders?",
+          "split": "train"
+        },
+        {
+          "query_id": "2a106f3fd38af689",
+          "query": "How do I identify and prioritize risks in my upcoming project?",
+          "split": "train"
+        },
+        {
+          "query_id": "1708b7864a3b392e",
+          "query": "How can I structure a project plan to make it easy for my team to follow?",
+          "split": "train"
+        },
+        {
+          "query_id": "561cf2e54538185f",
+          "query": "What are some approaches to defining acceptance criteria for our service?",
+          "split": "train"
+        },
+        {
+          "query_id": "41e683c569cf4af8",
+          "query": "I’m unsure about the priorities for my research project; how can I determine which tasks to focus on first?",
+          "split": "train"
+        },
+        {
+          "query_id": "9d9c4419e1ae9ebf",
+          "query": "I need assistance in writing acceptance criteria for my latest software feature. Any tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "50989b2a095214e3",
+          "query": "Can you suggest ways to keep track of project milestones and deadlines?",
+          "split": "train"
+        },
+        {
+          "query_id": "d2e1fee190db748a",
+          "query": "Can you list potential risks I might encounter while organizing this event?",
+          "split": "train"
+        },
+        {
+          "query_id": "4fce9f23f7f052e8",
+          "query": "How can I better evaluate stakeholder needs in my upcoming project?",
+          "split": "train"
+        },
+        {
+          "query_id": "640f4d09e3220286",
+          "query": "What should I do if I encounter conflicting requirements from different stakeholders?",
+          "split": "train"
+        },
+        {
+          "query_id": "fe12dbae4882225a",
+          "query": "What strategies can I use to manage dependencies when working with remote teams?",
+          "split": "train"
+        },
+        {
+          "query_id": "a892055fbf41ec29",
+          "query": "What steps can I take to clearly define the acceptance criteria for my upcoming assignment?",
+          "split": "train"
+        },
+        {
+          "query_id": "6371d2de9893a0c9",
+          "query": "How can I ensure that my team understands project priorities during execution?",
+          "split": "train"
+        },
+        {
+          "query_id": "876edd66141c31bf",
+          "query": "How do I assess the resources needed for my business strategy?",
+          "split": "train"
+        },
+        {
+          "query_id": "37b5855f3ed73a8c",
+          "query": "Can you help me outline the goals for my personal development plan this year?",
+          "split": "train"
+        },
+        {
+          "query_id": "2bf605d1bd9d814c",
+          "query": "How can I ensure that my project meets all necessary requirements before launch?",
+          "split": "train"
+        },
+        {
+          "query_id": "ba1aa7eaca859880",
+          "query": "Can you provide a structured way to decompose my objectives into smaller goals?",
+          "split": "train"
+        },
+        {
+          "query_id": "17fc8916261ec49c",
+          "query": "I need help understanding the dependencies between different parts of my project. Can you clarify that?",
+          "split": "train"
+        },
+        {
+          "query_id": "47e62faee0e77125",
+          "query": "What are the best methods for gathering input from stakeholders on my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "423fbbddb75ed75a",
+          "query": "Could you provide guidance on how to handle ambiguities in a project brief?",
+          "split": "train"
+        },
+        {
+          "query_id": "ca6623338604d953",
+          "query": "What considerations should I keep in mind while outlining project constraints?",
+          "split": "train"
+        },
+        {
+          "query_id": "66d5db6a21f0d302",
+          "query": "What are some effective methods to engage stakeholders in our new initiative?",
+          "split": "train"
+        },
+        {
+          "query_id": "0d48f7d46a35ebb1",
+          "query": "Could you help me outline the high-level goals for my start-up's business plan?",
+          "split": "train"
+        },
+        {
+          "query_id": "05d1553765a8bb54",
+          "query": "How can I effectively adjust my project plan if new risks arise?",
+          "split": "val"
+        },
+        {
+          "query_id": "afa6c1a5d2816418",
+          "query": "What are some strategies to engage and inform stakeholders during our project's lifecycle?",
+          "split": "val"
+        },
+        {
+          "query_id": "9f3fbfa319e09ffc",
+          "query": "Can you help me break down the steps needed to finish my research project by next month?",
+          "split": "val"
+        },
+        {
+          "query_id": "da46a5a3debe027b",
+          "query": "How can I gather feedback from stakeholders more effectively during the development process?",
+          "split": "val"
+        },
+        {
+          "query_id": "5603cba9584942dc",
+          "query": "What are some good practices for documenting project milestones?",
+          "split": "val"
+        },
+        {
+          "query_id": "4b3519687d28f24d",
+          "query": "What are the most critical factors I need to consider while designing my survey?",
+          "split": "val"
+        },
+        {
+          "query_id": "fa4ff7ca065f5a8c",
+          "query": "What steps can I take to ensure all deliverables meet the acceptance criteria?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "105575703fd594c6",
+          "query": "What should I include in my project risk management plan?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "0d6ee0a3ed7ef956",
+          "query": "What are the most important questions to ask when clarifying product requirements?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "73a9c069af8cff87",
+          "query": "How can I prioritize my tasks when working on multiple projects at once?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "8c744156e36b7331",
+          "query": "Can you guide me through assessing the feasibility of my project ideas?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "f8af98f952761f1c",
+          "query": "What do I need to consider when setting timelines for my goals?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "research",
+      "role_b": "fact_checking",
+      "accepted_available": 87,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "d103a5379a52619b",
+          "query": "Can you summarize the key findings from recent studies on remote work productivity?",
+          "split": "train"
+        },
+        {
+          "query_id": "6ae843ffe28bd17c",
+          "query": "Can you summarize the major findings from the latest report on global water scarcity?",
+          "split": "train"
+        },
+        {
+          "query_id": "9c3dad1a0449bac4",
+          "query": "Can you provide a summary of the latest research on artificial intelligence ethics?",
+          "split": "train"
+        },
+        {
+          "query_id": "16ae2f956f678568",
+          "query": "I'd like to know the history and significance of the Great Wall of China.",
+          "split": "train"
+        },
+        {
+          "query_id": "6699953e6b9c5dd1",
+          "query": "Can you give me a brief overview of the major theories in evolutionary biology?",
+          "split": "train"
+        },
+        {
+          "query_id": "aaeb6c6abbab231f",
+          "query": "Can you help me find reputable sources on the effectiveness of the flu vaccine?",
+          "split": "train"
+        },
+        {
+          "query_id": "6eb5fc8bc83910e5",
+          "query": "What evidence supports the benefits of exercise on cognitive function?",
+          "split": "train"
+        },
+        {
+          "query_id": "67110849dd71c741",
+          "query": "What is the evidence regarding the link between diet and heart disease?",
+          "split": "train"
+        },
+        {
+          "query_id": "e86061b1a70d28da",
+          "query": "What evidence is there regarding the effects of pollution on public health?",
+          "split": "train"
+        },
+        {
+          "query_id": "b42b23d7f087dca4",
+          "query": "What are the potential risks associated with genetic editing technologies?",
+          "split": "train"
+        },
+        {
+          "query_id": "3be39a5bf81e60f1",
+          "query": "I'd like to know about the different techniques used in qualitative research. Can you explain?",
+          "split": "train"
+        },
+        {
+          "query_id": "ea9dc7560191721a",
+          "query": "Could you provide the evidence supporting the benefits of meditation?",
+          "split": "train"
+        },
+        {
+          "query_id": "2a431867cfa9b78e",
+          "query": "Could you explain the different types of renewable energy and their advantages?",
+          "split": "train"
+        },
+        {
+          "query_id": "fc7d5cdd3518c58b",
+          "query": "What are the benefits of keeping a personal journal?",
+          "split": "train"
+        },
+        {
+          "query_id": "97b2aff21b187eaf",
+          "query": "What are the most significant technological innovations in the last decade?",
+          "split": "train"
+        },
+        {
+          "query_id": "221868aba2b266a2",
+          "query": "Can you give me an overview of the recent advancements in artificial intelligence?",
+          "split": "train"
+        },
+        {
+          "query_id": "ee36a6093ed5dc8e",
+          "query": "What are the historical milestones in the development of the internet?",
+          "split": "train"
+        },
+        {
+          "query_id": "61439adbcebcb8f0",
+          "query": "Could you compare the nutritional values of almond milk and cow's milk?",
+          "split": "train"
+        },
+        {
+          "query_id": "8cdec3ee122d7c49",
+          "query": "I'd like to know the historical context surrounding the Industrial Revolution. Can you provide it?",
+          "split": "train"
+        },
+        {
+          "query_id": "e8868d0930149cb9",
+          "query": "What are the common techniques for analyzing economic data?",
+          "split": "train"
+        },
+        {
+          "query_id": "1c13c9e6fe5bdec9",
+          "query": "What are the main differences between electric and gas-powered cars?",
+          "split": "train"
+        },
+        {
+          "query_id": "97018f2677095e40",
+          "query": "What good practices exist for improving workplace diversity and inclusion?",
+          "split": "train"
+        },
+        {
+          "query_id": "8c07b53b917b04f8",
+          "query": "What are some popular methods for improving sleep quality?",
+          "split": "train"
+        },
+        {
+          "query_id": "839f5fed5fa1525c",
+          "query": "What are the key differences between traditional and online education?",
+          "split": "train"
+        },
+        {
+          "query_id": "3039e342e6d2ed1d",
+          "query": "I'm curious about the different types of renewable energy and their impacts.",
+          "split": "train"
+        },
+        {
+          "query_id": "66687e0f6870c8a4",
+          "query": "I'd like to know how to evaluate the credibility of news sources.",
+          "split": "train"
+        },
+        {
+          "query_id": "8cedf1b76c452c99",
+          "query": "Can you find some reputable sources that discuss the benefits of regular exercise?",
+          "split": "train"
+        },
+        {
+          "query_id": "bd75438d83f84d1f",
+          "query": "I'd like to know the differences between various social media platforms and their target audiences.",
+          "split": "train"
+        },
+        {
+          "query_id": "2524caa10d5ca15a",
+          "query": "I'd like to know the differences between various types of insurance policies.",
+          "split": "train"
+        },
+        {
+          "query_id": "0dd513d93a421f94",
+          "query": "I'd like information on the historical context of the Renaissance period.",
+          "split": "train"
+        },
+        {
+          "query_id": "680a319c15bd782b",
+          "query": "Can you summarize the current debates surrounding artificial intelligence ethics?",
+          "split": "train"
+        },
+        {
+          "query_id": "b20c06073c61688d",
+          "query": "How does the scientific method work in experiments?",
+          "split": "train"
+        },
+        {
+          "query_id": "054d62c913fbfea2",
+          "query": "Can you summarize the benefits of practicing gratitude?",
+          "split": "train"
+        },
+        {
+          "query_id": "e3cdbc40f8c86d8c",
+          "query": "What are the key considerations when evaluating news sources for reliability?",
+          "split": "train"
+        },
+        {
+          "query_id": "6bcbb00481c73216",
+          "query": "I'd like to see a comparison of the features and pricing of popular meal kit delivery services.",
+          "split": "train"
+        },
+        {
+          "query_id": "2c326f9f40437fc1",
+          "query": "Can you help me find reliable statistics on global poverty rates?",
+          "split": "train"
+        },
+        {
+          "query_id": "6e5e46d8909fdd0f",
+          "query": "I'd like a comparison of the latest smartphones on the market.",
+          "split": "train"
+        },
+        {
+          "query_id": "56b633278f1e715e",
+          "query": "I need to find reliable sources about the effects of climate change on ocean life.",
+          "split": "train"
+        },
+        {
+          "query_id": "0708f3246d7cd418",
+          "query": "What are the main sources that discuss the impacts of climate change on agriculture?",
+          "split": "train"
+        },
+        {
+          "query_id": "0bd8af4eda9069d1",
+          "query": "Can you explain the science behind climate change in simple terms?",
+          "split": "train"
+        },
+        {
+          "query_id": "b52404be9565cbd2",
+          "query": "I'd like to learn about the most common types of cybersecurity threats.",
+          "split": "val"
+        },
+        {
+          "query_id": "7b7193d43154faa9",
+          "query": "I'd like a comparison of the top three smartphones released this year, including their features and prices.",
+          "split": "val"
+        },
+        {
+          "query_id": "5804fe7fdb8d8d9b",
+          "query": "Can you give me a overview of the main arguments around universal basic income?",
+          "split": "val"
+        },
+        {
+          "query_id": "e10aae9f137a0394",
+          "query": "What are the main arguments for and against universal basic income?",
+          "split": "val"
+        },
+        {
+          "query_id": "888bc688086daf8d",
+          "query": "What are some recent studies on the effectiveness of renewable energy sources?",
+          "split": "val"
+        },
+        {
+          "query_id": "ee279026ee343af1",
+          "query": "I'd like to know the main findings from recent research on remote work productivity.",
+          "split": "val"
+        },
+        {
+          "query_id": "488362b2015d9a87",
+          "query": "How do the features of iOS compare to those of Android?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "9f8b1897f06aadb4",
+          "query": "What are the common misconceptions about mental health treatment?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "4ce5ac9d13b67a47",
+          "query": "What are the implications of global warming on biodiversity?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "39ca902c248cdc9b",
+          "query": "How do I find reliable information online about vaccine safety?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "11f1f4486e1e4fbe",
+          "query": "What are the differences between various project management methodologies?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "e49f813c43bf235d",
+          "query": "What are the main arguments for and against school uniforms?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "research",
+      "role_b": "experiment_design",
+      "accepted_available": 67,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "a748b1815830a58e",
+          "query": "What are some reliable sources to learn about the history of artificial intelligence?",
+          "split": "train"
+        },
+        {
+          "query_id": "ccfc038d48ef6db9",
+          "query": "What are some common methods for measuring air quality in urban areas?",
+          "split": "train"
+        },
+        {
+          "query_id": "54cf6d38686d93df",
+          "query": "Can you outline the steps needed to create a systematic review?",
+          "split": "train"
+        },
+        {
+          "query_id": "974f8b12bc4194a8",
+          "query": "I need information on recent studies about the effects of screen time on children. Any recommendations?",
+          "split": "train"
+        },
+        {
+          "query_id": "71e65a3aa0b2666b",
+          "query": "What are the best practices for measuring customer satisfaction in a retail space?",
+          "split": "train"
+        },
+        {
+          "query_id": "ee0e84a95c37e23e",
+          "query": "Can you give me some ideas on how to improve employee engagement in a hybrid work environment?",
+          "split": "train"
+        },
+        {
+          "query_id": "9f53a98ebf99e45c",
+          "query": "Can you explain the differences between renewable and non-renewable energy sources?",
+          "split": "train"
+        },
+        {
+          "query_id": "56a512e75286ef51",
+          "query": "Can you suggest ways to compare different brands of running shoes?",
+          "split": "train"
+        },
+        {
+          "query_id": "4ce1464bfab14124",
+          "query": "What are some common variables in studies about the effectiveness of various vaccines?",
+          "split": "train"
+        },
+        {
+          "query_id": "5eb6aafaca40b7a6",
+          "query": "I'd like to know how to compare the performance of different programming languages for web development.",
+          "split": "train"
+        },
+        {
+          "query_id": "d121754014efe358",
+          "query": "Could you suggest ways to measure the success of a community outreach program?",
+          "split": "train"
+        },
+        {
+          "query_id": "cb21a0dce714daf8",
+          "query": "What factors should I consider when comparing different insurance policies?",
+          "split": "train"
+        },
+        {
+          "query_id": "452d96932d84e6bd",
+          "query": "What variables should I consider when assessing the impact of advertising on consumer behavior?",
+          "split": "train"
+        },
+        {
+          "query_id": "ef0cc0723bd4133d",
+          "query": "What factors should I consider when planning a small garden at home?",
+          "split": "train"
+        },
+        {
+          "query_id": "eac5c9cb2aa992a3",
+          "query": "Could you list some variables that might influence the outcome of a survey on consumer preferences?",
+          "split": "train"
+        },
+        {
+          "query_id": "97d91f99d9205671",
+          "query": "How can I compare the environmental impacts of different transportation methods?",
+          "split": "train"
+        },
+        {
+          "query_id": "d3112432cde80d7d",
+          "query": "What should I keep in mind when comparing different vacation destinations?",
+          "split": "train"
+        },
+        {
+          "query_id": "2e1f438ed22e39b8",
+          "query": "Can you help me list the methodologies typically used to analyze economic data?",
+          "split": "train"
+        },
+        {
+          "query_id": "f53f35c667136a24",
+          "query": "What should I include in a research proposal about climate change mitigation strategies?",
+          "split": "train"
+        },
+        {
+          "query_id": "99bdc6f8ba15ae92",
+          "query": "How can I evaluate the claims made in a scientific article about diet and exercise?",
+          "split": "train"
+        },
+        {
+          "query_id": "0ed33155a4f32ed5",
+          "query": "I'm interested in the best practices for conducting user testing for a new app. What should I know?",
+          "split": "train"
+        },
+        {
+          "query_id": "f4dfba82b139f2f8",
+          "query": "I'd like to compare the nutritional values of almond milk and cow's milk. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "0967cab68b8801d5",
+          "query": "What should I consider when designing an experiment to test a new drug?",
+          "split": "train"
+        },
+        {
+          "query_id": "da173c3aa8c5722d",
+          "query": "How do I measure the effectiveness of my workout routine?",
+          "split": "train"
+        },
+        {
+          "query_id": "a01d0bc3db03b14e",
+          "query": "What are some good sources for learning more about the impact of diet on overall health?",
+          "split": "train"
+        },
+        {
+          "query_id": "ea329a79409c1e8d",
+          "query": "How can I assess the success of an intervention program in schools?",
+          "split": "train"
+        },
+        {
+          "query_id": "cfb35941e86f2ffb",
+          "query": "Can you provide an overview of different methodologies for studying animal behavior?",
+          "split": "train"
+        },
+        {
+          "query_id": "2c40c6a6b201b173",
+          "query": "What factors influence the growth of plants in a hydroponic system?",
+          "split": "train"
+        },
+        {
+          "query_id": "c5452e79be140fa4",
+          "query": "How can I effectively measure the success of my social media marketing campaign?",
+          "split": "train"
+        },
+        {
+          "query_id": "5ea76335c5904dee",
+          "query": "What are the most credible sources for facts on the latest technological advancements?",
+          "split": "train"
+        },
+        {
+          "query_id": "e7063ccac29a4260",
+          "query": "Can you provide a comparison of web hosting services for small businesses?",
+          "split": "train"
+        },
+        {
+          "query_id": "73e7a9b63a8cf84c",
+          "query": "How can I find reliable evidence to support a claim about the benefits of meditation?",
+          "split": "train"
+        },
+        {
+          "query_id": "962ddd0951f570ea",
+          "query": "I'd like to know how to evaluate the credibility of a scientific study I found. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "ebaca23467144e73",
+          "query": "What are some variables that could impact survey results on dietary habits?",
+          "split": "train"
+        },
+        {
+          "query_id": "dfc24113d53bb25d",
+          "query": "Can you explain the main methods for synthesizing literature reviews?",
+          "split": "train"
+        },
+        {
+          "query_id": "a69250f1acca2b60",
+          "query": "What experimental protocols would be best for studying the effects of music on concentration?",
+          "split": "train"
+        },
+        {
+          "query_id": "d30d0e68325c93ba",
+          "query": "What are the best practices for measuring customer satisfaction in a retail setting?",
+          "split": "train"
+        },
+        {
+          "query_id": "0e41cf5726255a00",
+          "query": "How can I compare the effectiveness of different online learning platforms?",
+          "split": "train"
+        },
+        {
+          "query_id": "bea4ceb40eccfab9",
+          "query": "How can I assess the reliability of different online news sources?",
+          "split": "train"
+        },
+        {
+          "query_id": "acb46388fdfa3950",
+          "query": "Could you provide some sources on the impact of climate change on biodiversity?",
+          "split": "train"
+        },
+        {
+          "query_id": "359e56f7adcbd4a2",
+          "query": "What are the main factors that affect plant growth in different climates?",
+          "split": "val"
+        },
+        {
+          "query_id": "3dd844c443a2ac95",
+          "query": "What metrics are useful for evaluating a fitness program's effectiveness?",
+          "split": "val"
+        },
+        {
+          "query_id": "07db3b468699abc0",
+          "query": "How can I synthesize opinions from various studies about education reform?",
+          "split": "val"
+        },
+        {
+          "query_id": "5d3757f0c5d17361",
+          "query": "How can I assess the impact of social media on mental health?",
+          "split": "val"
+        },
+        {
+          "query_id": "95b038d8ac3f25ad",
+          "query": "What should I keep in mind while gathering data for a research project on urban development?",
+          "split": "val"
+        },
+        {
+          "query_id": "48a9e912aa90df51",
+          "query": "What are some best practices for sampling in social science research?",
+          "split": "val"
+        },
+        {
+          "query_id": "0a9eb3eaa1f4bea4",
+          "query": "Can you provide a comparison of different budget planning methods for families?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "7f4753ade2a3a82c",
+          "query": "I'd like to compare different methods of cooking pasta. What should I consider?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "4bef6316eafe38e1",
+          "query": "What are the advantages and disadvantages of different data collection methods in research?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "38ff7bae89443c77",
+          "query": "I'm considering a comparison of electric cars versus gasoline cars. What should I look into?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "4302f737e6750f9d",
+          "query": "What are some effective methods for conducting a survey in my community?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "5b6bd54454f170c0",
+          "query": "What's a good method to evaluate the accuracy of a historical claim?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "research",
+      "role_b": "writing",
+      "accepted_available": 88,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "3b48e39760ccf02e",
+          "query": "Could you draft a brief email to my boss about my recent project updates?",
+          "split": "train"
+        },
+        {
+          "query_id": "04d3aa039704c714",
+          "query": "I'd like to understand the differences between various leadership styles; can you summarize them?",
+          "split": "train"
+        },
+        {
+          "query_id": "0d08cbd9a756f7f1",
+          "query": "Can you help me edit my resume to make it more appealing to employers?",
+          "split": "train"
+        },
+        {
+          "query_id": "63b2f10f8a3a8ddf",
+          "query": "What are the differences in effectiveness between various methods of teaching languages?",
+          "split": "train"
+        },
+        {
+          "query_id": "7e4b7ab617156ae5",
+          "query": "Can you help me find a way to compare the efficiency of different energy sources?",
+          "split": "train"
+        },
+        {
+          "query_id": "0eb54d7a11473714",
+          "query": "Could you suggest some good examples of persuasive writing techniques?",
+          "split": "train"
+        },
+        {
+          "query_id": "16ccf3f496541ac3",
+          "query": "Can you help me edit this paragraph for better flow and coherence?",
+          "split": "train"
+        },
+        {
+          "query_id": "fbe5b3f2e5c2ebc6",
+          "query": "What is the best way to structure a resume for a job application?",
+          "split": "train"
+        },
+        {
+          "query_id": "ffbf5ddd6d0efec5",
+          "query": "Can you provide a clear comparison of the main features of iOS and Android?",
+          "split": "train"
+        },
+        {
+          "query_id": "4ea8abe9e80a86dd",
+          "query": "I'd like a brief overview of the main economic theories related to unemployment.",
+          "split": "train"
+        },
+        {
+          "query_id": "fad6d79c3739c08a",
+          "query": "I'd like to understand the implications of recent technological advancements on education.",
+          "split": "train"
+        },
+        {
+          "query_id": "6a689490695eae07",
+          "query": "What are the best practices for organizing data in a research project?",
+          "split": "train"
+        },
+        {
+          "query_id": "d7963401f8b7bdaa",
+          "query": "What are the key differences between qualitative and quantitative research methods?",
+          "split": "train"
+        },
+        {
+          "query_id": "b3b8b8ef4f91445b",
+          "query": "Could you suggest some compelling arguments for and against electric vehicles?",
+          "split": "train"
+        },
+        {
+          "query_id": "fdae1e06aa03a58c",
+          "query": "Can you help me summarize the main findings of the latest climate report?",
+          "split": "train"
+        },
+        {
+          "query_id": "de251a638822cfa8",
+          "query": "I'd like to know how to evaluate the credibility of online sources for my paper.",
+          "split": "train"
+        },
+        {
+          "query_id": "6e0b8897490850e9",
+          "query": "What is the best way to cite sources in my academic paper?",
+          "split": "train"
+        },
+        {
+          "query_id": "7b078651f421c52b",
+          "query": "What are the differences between renewable and non-renewable energy sources?",
+          "split": "train"
+        },
+        {
+          "query_id": "dc8b835d266935ea",
+          "query": "What are some key statistics I should include in my report on global poverty?",
+          "split": "train"
+        },
+        {
+          "query_id": "cc3062bbd52c9090",
+          "query": "What are the most influential studies on workplace diversity and inclusion?",
+          "split": "train"
+        },
+        {
+          "query_id": "15d6f6dae3885a7e",
+          "query": "How can I structure my essay on the impacts of urbanization?",
+          "split": "train"
+        },
+        {
+          "query_id": "d1a1dd02f42f1071",
+          "query": "Can you provide an overview of the ethical implications of artificial intelligence?",
+          "split": "train"
+        },
+        {
+          "query_id": "253f837e8d9608e4",
+          "query": "What are some effective strategies for conducting a systematic review of literature?",
+          "split": "train"
+        },
+        {
+          "query_id": "1f366ae907ddb9ab",
+          "query": "I'd like tips on how to improve my writing clarity for a research paper.",
+          "split": "train"
+        },
+        {
+          "query_id": "de8c423f9a898b32",
+          "query": "Can you recommend a structure for presenting research findings in a clear manner?",
+          "split": "train"
+        },
+        {
+          "query_id": "fd48ede7a9f72a3e",
+          "query": "What methods are best for conducting a literature review?",
+          "split": "train"
+        },
+        {
+          "query_id": "5aaf3a3a4a5db0c5",
+          "query": "I'd like to know how to evaluate the credibility of sources for my research. Can you provide tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "f5de3476b9ac7f73",
+          "query": "Can you summarize the key points from an article on the future of artificial intelligence?",
+          "split": "train"
+        },
+        {
+          "query_id": "c2d544a064c4b762",
+          "query": "What are some good sources for learning about renewable energy technologies?",
+          "split": "train"
+        },
+        {
+          "query_id": "ba106bc8409cf03f",
+          "query": "I need help creating a clear and concise executive summary for a business plan.",
+          "split": "train"
+        },
+        {
+          "query_id": "354f08a921dd0f2a",
+          "query": "What are the key factors to consider when comparing different investment options?",
+          "split": "train"
+        },
+        {
+          "query_id": "d01ca25ebb5e325f",
+          "query": "Can you give me a rundown of the main arguments in this debate topic?",
+          "split": "train"
+        },
+        {
+          "query_id": "ce381bec2aaff199",
+          "query": "Can you provide insights on how to effectively communicate in a team environment?",
+          "split": "train"
+        },
+        {
+          "query_id": "6a20fdaae9ec8119",
+          "query": "How can I improve the tone of my cover letter to make it more engaging?",
+          "split": "train"
+        },
+        {
+          "query_id": "f3690a1bf46f4996",
+          "query": "What are some effective methods for gathering feedback from customers?",
+          "split": "train"
+        },
+        {
+          "query_id": "75d777c6991beeed",
+          "query": "Can you summarize the advantages and disadvantages of online learning?",
+          "split": "train"
+        },
+        {
+          "query_id": "cf90ef1aa5ee2123",
+          "query": "I'd like some advice on how to evaluate the success of a community outreach program.",
+          "split": "train"
+        },
+        {
+          "query_id": "5be3c06e2252da79",
+          "query": "What methods can I use for analyzing survey data?",
+          "split": "train"
+        },
+        {
+          "query_id": "d4ef6bcba36d2877",
+          "query": "I'd like to know the latest trends in digital marketing and their implications.",
+          "split": "train"
+        },
+        {
+          "query_id": "ed29acd1a22f5e1e",
+          "query": "How can I improve the clarity of my writing in this article?",
+          "split": "train"
+        },
+        {
+          "query_id": "ddf6ed1efdf2a014",
+          "query": "What methods are commonly used in psychological experiments to ensure accuracy?",
+          "split": "val"
+        },
+        {
+          "query_id": "d5d05fbe1dace058",
+          "query": "Can you provide insights on the role of robotics in modern manufacturing?",
+          "split": "val"
+        },
+        {
+          "query_id": "e5e1cde1a92ed55d",
+          "query": "How can I effectively organize my notes for a research project?",
+          "split": "val"
+        },
+        {
+          "query_id": "f76a3efe6862d71b",
+          "query": "How do I structure a report on my team’s performance over the past quarter?",
+          "split": "val"
+        },
+        {
+          "query_id": "af826bcfd5dfeb78",
+          "query": "Can you provide an overview of the latest trends in remote work?",
+          "split": "val"
+        },
+        {
+          "query_id": "297cb73776053424",
+          "query": "Could you summarize the main points from this podcast episode about health and wellness?",
+          "split": "val"
+        },
+        {
+          "query_id": "4ab11488cebd02e7",
+          "query": "What are some guidelines for writing an engaging blog post?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "b97e5432d964f9f6",
+          "query": "Can you review my presentation slides and suggest improvements?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "c4ffe524bb6482ad",
+          "query": "What are the pros and cons of remote work based on recent studies?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "0e9beb0a7eea8dc1",
+          "query": "What are some key sources for information on the history of jazz music?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "6975094a543d1e02",
+          "query": "Could you outline the steps involved in conducting a successful survey?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "425b90c0d4e7cd69",
+          "query": "What are the best practices for drafting a business proposal?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "research",
+      "role_b": "database_design",
+      "accepted_available": 87,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "5c4c1a895023edc5",
+          "query": "What are some creative ways to visualize survey results?",
+          "split": "train"
+        },
+        {
+          "query_id": "9fd30dbe83566808",
+          "query": "I'm researching climate change; how can I evaluate various scientific claims on this topic?",
+          "split": "train"
+        },
+        {
+          "query_id": "90d8c4a935c36b3d",
+          "query": "How do I create a schema for a university course registration system?",
+          "split": "train"
+        },
+        {
+          "query_id": "1a0a9e7c665dd801",
+          "query": "How do I synthesize qualitative and quantitative data for a comprehensive report?",
+          "split": "train"
+        },
+        {
+          "query_id": "8546e95d8e9c0f6a",
+          "query": "What's the best way to present data for a marketing report?",
+          "split": "train"
+        },
+        {
+          "query_id": "70debc5507bbb27c",
+          "query": "What are some effective ways to approach evidence synthesis in systematic reviews?",
+          "split": "train"
+        },
+        {
+          "query_id": "dec41728eb94088a",
+          "query": "What are the advantages of using indexes in a large database?",
+          "split": "train"
+        },
+        {
+          "query_id": "9bd9768f9a0d0e43",
+          "query": "How do I gather and evaluate information for a debate?",
+          "split": "train"
+        },
+        {
+          "query_id": "861688c8fe7e4fac",
+          "query": "Can you outline steps for organizing a community event?",
+          "split": "train"
+        },
+        {
+          "query_id": "87c458d4fb810779",
+          "query": "How should I structure my data for a blog's user comments section?",
+          "split": "train"
+        },
+        {
+          "query_id": "5cd5cfca9bb7b6c2",
+          "query": "What are the benefits of using indexes in database design?",
+          "split": "train"
+        },
+        {
+          "query_id": "ad17f204b2edf458",
+          "query": "Can you help me compare the benefits of different project management tools?",
+          "split": "train"
+        },
+        {
+          "query_id": "ba97ec6eb1084103",
+          "query": "What should I keep in mind when creating relationships between tables in my database?",
+          "split": "train"
+        },
+        {
+          "query_id": "fb1e984306414a74",
+          "query": "Can you suggest methods for comparing different educational approaches?",
+          "split": "train"
+        },
+        {
+          "query_id": "19648431b5d82afa",
+          "query": "How do I ensure proper normalization in my database without sacrificing performance?",
+          "split": "train"
+        },
+        {
+          "query_id": "ab2cad3cbae68b02",
+          "query": "What are some common constraints to consider when designing a relational database?",
+          "split": "train"
+        },
+        {
+          "query_id": "a494e23d82dc553e",
+          "query": "How do I set up constraints in a database for user data?",
+          "split": "train"
+        },
+        {
+          "query_id": "a7896646813fd8e3",
+          "query": "What methods exist to analyze trends from a combination of social media data?",
+          "split": "train"
+        },
+        {
+          "query_id": "7a230576ea2a3b61",
+          "query": "Can you help me find reliable sources about historical events?",
+          "split": "train"
+        },
+        {
+          "query_id": "76ea955a1cf48126",
+          "query": "What methods are effective for analyzing customer feedback?",
+          "split": "train"
+        },
+        {
+          "query_id": "e68473c9ef06cc42",
+          "query": "I'm building a database for my library; what indexes could improve my query performance?",
+          "split": "train"
+        },
+        {
+          "query_id": "2021b174bdf1c20a",
+          "query": "How should I organize a personal budget spreadsheet?",
+          "split": "train"
+        },
+        {
+          "query_id": "e7d2b6f38c600ca4",
+          "query": "What are some reliable sources to back up a thesis on mental health?",
+          "split": "train"
+        },
+        {
+          "query_id": "30f55858aa311383",
+          "query": "How can I structure my database to ensure data integrity and reduce errors?",
+          "split": "train"
+        },
+        {
+          "query_id": "236932f192f3a740",
+          "query": "I'd like to analyze different claims made in a recent article; what comparison methods should I use?",
+          "split": "train"
+        },
+        {
+          "query_id": "98a5436ea11dd360",
+          "query": "What sources can I use to support a claim about renewable energy?",
+          "split": "train"
+        },
+        {
+          "query_id": "2a6a98fd24a8dc56",
+          "query": "What are the key factors to consider when evaluating a new software solution?",
+          "split": "train"
+        },
+        {
+          "query_id": "aa555a263dd4c378",
+          "query": "What steps should I take to ensure my data schema supports future scalability?",
+          "split": "train"
+        },
+        {
+          "query_id": "312361dd32a4a048",
+          "query": "How can I effectively compare prices for tech gadgets?",
+          "split": "train"
+        },
+        {
+          "query_id": "6b31ed1c3c745068",
+          "query": "Can you explain how to use normalization to avoid data redundancy in my project?",
+          "split": "train"
+        },
+        {
+          "query_id": "1a074525625d4cf7",
+          "query": "How do I evaluate the credibility of online sources for my research?",
+          "split": "train"
+        },
+        {
+          "query_id": "74c7620c67fe38df",
+          "query": "How can I evaluate the credibility of sources I found for my paper?",
+          "split": "train"
+        },
+        {
+          "query_id": "83476d9d2039bd38",
+          "query": "What are the pros and cons of various programming languages for beginners?",
+          "split": "train"
+        },
+        {
+          "query_id": "607de11af91a014f",
+          "query": "Can you suggest a way to document changes in my database schema over time?",
+          "split": "train"
+        },
+        {
+          "query_id": "ccc789f668e8b5b9",
+          "query": "Can you suggest some effective ways to compare investment strategies?",
+          "split": "train"
+        },
+        {
+          "query_id": "099d4b306638c1c7",
+          "query": "What types of queries can I run on a normalized database to improve performance?",
+          "split": "train"
+        },
+        {
+          "query_id": "99fd3f7f429dcf7f",
+          "query": "How can I assess the validity of claims made in a news article?",
+          "split": "train"
+        },
+        {
+          "query_id": "577102dd15f5fdfa",
+          "query": "Can you help me understand how to analyze the performance of a new app?",
+          "split": "train"
+        },
+        {
+          "query_id": "1ef03758e8e8f7d9",
+          "query": "How do I set up foreign keys in my database design?",
+          "split": "train"
+        },
+        {
+          "query_id": "6bf1b692d6fd27e0",
+          "query": "What are the best data modeling techniques for a healthcare application?",
+          "split": "train"
+        },
+        {
+          "query_id": "c856bb39f649b304",
+          "query": "What are the advantages of different relational database management systems?",
+          "split": "val"
+        },
+        {
+          "query_id": "5fa69a3a215fe7ea",
+          "query": "Can you suggest approaches for comparing different theories in psychology?",
+          "split": "val"
+        },
+        {
+          "query_id": "f36cd3a72464313f",
+          "query": "What factors should I consider when comparing different research articles?",
+          "split": "val"
+        },
+        {
+          "query_id": "a557283aaee4ddb0",
+          "query": "How should I structure a presentation on emerging technologies?",
+          "split": "val"
+        },
+        {
+          "query_id": "7aafc9b01bf39b04",
+          "query": "What methods can I use to synthesize information from multiple articles?",
+          "split": "val"
+        },
+        {
+          "query_id": "0cdfbb05b79455da",
+          "query": "How do I design my database to support complex queries efficiently?",
+          "split": "val"
+        },
+        {
+          "query_id": "171f91da538ab2b9",
+          "query": "What’s the best way to visualize the relationships in my database schema?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "3493d675a3d7a807",
+          "query": "What techniques should I use to compare the effectiveness of different educational methods?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "ff6660aded105f46",
+          "query": "How do I determine the best way to summarize a lengthy article?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "f4351ff62e680aaa",
+          "query": "Can you help me outline a schema for a project management tool?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "74439780ebdf7899",
+          "query": "What are the steps to synthesize findings from a survey?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "b169a45bb4e36c47",
+          "query": "What are the key components of a well-designed relational schema?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "data",
+      "role_b": "database_design",
+      "accepted_available": 85,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "cd0f63abe8de8f3d",
+          "query": "Can you explain how to create a summary table from a large dataset in Excel?",
+          "split": "train"
+        },
+        {
+          "query_id": "79ef66a1c8d179b4",
+          "query": "I need to extract insights from customer usage data. What transformations should I apply?",
+          "split": "train"
+        },
+        {
+          "query_id": "f9b2ea864fbdb3d9",
+          "query": "How can I create a relational model for a university database that captures all student and course information?",
+          "split": "train"
+        },
+        {
+          "query_id": "8868953de44fdfcb",
+          "query": "What techniques can I use to visualize complex data relationships in my analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "83c2cab5a8ef4579",
+          "query": "How can I ensure my dataset is clean and ready for statistical analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "2138169599e91128",
+          "query": "What are some common pitfalls in data cleaning, and how can I avoid them?",
+          "split": "train"
+        },
+        {
+          "query_id": "e7d391d3d570c80b",
+          "query": "What are the best ways to use indexes to improve the performance of my database queries?",
+          "split": "train"
+        },
+        {
+          "query_id": "a83c82deb0cf5d89",
+          "query": "What are the main principles of designing a relational model for a business application?",
+          "split": "train"
+        },
+        {
+          "query_id": "547e706f8fcd6317",
+          "query": "Can you walk me through the process of extracting insights from a dataset using SQL?",
+          "split": "train"
+        },
+        {
+          "query_id": "aaf036e9fcfe0ddf",
+          "query": "Could you explain how to implement foreign keys in a relational database?",
+          "split": "train"
+        },
+        {
+          "query_id": "78d416479be582e4",
+          "query": "How can I model a customer relationship management system using a database?",
+          "split": "train"
+        },
+        {
+          "query_id": "2fb068057e731a32",
+          "query": "How do I transform this CSV file into a format that's better suited for analysis in Python?",
+          "split": "train"
+        },
+        {
+          "query_id": "027fe12a30a1e688",
+          "query": "Could you show me how to create indexes for faster querying in a database?",
+          "split": "train"
+        },
+        {
+          "query_id": "1765fce8cb1fe4bb",
+          "query": "What should I consider when creating a summary of experimental results for publication?",
+          "split": "train"
+        },
+        {
+          "query_id": "f121b8380a0c28db",
+          "query": "Is there a recommended way to structure survey data in a database for future analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "c19bbc59cf656923",
+          "query": "What methods can I use to visualize complex relationships in my data?",
+          "split": "train"
+        },
+        {
+          "query_id": "ef8562876eb3d3c0",
+          "query": "Can you recommend tools for data transformation and cleaning that are easy to use?",
+          "split": "train"
+        },
+        {
+          "query_id": "aa8e603ce127b302",
+          "query": "What should I know about designing efficient schemas for transactional systems?",
+          "split": "train"
+        },
+        {
+          "query_id": "9ee433351a53b439",
+          "query": "How do I create a cohesive schema for a multi-user application?",
+          "split": "train"
+        },
+        {
+          "query_id": "f42d5fc0d4812e2d",
+          "query": "What techniques should I use to prepare data for machine learning analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "f1a8e4ee3098ba2e",
+          "query": "How can I diagnose performance issues in my database queries?",
+          "split": "train"
+        },
+        {
+          "query_id": "0a1fd9f3f949f8d7",
+          "query": "I need to create a summary of website traffic data from the last year. What should I include?",
+          "split": "train"
+        },
+        {
+          "query_id": "741d99188549ce26",
+          "query": "What constraints should I consider when designing a database schema for an e-commerce site?",
+          "split": "train"
+        },
+        {
+          "query_id": "15d063a464cf929a",
+          "query": "What should I consider when defining primary keys and foreign keys in my database design?",
+          "split": "train"
+        },
+        {
+          "query_id": "65bcd66d12edb72c",
+          "query": "Can you help me identify outliers in my financial data?",
+          "split": "train"
+        },
+        {
+          "query_id": "e3d52ae0d8f019d6",
+          "query": "How should I organize my data to capture user feedback effectively?",
+          "split": "train"
+        },
+        {
+          "query_id": "9c7a21bb912bc44a",
+          "query": "What steps should I take to normalize my database schema to avoid redundancy?",
+          "split": "train"
+        },
+        {
+          "query_id": "56848cdfe8bcbda1",
+          "query": "How do I determine the right level of normalization for my database?",
+          "split": "train"
+        },
+        {
+          "query_id": "500054cd7d7b9450",
+          "query": "What are some strategies for diagnosing issues within a complex dataset?",
+          "split": "train"
+        },
+        {
+          "query_id": "d7924c7b28871e2c",
+          "query": "I have a large dataset of customer purchases. What are the key metrics I should analyze?",
+          "split": "train"
+        },
+        {
+          "query_id": "deee35d3fd622d5f",
+          "query": "How do I create a summary report from a dataset that includes multiple variables?",
+          "split": "train"
+        },
+        {
+          "query_id": "cbbca6c5e02926a0",
+          "query": "I'd like to create a schema for storing user profiles and their preferences. Any suggestions?",
+          "split": "train"
+        },
+        {
+          "query_id": "d3287a7ad1016c3f",
+          "query": "How do I set up relationships between different data entities in a document database?",
+          "split": "train"
+        },
+        {
+          "query_id": "82e8bbbd643bbc8a",
+          "query": "Can you suggest ways to handle missing values in my dataset before analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "da1df95d112ed6be",
+          "query": "How do I establish relationships between different tables in my database?",
+          "split": "train"
+        },
+        {
+          "query_id": "4db32dd88b97eece",
+          "query": "What should I look for when evaluating the schema design of an existing database?",
+          "split": "train"
+        },
+        {
+          "query_id": "b17282789f957ca9",
+          "query": "Could you advise me on setting up indexes to improve query performance in my database?",
+          "split": "train"
+        },
+        {
+          "query_id": "1aeeafe883aa35c2",
+          "query": "Can you provide me with guidance on implementing constraints in a database to maintain data integrity?",
+          "split": "train"
+        },
+        {
+          "query_id": "979fbe6f30defce7",
+          "query": "How can I effectively summarize survey results for a presentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "3f15a1d1ff6399f2",
+          "query": "I need to run some analysis on sales data. How do I prepare it for visualization?",
+          "split": "train"
+        },
+        {
+          "query_id": "8aa8df7815e6ad29",
+          "query": "Can you suggest methods for analyzing time series data to identify seasonal patterns?",
+          "split": "val"
+        },
+        {
+          "query_id": "eff749f7198a09c3",
+          "query": "What transformations are commonly used in data preprocessing for reports?",
+          "split": "val"
+        },
+        {
+          "query_id": "c1f4669dcb39cbbf",
+          "query": "How should I structure my data model to efficiently store user interactions with a website?",
+          "split": "val"
+        },
+        {
+          "query_id": "659bef116da5d3a7",
+          "query": "What are the steps involved in designing an effective data storage solution?",
+          "split": "val"
+        },
+        {
+          "query_id": "8d9d39498afaf1be",
+          "query": "What should I include in a data dictionary for my dataset?",
+          "split": "val"
+        },
+        {
+          "query_id": "9c69da6a4a36db5c",
+          "query": "Can you show me how to remove duplicates from my dataset without losing important information?",
+          "split": "val"
+        },
+        {
+          "query_id": "595d018c4e15dbc1",
+          "query": "Can you help me analyze the sales data for the last quarter and summarize the trends?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "3904f10cda91e9fc",
+          "query": "What tools are good for visualizing complex datasets?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "b5c51c968ecd3530",
+          "query": "What are some best practices for designing a relational database schema for a small online store?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "489f91ed2597f3fa",
+          "query": "What key fields should I include in a relational database for a library system?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "fd15456fdaadd92f",
+          "query": "I need to design a database for a new app; what are the best practices for setting up tables and relationships?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "326b1724b2a86a8a",
+          "query": "How can I model the relationships between different entities in my application?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "data",
+      "role_b": "fact_checking",
+      "accepted_available": 85,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "ae67ccf3149676ec",
+          "query": "Can you provide examples of how to effectively present data findings?",
+          "split": "train"
+        },
+        {
+          "query_id": "b3ac9defdd3692a4",
+          "query": "What should I consider when choosing a dataset for my analysis project?",
+          "split": "train"
+        },
+        {
+          "query_id": "4d3b9e8c328118d2",
+          "query": "What should I look for when diagnosing common data issues?",
+          "split": "train"
+        },
+        {
+          "query_id": "17cc16d8b0187aeb",
+          "query": "Can you summarize the key findings from this academic paper on education?",
+          "split": "train"
+        },
+        {
+          "query_id": "bf2d5f67056025bd",
+          "query": "Can you check the reliability of this article I read about climate change?",
+          "split": "train"
+        },
+        {
+          "query_id": "53d0258ebfb84c2c",
+          "query": "Could you provide a brief overview of the ethical considerations in data research?",
+          "split": "train"
+        },
+        {
+          "query_id": "a86f969d57fa37b9",
+          "query": "I need help understanding the basics of exploratory data analysis. What should I focus on?",
+          "split": "train"
+        },
+        {
+          "query_id": "1e46745f32c3b191",
+          "query": "I’d like to confirm the accuracy of this historical event's date; can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "9671bf4d85137eda",
+          "query": "What steps should I take to conduct a proper literature review for my thesis?",
+          "split": "train"
+        },
+        {
+          "query_id": "e132be73bea7947d",
+          "query": "What are the common pitfalls to avoid when transforming data?",
+          "split": "train"
+        },
+        {
+          "query_id": "d3c4ccc6484eddad",
+          "query": "I'm interested in the effects of different teaching methods on student performance. Can you find relevant studies?",
+          "split": "train"
+        },
+        {
+          "query_id": "8a3afcc575a56d69",
+          "query": "I’d like to analyze customer purchase patterns; where do I start?",
+          "split": "train"
+        },
+        {
+          "query_id": "740bf8dc1bb494e8",
+          "query": "What are the best tools for visualizing data trends over time?",
+          "split": "train"
+        },
+        {
+          "query_id": "5e6ea6197fcfb042",
+          "query": "I need an overview of the major events in tech history; can you provide that?",
+          "split": "train"
+        },
+        {
+          "query_id": "74e0ee3acdd187fb",
+          "query": "Can you provide a few examples of good practices for summarizing data findings?",
+          "split": "train"
+        },
+        {
+          "query_id": "9274395d48f662d4",
+          "query": "I want to see if this article about the economy is reliable; how can I check?",
+          "split": "train"
+        },
+        {
+          "query_id": "3438c8c4285f8f3f",
+          "query": "What are the main steps involved in cleaning a dataset before analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "dfea9a8e69815b56",
+          "query": "What are some common data transformation techniques and their applications?",
+          "split": "train"
+        },
+        {
+          "query_id": "e7950b65bc019bd4",
+          "query": "Can you check the accuracy of this statistic regarding obesity rates in children?",
+          "split": "train"
+        },
+        {
+          "query_id": "4a003032222e33ab",
+          "query": "How can I benchmark the performance of various machine learning algorithms?",
+          "split": "train"
+        },
+        {
+          "query_id": "07a991e27db63259",
+          "query": "Can you help me summarize the main findings of the latest climate change report?",
+          "split": "train"
+        },
+        {
+          "query_id": "18e0bb7b1422a637",
+          "query": "I need to verify the claim that eating chocolate improves mood. Is there research to support this?",
+          "split": "train"
+        },
+        {
+          "query_id": "8f8810e2e29e2a07",
+          "query": "Can you help me with steps to generate a summary report for my research project?",
+          "split": "train"
+        },
+        {
+          "query_id": "befa571eeca7762f",
+          "query": "Can you give me tips on how to effectively clean financial data?",
+          "split": "train"
+        },
+        {
+          "query_id": "9b6d010136eaf98f",
+          "query": "How should I go about analyzing data from multiple sources?",
+          "split": "train"
+        },
+        {
+          "query_id": "d71a02a93979227f",
+          "query": "Can you help me outline the key components of a good data analysis report?",
+          "split": "train"
+        },
+        {
+          "query_id": "2bc06c863db4da08",
+          "query": "What are the implications of recent discoveries in genetics for public health?",
+          "split": "train"
+        },
+        {
+          "query_id": "57b49bdc0f7acb9a",
+          "query": "What are some common challenges in transforming raw data into useful insights?",
+          "split": "train"
+        },
+        {
+          "query_id": "6c18665dd1bfe863",
+          "query": "I want to validate some claims made in a blog post about health; can you assist with that?",
+          "split": "train"
+        },
+        {
+          "query_id": "6229d48a124a3ff5",
+          "query": "How do I interpret the results of my data analysis in a meaningful way?",
+          "split": "train"
+        },
+        {
+          "query_id": "3d5c7c06a3f70519",
+          "query": "What steps can I take to visualize the correlations in my dataset?",
+          "split": "train"
+        },
+        {
+          "query_id": "83d74de23952301f",
+          "query": "I'd like to know if there are recent studies linking sleep patterns to mental health. Can you find any?",
+          "split": "train"
+        },
+        {
+          "query_id": "70b56dfeca43d53b",
+          "query": "Can you summarize the latest findings on renewable energy sources?",
+          "split": "train"
+        },
+        {
+          "query_id": "1154bf70e753f27a",
+          "query": "What are effective ways to present statistical data to an audience?",
+          "split": "train"
+        },
+        {
+          "query_id": "77ee8beab4f32707",
+          "query": "What are the key findings from the dataset about employee satisfaction?",
+          "split": "train"
+        },
+        {
+          "query_id": "320a56576eaea454",
+          "query": "I'm curious about the historical accuracy of this event; can you check?",
+          "split": "train"
+        },
+        {
+          "query_id": "5ed630448d083c7b",
+          "query": "Can you provide information on the relationship between diet and chronic diseases?",
+          "split": "train"
+        },
+        {
+          "query_id": "6f0f1f4176d99ed5",
+          "query": "What transformations do I need to apply to this dataset for my analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "3dc1c4795bc16dc0",
+          "query": "What is the importance of sample size in statistical analysis?",
+          "split": "train"
+        },
+        {
+          "query_id": "bee4cc4a5ecee882",
+          "query": "I need to verify the authenticity of a quote attributed to a famous person; can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "66ee8127984aac03",
+          "query": "Can you help me summarize the data I collected from last month's survey?",
+          "split": "val"
+        },
+        {
+          "query_id": "cfa8495b927b00bb",
+          "query": "How do I check the reliability of a source when researching online?",
+          "split": "val"
+        },
+        {
+          "query_id": "d4d5bc1f19a46073",
+          "query": "I want to analyze customer feedback data; what steps should I take first?",
+          "split": "val"
+        },
+        {
+          "query_id": "61018127eb3e9f07",
+          "query": "I'm curious about how climate change affects marine biodiversity. What does the research say?",
+          "split": "val"
+        },
+        {
+          "query_id": "500457e273f4ca9e",
+          "query": "Is there evidence that practicing mindfulness can reduce stress levels?",
+          "split": "val"
+        },
+        {
+          "query_id": "dad58040ed2b08c8",
+          "query": "I need to compare the revenue figures from this report; are they consistent across different sources?",
+          "split": "val"
+        },
+        {
+          "query_id": "40c397c41d24b2d4",
+          "query": "Can you help me with a summary of recent research on artificial intelligence?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "b29ef2b3dff36a16",
+          "query": "Can you assist me in identifying any outliers in my dataset?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "0e391401dab088e9",
+          "query": "Can you help me check the source of a claim about economic inequality?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "64609179d5dc9f89",
+          "query": "Can you verify the claim that meditation improves productivity?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "22d71d9b8952900c",
+          "query": "Help me summarize the results of a recent product test.",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "7e0d9ab99e79a967",
+          "query": "I found some conflicting information about the average temperature in July; can you verify the sources?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "writing",
+      "role_b": "documentation",
+      "accepted_available": 64,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "0452bacb2dd83ab4",
+          "query": "I'm looking for a clear explanation of how to set up a VPN on my home network.",
+          "split": "train"
+        },
+        {
+          "query_id": "6ddaa7aabc73324a",
+          "query": "Can you provide tips on writing an effective product review?",
+          "split": "train"
+        },
+        {
+          "query_id": "3711301fbcc1ee5f",
+          "query": "I need help drafting a project proposal; what should I include?",
+          "split": "train"
+        },
+        {
+          "query_id": "e0ce79006de102ec",
+          "query": "Please help me edit this paragraph for better flow and readability.",
+          "split": "train"
+        },
+        {
+          "query_id": "4d55704f38ca52b4",
+          "query": "Can you explain the key concepts of this programming language in simple terms?",
+          "split": "train"
+        },
+        {
+          "query_id": "f1e724e7f017b4c5",
+          "query": "I'd like to write a cover letter for a job application; any tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "6010034da5d62133",
+          "query": "Could you review my social media post for tone and engagement?",
+          "split": "train"
+        },
+        {
+          "query_id": "7f0b1356b0621b74",
+          "query": "Can you suggest improvements for this product description to make it more persuasive?",
+          "split": "train"
+        },
+        {
+          "query_id": "8a6f95ccd74cec26",
+          "query": "I'm looking for tips on how to write effective meeting minutes.",
+          "split": "train"
+        },
+        {
+          "query_id": "5cf2944de6342773",
+          "query": "How do I compare different databases effectively in a report?",
+          "split": "train"
+        },
+        {
+          "query_id": "8c6e52dceb836332",
+          "query": "I'd like to create a list of FAQs for our new website; what questions should I include?",
+          "split": "train"
+        },
+        {
+          "query_id": "fc6da4f0fc62aa65",
+          "query": "Can you help me find the right words to express gratitude in my thank-you notes?",
+          "split": "train"
+        },
+        {
+          "query_id": "e4e3837037481da1",
+          "query": "How do I format this report to make it more reader-friendly?",
+          "split": "train"
+        },
+        {
+          "query_id": "d82eece5b4be30f6",
+          "query": "Can you help me list the benefits of using this new tool in bullet points?",
+          "split": "train"
+        },
+        {
+          "query_id": "702dfcb5b08a174e",
+          "query": "Can you summarize the benefits of using version control systems for developers?",
+          "split": "train"
+        },
+        {
+          "query_id": "af2741b59d0ad23d",
+          "query": "Could you provide an overview of how to conduct a scientific experiment?",
+          "split": "train"
+        },
+        {
+          "query_id": "a08bf830536cb6b3",
+          "query": "How do I best convey my ideas in a presentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "c0692743965261ff",
+          "query": "Can you help me rewrite this email to make it more professional?",
+          "split": "train"
+        },
+        {
+          "query_id": "dafdb3d59d3034a8",
+          "query": "Can you explain the purpose of this configuration file in simple terms?",
+          "split": "train"
+        },
+        {
+          "query_id": "29be078bf460194b",
+          "query": "Could you draft a project update report for my team that highlights our main accomplishments?",
+          "split": "train"
+        },
+        {
+          "query_id": "5d8c6ac69934b4fc",
+          "query": "How do I explain the concept of cloud storage to someone who's not tech-savvy?",
+          "split": "train"
+        },
+        {
+          "query_id": "dd162c4362bc5a29",
+          "query": "I'm looking for ways to improve the flow of my training manual.",
+          "split": "train"
+        },
+        {
+          "query_id": "5b3a6d0a5892df29",
+          "query": "I need guidance on drafting a research proposal; what should I include?",
+          "split": "train"
+        },
+        {
+          "query_id": "15008912b246e218",
+          "query": "I'd like some feedback on this draft report to make sure it's well-structured.",
+          "split": "train"
+        },
+        {
+          "query_id": "33f762961822bee9",
+          "query": "How can I organize my thoughts before writing an article?",
+          "split": "train"
+        },
+        {
+          "query_id": "e9c76677405703e3",
+          "query": "I need a step-by-step guide on how to set up a home Wi-Fi network.",
+          "split": "train"
+        },
+        {
+          "query_id": "efa4afd9bd7eca01",
+          "query": "I want to revise my newsletter for clarity; can you help with that?",
+          "split": "train"
+        },
+        {
+          "query_id": "fb4d3f16a0983ed2",
+          "query": "Can you assist me in crafting a compelling conclusion for my essay?",
+          "split": "train"
+        },
+        {
+          "query_id": "54d44383f25de036",
+          "query": "I need a clear explanation of how to conduct a performance review with employees.",
+          "split": "train"
+        },
+        {
+          "query_id": "351164a7b0ef8bed",
+          "query": "I need to make my presentation more concise; what are some strategies?",
+          "split": "train"
+        },
+        {
+          "query_id": "74e1360803845634",
+          "query": "What's an effective way to write an introduction for a blog post?",
+          "split": "train"
+        },
+        {
+          "query_id": "db374fe66f614e28",
+          "query": "I'd like suggestions for making my thesis statement more compelling.",
+          "split": "train"
+        },
+        {
+          "query_id": "b9c0cc7a658575f7",
+          "query": "Can you help me revise a letter of recommendation to sound more impactful?",
+          "split": "train"
+        },
+        {
+          "query_id": "8e09bfcd10913d52",
+          "query": "Could you help me with the outline for a presentation on data privacy?",
+          "split": "train"
+        },
+        {
+          "query_id": "811aa29b3473299b",
+          "query": "Could you assist me in crafting a summary for my latest project findings?",
+          "split": "train"
+        },
+        {
+          "query_id": "618aca8616dc5600",
+          "query": "I need examples of effective communication in teamwork; can you assist?",
+          "split": "train"
+        },
+        {
+          "query_id": "47d2174ee4f318bd",
+          "query": "Can you help me summarize this research paper into key takeaways?",
+          "split": "train"
+        },
+        {
+          "query_id": "0746aae7eb3da6f2",
+          "query": "Can you provide clarity on how to interpret these data sets?",
+          "split": "train"
+        },
+        {
+          "query_id": "6f034f711fb7ad6e",
+          "query": "I'd like to know how to write a compelling case study that highlights customer success.",
+          "split": "train"
+        },
+        {
+          "query_id": "e953bb585de59679",
+          "query": "Can you help me create an outline for a blog post about remote work tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "30a312b1a3589829",
+          "query": "Can you help me draft an email to request feedback from my colleagues?",
+          "split": "val"
+        },
+        {
+          "query_id": "16a9dbdd7bf7c87f",
+          "query": "How can I make my presentation slides more visually appealing and informative?",
+          "split": "val"
+        },
+        {
+          "query_id": "9d2a096e5cd4e606",
+          "query": "Can you help me write a script for a video tutorial on using our software?",
+          "split": "val"
+        },
+        {
+          "query_id": "e6740b6e67632f93",
+          "query": "Can you proofread this article and suggest ways to make it more engaging?",
+          "split": "val"
+        },
+        {
+          "query_id": "6b87e20827c0c3f7",
+          "query": "Can you help me structure a business report to highlight the main findings?",
+          "split": "val"
+        },
+        {
+          "query_id": "a1136ae8c9b9f6e9",
+          "query": "Can you help me create a checklist for planning a successful event?",
+          "split": "val"
+        },
+        {
+          "query_id": "c419898250bad76b",
+          "query": "Can you write a user-friendly guide for setting up a new smartphone?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "fd0e27c1d7fd2a76",
+          "query": "I'm drafting a proposal for a marketing campaign; can you suggest key sections to include?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "05127133054f2ea6",
+          "query": "I'm looking for ways to improve the clarity of my writing; any suggestions?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "3c6eb95c1a8fe029",
+          "query": "I'd like some tips on how to improve the clarity of my technical documentation.",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "3dd7bd010e99b060",
+          "query": "Can you break down the installation process for this software in layman's terms?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "3eaa68b08832e775",
+          "query": "Could you help me create a timeline for my project milestones?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "writing",
+      "role_b": "translation",
+      "accepted_available": 74,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "0130aca11f675350",
+          "query": "I'm trying to improve my writing style—can you give me feedback on this essay?",
+          "split": "train"
+        },
+        {
+          "query_id": "d01ef7aa7dca88d9",
+          "query": "I have a report in English that I need to submit in Italian. Can you help with that?",
+          "split": "train"
+        },
+        {
+          "query_id": "db10b2dcdf481f6c",
+          "query": "I’d like to revise my project outline to make it more structured; can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "7898d35c1585532e",
+          "query": "I need a translation of this product description from English to Spanish.",
+          "split": "train"
+        },
+        {
+          "query_id": "1d8a3c0110b2a134",
+          "query": "Can you help me outline the main themes of this novel?",
+          "split": "train"
+        },
+        {
+          "query_id": "0e923923831dc177",
+          "query": "I'd like help converting this casual blog post into a more academic tone.",
+          "split": "train"
+        },
+        {
+          "query_id": "084b206cebfcb54e",
+          "query": "Can you rephrase this paragraph to make it clearer?",
+          "split": "train"
+        },
+        {
+          "query_id": "191c94937baf0a98",
+          "query": "I need to translate this contract into Russian—what should I be careful about?",
+          "split": "train"
+        },
+        {
+          "query_id": "865a9d3d83bd0757",
+          "query": "Can you provide tips for improving the clarity of my website content?",
+          "split": "train"
+        },
+        {
+          "query_id": "667b1efe1492a723",
+          "query": "What’s the best way to translate this business proposal into Arabic?",
+          "split": "train"
+        },
+        {
+          "query_id": "774eb19c348e0916",
+          "query": "Please help me draft a formal invitation to an event.",
+          "split": "train"
+        },
+        {
+          "query_id": "01745aa912ad05d0",
+          "query": "Could you help translate this newsletter into Hindi and ensure it sounds friendly?",
+          "split": "train"
+        },
+        {
+          "query_id": "437e464c86a360ee",
+          "query": "Can you assist me with editing my resume for better impact?",
+          "split": "train"
+        },
+        {
+          "query_id": "d1643b4ff88da433",
+          "query": "Can you explain the key points of this document in bullet points?",
+          "split": "train"
+        },
+        {
+          "query_id": "e04c01826095380d",
+          "query": "I'd like help drafting an invitation for a formal event; can you assist?",
+          "split": "train"
+        },
+        {
+          "query_id": "d60fbb8517596cba",
+          "query": "Can you rewrite this paragraph to improve its clarity?",
+          "split": "train"
+        },
+        {
+          "query_id": "960591fcbc3a2628",
+          "query": "Can you condense this lengthy text into a few concise sentences?",
+          "split": "train"
+        },
+        {
+          "query_id": "fe36fe020c6f74c7",
+          "query": "Can you help me improve this email I wrote to my colleague?",
+          "split": "train"
+        },
+        {
+          "query_id": "8c0b86ecc664d5c8",
+          "query": "Can you revise my thank-you note to sound more heartfelt?",
+          "split": "train"
+        },
+        {
+          "query_id": "02b5ea8b96446973",
+          "query": "I’d like to clarify some points in this exercise manual for better understanding.",
+          "split": "train"
+        },
+        {
+          "query_id": "5c1bdc2aec75ddea",
+          "query": "Could you make this technical document easier to understand for a general audience?",
+          "split": "train"
+        },
+        {
+          "query_id": "a4891fd29105bad0",
+          "query": "Can you clarify the main arguments in this policy paper in layman's terms?",
+          "split": "train"
+        },
+        {
+          "query_id": "eb6e1d7c3dec6033",
+          "query": "I need assistance in rephrasing this feedback to sound more constructive.",
+          "split": "train"
+        },
+        {
+          "query_id": "7d1c4c9cd1612dba",
+          "query": "Can you assist me in formatting a business email for clarity and professionalism?",
+          "split": "train"
+        },
+        {
+          "query_id": "0d7289d6358526ef",
+          "query": "How can I make this product review sound more enthusiastic?",
+          "split": "train"
+        },
+        {
+          "query_id": "6205241626b6d1e8",
+          "query": "I want to create a presentation outline based on this article. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "b6a64ce5e37fdebf",
+          "query": "I'd like help improving the coherence of my research paper's introduction.",
+          "split": "train"
+        },
+        {
+          "query_id": "192a96aae02773d2",
+          "query": "Can you assist in drafting a thank-you note for a recent interview?",
+          "split": "train"
+        },
+        {
+          "query_id": "db91e23c99460676",
+          "query": "I need assistance in drafting a clear outline for my thesis.",
+          "split": "train"
+        },
+        {
+          "query_id": "50b936aa87eb4258",
+          "query": "Can you help me restructure this proposal to improve its flow?",
+          "split": "train"
+        },
+        {
+          "query_id": "1e58f2cd21ea81b7",
+          "query": "Can you help me refine this speech to make it more engaging?",
+          "split": "train"
+        },
+        {
+          "query_id": "ddd37ce33caff3a9",
+          "query": "I'm writing a report and need help organizing my thoughts clearly.",
+          "split": "train"
+        },
+        {
+          "query_id": "ca69829b85bf3279",
+          "query": "I need to translate a set of FAQs into Mandarin while keeping the tone approachable.",
+          "split": "train"
+        },
+        {
+          "query_id": "58780911f57370ca",
+          "query": "Can you help me rewrite this email to sound more professional?",
+          "split": "train"
+        },
+        {
+          "query_id": "b7bdab56b4ca2cb0",
+          "query": "Can you provide feedback on the tone of this blog post?",
+          "split": "train"
+        },
+        {
+          "query_id": "5ba2c6b56a4883d0",
+          "query": "I'd like to translate this academic paper into Japanese and ensure it reads naturally.",
+          "split": "train"
+        },
+        {
+          "query_id": "592a4182371c989b",
+          "query": "I need to translate this technical document into German—any advice on terminology?",
+          "split": "train"
+        },
+        {
+          "query_id": "e116ff288bf675b6",
+          "query": "Could you translate my resume into Spanish while keeping the original meaning?",
+          "split": "train"
+        },
+        {
+          "query_id": "0a36f60c025d06f7",
+          "query": "Please help me convert this promotional email into a more appealing format.",
+          "split": "train"
+        },
+        {
+          "query_id": "4c87c173eb05bae6",
+          "query": "Can you suggest a better way to phrase this sentence for my presentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "94b1a0c85f8cfee7",
+          "query": "Can you translate this customer feedback into Italian while maintaining its tone?",
+          "split": "val"
+        },
+        {
+          "query_id": "000f5fa29cb6b2ff",
+          "query": "Could you edit my essay for clarity and structure?",
+          "split": "val"
+        },
+        {
+          "query_id": "8ca68c53c44fb2fb",
+          "query": "Can you proofread this cover letter for any grammar mistakes?",
+          "split": "val"
+        },
+        {
+          "query_id": "8de1674e4abe85c8",
+          "query": "Can you help me revise this project description to be more appealing?",
+          "split": "val"
+        },
+        {
+          "query_id": "cc62e81ce404bde0",
+          "query": "I need a summary of this article in simple language.",
+          "split": "val"
+        },
+        {
+          "query_id": "78b604ad74bfbf11",
+          "query": "Can you assist me in drafting a formal complaint letter?",
+          "split": "val"
+        },
+        {
+          "query_id": "49639b13aae19e71",
+          "query": "Could you help me convert this casual text message into a formal email?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "cef6b5020cd072fc",
+          "query": "I need help translating this instruction manual into German.",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "56e3911ad4a2ea45",
+          "query": "Could you translate this business proposal into Italian and maintain its original context?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "98089bcde9fc4747",
+          "query": "I have some research findings; can you help me summarize them effectively?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "902625452f50eb70",
+          "query": "Can you assist with translating this technical jargon into common language?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "5219584e954065e6",
+          "query": "Could you help me adapt this recipe for a gluten-free audience?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "design",
+      "role_b": "accessibility_review",
+      "accepted_available": 86,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "46bf2d8a510fd2d9",
+          "query": "How can I make my document easier to read for everyone?",
+          "split": "train"
+        },
+        {
+          "query_id": "1ec1c8262a6cf185",
+          "query": "How can I make sure my web forms are accessible to everyone?",
+          "split": "train"
+        },
+        {
+          "query_id": "4ec70723d407c50e",
+          "query": "I'm looking for ways to ensure that my website is friendly for screen readers.",
+          "split": "train"
+        },
+        {
+          "query_id": "372ff3d94b1ee12d",
+          "query": "What strategies can I use to guide users through my online tutorials?",
+          "split": "train"
+        },
+        {
+          "query_id": "351d93a0ee763178",
+          "query": "How can I create a user-friendly interface for my new app?",
+          "split": "train"
+        },
+        {
+          "query_id": "f853d20350f093a6",
+          "query": "I want to make my project documentation clearer. Any tips?",
+          "split": "train"
+        },
+        {
+          "query_id": "3d5678f716445211",
+          "query": "Can you suggest ways to make my website color scheme more accessible?",
+          "split": "train"
+        },
+        {
+          "query_id": "0c2f9013baec2632",
+          "query": "Can you suggest ways to streamline the checkout process in my app?",
+          "split": "train"
+        },
+        {
+          "query_id": "c57bca4398e5204b",
+          "query": "I'd like to know how to gather user feedback effectively.",
+          "split": "train"
+        },
+        {
+          "query_id": "43c94eff44c70311",
+          "query": "How can I organize an online workshop that is engaging for diverse audiences?",
+          "split": "train"
+        },
+        {
+          "query_id": "7f245e13196c9cda",
+          "query": "What are important factors to consider when designing a mobile interface?",
+          "split": "train"
+        },
+        {
+          "query_id": "f54390d1d148af81",
+          "query": "What's the best practice for creating interactive content online?",
+          "split": "train"
+        },
+        {
+          "query_id": "530a1b55549eb0c2",
+          "query": "What are some ways to improve accessibility in my classroom materials?",
+          "split": "train"
+        },
+        {
+          "query_id": "fd247ff892759e80",
+          "query": "What steps should I take to ensure my content is readable for older adults?",
+          "split": "train"
+        },
+        {
+          "query_id": "265bd6e17b7e6b49",
+          "query": "I'm looking for ways to streamline the onboarding process for users of my app.",
+          "split": "train"
+        },
+        {
+          "query_id": "515d821f53a777a8",
+          "query": "What are some top tips for improving the contrast and readability of my website?",
+          "split": "train"
+        },
+        {
+          "query_id": "8c2d738eada97d3f",
+          "query": "Can you help me figure out how to categorize my articles for better navigation?",
+          "split": "train"
+        },
+        {
+          "query_id": "da4965b7a6b5059d",
+          "query": "I'm looking for ways to improve my blog's accessibility. Any advice?",
+          "split": "train"
+        },
+        {
+          "query_id": "d37bdf36fe0db453",
+          "query": "How can I improve the flow of information in my online tutorial?",
+          "split": "train"
+        },
+        {
+          "query_id": "c82a38b33ce0c46b",
+          "query": "How do I ensure my app is easy to navigate for everyone?",
+          "split": "train"
+        },
+        {
+          "query_id": "0158ccceaa1b47cb",
+          "query": "What is the best way to organize a team meeting agenda?",
+          "split": "train"
+        },
+        {
+          "query_id": "8db0819ffa59f665",
+          "query": "How can I make sure my presentation is easy to follow for everyone?",
+          "split": "train"
+        },
+        {
+          "query_id": "aa8705b4317c51dc",
+          "query": "What's the best way to structure my online portfolio for visitors?",
+          "split": "train"
+        },
+        {
+          "query_id": "21882d674156751c",
+          "query": "What aspects should I consider when creating a visually appealing resume?",
+          "split": "train"
+        },
+        {
+          "query_id": "6745fe2921b3d300",
+          "query": "What are some effective strategies for organizing my research notes?",
+          "split": "train"
+        },
+        {
+          "query_id": "69d4cf57c83cc210",
+          "query": "How do I create a more inclusive environment in my classroom?",
+          "split": "train"
+        },
+        {
+          "query_id": "736d6bd874e37c97",
+          "query": "I need advice on labeling elements in my app for better clarity. What should I consider?",
+          "split": "train"
+        },
+        {
+          "query_id": "9f34e5129363950d",
+          "query": "I'm looking for methods to structure my research paper effectively.",
+          "split": "train"
+        },
+        {
+          "query_id": "3e85d76dcb33842a",
+          "query": "What strategies can I use to organize my team’s project management tools?",
+          "split": "train"
+        },
+        {
+          "query_id": "29313978b5438c66",
+          "query": "How can I improve the search feature on my website?",
+          "split": "train"
+        },
+        {
+          "query_id": "14f22d88f9853447",
+          "query": "How can I visually represent data effectively in presentations?",
+          "split": "train"
+        },
+        {
+          "query_id": "db4dbd64b83b1c43",
+          "query": "Can you help me brainstorm ways to enhance the interface of my software?",
+          "split": "train"
+        },
+        {
+          "query_id": "f96c5a516a09c37a",
+          "query": "Can you recommend tools for testing keyboard accessibility on my site?",
+          "split": "train"
+        },
+        {
+          "query_id": "b4d66f942aa4f530",
+          "query": "Can you suggest ways to make my email newsletter more engaging?",
+          "split": "train"
+        },
+        {
+          "query_id": "f5c09edb2043c050",
+          "query": "I'm trying to figure out how to improve user feedback on my app, any ideas?",
+          "split": "train"
+        },
+        {
+          "query_id": "f54a9036e0bd2665",
+          "query": "How can I ensure that my web content is readable for people with visual impairments?",
+          "split": "train"
+        },
+        {
+          "query_id": "e1277b7adec802d1",
+          "query": "What techniques can I use to make my digital content more engaging?",
+          "split": "train"
+        },
+        {
+          "query_id": "991c7419c990abd3",
+          "query": "How should I use headings to improve the structure of my articles?",
+          "split": "train"
+        },
+        {
+          "query_id": "add6167fa23ff854",
+          "query": "I'm looking to refine the layout of my e-commerce site. What should I focus on?",
+          "split": "train"
+        },
+        {
+          "query_id": "8d12f549b9c4f106",
+          "query": "I'd like tips on creating more user-centered content for my website.",
+          "split": "train"
+        },
+        {
+          "query_id": "69ed989b1f1242cd",
+          "query": "What are the best practices for designing forms that are user-friendly?",
+          "split": "val"
+        },
+        {
+          "query_id": "2c6e27d0cefded7a",
+          "query": "What are some common pitfalls in website navigation I should avoid?",
+          "split": "val"
+        },
+        {
+          "query_id": "150ce8c164504df6",
+          "query": "What layout should I use for my interactive content to encourage engagement?",
+          "split": "val"
+        },
+        {
+          "query_id": "cceb08cfd27b5223",
+          "query": "I need help designing an application form that is clear and straightforward.",
+          "split": "val"
+        },
+        {
+          "query_id": "9aeb83d7e5d9c65a",
+          "query": "What are some good tips for improving website navigation?",
+          "split": "val"
+        },
+        {
+          "query_id": "15e86e5868d97ddf",
+          "query": "Can you suggest how to layout content on my blog for better engagement?",
+          "split": "val"
+        },
+        {
+          "query_id": "c7cc1180f8bc1e0a",
+          "query": "How can I ensure my documents are easy to read for individuals with learning disabilities?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "34d16484452ba416",
+          "query": "How can I ensure my online content is inclusive for diverse audiences?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "a4fbf572a5ae6d1e",
+          "query": "Can you help me organize my task list for the week?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "7203f751aa85f7cc",
+          "query": "I need ideas for making my conference materials more user-friendly.",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "e23a0ba8f2cd8ee3",
+          "query": "What are some ways to improve the navigation on my blog?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "74267ddb59c22d5a",
+          "query": "What are some inclusive design principles I should keep in mind?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "operations",
+      "role_b": "incident_management",
+      "accepted_available": 90,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "198aae4a57da67ac",
+          "query": "Can you help me draft a follow-up plan after a service incident?",
+          "split": "train"
+        },
+        {
+          "query_id": "e2040ab55b8d1007",
+          "query": "How do I set up a system to track action items from our team meetings?",
+          "split": "train"
+        },
+        {
+          "query_id": "2a0b45616f967355",
+          "query": "I could use some help planning our next project phase. What should I consider?",
+          "split": "train"
+        },
+        {
+          "query_id": "b2bd637e94166493",
+          "query": "I'm looking for ways to improve the documentation for our internal processes. Any suggestions?",
+          "split": "train"
+        },
+        {
+          "query_id": "cfedd5d752ef3890",
+          "query": "I'm facing challenges with incident triage. What steps should I prioritize?",
+          "split": "train"
+        },
+        {
+          "query_id": "601f9ecbf88d0ee6",
+          "query": "What can we do to enhance communication during incident response?",
+          "split": "train"
+        },
+        {
+          "query_id": "ac12d959d5bc60ee",
+          "query": "How do I assess the impact of a recent software update on our users?",
+          "split": "train"
+        },
+        {
+          "query_id": "f32571c6a15d2995",
+          "query": "I want to improve our handoff process between departments. What steps should I take?",
+          "split": "train"
+        },
+        {
+          "query_id": "c27eeeda5876befe",
+          "query": "What should be included in a recovery plan after an operational disruption?",
+          "split": "train"
+        },
+        {
+          "query_id": "4724d6411c99d2e5",
+          "query": "What are some indicators of a successful project completion?",
+          "split": "train"
+        },
+        {
+          "query_id": "6dd52029df3d0fa3",
+          "query": "What steps should we take to assess the impact of a recent software update on our users?",
+          "split": "train"
+        },
+        {
+          "query_id": "c290ce76ffedd009",
+          "query": "I'm looking for a clear template to assess the impact of changes in our service. Can you provide one?",
+          "split": "train"
+        },
+        {
+          "query_id": "6cac8b41add19f66",
+          "query": "How can I structure a process for ensuring customer support requests are addressed promptly?",
+          "split": "train"
+        },
+        {
+          "query_id": "e5e9253635c7dd1c",
+          "query": "How can I develop a checklist for quality assurance in our product?",
+          "split": "train"
+        },
+        {
+          "query_id": "1f69412c109641d0",
+          "query": "What steps should we take to recover from a recent operational failure?",
+          "split": "train"
+        },
+        {
+          "query_id": "41c98cc4f0917bd4",
+          "query": "How can we ensure that our project execution aligns with the outlined constraints?",
+          "split": "train"
+        },
+        {
+          "query_id": "ca909dbf02ae9bae",
+          "query": "What are some techniques for facilitating effective brainstorming sessions?",
+          "split": "train"
+        },
+        {
+          "query_id": "aed21a7dda3f180f",
+          "query": "What steps can we take to ensure reliability in our production environment?",
+          "split": "train"
+        },
+        {
+          "query_id": "fadc1956baa28a67",
+          "query": "What would you suggest as key metrics for monitoring our process improvement initiatives?",
+          "split": "train"
+        },
+        {
+          "query_id": "aa69e2502ff50314",
+          "query": "What’s the best way to prioritize tasks if multiple projects are competing for resources?",
+          "split": "train"
+        },
+        {
+          "query_id": "a334c311e7f313c5",
+          "query": "I need tips on handling unexpected issues during a software deployment. Any suggestions?",
+          "split": "train"
+        },
+        {
+          "query_id": "cd6ad1409b23d7e3",
+          "query": "What tools can assist us in monitoring progress on our team's objectives?",
+          "split": "train"
+        },
+        {
+          "query_id": "68df2fa8f276318d",
+          "query": "How do I analyze the impact of changes made to our operational procedures?",
+          "split": "train"
+        },
+        {
+          "query_id": "be8eef8506732e29",
+          "query": "Can you suggest ways to streamline our incident response for IT issues?",
+          "split": "train"
+        },
+        {
+          "query_id": "ac6f33a57baa68f7",
+          "query": "What processes can we adopt to ensure reliable handoffs in our engineering projects?",
+          "split": "train"
+        },
+        {
+          "query_id": "4accca94f1a0d503",
+          "query": "Could you recommend a framework for monitoring the success of our new initiatives?",
+          "split": "train"
+        },
+        {
+          "query_id": "4dcba15eb2da5a70",
+          "query": "Can you help me create a checklist for monitoring project deadlines?",
+          "split": "train"
+        },
+        {
+          "query_id": "d6c2f2b779704e48",
+          "query": "Can you help me draft a communication plan for informing stakeholders of changes?",
+          "split": "train"
+        },
+        {
+          "query_id": "52bebac59dd09a96",
+          "query": "What should I include in a status report for our ongoing project?",
+          "split": "train"
+        },
+        {
+          "query_id": "189c76cc82c5f337",
+          "query": "What are some best practices for improving our team's meeting efficiency?",
+          "split": "train"
+        },
+        {
+          "query_id": "3217a11580c26cef",
+          "query": "Can you help me create a timeline for our upcoming product features?",
+          "split": "train"
+        },
+        {
+          "query_id": "412a3269a28c224f",
+          "query": "I need advice on how to monitor user feedback to enhance our service reliability. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "54642f98d3a1133b",
+          "query": "What are the best practices for developing a recovery strategy after a service disruption?",
+          "split": "train"
+        },
+        {
+          "query_id": "a6f15dd2eb422f49",
+          "query": "How can we identify and mitigate risks that could impact project timelines?",
+          "split": "train"
+        },
+        {
+          "query_id": "8421507719ef0efa",
+          "query": "What key metrics should we track to assess team performance?",
+          "split": "train"
+        },
+        {
+          "query_id": "61adc7bfbb24d5ca",
+          "query": "What are effective methods for monitoring compliance in our processes?",
+          "split": "train"
+        },
+        {
+          "query_id": "75ed592d5a26031a",
+          "query": "What steps should I take to ensure our quality control processes are effective?",
+          "split": "train"
+        },
+        {
+          "query_id": "20cce5b3522b7e16",
+          "query": "How do I estimate the timelines for resolving a service outage?",
+          "split": "train"
+        },
+        {
+          "query_id": "649f8dbf4b04e78e",
+          "query": "How should we document follow-up actions after an operational incident?",
+          "split": "train"
+        },
+        {
+          "query_id": "54128b572dc30b71",
+          "query": "How do I determine the root cause of a recurring issue in our system?",
+          "split": "train"
+        },
+        {
+          "query_id": "316365d62a1157f0",
+          "query": "Can you outline a process for documenting our internal workflows?",
+          "split": "val"
+        },
+        {
+          "query_id": "72ebf4f218058456",
+          "query": "How can we effectively communicate the impact of an incident to our stakeholders?",
+          "split": "val"
+        },
+        {
+          "query_id": "45019f63303d5611",
+          "query": "What kind of follow-up actions should we implement after resolving a customer complaint?",
+          "split": "val"
+        },
+        {
+          "query_id": "2e46e6c76dcad1ea",
+          "query": "What methods can help us identify constraints in our current project workflows?",
+          "split": "val"
+        },
+        {
+          "query_id": "f658517af2835da0",
+          "query": "How do I manage dependencies between different teams in a project?",
+          "split": "val"
+        },
+        {
+          "query_id": "bb73f5cfc37fdf60",
+          "query": "What are the steps to implement user feedback into our development process?",
+          "split": "val"
+        },
+        {
+          "query_id": "647f00277f509ad4",
+          "query": "What’s the best way to document the timeline of events during an operational incident?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "b3d611fb10fceb89",
+          "query": "How can we effectively manage timelines for our upcoming product launch?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "f7061e88837cb025",
+          "query": "How can we improve our team's collaboration during project execution?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "d024a3199b39de39",
+          "query": "Can you provide examples of effective impact assessments for service changes?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "63fd837ab7da2747",
+          "query": "How can I ensure that all team members are aware of their responsibilities?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "473c06c800d73ffd",
+          "query": "Can you help me create a checklist for our monitoring procedures?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "requirements_analysis",
+      "role_b": "documentation",
+      "accepted_available": 86,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "5b52b2c9554cc15a",
+          "query": "I'm looking for a way to present the key features of our product effectively; any suggestions?",
+          "split": "train"
+        },
+        {
+          "query_id": "353339a57c615882",
+          "query": "I need to identify the main stakeholders for our product launch. Can you assist?",
+          "split": "train"
+        },
+        {
+          "query_id": "b4c1dd35902dc338",
+          "query": "How do we ensure that our acceptance criteria align with user expectations?",
+          "split": "train"
+        },
+        {
+          "query_id": "f7ccf506d69b90a9",
+          "query": "Can you help me compile a list of common errors users might encounter in our app?",
+          "split": "train"
+        },
+        {
+          "query_id": "d8d841ee1af0c075",
+          "query": "I’m looking for a comprehensive guide on how to use our reporting tool.",
+          "split": "train"
+        },
+        {
+          "query_id": "d89c51eeb05731b5",
+          "query": "I need to create a usability checklist for our new application. Can you help?",
+          "split": "train"
+        },
+        {
+          "query_id": "64d9764ac557b9ad",
+          "query": "What information should be captured in our meeting notes?",
+          "split": "train"
+        },
+        {
+          "query_id": "14ade018ba09acd1",
+          "query": "What are the main steps in the product development lifecycle?",
+          "split": "train"
+        },
+        {
+          "query_id": "3f9084307e209127",
+          "query": "What documentation do we have for the current software procedures?",
+          "split": "train"
+        },
+        {
+          "query_id": "ee4ae0cfaa091eb4",
+          "query": "Can you provide tips on how to write clear and effective release notes?",
+          "split": "train"
+        },
+        {
+          "query_id": "19159cf3ffc7f289",
+          "query": "What user workflows should be documented for our app's features?",
+          "split": "train"
+        },
+        {
+          "query_id": "2c5750749c71c1d5",
+          "query": "How can I create more user-friendly documentation for our software?",
+          "split": "train"
+        },
+        {
+          "query_id": "8a7b20a3a69ef699",
+          "query": "What examples can you provide for effective product documentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "0296f5524f27ed08",
+          "query": "Can you explain how the API works with some examples?",
+          "split": "train"
+        },
+        {
+          "query_id": "ec535972bf255f5c",
+          "query": "How do I explain the structure of our current product to a new team member?",
+          "split": "train"
+        },
+        {
+          "query_id": "5599c5af43ada2c7",
+          "query": "How do I write a clear and concise FAQ section for our website?",
+          "split": "train"
+        },
+        {
+          "query_id": "fed57eb3ef6a64f9",
+          "query": "Can you provide examples of effective communication strategies for remote teams working on a project?",
+          "split": "train"
+        },
+        {
+          "query_id": "a0a578a8fbf0662f",
+          "query": "Can you help me draft a plan for gathering user requirements for our next release?",
+          "split": "train"
+        },
+        {
+          "query_id": "d5e4cc8a2b65001e",
+          "query": "What constraints should we consider for the database migration project?",
+          "split": "train"
+        },
+        {
+          "query_id": "ec76113d0a81031e",
+          "query": "What are some good examples of tasks we can include in our sprint planning?",
+          "split": "train"
+        },
+        {
+          "query_id": "39a90db6764185a0",
+          "query": "Can we discuss the timelines and milestones for our current project?",
+          "split": "train"
+        },
+        {
+          "query_id": "3ead23d0cffe791f",
+          "query": "How do we define and document the success metrics for our product launch?",
+          "split": "train"
+        },
+        {
+          "query_id": "8faa575033e2b4b6",
+          "query": "Can you give me a list of dependencies for the software update we're working on?",
+          "split": "train"
+        },
+        {
+          "query_id": "c56a0f686867d395",
+          "query": "Could you clarify the expected outcomes for our upcoming project?",
+          "split": "train"
+        },
+        {
+          "query_id": "98c6f0ce2f655fe1",
+          "query": "Could you provide a template for submitting technical documentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "e953a8b4b62cd56a",
+          "query": "Can you provide an example of a clear product requirement?",
+          "split": "train"
+        },
+        {
+          "query_id": "8c3fbe85ec4ea7fe",
+          "query": "What are the top priorities for our development team this quarter?",
+          "split": "train"
+        },
+        {
+          "query_id": "2d9cc6dbd93885d0",
+          "query": "What information is essential in a user training manual?",
+          "split": "train"
+        },
+        {
+          "query_id": "9243309433b0b4ce",
+          "query": "I need to outline potential features for our next product version. Can you assist?",
+          "split": "train"
+        },
+        {
+          "query_id": "ab7706f2a5db562a",
+          "query": "What is the best way to document the user acceptance testing process?",
+          "split": "train"
+        },
+        {
+          "query_id": "d41992956be5eaf3",
+          "query": "Could you give me a step-by-step guide on how to integrate with our service API?",
+          "split": "train"
+        },
+        {
+          "query_id": "92f45865a56b1105",
+          "query": "I'm unsure about some ambiguities in the project scope. Can we discuss those?",
+          "split": "train"
+        },
+        {
+          "query_id": "8079e669def28680",
+          "query": "Can you provide a high-level overview of the project requirements?",
+          "split": "train"
+        },
+        {
+          "query_id": "020fc9a6a325417e",
+          "query": "How do I identify potential risks related to our project timeline?",
+          "split": "train"
+        },
+        {
+          "query_id": "90100a53a320ff25",
+          "query": "What dependencies do we need to consider for our product development cycle?",
+          "split": "train"
+        },
+        {
+          "query_id": "14dcb2fd5875f64a",
+          "query": "What are common pitfalls to avoid when writing API documentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "e29fb4904be3994b",
+          "query": "Can you help me draft a clear description of the new system functionality?",
+          "split": "train"
+        },
+        {
+          "query_id": "c18400cf50a95669",
+          "query": "Can you help me outline the priorities for our task list this week?",
+          "split": "train"
+        },
+        {
+          "query_id": "3866d585feabce79",
+          "query": "Can you help me define the goals for our next sprint?",
+          "split": "train"
+        },
+        {
+          "query_id": "afe726010cb9c743",
+          "query": "What are the best practices for writing technical documentation?",
+          "split": "train"
+        },
+        {
+          "query_id": "d614866bfb04d74d",
+          "query": "What are the essential elements to cover in a project kickoff meeting?",
+          "split": "val"
+        },
+        {
+          "query_id": "8497bc86c5e9775a",
+          "query": "I need to identify the key stakeholders for our upcoming product launch. Can you provide a checklist?",
+          "split": "val"
+        },
+        {
+          "query_id": "779ffad76ca2ca73",
+          "query": "Can you draft an example of a meeting agenda for a project update?",
+          "split": "val"
+        },
+        {
+          "query_id": "c2d801ca002ed532",
+          "query": "Can you help outline the different phases of our product development cycle?",
+          "split": "val"
+        },
+        {
+          "query_id": "42c90d91154f346f",
+          "query": "Can you summarize the key requirements for the new marketing campaign?",
+          "split": "val"
+        },
+        {
+          "query_id": "3aec7fc470014886",
+          "query": "What methodologies can we use to prioritize our upcoming features?",
+          "split": "val"
+        },
+        {
+          "query_id": "62af9233eb0c8ad7",
+          "query": "Could you provide more details about the new feature's structure?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "031ed6b3d54f3925",
+          "query": "What constraints should be considered when developing the mobile app?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "2ac1ca4fb5d87673",
+          "query": "Can you help me clarify the requirements for our upcoming software project?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "d8087cd91c6d479b",
+          "query": "What information should be included in our onboarding documentation for new users?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "c3c7adbaf4082ff1",
+          "query": "Can you summarize the feedback we've received so far on our prototype?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "f4d38cf0d0fc8b56",
+          "query": "What should be the focus areas for creating user-friendly documentation?",
+          "split": "test_locked"
+        }
+      ]
+    },
+    {
+      "role_a": "experiment_design",
+      "role_b": "fact_checking",
+      "accepted_available": 89,
+      "generation_calls": 2,
+      "audit_calls": 4,
+      "queries": [
+        {
+          "query_id": "b7512a5088b1f7a9",
+          "query": "What strategies should I use to corroborate information about historical figures?",
+          "split": "train"
+        },
+        {
+          "query_id": "d081c7f6579b2883",
+          "query": "How do I conduct a survey to assess community needs for better public services?",
+          "split": "train"
+        },
+        {
+          "query_id": "b04c8d8720f70f34",
+          "query": "Can you verify the timeline of major events in the Civil Rights Movement?",
+          "split": "train"
+        },
+        {
+          "query_id": "70d5ad54ef59e3c2",
+          "query": "How do I ensure that my experiment has enough statistical power?",
+          "split": "train"
+        },
+        {
+          "query_id": "d560c3d4ec80212f",
+          "query": "How do I determine if my experimental results are statistically significant?",
+          "split": "train"
+        },
+        {
+          "query_id": "ec759bd2a2a1eff0",
+          "query": "What steps should I follow to set up a reliable experiment in my science class?",
+          "split": "train"
+        },
+        {
+          "query_id": "fd779688d9fb8fb7",
+          "query": "What are the key variables to consider when studying the effects of social media on self-esteem?",
+          "split": "train"
+        },
+        {
+          "query_id": "f18aaa5bf9f47374",
+          "query": "Can you find evidence for the effectiveness of exercise on mental well-being?",
+          "split": "train"
+        },
+        {
+          "query_id": "a90f638a3dd9f9eb",
+          "query": "What is the best way to justify the sample selection in my report?",
+          "split": "train"
+        },
+        {
+          "query_id": "06d540bd72d932ea",
+          "query": "What reliable sources can I refer to for the history of the internet?",
+          "split": "train"
+        },
+        {
+          "query_id": "b5c5ee4e968bb6a0",
+          "query": "What factors should I consider when designing an experiment on consumer preferences?",
+          "split": "train"
+        },
+        {
+          "query_id": "c284c58bfed2548c",
+          "query": "How can I corroborate the claims made in a recent news article?",
+          "split": "train"
+        },
+        {
+          "query_id": "b02da49a28835294",
+          "query": "What are some common pitfalls in experimental protocols that I should avoid?",
+          "split": "train"
+        },
+        {
+          "query_id": "cfb9f3324ae746e3",
+          "query": "What are the most common confounders to watch out for in psychological experiments?",
+          "split": "train"
+        },
+        {
+          "query_id": "194752097476aa48",
+          "query": "What factors should I consider when designing a survey for my research project?",
+          "split": "train"
+        },
+        {
+          "query_id": "14c9d8326646b6cc",
+          "query": "How important is it to document the methodology of my study?",
+          "split": "train"
+        },
+        {
+          "query_id": "f6ad95ab00e58c87",
+          "query": "What protocols should I follow to ensure the validity of my experimental results?",
+          "split": "train"
+        },
+        {
+          "query_id": "43ef8216d3ac61b8",
+          "query": "How do I determine the right sample size for a survey about smartphone usage?",
+          "split": "train"
+        },
+        {
+          "query_id": "e4a7ad3fb7c53e5f",
+          "query": "What are some common confounding variables in psychological studies?",
+          "split": "train"
+        },
+        {
+          "query_id": "e604f468f3d9d08c",
+          "query": "What are some methods for measuring the impact of a marketing campaign?",
+          "split": "train"
+        },
+        {
+          "query_id": "6ac791d548628fdb",
+          "query": "How do I assess the credibility of a source that claims a new diet works wonders?",
+          "split": "train"
+        },
+        {
+          "query_id": "71dcca9d25c9b11e",
+          "query": "What evidence exists regarding the nutritional benefits of organic versus non-organic food?",
+          "split": "train"
+        },
+        {
+          "query_id": "b71226a2b05d4e45",
+          "query": "What criteria should I apply to evaluate the strengths of different research claims?",
+          "split": "train"
+        },
+        {
+          "query_id": "ca3f200e032047c2",
+          "query": "What tools can I use to measure public opinion accurately?",
+          "split": "train"
+        },
+        {
+          "query_id": "9228b98428d0e336",
+          "query": "What significance does sample representativeness have on my study's conclusions?",
+          "split": "train"
+        },
+        {
+          "query_id": "76326d8ba9d023e1",
+          "query": "What variables should I control for in a study about consumer behavior?",
+          "split": "train"
+        },
+        {
+          "query_id": "ef1edddc766f4b6d",
+          "query": "What's the best way to measure user satisfaction for a mobile app?",
+          "split": "train"
+        },
+        {
+          "query_id": "a718ecd9bea30628",
+          "query": "What are some reliable sources for historical data on climate change?",
+          "split": "train"
+        },
+        {
+          "query_id": "269a10241d3b71bc",
+          "query": "How do I report uncertainty in my research findings?",
+          "split": "train"
+        },
+        {
+          "query_id": "b0dfbfdb7dd5ee7a",
+          "query": "How can I check the publication date of the research paper I’m referencing?",
+          "split": "train"
+        },
+        {
+          "query_id": "ae515b1f0f2300f1",
+          "query": "Is there a timeline of events that led up to the signing of the Declaration of Independence?",
+          "split": "train"
+        },
+        {
+          "query_id": "38f0f46391f74429",
+          "query": "What methods exist to assess the quality of qualitative research?",
+          "split": "train"
+        },
+        {
+          "query_id": "4a825265cfe05007",
+          "query": "What reputable organizations provide information on the benefits of reading for children?",
+          "split": "train"
+        },
+        {
+          "query_id": "69a8d9559c264a53",
+          "query": "How can I create a survey to understand my friends' preferences for vacation activities?",
+          "split": "train"
+        },
+        {
+          "query_id": "976ea403eb692d1f",
+          "query": "What are the most effective ways to sample a population for a study on health trends?",
+          "split": "train"
+        },
+        {
+          "query_id": "83c4b61e93bd6a61",
+          "query": "What are the main controls I need to establish for an experiment testing a new drug?",
+          "split": "train"
+        },
+        {
+          "query_id": "24b7b0c808e3ce4b",
+          "query": "Can you suggest ways to evaluate data quality in medical studies?",
+          "split": "train"
+        },
+        {
+          "query_id": "5948276828ee2326",
+          "query": "What reliable studies exist about the effects of global warming on polar bears?",
+          "split": "train"
+        },
+        {
+          "query_id": "2b91f83cedf26519",
+          "query": "I'd like to understand the claims about probiotics and gut health. What can I find?",
+          "split": "train"
+        },
+        {
+          "query_id": "9cc39fab156febb6",
+          "query": "How can I confirm the accuracy of a statistic I found online?",
+          "split": "train"
+        },
+        {
+          "query_id": "23cc6bd376f19ab5",
+          "query": "What steps should I take to verify the credibility of an online article?",
+          "split": "val"
+        },
+        {
+          "query_id": "41d2716851e629a5",
+          "query": "How can I verify claims made by different sources about vaccines?",
+          "split": "val"
+        },
+        {
+          "query_id": "0f7232885a20b227",
+          "query": "What are some variables to track when studying the effects of diet on weight loss?",
+          "split": "val"
+        },
+        {
+          "query_id": "5a7e62857d03979a",
+          "query": "Can you explain how to calculate effect sizes in my research?",
+          "split": "val"
+        },
+        {
+          "query_id": "8d500614df4bb773",
+          "query": "What guidelines should I follow to ensure the robustness of my experimental design?",
+          "split": "val"
+        },
+        {
+          "query_id": "29ee7dddf0a36565",
+          "query": "Can you provide dates and details about the Apollo 11 mission?",
+          "split": "val"
+        },
+        {
+          "query_id": "7a9a2432bed9eeb8",
+          "query": "Can you recommend methods for drawing causal inferences from experimental data?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "9a0d1b19da1322c5",
+          "query": "What techniques can I utilize to ensure my experimental findings are valid?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "5457caf349185924",
+          "query": "Can you suggest ways to enhance the reliability of my data collection process?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "ea8f3d14d9c65f66",
+          "query": "Can you help me summarize the latest research on climate change impacts?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "443539900103b336",
+          "query": "How can I evaluate the findings of a recent scientific paper?",
+          "split": "test_locked"
+        },
+        {
+          "query_id": "1f5c8311676bab44",
+          "query": "How can I set up a controlled experiment to test the effects of different fertilizers on crop yields?",
+          "split": "test_locked"
+        }
+      ]
+    }
+  ],
+  "test_locked": true,
+  "generation_calls": 36,
+  "audit_calls": 72,
+  "total_queries": 936,
+  "expected_worker_calls": 1872
+}

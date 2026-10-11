@@ -1,0 +1,51 @@
+SIMPLE ADAPTIVE V11 CONTROLLER — STATIC vs ADAPTIVE
+delta = adaptive - static; lower is better for log-loss/Brier, higher for AUC/margin/recall
+
+ROUND 1 paired=32
+  role_log_loss          static=0.526101 adaptive=0.526101 delta=+0.000000 CI95=[+0.000000,+0.000000]
+  role_brier             static=0.171642 adaptive=0.171642 delta=+0.000000 CI95=[+0.000000,+0.000000]
+  role_auc               static=0.551181 adaptive=0.551181 delta=+0.000000 CI95=[+0.000000,+0.000000]
+  true_false_margin      static=0.012532 adaptive=0.012532 delta=+0.000000 CI95=[+0.000000,+0.000000]
+  oracle_k_role_recall   static=0.285417 adaptive=0.285417 delta=+0.000000 CI95=[+0.000000,+0.000000]
+  target-role same=32/32 different=0/32
+
+ROUND 2 paired=32
+  role_log_loss          static=0.525248 adaptive=0.522629 delta=-0.002619 CI95=[-0.011604,+0.005988]
+  role_brier             static=0.171674 adaptive=0.170202 delta=-0.001472 CI95=[-0.005111,+0.002063]
+  role_auc               static=0.577825 adaptive=0.565347 delta=-0.012478 CI95=[-0.062380,+0.035531]
+  true_false_margin      static=0.015503 adaptive=0.021278 delta=+0.005775 CI95=[-0.005501,+0.017557]
+  oracle_k_role_recall   static=0.247917 adaptive=0.295312 delta=+0.047396 CI95=[-0.025521,+0.122917]
+  target-role same=1/32 different=31/32
+
+ROUND 3 paired=32
+  role_log_loss          static=0.518444 adaptive=0.518301 delta=-0.000143 CI95=[-0.009190,+0.009283]
+  role_brier             static=0.168740 adaptive=0.168502 delta=-0.000238 CI95=[-0.003717,+0.003326]
+  role_auc               static=0.600455 adaptive=0.607154 delta=+0.006699 CI95=[-0.066304,+0.076192]
+  true_false_margin      static=0.025495 adaptive=0.025114 delta=-0.000381 CI95=[-0.012747,+0.011657]
+  oracle_k_role_recall   static=0.305729 adaptive=0.322396 delta=+0.016667 CI95=[-0.053125,+0.085417]
+  target-role same=2/32 different=30/32
+
+ROUND 4 paired=32
+  role_log_loss          static=0.520308 adaptive=0.520238 delta=-0.000069 CI95=[-0.010009,+0.009984]
+  role_brier             static=0.169547 adaptive=0.169198 delta=-0.000349 CI95=[-0.004357,+0.003543]
+  role_auc               static=0.616213 adaptive=0.574327 delta=-0.041886 CI95=[-0.106259,+0.023531]
+  true_false_margin      static=0.022481 adaptive=0.021788 delta=-0.000693 CI95=[-0.012608,+0.011769]
+  oracle_k_role_recall   static=0.333333 adaptive=0.316146 delta=-0.017188 CI95=[-0.091146,+0.063021]
+  target-role same=3/32 different=29/32
+
+ROUND 5 paired=32
+  role_log_loss          static=0.518430 adaptive=0.517969 delta=-0.000461 CI95=[-0.011468,+0.010291]
+  role_brier             static=0.168768 adaptive=0.168348 delta=-0.000420 CI95=[-0.004887,+0.003957]
+  role_auc               static=0.604938 adaptive=0.578836 delta=-0.026102 CI95=[-0.100201,+0.051711]
+  true_false_margin      static=0.023022 adaptive=0.024611 delta=+0.001589 CI95=[-0.011831,+0.015213]
+  oracle_k_role_recall   static=0.333333 adaptive=0.319271 delta=-0.014063 CI95=[-0.093750,+0.067708]
+  target-role same=2/32 different=30/32
+
+ROUND 6 paired=32
+  role_log_loss          static=0.514495 adaptive=0.512701 delta=-0.001794 CI95=[-0.011940,+0.008537]
+  role_brier             static=0.167382 adaptive=0.166439 delta=-0.000943 CI95=[-0.005067,+0.003289]
+  role_auc               static=0.630642 adaptive=0.629060 delta=-0.001582 CI95=[-0.069205,+0.067356]
+  true_false_margin      static=0.027375 adaptive=0.031089 delta=+0.003714 CI95=[-0.008845,+0.016410]
+  oracle_k_role_recall   static=0.341146 adaptive=0.357292 delta=+0.016146 CI95=[-0.074479,+0.107812]
+  target-role same=2/32 different=30/32
+

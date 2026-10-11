@@ -1,0 +1,78 @@
+========================================================================================================================
+ALL 25 ROUNDS — SELECTED-PROBE MECHANISM AUDIT
+========================================================================================================================
+
+TOTAL DECISIONS = 125
+
+========================================================================================================================
+MECHANISM SUMMARY
+========================================================================================================================
+ABSENT_TARGET_FALLBACK_TRUE            n=106 +/0/-= 44/ 20/ 42 meanΔ=+0.005179 pairs=+28.0
+DIRECT_TRUE_TARGET_ACTIVATED           n= 18 +/0/-= 10/  1/  7 meanΔ=+0.045207 pairs=+41.5
+TRUE_TARGET_OTHER_TRUE_ACTIVATED       n=  1 +/0/-=  1/  0/  0 meanΔ=+0.039216 pairs=+2.0
+
+========================================================================================================================
+SIMPLE PRESENT-vs-ABSENT TARGET SUMMARY
+========================================================================================================================
+SELECTED TARGET IS TRUE                n= 19 +/0/-= 11/  1/  7 meanΔ=+0.044892 pairs=+43.5
+SELECTED TARGET IS ABSENT              n=106 +/0/-= 44/ 20/ 42 meanΔ=+0.005179 pairs=+28.0
+
+========================================================================================================================
+CANDIDATE-POOL COVERAGE
+========================================================================================================================
+states with >=1 candidate targeting a TRUE role: 52/125 (41.6%)
+Selector chose TRUE target when one was available: 19/52 (36.5%)
+true-target candidates per G4 pool: {0: 73, 1: 48, 2: 4}
+
+========================================================================================================================
+BY PROBE STYLE
+========================================================================================================================
+?                                      n= 60 +/0/-= 27/ 11/ 22 meanΔ=+0.014542 pairs=+44.5
+direct                                 n= 20 +/0/-= 10/  2/  8 meanΔ=-0.006863 pairs=-7.0
+intake                                 n= 45 +/0/-= 18/  8/ 19 meanΔ=+0.014815 pairs=+34.0
+
+========================================================================================================================
+BY TARGET PRE-BELIEF RANK
+========================================================================================================================
+rank 1-3                               n= 14 +/0/-=  5/  4/  5 meanΔ=-0.004202 pairs=-3.0
+rank 4-6                               n= 15 +/0/-=  6/  1/  8 meanΔ=+0.004575 pairs=+3.5
+rank 7-10                              n= 33 +/0/-= 14/  7/ 12 meanΔ=+0.015152 pairs=+25.5
+rank 11-20                             n= 63 +/0/-= 30/  9/ 24 meanΔ=+0.014161 pairs=+45.5
+
+========================================================================================================================
+TOP 15 POSITIVE
+========================================================================================================================
+R16 simple5_01_code_plan_research            Δ=+0.352941 pairs=+18.0 rank=18 target=planning                 act=planning                     DIRECT_TRUE_TARGET_ACTIVATED
+R13 simple5_04_support_incident_ops          Δ=+0.274510 pairs=+14.0 rank=16 target=incident_management      act=incident_management          DIRECT_TRUE_TARGET_ACTIVATED
+R05 simple5_02_risk_access_translation       Δ=+0.215686 pairs=+11.0 rank=10 target=documentation            act=accessibility_review         ABSENT_TARGET_FALLBACK_TRUE
+R10 simple5_02_risk_access_translation       Δ=+0.215686 pairs=+11.0 rank=16 target=translation              act=translation                  DIRECT_TRUE_TARGET_ACTIVATED
+R06 simple5_05_docs_qa_writing               Δ=+0.215686 pairs=+11.0 rank= 4 target=database_design          act=documentation                ABSENT_TARGET_FALLBACK_TRUE
+R01 simple5_04_support_incident_ops          Δ=+0.205882 pairs=+10.5 rank=15 target=requirements_analysis    act=customer_support_triage,incident_management ABSENT_TARGET_FALLBACK_TRUE
+R16 simple5_05_docs_qa_writing               Δ=+0.196078 pairs=+10.0 rank=17 target=customer_support_triage  act=documentation                ABSENT_TARGET_FALLBACK_TRUE
+R11 simple5_01_code_plan_research            Δ=+0.176471 pairs=+9.0 rank=17 target=documentation            act=planning,research            ABSENT_TARGET_FALLBACK_TRUE
+R10 simple5_05_docs_qa_writing               Δ=+0.176471 pairs=+9.0 rank=17 target=code                     act=qa_testing                   ABSENT_TARGET_FALLBACK_TRUE
+R01 simple5_03_data_db_requirements          Δ=+0.166667 pairs=+8.5 rank= 9 target=qa_testing               act=requirements_analysis        ABSENT_TARGET_FALLBACK_TRUE
+R02 simple5_02_risk_access_translation       Δ=+0.156863 pairs=+8.0 rank= 9 target=design                   act=accessibility_review         ABSENT_TARGET_FALLBACK_TRUE
+R03 simple5_03_data_db_requirements          Δ=+0.156863 pairs=+8.0 rank=15 target=risk_assessment          act=requirements_analysis        ABSENT_TARGET_FALLBACK_TRUE
+R07 simple5_03_data_db_requirements          Δ=+0.156863 pairs=+8.0 rank=15 target=writing                  act=data                         ABSENT_TARGET_FALLBACK_TRUE
+R21 simple5_05_docs_qa_writing               Δ=+0.156863 pairs=+8.0 rank=10 target=risk_assessment          act=documentation                ABSENT_TARGET_FALLBACK_TRUE
+R24 simple5_01_code_plan_research            Δ=+0.156863 pairs=+8.0 rank= 4 target=incident_management      act=planning                     ABSENT_TARGET_FALLBACK_TRUE
+
+========================================================================================================================
+TOP 15 NEGATIVE
+========================================================================================================================
+R05 simple5_05_docs_qa_writing               Δ=-0.411765 pairs=-21.0 rank=17 target=planning                 act=documentation,writing        ABSENT_TARGET_FALLBACK_TRUE
+R13 simple5_01_code_plan_research            Δ=-0.176471 pairs=-9.0 rank= 4 target=fact_checking            act=research                     ABSENT_TARGET_FALLBACK_TRUE
+R02 simple5_04_support_incident_ops          Δ=-0.156863 pairs=-8.0 rank=16 target=data                     act=operations                   ABSENT_TARGET_FALLBACK_TRUE
+R17 simple5_05_docs_qa_writing               Δ=-0.137255 pairs=-7.0 rank=11 target=research                 act=documentation,writing        ABSENT_TARGET_FALLBACK_TRUE
+R02 simple5_03_data_db_requirements          Δ=-0.137255 pairs=-7.0 rank=15 target=documentation            act=requirements_analysis        ABSENT_TARGET_FALLBACK_TRUE
+R16 simple5_03_data_db_requirements          Δ=-0.117647 pairs=-6.0 rank= 9 target=writing                  act=data                         ABSENT_TARGET_FALLBACK_TRUE
+R25 simple5_05_docs_qa_writing               Δ=-0.117647 pairs=-6.0 rank= 4 target=writing                  act=documentation,writing        DIRECT_TRUE_TARGET_ACTIVATED
+R01 simple5_02_risk_access_translation       Δ=-0.107843 pairs=-5.5 rank=11 target=financial_analysis       act=risk_assessment              ABSENT_TARGET_FALLBACK_TRUE
+R06 simple5_03_data_db_requirements          Δ=-0.098039 pairs=-5.0 rank= 2 target=operations               act=requirements_analysis        ABSENT_TARGET_FALLBACK_TRUE
+R20 simple5_03_data_db_requirements          Δ=-0.098039 pairs=-5.0 rank= 9 target=database_design          act=database_design              DIRECT_TRUE_TARGET_ACTIVATED
+R23 simple5_01_code_plan_research            Δ=-0.098039 pairs=-5.0 rank= 4 target=research                 act=planning,research            DIRECT_TRUE_TARGET_ACTIVATED
+R25 simple5_04_support_incident_ops          Δ=-0.098039 pairs=-5.0 rank=16 target=qa_testing               act=operations                   ABSENT_TARGET_FALLBACK_TRUE
+R01 simple5_05_docs_qa_writing               Δ=-0.088235 pairs=-4.5 rank=16 target=incident_management      act=documentation                ABSENT_TARGET_FALLBACK_TRUE
+R05 simple5_04_support_incident_ops          Δ=-0.078431 pairs=-4.0 rank= 3 target=planning                 act=operations                   ABSENT_TARGET_FALLBACK_TRUE
+R08 simple5_04_support_incident_ops          Δ=-0.078431 pairs=-4.0 rank=17 target=risk_assessment          act=operations                   ABSENT_TARGET_FALLBACK_TRUE

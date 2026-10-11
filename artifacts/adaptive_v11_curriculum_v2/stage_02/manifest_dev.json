@@ -1,0 +1,183 @@
+{
+  "cycle": 0,
+  "notes": {
+    "policy_must_never_read_this_file": true,
+    "privileged": true,
+    "stage_dev": true
+  },
+  "seed": 20260918,
+  "semantic_rule": "distinct",
+  "sha256": "09addc92ec6cb47d17dc362499fcbd6e4d52c1a84f2c60c9bae2986d21b9a965",
+  "stage": 2,
+  "systems": [
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "fact_checking",
+        "qa_testing",
+        "writing"
+      ],
+      "session_id": "av11cur_4bcd7a32be207433",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "documentation",
+        "incident_management",
+        "math"
+      ],
+      "session_id": "av11cur_87f34814ee10688e",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "code",
+        "design",
+        "financial_analysis"
+      ],
+      "session_id": "av11cur_74deb9874d504730",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "operations",
+        "research",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_630dd807ac4fdd78",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "customer_support_triage",
+        "database_design",
+        "planning"
+      ],
+      "session_id": "av11cur_1668921fa41b33d3",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "code",
+        "requirements_analysis",
+        "translation"
+      ],
+      "session_id": "av11cur_ab768eabae320126",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "experiment_design",
+        "incident_management",
+        "translation"
+      ],
+      "session_id": "av11cur_1bed404096c3a740",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "documentation",
+        "operations",
+        "research"
+      ],
+      "session_id": "av11cur_3e9fef112c632ec9",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "customer_support_triage",
+        "experiment_design"
+      ],
+      "session_id": "av11cur_e17ba8496528cd27",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "design",
+        "fact_checking",
+        "writing"
+      ],
+      "session_id": "av11cur_4133fedd33d5e0e8",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "incident_management",
+        "planning",
+        "qa_testing"
+      ],
+      "session_id": "av11cur_33080c609de3e064",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 2,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "risk_assessment",
+        "translation"
+      ],
+      "session_id": "av11cur_17bde2f68987104c",
+      "split": "dev",
+      "style": "s1"
+    }
+  ],
+  "version": "adaptive_v11_curriculum_manifest_v1"
+}

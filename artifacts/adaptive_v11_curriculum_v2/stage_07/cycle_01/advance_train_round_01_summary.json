@@ -1,0 +1,23 @@
+{
+  "chosen_is_best_fraction": 0.16666666666666666,
+  "mean_best_reward": 1.4722308187652564,
+  "mean_chosen_reward": 0.05938949564862677,
+  "mean_role_log_loss": 0.5992124542282403,
+  "mean_selector_regret": 1.4128413231166297,
+  "pool_positive_fraction": 0.9166666666666666,
+  "round": 1,
+  "selector_model": {
+    "count": 10448,
+    "mean_target": 0.133048039959671,
+    "status": "updated",
+    "target_sd": 1.0514483794013627,
+    "update_id": "9238da14fdd0b6508350155c99cd715d6251877adf7854afe89cc44eb3654a93",
+    "update_key": "/home/wieseld/mas_rl_detective/artifacts/adaptive_v11_curriculum_v2/stage_07/cycle_01|stage=7|round=1",
+    "weight_l2": 3.3395009508271594
+  },
+  "split": "train",
+  "stage": 7,
+  "systems": 36,
+  "train_rows": 288,
+  "valid_state_updates": 36
+}

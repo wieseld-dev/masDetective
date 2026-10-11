@@ -1,0 +1,50 @@
+=============================================================================================================================
+TARGET-AUXILIARY REWARD SWEEP
+=============================================================================================================================
+
+ROWS   = 1995
+GROUPS = 168
+
+  TAU    LAM   TOP_OK  TOP_SIGNED  TOP_GLOBAL  G_REGRET  ADV+_OK  ADV+SIGNED  CHG_TOP
+  1.0   0.00    0.815      1.8338      0.3989    0.0000    0.738      1.3007        0
+  1.0   0.05    0.869      2.1526      0.3977    0.0012    0.800      1.5439       13
+  1.0   0.10    0.905      2.3236      0.3926    0.0063    0.847      1.7322       19
+  1.0   0.20    0.958      2.5927      0.3779    0.0210    0.914      1.9458       32
+  1.0   0.30    0.976      2.7379      0.3671    0.0318    0.945      2.0320       43
+  1.0   0.50    0.988      2.8987      0.3531    0.0458    0.965      2.1099       49
+  1.0   0.75    1.000      3.0112      0.3355    0.0634    0.980      2.1627       56
+  1.0   1.00    1.000      3.0441      0.3313    0.0676    0.984      2.1524       60
+  2.0   0.00    0.815      1.8338      0.3989    0.0000    0.738      1.3007        0
+  2.0   0.05    0.869      2.1574      0.3978    0.0011    0.784      1.5069       13
+  2.0   0.10    0.893      2.3122      0.3944    0.0045    0.823      1.6962       21
+  2.0   0.20    0.935      2.6635      0.3810    0.0179    0.882      1.9360       36
+  2.0   0.30    0.970      2.8007      0.3692    0.0297    0.917      2.0529       45
+  2.0   0.50    0.988      3.0500      0.3457    0.0532    0.951      2.1702       60
+  2.0   0.75    0.988      3.1247      0.3382    0.0607    0.967      2.2335       64
+  2.0   1.00    0.994      3.2726      0.3127    0.0862    0.975      2.2533       72
+  4.0   0.00    0.815      1.8338      0.3989    0.0000    0.738      1.3007        0
+  4.0   0.05    0.863      2.1712      0.3979    0.0010    0.766      1.4407       13
+  4.0   0.10    0.869      2.2138      0.3973    0.0016    0.797      1.6065       16
+  4.0   0.20    0.899      2.4849      0.3898    0.0091    0.838      1.8061       30
+  4.0   0.30    0.935      2.6988      0.3796    0.0193    0.869      1.9529       39
+  4.0   0.50    0.982      3.0362      0.3521    0.0468    0.914      2.1245       57
+  4.0   0.75    0.988      3.2245      0.3353    0.0636    0.941      2.2160       64
+  4.0   1.00    0.988      3.3119      0.3244    0.0745    0.956      2.2834       70
+
+=============================================================================================================================
+BEST TARGET ALIGNMENT WITH LOW GLOBAL-REWARD REGRET
+=============================================================================================================================
+01. tau=2.0 lambda=0.30 ADV+ correct=91.7% ADV+ signed=+2.0529 top correct=97.0% global regret=0.0297 changed_top=45
+02. tau=1.0 lambda=0.20 ADV+ correct=91.4% ADV+ signed=+1.9458 top correct=95.8% global regret=0.0210 changed_top=32
+03. tau=2.0 lambda=0.20 ADV+ correct=88.2% ADV+ signed=+1.9360 top correct=93.5% global regret=0.0179 changed_top=36
+04. tau=4.0 lambda=0.30 ADV+ correct=86.9% ADV+ signed=+1.9529 top correct=93.5% global regret=0.0193 changed_top=39
+05. tau=1.0 lambda=0.10 ADV+ correct=84.7% ADV+ signed=+1.7322 top correct=90.5% global regret=0.0063 changed_top=19
+06. tau=4.0 lambda=0.20 ADV+ correct=83.8% ADV+ signed=+1.8061 top correct=89.9% global regret=0.0091 changed_top=30
+07. tau=2.0 lambda=0.10 ADV+ correct=82.3% ADV+ signed=+1.6962 top correct=89.3% global regret=0.0045 changed_top=21
+08. tau=1.0 lambda=0.05 ADV+ correct=80.0% ADV+ signed=+1.5439 top correct=86.9% global regret=0.0012 changed_top=13
+09. tau=4.0 lambda=0.10 ADV+ correct=79.7% ADV+ signed=+1.6065 top correct=86.9% global regret=0.0016 changed_top=16
+10. tau=2.0 lambda=0.05 ADV+ correct=78.4% ADV+ signed=+1.5069 top correct=86.9% global regret=0.0011 changed_top=13
+11. tau=4.0 lambda=0.05 ADV+ correct=76.6% ADV+ signed=+1.4407 top correct=86.3% global regret=0.0010 changed_top=13
+12. tau=1.0 lambda=0.00 ADV+ correct=73.8% ADV+ signed=+1.3007 top correct=81.5% global regret=0.0000 changed_top=0
+13. tau=2.0 lambda=0.00 ADV+ correct=73.8% ADV+ signed=+1.3007 top correct=81.5% global regret=0.0000 changed_top=0
+14. tau=4.0 lambda=0.00 ADV+ correct=73.8% ADV+ signed=+1.3007 top correct=81.5% global regret=0.0000 changed_top=0

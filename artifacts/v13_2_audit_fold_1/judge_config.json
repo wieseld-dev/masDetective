@@ -1,0 +1,20 @@
+{
+  "api_calls": 0,
+  "attr_hard_weight": 1.0,
+  "attr_target_weight": 0.75,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "fold": 1,
+  "head_map": {
+    "attribution": 1,
+    "evidence": 0
+  },
+  "max_length": 1400,
+  "minus_flip_weight": 2.0,
+  "n_splits": 5,
+  "num_labels": 2,
+  "pilot_used_for_training": false,
+  "prompt_version": "v13.2-dual-head-v1",
+  "protocol": "v13.2_dual_head_question_prior_corrected_answer_attribution",
+  "seed": 1322,
+  "v11_source_weight": 0.7
+}

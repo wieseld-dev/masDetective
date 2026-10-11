@@ -1,0 +1,83 @@
+===== TARGET-AWARE V13.5 ACCUMULATOR =====
+
+ROUND        SUM       MEAN       LAST     BELIEF
+----------------------------------------------------
+
+--- ROUND 1 UPDATES ---
+simple5_01_code_plan_research          target=incident_management         V135=  -3.408 count=1
+simple5_02_risk_access_translation     target=requirements_analysis       V135=  -1.256 count=1
+simple5_03_data_db_requirements        target=fact_checking               V135=  -3.086 count=1
+simple5_04_support_incident_ops        target=requirements_analysis       V135=  -0.273 count=1
+simple5_05_docs_qa_writing             target=research                    V135=  -1.945 count=1
+
+R1: SUM=0.529412 MEAN=0.529412 LAST=0.529412 BELIEF=0.619608
+
+--- ROUND 2 UPDATES ---
+simple5_01_code_plan_research          target=planning                    V135=  -1.671 count=1
+simple5_02_risk_access_translation     target=data                        V135=  +0.016 count=1
+simple5_03_data_db_requirements        target=operations                  V135=  -2.414 count=1
+simple5_04_support_incident_ops        target=writing                     V135=  +0.844 count=1
+simple5_05_docs_qa_writing             target=documentation               V135=  -0.227 count=1
+
+R2: SUM=0.460784 MEAN=0.460784 LAST=0.460784 BELIEF=0.690196
+
+--- ROUND 3 UPDATES ---
+simple5_01_code_plan_research          target=risk_assessment             V135=  -2.023 count=1
+simple5_02_risk_access_translation     target=incident_management         V135=  +0.172 count=1
+simple5_03_data_db_requirements        target=fact_checking               V135=  -4.688 count=2
+simple5_04_support_incident_ops        target=accessibility_review        V135=  -0.750 count=1
+simple5_05_docs_qa_writing             target=qa_testing                  V135=  -0.932 count=1
+
+R3: SUM=0.437255 MEAN=0.437255 LAST=0.437255 BELIEF=0.698039
+
+--- ROUND 4 UPDATES ---
+simple5_01_code_plan_research          target=risk_assessment             V135=  +2.355 count=2
+simple5_02_risk_access_translation     target=fact_checking               V135=  -5.012 count=1
+simple5_03_data_db_requirements        target=writing                     V135=  -5.849 count=1
+simple5_04_support_incident_ops        target=design                      V135=  -0.555 count=1
+simple5_05_docs_qa_writing             target=research                    V135=  +2.457 count=2
+
+R4: SUM=0.431373 MEAN=0.431373 LAST=0.431373 BELIEF=0.647059
+
+--- ROUND 5 UPDATES ---
+simple5_01_code_plan_research          target=math                        V135=  +0.070 count=1
+simple5_02_risk_access_translation     target=planning                    V135=  -3.086 count=1
+simple5_03_data_db_requirements        target=data                        V135=  +1.098 count=1
+simple5_04_support_incident_ops        target=planning                    V135=  -3.219 count=1
+simple5_05_docs_qa_writing             target=risk_assessment             V135=  +1.332 count=1
+
+R5: SUM=0.464706 MEAN=0.464706 LAST=0.464706 BELIEF=0.658824
+
+--- ROUND 6 UPDATES ---
+simple5_01_code_plan_research          target=database_design             V135=  -4.314 count=1
+simple5_02_risk_access_translation     target=operations                  V135=  -1.930 count=1
+simple5_03_data_db_requirements        target=code                        V135=  -4.520 count=1
+simple5_04_support_incident_ops        target=customer_support_triage     V135=  +1.211 count=1
+simple5_05_docs_qa_writing             target=requirements_analysis       V135=  -4.641 count=1
+
+R6: SUM=0.519608 MEAN=0.519608 LAST=0.519608 BELIEF=0.694118
+
+--- ROUND 7 UPDATES ---
+simple5_01_code_plan_research          target=planning                    V135=  +1.477 count=2
+simple5_02_risk_access_translation     target=research                    V135=  -1.422 count=1
+simple5_03_data_db_requirements        target=fact_checking               V135=  +1.005 count=3
+simple5_04_support_incident_ops        target=customer_support_triage     V135=  +0.855 count=2
+simple5_05_docs_qa_writing             target=fact_checking               V135=  +1.725 count=1
+
+R7: SUM=0.523529 MEAN=0.523529 LAST=0.570588 BELIEF=0.627451
+
+--- ROUND 8 UPDATES ---
+simple5_01_code_plan_research          target=fact_checking               V135=  +4.012 count=1
+simple5_02_risk_access_translation     target=planning                    V135=  +0.697 count=2
+simple5_03_data_db_requirements        target=customer_support_triage     V135=  -1.617 count=1
+simple5_04_support_incident_ops        target=financial_analysis          V135=  -5.266 count=1
+simple5_05_docs_qa_writing             target=writing                     V135=  +1.811 count=1
+
+R8: SUM=0.564706 MEAN=0.564706 LAST=0.592157 BELIEF=0.686275
+
+===== FINAL PER-SYSTEM R8 =====
+simple5_01_code_plan_research          SUM=0.353 MEAN=0.353 LAST=0.608
+simple5_02_risk_access_translation     SUM=0.588 MEAN=0.588 LAST=0.529
+simple5_03_data_db_requirements        SUM=0.765 MEAN=0.765 LAST=0.725
+simple5_04_support_incident_ops        SUM=0.745 MEAN=0.745 LAST=0.745
+simple5_05_docs_qa_writing             SUM=0.373 MEAN=0.373 LAST=0.353

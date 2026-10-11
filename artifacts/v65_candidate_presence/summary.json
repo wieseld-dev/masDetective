@@ -1,0 +1,157 @@
+{
+  "protocol": {
+    "primary": "train on V6.3 + V6.5 diverse train compositions; evaluate once on completely unseen V6.5 validation compositions",
+    "attacker_features": [
+      "candidate_role_description",
+      "anchor_external_output",
+      "targeted_external_output"
+    ],
+    "forbidden_features": [
+      "selected_roles",
+      "router_choice",
+      "K_true",
+      "execution_mode",
+      "internal_trace"
+    ],
+    "train_validation_composition_overlap": 0
+  },
+  "train_systems": 40,
+  "train_unique_compositions": 28,
+  "validation_systems": 8,
+  "validation_unique_compositions": 8,
+  "overall": {
+    "auc": 0.8650793650793651,
+    "balanced_accuracy": 0.7361111111111112,
+    "f1": 0.7536231884057971,
+    "brier": 0.20889242487014487,
+    "hard_K_MAE": 0.875,
+    "soft_K_MAE": 0.8486646506324551,
+    "exact_K_accuracy": 0.25,
+    "within_1_K_accuracy": 0.875
+  },
+  "per_mode": {
+    "fanout2": {
+      "auc": 1.0,
+      "balanced_accuracy": 0.6904761904761905,
+      "f1": 0.7058823529411765,
+      "brier": 0.2097582076471904,
+      "hard_K_MAE": 0.5,
+      "soft_K_MAE": 0.4918508926935372,
+      "exact_K_accuracy": 0.5,
+      "within_1_K_accuracy": 1.0
+    },
+    "fanout3": {
+      "auc": 0.6545454545454545,
+      "balanced_accuracy": 0.6090909090909091,
+      "f1": 0.782608695652174,
+      "brier": 0.23124844108115084,
+      "hard_K_MAE": 0.5,
+      "soft_K_MAE": 1.3239713246650266,
+      "exact_K_accuracy": 0.5,
+      "within_1_K_accuracy": 1.0
+    },
+    "mixed": {
+      "auc": 0.873015873015873,
+      "balanced_accuracy": 0.746031746031746,
+      "f1": 0.7777777777777778,
+      "brier": 0.19879033382660505,
+      "hard_K_MAE": 1.0,
+      "soft_K_MAE": 1.2551232865820294,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 1.0
+    },
+    "single": {
+      "auc": 0.8412698412698413,
+      "balanced_accuracy": 0.7857142857142857,
+      "f1": 0.7272727272727273,
+      "brier": 0.19577271692563317,
+      "hard_K_MAE": 1.5,
+      "soft_K_MAE": 0.32371309858922737,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.5
+    }
+  },
+  "per_role": {
+    "code": {
+      "auc": 0.8125,
+      "balanced_accuracy": 0.875,
+      "f1": 0.8888888888888888,
+      "brier": 0.22146981061773308,
+      "hard_K_MAE": 3.875,
+      "soft_K_MAE": 3.996497818756473,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "writing": {
+      "auc": 1.0,
+      "balanced_accuracy": 0.8,
+      "f1": 0.75,
+      "brier": 0.19735594468900006,
+      "hard_K_MAE": 4.125,
+      "soft_K_MAE": 3.9598491988159865,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "math": {
+      "auc": 0.625,
+      "balanced_accuracy": 0.375,
+      "f1": 0.4444444444444444,
+      "brier": 0.20810959601176632,
+      "hard_K_MAE": 3.875,
+      "soft_K_MAE": 4.0099600423089745,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "planning": {
+      "auc": 0.8,
+      "balanced_accuracy": 0.7,
+      "f1": 0.5714285714285714,
+      "brier": 0.23378968628574648,
+      "hard_K_MAE": 4.25,
+      "soft_K_MAE": 3.997877987227661,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "research": {
+      "auc": 1.0,
+      "balanced_accuracy": 0.875,
+      "f1": 0.8888888888888888,
+      "brier": 0.16954872700149853,
+      "hard_K_MAE": 3.875,
+      "soft_K_MAE": 3.9736870224512626,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "data": {
+      "auc": 1.0,
+      "balanced_accuracy": 0.875,
+      "f1": 0.8888888888888888,
+      "brier": 0.22336342248517665,
+      "hard_K_MAE": 3.875,
+      "soft_K_MAE": 4.005045310367405,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "design": {
+      "auc": 0.5333333333333334,
+      "balanced_accuracy": 0.5333333333333333,
+      "f1": 0.5,
+      "brier": 0.2441510608067009,
+      "hard_K_MAE": 4.125,
+      "soft_K_MAE": 3.9806526574959795,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    },
+    "operations": {
+      "auc": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1": 1.0,
+      "brier": 0.17335115106353688,
+      "hard_K_MAE": 3.875,
+      "soft_K_MAE": 4.027557242414406,
+      "exact_K_accuracy": 0.0,
+      "within_1_K_accuracy": 0.0
+    }
+  },
+  "constant_K_baseline_MAE": 1.0
+}

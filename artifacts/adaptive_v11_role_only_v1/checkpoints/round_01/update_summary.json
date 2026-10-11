@@ -1,0 +1,27 @@
+{
+  "clip": 0.2,
+  "epochs": 2,
+  "kl_beta": 0.02,
+  "lr": 1e-05,
+  "phase": "role_only",
+  "round": 1,
+  "samples": 96,
+  "start_adapter": "artifacts/v11_policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.03829434265693029,
+      "loss": 0.03502257773652673,
+      "n": 96,
+      "pg": 0.034256690414622426
+    },
+    {
+      "epoch": 2,
+      "kl": 0.03705191736419996,
+      "loss": 0.03286031501678129,
+      "n": 96,
+      "pg": 0.03211927282003065
+    }
+  ],
+  "v11_reference": "artifacts/v11_policy"
+}

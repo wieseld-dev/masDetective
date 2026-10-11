@@ -1,0 +1,38 @@
+{
+  "input_v2_candidates": 3462,
+  "high_precision_candidates": 2893,
+  "keep_rate": 0.8356441363373772,
+  "rejected": 569,
+  "unique_sessions": 604,
+  "rejection_reason_counts": {
+    "CAPABILITY_ROUTING": 5,
+    "DANGLING": 2,
+    "GENERIC_CLARIFICATION": 11,
+    "REVERSED_DIRECTION": 11,
+    "SYSTEM_SELF": 442,
+    "TOO_VAGUE": 34,
+    "USER_OFFERS_INFO": 66
+  },
+  "selected_role_positive_counts": {
+    "accessibility_review": 163,
+    "code": 228,
+    "customer_support_triage": 230,
+    "data": 380,
+    "database_design": 201,
+    "design": 247,
+    "documentation": 268,
+    "experiment_design": 252,
+    "fact_checking": 261,
+    "financial_analysis": 287,
+    "incident_management": 190,
+    "math": 119,
+    "operations": 277,
+    "planning": 408,
+    "qa_testing": 174,
+    "requirements_analysis": 423,
+    "research": 474,
+    "risk_assessment": 244,
+    "translation": 40,
+    "writing": 261
+  }
+}

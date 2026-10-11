@@ -1,0 +1,918 @@
+{
+  "pairwise_full": {
+    "global_auc": 0.471031746031746,
+    "mean_role_auc": 0.4687630208333333,
+    "median_role_auc": 0.46328125,
+    "per_role_auc": {
+      "code": 0.5125,
+      "writing": 0.4114583333333333,
+      "math": 0.546875,
+      "planning": 0.5425,
+      "research": 0.38,
+      "data": 0.53125,
+      "design": 0.4114583333333333,
+      "operations": 0.4140625
+    },
+    "chosen_cs": [
+      {
+        "held_role": "code",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      }
+    ],
+    "counterfactual_pair_accuracy": 0.4583333333333333
+  },
+  "pairwise_geom": {
+    "global_auc": 0.5331349206349206,
+    "mean_role_auc": 0.5869791666666667,
+    "median_role_auc": 0.57109375,
+    "per_role_auc": {
+      "code": 0.5874999999999999,
+      "writing": 0.4869791666666667,
+      "math": 0.3958333333333333,
+      "planning": 0.4800000000000001,
+      "research": 0.7324999999999999,
+      "data": 0.7734375,
+      "design": 0.5546875,
+      "operations": 0.6848958333333334
+    },
+    "chosen_cs": [
+      {
+        "held_role": "code",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "code",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "writing",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "math",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "planning",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "research",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "data",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "design",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 1,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 2,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 3,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 4,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      },
+      {
+        "held_role": "operations",
+        "fold": 5,
+        "C": 0.05,
+        "inner": [
+          [
+            "fixed_prior_C",
+            0.05
+          ]
+        ]
+      }
+    ],
+    "counterfactual_pair_accuracy": 0.5974358974358974
+  }
+}

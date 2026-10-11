@@ -1,0 +1,49 @@
+{
+  "source_rows": 4350,
+  "output_rows": 4410,
+  "old_counts": {
+    "BENIGN": 1985,
+    "NONSTANDALONE": 357,
+    "CAPABILITY": 1240,
+    "TAXONOMY": 294,
+    "REVERSED_DIRECTION": 463,
+    "INTERNAL_META": 11
+  },
+  "new_counts": {
+    "BENIGN": 2488,
+    "CAPABILITY": 1182,
+    "TAXONOMY": 147,
+    "REVERSED_DIRECTION": 477,
+    "NONSTANDALONE": 76,
+    "INTERNAL_META": 40
+  },
+  "changed_or_dropped": 647,
+  "transitions": {
+    "BENIGN -> BENIGN": 1961,
+    "CAPABILITY -> CAPABILITY": 1182,
+    "REVERSED_DIRECTION -> REVERSED_DIRECTION": 425,
+    "NONSTANDALONE -> BENIGN": 283,
+    "TAXONOMY -> BENIGN": 203,
+    "TAXONOMY -> TAXONOMY": 83,
+    "NONSTANDALONE -> NONSTANDALONE": 52,
+    "CAPABILITY -> TAXONOMY": 45,
+    "BENIGN -> REVERSED_DIRECTION": 21,
+    "NONSTANDALONE -> REVERSED_DIRECTION": 20,
+    "REVERSED_DIRECTION -> BENIGN": 20,
+    "REVERSED_DIRECTION -> TAXONOMY": 16,
+    "INTERNAL_META -> None": 10,
+    "CAPABILITY -> REVERSED_DIRECTION": 7,
+    "CAPABILITY -> NONSTANDALONE": 5,
+    "TAXONOMY -> NONSTANDALONE": 4,
+    "TAXONOMY -> REVERSED_DIRECTION": 4,
+    "BENIGN -> NONSTANDALONE": 2,
+    "NONSTANDALONE -> TAXONOMY": 2,
+    "REVERSED_DIRECTION -> NONSTANDALONE": 2,
+    "BENIGN -> TAXONOMY": 1,
+    "CAPABILITY -> BENIGN": 1,
+    "INTERNAL_META -> NONSTANDALONE": 1
+  },
+  "curated_benign": 20,
+  "curated_internal": 40,
+  "curated_nonstandalone": 10
+}

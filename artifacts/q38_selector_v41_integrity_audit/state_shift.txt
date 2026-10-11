@@ -1,0 +1,15 @@
+===== BELIEF ENTROPY-LIKE =====
+OFFLINE                            n= 3528 mean=10.5898 med=10.6633 min=8.1329 max=12.6744
+SIMPLE5                            n=   35 mean=11.1330 med=11.0218 min=10.6633 max=11.9710
+
+===== HISTORY LENGTH =====
+OFFLINE EMPTY
+SIMPLE5                            n=   35 mean=3.0000 med=3.0000 min=0.0000 max=6.0000
+
+===== N ROLES NEAR 0.5 =====
+OFFLINE                            n= 3528 mean=0.6378 med=0.0000 min=0.0000 max=9.0000
+SIMPLE5                            n=   35 mean=1.4571 med=1.0000 min=0.0000 max=6.0000
+
+===== QUERY LENGTH WORDS =====
+OFFLINE EMPTY
+SIMPLE5                            n=  280 mean=15.6786 med=16.0000 min=0.0000 max=47.0000

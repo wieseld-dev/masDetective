@@ -1,0 +1,481 @@
+{
+  "cycle": 1,
+  "notes": {
+    "policy_must_never_read_this_file": true,
+    "privileged": true
+  },
+  "seed": 20260918,
+  "semantic_rule": "distinct",
+  "sha256": "5b1bf6cd0998ce28ea6701c820e17fbd8a2b01905ae56ec10e2a27b4b1e1e8e7",
+  "stage": 4,
+  "systems": [
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "design",
+        "documentation",
+        "financial_analysis",
+        "research"
+      ],
+      "session_id": "av11cur_f68ffca85c6a437f",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "code",
+        "math",
+        "planning"
+      ],
+      "session_id": "av11cur_7b3f74e7b174b7db",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "incident_management",
+        "requirements_analysis",
+        "translation"
+      ],
+      "session_id": "av11cur_11175bec296fbb03",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "customer_support_triage",
+        "database_design",
+        "research"
+      ],
+      "session_id": "av11cur_6c55d66326c3825c",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "fact_checking",
+        "operations",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_4bd3538f645c1ff1",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "design",
+        "experiment_design",
+        "operations",
+        "translation"
+      ],
+      "session_id": "av11cur_246cca1d88b828a6",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "database_design",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_1e5a428731977875",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "accessibility_review",
+        "code",
+        "experiment_design"
+      ],
+      "session_id": "av11cur_8397de83dcc93ed8",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "data",
+        "design",
+        "incident_management",
+        "qa_testing"
+      ],
+      "session_id": "av11cur_94745edbd974c735",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "customer_support_triage",
+        "fact_checking",
+        "planning"
+      ],
+      "session_id": "av11cur_9b37d4bafcb07ed4",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "data",
+        "qa_testing",
+        "risk_assessment",
+        "writing"
+      ],
+      "session_id": "av11cur_967510272ef3139f",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "research",
+        "translation"
+      ],
+      "session_id": "av11cur_490116f870f76866",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "code",
+        "data",
+        "requirements_analysis",
+        "writing"
+      ],
+      "session_id": "av11cur_311f25247751313f",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "experiment_design",
+        "incident_management",
+        "writing"
+      ],
+      "session_id": "av11cur_4aa452a91a56aace",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "customer_support_triage",
+        "math",
+        "planning"
+      ],
+      "session_id": "av11cur_ca3f2ce680b96539",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "math",
+        "planning"
+      ],
+      "session_id": "av11cur_bd878d49ee50766d",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "customer_support_triage",
+        "fact_checking",
+        "qa_testing"
+      ],
+      "session_id": "av11cur_c67ee65b02a1a9b4",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "code",
+        "financial_analysis"
+      ],
+      "session_id": "av11cur_c810202f7a898162",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "data",
+        "risk_assessment",
+        "translation"
+      ],
+      "session_id": "av11cur_239c0512615a121e",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "design",
+        "operations",
+        "research",
+        "writing"
+      ],
+      "session_id": "av11cur_7ed4b4bbc392706c",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "incident_management",
+        "math",
+        "research"
+      ],
+      "session_id": "av11cur_b922d32eac3a737a",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "experiment_design",
+        "financial_analysis",
+        "operations"
+      ],
+      "session_id": "av11cur_4a6474917680c106",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "design",
+        "fact_checking",
+        "qa_testing",
+        "writing"
+      ],
+      "session_id": "av11cur_82e8118bd50a064f",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "math",
+        "planning",
+        "translation"
+      ],
+      "session_id": "av11cur_3a07a0b7d6ef1bc5",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "code",
+        "customer_support_triage",
+        "experiment_design",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_2210dc6ed53267ee",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "design",
+        "experiment_design",
+        "financial_analysis"
+      ],
+      "session_id": "av11cur_871f6ceed28281f4",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "math",
+        "requirements_analysis",
+        "research",
+        "translation"
+      ],
+      "session_id": "av11cur_5966c8196f3bdf0c",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "database_design",
+        "incident_management",
+        "planning",
+        "writing"
+      ],
+      "session_id": "av11cur_363404bddb9a78aa",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "accessibility_review",
+        "customer_support_triage",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_c6eaa347469536d6",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "experiment_design",
+        "incident_management",
+        "qa_testing",
+        "writing"
+      ],
+      "session_id": "av11cur_aa5318f32e912378",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "code",
+        "data",
+        "requirements_analysis"
+      ],
+      "session_id": "av11cur_9f4420f48822c537",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 1,
+      "curriculum_stage": 4,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "fact_checking",
+        "operations",
+        "requirements_analysis",
+        "translation"
+      ],
+      "session_id": "av11cur_d0ba0d2d128313e5",
+      "split": "train",
+      "style": "s1"
+    }
+  ],
+  "version": "adaptive_v11_curriculum_manifest_v1"
+}

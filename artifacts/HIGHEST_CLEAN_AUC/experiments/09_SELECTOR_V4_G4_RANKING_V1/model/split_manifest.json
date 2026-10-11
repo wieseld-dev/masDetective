@@ -1,0 +1,17 @@
+{
+  "seed": 1397,
+  "split_unit": "system_id",
+  "val_fraction": 0.25,
+  "val_systems": [
+    "av11_2d355538615f00ff",
+    "av11_486b21e22324059f",
+    "av11_5df7e71a9829f052",
+    "av11_60adcadf2277b949",
+    "av11_fcbc5e8f6c849e2b",
+    "av11_fe6081f59a94aebf"
+  ],
+  "train_rows": 9636,
+  "val_rows": 3256,
+  "challenge_rows": 524,
+  "internal_test_used": false
+}

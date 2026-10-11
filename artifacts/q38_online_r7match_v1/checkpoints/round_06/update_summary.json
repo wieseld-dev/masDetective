@@ -1,0 +1,27 @@
+{
+  "clip": 0.2,
+  "epochs": 2,
+  "kl_beta": 0.05,
+  "lr": 3e-06,
+  "phase": "role_only",
+  "round": 6,
+  "samples": 144,
+  "start_adapter": "artifacts/q38_online_r7match_v1/checkpoints/round_05/policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.00043402777777777775,
+      "loss": -0.00047270456949869793,
+      "n": 144,
+      "pg": -0.00047270456949869793
+    },
+    {
+      "epoch": 2,
+      "kl": 0.0003255208333333333,
+      "loss": -0.0026080873277452257,
+      "n": 144,
+      "pg": -0.0026080873277452257
+    }
+  ],
+  "v11_reference": "artifacts/q38_utility_lora_v1/policy"
+}

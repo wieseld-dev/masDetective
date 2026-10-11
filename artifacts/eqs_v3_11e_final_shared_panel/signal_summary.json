@@ -1,0 +1,19 @@
+{
+  "systems": 24,
+  "states_per_system": 5,
+  "shared_queries": 24,
+  "state_query_labels": 2880,
+  "global_static_delta_auc": 0.021984593837535003,
+  "best_global_query_index": 19,
+  "best_global_query": "Determine the severity of a software bug reported by a customer who experienced intermittent crashes on their production server. Suggest initial troubleshooting steps based on the severity and recommend the next step for further investigation if necessary.",
+  "per_system_static_oracle_delta_auc": 0.18216488678804857,
+  "contextual_oracle_delta_auc": 0.19936022117180208,
+  "adaptive_headroom_over_global_static": 0.17737562733426707,
+  "adaptive_headroom_over_per_system_static": 0.017195334383753508,
+  "mean_unique_oracle_queries_per_system": 2.2916666666666665,
+  "mean_same_query_utility_std": 0.12645161979812045,
+  "mean_same_query_utility_range": 0.6980984477124181,
+  "fraction_queries_range_ge_005": 1.0,
+  "fraction_queries_range_ge_010": 1.0,
+  "mean_cross_state_utility_rank_corr": 0.03622530751431007
+}

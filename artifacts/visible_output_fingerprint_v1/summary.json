@@ -1,0 +1,409 @@
+{
+  "setting": {
+    "examples": 26848,
+    "roles": 20,
+    "train_rows": 18510,
+    "val_rows": 2988,
+    "test_rows": 5350,
+    "test_round1_rows": 1022,
+    "train_systems": 487,
+    "val_systems": 70,
+    "test_systems": 139,
+    "split_by_system": true,
+    "visible_features_only": [
+      "query",
+      "final_output/output/answer"
+    ],
+    "hidden_labels_used_only_for_training_and_evaluation": [
+      "selected_roles_training_only",
+      "truth_roles_training_only"
+    ],
+    "duplicate_output_keys": 0
+  },
+  "targets": {
+    "selected": {
+      "all_test": {
+        "query_only": {
+          "micro_f1": 0.2794265593561368,
+          "macro_f1": 0.27787181397859434,
+          "samples_f1": 0.2736947621433603,
+          "hamming_loss": 0.2677570093457944,
+          "exact_set_accuracy": 0.0005607476635514019,
+          "true_cardinality_mean": 1.9026168224299065,
+          "pred_cardinality_mean": 5.529158878504673,
+          "prob_cardinality_mean": 7.974697130266943,
+          "micro_auroc": 0.7089201155159702,
+          "macro_auroc_valid_roles": 0.7071041757869247,
+          "macro_ap_valid_roles": 0.2063087075719748
+        },
+        "output_only": {
+          "micro_f1": 0.4464138876199178,
+          "macro_f1": 0.4419014007506372,
+          "samples_f1": 0.47541798492265785,
+          "hamming_loss": 0.11325233644859813,
+          "exact_set_accuracy": 0.17271028037383176,
+          "true_cardinality_mean": 1.9026168224299065,
+          "pred_cardinality_mean": 2.1889719626168223,
+          "prob_cardinality_mean": 6.762860605881939,
+          "micro_auroc": 0.8344682131065035,
+          "macro_auroc_valid_roles": 0.8335731372611555,
+          "macro_ap_valid_roles": 0.42973064706559355
+        },
+        "query_plus_output": {
+          "micro_f1": 0.4682078146777527,
+          "macro_f1": 0.46173752906513704,
+          "samples_f1": 0.49909629000283207,
+          "hamming_loss": 0.10341121495327103,
+          "exact_set_accuracy": 0.21177570093457945,
+          "true_cardinality_mean": 1.9026168224299065,
+          "pred_cardinality_mean": 1.9865420560747664,
+          "prob_cardinality_mean": 6.263758301898968,
+          "micro_auroc": 0.8432723525192423,
+          "macro_auroc_valid_roles": 0.840012408738019,
+          "macro_ap_valid_roles": 0.48273467108665474
+        },
+        "query_plus_redacted_output": {
+          "micro_f1": 0.4458008260670032,
+          "macro_f1": 0.4459462606659887,
+          "samples_f1": 0.47622296395193586,
+          "hamming_loss": 0.11285981308411215,
+          "exact_set_accuracy": 0.18822429906542057,
+          "true_cardinality_mean": 1.9026168224299065,
+          "pred_cardinality_mean": 2.1702803738317757,
+          "prob_cardinality_mean": 6.408400462245113,
+          "micro_auroc": 0.8331119265028943,
+          "macro_auroc_valid_roles": 0.8302217655633122,
+          "macro_ap_valid_roles": 0.45392717663342524
+        },
+        "fingerprint_deltas": {
+          "query_plus_output_minus_query": {
+            "micro_f1": 0.18878125532161588,
+            "macro_f1": 0.1838657150865427,
+            "samples_f1": 0.22540152785947176,
+            "hamming_loss": -0.16434579439252334,
+            "exact_set_accuracy": 0.21121495327102804,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -3.542616822429907,
+            "prob_cardinality_mean": -1.7109388283679747,
+            "micro_auroc": 0.13435223700327203,
+            "macro_auroc_valid_roles": 0.13290823295109422,
+            "macro_ap_valid_roles": 0.27642596351467996
+          },
+          "query_plus_redacted_output_minus_query": {
+            "micro_f1": 0.16637426671086641,
+            "macro_f1": 0.16807444668739435,
+            "samples_f1": 0.20252820180857556,
+            "hamming_loss": -0.15489719626168225,
+            "exact_set_accuracy": 0.18766355140186916,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -3.3588785046728975,
+            "prob_cardinality_mean": -1.5662966680218302,
+            "micro_auroc": 0.12419181098692411,
+            "macro_auroc_valid_roles": 0.12311758977638743,
+            "macro_ap_valid_roles": 0.24761846906145044
+          },
+          "output_only_minus_query": {
+            "micro_f1": 0.166987328263781,
+            "macro_f1": 0.16402958677204288,
+            "samples_f1": 0.20172322277929755,
+            "hamming_loss": -0.15450467289719627,
+            "exact_set_accuracy": 0.17214953271028036,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -3.340186915887851,
+            "prob_cardinality_mean": -1.2118365243850038,
+            "micro_auroc": 0.12554809759053331,
+            "macro_auroc_valid_roles": 0.1264689614742307,
+            "macro_ap_valid_roles": 0.22342193949361874
+          }
+        }
+      },
+      "round1_test": {
+        "query_only": {
+          "micro_f1": 0.2620052770448549,
+          "macro_f1": 0.25889316035713633,
+          "samples_f1": 0.25125480629394525,
+          "hamming_loss": 0.273679060665362,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 1.901174168297456,
+          "pred_cardinality_mean": 5.515655577299413,
+          "prob_cardinality_mean": 8.148016587659752,
+          "micro_auroc": 0.6827108127951422,
+          "macro_auroc_valid_roles": 0.6772443010127986,
+          "macro_ap_valid_roles": 0.19018680793815862
+        },
+        "output_only": {
+          "micro_f1": 0.39497392128971076,
+          "macro_f1": 0.3945432992038623,
+          "samples_f1": 0.4107984372661476,
+          "hamming_loss": 0.124853228962818,
+          "exact_set_accuracy": 0.12426614481409001,
+          "true_cardinality_mean": 1.901174168297456,
+          "pred_cardinality_mean": 2.2260273972602738,
+          "prob_cardinality_mean": 6.937074898881441,
+          "micro_auroc": 0.7997220953970336,
+          "macro_auroc_valid_roles": 0.797517545011792,
+          "macro_ap_valid_roles": 0.37882680294409715
+        },
+        "query_plus_output": {
+          "micro_f1": 0.4249813386414531,
+          "macro_f1": 0.421282077199561,
+          "samples_f1": 0.4409825823230912,
+          "hamming_loss": 0.11306262230919766,
+          "exact_set_accuracy": 0.16046966731898238,
+          "true_cardinality_mean": 1.901174168297456,
+          "pred_cardinality_mean": 2.031311154598826,
+          "prob_cardinality_mean": 6.552234631605976,
+          "micro_auroc": 0.8102056359948314,
+          "macro_auroc_valid_roles": 0.8059298923691605,
+          "macro_ap_valid_roles": 0.42851300917774793
+        },
+        "query_plus_redacted_output": {
+          "micro_f1": 0.3919716646989374,
+          "macro_f1": 0.3992750274000946,
+          "samples_f1": 0.4098313297921908,
+          "hamming_loss": 0.1259784735812133,
+          "exact_set_accuracy": 0.1350293542074364,
+          "true_cardinality_mean": 1.901174168297456,
+          "pred_cardinality_mean": 2.2426614481409004,
+          "prob_cardinality_mean": 6.700294843817898,
+          "micro_auroc": 0.7992483848836569,
+          "macro_auroc_valid_roles": 0.794467242564526,
+          "macro_ap_valid_roles": 0.40349605504663033
+        },
+        "fingerprint_deltas": {
+          "query_plus_output_minus_query": {
+            "micro_f1": 0.16297606159659822,
+            "macro_f1": 0.16238891684242468,
+            "samples_f1": 0.18972777602914592,
+            "hamming_loss": -0.16061643835616435,
+            "exact_set_accuracy": 0.16046966731898238,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -3.4843444227005875,
+            "prob_cardinality_mean": -1.5957819560537763,
+            "micro_auroc": 0.1274948231996892,
+            "macro_auroc_valid_roles": 0.12868559135636182,
+            "macro_ap_valid_roles": 0.2383262012395893
+          },
+          "query_plus_redacted_output_minus_query": {
+            "micro_f1": 0.12996638765408253,
+            "macro_f1": 0.14038186704295824,
+            "samples_f1": 0.15857652349824553,
+            "hamming_loss": -0.1477005870841487,
+            "exact_set_accuracy": 0.1350293542074364,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -3.272994129158513,
+            "prob_cardinality_mean": -1.4477217438418544,
+            "micro_auroc": 0.11653757208851467,
+            "macro_auroc_valid_roles": 0.11722294155172741,
+            "macro_ap_valid_roles": 0.2133092471084717
+          },
+          "output_only_minus_query": {
+            "micro_f1": 0.13296864424485588,
+            "macro_f1": 0.13565013884672594,
+            "samples_f1": 0.15954363097220237,
+            "hamming_loss": -0.14882583170254401,
+            "exact_set_accuracy": 0.12426614481409001,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -3.2896281800391396,
+            "prob_cardinality_mean": -1.2109416887783109,
+            "micro_auroc": 0.11701128260189142,
+            "macro_auroc_valid_roles": 0.1202732439989933,
+            "macro_ap_valid_roles": 0.18863999500593853
+          }
+        }
+      }
+    },
+    "truth": {
+      "all_test": {
+        "query_only": {
+          "micro_f1": 0.43994015276793447,
+          "macro_f1": 0.4375141837578078,
+          "samples_f1": 0.42872474952105505,
+          "hamming_loss": 0.6646915887850467,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.777943925233645,
+          "pred_cardinality_mean": 17.958504672897195,
+          "prob_cardinality_mean": 9.858341513849902,
+          "micro_auroc": 0.5358082676311732,
+          "macro_auroc_valid_roles": 0.5361164893409629,
+          "macro_ap_valid_roles": 0.31753686627345956
+        },
+        "output_only": {
+          "micro_f1": 0.44734696462355633,
+          "macro_f1": 0.44560644807741634,
+          "samples_f1": 0.4384545710426858,
+          "hamming_loss": 0.6524766355140187,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.777943925233645,
+          "pred_cardinality_mean": 17.834579439252337,
+          "prob_cardinality_mean": 9.713777418831166,
+          "micro_auroc": 0.5853351887449625,
+          "macro_auroc_valid_roles": 0.5828773487874124,
+          "macro_ap_valid_roles": 0.39735458010436386
+        },
+        "query_plus_output": {
+          "micro_f1": 0.44820605011802855,
+          "macro_f1": 0.44670509260681157,
+          "samples_f1": 0.43657301504142815,
+          "hamming_loss": 0.6138785046728972,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.777943925233645,
+          "pred_cardinality_mean": 16.47233644859813,
+          "prob_cardinality_mean": 9.551007336080053,
+          "micro_auroc": 0.597399715678049,
+          "macro_auroc_valid_roles": 0.595121167921241,
+          "macro_ap_valid_roles": 0.41720335163252126
+        },
+        "query_plus_redacted_output": {
+          "micro_f1": 0.4487612477743978,
+          "macro_f1": 0.44690871577602503,
+          "samples_f1": 0.43845038586134727,
+          "hamming_loss": 0.6452429906542057,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.777943925233645,
+          "pred_cardinality_mean": 17.632710280373832,
+          "prob_cardinality_mean": 9.579176966607772,
+          "micro_auroc": 0.5921017636758124,
+          "macro_auroc_valid_roles": 0.5902602380333848,
+          "macro_ap_valid_roles": 0.40630809585409383
+        },
+        "fingerprint_deltas": {
+          "query_plus_output_minus_query": {
+            "micro_f1": 0.008265897350094087,
+            "macro_f1": 0.009190908849003754,
+            "samples_f1": 0.007848265520373099,
+            "hamming_loss": -0.050813084112149576,
+            "exact_set_accuracy": 0.0,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -1.486168224299064,
+            "prob_cardinality_mean": -0.3073341777698495,
+            "micro_auroc": 0.061591448046875774,
+            "macro_auroc_valid_roles": 0.059004678580278136,
+            "macro_ap_valid_roles": 0.0996664853590617
+          },
+          "query_plus_redacted_output_minus_query": {
+            "micro_f1": 0.008821095006463331,
+            "macro_f1": 0.009394532018217217,
+            "samples_f1": 0.00972563634029222,
+            "hamming_loss": -0.0194485981308411,
+            "exact_set_accuracy": 0.0,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -0.3257943925233633,
+            "prob_cardinality_mean": -0.27916454724213047,
+            "micro_auroc": 0.05629349604463918,
+            "macro_auroc_valid_roles": 0.05414374869242189,
+            "macro_ap_valid_roles": 0.08877122958063427
+          },
+          "output_only_minus_query": {
+            "micro_f1": 0.007406811855621864,
+            "macro_f1": 0.008092264319608522,
+            "samples_f1": 0.009729821521630766,
+            "hamming_loss": -0.012214953271028062,
+            "exact_set_accuracy": 0.0,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -0.12392523364485797,
+            "prob_cardinality_mean": -0.1445640950187368,
+            "micro_auroc": 0.04952692111378931,
+            "macro_auroc_valid_roles": 0.046760859446449476,
+            "macro_ap_valid_roles": 0.0798177138309043
+          }
+        }
+      },
+      "round1_test": {
+        "query_only": {
+          "micro_f1": 0.40360640179457313,
+          "macro_f1": 0.40118988657235743,
+          "samples_f1": 0.3909475063719768,
+          "hamming_loss": 0.6763698630136986,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.2465753424657535,
+          "pred_cardinality_mean": 17.43542074363992,
+          "prob_cardinality_mean": 9.445429906655107,
+          "micro_auroc": 0.5305875010062063,
+          "macro_auroc_valid_roles": 0.5299408063488621,
+          "macro_ap_valid_roles": 0.28771978517016616
+        },
+        "output_only": {
+          "micro_f1": 0.4150536707332845,
+          "macro_f1": 0.4142178223517249,
+          "samples_f1": 0.40433987395676774,
+          "hamming_loss": 0.6638454011741683,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.2465753424657535,
+          "pred_cardinality_mean": 17.451076320939336,
+          "prob_cardinality_mean": 9.477603773696325,
+          "micro_auroc": 0.5735451544051005,
+          "macro_auroc_valid_roles": 0.5707512924965522,
+          "macro_ap_valid_roles": 0.35704265349050973
+        },
+        "query_plus_output": {
+          "micro_f1": 0.41336875961404,
+          "macro_f1": 0.4121819374763085,
+          "samples_f1": 0.3996754072048917,
+          "hamming_loss": 0.6157045009784736,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.2465753424657535,
+          "pred_cardinality_mean": 15.744618395303327,
+          "prob_cardinality_mean": 9.157125947285287,
+          "micro_auroc": 0.5847401914866763,
+          "macro_auroc_valid_roles": 0.5819259865943351,
+          "macro_ap_valid_roles": 0.3760509313449295
+        },
+        "query_plus_redacted_output": {
+          "micro_f1": 0.41253561253561255,
+          "macro_f1": 0.41032712086507195,
+          "samples_f1": 0.40018017726766875,
+          "hamming_loss": 0.6557240704500978,
+          "exact_set_accuracy": 0.0,
+          "true_cardinality_mean": 5.2465753424657535,
+          "pred_cardinality_mean": 17.077299412915853,
+          "prob_cardinality_mean": 9.186310351793386,
+          "micro_auroc": 0.579284933316294,
+          "macro_auroc_valid_roles": 0.576670124196161,
+          "macro_ap_valid_roles": 0.36615441768916435
+        },
+        "fingerprint_deltas": {
+          "query_plus_output_minus_query": {
+            "micro_f1": 0.009762357819466883,
+            "macro_f1": 0.010992050903951056,
+            "samples_f1": 0.008727900832914914,
+            "hamming_loss": -0.06066536203522499,
+            "exact_set_accuracy": 0.0,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -1.690802348336593,
+            "prob_cardinality_mean": -0.28830395936982,
+            "micro_auroc": 0.05415269048047,
+            "macro_auroc_valid_roles": 0.05198518024547305,
+            "macro_ap_valid_roles": 0.08833114617476334
+          },
+          "query_plus_redacted_output_minus_query": {
+            "micro_f1": 0.008929210741039417,
+            "macro_f1": 0.009137234292714513,
+            "samples_f1": 0.009232670895691963,
+            "hamming_loss": -0.020645792563600773,
+            "exact_set_accuracy": 0.0,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": -0.3581213307240674,
+            "prob_cardinality_mean": -0.2591195548617211,
+            "micro_auroc": 0.04869743231008772,
+            "macro_auroc_valid_roles": 0.046729317847298946,
+            "macro_ap_valid_roles": 0.07843463251899818
+          },
+          "output_only_minus_query": {
+            "micro_f1": 0.011447268938711341,
+            "macro_f1": 0.01302793577936745,
+            "samples_f1": 0.013392367584790954,
+            "hamming_loss": -0.012524461839530265,
+            "exact_set_accuracy": 0.0,
+            "true_cardinality_mean": 0.0,
+            "pred_cardinality_mean": 0.015655577299416024,
+            "prob_cardinality_mean": 0.03217386704121772,
+            "micro_auroc": 0.042957653398894124,
+            "macro_auroc_valid_roles": 0.04081048614769012,
+            "macro_ap_valid_roles": 0.06932286832034357
+          }
+        }
+      }
+    }
+  }
+}

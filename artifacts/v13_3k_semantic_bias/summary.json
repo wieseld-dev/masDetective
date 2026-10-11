@@ -1,0 +1,13 @@
+{
+  "protocol": "v13.3k_semantic_self_bias_audit",
+  "systems": [
+    "v13_eval_fanout2_k3_r00",
+    "v12_count_fanout2_k3_r00",
+    "v12_count_fanout2_k4_r00",
+    "v12_count_fanout2_k5_r00"
+  ],
+  "n_samples": 480,
+  "api_calls": 0,
+  "model_calls": 0,
+  "note": "Null correction is diagnostic only and uses ground-truth absence labels from other development systems."
+}

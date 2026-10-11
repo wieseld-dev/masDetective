@@ -1,0 +1,51 @@
+{
+  "true_k": 3,
+  "pred_k": 6,
+  "p_k3": 0.23064027046773017,
+  "true_roles": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "top3_predicted": [
+    "research",
+    "code",
+    "experiment_design"
+  ],
+  "k_correct": false,
+  "top3_exact": false,
+  "final_k_probs": {
+    "3": 0.23064027046773017,
+    "4": 0.23780522824096004,
+    "5": 0.2399008479824893,
+    "6": 0.2916536533088204
+  },
+  "final_role_probs": {
+    "code": 0.3047679067610173,
+    "writing": 0.2753937941452912,
+    "math": 0.2621836459265809,
+    "planning": 0.24216187907522735,
+    "research": 0.3484879204639851,
+    "data": 0.1855347328886728,
+    "design": 0.18997076793069834,
+    "operations": 0.23389371287956898,
+    "qa_testing": 0.21003522130419192,
+    "translation": 0.18569060693075434,
+    "financial_analysis": 0.2130924213749177,
+    "database_design": 0.18750905103257628,
+    "accessibility_review": 0.21455869604682473,
+    "fact_checking": 0.2287321647059113,
+    "requirements_analysis": 0.18745956115068524,
+    "incident_management": 0.20636761343884422,
+    "experiment_design": 0.2922777688761507,
+    "risk_assessment": 0.22766000083440507,
+    "documentation": 0.21539016729407887,
+    "customer_support_triage": 0.18140025107201752
+  },
+  "rounds": 5,
+  "group_size": 8,
+  "mode": "mixed",
+  "adapter": "artifacts/v6_matched_sft_dpo/policy",
+  "inference_inputs": "query + final_output only",
+  "trace_usage": "evaluation only"
+}

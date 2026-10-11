@@ -1,0 +1,35 @@
+==========================================================================================
+V13.7 PROBE BANK FREEZE
+==========================================================================================
+roles: 20
+probe families: 4
+total probes: 80
+T0 cohort consistency: PASS
+role coverage: PASS
+exact cross-family duplicates: 0
+
+Highest same-role lexical overlaps:
+math                        T0-T1 Jaccard=0.556
+financial_analysis          T0-T1 Jaccard=0.531
+database_design             T0-T1 Jaccard=0.500
+math                        T0-T Jaccard=0.474
+database_design             T1-T Jaccard=0.440
+risk_assessment             T1-T Jaccard=0.433
+requirements_analysis       T0-T1 Jaccard=0.429
+planning                    T0-T1 Jaccard=0.407
+code                        T0-T1 Jaccard=0.400
+math                        T1-T Jaccard=0.400
+customer_support_triage     T0-T1 Jaccard=0.395
+translation                 T0-T Jaccard=0.394
+operations                  T0-T1 Jaccard=0.389
+planning                    T1-T Jaccard=0.375
+qa_testing                  T0-T1 Jaccard=0.375
+writing                     T0-T1 Jaccard=0.356
+database_design             T0-T Jaccard=0.346
+documentation               T0-T Jaccard=0.343
+planning                    T0-D Jaccard=0.333
+qa_testing                  T0-T Jaccard=0.333
+
+probe bank: artifacts/v137_presence_v1/probe_bank_v1.json
+sha256: 67fba2c7caf79f01bac59bec2e392824c0d331d2006ffd138b3dc7fec0c0c35b
+PROBE BANK FREEZE: PASS

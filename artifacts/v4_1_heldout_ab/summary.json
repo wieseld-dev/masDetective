@@ -1,0 +1,16 @@
+{
+  "heldout_systems": 8,
+  "contexts": 32,
+  "prompt_identical": 32,
+  "seed_identical": 32,
+  "query_identical": 28,
+  "query_changed": 4,
+  "change_rate": 0.125,
+  "epoch2_valid": 29,
+  "v41_valid": 29,
+  "both_valid": 29,
+  "changes_by_candidate_index": {
+    "0": 2,
+    "3": 2
+  }
+}

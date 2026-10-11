@@ -1,0 +1,98 @@
+=============================================================================================================================
+RAW TARGET SENSOR EVIDENCE -> PRESENT/ABSENT LIKELIHOOD
+=============================================================================================================================
+
+TOTAL RECORDS : 125
+PRESENT       : 19
+ABSENT        : 106
+EMPIRICAL PRIOR P(PRESENT) = 0.152000
+EMPIRICAL PRIOR ODDS       = 0.179245
+
+=============================================================================================================================
+FIXED EVIDENCE BINS
+=============================================================================================================================
+SENSOR BIN               N     P     A   P(PRESENT|BIN)         LR        LLR
+[-inf, -4)              21     3    18            0.143      0.905     -0.100
+[-4, -2)                25     3    22            0.120      0.744     -0.296
+[-2, -1)                17     1    16            0.059      0.435     -0.833
+[-1, 0)                 19     1    18            0.053      0.388     -0.947
+[0, 1)                  21     3    18            0.143      0.905     -0.100
+[1, 2)                   8     3     5            0.375      3.043      1.113
+[2, 4)                  12     3     9            0.250      1.762      0.566
+[4, +inf]                2     2     0            1.000     23.913      3.174
+
+=============================================================================================================================
+POSITIVE-TAIL THRESHOLDS
+=============================================================================================================================
+EVIDENCE >= T       N  PRESENT   ABSENT  PRECISION
+          -2.00    79       13       66      0.165
+          -1.00    62       12       50      0.194
+           0.00    43       11       32      0.256
+           0.50    32       11       21      0.344
+           1.00    22        8       14      0.364
+           2.00    14        5        9      0.357
+           3.00     7        4        3      0.571
+           4.00     2        2        0      1.000
+
+=============================================================================================================================
+NEGATIVE-TAIL THRESHOLDS
+=============================================================================================================================
+EVIDENCE <= T       N  PRESENT   ABSENT  P(ABSENT)
+           0.00    82        8       74      0.902
+          -0.50    71        8       63      0.887
+          -1.00    63        7       56      0.889
+          -2.00    46        6       40      0.870
+          -3.00    32        3       29      0.906
+          -4.00    21        3       18      0.857
+
+=============================================================================================================================
+TOP POSITIVE SENSOR EVIDENCE
+=============================================================================================================================
+R13 PRESENT E= +5.066 TARGET=incident_management      simple5_04_support_incident_ops
+R21 PRESENT E= +4.527 TARGET=planning                 simple5_01_code_plan_research
+R08 ABSENT  E= +3.582 TARGET=risk_assessment          simple5_04_support_incident_ops
+R16 ABSENT  E= +3.469 TARGET=fact_checking            simple5_02_risk_access_translation
+R16 PRESENT E= +3.428 TARGET=planning                 simple5_01_code_plan_research
+R12 ABSENT  E= +3.195 TARGET=writing                  simple5_04_support_incident_ops
+R01 PRESENT E= +3.000 TARGET=research                 simple5_01_code_plan_research
+R09 PRESENT E= +2.674 TARGET=operations               simple5_04_support_incident_ops
+R13 ABSENT  E= +2.633 TARGET=fact_checking            simple5_01_code_plan_research
+R25 ABSENT  E= +2.430 TARGET=fact_checking            simple5_03_data_db_requirements
+R17 ABSENT  E= +2.301 TARGET=research                 simple5_05_docs_qa_writing
+R17 ABSENT  E= +2.252 TARGET=planning                 simple5_02_risk_access_translation
+R10 ABSENT  E= +2.232 TARGET=data                     simple5_04_support_incident_ops
+R02 ABSENT  E= +2.008 TARGET=experiment_design        simple5_05_docs_qa_writing
+R12 ABSENT  E= +1.988 TARGET=risk_assessment          simple5_03_data_db_requirements
+R10 PRESENT E= +1.891 TARGET=translation              simple5_02_risk_access_translation
+R07 ABSENT  E= +1.832 TARGET=writing                  simple5_03_data_db_requirements
+R20 PRESENT E= +1.715 TARGET=writing                  simple5_05_docs_qa_writing
+R13 ABSENT  E= +1.502 TARGET=financial_analysis       simple5_03_data_db_requirements
+R24 PRESENT E= +1.415 TARGET=customer_support_triage  simple5_04_support_incident_ops
+
+=============================================================================================================================
+TOP NEGATIVE SENSOR EVIDENCE
+=============================================================================================================================
+R03 ABSENT  E= -7.488 TARGET=code                     simple5_02_risk_access_translation
+R08 ABSENT  E= -7.156 TARGET=data                     simple5_02_risk_access_translation
+R04 ABSENT  E= -7.055 TARGET=incident_management      simple5_05_docs_qa_writing
+R09 ABSENT  E= -6.203 TARGET=operations               simple5_02_risk_access_translation
+R22 ABSENT  E= -6.055 TARGET=financial_analysis       simple5_03_data_db_requirements
+R04 ABSENT  E= -5.840 TARGET=data                     simple5_02_risk_access_translation
+R19 ABSENT  E= -5.640 TARGET=database_design          simple5_04_support_incident_ops
+R24 ABSENT  E= -5.594 TARGET=incident_management      simple5_01_code_plan_research
+R11 ABSENT  E= -5.297 TARGET=data                     simple5_04_support_incident_ops
+R18 ABSENT  E= -5.285 TARGET=documentation            simple5_03_data_db_requirements
+R11 ABSENT  E= -5.240 TARGET=requirements_analysis    simple5_02_risk_access_translation
+R13 PRESENT E= -4.953 TARGET=qa_testing               simple5_05_docs_qa_writing
+R09 ABSENT  E= -4.762 TARGET=incident_management      simple5_03_data_db_requirements
+R14 ABSENT  E= -4.711 TARGET=documentation            simple5_02_risk_access_translation
+R25 PRESENT E= -4.453 TARGET=writing                  simple5_05_docs_qa_writing
+R23 PRESENT E= -4.312 TARGET=research                 simple5_01_code_plan_research
+R07 ABSENT  E= -4.293 TARGET=documentation            simple5_02_risk_access_translation
+R05 ABSENT  E= -4.264 TARGET=documentation            simple5_02_risk_access_translation
+R24 ABSENT  E= -4.262 TARGET=math                     simple5_02_risk_access_translation
+R17 ABSENT  E= -4.234 TARGET=documentation            simple5_03_data_db_requirements
+
+WROTE:
+  artifacts/HIGHEST_CLEAN_AUC/experiments/15_LONG_6CLEAN_3HYBRID_6CLEAN_10HYBRID_V1/reports/sensor_evidence_likelihood_records.csv
+  artifacts/HIGHEST_CLEAN_AUC/experiments/15_LONG_6CLEAN_3HYBRID_6CLEAN_10HYBRID_V1/reports/sensor_evidence_likelihood_bins.csv

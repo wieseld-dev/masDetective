@@ -1,0 +1,15 @@
+This ZIP is an overlay patch. It contains NO .env, NO API key, NO conda environment, and NO old data.
+
+1) Copy the ZIP to your cluster HOME.
+2) On the cluster:
+
+   cd ~/mas_rl_detective
+   unzip -o ~/mas_rl_detective_v5_patch.zip -d ~/mas_rl_detective
+   bash apply_v5.sh
+
+3) Then:
+
+   conda activate masdetective
+   pip install -r requirements_v5.txt
+   python -m scripts.check_gpu_stack
+   python -m scripts.check_4bit_load

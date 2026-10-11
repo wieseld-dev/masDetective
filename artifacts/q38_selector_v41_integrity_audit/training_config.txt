@@ -1,0 +1,60 @@
+34:MODEL = "Qwen/Qwen3.8-27B"
+50:MAX_LEN = int(
+52:        "MAX_LEN",
+57:EPOCHS = int(
+59:        "EPOCHS",
+64:MAX_MICRO = int(
+66:        "MAX_MICRO",
+71:PERMS_PER_STATE = int(
+73:        "PERMS_PER_STATE",
+78:EVAL_PERMS = int(
+80:        "EVAL_PERMS",
+85:GRAD_ACC = int(
+87:        "GRAD_ACC",
+92:LR = float(
+94:        "LR",
+99:TARGET_TEMP = float(
+101:        "TARGET_TEMP",
+106:PAIR_WEIGHT = float(
+108:        "PAIR_WEIGHT",
+113:PATIENCE = int(
+115:        "PATIENCE",
+178:print("MODEL =", MODEL)
+179:print("MAX_LEN =", MAX_LEN)
+180:print("EPOCHS =", EPOCHS)
+181:print("MAX_MICRO =", MAX_MICRO)
+183:    "PERMS_PER_STATE =",
+184:    PERMS_PER_STATE,
+187:    "EVAL_PERMS =",
+188:    EVAL_PERMS,
+190:print("GRAD_ACC =", GRAD_ACC)
+191:print("LR =", LR)
+193:    "TARGET_TEMP =",
+194:    TARGET_TEMP,
+197:    "PAIR_WEIGHT =",
+198:    PAIR_WEIGHT,
+230:    MODEL
+264:            enable_thinking=False,
+431:        if len(ids) <= MAX_LEN:
+440:        f"Prompt cannot fit MAX_LEN={MAX_LEN}: "
+467:                PERMS_PER_STATE
+634:# MODEL
+645:    MODEL,
+727:def restricted_scores(
+781:        / TARGET_TEMP,
+902:            + PAIR_WEIGHT
+1002:        EVAL_PERMS
+1040:        raw = restricted_scores(
+1079:        / EVAL_PERMS
+1380:    lr=LR,
+1386:    * EPOCHS
+1391:    MAX_MICRO,
+1398:        / GRAD_ACC
+1460:    EPOCHS + 1,
+1505:        scores = restricted_scores(
+1530:            / GRAD_ACC
+1549:        if accum >= GRAD_ACC:
+1724:            f"{PATIENCE}",
+1737:        >= PATIENCE
+1805:        MODEL,
+1824:            f"{EVAL_PERMS}-permutation "

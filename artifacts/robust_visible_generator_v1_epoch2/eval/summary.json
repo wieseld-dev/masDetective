@@ -1,0 +1,117 @@
+{
+  "setting": {
+    "heldout_test_systems": 24,
+    "candidates_per_system": 8,
+    "actual_MAS_calls": 0,
+    "actual_candidate_outputs_used": false,
+    "score": "expected visible MI about K before execution",
+    "primary_no_selector_metric": "random_candidate_expected_mean + candidate0_mean + lower-tail quantiles"
+  },
+  "policies": {
+    "branch_cycle01": {
+      "valid_rate": 1.0,
+      "all_candidate_mean": 0.05513536379899462,
+      "all_candidate_p10": 0.03932248228307591,
+      "all_candidate_p25": 0.04477120329680151,
+      "all_candidate_median": 0.05256516405763012,
+      "all_candidate_p75": 0.0636103197076976,
+      "random_candidate_expected_mean": 0.05513536379899462,
+      "candidate0_mean": 0.05280213067180658,
+      "mean_group_worst": 0.04410110759660749,
+      "mean_group_p25": 0.0495399452552456,
+      "mean_group_best_of_8": 0.06726382443435171,
+      "mean_unique_rate": 1.0,
+      "systems": 24
+    },
+    "existing_final_cycle02": {
+      "valid_rate": 1.0,
+      "all_candidate_mean": 0.05572398167960032,
+      "all_candidate_p10": 0.039235344974134015,
+      "all_candidate_p25": 0.04623361110505897,
+      "all_candidate_median": 0.053757424488964034,
+      "all_candidate_p75": 0.06485384498562063,
+      "random_candidate_expected_mean": 0.05572398167960032,
+      "candidate0_mean": 0.05654105978795335,
+      "mean_group_worst": 0.04418785538600297,
+      "mean_group_p25": 0.051023940043418675,
+      "mean_group_best_of_8": 0.06699944494320272,
+      "mean_unique_rate": 1.0,
+      "systems": 24
+    },
+    "robust_visible": {
+      "valid_rate": 1.0,
+      "all_candidate_mean": 0.057025052325280844,
+      "all_candidate_p10": 0.040725903923652586,
+      "all_candidate_p25": 0.04732112231925578,
+      "all_candidate_median": 0.055131589792965396,
+      "all_candidate_p75": 0.0649523308947586,
+      "random_candidate_expected_mean": 0.057025052325280844,
+      "candidate0_mean": 0.05700425195251361,
+      "mean_group_worst": 0.04489347865726231,
+      "mean_group_p25": 0.053067082294882946,
+      "mean_group_best_of_8": 0.06834402595544602,
+      "mean_unique_rate": 1.0,
+      "systems": 24
+    }
+  },
+  "robust_vs_existing_final": {
+    "all_candidate_mean": {
+      "existing_final": 0.05572398167960032,
+      "robust": 0.057025052325280844,
+      "delta": 0.0013010706456805243,
+      "ratio": 1.0233484867101093
+    },
+    "all_candidate_p10": {
+      "existing_final": 0.039235344974134015,
+      "robust": 0.040725903923652586,
+      "delta": 0.0014905589495185709,
+      "ratio": 1.0379902088410646
+    },
+    "all_candidate_p25": {
+      "existing_final": 0.04623361110505897,
+      "robust": 0.04732112231925578,
+      "delta": 0.0010875112141968124,
+      "ratio": 1.0235220911411311
+    },
+    "all_candidate_median": {
+      "existing_final": 0.053757424488964034,
+      "robust": 0.055131589792965396,
+      "delta": 0.0013741653040013624,
+      "ratio": 1.0255623351948988
+    },
+    "random_candidate_expected_mean": {
+      "existing_final": 0.05572398167960032,
+      "robust": 0.057025052325280844,
+      "delta": 0.0013010706456805243,
+      "ratio": 1.0233484867101093
+    },
+    "candidate0_mean": {
+      "existing_final": 0.05654105978795335,
+      "robust": 0.05700425195251361,
+      "delta": 0.00046319216456025547,
+      "ratio": 1.0081921380019647
+    },
+    "mean_group_worst": {
+      "existing_final": 0.04418785538600297,
+      "robust": 0.04489347865726231,
+      "delta": 0.0007056232712593369,
+      "ratio": 1.0159687150484078
+    },
+    "mean_group_p25": {
+      "existing_final": 0.051023940043418675,
+      "robust": 0.053067082294882946,
+      "delta": 0.002043142251464271,
+      "ratio": 1.0400428161707165
+    },
+    "mean_group_best_of_8": {
+      "existing_final": 0.06699944494320272,
+      "robust": 0.06834402595544602,
+      "delta": 0.001344581012243301,
+      "ratio": 1.0200685395734717
+    }
+  },
+  "success_criterion": {
+    "desired": "robust generator raises mean AND p10/p25/worst, so random/first candidate becomes strong",
+    "strong_result": "robust random/first approaches or exceeds existing-final best-of-8 surrogate quality"
+  }
+}

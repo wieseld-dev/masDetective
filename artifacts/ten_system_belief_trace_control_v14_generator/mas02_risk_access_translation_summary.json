@@ -1,0 +1,83 @@
+{
+  "system_id": "mas02_risk_access_translation",
+  "true_roles": [
+    "risk_assessment",
+    "accessibility_review",
+    "translation"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.20928655252924538,
+    "4": 0.2703537914279996,
+    "5": 0.25686856521648604,
+    "6": 0.2634910908262689
+  },
+  "final_role_probs": {
+    "code": 0.20747927540360378,
+    "writing": 0.3277455311385897,
+    "math": 0.20774305325058437,
+    "planning": 0.2467946078215943,
+    "research": 0.20911351845974327,
+    "data": 0.20660488170342173,
+    "design": 0.20080914454257812,
+    "operations": 0.20897528238392882,
+    "qa_testing": 0.21183480292164658,
+    "translation": 0.20897267345871468,
+    "financial_analysis": 0.17556145611526908,
+    "database_design": 0.24555462255073557,
+    "accessibility_review": 0.5402832478934279,
+    "fact_checking": 0.2593749849236255,
+    "requirements_analysis": 0.17251120436983552,
+    "incident_management": 0.21463628857427608,
+    "experiment_design": 0.17978452360831354,
+    "risk_assessment": 0.19685966960915652,
+    "documentation": 0.1713588796745443,
+    "customer_support_triage": 0.18256654593618912
+  },
+  "belief_auc": 0.6078431372549019,
+  "present_vs_absent_correct": 31,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.6078431372549019,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "accessibility_review",
+    "writing",
+    "fact_checking"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.19685966960915652,
+  "max_false_belief": 0.3277455311385897,
+  "ranking": [
+    "accessibility_review",
+    "writing",
+    "fact_checking",
+    "planning",
+    "database_design",
+    "incident_management",
+    "qa_testing",
+    "research",
+    "operations",
+    "translation",
+    "math",
+    "code",
+    "data",
+    "design",
+    "risk_assessment",
+    "customer_support_triage",
+    "experiment_design",
+    "financial_analysis",
+    "requirements_analysis",
+    "documentation"
+  ],
+  "predicted_k": 4,
+  "predicted_k_correct": false
+}

@@ -1,0 +1,16 @@
+{
+  "n_clear": 74,
+  "tp": 26,
+  "fn": 2,
+  "fp": 5,
+  "tn": 41,
+  "accuracy": 0.9054054054054054,
+  "meta_precision": 0.8387096774193549,
+  "meta_recall": 0.9285714285714286,
+  "nonmeta_precision": 0.9534883720930233,
+  "dangerous_false_negatives": 2,
+  "gate_allowed": 43,
+  "gate_allowed_true_meta": 2,
+  "gate_precision": 0.9534883720930233,
+  "gate_meta_recall": 0.9285714285714286
+}

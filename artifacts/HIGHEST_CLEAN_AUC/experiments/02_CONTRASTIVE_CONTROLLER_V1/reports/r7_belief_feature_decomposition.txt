@@ -1,0 +1,956 @@
+===== FROZEN BELIEF FEATURE DECOMPOSITION =====
+Positive contribution = increases role logit.
+For TRUE roles, negative movement is bad.
+For FALSE roles, positive movement is bad.
+
+========================================================================================================================
+simple5_01_code_plan_research
+========================================================================================================================
+TRUE ROLES: code, planning, research
+
+TOP ROLE MOVEMENTS:
+
+FALSE fact_checking                P 0.2661 -> 0.4006 ΔP=+0.1345 Δlogit=+1.5302
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +1.0963
+    v135_series              +0.5552
+    gap_series               +0.1056
+    avg_series               -0.0684
+    history_len              -0.0682
+    rank135_series           -0.0565
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.8758
+    last.v135_minus_role_mean              +0.7393
+    gap134_minus135.min                    +0.3345
+    last.v135_minus_role_median            +0.3286
+    v135.last                              -0.3066
+    gap134_minus135.last                   -0.2654
+    v135.std                               -0.1417
+    rank135.last                           -0.1314
+
+FALSE incident_management          P 0.2660 -> 0.2351 ΔP=-0.0309 Δlogit=-0.4120
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1080
+    v134_series              -0.0839
+    last_relative_v134       -0.0720
+    rank134_series           +0.0692
+    history_len              -0.0682
+    last_relative_v135       -0.0658
+  TOP INDIVIDUAL FEATURES:
+    v134.q75                               -0.1094
+    last.v135_minus_role_max               -0.0940
+    gap134_minus135.last                   -0.0900
+    rank135.last                           -0.0788
+    last.v134_minus_role_median            -0.0731
+    v135.last                              -0.0698
+    history_len                            -0.0682
+    v134.median                            +0.0674
+
+FALSE risk_assessment              P 0.3089 -> 0.2793 ΔP=-0.0296 Δlogit=-0.3576
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1171
+    last_relative_v135       +0.0782
+    last_relative_v134       -0.0720
+    history_len              -0.0682
+    gap_series               -0.0648
+    v135_series              -0.0627
+  TOP INDIVIDUAL FEATURES:
+    gap134_minus135.last                   -0.1138
+    rank135.last                           -0.1051
+    v135.last                              -0.0991
+    last.v135_minus_role_mean              +0.0929
+    v134.q75                               -0.0792
+    last.v135_minus_role_max               -0.0788
+    last.v134_minus_role_median            -0.0731
+    history_len                            -0.0682
+
+FALSE financial_analysis           P 0.2608 -> 0.2337 ΔP=-0.0271 Δlogit=-0.3645
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1189
+    last_relative_v135       -0.0873
+    history_len              -0.0682
+    last_relative_v134       -0.0399
+    gap_series               -0.0376
+    avg_series               -0.0182
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.1314
+    last.v135_minus_role_max               -0.0962
+    rank134.last                           +0.0936
+    v134.median                            +0.0888
+    gap134_minus135.last                   -0.0748
+    history_len                            -0.0682
+    v134.q75                               -0.0663
+    v135.last                              -0.0654
+
+TRUE  code                         P 0.2236 -> 0.2033 ΔP=-0.0203 Δlogit=-0.3028
+  TOP GROUP CONTRIBUTIONS:
+    rank134_series           -0.1189
+    history_len              -0.0682
+    last_relative_v134       +0.0472
+    rank135_series           -0.0447
+    v135_series              -0.0388
+    last_relative_v135       -0.0362
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_max               -0.0908
+    v135.last                              -0.0758
+    v134.median                            +0.0731
+    v134.q75                               -0.0730
+    history_len                            -0.0682
+    rank134.min                            -0.0562
+    gap134_minus135.last                   -0.0515
+    rank134.last                           -0.0468
+
+FALSE customer_support_triage      P 0.2111 -> 0.1909 ΔP=-0.0202 Δlogit=-0.3157
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.4170
+    last_relative_v134       +0.1137
+    rank135_series           +0.0930
+    history_len              -0.0682
+    gap_series               +0.0612
+    v134_series              -0.0588
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              -0.2215
+    rank135.last                           +0.1314
+    last.v135_minus_role_max               -0.1309
+    rank134.median                         +0.1223
+    rank134.last                           -0.1169
+    v134.q75                               -0.1030
+    last.v134_minus_role_median            +0.0787
+    history_len                            -0.0682
+
+FALSE accessibility_review         P 0.2068 -> 0.1869 ΔP=-0.0199 Δlogit=-0.3159
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1695
+    v135_series              -0.0761
+    history_len              -0.0682
+    avg_series               -0.0318
+    last_relative_v134       +0.0243
+    rank134_series           +0.0221
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.1576
+    rank135.min                            -0.1002
+    last.v135_minus_role_max               -0.0892
+    v135.last                              -0.0789
+    v134.median                            +0.0753
+    v134.q75                               -0.0714
+    history_len                            -0.0682
+    gap134_minus135.last                   -0.0623
+
+FALSE data                         P 0.2110 -> 0.1918 ΔP=-0.0192 Δlogit=-0.2994
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.1208
+    rank134_series           -0.1139
+    last_relative_v134       +0.0885
+    history_len              -0.0682
+    rank135_series           -0.0382
+    avg_series               -0.0343
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_max               -0.0997
+    rank134.last                           -0.0936
+    v134.median                            +0.0764
+    v134.q75                               -0.0682
+    history_len                            -0.0682
+    v135.last                              -0.0586
+    last.v134_minus_role_median            +0.0581
+    gap134_minus135.q75                    +0.0405
+
+FALSE writing                      P 0.2235 -> 0.2050 ΔP=-0.0184 Δlogit=-0.2742
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.2209
+    rank135_series           -0.2060
+    v135_series              -0.1441
+    gap_series               -0.1009
+    last_relative_v134       -0.0720
+    v134_series              +0.0720
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.2890
+    last.v135_minus_role_mean              +0.1835
+    gap134_minus135.last                   -0.1374
+    v135.last                              -0.1282
+    v134.median                            +0.1236
+    rank134.last                           +0.1052
+    last.v135_minus_role_median            +0.1012
+    last.v134_minus_role_median            -0.0731
+
+FALSE translation                  P 0.2123 -> 0.1941 ΔP=-0.0182 Δlogit=-0.2814
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              -0.0706
+    history_len              -0.0682
+    rank135_series           -0.0503
+    last_relative_v135       -0.0481
+    last_relative_v134       -0.0307
+    v134_series              +0.0280
+  TOP INDIVIDUAL FEATURES:
+    v134.median                            +0.1113
+    rank135.last                           -0.1051
+    last.v135_minus_role_max               -0.0921
+    gap134_minus135.last                   -0.0779
+    v135.last                              -0.0734
+    history_len                            -0.0682
+    v134.q75                               -0.0515
+    gap134_minus135.q75                    +0.0452
+========================================================================================================================
+simple5_02_risk_access_translation
+========================================================================================================================
+TRUE ROLES: accessibility_review, risk_assessment, translation
+
+TOP ROLE MOVEMENTS:
+
+FALSE financial_analysis           P 0.3615 -> 0.3987 ΔP=+0.0371 Δlogit=+0.3948
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.7426
+    rank135_series           -0.1178
+    rank134_series           -0.0902
+    history_len              -0.0682
+    last_relative_v134       -0.0396
+    gap_series               -0.0350
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              +0.4900
+    rank135.last                           -0.2102
+    last.v135_minus_role_median            +0.2044
+    rank134.max                            -0.1194
+    v135.last                              -0.0945
+    rank134.last                           +0.0936
+    gap134_minus135.last                   -0.0850
+    rank135.q25                            +0.0700
+
+FALSE planning                     P 0.2192 -> 0.2404 ΔP=+0.0211 Δlogit=+0.2992
+  TOP GROUP CONTRIBUTIONS:
+    gap_series               +0.2916
+    history_len              -0.0682
+    v135_series              +0.0671
+    last_relative_v135       -0.0557
+    last_relative_v134       +0.0269
+    rank135_series           +0.0207
+  TOP INDIVIDUAL FEATURES:
+    gap134_minus135.max                    +0.2606
+    v135.q25                               +0.0723
+    gap134_minus135.last                   +0.0712
+    v135.last                              +0.0682
+    history_len                            -0.0682
+    v135.median                            -0.0470
+    v135.std                               -0.0371
+    last.v135_minus_role_max               -0.0359
+
+FALSE qa_testing                   P 0.2450 -> 0.2622 ΔP=+0.0172 Δlogit=+0.2271
+  TOP GROUP CONTRIBUTIONS:
+    gap_series               +0.3166
+    last_relative_v135       -0.1120
+    last_relative_v134       +0.0980
+    v135_series              +0.0902
+    history_len              -0.0682
+    rank134_series           -0.0633
+  TOP INDIVIDUAL FEATURES:
+    gap134_minus135.max                    +0.2182
+    gap134_minus135.last                   +0.1064
+    rank134.last                           -0.0936
+    v135.last                              +0.0797
+    history_len                            -0.0682
+    last.v134_minus_role_median            +0.0674
+    last.v135_minus_role_mean              -0.0526
+    last.v135_minus_role_max               -0.0419
+
+FALSE documentation                P 0.1927 -> 0.2080 ΔP=+0.0152 Δlogit=+0.2380
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.5140
+    rank135_series           -0.3123
+    history_len              -0.0682
+    avg_series               +0.0484
+    last_relative_v134       +0.0315
+    v134_series              +0.0313
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              +0.3449
+    rank135.last                           -0.2364
+    rank135.min                            -0.1671
+    last.v135_minus_role_median            +0.1450
+    rank135.std                            +0.0690
+    history_len                            -0.0682
+    avg134135.max                          +0.0579
+    v135.last                              -0.0479
+
+FALSE incident_management          P 0.3110 -> 0.3234 ΔP=+0.0124 Δlogit=+0.1432
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.3551
+    rank135_series           +0.2608
+    v135_series              +0.1324
+    gap_series               +0.1134
+    history_len              -0.0682
+    rank134_series           -0.0553
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           +0.2627
+    last.v135_minus_role_mean              -0.2070
+    v135.last                              +0.1292
+    gap134_minus135.last                   +0.1291
+    last.v135_minus_role_median            -0.0807
+    rank134.last                           -0.0702
+    history_len                            -0.0682
+    last.v135_minus_role_max               -0.0675
+
+FALSE research                     P 0.2126 -> 0.2004 ΔP=-0.0122 Δlogit=-0.1862
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.2095
+    rank134_series           -0.1917
+    last_relative_v134       -0.1336
+    history_len              -0.0682
+    gap_series               -0.0228
+    v135_series              +0.0164
+  TOP INDIVIDUAL FEATURES:
+    rank134.max                            -0.2388
+    rank134.last                           +0.1637
+    last.v135_minus_role_mean              +0.1516
+    last.v134_minus_role_median            -0.1218
+    rank134.std                            -0.0697
+    history_len                            -0.0682
+    last.v135_minus_role_median            +0.0659
+    last.v134_minus_role_mean              -0.0646
+
+FALSE database_design              P 0.2379 -> 0.2280 ΔP=-0.0099 Δlogit=-0.1384
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1263
+    rank134_series           -0.1230
+    last_relative_v134       +0.1209
+    history_len              -0.0682
+    gap_series               +0.0610
+    v134_series              +0.0501
+  TOP INDIVIDUAL FEATURES:
+    rank134.last                           -0.1403
+    gap134_minus135.last                   +0.1024
+    rank134.median                         +0.0873
+    last.v134_minus_role_median            +0.0862
+    rank134.min                            -0.0750
+    history_len                            -0.0682
+    v135.median                            -0.0672
+    v135.last                              +0.0645
+
+FALSE customer_support_triage      P 0.1404 -> 0.1491 ΔP=+0.0086 Δlogit=+0.1745
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v134       +0.1920
+    rank134_series           -0.1002
+    history_len              -0.0682
+    gap_series               +0.0652
+    rank135_series           -0.0535
+    last_relative_v135       +0.0504
+  TOP INDIVIDUAL FEATURES:
+    rank134.last                           -0.1988
+    last.v134_minus_role_median            +0.1443
+    gap134_minus135.last                   +0.1138
+    rank134.median                         +0.1048
+    last.v134_minus_role_mean              +0.0801
+    history_len                            -0.0682
+    rank135.last                           -0.0525
+    last.v135_minus_role_mean              +0.0505
+
+TRUE  accessibility_review         P 0.1611 -> 0.1689 ΔP=+0.0078 Δlogit=+0.1426
+  TOP GROUP CONTRIBUTIONS:
+    gap_series               +0.1436
+    last_relative_v135       -0.1270
+    v135_series              +0.0743
+    history_len              -0.0682
+    rank135_series           +0.0360
+    v134_series              +0.0338
+  TOP INDIVIDUAL FEATURES:
+    gap134_minus135.max                    +0.0907
+    gap134_minus135.last                   +0.0855
+    v135.last                              +0.0827
+    history_len                            -0.0682
+    last.v135_minus_role_mean              -0.0621
+    rank135.last                           +0.0525
+    last.v135_minus_role_max               -0.0434
+    v134.q75                               +0.0277
+
+FALSE code                         P 0.1540 -> 0.1608 ΔP=+0.0069 Δlogit=+0.1297
+  TOP GROUP CONTRIBUTIONS:
+    rank134_series           +0.0853
+    history_len              -0.0682
+    v135_series              +0.0605
+    v134_series              +0.0497
+    rank135_series           -0.0446
+    gap_series               +0.0331
+  TOP INDIVIDUAL FEATURES:
+    history_len                            -0.0682
+    gap134_minus135.last                   +0.0631
+    v135.last                              +0.0613
+    rank134.last                           +0.0585
+    rank135.last                           -0.0525
+    rank134.median                         +0.0349
+    rank135.min                            -0.0334
+    last.v135_minus_role_max               -0.0324
+========================================================================================================================
+simple5_03_data_db_requirements
+========================================================================================================================
+TRUE ROLES: data, database_design, requirements_analysis
+
+TOP ROLE MOVEMENTS:
+
+TRUE  requirements_analysis        P 0.2938 -> 0.3810 ΔP=+0.0873 Δlogit=+0.9811
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +1.3487
+    v135_series              -0.2121
+    avg_series               -0.0844
+    rank135_series           -0.0734
+    history_len              -0.0682
+    last_relative_v134       +0.0529
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              +0.8990
+    last.v135_minus_role_median            +0.4028
+    v135.last                              -0.3061
+    gap134_minus135.min                    +0.1837
+    gap134_minus135.last                   -0.1531
+    v135.max                               +0.1496
+    v135.q25                               -0.1021
+    avg134135.last                         -0.1017
+
+FALSE planning                     P 0.1778 -> 0.2265 ΔP=+0.0487 Δlogit=+0.7585
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.8024
+    gap_series               +0.1801
+    rank135_series           -0.1303
+    history_len              -0.0682
+    avg_series               -0.0576
+    v134_series              +0.0430
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              +0.5521
+    last.v135_minus_role_median            +0.2609
+    rank135.last                           -0.2364
+    gap134_minus135.min                    +0.2155
+    v135.last                              -0.1948
+    v135.max                               +0.1940
+    rank135.q25                            +0.0875
+    gap134_minus135.last                   -0.0728
+
+FALSE customer_support_triage      P 0.1962 -> 0.1709 ΔP=-0.0253 Δlogit=-0.4226
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.7735
+    v135_series              +0.1925
+    rank135_series           +0.1919
+    rank134_series           -0.1784
+    gap_series               +0.1287
+    v134_series              +0.0865
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              -0.4485
+    rank135.last                           +0.1839
+    last.v135_minus_role_max               -0.1767
+    gap134_minus135.last                   +0.1727
+    last.v135_minus_role_median            -0.1484
+    v135.last                              +0.1264
+    rank134.max                            -0.1194
+    v135.q25                               +0.1044
+
+FALSE fact_checking                P 0.1877 -> 0.1647 ΔP=-0.0230 Δlogit=-0.3973
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.2126
+    rank134_series           -0.1993
+    gap_series               +0.0779
+    history_len              -0.0682
+    last_relative_v134       +0.0483
+    rank135_series           -0.0421
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_max               -0.1176
+    rank134.last                           -0.1052
+    gap134_minus135.last                   +0.1034
+    rank134.min                            -0.0937
+    last.v135_minus_role_mean              -0.0923
+    history_len                            -0.0682
+    last.v134_minus_role_median            +0.0431
+    rank134.std                            -0.0418
+
+FALSE operations                   P 0.2592 -> 0.2402 ΔP=-0.0189 Δlogit=-0.2527
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.3344
+    last_relative_v135       +0.2011
+    v135_series              -0.1047
+    history_len              -0.0682
+    v134_series              +0.0588
+    gap_series               +0.0346
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.3415
+    last.v135_minus_role_mean              +0.1703
+    last.v135_minus_role_median            +0.1047
+    last.v135_minus_role_max               -0.0740
+    v135.last                              -0.0722
+    history_len                            -0.0682
+    rank135.q75                            +0.0549
+    v135.q25                               -0.0451
+
+FALSE risk_assessment              P 0.1807 -> 0.1960 ΔP=+0.0153 Δlogit=+0.2513
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.2238
+    v135_series              +0.1058
+    history_len              -0.0682
+    avg_series               -0.0632
+    rank135_series           +0.0424
+    rank134_series           +0.0175
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.1877
+    last.v135_minus_role_mean              +0.1848
+    last.v135_minus_role_median            +0.1107
+    v135.last                              -0.0769
+    last.v135_minus_role_max               -0.0716
+    history_len                            -0.0682
+    avg134135.last                         -0.0412
+    avg134135.median                       -0.0289
+
+FALSE financial_analysis           P 0.2061 -> 0.1945 ΔP=-0.0115 Δlogit=-0.1805
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1512
+    last_relative_v135       -0.0939
+    v134_series              +0.0756
+    history_len              -0.0682
+    rank134_series           +0.0661
+    gap_series               +0.0587
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.1576
+    last.v135_minus_role_max               -0.1051
+    rank134.last                           +0.0936
+    v134.median                            +0.0742
+    history_len                            -0.0682
+    gap134_minus135.last                   +0.0453
+    last.v134_minus_role_median            -0.0431
+    rank134.median                         -0.0349
+
+FALSE writing                      P 0.1548 -> 0.1450 ΔP=-0.0099 Δlogit=-0.1938
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1402
+    history_len              -0.0682
+    gap_series               +0.0636
+    rank134_series           +0.0598
+    last_relative_v135       -0.0490
+    avg_series               -0.0307
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.1839
+    rank134.last                           +0.1052
+    last.v135_minus_role_max               -0.1003
+    history_len                            -0.0682
+    rank134.median                         -0.0524
+    gap134_minus135.last                   +0.0479
+    rank135.q25                            +0.0437
+    last.v135_minus_role_median            +0.0398
+
+FALSE research                     P 0.1717 -> 0.1626 ΔP=-0.0091 Δlogit=-0.1638
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.0811
+    history_len              -0.0682
+    avg_series               -0.0421
+    gap_series               +0.0383
+    rank134_series           +0.0170
+    last_relative_v135       -0.0130
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_max               -0.0965
+    rank135.last                           -0.0788
+    history_len                            -0.0682
+    gap134_minus135.last                   +0.0503
+    last.v135_minus_role_median            +0.0491
+    last.v135_minus_role_mean              +0.0344
+    v134.q75                               -0.0290
+    avg134135.last                         -0.0286
+
+FALSE incident_management          P 0.2273 -> 0.2184 ΔP=-0.0088 Δlogit=-0.1276
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.4122
+    rank135_series           +0.2081
+    gap_series               +0.0905
+    v135_series              +0.0847
+    history_len              -0.0682
+    last_relative_v134       -0.0205
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           +0.2364
+    last.v135_minus_role_mean              -0.2191
+    last.v135_minus_role_max               -0.1386
+    gap134_minus135.last                   +0.1113
+    rank134.median                         -0.0873
+    rank134.last                           +0.0819
+    history_len                            -0.0682
+    last.v135_minus_role_median            -0.0545
+========================================================================================================================
+simple5_04_support_incident_ops
+========================================================================================================================
+TRUE ROLES: customer_support_triage, incident_management, operations
+
+TOP ROLE MOVEMENTS:
+
+FALSE database_design              P 0.2285 -> 0.2752 ΔP=+0.0467 Δlogit=+0.6222
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              +0.4156
+    avg_series               +0.1427
+    rank135_series           +0.1185
+    history_len              -0.0682
+    last_relative_v135       +0.0520
+    gap_series               -0.0345
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.5140
+    avg134135.max                          +0.1612
+    v135.last                              -0.0999
+    v134.q75                               +0.0804
+    rank135.q25                            +0.0787
+    history_len                            -0.0682
+    v135.median                            +0.0673
+    v134.max                               -0.0650
+
+TRUE  customer_support_triage      P 0.3214 -> 0.2795 ΔP=-0.0419 Δlogit=-0.4999
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.3952
+    history_len              -0.0682
+    rank134_series           -0.0583
+    gap_series               +0.0503
+    v134_series              -0.0475
+    v135_series              -0.0358
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              -0.2751
+    last.v135_minus_role_median            -0.1202
+    v135.q25                               -0.0967
+    rank134.median                         -0.0699
+    history_len                            -0.0682
+    v134.max                               -0.0626
+    v135.median                            +0.0539
+    gap134_minus135.q75                    +0.0351
+
+FALSE code                         P 0.2532 -> 0.2930 ΔP=+0.0398 Δlogit=+0.5028
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              +0.2555
+    rank135_series           +0.1671
+    avg_series               +0.1373
+    history_len              -0.0682
+    last_relative_v135       +0.0467
+    gap_series               -0.0353
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.4094
+    avg134135.max                          +0.1508
+    v135.last                              -0.0988
+    rank135.last                           +0.0788
+    v135.q25                               -0.0761
+    v134.q75                               +0.0708
+    rank134.last                           +0.0702
+    history_len                            -0.0682
+
+TRUE  incident_management          P 0.3674 -> 0.3384 ΔP=-0.0290 Δlogit=-0.3176
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.3680
+    v134_series              -0.1167
+    rank135_series           +0.1023
+    avg_series               +0.0866
+    gap_series               +0.0698
+    history_len              -0.0682
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              -0.2578
+    last.v135_minus_role_median            -0.1131
+    v134.max                               -0.1108
+    v135.q25                               -0.1044
+    v135.max                               +0.1006
+    rank135.last                           +0.0788
+    avg134135.max                          +0.0779
+    history_len                            -0.0682
+
+FALSE qa_testing                   P 0.2021 -> 0.2278 ΔP=+0.0258 Δlogit=+0.3826
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              +0.3267
+    avg_series               +0.1753
+    last_relative_v135       +0.0915
+    rank134_series           -0.0906
+    history_len              -0.0682
+    v134_series              -0.0615
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.5009
+    avg134135.max                          +0.1896
+    v135.last                              -0.1079
+    v134.max                               -0.0987
+    rank134.last                           -0.0702
+    v135.q25                               -0.0692
+    history_len                            -0.0682
+    v134.q75                               +0.0611
+
+FALSE financial_analysis           P 0.2194 -> 0.2430 ΔP=+0.0236 Δlogit=+0.3333
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              +0.2378
+    avg_series               +0.1374
+    history_len              -0.0682
+    rank134_series           +0.0534
+    gap_series               -0.0528
+    rank135_series           +0.0435
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.3681
+    avg134135.max                          +0.1450
+    v135.last                              -0.0932
+    rank135.last                           +0.0788
+    v134.q75                               +0.0740
+    rank134.last                           +0.0702
+    history_len                            -0.0682
+    gap134_minus135.last                   -0.0581
+
+FALSE documentation                P 0.2215 -> 0.2449 ΔP=+0.0234 Δlogit=+0.3270
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              +0.2473
+    last_relative_v135       +0.1600
+    avg_series               +0.1411
+    rank135_series           -0.1085
+    history_len              -0.0682
+    gap_series               -0.0471
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.4170
+    avg134135.max                          +0.1632
+    rank135.last                           -0.1576
+    v135.last                              -0.1219
+    gap134_minus135.last                   -0.0780
+    last.v135_minus_role_mean              +0.0775
+    v134.q75                               +0.0766
+    history_len                            -0.0682
+
+TRUE  operations                   P 0.2117 -> 0.2311 ΔP=+0.0194 Δlogit=+0.2815
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              +0.2125
+    avg_series               +0.1458
+    last_relative_v135       +0.1209
+    rank135_series           -0.0710
+    history_len              -0.0682
+    gap_series               -0.0568
+  TOP INDIVIDUAL FEATURES:
+    v135.max                               +0.3499
+    avg134135.max                          +0.1672
+    v135.last                              -0.1139
+    rank135.last                           -0.0788
+    gap134_minus135.last                   -0.0774
+    v134.q75                               +0.0772
+    history_len                            -0.0682
+    last.v135_minus_role_max               +0.0544
+
+FALSE research                     P 0.1900 -> 0.2092 ΔP=+0.0192 Δlogit=+0.3010
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           +0.3065
+    avg_series               +0.1021
+    history_len              -0.0682
+    v134_series              -0.0393
+    v135_series              +0.0277
+    last_relative_v135       -0.0200
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           +0.1839
+    v135.max                               +0.1215
+    avg134135.max                          +0.1214
+    rank135.max                            +0.0995
+    rank135.std                            +0.0928
+    v135.last                              -0.0852
+    v134.max                               -0.0698
+    history_len                            -0.0682
+
+FALSE design                       P 0.1987 -> 0.2176 ΔP=+0.0189 Δlogit=+0.2871
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           +0.1998
+    avg_series               +0.1341
+    history_len              -0.0682
+    v135_series              +0.0217
+    last_relative_v135       +0.0192
+    last_relative_v134       -0.0104
+  TOP INDIVIDUAL FEATURES:
+    avg134135.max                          +0.1567
+    v135.max                               +0.1541
+    rank135.last                           +0.1051
+    v135.last                              -0.0932
+    v134.q75                               +0.0894
+    v134.max                               -0.0722
+    history_len                            -0.0682
+    rank135.max                            +0.0569
+========================================================================================================================
+simple5_05_docs_qa_writing
+========================================================================================================================
+TRUE ROLES: documentation, qa_testing, writing
+
+TOP ROLE MOVEMENTS:
+
+TRUE  qa_testing                   P 0.2088 -> 0.1860 ΔP=-0.0228 Δlogit=-0.3610
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              -0.1036
+    last_relative_v134       -0.0875
+    history_len              -0.0682
+    rank135_series           -0.0663
+    last_relative_v135       -0.0433
+    rank134_series           +0.0368
+  TOP INDIVIDUAL FEATURES:
+    v135.last                              -0.0749
+    history_len                            -0.0682
+    last.v134_minus_role_median            -0.0674
+    v135.q25                               -0.0574
+    rank134.last                           +0.0468
+    last.v135_minus_role_max               -0.0410
+    avg134135.last                         -0.0338
+    last.v134_minus_role_mean              -0.0302
+
+FALSE incident_management          P 0.2333 -> 0.2105 ΔP=-0.0228 Δlogit=-0.3303
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.2206
+    v135_series              -0.1508
+    last_relative_v135       +0.1373
+    v134_series              +0.0733
+    rank134_series           -0.0703
+    history_len              -0.0682
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.2364
+    v135.last                              -0.1117
+    last.v135_minus_role_mean              +0.1117
+    v135.q25                               -0.0732
+    history_len                            -0.0682
+    rank135.min                            -0.0668
+    avg134135.last                         -0.0518
+    last.v135_minus_role_median            +0.0476
+
+FALSE risk_assessment              P 0.2670 -> 0.2450 ΔP=-0.0220 Δlogit=-0.2893
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1226
+    v135_series              -0.0962
+    v134_series              +0.0855
+    history_len              -0.0682
+    rank134_series           -0.0613
+    avg_series               -0.0506
+  TOP INDIVIDUAL FEATURES:
+    v135.last                              -0.0803
+    rank135.last                           -0.0788
+    history_len                            -0.0682
+    rank134.last                           -0.0585
+    v135.q25                               -0.0546
+    v134.median                            +0.0540
+    avg134135.last                         -0.0465
+    last.v135_minus_role_max               -0.0382
+
+FALSE operations                   P 0.2173 -> 0.1970 ΔP=-0.0204 Δlogit=-0.3105
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              -0.1119
+    history_len              -0.0682
+    rank135_series           -0.0639
+    avg_series               -0.0488
+    last_relative_v134       -0.0439
+    gap_series               +0.0324
+  TOP INDIVIDUAL FEATURES:
+    v135.last                              -0.0808
+    history_len                            -0.0682
+    v135.q25                               -0.0588
+    avg134135.last                         -0.0399
+    last.v135_minus_role_max               -0.0379
+    last.v134_minus_role_median            -0.0319
+    gap134_minus135.q75                    +0.0288
+    rank135.q25                            -0.0262
+
+TRUE  documentation                P 0.2545 -> 0.2343 ΔP=-0.0202 Δlogit=-0.2738
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.3048
+    gap_series               +0.0708
+    history_len              -0.0682
+    v134_series              +0.0586
+    rank135_series           +0.0533
+    last_relative_v134       -0.0347
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              -0.1690
+    rank135.last                           +0.0788
+    last.v135_minus_role_max               -0.0685
+    history_len                            -0.0682
+    last.v135_minus_role_median            -0.0673
+    gap134_minus135.last                   +0.0551
+    v134.median                            +0.0438
+    avg134135.last                         -0.0267
+
+TRUE  writing                      P 0.2238 -> 0.2042 ΔP=-0.0196 Δlogit=-0.2925
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       -0.2821
+    rank135_series           +0.1649
+    rank134_series           -0.1272
+    last_relative_v134       -0.0691
+    history_len              -0.0682
+    gap_series               +0.0609
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              -0.1546
+    rank134.median                         -0.1048
+    rank134.max                            -0.0716
+    rank134.last                           +0.0702
+    rank135.q25                            +0.0700
+    history_len                            -0.0682
+    last.v135_minus_role_max               -0.0661
+    last.v135_minus_role_median            -0.0614
+
+FALSE accessibility_review         P 0.2088 -> 0.1905 ΔP=-0.0183 Δlogit=-0.2869
+  TOP GROUP CONTRIBUTIONS:
+    rank135_series           -0.1163
+    v135_series              -0.1135
+    history_len              -0.0682
+    last_relative_v134       -0.0324
+    rank134_series           +0.0279
+    avg_series               -0.0277
+  TOP INDIVIDUAL FEATURES:
+    v135.last                              -0.0868
+    rank135.last                           -0.0788
+    history_len                            -0.0682
+    v135.q25                               -0.0631
+    rank134.last                           +0.0468
+    avg134135.last                         -0.0426
+    last.v135_minus_role_max               -0.0349
+    last.v135_minus_role_mean              +0.0339
+
+FALSE database_design              P 0.2315 -> 0.2159 ΔP=-0.0156 Δlogit=-0.2255
+  TOP GROUP CONTRIBUTIONS:
+    rank134_series           -0.1420
+    v135_series              -0.0854
+    history_len              -0.0682
+    v134_series              +0.0538
+    avg_series               -0.0428
+    gap_series               +0.0239
+  TOP INDIVIDUAL FEATURES:
+    rank134.min                            -0.0937
+    v135.last                              -0.0870
+    rank134.last                           -0.0819
+    history_len                            -0.0682
+    rank135.last                           -0.0525
+    rank134.median                         +0.0524
+    avg134135.last                         -0.0481
+    v135.q25                               -0.0439
+
+FALSE financial_analysis           P 0.2380 -> 0.2230 ΔP=-0.0150 Δlogit=-0.2124
+  TOP GROUP CONTRIBUTIONS:
+    v135_series              -0.1073
+    rank135_series           -0.0734
+    history_len              -0.0682
+    v134_series              +0.0610
+    rank134_series           -0.0529
+    avg_series               -0.0447
+  TOP INDIVIDUAL FEATURES:
+    rank135.last                           -0.1314
+    v135.last                              -0.0901
+    history_len                            -0.0682
+    rank134.last                           -0.0585
+    rank135.q25                            +0.0525
+    v135.q25                               -0.0489
+    avg134135.last                         -0.0478
+    last.v135_minus_role_mean              +0.0443
+
+FALSE research                     P 0.2541 -> 0.2686 ΔP=+0.0145 Δlogit=+0.1887
+  TOP GROUP CONTRIBUTIONS:
+    last_relative_v135       +0.6590
+    v135_series              -0.1655
+    rank134_series           -0.1067
+    last_relative_v134       -0.0691
+    history_len              -0.0682
+    rank135_series           -0.0629
+  TOP INDIVIDUAL FEATURES:
+    last.v135_minus_role_mean              +0.4429
+    v135.last                              -0.2181
+    last.v135_minus_role_median            +0.1831
+    gap134_minus135.min                    +0.1436
+    gap134_minus135.last                   -0.1167
+    rank134.max                            -0.0955
+    rank134.last                           +0.0819
+    rank135.last                           -0.0788
+
+========================================================================================================================
+GLOBAL GROUP DIAGNOSTIC
+========================================================================================================================
+GROUP                         MEAN |ΔLOGIT|   MEAN BAD-DIRECTION
+------------------------------------------------------------------
+last_relative_v135                  0.21615             -0.02106
+rank135_series                      0.12393              0.00345
+v135_series                         0.08894              0.01880
+history_len                         0.06818             -0.04773
+gap_series                          0.05519              0.01815
+avg_series                          0.04700              0.00949
+rank134_series                      0.04641             -0.01031
+last_relative_v134                  0.04075              0.00411
+v134_series                         0.03981              0.01059
+role_identity                       0.00000              0.00000
+
+Interpretation:
+  MEAN |ΔLOGIT| = how much this feature group moves the belief model.
+  MEAN BAD-DIRECTION > 0 = on average it pushes FALSE roles up and/or TRUE roles down.
+  MEAN BAD-DIRECTION < 0 = on average it helps the truth-vs-false ranking.

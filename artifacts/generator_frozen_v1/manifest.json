@@ -1,0 +1,35 @@
+{
+  "name": "generator_frozen_v1",
+  "status": "FROZEN",
+  "n_roles": 8,
+  "probes_per_role": 2,
+  "n_probes": 16,
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations"
+  ],
+  "sources": {
+    "base": "V12.10d scientific clean rerank",
+    "missing_roles": "V12.11 Qwen2.5-3B targeted regeneration"
+  },
+  "manual_choices": {
+    "code": "V12.11 intake rep=6",
+    "operations": "V12.11 intake rep=1"
+  },
+  "selection_constraints": {
+    "min_target_similarity": 0.3,
+    "min_target_margin": 0.05,
+    "assistant_directed": "rejected",
+    "questionish_scenarios": "rejected",
+    "answer_leakage": "rejected",
+    "high_stakes_confounders": "rejected",
+    "evidence_cue_leakage": "restricted"
+  },
+  "sha256": "36c89314edc4a81fca54cf627abf24e74afd4dcaa7024aee249130b4f662b267"
+}

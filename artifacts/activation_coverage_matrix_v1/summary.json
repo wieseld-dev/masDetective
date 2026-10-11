@@ -1,0 +1,4249 @@
+{
+  "train": {
+    "split": "train",
+    "n_cases": 690,
+    "n_roles": 20,
+    "offdiag_pairs_total": 380,
+    "offdiag_pairs_zero": 85,
+    "offdiag_pairs_nonzero": 295,
+    "offdiag_coverage_fraction": 0.7763157894736842,
+    "target_case_counts": {
+      "data": 41,
+      "financial_analysis": 34,
+      "writing": 27,
+      "experiment_design": 36,
+      "risk_assessment": 37,
+      "accessibility_review": 37,
+      "translation": 32,
+      "research": 33,
+      "design": 28,
+      "math": 39,
+      "fact_checking": 18,
+      "customer_support_triage": 37,
+      "requirements_analysis": 33,
+      "documentation": 44,
+      "database_design": 30,
+      "incident_management": 49,
+      "planning": 41,
+      "operations": 30,
+      "code": 20,
+      "qa_testing": 44
+    },
+    "zero_offdiag_pairs": [
+      {
+        "target": "code",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      }
+    ],
+    "lowest_nonzero_offdiag_pairs": [
+      {
+        "target": "accessibility_review",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "qa_testing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "data",
+        "selected": "documentation",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "data",
+        "selected": "planning",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "code",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "database_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "financial_analysis",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "incident_management",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "risk_assessment",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "database_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "qa_testing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "operations",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "operations",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "planning",
+        "selected": "code",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "customer_support_triage",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "incident_management",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "customer_support_triage",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "qa_testing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "translation",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "translation",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "writing",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "math",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "database_design",
+        "selected": "customer_support_triage",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "documentation",
+        "selected": "accessibility_review",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "fact_checking",
+        "selected": "planning",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "customer_support_triage",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "writing",
+        "selected": "planning",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "data",
+        "selected": "risk_assessment",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "database_design",
+        "selected": "incident_management",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "fact_checking",
+        "selected": "design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "math",
+        "selected": "incident_management",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "database_design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "experiment_design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "qa_testing",
+        "selected": "code",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "design",
+        "selected": "experiment_design",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "qa_testing",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "data",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "financial_analysis",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "translation",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "operations",
+        "selected": "documentation",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "research",
+        "selected": "database_design",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "research",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "code",
+        "selected": "documentation",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "data",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "design",
+        "selected": "translation",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "documentation",
+        "selected": "fact_checking",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "experiment_design",
+        "selected": "math",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "fact_checking",
+        "selected": "operations",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "documentation",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "incident_management",
+        "selected": "writing",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "operations",
+        "selected": "database_design",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "qa_testing",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "database_design",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "translation",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "qa_testing",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "risk_assessment",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "database_design",
+        "selected": "financial_analysis",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "design",
+        "selected": "customer_support_triage",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "math",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "experiment_design",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "data",
+        "selected": "customer_support_triage",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "math",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "planning",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "data",
+        "selected": "experiment_design",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "data",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "data",
+        "selected": "translation",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "database_design",
+        "selected": "design",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "database_design",
+        "selected": "requirements_analysis",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "experiment_design",
+        "selected": "research",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "fact_checking",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "research",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "planning",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "planning",
+        "selected": "incident_management",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "planning",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "research",
+        "selected": "incident_management",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "data",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "fact_checking",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "writing",
+        "selected": "data",
+        "branch_count": 5,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "research",
+        "branch_count": 5,
+        "case_count": 2
+      },
+      {
+        "target": "code",
+        "selected": "research",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "design",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "fact_checking",
+        "selected": "writing",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "translation",
+        "selected": "documentation",
+        "branch_count": 5,
+        "case_count": 3
+      }
+    ]
+  },
+  "val": {
+    "split": "val",
+    "n_cases": 173,
+    "n_roles": 20,
+    "offdiag_pairs_total": 380,
+    "offdiag_pairs_zero": 241,
+    "offdiag_pairs_nonzero": 139,
+    "offdiag_coverage_fraction": 0.36578947368421055,
+    "target_case_counts": {
+      "operations": 9,
+      "qa_testing": 7,
+      "code": 5,
+      "planning": 8,
+      "risk_assessment": 9,
+      "writing": 10,
+      "experiment_design": 4,
+      "fact_checking": 9,
+      "math": 5,
+      "data": 6,
+      "research": 20,
+      "accessibility_review": 15,
+      "design": 16,
+      "financial_analysis": 20,
+      "database_design": 12,
+      "translation": 18
+    },
+    "zero_offdiag_pairs": [
+      {
+        "target": "code",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "planning",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "research",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "data",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "risk_assessment",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "documentation",
+        "branch_count": 0,
+        "case_count": 0
+      }
+    ],
+    "lowest_nonzero_offdiag_pairs": [
+      {
+        "target": "accessibility_review",
+        "selected": "documentation",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "financial_analysis",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "translation",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "documentation",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "data",
+        "selected": "database_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "data",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "database_design",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "fact_checking",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "documentation",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "risk_assessment",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "operations",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "operations",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "operations",
+        "selected": "financial_analysis",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "planning",
+        "selected": "code",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "planning",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "planning",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "translation",
+        "selected": "code",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "translation",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "writing",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "design",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "planning",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "data",
+        "selected": "translation",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "fact_checking",
+        "selected": "financial_analysis",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "planning",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "risk_assessment",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "financial_analysis",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "data",
+        "selected": "risk_assessment",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "database_design",
+        "selected": "research",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "fact_checking",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "math",
+        "selected": "research",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "incident_management",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "database_design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "fact_checking",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "requirements_analysis",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "research",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "code",
+        "selected": "requirements_analysis",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "requirements_analysis",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "fact_checking",
+        "selected": "customer_support_triage",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "code",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "financial_analysis",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "math",
+        "selected": "requirements_analysis",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "math",
+        "selected": "writing",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "operations",
+        "selected": "experiment_design",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "translation",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "qa_testing",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "data",
+        "selected": "qa_testing",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "database_design",
+        "selected": "fact_checking",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "database_design",
+        "selected": "planning",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "experiment_design",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "experiment_design",
+        "selected": "risk_assessment",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "planning",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "operations",
+        "selected": "research",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "planning",
+        "selected": "data",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "qa_testing",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "research",
+        "selected": "experiment_design",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "customer_support_triage",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "planning",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "code",
+        "selected": "risk_assessment",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "data",
+        "selected": "planning",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "database_design",
+        "selected": "math",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "customer_support_triage",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "research",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "math",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "design",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "fact_checking",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "risk_assessment",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "design",
+        "selected": "incident_management",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "customer_support_triage",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "math",
+        "selected": "data",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "operations",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "research",
+        "selected": "data",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "research",
+        "selected": "incident_management",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "translation",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "writing",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "data",
+        "selected": "documentation",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "planning",
+        "selected": "math",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "design",
+        "selected": "requirements_analysis",
+        "branch_count": 5,
+        "case_count": 4
+      },
+      {
+        "target": "code",
+        "selected": "qa_testing",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "database_design",
+        "selected": "data",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "design",
+        "selected": "documentation",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "accessibility_review",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "requirements_analysis",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "research",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "operations",
+        "selected": "requirements_analysis",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "research",
+        "selected": "customer_support_triage",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "research",
+        "selected": "fact_checking",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "translation",
+        "selected": "documentation",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "planning",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "data",
+        "selected": "operations",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "database_design",
+        "selected": "customer_support_triage",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "operations",
+        "selected": "planning",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "writing",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "documentation",
+        "branch_count": 6,
+        "case_count": 2
+      }
+    ]
+  },
+  "all": {
+    "split": "all",
+    "n_cases": 863,
+    "n_roles": 20,
+    "offdiag_pairs_total": 380,
+    "offdiag_pairs_zero": 65,
+    "offdiag_pairs_nonzero": 315,
+    "offdiag_coverage_fraction": 0.8289473684210527,
+    "target_case_counts": {
+      "data": 47,
+      "financial_analysis": 54,
+      "writing": 37,
+      "experiment_design": 40,
+      "operations": 39,
+      "risk_assessment": 46,
+      "accessibility_review": 52,
+      "translation": 50,
+      "research": 53,
+      "design": 44,
+      "math": 44,
+      "qa_testing": 51,
+      "fact_checking": 27,
+      "code": 25,
+      "customer_support_triage": 37,
+      "requirements_analysis": 33,
+      "documentation": 44,
+      "planning": 49,
+      "database_design": 42,
+      "incident_management": 49
+    },
+    "zero_offdiag_pairs": [
+      {
+        "target": "code",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "code",
+        "selected": "customer_support_triage",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "writing",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "math",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "planning",
+        "selected": "fact_checking",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "research",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "data",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "operations",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "design",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "operations",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "qa_testing",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "translation",
+        "selected": "requirements_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "writing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "database_design",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "incident_management",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "fact_checking",
+        "selected": "experiment_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "database_design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "design",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "qa_testing",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "incident_management",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "experiment_design",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "accessibility_review",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "code",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "math",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "translation",
+        "branch_count": 0,
+        "case_count": 0
+      },
+      {
+        "target": "documentation",
+        "selected": "financial_analysis",
+        "branch_count": 0,
+        "case_count": 0
+      }
+    ],
+    "lowest_nonzero_offdiag_pairs": [
+      {
+        "target": "accessibility_review",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "financial_analysis",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "database_design",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "code",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "financial_analysis",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "design",
+        "selected": "risk_assessment",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "data",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "database_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "math",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "math",
+        "selected": "qa_testing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "operations",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "customer_support_triage",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "incident_management",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "accessibility_review",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "writing",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "translation",
+        "selected": "code",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "translation",
+        "selected": "experiment_design",
+        "branch_count": 1,
+        "case_count": 1
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "math",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "documentation",
+        "selected": "accessibility_review",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "fact_checking",
+        "selected": "financial_analysis",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "fact_checking",
+        "selected": "planning",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "qa_testing",
+        "selected": "customer_support_triage",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "research",
+        "selected": "financial_analysis",
+        "branch_count": 2,
+        "case_count": 1
+      },
+      {
+        "target": "code",
+        "selected": "math",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "database_design",
+        "selected": "incident_management",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "fact_checking",
+        "selected": "design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "fact_checking",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "math",
+        "selected": "incident_management",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "operations",
+        "selected": "accessibility_review",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "code",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "database_design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "planning",
+        "selected": "experiment_design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "translation",
+        "selected": "data",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "experiment_design",
+        "branch_count": 2,
+        "case_count": 2
+      },
+      {
+        "target": "design",
+        "selected": "experiment_design",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "qa_testing",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "incident_management",
+        "selected": "data",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "financial_analysis",
+        "branch_count": 3,
+        "case_count": 1
+      },
+      {
+        "target": "experiment_design",
+        "selected": "translation",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "math",
+        "selected": "writing",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "operations",
+        "selected": "documentation",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "research",
+        "selected": "database_design",
+        "branch_count": 3,
+        "case_count": 2
+      },
+      {
+        "target": "data",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "design",
+        "selected": "translation",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "documentation",
+        "selected": "fact_checking",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "experiment_design",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "experiment_design",
+        "selected": "math",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "fact_checking",
+        "selected": "operations",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "incident_management",
+        "selected": "writing",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "operations",
+        "selected": "database_design",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "translation",
+        "selected": "incident_management",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "qa_testing",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "risk_assessment",
+        "branch_count": 3,
+        "case_count": 3
+      },
+      {
+        "target": "database_design",
+        "selected": "financial_analysis",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "design",
+        "selected": "customer_support_triage",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "financial_analysis",
+        "selected": "math",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "experiment_design",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "writing",
+        "selected": "math",
+        "branch_count": 4,
+        "case_count": 2
+      },
+      {
+        "target": "code",
+        "selected": "design",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "data",
+        "selected": "customer_support_triage",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "math",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "writing",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 3
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "code",
+        "selected": "documentation",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "data",
+        "selected": "experiment_design",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "data",
+        "selected": "risk_assessment",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "database_design",
+        "selected": "design",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "fact_checking",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "operations",
+        "selected": "code",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "planning",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "planning",
+        "selected": "qa_testing",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "data",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "translation",
+        "selected": "accessibility_review",
+        "branch_count": 4,
+        "case_count": 4
+      },
+      {
+        "target": "writing",
+        "selected": "data",
+        "branch_count": 5,
+        "case_count": 2
+      },
+      {
+        "target": "customer_support_triage",
+        "selected": "design",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "data",
+        "selected": "planning",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "planning",
+        "selected": "math",
+        "branch_count": 5,
+        "case_count": 3
+      },
+      {
+        "target": "documentation",
+        "selected": "risk_assessment",
+        "branch_count": 5,
+        "case_count": 4
+      },
+      {
+        "target": "operations",
+        "selected": "customer_support_triage",
+        "branch_count": 5,
+        "case_count": 4
+      },
+      {
+        "target": "requirements_analysis",
+        "selected": "design",
+        "branch_count": 5,
+        "case_count": 4
+      },
+      {
+        "target": "writing",
+        "selected": "planning",
+        "branch_count": 5,
+        "case_count": 4
+      },
+      {
+        "target": "design",
+        "selected": "incident_management",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "documentation",
+        "selected": "writing",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "planning",
+        "selected": "financial_analysis",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "database_design",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "risk_assessment",
+        "selected": "design",
+        "branch_count": 5,
+        "case_count": 5
+      },
+      {
+        "target": "accessibility_review",
+        "selected": "customer_support_triage",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "code",
+        "selected": "data",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "code",
+        "selected": "incident_management",
+        "branch_count": 6,
+        "case_count": 2
+      },
+      {
+        "target": "operations",
+        "selected": "planning",
+        "branch_count": 6,
+        "case_count": 2
+      }
+    ]
+  }
+}

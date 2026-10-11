@@ -1,0 +1,51 @@
+====================================================================================================
+LOCAL AMBIGUITY — PRIVILEGED ROUTING ORACLE DIAGNOSTIC
+====================================================================================================
+
+ROUTING RESPONSE BY PROBE TYPE × TRUE LOCAL STATE
+
+A_DOMINANT
+  H00: A=0.000 B=0.000 AB=0.000 either=0.000 nsel=2.00
+  H10: A=1.000 B=0.000 AB=0.000 either=1.000 nsel=2.00
+  H01: A=0.000 B=0.917 AB=0.000 either=0.917 nsel=2.00
+  H11: A=1.000 B=0.917 AB=0.917 either=1.000 nsel=2.00
+
+B_DOMINANT
+  H00: A=0.000 B=0.000 AB=0.000 either=0.000 nsel=2.00
+  H10: A=0.958 B=0.000 AB=0.000 either=0.958 nsel=2.00
+  H01: A=0.000 B=1.000 AB=0.000 either=1.000 nsel=2.00
+  H11: A=0.833 B=1.000 AB=0.833 either=1.000 nsel=2.00
+
+BOUNDARY
+  H00: A=0.000 B=0.000 AB=0.000 either=0.000 nsel=2.00
+  H10: A=1.000 B=0.000 AB=0.000 either=1.000 nsel=2.00
+  H01: A=0.000 B=1.000 AB=0.000 either=1.000 nsel=2.00
+  H11: A=0.917 B=0.917 AB=0.833 either=1.000 nsel=2.00
+
+JOINT
+  H00: A=0.000 B=0.000 AB=0.000 either=0.000 nsel=2.00
+  H10: A=0.917 B=0.000 AB=0.000 either=0.917 nsel=2.00
+  H01: A=0.000 B=0.958 AB=0.000 either=0.958 nsel=2.00
+  H11: A=0.917 B=0.833 AB=0.750 either=1.000 nsel=2.00
+
+----------------------------------------------------------------------------------------------------
+ADAPTIVITY FROM PRIVILEGED ROUTING TRUTH
+pairs with best-type switch = 2/8 (0.250)
+mean adaptive-type gain = +0.005208
+95% pair bootstrap CI = [+0.000000,+0.015625]
+positive-gain pairs = 1/8
+
+PER PAIR
+  p01 | A_TEST:A_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | fixed=A_DOMINANT | gain=+0.0000
+  p02 | A_TEST:A_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | fixed=A_DOMINANT | gain=+0.0000
+  p03 | A_TEST:A_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | fixed=A_DOMINANT | gain=+0.0000
+  p04 | A_TEST:A_DOMINANT | B_TEST:B_DOMINANT | A_VS_B:B_DOMINANT | BOTH_TEST:JOINT | fixed=JOINT | gain=+0.0000
+  p05 | A_TEST:A_DOMINANT | B_TEST:B_DOMINANT | A_VS_B:BOUNDARY | BOTH_TEST:A_DOMINANT | fixed=BOUNDARY | gain=+0.0417
+  p06 | A_TEST:A_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | fixed=A_DOMINANT | gain=+0.0000
+  p07 | A_TEST:A_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | fixed=A_DOMINANT | gain=+0.0000
+  p08 | A_TEST:A_DOMINANT | B_TEST:A_DOMINANT | A_VS_B:A_DOMINANT | BOTH_TEST:A_DOMINANT | fixed=A_DOMINANT | gain=+0.0000
+
+====================================================================================================
+VERDICT: PROBE_DESIGN_NO_GO
+Even privileged routing truth does not show strong state-dependent probe value. Improve probe construction before training a new sensor.
+====================================================================================================

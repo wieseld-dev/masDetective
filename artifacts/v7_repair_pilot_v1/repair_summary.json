@@ -1,0 +1,39 @@
+{
+  "sources": 48,
+  "candidates": 192,
+  "strict_valid": 189,
+  "strict_valid_rate": 0.984375,
+  "failure_reasons": {
+    "reversed_direction": 1,
+    "raw_role_name": 1,
+    "not_question": 1
+  },
+  "sources_with_at_least_one_valid": 48,
+  "direct_label_score_counts_valid": {
+    "1": 28,
+    "0": 156,
+    "2": 3,
+    "5": 1,
+    "3": 1
+  },
+  "families": {
+    "DANGLING_BAD": {
+      "n": 64,
+      "valid": 64,
+      "valid_rate": 1.0,
+      "sources_with_valid": 16
+    },
+    "DIRECTION_BAD": {
+      "n": 64,
+      "valid": 63,
+      "valid_rate": 0.984375,
+      "sources_with_valid": 16
+    },
+    "SYSTEM_SELF_BAD": {
+      "n": 64,
+      "valid": 62,
+      "valid_rate": 0.96875,
+      "sources_with_valid": 16
+    }
+  }
+}

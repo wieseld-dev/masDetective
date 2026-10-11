@@ -1,0 +1,81 @@
+{
+  "experiment": "v7_hardrank_night",
+  "best_dev_within_output_auc": 0.5476888020833334,
+  "history": [
+    {
+      "epoch": 1,
+      "optimizer_steps": 750,
+      "dev_metrics": {
+        "rows": 256,
+        "candidate_scores": 5120,
+        "micro_auc": 0.5268094297724633,
+        "macro_role_auc": 0.7420617084477945,
+        "within_output_auc": 0.5412852126870485,
+        "topk_activation_recall": 0.2552083333333333,
+        "exact_activation_set": 0.09765625,
+        "mean_selected_minus_absent_logit": 0.8163374576821414,
+        "role_auc": {
+          "code": 0.7320620555914673,
+          "writing": 0.788433908045977,
+          "math": 0.7804768331084121,
+          "planning": 0.7361065618517305,
+          "research": 0.6539933046389288,
+          "data": 0.6811872909698997,
+          "design": 0.7615578865578866,
+          "operations": 0.6792262559589293,
+          "qa_testing": 0.746900826446281,
+          "translation": 0.8300395256916996,
+          "financial_analysis": 0.7227418163918287,
+          "database_design": 0.8029045643153527,
+          "accessibility_review": 0.8883196721311475,
+          "fact_checking": 0.5169011806566391,
+          "requirements_analysis": 0.8027588313142624,
+          "incident_management": 0.7530322821421908,
+          "experiment_design": 0.6119862170809747,
+          "risk_assessment": 0.9122740391918578,
+          "documentation": 0.851657329598506,
+          "customer_support_triage": 0.5886737872719181
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "optimizer_steps": 1500,
+      "dev_metrics": {
+        "rows": 256,
+        "candidate_scores": 5120,
+        "micro_auc": 0.5258791640270298,
+        "macro_role_auc": 0.7603244304786534,
+        "within_output_auc": 0.5476888020833334,
+        "topk_activation_recall": 0.27213541666666663,
+        "exact_activation_set": 0.11328125,
+        "mean_selected_minus_absent_logit": 0.8624973497236559,
+        "role_auc": {
+          "code": 0.7909502262443439,
+          "writing": 0.806573275862069,
+          "math": 0.8047683310841206,
+          "planning": 0.7362703351894312,
+          "research": 0.6550932568149211,
+          "data": 0.7330267558528428,
+          "design": 0.7716588966588966,
+          "operations": 0.682068206820682,
+          "qa_testing": 0.7470484061393152,
+          "translation": 0.8432147562582345,
+          "financial_analysis": 0.7365247354171794,
+          "database_design": 0.7922544951590594,
+          "accessibility_review": 0.9229849726775956,
+          "fact_checking": 0.5837781012453501,
+          "requirements_analysis": 0.8297363330957955,
+          "incident_management": 0.7406232506064564,
+          "experiment_design": 0.5886044794486832,
+          "risk_assessment": 0.9233632082637095,
+          "documentation": 0.8685807656395892,
+          "customer_support_triage": 0.649365821094793
+        }
+      }
+    }
+  ],
+  "best_adapter": "/home/wieseld/mas_rl_detective/artifacts/night_20260926/v7_hardrank/best_adapter",
+  "last_adapter": "/home/wieseld/mas_rl_detective/artifacts/night_20260926/v7_hardrank/last_adapter",
+  "test_split_used_for_training_or_selection": false
+}

@@ -1,0 +1,14 @@
+{
+  "strict_gold": 24,
+  "direction_input": 83,
+  "direction_survived_secondary": 69,
+  "direction_final_pairs": 20,
+  "direction_gold_coverage": 20,
+  "meta_input": 58,
+  "meta_survived_secondary": 28,
+  "meta_final_pairs": 11,
+  "meta_gold_coverage": 11,
+  "combined_pairs": 31,
+  "unique_gold_in_combined": 21,
+  "gold_with_both_objectives": 10
+}

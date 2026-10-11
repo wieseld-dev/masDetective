@@ -1,0 +1,78 @@
+{
+  "val": {
+    "VAL_E1": {
+      "states": 424,
+      "mean_selected_gain": 0.04231024657686006,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.09075665158116947,
+      "oracle_top1_hit": 0.22877358490566038,
+      "oracle_signal_captured": 0.15583176879691982
+    },
+    "PERM_A": {
+      "states": 424,
+      "mean_selected_gain": 0.03439551705116009,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.09867138110686943,
+      "oracle_top1_hit": 0.19339622641509435,
+      "oracle_signal_captured": 0.08221332752834383
+    },
+    "PERM_B": {
+      "states": 424,
+      "mean_selected_gain": 0.034158349569871495,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.09890854858815804,
+      "oracle_top1_hit": 0.19339622641509435,
+      "oracle_signal_captured": 0.08000732664917715
+    },
+    "AGGREGATE_9_PERM": {
+      "states": 424,
+      "mean_selected_gain": 0.04108572447484074,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.09198117368318878,
+      "oracle_top1_hit": 0.2240566037735849,
+      "oracle_signal_captured": 0.1444419407355989
+    }
+  },
+  "challenge": {
+    "CHALLENGE": {
+      "states": 715,
+      "mean_selected_gain": 0.03272160381097033,
+      "mean_random_gain": 0.029052938012214025,
+      "mean_oracle_gain": 0.13387890898694066,
+      "mean_regret": 0.10115730517597032,
+      "oracle_top1_hit": 0.16503496503496504,
+      "oracle_signal_captured": 0.034997680103920153
+    },
+    "PERM_A": {
+      "states": 715,
+      "mean_selected_gain": 0.03504255454198893,
+      "mean_random_gain": 0.029052938012214025,
+      "mean_oracle_gain": 0.13387890898694066,
+      "mean_regret": 0.09883635444495173,
+      "oracle_top1_hit": 0.18461538461538463,
+      "oracle_signal_captured": 0.0571386696834794
+    },
+    "PERM_B": {
+      "states": 715,
+      "mean_selected_gain": 0.031918903494695346,
+      "mean_random_gain": 0.029052938012214025,
+      "mean_oracle_gain": 0.13387890898694066,
+      "mean_regret": 0.10196000549224532,
+      "oracle_top1_hit": 0.17342657342657342,
+      "oracle_signal_captured": 0.027340223570858215
+    },
+    "AGGREGATE_9_PERM": {
+      "states": 715,
+      "mean_selected_gain": 0.03292611027735462,
+      "mean_random_gain": 0.029052938012214025,
+      "mean_oracle_gain": 0.13387890898694066,
+      "mean_regret": 0.10095279870958604,
+      "oracle_top1_hit": 0.18041958041958042,
+      "oracle_signal_captured": 0.03694859421883542
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "experiment": "generic_fingerprint_v2",
+  "train_roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "financial_analysis",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation",
+    "customer_support_triage"
+  ],
+  "dev_unseen_roles": [
+    "legal_contract_review",
+    "procurement_analysis",
+    "travel_itinerary",
+    "spreadsheet_audit",
+    "scientific_peer_review",
+    "inventory_forecasting"
+  ],
+  "train_branches": 827,
+  "dev_branches": 288,
+  "C": 0.05,
+  "results": {
+    "pointwise_full": {
+      "global_dev_auc": 0.5011935763888888,
+      "mean_role_auc": 0.4907152774896976,
+      "median_role_auc": 0.514863455670334,
+      "mean_role_pair_accuracy": 0.5103534469343293,
+      "mean_role_strict_branch_win": 0.42131574852163084,
+      "mean_role_query_macro_pair_accuracy": 0.5103534469343293,
+      "per_role_auc": {
+        "legal_contract_review": 0.5062358276643991,
+        "procurement_analysis": 0.4365079365079365,
+        "travel_itinerary": 0.3808150711264898,
+        "spreadsheet_audit": 0.5638216070742023,
+        "scientific_peer_review": 0.523491083676269,
+        "inventory_forecasting": 0.5334201388888888
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5119047619047619,
+        "procurement_analysis": 0.36904761904761907,
+        "travel_itinerary": 0.4117647058823529,
+        "spreadsheet_audit": 0.5784313725490197,
+        "scientific_peer_review": 0.6388888888888888,
+        "inventory_forecasting": 0.5520833333333334
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.42857142857142855,
+        "procurement_analysis": 0.2619047619047619,
+        "travel_itinerary": 0.37254901960784315,
+        "spreadsheet_audit": 0.45098039215686275,
+        "scientific_peer_review": 0.5555555555555556,
+        "inventory_forecasting": 0.4583333333333333
+      },
+      "per_role_query_macro_pair_accuracy": {
+        "legal_contract_review": 0.5119047619047619,
+        "procurement_analysis": 0.36904761904761907,
+        "travel_itinerary": 0.411764705882353,
+        "spreadsheet_audit": 0.5784313725490197,
+        "scientific_peer_review": 0.638888888888889,
+        "inventory_forecasting": 0.5520833333333334
+      }
+    },
+    "pairwise_full": {
+      "global_dev_auc": 0.4982578607253086,
+      "mean_role_auc": 0.5073330687816057,
+      "median_role_auc": 0.5152646497770919,
+      "mean_role_pair_accuracy": 0.5068747406369956,
+      "mean_role_strict_branch_win": 0.3952854289864094,
+      "mean_role_query_macro_pair_accuracy": 0.5068747406369956,
+      "per_role_auc": {
+        "legal_contract_review": 0.5362811791383221,
+        "procurement_analysis": 0.4685374149659864,
+        "travel_itinerary": 0.4300269127258747,
+        "spreadsheet_audit": 0.5786236063052672,
+        "scientific_peer_review": 0.512517146776406,
+        "inventory_forecasting": 0.5180121527777778
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5357142857142857,
+        "procurement_analysis": 0.39285714285714285,
+        "travel_itinerary": 0.47058823529411764,
+        "spreadsheet_audit": 0.5784313725490197,
+        "scientific_peer_review": 0.5740740740740741,
+        "inventory_forecasting": 0.4895833333333333
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.38095238095238093,
+        "procurement_analysis": 0.30952380952380953,
+        "travel_itinerary": 0.3333333333333333,
+        "spreadsheet_audit": 0.47058823529411764,
+        "scientific_peer_review": 0.48148148148148145,
+        "inventory_forecasting": 0.3958333333333333
+      },
+      "per_role_query_macro_pair_accuracy": {
+        "legal_contract_review": 0.5357142857142857,
+        "procurement_analysis": 0.3928571428571428,
+        "travel_itinerary": 0.4705882352941177,
+        "spreadsheet_audit": 0.5784313725490197,
+        "scientific_peer_review": 0.5740740740740741,
+        "inventory_forecasting": 0.4895833333333333
+      }
+    },
+    "pointwise_geom": {
+      "global_dev_auc": 0.5977105034722223,
+      "mean_role_auc": 0.6298921463177984,
+      "median_role_auc": 0.6303757869569396,
+      "mean_role_pair_accuracy": 0.6271835122938064,
+      "mean_role_strict_branch_win": 0.543180698205208,
+      "mean_role_query_macro_pair_accuracy": 0.6271835122938063,
+      "per_role_auc": {
+        "legal_contract_review": 0.5388321995464853,
+        "procurement_analysis": 0.6967120181405896,
+        "travel_itinerary": 0.6091887735486351,
+        "spreadsheet_audit": 0.6118800461361015,
+        "scientific_peer_review": 0.6738683127572016,
+        "inventory_forecasting": 0.6488715277777778
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5476190476190477,
+        "procurement_analysis": 0.6666666666666666,
+        "travel_itinerary": 0.5882352941176471,
+        "spreadsheet_audit": 0.6862745098039216,
+        "scientific_peer_review": 0.6388888888888888,
+        "inventory_forecasting": 0.6354166666666666
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.42857142857142855,
+        "procurement_analysis": 0.6190476190476191,
+        "travel_itinerary": 0.49019607843137253,
+        "spreadsheet_audit": 0.6078431372549019,
+        "scientific_peer_review": 0.5925925925925926,
+        "inventory_forecasting": 0.5208333333333334
+      },
+      "per_role_query_macro_pair_accuracy": {
+        "legal_contract_review": 0.5476190476190476,
+        "procurement_analysis": 0.6666666666666666,
+        "travel_itinerary": 0.5882352941176471,
+        "spreadsheet_audit": 0.6862745098039215,
+        "scientific_peer_review": 0.638888888888889,
+        "inventory_forecasting": 0.6354166666666666
+      }
+    },
+    "pairwise_geom": {
+      "global_dev_auc": 0.6121901523919753,
+      "mean_role_auc": 0.6359541220832015,
+      "median_role_auc": 0.6302462544454056,
+      "mean_role_pair_accuracy": 0.6330694314762942,
+      "mean_role_strict_branch_win": 0.5437480547774666,
+      "mean_role_query_macro_pair_accuracy": 0.6330694314762942,
+      "per_role_auc": {
+        "legal_contract_review": 0.5416666666666667,
+        "procurement_analysis": 0.7029478458049886,
+        "travel_itinerary": 0.5976547481737793,
+        "spreadsheet_audit": 0.6239907727797,
+        "scientific_peer_review": 0.7129629629629629,
+        "inventory_forecasting": 0.6365017361111112
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5476190476190477,
+        "procurement_analysis": 0.6904761904761905,
+        "travel_itinerary": 0.5784313725490197,
+        "spreadsheet_audit": 0.7156862745098039,
+        "scientific_peer_review": 0.6203703703703703,
+        "inventory_forecasting": 0.6458333333333334
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.40476190476190477,
+        "procurement_analysis": 0.6428571428571429,
+        "travel_itinerary": 0.47058823529411764,
+        "spreadsheet_audit": 0.6470588235294118,
+        "scientific_peer_review": 0.5555555555555556,
+        "inventory_forecasting": 0.5416666666666666
+      },
+      "per_role_query_macro_pair_accuracy": {
+        "legal_contract_review": 0.5476190476190476,
+        "procurement_analysis": 0.6904761904761904,
+        "travel_itinerary": 0.5784313725490197,
+        "spreadsheet_audit": 0.715686274509804,
+        "scientific_peer_review": 0.6203703703703703,
+        "inventory_forecasting": 0.6458333333333334
+      }
+    }
+  },
+  "pairwise_geom_weights": [
+    {
+      "feature": "cos_response_shift_role_minus_query",
+      "weight": 0.6210718750953674
+    },
+    {
+      "feature": "cos_response_shift_role",
+      "weight": 0.5093305110931396
+    },
+    {
+      "feature": "cos_output_minus_role_query",
+      "weight": 0.27260902523994446
+    },
+    {
+      "feature": "cos_output_minus_role_query_minus_role",
+      "weight": 0.19945339858531952
+    },
+    {
+      "feature": "role_alignment_gain",
+      "weight": -0.1793365180492401
+    },
+    {
+      "feature": "projection_shift_on_role",
+      "weight": -0.1793348789215088
+    },
+    {
+      "feature": "response_shift_over_role_query_distance",
+      "weight": 0.1325983703136444
+    },
+    {
+      "feature": "norm_output_minus_role",
+      "weight": -0.12237588316202164
+    },
+    {
+      "feature": "dist_output_role",
+      "weight": -0.12237577140331268
+    },
+    {
+      "feature": "cos_output_role",
+      "weight": -0.11747197806835175
+    },
+    {
+      "feature": "cos_output_query",
+      "weight": -0.11083751916885376
+    },
+    {
+      "feature": "triangle_slack_role_via_query",
+      "weight": 0.09020009636878967
+    },
+    {
+      "feature": "query_alignment_gain",
+      "weight": -0.06876597553491592
+    },
+    {
+      "feature": "triangle_slack_query_via_role",
+      "weight": -0.05000707879662514
+    },
+    {
+      "feature": "projection_shift_on_role_minus_query",
+      "weight": -0.04713362827897072
+    },
+    {
+      "feature": "dist_output_query",
+      "weight": -0.030272578820586205
+    },
+    {
+      "feature": "norm_response_shift",
+      "weight": -0.030272578820586205
+    },
+    {
+      "feature": "cos_query_role",
+      "weight": 0.0
+    },
+    {
+      "feature": "dist_query_role",
+      "weight": 0.0
+    },
+    {
+      "feature": "norm_role_minus_query",
+      "weight": 0.0
+    }
+  ]
+}

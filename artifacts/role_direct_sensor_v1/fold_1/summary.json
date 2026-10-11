@@ -1,0 +1,18 @@
+{
+  "version": "role_direct_sensor_v1",
+  "fold": 1,
+  "test_pair_index": 1,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "epochs": 2,
+  "train_matched_queries": 240,
+  "train_rows": 480,
+  "test_matched_queries": 60,
+  "test_rows": 120,
+  "objective": "BCE present/absent + matched pairwise ranking",
+  "input": "target role + target description + direct query + visible final response",
+  "test": {
+    "global_auc": 0.7440277777777777,
+    "matched_probe_win": 0.8083333333333333,
+    "matched_pair3_win": 0.85
+  }
+}

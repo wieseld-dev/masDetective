@@ -1,0 +1,21 @@
+{
+  "raw_candidates": 500,
+  "accepted": 7,
+  "rejected": 493,
+  "strict_pass_rate": 0.014,
+  "median_words": 58.0,
+  "p10_words": 39.8,
+  "p90_words": 86.60000000000002,
+  "mean_richness": 2.5714285714285716,
+  "exact_duplicate_rate": 0.0,
+  "near_duplicate_pairs": 0,
+  "near_duplicate_comparisons": 21,
+  "rejection_reasons": {
+    "too_short": 289,
+    "empty": 130,
+    "surface:multiple_questions": 37,
+    "insufficient_richness": 18,
+    "no_clear_task_verb": 17,
+    "surface:forbidden_internal_language": 2
+  }
+}

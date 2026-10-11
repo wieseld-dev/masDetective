@@ -1,0 +1,189 @@
+{
+  "experiment": "explainable_fingerprint_v1",
+  "n_rows": 320,
+  "feature_dim": 1551,
+  "embedding_dim": 384,
+  "unseen_role_plus_composition": {
+    "global_auc": 0.4777777777777778,
+    "mean_role_auc": 0.4943229166666666,
+    "median_role_auc": 0.5091145833333333,
+    "per_role_auc": {
+      "code": 0.535,
+      "writing": 0.4557291666666667,
+      "math": 0.6067708333333333,
+      "planning": 0.5549999999999999,
+      "research": 0.375,
+      "data": 0.5208333333333333,
+      "design": 0.4088541666666667,
+      "operations": 0.4973958333333333
+    }
+  },
+  "block_transfer": {
+    "explicit_semantic": {
+      "global_auc": 0.3971428571428572,
+      "mean_role_auc": 0.3560286458333334,
+      "median_role_auc": 0.3616666666666667,
+      "per_role_auc": {
+        "code": 0.13,
+        "writing": 0.18489583333333334,
+        "math": 0.4921875,
+        "planning": 0.2475,
+        "research": 0.3275,
+        "data": 0.39583333333333337,
+        "design": 0.578125,
+        "operations": 0.4921875
+      }
+    },
+    "role_latent_relation": {
+      "global_auc": 0.4677380952380953,
+      "mean_role_auc": 0.41813802083333335,
+      "median_role_auc": 0.42447916666666663,
+      "per_role_auc": {
+        "code": 0.53,
+        "writing": 0.546875,
+        "math": 0.39322916666666663,
+        "planning": 0.5675,
+        "research": 0.3075,
+        "data": 0.19791666666666663,
+        "design": 0.3463541666666667,
+        "operations": 0.4557291666666667
+      }
+    },
+    "query_latent_relation": {
+      "global_auc": 0.4858730158730158,
+      "mean_role_auc": 0.4589713541666666,
+      "median_role_auc": 0.44625000000000004,
+      "per_role_auc": {
+        "code": 0.4225,
+        "writing": 0.2942708333333333,
+        "math": 0.6223958333333333,
+        "planning": 0.4325,
+        "research": 0.46,
+        "data": 0.5911458333333333,
+        "design": 0.359375,
+        "operations": 0.4895833333333333
+      }
+    },
+    "all": {
+      "global_auc": 0.4777777777777778,
+      "mean_role_auc": 0.4943229166666666,
+      "median_role_auc": 0.5091145833333333,
+      "per_role_auc": {
+        "code": 0.535,
+        "writing": 0.4557291666666667,
+        "math": 0.6067708333333333,
+        "planning": 0.5549999999999999,
+        "research": 0.375,
+        "data": 0.5208333333333333,
+        "design": 0.4088541666666667,
+        "operations": 0.4973958333333333
+      }
+    }
+  },
+  "ablations": {
+    "semantic_scalars": 0.8821825396825396,
+    "style": 0.8834920634920634,
+    "output_x_role": 0.8723412698412698,
+    "output_x_query": 0.876468253968254,
+    "abs_output_role": 0.8805555555555555,
+    "abs_output_query": 0.8874603174603175
+  },
+  "contribution_summary": {
+    "semantic_scalars": {
+      "present_mean": 0.014244925789535045,
+      "absent_mean": -0.01152703834231943,
+      "present_minus_absent": 0.025771964131854473
+    },
+    "style": {
+      "present_mean": 4.1174223380429404e-05,
+      "absent_mean": -0.001511378725990653,
+      "present_minus_absent": 0.0015525529493710824
+    },
+    "output_x_role": {
+      "present_mean": 0.23871970481372307,
+      "absent_mean": -0.15081265051331785,
+      "present_minus_absent": 0.3895323553270409
+    },
+    "output_x_query": {
+      "present_mean": 0.23200156110604958,
+      "absent_mean": -0.15332917309003985,
+      "present_minus_absent": 0.38533073419608943
+    },
+    "abs_output_role": {
+      "present_mean": 0.44228901424711303,
+      "absent_mean": -0.2741724704909656,
+      "present_minus_absent": 0.7164614847380786
+    },
+    "abs_output_query": {
+      "present_mean": 0.6988899857471031,
+      "absent_mean": -0.47507667888162863,
+      "present_minus_absent": 1.1739666646287317
+    }
+  },
+  "role_profiles": {
+    "code": {
+      "abs_output_query": 1.2848061222583054,
+      "abs_output_role": 0.8044228645507246,
+      "output_x_role": 0.530056943371892,
+      "output_x_query": 0.44189739897847174,
+      "style": -0.02631856985390188,
+      "semantic_scalars": 0.017839772813022133
+    },
+    "writing": {
+      "abs_output_role": 0.7148329630726948,
+      "output_x_role": 0.48401973877723026,
+      "abs_output_query": 0.47022861056029797,
+      "output_x_query": 0.17235146166058257,
+      "style": 0.04207774356473237,
+      "semantic_scalars": 0.008947637941067413
+    },
+    "math": {
+      "abs_output_query": 2.274537719630947,
+      "output_x_query": 0.9185104028632244,
+      "output_x_role": 0.8524816810774306,
+      "abs_output_role": 0.5223220121115446,
+      "semantic_scalars": -0.026399273114899785,
+      "style": 0.00018395685280362534
+    },
+    "planning": {
+      "abs_output_query": 1.1504637450911104,
+      "abs_output_role": 0.7155158087611199,
+      "output_x_query": 0.32461205977015195,
+      "output_x_role": 0.22728473003953692,
+      "semantic_scalars": 0.01963580697774886,
+      "style": 0.0031139106955379164
+    },
+    "research": {
+      "abs_output_query": 1.514710485097021,
+      "abs_output_role": 0.7113672848790884,
+      "output_x_query": 0.5219808568246662,
+      "output_x_role": 0.48212591614574196,
+      "style": 0.044380089640617376,
+      "semantic_scalars": 0.04304778254590928
+    },
+    "data": {
+      "abs_output_query": 1.924901713617146,
+      "abs_output_role": 0.8446130739563765,
+      "output_x_query": 0.5811523534357548,
+      "output_x_role": 0.4509204161974291,
+      "semantic_scalars": 0.03354281264667709,
+      "style": -0.012227947435652219
+    },
+    "design": {
+      "abs_output_query": 0.7625629189424217,
+      "abs_output_role": 0.39345477121726924,
+      "output_x_query": 0.27570211080213386,
+      "output_x_role": 0.13805397766797492,
+      "semantic_scalars": 0.02965584397315979,
+      "style": -0.0004714815101275818
+    },
+    "operations": {
+      "abs_output_role": 0.4184512235224247,
+      "output_x_query": -0.09903349568291257,
+      "output_x_role": -0.0850865609633426,
+      "semantic_scalars": 0.04434414324350655,
+      "abs_output_query": -0.015804112423211336,
+      "style": -0.008220265386626124
+    }
+  }
+}

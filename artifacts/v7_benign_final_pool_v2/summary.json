@@ -1,0 +1,90 @@
+{
+  "input_v1_valid": 23914,
+  "final_valid": 21866,
+  "newly_rejected": 2048,
+  "new_rejection_reasons": {
+    "DIRECTION_REVERSAL": 2041,
+    "DIRECT_CAPABILITY_PATCH": 7
+  },
+  "sessions_total": 696,
+  "splits": {
+    "train": {
+      "rows": 17594,
+      "sessions": 557,
+      "selected_role_positive_counts": {
+        "accessibility_review": 1048,
+        "code": 1409,
+        "customer_support_triage": 2275,
+        "data": 2661,
+        "database_design": 1135,
+        "design": 1251,
+        "documentation": 2368,
+        "experiment_design": 1402,
+        "fact_checking": 1820,
+        "financial_analysis": 1384,
+        "incident_management": 1478,
+        "math": 687,
+        "operations": 1697,
+        "planning": 2573,
+        "qa_testing": 895,
+        "requirements_analysis": 2966,
+        "research": 3265,
+        "risk_assessment": 1970,
+        "translation": 262,
+        "writing": 1849
+      }
+    },
+    "dev": {
+      "rows": 2224,
+      "sessions": 70,
+      "selected_role_positive_counts": {
+        "accessibility_review": 108,
+        "code": 255,
+        "customer_support_triage": 358,
+        "data": 272,
+        "database_design": 90,
+        "design": 194,
+        "documentation": 237,
+        "experiment_design": 181,
+        "fact_checking": 304,
+        "financial_analysis": 150,
+        "incident_management": 196,
+        "math": 92,
+        "operations": 429,
+        "planning": 324,
+        "qa_testing": 137,
+        "requirements_analysis": 408,
+        "research": 420,
+        "risk_assessment": 266,
+        "translation": 26,
+        "writing": 217
+      }
+    },
+    "test": {
+      "rows": 2048,
+      "sessions": 69,
+      "selected_role_positive_counts": {
+        "accessibility_review": 129,
+        "code": 146,
+        "customer_support_triage": 306,
+        "data": 173,
+        "database_design": 122,
+        "design": 178,
+        "documentation": 371,
+        "experiment_design": 215,
+        "fact_checking": 128,
+        "financial_analysis": 224,
+        "incident_management": 107,
+        "math": 78,
+        "operations": 166,
+        "planning": 293,
+        "qa_testing": 104,
+        "requirements_analysis": 346,
+        "research": 419,
+        "risk_assessment": 185,
+        "translation": 43,
+        "writing": 150
+      }
+    }
+  }
+}

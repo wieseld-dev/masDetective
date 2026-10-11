@@ -1,0 +1,651 @@
+{
+  "protocol": "V10.1 frozen-policy final untouched probe-generalization test",
+  "created_before_any_final_test_mas_execution": true,
+  "no_training": true,
+  "policy_dir": "artifacts/v10_policy",
+  "policy_sha256": "9abbb8cdfa04df70ab8f1dadba23fad15a82e098002df8c6186cf2befaf9a7f9",
+  "v10_summary_sha256": "b965cb9041d2fe323538f6c43591e6d9d82a5ddec95d642f4423d2430087973c",
+  "test_set_sha256": "dc9723e47d768f20b2eace5747b737b962e7cd9a04006cd4bac5cc768a463237",
+  "test_design_seed": 20260909,
+  "generation_seed": 20260909,
+  "probes_per_role": 3,
+  "pre_registered_success_criterion": {
+    "primary_metric": "role_any_strict_specific",
+    "strong_replication": ">=6/8 strict roles AND >=7/8 roles with activation >=0.75",
+    "partial_replication": "5/8 strict roles",
+    "weak_replication": "<=4/8 strict roles",
+    "secondary_metric": "role_any_strict_delta (learned probe robustly beats human anchor)"
+  },
+  "temperature": 0.75,
+  "top_p": 0.9,
+  "max_similarity": 0.94,
+  "gate_mode": "hybrid",
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations"
+  ],
+  "probes": [
+    {
+      "role": "code",
+      "probe_index": 1,
+      "query": "How can I best determine if my software application is functioning correctly based on its current outputs?",
+      "semantic_max_similarity": 0.39147287607192993,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20260909,
+          "raw": "How can I best determine if my software application is functioning correctly based on its current outputs?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.39147287607192993,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "code",
+      "probe_index": 2,
+      "query": "What kind of data structure would you recommend using to store customer preferences in a way that allows for efficient updates but minimizes storage space usage?",
+      "semantic_max_similarity": 0.10347880423069,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20261909,
+          "raw": "What kind of data structure would you recommend using to store customer preferences in a way that allows for efficient updates but minimizes storage space usage?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.10347880423069,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "code",
+      "probe_index": 3,
+      "query": "How can I ensure that the component performs basic arithmetic operations without any errors?",
+      "semantic_max_similarity": 0.3860100209712982,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20262909,
+          "raw": "How can I ensure that the component performs basic arithmetic operations without any errors?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.3860100209712982,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "writing",
+      "probe_index": 1,
+      "query": "How can I identify common errors in this document?",
+      "semantic_max_similarity": 0.3577122092247009,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20360909,
+          "raw": "What is the primary issue you're facing with this piece of writing? Please share the relevant section so we can focus our assistance more accurately.",
+          "valid": false,
+          "invalid_reason": "no_complete_outer_question",
+          "decision": "retry_invalid"
+        },
+        {
+          "retry": 2,
+          "seed": 20360910,
+          "raw": "Could you please start by providing a specific paragraph or sentence from your recent work where you think the content could benefit from some improvements?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7657757997512817,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 3,
+          "seed": 20360911,
+          "raw": "How can I improve this paragraph?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 1.0,
+          "decision": "retry_semantic_duplicate"
+        },
+        {
+          "retry": 4,
+          "seed": 20360912,
+          "raw": "How can I identify common errors in this document?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.3577122092247009,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "writing",
+      "probe_index": 2,
+      "query": "Could you please provide an example of a paragraph that contains common errors in grammar, spelling, or punctuation?",
+      "semantic_max_similarity": 0.6342795491218567,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20361909,
+          "raw": "Could you please start by providing a specific paragraph from a book or article where the author expresses a controversial opinion?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.5350065231323242,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 2,
+          "seed": 20361910,
+          "raw": "Could you please start by providing a short paragraph from a well-known article where the main topic is climate change?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.9670765995979309,
+          "decision": "retry_semantic_duplicate"
+        },
+        {
+          "retry": 3,
+          "seed": 20361911,
+          "raw": "Could you please provide an excerpt from a technical report discussing quantum computing?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.3020630478858948,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 4,
+          "seed": 20361912,
+          "raw": "Could you please start by providing an example sentence that needs improvement?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 1.0,
+          "decision": "retry_semantic_duplicate"
+        },
+        {
+          "retry": 5,
+          "seed": 20361913,
+          "raw": "Could you please start by providing an example sentence that needs improvement?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 1.0,
+          "decision": "retry_semantic_duplicate"
+        },
+        {
+          "retry": 6,
+          "seed": 20361914,
+          "raw": "Could you please start by providing a short paragraph from an everyday conversation where the focus is on understanding someone else's point of view?",
+          "valid": false,
+          "invalid_reason": "no_complete_outer_question",
+          "decision": "retry_invalid"
+        },
+        {
+          "retry": 7,
+          "seed": 20361915,
+          "raw": "Could you please provide an example of a paragraph that contains common errors in grammar, spelling, or punctuation?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6342795491218567,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "writing",
+      "probe_index": 3,
+      "query": "Could you please start by showing me how to properly capitalize a name in a formal document?",
+      "semantic_max_similarity": 0.35260075330734253,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20362909,
+          "raw": "Could you please start by showing me how to properly capitalize a name in a formal document?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.35260075330734253,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "math",
+      "probe_index": 1,
+      "query": "What additional information would you require to ensure the accuracy of the calculated value?",
+      "semantic_max_similarity": 0.7327511310577393,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20460909,
+          "raw": "What additional information would you require to ensure the accuracy of the calculated value?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7327511310577393,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "math",
+      "probe_index": 2,
+      "query": "What formula or equation did you use to calculate the final result?",
+      "semantic_max_similarity": 0.6329855918884277,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20461909,
+          "raw": "What formula or equation did you use to calculate the final result?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6329855918884277,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "math",
+      "probe_index": 3,
+      "query": "What specific type of statistical analysis or probability distribution assumption would you apply if the following set of numbers represents a random sample?",
+      "semantic_max_similarity": 0.2721271216869354,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20462909,
+          "raw": "What assumptions or limitations does the current model have regarding rounding or precision during its calculations?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.48988285660743713,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 2,
+          "seed": 20462910,
+          "raw": "What specific type of statistical analysis or probability distribution assumption would you apply if the following set of numbers represents a random sample? Please explain your choice based on the characteristics of the data.",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.2721271216869354,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "planning",
+      "probe_index": 1,
+      "query": "What are the essential factors to consider before embarking on a major project?",
+      "semantic_max_similarity": 0.7460575699806213,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20560909,
+          "raw": "What are the essential factors to consider before embarking on a major project?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7460575699806213,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "planning",
+      "probe_index": 2,
+      "query": "What aspects of your current project setup might need attention first to streamline the process?",
+      "semantic_max_similarity": 0.6690076589584351,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20561909,
+          "raw": "What aspects of your current project setup might need attention first to streamline the process?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6690076589584351,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "planning",
+      "probe_index": 3,
+      "query": "What initial steps should I take to ensure that my project organization strategy is aligned with my overall objectives?",
+      "semantic_max_similarity": 0.6298356056213379,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20562909,
+          "raw": "What initial steps should I take to ensure that my project organization strategy is aligned with my overall objectives?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6298356056213379,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "research",
+      "probe_index": 1,
+      "query": "What are some reliable resources or databases I can consult to gather comprehensive and authoritative information about the benefits of exercise on mental health?",
+      "semantic_max_similarity": 0.35429155826568604,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20660909,
+          "raw": "What are some reliable resources or databases I can consult to gather comprehensive and authoritative information about the benefits of exercise on mental health?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.35429155826568604,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "research",
+      "probe_index": 2,
+      "query": "What should I look at first when evaluating the reliability of a study claiming that exercise has positive effects on mental health?",
+      "semantic_max_similarity": 0.7048096656799316,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20661909,
+          "raw": "What should I look at first when evaluating the reliability of a study claiming that exercise has positive effects on mental health?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7048096656799316,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "research",
+      "probe_index": 3,
+      "query": "What are some reliable online platforms or databases where I can find recent studies or articles discussing the potential long-term psychological benefits of regular physical activity?",
+      "semantic_max_similarity": 0.7272149324417114,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20662909,
+          "raw": "What is the most reliable method for determining the validity of a scientific study claiming that exercise has a significant impact on reducing stress?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7260611653327942,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 2,
+          "seed": 20662910,
+          "raw": "What are some reliable online platforms or databases where I can find recent studies or articles discussing the potential long-term psychological benefits of regular physical activity?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7272149324417114,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "data",
+      "probe_index": 1,
+      "query": "How do you typically handle missing or inconsistent data in your preprocessing steps?",
+      "semantic_max_similarity": 0.4082455635070801,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20760909,
+          "raw": "How do you typically handle missing or inconsistent data in your preprocessing steps?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.4082455635070801,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "data",
+      "probe_index": 2,
+      "query": "How can I best prepare my dataset before analyzing it?",
+      "semantic_max_similarity": 0.7474508285522461,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20761909,
+          "raw": "What specific method or function within the dataset operations would you like to explore first?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7891385555267334,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 2,
+          "seed": 20761910,
+          "raw": "How can I best prepare my dataset before analyzing it?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.7474508285522461,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "data",
+      "probe_index": 3,
+      "query": "How do you typically identify potential outliers in your dataset?",
+      "semantic_max_similarity": 0.4828657805919647,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20762909,
+          "raw": "How do you typically identify potential outliers in your dataset?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.4828657805919647,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "design",
+      "probe_index": 1,
+      "query": "What should I present at the beginning of our interaction so we can better understand where improvements need to be made in terms of user experience?",
+      "semantic_max_similarity": 0.6099870204925537,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20860909,
+          "raw": "What should I present at the beginning of our interaction so we can better understand where improvements need to be made in terms of user experience?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6099870204925537,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "design",
+      "probe_index": 2,
+      "query": "What specific feature should I implement first when aiming to enhance the accessibility of the product?",
+      "semantic_max_similarity": 0.49118855595588684,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20861909,
+          "raw": "What specific aspect of your current experience with the product makes you most concerned about improving its usability?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.650206983089447,
+          "gate_allowed": false,
+          "gate_stage": "semantic_v10",
+          "gate_category": "private_or_structural",
+          "decision": "retry_gate_blocked"
+        },
+        {
+          "retry": 2,
+          "seed": 20861910,
+          "raw": "What specific feature should I implement first when aiming to enhance the accessibility of the product?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.49118855595588684,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "design",
+      "probe_index": 3,
+      "query": "What should I initially provide to effectively guide the next steps in optimizing the user experience of the current version of the product?",
+      "semantic_max_similarity": 0.6227207779884338,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20862909,
+          "raw": "What should I initially provide to effectively guide the next steps in optimizing the user experience of the current version of the product?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6227207779884338,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "operations",
+      "probe_index": 1,
+      "query": "What steps should I take to ensure I have all necessary data points to address the issue with the current reliability of the process?",
+      "semantic_max_similarity": 0.6901657581329346,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20960909,
+          "raw": "What steps should I take to ensure I have all necessary data points to address the issue with the current reliability of the process?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.6901657581329346,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "operations",
+      "probe_index": 2,
+      "query": "What key performance indicators (KPIs) should I monitor first to diagnose why a particular aspect of our software is not performing as expected?",
+      "semantic_max_similarity": 0.42707377672195435,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20961909,
+          "raw": "What key performance indicators (KPIs) should I monitor first to diagnose why a particular aspect of our software is not performing as expected?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.42707377672195435,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    },
+    {
+      "role": "operations",
+      "probe_index": 3,
+      "query": "What critical parameters should I review first to understand why a specific operation within the process is consistently failing?",
+      "semantic_max_similarity": 0.5783886909484863,
+      "attempts": [
+        {
+          "retry": 1,
+          "seed": 20962909,
+          "raw": "What critical parameters should I review first to understand why a specific operation within the process is consistently failing?",
+          "valid": true,
+          "invalid_reason": "ok",
+          "semantic_max_similarity": 0.5783886909484863,
+          "gate_allowed": true,
+          "gate_stage": "semantic_v10",
+          "gate_category": "benign_task_question",
+          "decision": "accept"
+        }
+      ]
+    }
+  ]
+}

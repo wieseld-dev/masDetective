@@ -1,0 +1,12 @@
+SMALL-MAS PRESENCE V0
+=====================
+
+Universe: planner / researcher / critic
+Configurations: all 7 non-empty subsets
+
+Probes  ExactSet    Hamming     MacroF1     
+1       0.143       0.476       0.242       
+2       0.143       0.571       0.727       
+3       0.143       0.571       0.709       
+
+API calls: 78

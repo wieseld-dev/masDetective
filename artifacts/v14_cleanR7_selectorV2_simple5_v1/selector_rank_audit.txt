@@ -1,0 +1,755 @@
+======================================================================================================================
+SELECTOR TRUE-FOCUS RANK AUDIT
+======================================================================================================================
+
+######################################################################################################################
+ROUND 1
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=04 focus=database_design score=+0.322266 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=2 cand=00 focus=research score=-0.011719
+SCORE GAP         : selected - best_true = +0.333984
+AUC              : 0.5000 -> 0.5098 (+0.0098)
+
+SELECTOR RANKING:
+  #01 score=+0.322266 cand=04 focus=database_design              [SELECTED]
+  #02 score=-0.011719 cand=00 focus=research                     [TRUE-FOCUS]
+  #03 score=-0.047607 cand=07 focus=design                      
+  #04 score=-0.246094 cand=03 focus=risk_assessment             
+  #05 score=-0.248047 cand=02 focus=incident_management         
+  #06 score=-0.287109 cand=05 focus=math                        
+  #07 score=-0.433594 cand=06 focus=translation                 
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=06 focus=incident_management score=+0.015625 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=3 cand=07 focus=risk_assessment score=-0.119141
+SCORE GAP         : selected - best_true = +0.134766
+AUC              : 0.5000 -> 0.4902 (-0.0098)
+
+SELECTOR RANKING:
+  #01 score=+0.015625 cand=06 focus=incident_management          [SELECTED]
+  #02 score=-0.091797 cand=04 focus=research                    
+  #03 score=-0.119141 cand=07 focus=risk_assessment              [TRUE-FOCUS]
+  #04 score=-0.120117 cand=05 focus=data                        
+  #05 score=-0.291016 cand=03 focus=financial_analysis          
+  #06 score=-0.480469 cand=02 focus=customer_support_triage     
+  #07 score=-0.664062 cand=00 focus=fact_checking               
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=01 focus=qa_testing score=+0.143555 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=3 cand=04 focus=requirements_analysis score=-0.174805
+SCORE GAP         : selected - best_true = +0.318359
+AUC              : 0.5000 -> 0.5882 (+0.0882)
+
+SELECTOR RANKING:
+  #01 score=+0.143555 cand=01 focus=qa_testing                   [SELECTED]
+  #02 score=-0.148438 cand=06 focus=financial_analysis          
+  #03 score=-0.174805 cand=04 focus=requirements_analysis        [TRUE-FOCUS]
+  #04 score=-0.248047 cand=05 focus=customer_support_triage     
+  #05 score=-0.330078 cand=07 focus=research                    
+  #06 score=-0.441406 cand=00 focus=experiment_design           
+  #07 score=-0.478516 cand=02 focus=code                        
+  #08 score=-0.585938 cand=03 focus=fact_checking               
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=06 focus=risk_assessment score=+0.109375 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=7 cand=05 focus=incident_management score=-0.363281
+SCORE GAP         : selected - best_true = +0.472656
+AUC              : 0.5000 -> 0.6471 (+0.1471)
+
+SELECTOR RANKING:
+  #01 score=+0.109375 cand=06 focus=risk_assessment              [SELECTED]
+  #02 score=-0.039062 cand=00 focus=requirements_analysis       
+  #03 score=-0.092773 cand=02 focus=financial_analysis          
+  #04 score=-0.277344 cand=07 focus=database_design             
+  #05 score=-0.324219 cand=04 focus=data                        
+  #06 score=-0.332031 cand=03 focus=research                    
+  #07 score=-0.363281 cand=05 focus=incident_management          [TRUE-FOCUS]
+  #08 score=-0.515625 cand=01 focus=customer_support_triage      [TRUE-FOCUS]
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=04 focus=risk_assessment score=+0.357422 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.5000 -> 0.4510 (-0.0490)
+
+SELECTOR RANKING:
+  #01 score=+0.357422 cand=04 focus=risk_assessment              [SELECTED]
+  #02 score=+0.107910 cand=03 focus=incident_management         
+  #03 score=-0.091309 cand=07 focus=translation                 
+  #04 score=-0.099609 cand=00 focus=financial_analysis          
+  #05 score=-0.316406 cand=02 focus=data                        
+  #06 score=-0.417969 cand=01 focus=research                    
+  #07 score=-0.625000 cand=05 focus=database_design             
+  #08 score=-0.984375 cand=06 focus=math                        
+
+######################################################################################################################
+ROUND 2
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=04 focus=design score=-0.234375 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.5098 -> 0.7255 (+0.2157)
+
+SELECTOR RANKING:
+  #01 score=-0.234375 cand=04 focus=design                       [SELECTED]
+  #02 score=-0.320312 cand=07 focus=incident_management         
+  #03 score=-0.363281 cand=03 focus=qa_testing                  
+  #04 score=-0.435547 cand=00 focus=documentation               
+  #05 score=-0.464844 cand=02 focus=accessibility_review        
+  #06 score=-0.519531 cand=01 focus=operations                  
+  #07 score=-0.582031 cand=05 focus=fact_checking               
+  #08 score=-0.593750 cand=06 focus=experiment_design           
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=07 focus=qa_testing score=-0.152344 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=5 cand=06 focus=accessibility_review score=-0.378906
+SCORE GAP         : selected - best_true = +0.226562
+AUC              : 0.4902 -> 0.4706 (-0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.152344 cand=07 focus=qa_testing                   [SELECTED]
+  #02 score=-0.207031 cand=02 focus=operations                  
+  #03 score=-0.221680 cand=03 focus=database_design             
+  #04 score=-0.322266 cand=04 focus=experiment_design           
+  #05 score=-0.378906 cand=06 focus=accessibility_review         [TRUE-FOCUS]
+  #06 score=-0.388672 cand=05 focus=incident_management         
+  #07 score=-0.492188 cand=00 focus=customer_support_triage     
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=01 focus=writing score=-0.131836 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=2 cand=02 focus=requirements_analysis score=-0.402344
+SCORE GAP         : selected - best_true = +0.270508
+AUC              : 0.5882 -> 0.5294 (-0.0588)
+
+SELECTOR RANKING:
+  #01 score=-0.131836 cand=01 focus=writing                      [SELECTED]
+  #02 score=-0.402344 cand=02 focus=requirements_analysis        [TRUE-FOCUS]
+  #03 score=-0.431641 cand=05 focus=operations                  
+  #04 score=-0.511719 cand=06 focus=accessibility_review        
+  #05 score=-0.570312 cand=07 focus=documentation               
+  #06 score=-0.601562 cand=04 focus=research                    
+  #07 score=-0.644531 cand=03 focus=customer_support_triage     
+  #08 score=-0.671875 cand=00 focus=math                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=03 focus=code score=-0.308594 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6471 -> 0.8235 (+0.1765)
+
+SELECTOR RANKING:
+  #01 score=-0.308594 cand=03 focus=code                         [SELECTED]
+  #02 score=-0.425781 cand=07 focus=research                    
+  #03 score=-0.460938 cand=04 focus=documentation               
+  #04 score=-0.464844 cand=02 focus=database_design             
+  #05 score=-0.531250 cand=05 focus=design                      
+  #06 score=-0.566406 cand=06 focus=accessibility_review        
+  #07 score=-0.621094 cand=01 focus=requirements_analysis       
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=07 focus=experiment_design score=+0.006348 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.4510 -> 0.5686 (+0.1176)
+
+SELECTOR RANKING:
+  #01 score=+0.006348 cand=07 focus=experiment_design            [SELECTED]
+  #02 score=-0.183594 cand=02 focus=customer_support_triage     
+  #03 score=-0.322266 cand=01 focus=research                    
+  #04 score=-0.382812 cand=00 focus=requirements_analysis       
+  #05 score=-0.414062 cand=05 focus=operations                  
+  #06 score=-0.425781 cand=03 focus=risk_assessment             
+  #07 score=-0.613281 cand=06 focus=fact_checking               
+  #08 score=-0.960938 cand=04 focus=translation                 
+
+######################################################################################################################
+ROUND 3
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=03 focus=translation score=+0.090820 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=3 cand=01 focus=research score=-0.163086
+SCORE GAP         : selected - best_true = +0.253906
+AUC              : 0.7255 -> 0.7843 (+0.0588)
+
+SELECTOR RANKING:
+  #01 score=+0.090820 cand=03 focus=translation                  [SELECTED]
+  #02 score=-0.042969 cand=00 focus=documentation               
+  #03 score=-0.163086 cand=01 focus=research                     [TRUE-FOCUS]
+  #04 score=-0.322266 cand=02 focus=fact_checking               
+  #05 score=-0.402344 cand=05 focus=math                        
+  #06 score=-0.500000 cand=04 focus=operations                  
+  #07 score=-0.531250 cand=06 focus=qa_testing                  
+  #08 score=-0.589844 cand=07 focus=design                      
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=04 focus=documentation score=-0.110352 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.4706 -> 0.6863 (+0.2157)
+
+SELECTOR RANKING:
+  #01 score=-0.110352 cand=04 focus=documentation                [SELECTED]
+  #02 score=-0.168945 cand=05 focus=incident_management         
+  #03 score=-0.195312 cand=00 focus=design                      
+  #04 score=-0.257812 cand=06 focus=qa_testing                  
+  #05 score=-0.507812 cand=02 focus=financial_analysis          
+  #06 score=-0.570312 cand=07 focus=experiment_design           
+  #07 score=-0.625000 cand=03 focus=fact_checking               
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=02 focus=qa_testing score=-0.071289 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=8 cand=06 focus=database_design score=-0.769531
+SCORE GAP         : selected - best_true = +0.698242
+AUC              : 0.5294 -> 0.6471 (+0.1176)
+
+SELECTOR RANKING:
+  #01 score=-0.071289 cand=02 focus=qa_testing                   [SELECTED]
+  #02 score=-0.143555 cand=05 focus=operations                  
+  #03 score=-0.167969 cand=03 focus=math                        
+  #04 score=-0.273438 cand=07 focus=translation                 
+  #05 score=-0.275391 cand=04 focus=documentation               
+  #06 score=-0.382812 cand=01 focus=research                    
+  #07 score=-0.384766 cand=00 focus=code                        
+  #08 score=-0.769531 cand=06 focus=database_design              [TRUE-FOCUS]
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=01 focus=requirements_analysis score=-0.144531 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=4 cand=07 focus=customer_support_triage score=-0.396484
+SCORE GAP         : selected - best_true = +0.251953
+AUC              : 0.8235 -> 0.6863 (-0.1373)
+
+SELECTOR RANKING:
+  #01 score=-0.144531 cand=01 focus=requirements_analysis        [SELECTED]
+  #02 score=-0.251953 cand=02 focus=financial_analysis          
+  #03 score=-0.386719 cand=03 focus=qa_testing                  
+  #04 score=-0.396484 cand=07 focus=customer_support_triage      [TRUE-FOCUS]
+  #05 score=-0.398438 cand=05 focus=planning                    
+  #06 score=-0.445312 cand=00 focus=accessibility_review        
+  #07 score=-0.535156 cand=06 focus=translation                 
+  #08 score=-0.847656 cand=04 focus=math                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=06 focus=data score=-0.149414 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=4 cand=02 focus=documentation score=-0.193359
+SCORE GAP         : selected - best_true = +0.043945
+AUC              : 0.5686 -> 0.6667 (+0.0980)
+
+SELECTOR RANKING:
+  #01 score=-0.149414 cand=06 focus=data                         [SELECTED]
+  #02 score=-0.164062 cand=05 focus=math                        
+  #03 score=-0.171875 cand=00 focus=incident_management         
+  #04 score=-0.193359 cand=02 focus=documentation                [TRUE-FOCUS]
+  #05 score=-0.253906 cand=03 focus=design                      
+  #06 score=-0.296875 cand=07 focus=code                        
+  #07 score=-0.335938 cand=04 focus=accessibility_review        
+  #08 score=-0.609375 cand=01 focus=database_design             
+
+######################################################################################################################
+ROUND 4
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=07 focus=risk_assessment score=-0.216797 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=4 cand=05 focus=code score=-0.324219
+SCORE GAP         : selected - best_true = +0.107422
+AUC              : 0.7843 -> 0.7059 (-0.0784)
+
+SELECTOR RANKING:
+  #01 score=-0.216797 cand=07 focus=risk_assessment              [SELECTED]
+  #02 score=-0.231445 cand=03 focus=translation                 
+  #03 score=-0.324219 cand=02 focus=financial_analysis          
+  #04 score=-0.324219 cand=05 focus=code                         [TRUE-FOCUS]
+  #05 score=-0.328125 cand=06 focus=documentation               
+  #06 score=-0.351562 cand=04 focus=operations                  
+  #07 score=-0.427734 cand=01 focus=research                     [TRUE-FOCUS]
+  #08 score=-0.507812 cand=00 focus=qa_testing                  
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=05 focus=financial_analysis score=-0.087891 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6863 -> 0.7059 (+0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.087891 cand=05 focus=financial_analysis           [SELECTED]
+  #02 score=-0.486328 cand=06 focus=design                      
+  #03 score=-0.500000 cand=04 focus=documentation               
+  #04 score=-0.519531 cand=03 focus=fact_checking               
+  #05 score=-0.523438 cand=07 focus=experiment_design           
+  #06 score=-0.527344 cand=01 focus=writing                     
+  #07 score=-0.632812 cand=00 focus=math                        
+  #08 score=-0.664062 cand=02 focus=operations                  
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=05 focus=operations score=-0.159180 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6471 -> 0.6078 (-0.0392)
+
+SELECTOR RANKING:
+  #01 score=-0.159180 cand=05 focus=operations                   [SELECTED]
+  #02 score=-0.198242 cand=07 focus=code                        
+  #03 score=-0.236328 cand=01 focus=documentation               
+  #04 score=-0.236328 cand=02 focus=qa_testing                  
+  #05 score=-0.306641 cand=00 focus=writing                     
+  #06 score=-0.333984 cand=04 focus=design                      
+  #07 score=-0.562500 cand=06 focus=accessibility_review        
+  #08 score=-0.570312 cand=03 focus=research                    
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=01 focus=requirements_analysis score=+0.065918 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6863 -> 0.6471 (-0.0392)
+
+SELECTOR RANKING:
+  #01 score=+0.065918 cand=01 focus=requirements_analysis        [SELECTED]
+  #02 score=-0.225586 cand=04 focus=fact_checking               
+  #03 score=-0.289062 cand=07 focus=documentation               
+  #04 score=-0.335938 cand=06 focus=qa_testing                  
+  #05 score=-0.404297 cand=05 focus=accessibility_review        
+  #06 score=-0.451172 cand=03 focus=planning                    
+  #07 score=-0.468750 cand=00 focus=experiment_design           
+  #08 score=-0.531250 cand=02 focus=database_design             
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=01 focus=customer_support_triage score=-0.114258 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=4 cand=00 focus=documentation score=-0.378906
+SCORE GAP         : selected - best_true = +0.264648
+AUC              : 0.6667 -> 0.5686 (-0.0980)
+
+SELECTOR RANKING:
+  #01 score=-0.114258 cand=01 focus=customer_support_triage      [SELECTED]
+  #02 score=-0.308594 cand=04 focus=accessibility_review        
+  #03 score=-0.316406 cand=02 focus=financial_analysis          
+  #04 score=-0.378906 cand=00 focus=documentation                [TRUE-FOCUS]
+  #05 score=-0.392578 cand=05 focus=operations                  
+  #06 score=-0.425781 cand=03 focus=research                    
+  #07 score=-0.464844 cand=06 focus=writing                      [TRUE-FOCUS]
+
+######################################################################################################################
+ROUND 5
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=00 focus=qa_testing score=+0.000488 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=4 cand=04 focus=research score=-0.347656
+SCORE GAP         : selected - best_true = +0.348145
+AUC              : 0.7059 -> 0.6863 (-0.0196)
+
+SELECTOR RANKING:
+  #01 score=+0.000488 cand=00 focus=qa_testing                   [SELECTED]
+  #02 score=-0.001953 cand=02 focus=customer_support_triage     
+  #03 score=-0.215820 cand=03 focus=documentation               
+  #04 score=-0.347656 cand=04 focus=research                     [TRUE-FOCUS]
+  #05 score=-0.554688 cand=01 focus=requirements_analysis       
+  #06 score=-0.632812 cand=05 focus=math                        
+  #07 score=-0.636719 cand=06 focus=experiment_design           
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=03 focus=design score=-0.208984 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=2 cand=05 focus=accessibility_review score=-0.269531
+SCORE GAP         : selected - best_true = +0.060547
+AUC              : 0.7059 -> 0.6863 (-0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.208984 cand=03 focus=design                       [SELECTED]
+  #02 score=-0.269531 cand=05 focus=accessibility_review         [TRUE-FOCUS]
+  #03 score=-0.335938 cand=02 focus=operations                  
+  #04 score=-0.386719 cand=00 focus=requirements_analysis       
+  #05 score=-0.419922 cand=01 focus=translation                  [TRUE-FOCUS]
+  #06 score=-0.419922 cand=04 focus=customer_support_triage     
+  #07 score=-0.486328 cand=07 focus=database_design             
+  #08 score=-0.656250 cand=06 focus=code                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=00 focus=financial_analysis score=-0.023926 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6078 -> 0.5490 (-0.0588)
+
+SELECTOR RANKING:
+  #01 score=-0.023926 cand=00 focus=financial_analysis           [SELECTED]
+  #02 score=-0.031250 cand=06 focus=accessibility_review        
+  #03 score=-0.055664 cand=03 focus=math                        
+  #04 score=-0.072754 cand=04 focus=writing                     
+  #05 score=-0.118164 cand=01 focus=design                      
+  #06 score=-0.186523 cand=05 focus=planning                    
+  #07 score=-0.382812 cand=02 focus=qa_testing                  
+  #08 score=-0.554688 cand=07 focus=documentation               
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=07 focus=documentation score=-0.128906 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=4 cand=03 focus=customer_support_triage score=-0.363281
+SCORE GAP         : selected - best_true = +0.234375
+AUC              : 0.6471 -> 0.5686 (-0.0784)
+
+SELECTOR RANKING:
+  #01 score=-0.128906 cand=07 focus=documentation                [SELECTED]
+  #02 score=-0.257812 cand=04 focus=fact_checking               
+  #03 score=-0.357422 cand=02 focus=math                        
+  #04 score=-0.363281 cand=03 focus=customer_support_triage      [TRUE-FOCUS]
+  #05 score=-0.412109 cand=01 focus=requirements_analysis       
+  #06 score=-0.431641 cand=05 focus=code                        
+  #07 score=-0.542969 cand=06 focus=experiment_design           
+  #08 score=-0.632812 cand=00 focus=accessibility_review        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=02 focus=incident_management score=+0.031250 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=6 cand=06 focus=documentation score=-0.503906
+SCORE GAP         : selected - best_true = +0.535156
+AUC              : 0.5686 -> 0.5882 (+0.0196)
+
+SELECTOR RANKING:
+  #01 score=+0.031250 cand=02 focus=incident_management          [SELECTED]
+  #02 score=-0.089844 cand=04 focus=customer_support_triage     
+  #03 score=-0.166992 cand=03 focus=research                    
+  #04 score=-0.347656 cand=01 focus=accessibility_review        
+  #05 score=-0.472656 cand=05 focus=math                        
+  #06 score=-0.503906 cand=06 focus=documentation                [TRUE-FOCUS]
+  #07 score=-0.511719 cand=00 focus=fact_checking               
+  #08 score=-0.554688 cand=07 focus=translation                 
+
+######################################################################################################################
+ROUND 6
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=02 focus=math score=-0.101562 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=3 cand=04 focus=research score=-0.247070
+SCORE GAP         : selected - best_true = +0.145508
+AUC              : 0.6863 -> 0.6667 (-0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.101562 cand=02 focus=math                         [SELECTED]
+  #02 score=-0.239258 cand=07 focus=financial_analysis          
+  #03 score=-0.247070 cand=04 focus=research                     [TRUE-FOCUS]
+  #04 score=-0.316406 cand=00 focus=qa_testing                  
+  #05 score=-0.507812 cand=01 focus=operations                  
+  #06 score=-0.570312 cand=05 focus=customer_support_triage     
+  #07 score=-0.570312 cand=06 focus=translation                 
+  #08 score=-0.574219 cand=03 focus=writing                     
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=06 focus=writing score=-0.034668 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6863 -> 0.6863 (+0.0000)
+
+SELECTOR RANKING:
+  #01 score=-0.034668 cand=06 focus=writing                      [SELECTED]
+  #02 score=-0.241211 cand=00 focus=research                    
+  #03 score=-0.316406 cand=04 focus=data                        
+  #04 score=-0.328125 cand=01 focus=experiment_design           
+  #05 score=-0.333984 cand=03 focus=math                        
+  #06 score=-0.347656 cand=07 focus=customer_support_triage     
+  #07 score=-0.449219 cand=02 focus=financial_analysis          
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=04 focus=research score=-0.189453 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=8 cand=06 focus=database_design score=-0.640625
+SCORE GAP         : selected - best_true = +0.451172
+AUC              : 0.5490 -> 0.5686 (+0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.189453 cand=04 focus=research                     [SELECTED]
+  #02 score=-0.224609 cand=07 focus=documentation               
+  #03 score=-0.240234 cand=02 focus=planning                    
+  #04 score=-0.257812 cand=00 focus=incident_management         
+  #05 score=-0.359375 cand=05 focus=operations                  
+  #06 score=-0.490234 cand=01 focus=math                        
+  #07 score=-0.500000 cand=03 focus=accessibility_review        
+  #08 score=-0.640625 cand=06 focus=database_design              [TRUE-FOCUS]
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=00 focus=research score=-0.167969 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.5686 -> 0.5686 (+0.0000)
+
+SELECTOR RANKING:
+  #01 score=-0.167969 cand=00 focus=research                     [SELECTED]
+  #02 score=-0.176758 cand=02 focus=fact_checking               
+  #03 score=-0.281250 cand=07 focus=requirements_analysis       
+  #04 score=-0.328125 cand=05 focus=financial_analysis          
+  #05 score=-0.369141 cand=06 focus=planning                    
+  #06 score=-0.515625 cand=01 focus=risk_assessment             
+  #07 score=-0.531250 cand=03 focus=data                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=02 focus=qa_testing score=-0.109375 <<< TRUE-FOCUS
+BEST TRUE-FOCUS  : rank=1 cand=02 focus=qa_testing score=-0.109375
+SCORE GAP         : selected - best_true = +0.000000
+AUC              : 0.5882 -> 0.7647 (+0.1765)
+
+SELECTOR RANKING:
+  #01 score=-0.109375 cand=02 focus=qa_testing                   [SELECTED,TRUE-FOCUS]
+  #02 score=-0.341797 cand=06 focus=customer_support_triage     
+  #03 score=-0.357422 cand=01 focus=risk_assessment             
+  #04 score=-0.367188 cand=04 focus=accessibility_review        
+  #05 score=-0.414062 cand=00 focus=writing                      [TRUE-FOCUS]
+  #06 score=-0.425781 cand=07 focus=translation                 
+  #07 score=-0.554688 cand=05 focus=incident_management         
+
+######################################################################################################################
+ROUND 7
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=00 focus=qa_testing score=-0.104492 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=3 cand=07 focus=research score=-0.236328
+SCORE GAP         : selected - best_true = +0.131836
+AUC              : 0.6667 -> 0.6667 (+0.0000)
+
+SELECTOR RANKING:
+  #01 score=-0.104492 cand=00 focus=qa_testing                   [SELECTED]
+  #02 score=-0.228516 cand=06 focus=writing                     
+  #03 score=-0.236328 cand=07 focus=research                     [TRUE-FOCUS]
+  #04 score=-0.367188 cand=01 focus=requirements_analysis       
+  #05 score=-0.455078 cand=02 focus=risk_assessment             
+  #06 score=-0.460938 cand=03 focus=documentation               
+  #07 score=-0.460938 cand=05 focus=incident_management         
+  #08 score=-0.515625 cand=04 focus=math                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=07 focus=qa_testing score=-0.093750 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6863 -> 0.6667 (-0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.093750 cand=07 focus=qa_testing                   [SELECTED]
+  #02 score=-0.277344 cand=00 focus=design                      
+  #03 score=-0.281250 cand=05 focus=operations                  
+  #04 score=-0.328125 cand=02 focus=financial_analysis          
+  #05 score=-0.375000 cand=01 focus=code                        
+  #06 score=-0.416016 cand=03 focus=incident_management         
+  #07 score=-0.625000 cand=04 focus=data                        
+  #08 score=-0.765625 cand=06 focus=math                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=00 focus=risk_assessment score=+0.079590 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=6 cand=07 focus=data score=-0.460938
+SCORE GAP         : selected - best_true = +0.540527
+AUC              : 0.5686 -> 0.5098 (-0.0588)
+
+SELECTOR RANKING:
+  #01 score=+0.079590 cand=00 focus=risk_assessment              [SELECTED]
+  #02 score=-0.172852 cand=03 focus=accessibility_review        
+  #03 score=-0.177734 cand=01 focus=research                    
+  #04 score=-0.304688 cand=04 focus=customer_support_triage     
+  #05 score=-0.429688 cand=05 focus=planning                    
+  #06 score=-0.460938 cand=07 focus=data                         [TRUE-FOCUS]
+  #07 score=-0.486328 cand=02 focus=financial_analysis          
+  #08 score=-0.570312 cand=06 focus=database_design              [TRUE-FOCUS]
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=03 focus=planning score=+0.216797 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.5686 -> 0.5294 (-0.0392)
+
+SELECTOR RANKING:
+  #01 score=+0.216797 cand=03 focus=planning                     [SELECTED]
+  #02 score=+0.093750 cand=00 focus=research                    
+  #03 score=-0.087891 cand=02 focus=financial_analysis          
+  #04 score=-0.095703 cand=05 focus=fact_checking               
+  #05 score=-0.184570 cand=07 focus=design                      
+  #06 score=-0.227539 cand=06 focus=data                        
+  #07 score=-0.472656 cand=01 focus=writing                     
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=02 focus=qa_testing score=+0.080078 <<< TRUE-FOCUS
+BEST TRUE-FOCUS  : rank=1 cand=02 focus=qa_testing score=+0.080078
+SCORE GAP         : selected - best_true = +0.000000
+AUC              : 0.7647 -> 0.8039 (+0.0392)
+
+SELECTOR RANKING:
+  #01 score=+0.080078 cand=02 focus=qa_testing                   [SELECTED,TRUE-FOCUS]
+  #02 score=-0.183594 cand=05 focus=experiment_design           
+  #03 score=-0.207031 cand=01 focus=risk_assessment             
+  #04 score=-0.316406 cand=03 focus=database_design             
+  #05 score=-0.320312 cand=00 focus=research                    
+  #06 score=-0.380859 cand=07 focus=translation                 
+  #07 score=-0.554688 cand=04 focus=accessibility_review        
+
+######################################################################################################################
+ROUND 8
+######################################################################################################################
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_01_code_plan_research
+TRUE ROLES       : ['code', 'planning', 'research']
+SELECTED         : rank=1 cand=05 focus=customer_support_triage score=-0.011963 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=2 cand=04 focus=research score=-0.062988
+SCORE GAP         : selected - best_true = +0.051025
+AUC              : 0.6667 -> 0.6667 (+0.0000)
+
+SELECTOR RANKING:
+  #01 score=-0.011963 cand=05 focus=customer_support_triage      [SELECTED]
+  #02 score=-0.062988 cand=04 focus=research                     [TRUE-FOCUS]
+  #03 score=-0.129883 cand=01 focus=operations                  
+  #04 score=-0.190430 cand=06 focus=writing                     
+  #05 score=-0.194336 cand=03 focus=experiment_design           
+  #06 score=-0.226562 cand=00 focus=code                         [TRUE-FOCUS]
+  #07 score=-0.402344 cand=02 focus=fact_checking               
+  #08 score=-1.000000 cand=07 focus=math                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_02_risk_access_translation
+TRUE ROLES       : ['accessibility_review', 'risk_assessment', 'translation']
+SELECTED         : rank=1 cand=02 focus=financial_analysis score=-0.119141 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.6667 -> 0.6471 (-0.0196)
+
+SELECTOR RANKING:
+  #01 score=-0.119141 cand=02 focus=financial_analysis           [SELECTED]
+  #02 score=-0.144531 cand=05 focus=operations                  
+  #03 score=-0.166992 cand=07 focus=qa_testing                  
+  #04 score=-0.361328 cand=00 focus=writing                     
+  #05 score=-0.396484 cand=03 focus=math                        
+  #06 score=-0.482422 cand=04 focus=fact_checking               
+  #07 score=-0.527344 cand=01 focus=data                        
+  #08 score=-0.558594 cand=06 focus=database_design             
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_03_data_db_requirements
+TRUE ROLES       : ['data', 'database_design', 'requirements_analysis']
+SELECTED         : rank=1 cand=06 focus=code score=-0.187500 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=6 cand=07 focus=data score=-0.519531
+SCORE GAP         : selected - best_true = +0.332031
+AUC              : 0.5098 -> 0.5098 (+0.0000)
+
+SELECTOR RANKING:
+  #01 score=-0.187500 cand=06 focus=code                         [SELECTED]
+  #02 score=-0.229492 cand=02 focus=risk_assessment             
+  #03 score=-0.277344 cand=05 focus=operations                  
+  #04 score=-0.341797 cand=04 focus=math                        
+  #05 score=-0.382812 cand=03 focus=fact_checking               
+  #06 score=-0.519531 cand=07 focus=data                         [TRUE-FOCUS]
+  #07 score=-0.558594 cand=00 focus=accessibility_review        
+  #08 score=-0.664062 cand=01 focus=customer_support_triage     
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_04_support_incident_ops
+TRUE ROLES       : ['customer_support_triage', 'incident_management', 'operations']
+SELECTED         : rank=1 cand=02 focus=financial_analysis score=+0.140625 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : NONE IN POOL
+AUC              : 0.5294 -> 0.7451 (+0.2157)
+
+SELECTOR RANKING:
+  #01 score=+0.140625 cand=02 focus=financial_analysis           [SELECTED]
+  #02 score=-0.277344 cand=06 focus=translation                 
+  #03 score=-0.281250 cand=07 focus=requirements_analysis       
+  #04 score=-0.324219 cand=01 focus=design                      
+  #05 score=-0.507812 cand=04 focus=writing                     
+  #06 score=-0.617188 cand=05 focus=fact_checking               
+  #07 score=-0.871094 cand=00 focus=data                        
+
+----------------------------------------------------------------------------------------------------------------------
+simple5_05_docs_qa_writing
+TRUE ROLES       : ['documentation', 'qa_testing', 'writing']
+SELECTED         : rank=1 cand=01 focus=customer_support_triage score=-0.132812 <<< FALSE-FOCUS
+BEST TRUE-FOCUS  : rank=2 cand=03 focus=documentation score=-0.316406
+SCORE GAP         : selected - best_true = +0.183594
+AUC              : 0.8039 -> 0.7059 (-0.0980)
+
+SELECTOR RANKING:
+  #01 score=-0.132812 cand=01 focus=customer_support_triage      [SELECTED]
+  #02 score=-0.316406 cand=03 focus=documentation                [TRUE-FOCUS]
+  #03 score=-0.408203 cand=02 focus=writing                      [TRUE-FOCUS]
+  #04 score=-0.439453 cand=07 focus=translation                 
+  #05 score=-0.466797 cand=05 focus=requirements_analysis       
+  #06 score=-0.546875 cand=04 focus=accessibility_review        
+  #07 score=-0.773438 cand=06 focus=database_design             
+  #08 score=-0.785156 cand=00 focus=math                        
+
+======================================================================================================================
+GLOBAL SUMMARY
+======================================================================================================================
+Total decisions                         = 40
+Rounds with >=1 true-focus candidate    = 25/40
+Rounds with NO true-focus candidate     = 15/40
+Selector picked true-focus when possible= 2/25 (8.0%)
+Selector picked true-focus overall      = 2/40
+
+TRUE-FOCUS RANK DISTRIBUTION
+Mean best true-focus rank               = 3.880
+Median best true-focus rank             = 4.000
+Best true-focus in Top-1              = 2/25 (8.0%)
+Best true-focus in Top-2              = 7/25 (28.0%)
+Best true-focus in Top-3              = 12/25 (48.0%)
+Best true-focus in Top-4              = 18/25 (72.0%)
+Best true-focus in bottom half          = 9/25 (36.0%)
+
+SCORE SEPARATION
+Mean selected-minus-best-true gap       = +0.277864
+Median selected-minus-best-true gap     = +0.253906
+
+AUC EFFECT
+Mean ΔAUC when true-focus selected      = +0.1078 (n=2)
+Mean ΔAUC when false-focus selected     = +0.0147 (n=38)
+
+======================================================================================================================

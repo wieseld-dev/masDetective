@@ -1,0 +1,57 @@
+V10.1 verification report
+=========================
+
+Verification pass 1 — syntax/correctness
+- Python compileall: PASS
+- Bash syntax (apply + full/resume sbatch): PASS
+- Unit tests: 5/5 PASS
+
+Verification pass 2 — reward contract
+- Anchor is reference, not mandatory hurdle: PASS
+- Low PRESENT activation cannot be compensated by separation: PASS
+- Low SHAM activation now also makes the probe ineligible: PASS
+- Negative lower-quartile tail blocks strict elite: PASS
+
+Verification pass 3 — checkpoint/resume
+- Transactional round snapshot writes adapter + optimizer + round metadata + COMMITTED marker: PASS
+- Root checkpoint advances only after full snapshot exists: PASS
+- Resume validates referenced adapter/optimizer: PASS
+- Mutable public policy/optimizer mirrors are not trusted for resume.
+
+Verification pass 4 — actual V6.5 RL split scheduling
+Reconstructed from the captured project source using the same detector split seed (909):
+- RL base systems: 20
+- detector-reserved base systems: 4
+- counterfactual training pairs: 93
+- available pairs per role:
+  code=12, writing=12, math=12, planning=12,
+  research=11, data=11, design=11, operations=12
+
+Primary reward coverage across the default 3 rounds x 4 pairs:
+- code:       12/12 unique
+- writing:    12/12 unique
+- math:       12/12 unique
+- planning:   12/12 unique
+- research:   11/11 unique
+- data:       11/11 unique
+- design:     11/11 unique
+- operations: 12/12 unique
+
+For every round/role checked, primary and confirmation bundles are disjoint.
+All roles receive broad mode coverage over training.
+
+Verification pass 5 — methodology boundary
+- Policy observation remains public-only.
+- Privileged selected_roles/counterfactual branches are used only inside training/evaluation reward/diagnostics.
+- V6.5 validation is explicitly labeled inspected development validation, not final untouched test.
+- V6.5 detector is not used in the V10 reward.
+- Reward model is not used in the V10 reward.
+
+Default optimization
+- 3 rounds/role
+- 6 candidates/group
+- 4 primary matched pairs/candidate
+- up to 2 disjoint confirmation pairs for top strict candidates
+- 3 balanced minibatch blocks/round
+- 2 PPO epochs/block => 18 AdamW steps total by default
+- KL-to-base beta = 0.0

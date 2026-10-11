@@ -1,0 +1,52 @@
+========================================================================================================
+HAA PROSPECTIVE HELD-OUT V1
+========================================================================================================
+training systems=24 | held-out systems=32 | overlap=0
+One bootstrap probe per held-out MAS. HAA never sees candidate outputs before ranking.
+
+--------------------------------------------------------------------------------------------------------
+POOL PREFIX N=4 | groups=32 | mean-valid=4.00 | random-top1≈0.250
+  oracle opportunity = +0.018710
+  policy_logp      U=+0.001967 gain/random=-0.000330 CI=[-0.005918,+0.004536] p=0.54081 top1=0.250 top25%=0.250 regret=0.443
+  uncertainty      U=+0.001813 gain/random=-0.000485 CI=[-0.005639,+0.004691] p=0.57049 top1=0.125 top25%=0.125 regret=0.518
+  q_only           U=+0.000390 gain/random=-0.001908 CI=[-0.008300,+0.004032] p=0.71857 top1=0.156 top25%=0.156 regret=0.492
+  direct_belief    U=-0.001067 gain/random=-0.003365 CI=[-0.010260,+0.003161] p=0.82696 top1=0.125 top25%=0.125 regret=0.520
+  haa_full         U=+0.004744 gain/random=+0.002447 CI=[-0.004660,+0.009193] p=0.24636 top1=0.344 top25%=0.344 regret=0.468
+  haa_focus        U=+0.004744 gain/random=+0.002447 CI=[-0.004660,+0.009193] p=0.24636 top1=0.344 top25%=0.344 regret=0.468
+  HAA oracle-opportunity capture = 0.131
+  HAA vs q-only : delta-U=+0.004355 CI=[-0.005539,+0.014565] p=0.20744
+  HAA vs direct : delta-U=+0.005811 CI=[-0.004018,+0.015813] p=0.13304
+  HAA vs policy : delta-U=+0.002777 CI=[-0.005659,+0.011721] p=0.27675
+
+--------------------------------------------------------------------------------------------------------
+POOL PREFIX N=8 | groups=32 | mean-valid=8.00 | random-top1≈0.125
+  oracle opportunity = +0.027472
+  policy_logp      U=+0.003781 gain/random=-0.000226 CI=[-0.007456,+0.006515] p=0.52075 top1=0.156 top25%=0.219 regret=0.485
+  uncertainty      U=+0.006846 gain/random=+0.002839 CI=[-0.003728,+0.009849] p=0.21064 top1=0.188 top25%=0.281 regret=0.492
+  q_only           U=+0.011108 gain/random=+0.007100 CI=[-0.000434,+0.014307] p=0.03580 top1=0.219 top25%=0.406 regret=0.360
+  direct_belief    U=+0.007138 gain/random=+0.003130 CI=[-0.005003,+0.010446] p=0.22500 top1=0.156 top25%=0.250 regret=0.414
+  haa_full         U=+0.007565 gain/random=+0.003558 CI=[-0.002602,+0.009398] p=0.12990 top1=0.188 top25%=0.344 regret=0.469
+  haa_focus        U=+0.007565 gain/random=+0.003558 CI=[-0.002602,+0.009398] p=0.12990 top1=0.188 top25%=0.344 regret=0.469
+  HAA oracle-opportunity capture = 0.129
+  HAA vs q-only : delta-U=-0.003543 CI=[-0.013408,+0.006384] p=0.74953
+  HAA vs direct : delta-U=+0.000427 CI=[-0.010894,+0.012437] p=0.47307
+  HAA vs policy : delta-U=+0.003784 CI=[-0.007453,+0.015098] p=0.26721
+
+--------------------------------------------------------------------------------------------------------
+POOL PREFIX N=12 | groups=32 | mean-valid=12.00 | random-top1≈0.083
+  oracle opportunity = +0.031824
+  policy_logp      U=+0.004142 gain/random=-0.000520 CI=[-0.008080,+0.006576] p=0.54909 top1=0.094 top25%=0.219 regret=0.512
+  uncertainty      U=+0.002534 gain/random=-0.002128 CI=[-0.009225,+0.005097] p=0.71761 top1=0.062 top25%=0.375 regret=0.557
+  q_only           U=+0.012259 gain/random=+0.007597 CI=[-0.000187,+0.015106] p=0.03206 top1=0.094 top25%=0.469 regret=0.402
+  direct_belief    U=+0.008740 gain/random=+0.004078 CI=[-0.004990,+0.012890] p=0.19482 top1=0.094 top25%=0.375 regret=0.448
+  haa_full         U=+0.005364 gain/random=+0.000702 CI=[-0.005549,+0.006984] p=0.41619 top1=0.094 top25%=0.281 regret=0.506
+  haa_focus        U=+0.005865 gain/random=+0.001203 CI=[-0.005223,+0.007540] p=0.35977 top1=0.094 top25%=0.281 regret=0.507
+  HAA oracle-opportunity capture = 0.038
+  HAA vs q-only : delta-U=-0.006394 CI=[-0.018154,+0.005331] p=0.85206
+  HAA vs direct : delta-U=-0.002875 CI=[-0.014694,+0.009130] p=0.68081
+  HAA vs policy : delta-U=+0.001722 CI=[-0.010757,+0.014394] p=0.39951
+
+========================================================================================================
+VERDICT: NO_GO
+HAA does not survive the prospective held-out test strongly enough. Do not build the sequential controller from this version.
+========================================================================================================

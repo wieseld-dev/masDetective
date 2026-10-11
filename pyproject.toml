@@ -1,0 +1,9 @@
+[project]
+name = "mas-rl-detective"
+version = "0.2.0"
+description = "Adaptive benign black-box MAS reconstruction research"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

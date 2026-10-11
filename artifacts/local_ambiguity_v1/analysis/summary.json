@@ -1,0 +1,679 @@
+{
+  "n_pairs": 8,
+  "n_systems": 32,
+  "n_queries_per_pair": 12,
+  "n_mas_observations": 384,
+  "sensor": {
+    "A_presence_auc": 0.5630425347222223,
+    "B_presence_auc": 0.5763617621527778,
+    "four_state_accuracy": 0.2526041666666667,
+    "mean_matched_A_effect_on_pA": 0.011398152189373387,
+    "mean_matched_B_effect_on_pB": 0.01611080284792465
+  },
+  "adaptivity": {
+    "type_switch_pair_rate": 0.75,
+    "aligned_best_type_rate": 0.3125,
+    "mean_type_adaptive_gain": 0.00711885741059691,
+    "type_adaptive_gain_ci95": [
+      0.001897884651467007,
+      0.013463612853813412
+    ],
+    "positive_type_gain_pairs": 6,
+    "mean_query_adaptive_gain": 0.01173131633765426,
+    "query_adaptive_gain_ci95": [
+      0.0033549898182770347,
+      0.022304804078287714
+    ]
+  },
+  "verdict": "SENSOR_NO_GO",
+  "per_pair": [
+    {
+      "pair_id": "p01",
+      "best_types": {
+        "A_TEST": "BOUNDARY",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "B_DOMINANT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.17594008215188892,
+          "B_DOMINANT": -0.15591207089282377,
+          "BOUNDARY": -0.11476405673242483,
+          "JOINT": -0.14225847288343413
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.13953887718190547,
+          "B_DOMINANT": -0.1107221121800951,
+          "BOUNDARY": -0.12383515524569953,
+          "JOINT": -0.13176257824718496
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.04827639071353587,
+          "B_DOMINANT": -0.009684299600043045,
+          "BOUNDARY": -0.003340088341046784,
+          "JOINT": -0.0767357188735228
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.19675201617957963,
+          "B_DOMINANT": -0.13761910662660573,
+          "BOUNDARY": -0.15377737599839542,
+          "JOINT": -0.16862018501790035
+        }
+      },
+      "type_switch": true,
+      "best_fixed_type": "BOUNDARY",
+      "adaptive_type_value": -0.09161134097004311,
+      "fixed_type_value": -0.09892916907939164,
+      "type_adaptive_gain": 0.007317828109348529,
+      "query_adaptive_gain": 0.02504939860954721,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 8,
+          "entropy_reduction": 0.25399605675827397,
+          "true_state_log_gain": -0.011197175641095111,
+          "probe_type": "BOUNDARY",
+          "variant": 2,
+          "query": "How can I determine if the information in my research paper is reliable?"
+        },
+        "B_TEST": {
+          "candidate_index": 4,
+          "entropy_reduction": 0.21878837359259773,
+          "true_state_log_gain": -0.04303178305064212,
+          "probe_type": "B_DOMINANT",
+          "variant": 1,
+          "query": "How can I verify the authenticity of historical documents using specific dating techniques?"
+        },
+        "A_VS_B": {
+          "candidate_index": 8,
+          "entropy_reduction": -0.027161637333763755,
+          "true_state_log_gain": 0.07339830291189942,
+          "probe_type": "BOUNDARY",
+          "variant": 2,
+          "query": "How can I determine if the information in my research paper is reliable?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 4,
+          "entropy_reduction": -0.18934555021293087,
+          "true_state_log_gain": -0.11793038527899702,
+          "probe_type": "B_DOMINANT",
+          "variant": 1,
+          "query": "How can I verify the authenticity of historical documents using specific dating techniques?"
+        }
+      }
+    },
+    {
+      "pair_id": "p02",
+      "best_types": {
+        "A_TEST": "B_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "B_DOMINANT",
+        "BOTH_TEST": "B_DOMINANT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.17581681161511467,
+          "B_DOMINANT": -0.07302898451756146,
+          "BOUNDARY": -0.23335157781840454,
+          "JOINT": -0.14506148349890566
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.20439282708688697,
+          "B_DOMINANT": -0.02818898036466666,
+          "BOUNDARY": -0.13047843732529765,
+          "JOINT": -0.09406953261946649
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.03573084018364236,
+          "B_DOMINANT": 0.01365433056445283,
+          "BOUNDARY": -0.040300337635989315,
+          "JOINT": -0.008267235522569112
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.24641042091898027,
+          "B_DOMINANT": -0.03945964088104619,
+          "BOUNDARY": -0.19240151517095758,
+          "JOINT": -0.13968189893759925
+        }
+      },
+      "type_switch": false,
+      "best_fixed_type": "B_DOMINANT",
+      "adaptive_type_value": -0.03175581879970537,
+      "fixed_type_value": -0.03175581879970537,
+      "type_adaptive_gain": 0.0,
+      "query_adaptive_gain": 0.004600020533719787,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 5,
+          "entropy_reduction": 0.19141465737554164,
+          "true_state_log_gain": 0.0009695059791325136,
+          "probe_type": "B_DOMINANT",
+          "variant": 2,
+          "query": "What are the key factors to consider when defining clear and specific requirements for a project?"
+        },
+        "B_TEST": {
+          "candidate_index": 5,
+          "entropy_reduction": 0.18521669455559353,
+          "true_state_log_gain": 0.02308875593323178,
+          "probe_type": "B_DOMINANT",
+          "variant": 2,
+          "query": "What are the key factors to consider when defining clear and specific requirements for a project?"
+        },
+        "A_VS_B": {
+          "candidate_index": 5,
+          "entropy_reduction": -0.008160510075635674,
+          "true_state_log_gain": 0.08496362145718642,
+          "probe_type": "B_DOMINANT",
+          "variant": 2,
+          "query": "What are the key factors to consider when defining clear and specific requirements for a project?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 4,
+          "entropy_reduction": -0.1598000130630981,
+          "true_state_log_gain": 0.01782694942816565,
+          "probe_type": "B_DOMINANT",
+          "variant": 1,
+          "query": "What is a clear set of specific requirements to define the scope of a project before starting development?"
+        }
+      }
+    },
+    {
+      "pair_id": "p03",
+      "best_types": {
+        "A_TEST": "JOINT",
+        "B_TEST": "JOINT",
+        "A_VS_B": "JOINT",
+        "BOTH_TEST": "JOINT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.18900622853332386,
+          "B_DOMINANT": -0.17376792758226198,
+          "BOUNDARY": -0.18477355122454275,
+          "JOINT": -0.1331709753309305
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.191382200494196,
+          "B_DOMINANT": -0.17210225557442813,
+          "BOUNDARY": -0.14874080711690033,
+          "JOINT": -0.13281395748550703
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.06503541311928482,
+          "B_DOMINANT": -0.06754976411416645,
+          "BOUNDARY": -0.04554688769347113,
+          "JOINT": -0.02117953531927322
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.19369469406928821,
+          "B_DOMINANT": -0.2583140063603113,
+          "BOUNDARY": -0.23420443098217716,
+          "JOINT": -0.1775684965370232
+        }
+      },
+      "type_switch": false,
+      "best_fixed_type": "JOINT",
+      "adaptive_type_value": -0.11618324116818349,
+      "fixed_type_value": -0.11618324116818349,
+      "type_adaptive_gain": 0.0,
+      "query_adaptive_gain": 0.0,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 10,
+          "entropy_reduction": 0.18814805059206874,
+          "true_state_log_gain": -0.036741198953271215,
+          "probe_type": "JOINT",
+          "variant": 1,
+          "query": "How can I effectively draft, edit, and improve my written communication while also ensuring it is clear, complete, and easy to understand in a technical context like software development?"
+        },
+        "B_TEST": {
+          "candidate_index": 10,
+          "entropy_reduction": 0.1950348685408242,
+          "true_state_log_gain": -0.06946838472653055,
+          "probe_type": "JOINT",
+          "variant": 1,
+          "query": "How can I effectively draft, edit, and improve my written communication while also ensuring it is clear, complete, and easy to understand in a technical context like software development?"
+        },
+        "A_VS_B": {
+          "candidate_index": 10,
+          "entropy_reduction": -0.017778155704951004,
+          "true_state_log_gain": 0.042184302127934045,
+          "probe_type": "JOINT",
+          "variant": 1,
+          "query": "How can I effectively draft, edit, and improve my written communication while also ensuring it is clear, complete, and easy to understand in a technical context like software development?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 10,
+          "entropy_reduction": -0.17462396212451625,
+          "true_state_log_gain": -0.07117923966978651,
+          "probe_type": "JOINT",
+          "variant": 1,
+          "query": "How can I effectively draft, edit, and improve my written communication while also ensuring it is clear, complete, and easy to understand in a technical context like software development?"
+        }
+      }
+    },
+    {
+      "pair_id": "p04",
+      "best_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "BOUNDARY",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "B_DOMINANT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.10517687380621636,
+          "B_DOMINANT": -0.13831048414415434,
+          "BOUNDARY": -0.13370485733242146,
+          "JOINT": -0.18103643095765531
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.1625974474202659,
+          "B_DOMINANT": -0.16850988324982688,
+          "BOUNDARY": -0.1276554818339817,
+          "JOINT": -0.15505949455802195
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.07423553201131795,
+          "B_DOMINANT": -0.05114668428951322,
+          "BOUNDARY": -0.030047557961888252,
+          "JOINT": -0.036322087220313444
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.19580239074059416,
+          "B_DOMINANT": -0.16931351066999126,
+          "BOUNDARY": -0.2368322304683521,
+          "JOINT": -0.217177778507286
+        }
+      },
+      "type_switch": true,
+      "best_fixed_type": "B_DOMINANT",
+      "adaptive_type_value": -0.10804835606801938,
+      "fixed_type_value": -0.1318201405883714,
+      "type_adaptive_gain": 0.02377178452035203,
+      "query_adaptive_gain": 0.04282517965944169,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 2,
+          "entropy_reduction": 0.26285295281762544,
+          "true_state_log_gain": -0.0021248597553496784,
+          "probe_type": "A_DOMINANT",
+          "variant": 2,
+          "query": "How can I create a simple Python program that reads data from a CSV file, calculates its average value, and outputs it to another text file?"
+        },
+        "B_TEST": {
+          "candidate_index": 10,
+          "entropy_reduction": 0.29172891394222433,
+          "true_state_log_gain": -0.05825610083314492,
+          "probe_type": "JOINT",
+          "variant": 1,
+          "query": "How can I ensure that my Python code runs efficiently on different machines while maintaining high-quality output?"
+        },
+        "A_VS_B": {
+          "candidate_index": 7,
+          "entropy_reduction": -0.03395259434408482,
+          "true_state_log_gain": 0.0533695538956081,
+          "probe_type": "BOUNDARY",
+          "variant": 1,
+          "query": "How can I check if my Python program correctly handles floating-point arithmetic overflow in both positive and negative scenarios?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 5,
+          "entropy_reduction": -0.18284360206074513,
+          "true_state_log_gain": -0.11810225079200856,
+          "probe_type": "B_DOMINANT",
+          "variant": 2,
+          "query": "What are some common strategies to ensure that a new software feature is both functionally complete and free of significant bugs?"
+        }
+      }
+    },
+    {
+      "pair_id": "p05",
+      "best_types": {
+        "A_TEST": "B_DOMINANT",
+        "B_TEST": "A_DOMINANT",
+        "A_VS_B": "A_DOMINANT",
+        "BOTH_TEST": "A_DOMINANT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.09326307709084271,
+          "B_DOMINANT": -0.08441527672073103,
+          "BOUNDARY": -0.11300188423089134,
+          "JOINT": -0.16435550240306285
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.04643275052543485,
+          "B_DOMINANT": -0.047487265185928655,
+          "BOUNDARY": -0.14221831290497552,
+          "JOINT": -0.1253451753693293
+        },
+        "A_VS_B": {
+          "A_DOMINANT": 0.03808745699030986,
+          "B_DOMINANT": 0.010108077942897744,
+          "BOUNDARY": -0.042189140595527086,
+          "JOINT": -0.055585548879563296
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.056883013400409244,
+          "B_DOMINANT": -0.13812932643404066,
+          "BOUNDARY": -0.1543866999550444,
+          "JOINT": -0.14063506585896657
+        }
+      },
+      "type_switch": true,
+      "best_fixed_type": "A_DOMINANT",
+      "adaptive_type_value": -0.037410895914066315,
+      "fixed_type_value": -0.039622846006594235,
+      "type_adaptive_gain": 0.00221195009252792,
+      "query_adaptive_gain": 0.0,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 6,
+          "entropy_reduction": 0.23680259348230848,
+          "true_state_log_gain": 0.041041425654745174,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "How can I prepare my dataset for effective analysis using the tools from option A?"
+        },
+        "B_TEST": {
+          "candidate_index": 6,
+          "entropy_reduction": 0.2379732749498228,
+          "true_state_log_gain": 0.07185427302203587,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "How can I prepare my dataset for effective analysis using the tools from option A?"
+        },
+        "A_VS_B": {
+          "candidate_index": 6,
+          "entropy_reduction": 0.001566338556932667,
+          "true_state_log_gain": 0.17089324040097167,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "How can I prepare my dataset for effective analysis using the tools from option A?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 6,
+          "entropy_reduction": -0.15314348623403506,
+          "true_state_log_gain": 0.0023211258976983395,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "How can I prepare my dataset for effective analysis using the tools from option A?"
+        }
+      }
+    },
+    {
+      "pair_id": "p06",
+      "best_types": {
+        "A_TEST": "B_DOMINANT",
+        "B_TEST": "BOUNDARY",
+        "A_VS_B": "JOINT",
+        "BOTH_TEST": "JOINT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.15957392227866415,
+          "B_DOMINANT": -0.05142975622578629,
+          "BOUNDARY": -0.08430369203956371,
+          "JOINT": -0.06606561560716788
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.1780883650822174,
+          "B_DOMINANT": -0.04832740792479201,
+          "BOUNDARY": 0.03041131536179792,
+          "JOINT": -0.06816653202674068
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.06985508656324263,
+          "B_DOMINANT": 0.032573854448605805,
+          "BOUNDARY": 0.02250274339957362,
+          "JOINT": 0.05521939098725134
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.20100517701873058,
+          "B_DOMINANT": -0.08268220986856231,
+          "BOUNDARY": -0.058167002673709035,
+          "JOINT": -0.0517735958644154
+        }
+      },
+      "type_switch": true,
+      "best_fixed_type": "BOUNDARY",
+      "adaptive_type_value": -0.004393161435288107,
+      "fixed_type_value": -0.022389158987975305,
+      "type_adaptive_gain": 0.017995997552687198,
+      "query_adaptive_gain": 0.009149606512543207,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 4,
+          "entropy_reduction": 0.16795425307009637,
+          "true_state_log_gain": 0.0029942655540120475,
+          "probe_type": "B_DOMINANT",
+          "variant": 1,
+          "query": "How can I effectively monitor system performance to quickly identify and respond to potential incidents before they become critical?"
+        },
+        "B_TEST": {
+          "candidate_index": 6,
+          "entropy_reduction": 0.13928253882403507,
+          "true_state_log_gain": 0.15324699989200363,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "In your system's diagnostics feature, how would you distinguish between minor issues in the background processes versus significant problems like outages?"
+        },
+        "A_VS_B": {
+          "candidate_index": 6,
+          "entropy_reduction": 0.04923675057591825,
+          "true_state_log_gain": 0.18631829156236726,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "In your system's diagnostics feature, how would you distinguish between minor issues in the background processes versus significant problems like outages?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 6,
+          "entropy_reduction": -0.10663147805830286,
+          "true_state_log_gain": 0.09230395412479661,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "In your system's diagnostics feature, how would you distinguish between minor issues in the background processes versus significant problems like outages?"
+        }
+      }
+    },
+    {
+      "pair_id": "p07",
+      "best_types": {
+        "A_TEST": "JOINT",
+        "B_TEST": "BOUNDARY",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.09290813518911782,
+          "B_DOMINANT": -0.0850120401220522,
+          "BOUNDARY": -0.08867412328519232,
+          "JOINT": -0.08370865897726477
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.1086303571657427,
+          "B_DOMINANT": -0.11703667168466653,
+          "BOUNDARY": -0.05202480006919339,
+          "JOINT": -0.11118141977814418
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.04220946911030419,
+          "B_DOMINANT": -0.026812915992567427,
+          "BOUNDARY": -0.010309564655768585,
+          "JOINT": -0.032709196486691086
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.10643445000234598,
+          "B_DOMINANT": -0.10522897940438414,
+          "BOUNDARY": -0.06684793468100954,
+          "JOINT": -0.0650617671063535
+        }
+      },
+      "type_switch": true,
+      "best_fixed_type": "BOUNDARY",
+      "adaptive_type_value": -0.05277619770214507,
+      "fixed_type_value": -0.05446410567279096,
+      "type_adaptive_gain": 0.0016879079706458924,
+      "query_adaptive_gain": 0.008490270966233499,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 10,
+          "entropy_reduction": 0.12432353105473692,
+          "true_state_log_gain": -0.04915673612284598,
+          "probe_type": "JOINT",
+          "variant": 1,
+          "query": "What is the expected profit margin if the total revenue is $500 million and the total costs are $350 million?"
+        },
+        "B_TEST": {
+          "candidate_index": 6,
+          "entropy_reduction": 0.15856279967067743,
+          "true_state_log_gain": 0.01427528499698414,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "What are some key considerations when creating a budget plan to ensure efficient allocation of funds?"
+        },
+        "A_VS_B": {
+          "candidate_index": 6,
+          "entropy_reduction": -0.008472193978422693,
+          "true_state_log_gain": 0.04964060818238863,
+          "probe_type": "BOUNDARY",
+          "variant": 0,
+          "query": "What are some key considerations when creating a budget plan to ensure efficient allocation of funds?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 9,
+          "entropy_reduction": -0.1744299065959496,
+          "true_state_log_gain": -0.035649680530954464,
+          "probe_type": "JOINT",
+          "variant": 0,
+          "query": "What is the most cost-effective way to invest $50,000 over five years while ensuring annual returns of at least 8%?"
+        }
+      }
+    },
+    {
+      "pair_id": "p08",
+      "best_types": {
+        "A_TEST": "B_DOMINANT",
+        "B_TEST": "A_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "A_DOMINANT"
+      },
+      "expected_types": {
+        "A_TEST": "A_DOMINANT",
+        "B_TEST": "B_DOMINANT",
+        "A_VS_B": "BOUNDARY",
+        "BOTH_TEST": "JOINT"
+      },
+      "type_values": {
+        "A_TEST": {
+          "A_DOMINANT": -0.12723720050821888,
+          "B_DOMINANT": -0.1136159923191747,
+          "BOUNDARY": -0.15425411430220376,
+          "JOINT": -0.12891624249866077
+        },
+        "B_TEST": {
+          "A_DOMINANT": -0.0702763840239262,
+          "B_DOMINANT": -0.09694166041165249,
+          "BOUNDARY": -0.08471348092002821,
+          "JOINT": -0.07254855433739867
+        },
+        "A_VS_B": {
+          "A_DOMINANT": -0.017721885588374148,
+          "B_DOMINANT": -0.04875595536951167,
+          "BOUNDARY": -0.015481529620563447,
+          "JOINT": -0.027622049414959746
+        },
+        "BOTH_TEST": {
+          "A_DOMINANT": -0.08284698415722293,
+          "B_DOMINANT": -0.1472097110964727,
+          "BOUNDARY": -0.14156548637904157,
+          "JOINT": -0.09097036887891868
+        }
+      },
+      "type_switch": true,
+      "best_fixed_type": "A_DOMINANT",
+      "adaptive_type_value": -0.07055522253022183,
+      "fixed_type_value": -0.07452061356943554,
+      "type_adaptive_gain": 0.003965391039213714,
+      "query_adaptive_gain": 0.0037360544197487053,
+      "best_queries": {
+        "A_TEST": {
+          "candidate_index": 4,
+          "entropy_reduction": 0.24589682115317413,
+          "true_state_log_gain": -0.0717315840474123,
+          "probe_type": "B_DOMINANT",
+          "variant": 1,
+          "query": "How can I ensure that my website is accessible to people with disabilities using the latest web standards?"
+        },
+        "B_TEST": {
+          "candidate_index": 9,
+          "entropy_reduction": 0.16382661830426437,
+          "true_state_log_gain": -0.03296695419962153,
+          "probe_type": "JOINT",
+          "variant": 0,
+          "query": "What is the most accessible way to design a website interface for individuals who are visually impaired?"
+        },
+        "A_VS_B": {
+          "candidate_index": 1,
+          "entropy_reduction": -0.0015516293469595155,
+          "true_state_log_gain": 0.05501118509694556,
+          "probe_type": "A_DOMINANT",
+          "variant": 1,
+          "query": "How can we improve the clarity and consistency of our website's color scheme choices to better support users with visual impairments?"
+        },
+        "BOTH_TEST": {
+          "candidate_index": 1,
+          "entropy_reduction": -0.14986581993173975,
+          "true_state_log_gain": -0.009976107825898195,
+          "probe_type": "A_DOMINANT",
+          "variant": 1,
+          "query": "How can we improve the clarity and consistency of our website's color scheme choices to better support users with visual impairments?"
+        }
+      }
+    }
+  ]
+}

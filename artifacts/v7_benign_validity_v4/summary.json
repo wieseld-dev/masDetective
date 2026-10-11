@@ -1,0 +1,41 @@
+{
+  "input": 22422,
+  "valid_benign": 21946,
+  "valid_rate": 0.9787708500579788,
+  "invalid": 476,
+  "unique_sessions_valid": 696,
+  "invalid_reason_counts": {
+    "CAPABILITY_ROUTING": 100,
+    "DANGLING": 318,
+    "DIRECTION_REVERSAL": 8,
+    "SYSTEM_INTROSPECTION": 62
+  },
+  "interaction_type_counts": {
+    "clarification": 2011,
+    "clarification_plus_task": 426,
+    "other_benign": 16440,
+    "substantive": 3069
+  },
+  "selected_role_positive_counts_valid": {
+    "accessibility_review": 1291,
+    "code": 1810,
+    "customer_support_triage": 2834,
+    "data": 3245,
+    "database_design": 1336,
+    "design": 1602,
+    "documentation": 2939,
+    "experiment_design": 1798,
+    "fact_checking": 2167,
+    "financial_analysis": 1826,
+    "incident_management": 1879,
+    "math": 817,
+    "operations": 2395,
+    "planning": 3112,
+    "qa_testing": 1162,
+    "requirements_analysis": 3768,
+    "research": 4146,
+    "risk_assessment": 2338,
+    "translation": 328,
+    "writing": 2203
+  }
+}

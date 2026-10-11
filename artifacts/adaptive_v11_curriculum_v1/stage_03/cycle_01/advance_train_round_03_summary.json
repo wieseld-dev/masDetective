@@ -1,0 +1,8 @@
+{
+  "mean_role_log_loss": 0.5293400525913782,
+  "round": 3,
+  "split": "train",
+  "systems": 24,
+  "train_rows": 144,
+  "valid_state_updates": 24
+}

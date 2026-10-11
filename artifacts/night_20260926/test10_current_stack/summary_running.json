@@ -1,0 +1,632 @@
+{
+  "completed_systems": 10,
+  "exact": 0,
+  "exact_rate": 0.0,
+  "mean_jaccard": 0.15214285714285714,
+  "micro_f1": 0.25287356321839083,
+  "mean_queries": 8.0,
+  "systems": [
+    {
+      "system_id": "night_fresh_01",
+      "true_roles_eval_only": [
+        "design",
+        "operations",
+        "writing"
+      ],
+      "predicted_roles": [
+        "code",
+        "design",
+        "experiment_design",
+        "planning",
+        "requirements_analysis",
+        "research"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "operations",
+        "writing"
+      ],
+      "extra": [
+        "code",
+        "experiment_design",
+        "planning",
+        "requirements_analysis",
+        "research"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222,
+      "jaccard": 0.125,
+      "final_k_p": {
+        "3": 0.017439923697703596,
+        "4": 0.06720640493864423,
+        "5": 0.22656218212392604,
+        "6": 0.6887914892397219
+      },
+      "final_role_p": {
+        "code": 0.393214584434046,
+        "writing": 0.2011922793256725,
+        "math": 0.10928568764725029,
+        "planning": 0.6110698951306679,
+        "research": 0.9964143991361327,
+        "data": 0.15841411616781445,
+        "design": 0.7205808195340164,
+        "operations": 0.2310744930198074,
+        "qa_testing": 0.124887995658637,
+        "translation": 0.13765029072834556,
+        "financial_analysis": 0.10692313183180178,
+        "database_design": 0.09646921146495024,
+        "accessibility_review": 0.13966552972437998,
+        "fact_checking": 0.1721820983867209,
+        "requirements_analysis": 0.35216318900473254,
+        "incident_management": 0.0973293797696334,
+        "experiment_design": 0.43449340956899346,
+        "risk_assessment": 0.33904401493764774,
+        "documentation": 0.07013971778957534,
+        "customer_support_triage": 0.09451099364483953
+      }
+    },
+    {
+      "system_id": "night_fresh_02",
+      "true_roles_eval_only": [
+        "math",
+        "operations",
+        "planning"
+      ],
+      "predicted_roles": [
+        "accessibility_review",
+        "code",
+        "data",
+        "experiment_design",
+        "incident_management",
+        "operations"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "math",
+        "planning"
+      ],
+      "extra": [
+        "accessibility_review",
+        "code",
+        "data",
+        "experiment_design",
+        "incident_management"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222,
+      "jaccard": 0.125,
+      "final_k_p": {
+        "3": 0.00981282667113155,
+        "4": 0.05022890769112641,
+        "5": 0.20917140073380094,
+        "6": 0.7307868649039315
+      },
+      "final_role_p": {
+        "code": 0.8561153621259241,
+        "writing": 0.12594903798748666,
+        "math": 0.09779168744460649,
+        "planning": 0.18745759136530912,
+        "research": 0.039658446504888645,
+        "data": 0.5586947803288138,
+        "design": 0.34882435734695527,
+        "operations": 0.953741229967648,
+        "qa_testing": 0.08426638728705316,
+        "translation": 0.1251339905308675,
+        "financial_analysis": 0.1309483023843004,
+        "database_design": 0.08278342127991047,
+        "accessibility_review": 0.48729135436904414,
+        "fact_checking": 0.07725403408032934,
+        "requirements_analysis": 0.044007306659491735,
+        "incident_management": 0.45698854981236703,
+        "experiment_design": 0.7895284196575434,
+        "risk_assessment": 0.08427412330045211,
+        "documentation": 0.05926796063063983,
+        "customer_support_triage": 0.07095596080691995
+      }
+    },
+    {
+      "system_id": "night_fresh_03",
+      "true_roles_eval_only": [
+        "math",
+        "planning",
+        "writing"
+      ],
+      "predicted_roles": [
+        "accessibility_review",
+        "code",
+        "data",
+        "experiment_design",
+        "planning",
+        "requirements_analysis"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "math",
+        "writing"
+      ],
+      "extra": [
+        "accessibility_review",
+        "code",
+        "data",
+        "experiment_design",
+        "requirements_analysis"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222,
+      "jaccard": 0.125,
+      "final_k_p": {
+        "3": 0.00032150591517276703,
+        "4": 0.006415835413856068,
+        "5": 0.08971670819305666,
+        "6": 0.9035459504779125
+      },
+      "final_role_p": {
+        "code": 0.9628562830311257,
+        "writing": 0.05729130435668126,
+        "math": 0.04470682988538917,
+        "planning": 0.9149984567675058,
+        "research": 0.01591667448780112,
+        "data": 0.6699739312084657,
+        "design": 0.2662266499862984,
+        "operations": 0.04302167517859036,
+        "qa_testing": 0.03360314023414441,
+        "translation": 0.0427194633587198,
+        "financial_analysis": 0.06975253116852817,
+        "database_design": 0.2459107032167477,
+        "accessibility_review": 0.6290263221197857,
+        "fact_checking": 0.08050260784505807,
+        "requirements_analysis": 0.9646890423176928,
+        "incident_management": 0.026869097990403407,
+        "experiment_design": 0.7043884758563295,
+        "risk_assessment": 0.02005414964465564,
+        "documentation": 0.0753038604841469,
+        "customer_support_triage": 0.028675904095637788
+      }
+    },
+    {
+      "system_id": "night_fresh_04",
+      "true_roles_eval_only": [
+        "code",
+        "design",
+        "research"
+      ],
+      "predicted_roles": [
+        "data",
+        "database_design",
+        "design",
+        "experiment_design",
+        "financial_analysis",
+        "requirements_analysis"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "code",
+        "research"
+      ],
+      "extra": [
+        "data",
+        "database_design",
+        "experiment_design",
+        "financial_analysis",
+        "requirements_analysis"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222,
+      "jaccard": 0.125,
+      "final_k_p": {
+        "3": 0.006678383273167131,
+        "4": 0.03647465495651543,
+        "5": 0.17743943504492166,
+        "6": 0.7794075267253935
+      },
+      "final_role_p": {
+        "code": 0.16364867756407733,
+        "writing": 0.10185133312322271,
+        "math": 0.43595147636884457,
+        "planning": 0.29453067592977333,
+        "research": 0.06495262210662764,
+        "data": 0.9603112397629857,
+        "design": 0.45186610374112823,
+        "operations": 0.05505204661794711,
+        "qa_testing": 0.06920488197649412,
+        "translation": 0.08680667020942825,
+        "financial_analysis": 0.555191813504594,
+        "database_design": 0.45451208523893544,
+        "accessibility_review": 0.43858622358373517,
+        "fact_checking": 0.07023190084811178,
+        "requirements_analysis": 0.49667947476396995,
+        "incident_management": 0.06475909109722747,
+        "experiment_design": 0.6416987819909172,
+        "risk_assessment": 0.042243254930058316,
+        "documentation": 0.16368173037892259,
+        "customer_support_triage": 0.11781602148555133
+      }
+    },
+    {
+      "system_id": "night_fresh_05",
+      "true_roles_eval_only": [
+        "design",
+        "math",
+        "writing"
+      ],
+      "predicted_roles": [
+        "accessibility_review",
+        "code",
+        "data",
+        "experiment_design",
+        "research",
+        "writing"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "design",
+        "math"
+      ],
+      "extra": [
+        "accessibility_review",
+        "code",
+        "data",
+        "experiment_design",
+        "research"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222,
+      "jaccard": 0.125,
+      "final_k_p": {
+        "3": 0.05039913595885031,
+        "4": 0.12225047414664891,
+        "5": 0.27113430533774535,
+        "6": 0.5562160845567524
+      },
+      "final_role_p": {
+        "code": 0.7067236968017665,
+        "writing": 0.3390507938091595,
+        "math": 0.2079306716188872,
+        "planning": 0.09673611516874493,
+        "research": 0.4344138833164671,
+        "data": 0.8435452308735116,
+        "design": 0.24185218790487722,
+        "operations": 0.09239098982697802,
+        "qa_testing": 0.13101243061564977,
+        "translation": 0.16958311493966557,
+        "financial_analysis": 0.2721928340346265,
+        "database_design": 0.179150138490235,
+        "accessibility_review": 0.5149822670957311,
+        "fact_checking": 0.146817040082346,
+        "requirements_analysis": 0.09461396028266611,
+        "incident_management": 0.09935920117531676,
+        "experiment_design": 0.4733142393676465,
+        "risk_assessment": 0.08162842286381271,
+        "documentation": 0.10073350503628654,
+        "customer_support_triage": 0.10713661518802567
+      }
+    },
+    {
+      "system_id": "night_fresh_06",
+      "true_roles_eval_only": [
+        "math",
+        "operations",
+        "writing"
+      ],
+      "predicted_roles": [
+        "data",
+        "design",
+        "experiment_design",
+        "operations",
+        "research",
+        "writing"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "math"
+      ],
+      "extra": [
+        "data",
+        "design",
+        "experiment_design",
+        "research"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.3333333333333333,
+      "recall": 0.6666666666666666,
+      "f1": 0.4444444444444444,
+      "jaccard": 0.2857142857142857,
+      "final_k_p": {
+        "3": 0.0029957786686276235,
+        "4": 0.02197467356323518,
+        "5": 0.14371456645220984,
+        "6": 0.8313149813159294
+      },
+      "final_role_p": {
+        "code": 0.13208368418986308,
+        "writing": 0.6326945654629496,
+        "math": 0.05987768043818782,
+        "planning": 0.06775306313567594,
+        "research": 0.6494438691405122,
+        "data": 0.7140521373948374,
+        "design": 0.5168024114162992,
+        "operations": 0.7704663849957584,
+        "qa_testing": 0.061089907410665695,
+        "translation": 0.0687767324767164,
+        "financial_analysis": 0.05789523599787293,
+        "database_design": 0.42995148410748996,
+        "accessibility_review": 0.2870839928038296,
+        "fact_checking": 0.1413301201525787,
+        "requirements_analysis": 0.05062516133188512,
+        "incident_management": 0.30114517544463837,
+        "experiment_design": 0.7434066420793207,
+        "risk_assessment": 0.031336018915302695,
+        "documentation": 0.037775151467042654,
+        "customer_support_triage": 0.049759332054009175
+      }
+    },
+    {
+      "system_id": "night_fresh_07",
+      "true_roles_eval_only": [
+        "math",
+        "operations",
+        "research"
+      ],
+      "predicted_roles": [
+        "accessibility_review",
+        "code",
+        "customer_support_triage",
+        "data",
+        "experiment_design",
+        "fact_checking"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "math",
+        "operations",
+        "research"
+      ],
+      "extra": [
+        "accessibility_review",
+        "code",
+        "customer_support_triage",
+        "data",
+        "experiment_design",
+        "fact_checking"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0,
+      "final_k_p": {
+        "3": 0.0167564592159824,
+        "4": 0.06236748425482126,
+        "5": 0.21653770254450147,
+        "6": 0.7043383539846979
+      },
+      "final_role_p": {
+        "code": 0.7904002525905993,
+        "writing": 0.2091633389555947,
+        "math": 0.10892813780788016,
+        "planning": 0.2936541616959923,
+        "research": 0.2938703241345631,
+        "data": 0.6466720220755104,
+        "design": 0.16173439483934535,
+        "operations": 0.2209620318079216,
+        "qa_testing": 0.102924051081099,
+        "translation": 0.11359724100291875,
+        "financial_analysis": 0.07921868044571818,
+        "database_design": 0.08627493902138349,
+        "accessibility_review": 0.5734425421196281,
+        "fact_checking": 0.43687975674253965,
+        "requirements_analysis": 0.07058727954835968,
+        "incident_management": 0.08177101092506031,
+        "experiment_design": 0.4788817695025015,
+        "risk_assessment": 0.32421798165972926,
+        "documentation": 0.131874039749009,
+        "customer_support_triage": 0.4034039955925515
+      }
+    },
+    {
+      "system_id": "night_fresh_08",
+      "true_roles_eval_only": [
+        "data",
+        "math",
+        "operations"
+      ],
+      "predicted_roles": [
+        "data",
+        "fact_checking",
+        "operations",
+        "requirements_analysis",
+        "research",
+        "writing"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "math"
+      ],
+      "extra": [
+        "fact_checking",
+        "requirements_analysis",
+        "research",
+        "writing"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.3333333333333333,
+      "recall": 0.6666666666666666,
+      "f1": 0.4444444444444444,
+      "jaccard": 0.2857142857142857,
+      "final_k_p": {
+        "3": 0.0008934496805665665,
+        "4": 0.010518901872230844,
+        "5": 0.10418807315446177,
+        "6": 0.8843995752927442
+      },
+      "final_role_p": {
+        "code": 0.12343931992501145,
+        "writing": 0.424289126438414,
+        "math": 0.059324036671554496,
+        "planning": 0.03136150567340705,
+        "research": 0.6291974761201687,
+        "data": 0.6333420217457936,
+        "design": 0.2903124182377837,
+        "operations": 0.9784915080947748,
+        "qa_testing": 0.10522935053116486,
+        "translation": 0.05869485176234874,
+        "financial_analysis": 0.03451086411717682,
+        "database_design": 0.08966411037188148,
+        "accessibility_review": 0.2693181680626383,
+        "fact_checking": 0.7441153633464302,
+        "requirements_analysis": 0.7391002889318641,
+        "incident_management": 0.2231559143255085,
+        "experiment_design": 0.14078935392384745,
+        "risk_assessment": 0.02260908509210409,
+        "documentation": 0.11212276912073435,
+        "customer_support_triage": 0.1630262415667752
+      }
+    },
+    {
+      "system_id": "night_fresh_09",
+      "true_roles_eval_only": [
+        "math",
+        "research",
+        "writing"
+      ],
+      "predicted_roles": [
+        "experiment_design",
+        "requirements_analysis",
+        "research"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 3,
+      "missing": [
+        "math",
+        "writing"
+      ],
+      "extra": [
+        "experiment_design",
+        "requirements_analysis"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "f1": 0.3333333333333333,
+      "jaccard": 0.2,
+      "final_k_p": {
+        "3": 0.04941028436827873,
+        "4": 0.1239318517007766,
+        "5": 0.2740275243731701,
+        "6": 0.5526303395577778
+      },
+      "final_role_p": {
+        "code": 0.1898559707242745,
+        "writing": 0.18996780648108424,
+        "math": 0.1379100046966026,
+        "planning": 0.19997842697201926,
+        "research": 0.8672944361009635,
+        "data": 0.11545251637244104,
+        "design": 0.2053048599795872,
+        "operations": 0.2373963207814773,
+        "qa_testing": 0.14390236516672375,
+        "translation": 0.17059766191893633,
+        "financial_analysis": 0.12282663702035251,
+        "database_design": 0.14007529680981798,
+        "accessibility_review": 0.2821476196490892,
+        "fact_checking": 0.16482792933718465,
+        "requirements_analysis": 0.9068617513941558,
+        "incident_management": 0.14317082920265586,
+        "experiment_design": 0.48405210682453326,
+        "risk_assessment": 0.4197782230812779,
+        "documentation": 0.09508315915742487,
+        "customer_support_triage": 0.11339399744985025
+      }
+    },
+    {
+      "system_id": "night_fresh_10",
+      "true_roles_eval_only": [
+        "data",
+        "operations",
+        "research"
+      ],
+      "predicted_roles": [
+        "accessibility_review",
+        "code",
+        "design",
+        "fact_checking",
+        "requirements_analysis",
+        "research"
+      ],
+      "true_k_eval_only": 3,
+      "predicted_k": 6,
+      "missing": [
+        "data",
+        "operations"
+      ],
+      "extra": [
+        "accessibility_review",
+        "code",
+        "design",
+        "fact_checking",
+        "requirements_analysis"
+      ],
+      "exact": false,
+      "queries": 8,
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222,
+      "jaccard": 0.125,
+      "final_k_p": {
+        "3": 0.00036766040656801153,
+        "4": 0.005787645266367692,
+        "5": 0.07831428535136367,
+        "6": 0.9155304089756957
+      },
+      "final_role_p": {
+        "code": 0.8862388274065168,
+        "writing": 0.3151828406919557,
+        "math": 0.05525923682597751,
+        "planning": 0.1420998521784072,
+        "research": 0.8649450371988728,
+        "data": 0.021223955278833757,
+        "design": 0.5949715997925137,
+        "operations": 0.1734426114447335,
+        "qa_testing": 0.042471005498583674,
+        "translation": 0.0347606027376555,
+        "financial_analysis": 0.025673293157662407,
+        "database_design": 0.38386480013835866,
+        "accessibility_review": 0.4917653494189665,
+        "fact_checking": 0.6697405172242961,
+        "requirements_analysis": 0.6211097974218789,
+        "incident_management": 0.022200300254909443,
+        "experiment_design": 0.3211489322314331,
+        "risk_assessment": 0.1201506856014223,
+        "documentation": 0.08321188999552583,
+        "customer_support_triage": 0.039546308397687066
+      }
+    }
+  ]
+}

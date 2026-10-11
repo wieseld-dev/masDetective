@@ -1,0 +1,22 @@
+{
+  "systems": 24,
+  "queries": 24,
+  "states_per_system": 5,
+  "PRIVILEGED_DIAGNOSTIC_ONLY": true,
+  "role_jaccard_vs_utility_rank_pearson": 0.20564211680732966,
+  "role_jaccard_vs_utility_rank_spearman": 0.20851005058750816,
+  "true_role_knn_delta_auc": {
+    "1": 0.022404251283846866,
+    "3": 0.033641018907563026,
+    "5": 0.007167483660130714,
+    "10": 0.028215919701213812
+  },
+  "true_role_query_model_delta_auc": -0.01806651202147526,
+  "true_role_query_model_spearman": 0.06338380321416413,
+  "true_role_query_model_unique_queries_per_system": 1.875,
+  "true_role_static_profile_delta_auc": 0.019476642740429505,
+  "true_role_static_profile_spearman": 0.12307440192095036,
+  "random_expected_delta_auc": -0.008883539526921884,
+  "per_system_static_oracle_delta_auc": 0.18216488678804857,
+  "contextual_oracle_delta_auc": 0.19936022117180208
+}

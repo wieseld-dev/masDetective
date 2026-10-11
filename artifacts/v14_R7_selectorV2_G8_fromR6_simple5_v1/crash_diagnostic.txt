@@ -1,0 +1,63 @@
+================================================================
+G8 FROM-R6 CRASH DIAGNOSTIC
+================================================================
+
+===== JOBS.TSV =====
+R07	GEN_SELECT=22382660	EXEC=22382661	SCORE=22382662	ADVANCE=22382663
+R08	GEN_SELECT=22382664	EXEC=22382665	SCORE=22382666	ADVANCE=22382667
+
+===== SACCT =====
+JobID                           JobName                  State ExitCode    Elapsed        NodeList 
+------------ -------------------------- ---------------------- -------- ---------- --------------- 
+22382660                      s5-r7-sel              COMPLETED      0:0   00:01:52      cs-4090-08 
+22382661                      v14a-exec              COMPLETED      0:0   00:00:23   ise-cpu128-03 
+22382662                     v14a-score              COMPLETED      0:0   00:00:28      cs-4090-08 
+22382663                     v14a50-adv              COMPLETED      0:0   00:00:21 ise-cpu-intl-01 
+22382664                      s5-r7-sel              COMPLETED      0:0   00:01:41      cs-4090-08 
+22382665                      v14a-exec              COMPLETED      0:0   00:00:29   ise-cpu128-01 
+22382666                     v14a-score                PENDING      0:0   00:00:00   None assigned 
+22382667                     v14a50-adv                PENDING      0:0   00:00:00   None assigned 
+
+===== FILES CREATED =====
+
+--- ROUND 07 ---
+-rw-r--r-- 1 wieseld domain users 266K Oct  7 17:55 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/candidate_pool_dev_round_07.jsonl
+-rw-r--r-- 1 wieseld domain users 249K Oct  7 17:56 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/selector_diag_dev_round_07.jsonl
+-rw-r--r-- 1 wieseld domain users 34K Oct  7 17:56 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/candidates_dev_round_07.jsonl
+-rw-r--r-- 1 wieseld domain users 70K Oct  7 17:56 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/responses_dev_round_07.jsonl
+-rw-r--r-- 1 wieseld domain users 9.3K Oct  7 17:57 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/scored_dev_round_07.jsonl
+-rw-r--r-- 1 wieseld domain users 102K Oct  7 17:58 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/states_dev_round_07.jsonl
+-rw-r--r-- 1 wieseld domain users 406 Oct  7 17:58 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/advance_dev_round_07_summary.json
+
+--- ROUND 08 ---
+-rw-r--r-- 1 wieseld domain users 262K Oct  7 17:59 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/candidate_pool_dev_round_08.jsonl
+-rw-r--r-- 1 wieseld domain users 239K Oct  7 17:59 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/selector_diag_dev_round_08.jsonl
+-rw-r--r-- 1 wieseld domain users 34K Oct  7 17:59 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/candidates_dev_round_08.jsonl
+-rw-r--r-- 1 wieseld domain users 67K Oct  7 18:00 artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1/responses_dev_round_08.jsonl
+MISSING  scored_dev_round_08.jsonl
+MISSING  states_dev_round_08.jsonl
+MISSING  advance_dev_round_08_summary.json
+
+================================================================
+NON-COMPLETED JOB LOGS
+================================================================
+
+################################################################
+JOB 22382666   STATE=PENDING
+################################################################
+JobId=22382666 JobName=v14a-score UserId=wieseld(343927135) GroupId=domain users(1945600513) MCS_label=N/A Priority=7113 Nice=0 Account=shabtaia QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:22382665(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-07T17:54:16 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T17:54:16 Scheduler=Main Partition=gpu AllocNode:Sid=slurm-login-03.auth.ad.bgu.ac.il:3645268 ReqNodeList=(null) ExcNodeList=cs-4090-09 NodeList= NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=40G,node=1,billing=81924,gres/gpu=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=40G MinTmpDiskNode=0 Features=rtx_4090 DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/wieseld/mas_rl_detective/cluster/simple5_r7_score_gpu.sbatch SubmitLine=sbatch --parsable --time=20:00:00 --dependency=afterok:22382665 --export=ALL,V14A_ROOT=artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1,V14A_ROUND=8,V14A_SPLIT=dev cluster/simple5_r7_score_gpu.sbatch WorkDir=/home/wieseld/mas_rl_detective StdErr=/home/wieseld/mas_rl_detective/logs/v14a-score-22382666.err StdIn=/dev/null StdOut=/home/wieseld/mas_rl_detective/logs/v14a-score-22382666.out TresPerJob=gres/gpu:1 TresPerTask=cpu=4
+
+STDOUT=/home/wieseld/mas_rl_detective/logs/v14a-score-22382666.out
+STDERR=/home/wieseld/mas_rl_detective/logs/v14a-score-22382666.err
+
+################################################################
+JOB 22382667   STATE=PENDING
+################################################################
+JobId=22382667 JobName=v14a50-adv UserId=wieseld(343927135) GroupId=domain users(1945600513) MCS_label=N/A Priority=7113 Nice=0 Account=shabtaia QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:22382666(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-07T17:54:16 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T17:54:16 Scheduler=Main Partition=cpu AllocNode:Sid=slurm-login-03.auth.ad.bgu.ac.il:3645268 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=24G,node=1,billing=49156 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=24G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/wieseld/mas_rl_detective/cluster/simple5_r7_advance_cpu.sbatch SubmitLine=sbatch --parsable --time=20:00:00 --dependency=afterok:22382666 --export=ALL,V14A_ROOT=artifacts/v14_R7_selectorV2_G8_fromR6_simple5_v1,V14A_ROUND=8,V14A_SPLIT=dev cluster/simple5_r7_advance_cpu.sbatch WorkDir=/home/wieseld/mas_rl_detective StdErr=/home/wieseld/mas_rl_detective/logs/v14a50-adv-22382667.err StdIn=/dev/null StdOut=/home/wieseld/mas_rl_detective/logs/v14a50-adv-22382667.out TresPerTask=cpu=4
+
+STDOUT=/home/wieseld/mas_rl_detective/logs/v14a50-adv-22382667.out
+STDERR=/home/wieseld/mas_rl_detective/logs/v14a50-adv-22382667.err
+
+================================================================
+DONE
+================================================================

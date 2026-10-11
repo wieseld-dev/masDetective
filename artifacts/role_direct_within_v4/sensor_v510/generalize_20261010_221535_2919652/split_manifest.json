@@ -1,0 +1,228 @@
+{
+  "v137_train_rows_original": 910,
+  "v137_train_rows_accepted": 910,
+  "v137_train_complete_systems_original": 12,
+  "v137_train_complete_systems_accepted": 12,
+  "historical_systems_excluded_matching_DEV_composition": [],
+  "train_rows_excluded_exact_DEV_response_overlap": 0,
+  "v56_train_rows_included": 300,
+  "matched_source": "V137_TRAIN_same_query_same_role",
+  "unverified_V44_V54_external_matched_included": false,
+  "pair_counts": {
+    "hist_cross_same_role": 340,
+    "hist_within_system": 2481,
+    "matched_same_query": 5056,
+    "mas5_within_system": 765
+  },
+  "dev_complete_systems": 24,
+  "dev_invalid_systems": [
+    {
+      "system_id": "av11cur_000016da564303b5",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_0831869b65214a26",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_0b290396c5dbd411",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_1486ff9ff3555a8e",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_206e2a11e5f5327c",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_2f39e5ca253c404f",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_356e5d7ee099f82b",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_3b52efbb8721856c",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_5fee6346d49f9c12",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_6080e79b5cfa36c8",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_6fe11bd16a858760",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_b05bafd17c8222cb",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_ea305eaa851800ab",
+      "positives": 4
+    },
+    {
+      "system_id": "av11cur_eef7d9092e6265b0",
+      "positives": 4
+    }
+  ],
+  "val_system_ids": [
+    "av11cur_14774c5b7f958bac",
+    "av11cur_209e00b2043be5ce",
+    "av11cur_37d31e3e445d2964",
+    "av11cur_3e412b57e89f127d",
+    "av11cur_4bd3538f645c1ff1",
+    "av11cur_93fd285fbf84988c",
+    "av11cur_a04ea74ca583cdca",
+    "av11cur_bb6887645fead669",
+    "av11cur_c1e093c84d462f64",
+    "av11cur_c229de3860fc2a8c",
+    "av11cur_f2a52ef6a69be870",
+    "av11cur_fe69c7b5d2c30f20"
+  ],
+  "test_system_ids": [
+    "av11cur_17822c90679de0e7",
+    "av11cur_1897c48188d419d6",
+    "av11cur_20d1fa1f7ed1afeb",
+    "av11cur_22d3ecdc4ad0a939",
+    "av11cur_5aaf59ce4db48259",
+    "av11cur_6cf164c04b35d52e",
+    "av11cur_7bc67917d8bde596",
+    "av11cur_8397de83dcc93ed8",
+    "av11cur_8649da64c4548b29",
+    "av11cur_89cffe6405d16ca4",
+    "av11cur_bd4f4bd915880149",
+    "av11cur_f0be6847956c17d4"
+  ],
+  "val_compositions": [
+    [
+      "accessibility_review",
+      "code",
+      "data"
+    ],
+    [
+      "accessibility_review",
+      "database_design",
+      "experiment_design"
+    ],
+    [
+      "accessibility_review",
+      "math",
+      "research"
+    ],
+    [
+      "code",
+      "experiment_design",
+      "requirements_analysis"
+    ],
+    [
+      "code",
+      "fact_checking",
+      "requirements_analysis"
+    ],
+    [
+      "data",
+      "operations",
+      "writing"
+    ],
+    [
+      "database_design",
+      "experiment_design",
+      "planning"
+    ],
+    [
+      "design",
+      "financial_analysis",
+      "operations"
+    ],
+    [
+      "documentation",
+      "experiment_design",
+      "financial_analysis"
+    ],
+    [
+      "fact_checking",
+      "operations",
+      "risk_assessment"
+    ],
+    [
+      "incident_management",
+      "qa_testing",
+      "writing"
+    ],
+    [
+      "planning",
+      "qa_testing",
+      "writing"
+    ]
+  ],
+  "test_compositions": [
+    [
+      "accessibility_review",
+      "code",
+      "experiment_design"
+    ],
+    [
+      "accessibility_review",
+      "customer_support_triage",
+      "fact_checking"
+    ],
+    [
+      "accessibility_review",
+      "customer_support_triage",
+      "math"
+    ],
+    [
+      "accessibility_review",
+      "database_design",
+      "math"
+    ],
+    [
+      "accessibility_review",
+      "financial_analysis",
+      "operations"
+    ],
+    [
+      "code",
+      "financial_analysis",
+      "research"
+    ],
+    [
+      "code",
+      "research",
+      "writing"
+    ],
+    [
+      "customer_support_triage",
+      "planning",
+      "qa_testing"
+    ],
+    [
+      "customer_support_triage",
+      "planning",
+      "research"
+    ],
+    [
+      "data",
+      "incident_management",
+      "qa_testing"
+    ],
+    [
+      "design",
+      "qa_testing",
+      "research"
+    ],
+    [
+      "financial_analysis",
+      "qa_testing",
+      "writing"
+    ]
+  ]
+}

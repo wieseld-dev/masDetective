@@ -1,0 +1,55 @@
+{
+  "protocol": "v13.3i_multisystem_observation_audit",
+  "inputs": [
+    "artifacts/v13_3c_cross_role/cross_role_matrix.json",
+    "artifacts/v13_3c_cross_role_v12/cross_role_matrix.json"
+  ],
+  "systems": [
+    {
+      "system_id": "v13_eval_fanout2_k3_r00",
+      "K_eval_only": 3,
+      "true_roles_eval_only": [
+        "accessibility_review",
+        "design",
+        "requirements_analysis"
+      ],
+      "events": 120
+    },
+    {
+      "system_id": "v12_count_fanout2_k3_r00",
+      "K_eval_only": 3,
+      "true_roles_eval_only": [
+        "customer_support_triage",
+        "database_design",
+        "requirements_analysis"
+      ],
+      "events": 120
+    },
+    {
+      "system_id": "v12_count_fanout2_k4_r00",
+      "K_eval_only": 4,
+      "true_roles_eval_only": [
+        "code",
+        "data",
+        "research",
+        "risk_assessment"
+      ],
+      "events": 120
+    },
+    {
+      "system_id": "v12_count_fanout2_k5_r00",
+      "K_eval_only": 5,
+      "true_roles_eval_only": [
+        "design",
+        "fact_checking",
+        "planning",
+        "qa_testing",
+        "writing"
+      ],
+      "events": 120
+    }
+  ],
+  "api_calls": 0,
+  "model_calls": 0,
+  "important_note": "K and true roles are used only for diagnostic evaluation, never for scoring or ranking."
+}

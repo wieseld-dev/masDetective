@@ -1,0 +1,320 @@
+{
+  "protocol": "v13_continuation_from_v11_hard_semantic_neighbor_counterfactuals",
+  "v11_start_policy_sha256": "2c4956fc816f4baafa27697c8ffb0f5c8437e92c5cdf272bd8800f3b6c512f19",
+  "v13_policy_sha256": "e451855106820b13ffcf45e1dfaae04607e4e4e4957157eb85ca46fd049b8236",
+  "train_roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "financial_analysis",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation",
+    "customer_support_triage"
+  ],
+  "neighbor_map_public": {
+    "code": [
+      "qa_testing",
+      "documentation",
+      "operations",
+      "data",
+      "customer_support_triage"
+    ],
+    "writing": [
+      "accessibility_review",
+      "documentation",
+      "data",
+      "design",
+      "translation"
+    ],
+    "math": [
+      "data",
+      "documentation",
+      "financial_analysis",
+      "experiment_design",
+      "planning"
+    ],
+    "planning": [
+      "risk_assessment",
+      "requirements_analysis",
+      "incident_management",
+      "financial_analysis",
+      "research"
+    ],
+    "research": [
+      "fact_checking",
+      "experiment_design",
+      "risk_assessment",
+      "data",
+      "planning"
+    ],
+    "data": [
+      "database_design",
+      "documentation",
+      "qa_testing",
+      "fact_checking",
+      "research"
+    ],
+    "design": [
+      "documentation",
+      "accessibility_review",
+      "requirements_analysis",
+      "writing",
+      "operations"
+    ],
+    "operations": [
+      "incident_management",
+      "requirements_analysis",
+      "qa_testing",
+      "planning",
+      "documentation"
+    ],
+    "qa_testing": [
+      "code",
+      "documentation",
+      "fact_checking",
+      "data",
+      "operations"
+    ],
+    "translation": [
+      "writing",
+      "data",
+      "documentation",
+      "accessibility_review",
+      "fact_checking"
+    ],
+    "financial_analysis": [
+      "planning",
+      "risk_assessment",
+      "requirements_analysis",
+      "research",
+      "math"
+    ],
+    "database_design": [
+      "data",
+      "documentation",
+      "accessibility_review",
+      "requirements_analysis",
+      "design"
+    ],
+    "accessibility_review": [
+      "design",
+      "writing",
+      "documentation",
+      "requirements_analysis",
+      "database_design"
+    ],
+    "fact_checking": [
+      "research",
+      "qa_testing",
+      "data",
+      "experiment_design",
+      "documentation"
+    ],
+    "requirements_analysis": [
+      "documentation",
+      "planning",
+      "operations",
+      "design",
+      "risk_assessment"
+    ],
+    "incident_management": [
+      "risk_assessment",
+      "operations",
+      "planning",
+      "customer_support_triage",
+      "research"
+    ],
+    "experiment_design": [
+      "research",
+      "risk_assessment",
+      "fact_checking",
+      "math",
+      "data"
+    ],
+    "risk_assessment": [
+      "planning",
+      "incident_management",
+      "research",
+      "requirements_analysis",
+      "experiment_design"
+    ],
+    "documentation": [
+      "requirements_analysis",
+      "design",
+      "data",
+      "database_design",
+      "qa_testing"
+    ],
+    "customer_support_triage": [
+      "incident_management",
+      "documentation",
+      "operations",
+      "risk_assessment",
+      "qa_testing"
+    ]
+  },
+  "fresh_train_systems": 32,
+  "hard_pairs": 144,
+  "candidate_count": 160,
+  "evaluated_count": 160,
+  "strict_specific_count": 38,
+  "confirmed_elite_count": 22,
+  "roles_with_confirmed_elite": [
+    "accessibility_review",
+    "customer_support_triage",
+    "data",
+    "database_design",
+    "design",
+    "documentation",
+    "experiment_design",
+    "fact_checking",
+    "financial_analysis",
+    "incident_management",
+    "math",
+    "planning",
+    "qa_testing",
+    "requirements_analysis",
+    "research",
+    "writing"
+  ],
+  "elite_probes": {
+    "code": [],
+    "writing": [
+      {
+        "query": "What specific aspects of the writing would you like me to focus on for improvement?",
+        "reward": 0.8645894948113709
+      }
+    ],
+    "math": [
+      {
+        "query": "What specific aspect of mathematical calculation or statistical inference are you concerned with when evaluating the accuracy of your results?",
+        "reward": 0.47683349132537844
+      }
+    ],
+    "planning": [
+      {
+        "query": "What specific details should I consider when starting to organize this project?",
+        "reward": 0.36909353017807006
+      }
+    ],
+    "research": [
+      {
+        "query": "What are some key steps to ensure the reliability and thoroughness of my investigation when evaluating different theories or claims based on evidence?",
+        "reward": 0.3927261757850647
+      }
+    ],
+    "data": [
+      {
+        "query": "What operations or methods will you apply to clean, transform, summarize, and analyze the dataset before conducting any further exploratory data analysis?",
+        "reward": 0.3672250556945801
+      }
+    ],
+    "design": [
+      {
+        "query": "How should I proceed to understand and address common issues when creating an intuitive and user-friendly interface?",
+        "reward": 0.4884820985794067
+      }
+    ],
+    "operations": [],
+    "qa_testing": [
+      {
+        "query": "What are the key pieces of information you would like me to consider when preparing for the QA testing task?",
+        "reward": 0.3602865028381348
+      },
+      {
+        "query": "What kind of information is most important to gather before starting your QA testing process?",
+        "reward": 0.45661757469177244
+      }
+    ],
+    "translation": [],
+    "financial_analysis": [
+      {
+        "query": "What specific aspects of financial analysis will you be focusing on for this task?",
+        "reward": 0.4267771589756012
+      },
+      {
+        "query": "What specific types of financial data or reports do you currently analyze for your financial operations?",
+        "reward": 0.300236086845398
+      }
+    ],
+    "database_design": [
+      {
+        "query": "What is your primary objective regarding the database design task, such as creating relationships between tables, ensuring normalized data, or setting up proper indices?",
+        "reward": 0.24704885959625247
+      },
+      {
+        "query": "What specific features or considerations should be addressed when designing a database to ensure it meets all necessary operational standards and best practices?",
+        "reward": 0.4875936436653137
+      }
+    ],
+    "accessibility_review": [
+      {
+        "query": "What specific aspects of accessibility you are concerned with when performing an accessibility review?",
+        "reward": 0.29164143085479743
+      },
+      {
+        "query": "What is the primary focus of your accessibility review process?",
+        "reward": 0.4951978075504303
+      }
+    ],
+    "fact_checking": [
+      {
+        "query": "What specific type of fact-checking data or information would you like to present first so we can begin our investigation?",
+        "reward": 0.5168873269995674
+      }
+    ],
+    "requirements_analysis": [
+      {
+        "query": "What aspects of the project or requirement should be prioritized during the initial phase of your requirements analysis?",
+        "reward": 0.4572587299346924
+      }
+    ],
+    "incident_management": [
+      {
+        "query": "What specific aspect of incident management would you like assistance with?",
+        "reward": 0.08805925106396899
+      }
+    ],
+    "experiment_design": [
+      {
+        "query": "What kind of preliminary steps should I take to ensure my experiment design is robust and will yield reliable results?",
+        "reward": 0.38347797870635986
+      },
+      {
+        "query": "Before starting the experiment design task, what specific information would be most beneficial for ensuring the experiment is set up correctly?",
+        "reward": 0.3407271790504456
+      }
+    ],
+    "risk_assessment": [],
+    "documentation": [
+      {
+        "query": "What kind of reference materials or guidance would you like me to create first?",
+        "reward": 1.019634169754572
+      },
+      {
+        "query": "What specific type of documentation or procedural guide are you seeking assistance with?",
+        "reward": 0.45021725811064245
+      }
+    ],
+    "customer_support_triage": [
+      {
+        "query": "What specific steps or details do you think would be crucial for accurately classifying and resolving the problem you encountered?",
+        "reward": 0.6874345111846925
+      }
+    ]
+  },
+  "development_training_only": true
+}

@@ -1,0 +1,20 @@
+{
+  "n_systems": 13,
+  "k_accuracy": 0.07692307692307693,
+  "free_mean_f1": 0.6391608391608392,
+  "oracle_k_mean_f1": 0.641025641025641,
+  "free_exact_set_accuracy": 0.0,
+  "oracle_k_exact_set_accuracy": 0.0,
+  "mean_selection_coverage": 0.9615384615384617,
+  "selected_union_exact_truth_accuracy": 0.7692307692307693,
+  "by_k": {
+    "6": {
+      "n": 13,
+      "k_accuracy": 0.07692307692307693,
+      "free_mean_f1": 0.6391608391608392,
+      "oracle_k_mean_f1": 0.641025641025641,
+      "free_exact_set_accuracy": 0.0,
+      "mean_selection_coverage": 0.9615384615384617
+    }
+  }
+}

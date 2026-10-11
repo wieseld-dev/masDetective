@@ -1,0 +1,96 @@
+{
+  "rows": 1133,
+  "systems": 24,
+  "tested_layers": [
+    1,
+    5,
+    9,
+    13,
+    16,
+    20,
+    24,
+    28
+  ],
+  "methods": [
+    {
+      "name": "role_only",
+      "positive_auc": 0.6120153295477971,
+      "global_spearman": 0.23039295528114637,
+      "mean_within_system_spearman": 0.17374040300711663,
+      "selected_mean_reward": 0.25870798645779103,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.2915918897140431,
+      "selected_positive_fraction": 0.625
+    },
+    {
+      "name": "role_plus_resid_L16",
+      "positive_auc": 0.628342797173966,
+      "global_spearman": 0.288416528561988,
+      "mean_within_system_spearman": 0.23304413380705571,
+      "selected_mean_reward": 0.22426456213466292,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.2567740637139903,
+      "selected_positive_fraction": 0.6666666666666666,
+      "incremental_vs_role_only": {
+        "mean_selected_reward_gain": -0.03444342432312813,
+        "median_gain": 0.10712341794619884,
+        "systems_improved": 13,
+        "systems_worse": 9,
+        "systems_tied": 2,
+        "bootstrap_95_ci": [
+          -0.3333860960092294,
+          0.2463035760867347
+        ],
+        "exact_sign_test_p": 0.5234670639038086
+      }
+    },
+    {
+      "name": "role_plus_resid_L24",
+      "positive_auc": 0.6175327798704422,
+      "global_spearman": 0.2271083234238059,
+      "mean_within_system_spearman": 0.20577963528838825,
+      "selected_mean_reward": 0.3330583336918373,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.36675042879403374,
+      "selected_positive_fraction": 0.7916666666666666,
+      "incremental_vs_role_only": {
+        "mean_selected_reward_gain": 0.0743503472340462,
+        "median_gain": 0.08977352745259237,
+        "systems_improved": 14,
+        "systems_worse": 8,
+        "systems_tied": 2,
+        "bootstrap_95_ci": [
+          -0.20629419723483308,
+          0.37367705836515364
+        ],
+        "exact_sign_test_p": 0.28627872467041016
+      }
+    },
+    {
+      "name": "role_plus_resid_L16_L24",
+      "positive_auc": 0.6465052504013542,
+      "global_spearman": 0.30919715526391567,
+      "mean_within_system_spearman": 0.2669931756765955,
+      "selected_mean_reward": 0.33304900978683344,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.3667410035377346,
+      "selected_positive_fraction": 0.625,
+      "incremental_vs_role_only": {
+        "mean_selected_reward_gain": 0.0743410233290424,
+        "median_gain": 0.0392711571414428,
+        "systems_improved": 12,
+        "systems_worse": 10,
+        "systems_tied": 2,
+        "bootstrap_95_ci": [
+          -0.22012687016607593,
+          0.3895507390798665
+        ],
+        "exact_sign_test_p": 0.8318119049072266
+      }
+    }
+  ]
+}

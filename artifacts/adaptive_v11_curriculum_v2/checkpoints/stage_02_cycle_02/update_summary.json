@@ -1,0 +1,20 @@
+{
+  "clip_eps": 0.2,
+  "epochs": 1,
+  "frozen_v11_sha256": "4692ea4ef22cefb29302701395e55d84673f4f407ea2b03c6fd3538bc7be6794",
+  "gamma": 1.0,
+  "input_adapter": "artifacts/adaptive_v11_curriculum_v2/checkpoints/stage_02_cycle_01/policy",
+  "kl_beta": 0.028,
+  "lr": 7e-06,
+  "mc_weight": 0.15,
+  "mean_combined_advantage": -0.03229877793351283,
+  "mean_kl_surrogate_to_v11": 0.0007093844432679434,
+  "mean_loss": 0.06550992481292241,
+  "mean_pg": 0.02925553397526817,
+  "mean_retention_nll_when_sampled": 1.2087247333829365,
+  "optimizer": "artifacts/adaptive_v11_curriculum_v2/checkpoints/stage_02_cycle_02/optimizer.pt",
+  "optimizer_steps": 63,
+  "output_adapter": "artifacts/adaptive_v11_curriculum_v2/checkpoints/stage_02_cycle_02/policy",
+  "retention_weight": 0.12,
+  "rows": 504
+}

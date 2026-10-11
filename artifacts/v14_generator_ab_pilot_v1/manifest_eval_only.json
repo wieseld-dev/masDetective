@@ -1,0 +1,500 @@
+[
+  {
+    "role": "code",
+    "primary_pair_id": "936db15730171b62",
+    "primary_mode": "fanout2",
+    "primary_k": 6,
+    "primary_plus_roles": [
+      "planning",
+      "code",
+      "translation",
+      "financial_analysis",
+      "qa_testing",
+      "documentation"
+    ],
+    "primary_minus_roles": [
+      "planning",
+      "operations",
+      "translation",
+      "financial_analysis",
+      "qa_testing",
+      "documentation"
+    ],
+    "primary_sham_roles": [
+      "risk_assessment",
+      "code",
+      "translation",
+      "financial_analysis",
+      "qa_testing",
+      "documentation"
+    ],
+    "confirmation_pair_id": "2240c1a041602bd0",
+    "confirmation_mode": "fanout3",
+    "confirmation_k": 5,
+    "confirmation_plus_roles": [
+      "operations",
+      "design",
+      "writing",
+      "code",
+      "documentation"
+    ],
+    "confirmation_minus_roles": [
+      "operations",
+      "design",
+      "writing",
+      "qa_testing",
+      "documentation"
+    ],
+    "confirmation_sham_roles": [
+      "incident_management",
+      "design",
+      "writing",
+      "code",
+      "documentation"
+    ]
+  },
+  {
+    "role": "math",
+    "primary_pair_id": "73bcc75a8807e5f2",
+    "primary_mode": "fanout3",
+    "primary_k": 3,
+    "primary_plus_roles": [
+      "requirements_analysis",
+      "math",
+      "risk_assessment"
+    ],
+    "primary_minus_roles": [
+      "requirements_analysis",
+      "data",
+      "risk_assessment"
+    ],
+    "primary_sham_roles": [
+      "documentation",
+      "math",
+      "risk_assessment"
+    ],
+    "confirmation_pair_id": "830a2d57058c9c3e",
+    "confirmation_mode": "fanout2",
+    "confirmation_k": 4,
+    "confirmation_plus_roles": [
+      "incident_management",
+      "math",
+      "customer_support_triage",
+      "qa_testing"
+    ],
+    "confirmation_minus_roles": [
+      "incident_management",
+      "data",
+      "customer_support_triage",
+      "qa_testing"
+    ],
+    "confirmation_sham_roles": [
+      "risk_assessment",
+      "math",
+      "customer_support_triage",
+      "qa_testing"
+    ]
+  },
+  {
+    "role": "research",
+    "primary_pair_id": "f71a27da9e676687",
+    "primary_mode": "fanout3",
+    "primary_k": 6,
+    "primary_plus_roles": [
+      "database_design",
+      "code",
+      "research",
+      "customer_support_triage",
+      "data",
+      "requirements_analysis"
+    ],
+    "primary_minus_roles": [
+      "database_design",
+      "code",
+      "fact_checking",
+      "customer_support_triage",
+      "data",
+      "requirements_analysis"
+    ],
+    "primary_sham_roles": [
+      "database_design",
+      "code",
+      "research",
+      "customer_support_triage",
+      "documentation",
+      "requirements_analysis"
+    ],
+    "confirmation_pair_id": "9df895a97ac5a857",
+    "confirmation_mode": "fanout2",
+    "confirmation_k": 4,
+    "confirmation_plus_roles": [
+      "financial_analysis",
+      "fact_checking",
+      "research",
+      "risk_assessment"
+    ],
+    "confirmation_minus_roles": [
+      "financial_analysis",
+      "fact_checking",
+      "experiment_design",
+      "risk_assessment"
+    ],
+    "confirmation_sham_roles": [
+      "financial_analysis",
+      "fact_checking",
+      "research",
+      "planning"
+    ]
+  },
+  {
+    "role": "design",
+    "primary_pair_id": "f69015a473f9beec",
+    "primary_mode": "fanout3",
+    "primary_k": 3,
+    "primary_plus_roles": [
+      "database_design",
+      "risk_assessment",
+      "design"
+    ],
+    "primary_minus_roles": [
+      "database_design",
+      "risk_assessment",
+      "documentation"
+    ],
+    "primary_sham_roles": [
+      "database_design",
+      "planning",
+      "design"
+    ],
+    "confirmation_pair_id": "e5e14651e2fa2593",
+    "confirmation_mode": "fanout3",
+    "confirmation_k": 6,
+    "confirmation_plus_roles": [
+      "translation",
+      "financial_analysis",
+      "experiment_design",
+      "qa_testing",
+      "design",
+      "database_design"
+    ],
+    "confirmation_minus_roles": [
+      "translation",
+      "financial_analysis",
+      "experiment_design",
+      "qa_testing",
+      "documentation",
+      "database_design"
+    ],
+    "confirmation_sham_roles": [
+      "translation",
+      "planning",
+      "experiment_design",
+      "qa_testing",
+      "design",
+      "database_design"
+    ]
+  },
+  {
+    "role": "qa_testing",
+    "primary_pair_id": "f346decef1c2ca0a",
+    "primary_mode": "fanout2",
+    "primary_k": 4,
+    "primary_plus_roles": [
+      "incident_management",
+      "math",
+      "customer_support_triage",
+      "qa_testing"
+    ],
+    "primary_minus_roles": [
+      "incident_management",
+      "math",
+      "customer_support_triage",
+      "code"
+    ],
+    "primary_sham_roles": [
+      "incident_management",
+      "math",
+      "documentation",
+      "qa_testing"
+    ],
+    "confirmation_pair_id": "1ee8f631aeb555f2",
+    "confirmation_mode": "fanout3",
+    "confirmation_k": 6,
+    "confirmation_plus_roles": [
+      "qa_testing",
+      "planning",
+      "writing",
+      "data",
+      "incident_management",
+      "experiment_design"
+    ],
+    "confirmation_minus_roles": [
+      "code",
+      "planning",
+      "writing",
+      "data",
+      "incident_management",
+      "experiment_design"
+    ],
+    "confirmation_sham_roles": [
+      "qa_testing",
+      "planning",
+      "writing",
+      "database_design",
+      "incident_management",
+      "experiment_design"
+    ]
+  },
+  {
+    "role": "financial_analysis",
+    "primary_pair_id": "16b277a70b7aa300",
+    "primary_mode": "fanout2",
+    "primary_k": 4,
+    "primary_plus_roles": [
+      "financial_analysis",
+      "fact_checking",
+      "research",
+      "risk_assessment"
+    ],
+    "primary_minus_roles": [
+      "planning",
+      "fact_checking",
+      "research",
+      "risk_assessment"
+    ],
+    "primary_sham_roles": [
+      "financial_analysis",
+      "qa_testing",
+      "research",
+      "risk_assessment"
+    ],
+    "confirmation_pair_id": "451b19e66e5a27e5",
+    "confirmation_mode": "fanout2",
+    "confirmation_k": 5,
+    "confirmation_plus_roles": [
+      "writing",
+      "documentation",
+      "design",
+      "risk_assessment",
+      "financial_analysis"
+    ],
+    "confirmation_minus_roles": [
+      "writing",
+      "documentation",
+      "design",
+      "risk_assessment",
+      "planning"
+    ],
+    "confirmation_sham_roles": [
+      "writing",
+      "documentation",
+      "design",
+      "incident_management",
+      "financial_analysis"
+    ]
+  },
+  {
+    "role": "accessibility_review",
+    "primary_pair_id": "a23aeeb3c15301e4",
+    "primary_mode": "fanout3",
+    "primary_k": 5,
+    "primary_plus_roles": [
+      "writing",
+      "accessibility_review",
+      "data",
+      "risk_assessment",
+      "fact_checking"
+    ],
+    "primary_minus_roles": [
+      "writing",
+      "design",
+      "data",
+      "risk_assessment",
+      "fact_checking"
+    ],
+    "primary_sham_roles": [
+      "writing",
+      "accessibility_review",
+      "database_design",
+      "risk_assessment",
+      "fact_checking"
+    ],
+    "confirmation_pair_id": "3a63bf5993f9ed90",
+    "confirmation_mode": "fanout3",
+    "confirmation_k": 6,
+    "confirmation_plus_roles": [
+      "requirements_analysis",
+      "translation",
+      "accessibility_review",
+      "fact_checking",
+      "design",
+      "documentation"
+    ],
+    "confirmation_minus_roles": [
+      "requirements_analysis",
+      "translation",
+      "writing",
+      "fact_checking",
+      "design",
+      "documentation"
+    ],
+    "confirmation_sham_roles": [
+      "requirements_analysis",
+      "data",
+      "accessibility_review",
+      "fact_checking",
+      "design",
+      "documentation"
+    ]
+  },
+  {
+    "role": "requirements_analysis",
+    "primary_pair_id": "cb4f15543e6d8291",
+    "primary_mode": "fanout3",
+    "primary_k": 4,
+    "primary_plus_roles": [
+      "incident_management",
+      "translation",
+      "requirements_analysis",
+      "code"
+    ],
+    "primary_minus_roles": [
+      "incident_management",
+      "translation",
+      "documentation",
+      "code"
+    ],
+    "primary_sham_roles": [
+      "risk_assessment",
+      "translation",
+      "requirements_analysis",
+      "code"
+    ],
+    "confirmation_pair_id": "6bdcd8184d408c02",
+    "confirmation_mode": "fanout2",
+    "confirmation_k": 5,
+    "confirmation_plus_roles": [
+      "requirements_analysis",
+      "database_design",
+      "documentation",
+      "data",
+      "experiment_design"
+    ],
+    "confirmation_minus_roles": [
+      "planning",
+      "database_design",
+      "documentation",
+      "data",
+      "experiment_design"
+    ],
+    "confirmation_sham_roles": [
+      "requirements_analysis",
+      "accessibility_review",
+      "documentation",
+      "data",
+      "experiment_design"
+    ]
+  },
+  {
+    "role": "experiment_design",
+    "primary_pair_id": "276cc9ad5c7595e0",
+    "primary_mode": "fanout3",
+    "primary_k": 6,
+    "primary_plus_roles": [
+      "qa_testing",
+      "planning",
+      "writing",
+      "data",
+      "incident_management",
+      "experiment_design"
+    ],
+    "primary_minus_roles": [
+      "qa_testing",
+      "planning",
+      "writing",
+      "data",
+      "incident_management",
+      "research"
+    ],
+    "primary_sham_roles": [
+      "qa_testing",
+      "planning",
+      "writing",
+      "database_design",
+      "incident_management",
+      "experiment_design"
+    ],
+    "confirmation_pair_id": "cec13d95c8c054b8",
+    "confirmation_mode": "fanout3",
+    "confirmation_k": 3,
+    "confirmation_plus_roles": [
+      "planning",
+      "experiment_design",
+      "customer_support_triage"
+    ],
+    "confirmation_minus_roles": [
+      "planning",
+      "research",
+      "customer_support_triage"
+    ],
+    "confirmation_sham_roles": [
+      "planning",
+      "experiment_design",
+      "incident_management"
+    ]
+  },
+  {
+    "role": "documentation",
+    "primary_pair_id": "a1c359974743c038",
+    "primary_mode": "fanout3",
+    "primary_k": 5,
+    "primary_plus_roles": [
+      "planning",
+      "documentation",
+      "code",
+      "math",
+      "requirements_analysis"
+    ],
+    "primary_minus_roles": [
+      "planning",
+      "design",
+      "code",
+      "math",
+      "requirements_analysis"
+    ],
+    "primary_sham_roles": [
+      "planning",
+      "documentation",
+      "code",
+      "data",
+      "requirements_analysis"
+    ],
+    "confirmation_pair_id": "58de0f1d66cdd7f9",
+    "confirmation_mode": "fanout3",
+    "confirmation_k": 6,
+    "confirmation_plus_roles": [
+      "requirements_analysis",
+      "translation",
+      "accessibility_review",
+      "fact_checking",
+      "design",
+      "documentation"
+    ],
+    "confirmation_minus_roles": [
+      "requirements_analysis",
+      "translation",
+      "accessibility_review",
+      "fact_checking",
+      "design",
+      "data"
+    ],
+    "confirmation_sham_roles": [
+      "requirements_analysis",
+      "translation",
+      "writing",
+      "fact_checking",
+      "design",
+      "documentation"
+    ]
+  }
+]

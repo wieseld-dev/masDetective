@@ -1,0 +1,91 @@
+BELIEF = artifacts/HIGHEST_CLEAN_AUC/models/frozen_belief.joblib
+SHA    = d10c91b7321e5cf08ee754a0cbfcfd7c4cc6a459f4463a6e206816ecd90ae74f
+
+===== EXACT HYBRID R7 ORACLE AUDIT =====
+
+===================================================================================================================
+simple5_01_code_plan_research
+R6 BASE = 0.588235
+WITHIN-SYSTEM SPEARMAN(selector, utility) = -0.9487
+C0 SEL=-0.04712 AUC=0.352941 DELTA=-0.235294 SRC=ORIGINAL <<< SELECTED
+    Could you guide me on how to prioritize goals and resources for my upcoming project?
+C1 SEL=-0.07812 AUC=0.529412 DELTA=-0.058824 SRC=NEW
+    What specific information or details should I provide first so you can start verifying a claimed historical event date?
+C3 SEL=-0.17383 AUC=0.529412 DELTA=-0.058824 SRC=NEW
+    What specific information or details should I provide first so you can begin creating my database model?
+C2 SEL=-0.47461 AUC=0.647059 DELTA=+0.058824 SRC=NEW <<< ORACLE
+    What key information do I need to translate from English to French accurately and ensure cultural sensitivity?
+SELECTED=0.352941 RANDOM=0.514706 ORACLE=0.647059 GAP=+0.294118 TRUE_RANK=4/4
+
+===================================================================================================================
+simple5_02_risk_access_translation
+R6 BASE = 0.568627
+WITHIN-SYSTEM SPEARMAN(selector, utility) = +0.8000
+C3 SEL=+0.04907 AUC=0.568627 DELTA=+0.000000 SRC=ORIGINAL <<< SELECTED
+    What specific facts and reliable sources should I provide first to begin researching the topic?
+C1 SEL=-0.07422 AUC=0.823529 DELTA=+0.254902 SRC=NEW <<< ORACLE
+    What specific aspects of the interface or content accessibility should I review initially?
+C2 SEL=-0.31055 AUC=0.509804 DELTA=-0.058824 SRC=NEW
+    What key information do I need to gather first to effectively manage and resolve incidents related to network outages?
+C0 SEL=-0.42383 AUC=0.490196 DELTA=-0.078431 SRC=NEW
+    What are the first steps I should take to plan and organize my project effectively?
+SELECTED=0.568627 RANDOM=0.598039 ORACLE=0.823529 GAP=+0.254902 TRUE_RANK=2/4
+
+===================================================================================================================
+simple5_03_data_db_requirements
+R6 BASE = 0.882353
+WITHIN-SYSTEM SPEARMAN(selector, utility) = +0.6000
+C0 SEL=+0.01953 AUC=0.941176 DELTA=+0.058824 SRC=ORIGINAL <<< SELECTED
+    Please confirm what specific fact or claim you would like verified or checked first so that we can proceed more efficiently with your fact-checking task?
+C3 SEL=-0.17480 AUC=0.960784 DELTA=+0.078431 SRC=NEW <<< ORACLE
+    What specific data structures or relationships should I define first so you can efficiently build my database?
+C1 SEL=-0.41211 AUC=0.823529 DELTA=-0.058824 SRC=NEW
+    Could you guide me through setting up test cases for our new feature release?
+C2 SEL=-0.50000 AUC=0.882353 DELTA=+0.000000 SRC=NEW
+    What specific details do I need from the dataset first to get started with data analysis?
+SELECTED=0.941176 RANDOM=0.901961 ORACLE=0.960784 GAP=+0.019608 TRUE_RANK=2/4
+
+===================================================================================================================
+simple5_04_support_incident_ops
+R6 BASE = 0.764706
+WITHIN-SYSTEM SPEARMAN(selector, utility) = +0.8000
+C1 SEL=+0.44531 AUC=0.784314 DELTA=+0.019608 SRC=ORIGINAL <<< SELECTED,ORACLE
+    First, could you please explain the specific issue or problem you are encountering?
+C2 SEL=-0.32812 AUC=0.764706 DELTA=+0.000000 SRC=NEW
+    Could you help me find more detailed information on how to create effective documentation for technical products?
+C0 SEL=-0.39844 AUC=0.686275 DELTA=-0.078431 SRC=NEW
+    First, could you help me identify the specific feature causing performance degradation in my application?
+C3 SEL=-0.60156 AUC=0.705882 DELTA=-0.058824 SRC=NEW
+    First, could you show me the basic structure of the data set?
+SELECTED=0.784314 RANDOM=0.735294 ORACLE=0.784314 GAP=+0.000000 TRUE_RANK=1/4
+
+===================================================================================================================
+simple5_05_docs_qa_writing
+R6 BASE = 0.666667
+WITHIN-SYSTEM SPEARMAN(selector, utility) = +0.4000
+C1 SEL=-0.12500 AUC=0.490196 DELTA=-0.176471 SRC=ORIGINAL <<< SELECTED
+    What specific facts or claims should I provide first to ensure accurate verification in the fact-checking task?
+C3 SEL=-0.22559 AUC=0.568627 DELTA=-0.098039 SRC=NEW <<< ORACLE
+    I want to enhance the user experience by improving the interface. How can I best proceed to understand the core features and user interactions?
+C2 SEL=-0.28320 AUC=0.529412 DELTA=-0.137255 SRC=NEW
+    Could you assist me in evaluating the accuracy of a mathematical calculation by providing the necessary input values?
+C0 SEL=-0.32422 AUC=0.470588 DELTA=-0.196078 SRC=NEW
+    Could you please walk me through how to conduct a requirements analysis to properly understand and fulfill the needs of our upcoming project?
+SELECTED=0.490196 RANDOM=0.514706 ORACLE=0.568627 GAP=+0.078431 TRUE_RANK=3/4
+
+===================================================================================================================
+===== EXACT SUMMARY =====
+base       = 0.694118
+selected   = 0.627451
+random     = 0.652941
+oracle     = 0.756863
+gap        = 0.129412
+selector_top1 = 1 / 5
+selector_top2 = 3 / 5
+mean_within_system_spearman = +0.330263
+pooled_spearman = +0.144207
+
+HISTORICAL HYBRID R7 = 0.627450980
+EXACT RECOMPUTED R7   = 0.627450980
+DIFFERENCE            = +0.000000000
+EXACT REPRODUCTION PASS

@@ -1,0 +1,26 @@
+[
+  {
+    "system_id": "rankv2_01",
+    "true_roles_eval_only": [
+      "writing",
+      "data",
+      "design"
+    ]
+  },
+  {
+    "system_id": "rankv2_02",
+    "true_roles_eval_only": [
+      "math",
+      "planning",
+      "research"
+    ]
+  },
+  {
+    "system_id": "rankv2_03",
+    "true_roles_eval_only": [
+      "code",
+      "design",
+      "operations"
+    ]
+  }
+]

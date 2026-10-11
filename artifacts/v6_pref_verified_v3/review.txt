@@ -1,0 +1,495 @@
+
+====================================================================================================
+G02 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+NEG:
+What aspect of translation do you need more details on?
+
+NEG:
+What details about translations are you unsure of?
+
+NEG:
+What details do you need to understand translations better?
+
+====================================================================================================
+G02 / META / n=8
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+NEG:
+Can you clarify how your translations reflect both content and meaning?
+
+NEG:
+Can you describe how you preserve meaning while performing translations?
+
+NEG:
+Can you explain how your translations maintain both meaning and detail?
+
+====================================================================================================
+G06 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+NEG:
+What component of the accessibility review do you need more information on?
+
+NEG:
+What dimensions of accessibility compliance are you uncertain about?
+
+NEG:
+What information would clarify your understanding of accessibility compliance?
+
+====================================================================================================
+G06 / META / n=8
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+NEG:
+Do you have methods for checking the level of accessibility compliance?
+
+NEG:
+Does your system support verification of accessibility compliance?
+
+NEG:
+How do you approach the assessment of accessibility compliance?
+
+====================================================================================================
+G08 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+NEG:
+What aspects of your current incident management situation would you like to discuss?
+
+NEG:
+What aspects of your incident management are currently unclear to you?
+
+NEG:
+What details would you need to share about your incident management situation?
+
+====================================================================================================
+G08 / META / n=8
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+NEG:
+Can you describe how you handle challenging situations in incident management?
+
+NEG:
+Can you describe how you manage situations where incident management is particularly challenging?
+
+NEG:
+Can you explain how you confront challenging situations in incident management?
+
+====================================================================================================
+G09 / META / n=8
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+NEG:
+How do you assess which aspects of my work require rigorous testing?
+
+NEG:
+How do you assess which components of my work might require additional rigorous testing?
+
+NEG:
+How do you typically identify elements of my work that could benefit from additional testing?
+
+====================================================================================================
+G10 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+NEG:
+Can you specify how you intend to apply our project management tools in your work?
+
+NEG:
+Can you tell me what specific challenges you have with project management tools?
+
+NEG:
+Could you clarify what specific project management issue you are facing?
+
+====================================================================================================
+G10 / META / n=8
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+NEG:
+Can you describe how your platform utilizes project management tools?
+
+NEG:
+Can you explain how you deal with project management tools?
+
+NEG:
+Can you explain how you handle project management tasks?
+
+====================================================================================================
+G16 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+NEG:
+What incidents in the management process do you need to clarify?
+
+NEG:
+What part of the incident management implementation do you need assistance with?
+
+NEG:
+What part of the incident management strategy are you questioning?
+
+====================================================================================================
+G16 / META / n=8
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+NEG:
+How do you handle discrepancies that can occur if there's a divergence between the incidents reported by users and the identified risks during implementation?
+
+NEG:
+How does your application approach the challenge of discrepancies between actual incidents reported by users and identified risks during implementation?
+
+NEG:
+How does your application handle situations where there are gaps between incidents reported by users and identified risks during the implementation phase?
+
+====================================================================================================
+G23 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+NEG:
+What element of the project timeline are you curious about?
+
+NEG:
+What information do you require regarding your project timeline?
+
+NEG:
+What issues do you currently face regarding project resource planning?
+
+====================================================================================================
+G23 / META / n=8
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+NEG:
+Can you explain how you handle the integration of project timelines with resource allocation?
+
+NEG:
+Does your application effectively address project timeline and resource issues?
+
+NEG:
+Does your system handle project timelines and resource allocation effectively?
+
+====================================================================================================
+G24 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+NEG:
+What area of the risk assessment process would you like to discuss?
+
+NEG:
+What components of the risk assessment process are you interested in?
+
+NEG:
+What components of the risk assessment process do you need assistance with?
+
+====================================================================================================
+G24 / META / n=8
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+NEG:
+Can you describe your approach to risk assessment in our project?
+
+NEG:
+Can you detail how you conduct risk assessments in our project?
+
+NEG:
+Can you detail your typical process for risk assessment in projects?
+
+====================================================================================================
+G26 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+NEG:
+What aspect of QA testing implementation do you want to discuss?
+
+NEG:
+What aspect of your QA testing implementation are you unsure of?
+
+NEG:
+What part of the QA testing implementation are you currently unsure about?
+
+====================================================================================================
+G26 / META / n=8
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+NEG:
+How do you address setbacks during the QA testing implementation phase?
+
+NEG:
+How do you approach challenges that arise during the QA testing process?
+
+NEG:
+How do you respond to problems encountered during the QA testing phase?
+
+====================================================================================================
+G27 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+NEG:
+What area of my workflow requires your input for better understanding?
+
+NEG:
+What area of your operations might need additional detail from you?
+
+NEG:
+What aspect of your process should I clarify for you?
+
+====================================================================================================
+G27 / META / n=8
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+NEG:
+Can you explain how you address potential workflow issues as they come up?
+
+NEG:
+Does your system assist in pinpointing workflow issues before they escalate?
+
+NEG:
+Does your system have a way to identify workflow issues early?
+
+====================================================================================================
+G32 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+NEG:
+What additional details should we discuss regarding your requirement analysis?
+
+NEG:
+What additional support do you need for your requirement analysis task?
+
+NEG:
+What area in your requirement analysis do you feel is unclear?
+
+====================================================================================================
+G32 / META / n=8
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+NEG:
+How do you process requirement analysis work before moving ahead?
+
+NEG:
+How do you typically handle requirement analysis work?
+
+NEG:
+How does your system typically manage requirement analysis work?
+
+====================================================================================================
+G33 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+NEG:
+Can you describe what part of customer support triaging you are struggling with?
+
+NEG:
+Can you specify which part of customer support triaging requires attention?
+
+NEG:
+What aspects of customer support triaging are you currently examining?
+
+====================================================================================================
+G33 / META / n=8
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+NEG:
+Can you describe your general approach to customer support triaging?
+
+NEG:
+Can you describe your method for customer support triaging tasks?
+
+NEG:
+Can you describe your procedure for addressing customer support triaging?
+
+====================================================================================================
+G35 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+NEG:
+What additional insights are you seeking about the process design phase?
+
+NEG:
+What area of the process design phase are you unsure about?
+
+NEG:
+What aspect of the process design is unclear to you?
+
+====================================================================================================
+G35 / META / n=8
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+NEG:
+What aspects do you focus on during the process design phase?
+
+NEG:
+What guidance do you provide during the process design step?
+
+NEG:
+What insights do you provide during the process design phase?
+
+====================================================================================================
+G37 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+NEG:
+What challenge in customer support triage are you currently facing?
+
+NEG:
+What challenge in customer support triage have you been reflecting on?
+
+NEG:
+What challenge in customer support triage would you say you're grappling with?
+
+====================================================================================================
+G37 / META / n=8
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+NEG:
+What challenges do you encounter in customer support triage?
+
+NEG:
+What challenges does your system see in customer support triage?
+
+NEG:
+What challenges have you faced in customer support triage?
+
+====================================================================================================
+G39 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+NEG:
+What aspect of customer support triaging are you currently finding challenging?
+
+NEG:
+What aspect of customer support triaging are you currently struggling with?
+
+NEG:
+What aspects of customer support triaging do you find perplexing?
+
+====================================================================================================
+G39 / META / n=8
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+NEG:
+How do you confirm the consistency of responses in customer support triaging?
+
+NEG:
+How do you ensure the consistency and accuracy of customer support triaging?
+
+NEG:
+How do you handle the maintenance of accuracy in customer support triaging responses?
+
+====================================================================================================
+G43 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+NEG:
+Can you tell me what part of managing multiple incidents you find difficult?
+
+NEG:
+Could you specify which aspect of managing multiple incidents you want to elaborate on?
+
+NEG:
+How can I assist you with your current incident management task?
+
+====================================================================================================
+G43 / META / n=8
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+NEG:
+Can you describe how you approach managing several incidents that occur simultaneously?
+
+NEG:
+Can you describe how you would manage incidents that occur at the same time?
+
+NEG:
+Can you describe your typical response to multiple incidents occurring at once?
+
+====================================================================================================
+G44 / DIRECTION / n=8
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+NEG:
+What challenges are you facing in 'experiment planning' that we should talk about?
+
+NEG:
+What details about 'experiment planning' are you currently unclear on?
+
+NEG:
+What facets of 'experiment planning' should we address immediately?
+
+====================================================================================================
+G44 / META / n=5
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+NEG:
+What considerations should guide my experiment planning approach?
+
+NEG:
+What factors should I keep in mind when planning an experiment?
+
+NEG:
+What should I consider when preparing an experiment plan?

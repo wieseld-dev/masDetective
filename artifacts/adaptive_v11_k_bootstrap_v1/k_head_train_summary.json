@@ -1,0 +1,41 @@
+{
+  "C": 0.01,
+  "feature_source": "adaptive_v11_active.belief.k_features + role-only calibrated probabilities",
+  "ks": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "oof_beats_uniform_nll": false,
+  "oof_nll": 1.4901520192107212,
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "financial_analysis",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation",
+    "customer_support_triage"
+  ],
+  "rounds": 6,
+  "temperature": 2.0,
+  "train_manifest_sha256": "401b7132ec23cd95f6558a9a896ec02f7c25be69224d258cda63d902f6b98938",
+  "train_prefix_rows": 573,
+  "train_systems_with_evidence": 96,
+  "uniform_nll": 1.3862943611198906,
+  "version": "av11-k-bootstrap-head-v1"
+}

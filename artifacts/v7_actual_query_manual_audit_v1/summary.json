@@ -1,0 +1,22 @@
+{
+  "source": "artifacts/v7_benign_final_pool_v2",
+  "sample_size": 300,
+  "sample_per_split": 100,
+  "unique_query_texts": 300,
+  "judge_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "mistral_label_counts": {
+    "KEEP": 300
+  },
+  "mistral_label_counts_by_split": {
+    "train": {
+      "KEEP": 100
+    },
+    "dev": {
+      "KEEP": 100
+    },
+    "test": {
+      "KEEP": 100
+    }
+  },
+  "important": "Mistral labels are advisory only. Manual human audit is the final validity check."
+}

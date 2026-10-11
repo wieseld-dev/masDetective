@@ -1,0 +1,27 @@
+{
+  "clip": 0.2,
+  "epochs": 2,
+  "kl_beta": 0.05,
+  "lr": 3e-06,
+  "phase": "role_only",
+  "round": 1,
+  "samples": 144,
+  "start_adapter": "artifacts/v14_benign_policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.0388912268810802,
+      "loss": 0.004142465369012725,
+      "n": 144,
+      "pg": 0.0021979051671223715
+    },
+    {
+      "epoch": 2,
+      "kl": 0.03833818270100488,
+      "loss": 0.0036458330820702636,
+      "n": 144,
+      "pg": 0.0017289203129217236
+    }
+  ],
+  "v11_reference": "artifacts/v14_benign_policy"
+}

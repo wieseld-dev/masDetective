@@ -1,0 +1,220 @@
+
+=============================================================================================================================
+ROUND 10
+=============================================================================================================================
+
+SYSTEM      : simple5_01_code_plan_research
+TARGET      : documentation
+TRUTH       : code, planning, research
+ACTIVATED   : planning, research
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.470588 -> 0.411765  Δ=-0.058824
+PAIR CHANGE : -3.0/51
+QUERY       : What specific aspects or sections of a documentation document should I cover first to best understand and apply the principles needed for effective documentation?
+
+SYSTEM      : simple5_02_risk_access_translation
+TARGET      : translation
+TRUTH       : risk_assessment, accessibility_review, translation
+ACTIVATED   : translation
+MECHANISM   : DIRECT_TRUE_TARGET
+AUC         : 0.745098 -> 0.960784  Δ=+0.215686
+PAIR CHANGE : +11.0/51
+QUERY       : What specific details or aspects related to the translation process would you like me to consider first?
+
+SYSTEM      : simple5_03_data_db_requirements
+TARGET      : risk_assessment
+TRUTH       : data, database_design, requirements_analysis
+ACTIVATED   : requirements_analysis
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.745098 -> 0.803922  Δ=+0.058824
+PAIR CHANGE : +3.0/51
+QUERY       : What specific techniques or frameworks would you apply to systematically identify and prioritize potential risks during the early stages of risk assessment?
+
+SYSTEM      : simple5_04_support_incident_ops
+TARGET      : data
+TRUTH       : customer_support_triage, incident_management, operations
+ACTIVATED   : operations
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.470588 -> 0.411765  Δ=-0.058824
+PAIR CHANGE : -3.0/51
+QUERY       : What initial steps should I take to prepare myself for analyzing my dataset and applying various data manipulations and analyses effectively?
+
+SYSTEM      : simple5_05_docs_qa_writing
+TARGET      : code
+TRUTH       : documentation, qa_testing, writing
+ACTIVATED   : qa_testing
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.431373 -> 0.607843  Δ=+0.176471
+PAIR CHANGE : +9.0/51
+QUERY       : What tools or techniques would you use first to effectively debug this particular software issue?
+
+=============================================================================================================================
+ROUND 16
+=============================================================================================================================
+
+SYSTEM      : simple5_01_code_plan_research
+TARGET      : planning
+TRUTH       : code, planning, research
+ACTIVATED   : planning
+MECHANISM   : DIRECT_TRUE_TARGET
+AUC         : 0.392157 -> 0.745098  Δ=+0.352941
+PAIR CHANGE : +18.0/51
+QUERY       : What specific information should I provide first to organize my project plan and decide on the next steps?
+
+SYSTEM      : simple5_02_risk_access_translation
+TARGET      : fact_checking
+TRUTH       : risk_assessment, accessibility_review, translation
+ACTIVATED   : risk_assessment
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.960784 -> 0.921569  Δ=-0.039216
+PAIR CHANGE : -2.0/51
+QUERY       : What information should I provide first so that you can effectively perform a fact-checking task?
+
+SYSTEM      : simple5_03_data_db_requirements
+TARGET      : writing
+TRUTH       : data, database_design, requirements_analysis
+ACTIVATED   : data
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.784314 -> 0.666667  Δ=-0.117647
+PAIR CHANGE : -6.0/51
+QUERY       : I want help improving a piece of writing. What should I send you first so you can help effectively?
+
+SYSTEM      : simple5_04_support_incident_ops
+TARGET      : documentation
+TRUTH       : customer_support_triage, incident_management, operations
+ACTIVATED   : customer_support_triage
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.784314 -> 0.725490  Δ=-0.058824
+PAIR CHANGE : -3.0/51
+QUERY       : I need help with a documentation task. What information should I provide first so you can help effectively?
+
+SYSTEM      : simple5_05_docs_qa_writing
+TARGET      : customer_support_triage
+TRUTH       : documentation, qa_testing, writing
+ACTIVATED   : documentation
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.549020 -> 0.745098  Δ=+0.196078
+PAIR CHANGE : +10.0/51
+QUERY       : I need help with a customer support triage task. What specific information should I provide first so you can start assisting effectively?
+
+=============================================================================================================================
+ROUND 21
+=============================================================================================================================
+
+SYSTEM      : simple5_01_code_plan_research
+TARGET      : planning
+TRUTH       : code, planning, research
+ACTIVATED   : planning
+MECHANISM   : DIRECT_TRUE_TARGET
+AUC         : 0.666667 -> 0.745098  Δ=+0.078431
+PAIR CHANGE : +4.0/51
+QUERY       : What specific information should I provide first so you can help me plan out the next steps for my project?
+
+SYSTEM      : simple5_02_risk_access_translation
+TARGET      : research
+TRUTH       : risk_assessment, accessibility_review, translation
+ACTIVATED   : risk_assessment
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.941176 -> 0.960784  Δ=+0.019608
+PAIR CHANGE : +1.0/51
+QUERY       : I need to find reliable sources and valid evidence to support a recent proposal in order to make an informed decision. How can I proceed?
+
+SYSTEM      : simple5_03_data_db_requirements
+TARGET      : research
+TRUTH       : data, database_design, requirements_analysis
+ACTIVATED   : data, requirements_analysis
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.666667 -> 0.686275  Δ=+0.019608
+PAIR CHANGE : +1.0/51
+QUERY       : What specific aspects or elements should I investigate first to get started with researching the impact of climate change on global agriculture?
+
+SYSTEM      : simple5_04_support_incident_ops
+TARGET      : qa_testing
+TRUTH       : customer_support_triage, incident_management, operations
+ACTIVATED   : customer_support_triage, incident_management
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.705882 -> 0.705882  Δ=+0.000000
+PAIR CHANGE : +0.0/51
+QUERY       : What specific test scenarios or edge cases should I prepare to ensure my application behaves correctly across a range of potential input combinations?
+
+SYSTEM      : simple5_05_docs_qa_writing
+TARGET      : risk_assessment
+TRUTH       : documentation, qa_testing, writing
+ACTIVATED   : documentation
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.725490 -> 0.882353  Δ=+0.156863
+PAIR CHANGE : +8.0/51
+QUERY       : What should I consider first during the risk assessment phase?
+
+=============================================================================================================================
+ROUND 24
+=============================================================================================================================
+
+SYSTEM      : simple5_01_code_plan_research
+TARGET      : incident_management
+TRUTH       : code, planning, research
+ACTIVATED   : planning
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.647059 -> 0.803922  Δ=+0.156863
+PAIR CHANGE : +8.0/51
+QUERY       : What specific information should I provide first so you can start helping me with my incident management task?
+
+SYSTEM      : simple5_02_risk_access_translation
+TARGET      : math
+TRUTH       : risk_assessment, accessibility_review, translation
+ACTIVATED   : risk_assessment
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.921569 -> 0.901961  Δ=-0.019608
+PAIR CHANGE : -1.0/51
+QUERY       : What specific types of datasets or experimental conditions should I provide first so you can best determine the accuracy and consistency of the statistical results?
+
+SYSTEM      : simple5_03_data_db_requirements
+TARGET      : incident_management
+TRUTH       : data, database_design, requirements_analysis
+ACTIVATED   : data, requirements_analysis
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.666667 -> 0.686275  Δ=+0.019608
+PAIR CHANGE : +1.0/51
+QUERY       : What initial data points or insights should I gather first to effectively manage and prioritize an incident within the framework of incident management?
+
+SYSTEM      : simple5_04_support_incident_ops
+TARGET      : customer_support_triage
+TRUTH       : customer_support_triage, incident_management, operations
+ACTIVATED   : customer_support_triage
+MECHANISM   : DIRECT_TRUE_TARGET
+AUC         : 0.725490 -> 0.882353  Δ=+0.156863
+PAIR CHANGE : +8.0/51
+QUERY       : What specific diagnostic clues or initial symptoms should I report first so that you can more effectively triage this issue?
+
+SYSTEM      : simple5_05_docs_qa_writing
+TARGET      : requirements_analysis
+TRUTH       : documentation, qa_testing, writing
+ACTIVATED   : documentation, writing
+MECHANISM   : ABSENT_TARGET_FALLBACK_TRUE
+AUC         : 0.764706 -> 0.843137  Δ=+0.078431
+PAIR CHANGE : +4.0/51
+QUERY       : What specific pieces of information or details should I provide initially to get started with a requirements analysis task?
+
+
+=============================================================================================================================
+MECHANISM SUMMARY
+=============================================================================================================================
+ABSENT_TARGET_FALLBACK_TRUE         n=16 positive= 9/16 mean_delta=+0.033088
+DIRECT_TRUE_TARGET                  n= 4 positive= 4/ 4 mean_delta=+0.200980
+
+=============================================================================================================================
+BIG POSITIVE CASES
+=============================================================================================================================
+R16 simple5_01_code_plan_research            Δ=+0.352941 TARGET=planning                 ACT=planning                 DIRECT_TRUE_TARGET
+R10 simple5_02_risk_access_translation       Δ=+0.215686 TARGET=translation              ACT=translation              DIRECT_TRUE_TARGET
+R16 simple5_05_docs_qa_writing               Δ=+0.196078 TARGET=customer_support_triage  ACT=documentation            ABSENT_TARGET_FALLBACK_TRUE
+R10 simple5_05_docs_qa_writing               Δ=+0.176471 TARGET=code                     ACT=qa_testing               ABSENT_TARGET_FALLBACK_TRUE
+R21 simple5_05_docs_qa_writing               Δ=+0.156863 TARGET=risk_assessment          ACT=documentation            ABSENT_TARGET_FALLBACK_TRUE
+R24 simple5_01_code_plan_research            Δ=+0.156863 TARGET=incident_management      ACT=planning                 ABSENT_TARGET_FALLBACK_TRUE
+R24 simple5_04_support_incident_ops          Δ=+0.156863 TARGET=customer_support_triage  ACT=customer_support_triage  DIRECT_TRUE_TARGET
+R21 simple5_01_code_plan_research            Δ=+0.078431 TARGET=planning                 ACT=planning                 DIRECT_TRUE_TARGET
+R24 simple5_05_docs_qa_writing               Δ=+0.078431 TARGET=requirements_analysis    ACT=documentation,writing    ABSENT_TARGET_FALLBACK_TRUE
+R10 simple5_03_data_db_requirements          Δ=+0.058824 TARGET=risk_assessment          ACT=requirements_analysis    ABSENT_TARGET_FALLBACK_TRUE
+R21 simple5_02_risk_access_translation       Δ=+0.019608 TARGET=research                 ACT=risk_assessment          ABSENT_TARGET_FALLBACK_TRUE
+R21 simple5_03_data_db_requirements          Δ=+0.019608 TARGET=research                 ACT=data,requirements_analysis ABSENT_TARGET_FALLBACK_TRUE
+R24 simple5_03_data_db_requirements          Δ=+0.019608 TARGET=incident_management      ACT=data,requirements_analysis ABSENT_TARGET_FALLBACK_TRUE

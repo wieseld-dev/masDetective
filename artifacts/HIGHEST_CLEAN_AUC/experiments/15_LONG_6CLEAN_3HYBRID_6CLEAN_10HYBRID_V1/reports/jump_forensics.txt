@@ -1,0 +1,756 @@
+==============================================================================================================
+ADAPTIVE JUMP FORENSICS
+==============================================================================================================
+
+
+##############################################################################################################
+ROUND 10
+##############################################################################################################
+GLOBAL: 0.572549 -> 0.639216 delta=+0.066667 ≈ +17.0/255 pair-ordering points
+
+PER-SYSTEM CONTRIBUTION:
+  simple5_02_risk_access_translation       0.745098 -> 0.960784 delta=+0.215686 pairs≈+11.0
+  simple5_05_docs_qa_writing               0.431373 -> 0.607843 delta=+0.176471 pairs≈+9.0
+  simple5_03_data_db_requirements          0.745098 -> 0.803922 delta=+0.058824 pairs≈+3.0
+  simple5_04_support_incident_ops          0.470588 -> 0.411765 delta=-0.058824 pairs≈-3.0
+  simple5_01_code_plan_research            0.470588 -> 0.411765 delta=-0.058824 pairs≈-3.0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_02_risk_access_translation
+TRUTH: accessibility_review, risk_assessment, translation
+AUC: 0.745098 -> 0.960784 delta=+0.215686 ≈ +11.0 pair points
+
+PRE TOP: 1:risk_assessment*=0.5390 | 2:accessibility_review*=0.4348 | 3:financial_analysis=0.2718 | 4:research=0.2258 | 5:incident_management=0.2223 | 6:planning=0.2142 | 7:documentation=0.1938 | 8:requirements_analysis=0.1894 | 9:fact_checking=0.1789 | 10:design=0.1772
+POST TOP: 1:risk_assessment*=0.4413 | 2:accessibility_review*=0.4223 | 3:requirements_analysis=0.2757 | 4:financial_analysis=0.2590 | 5:translation*=0.2485 | 6:writing=0.2388 | 7:research=0.2285 | 8:incident_management=0.2219 | 9:documentation=0.2088 | 10:planning=0.2035
+PRE UNCERTAINTY: risk_assessment*=0.5390 | accessibility_review*=0.4348 | financial_analysis=0.2718 | research=0.2258 | incident_management=0.2223 | planning=0.2142 | documentation=0.1938
+
+SELECTED CANDIDATE = 1
+QUERY: What specific details or aspects related to the translation process would you like me to consider first?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: What is the primary method or technique you typically employ to verify facts or sources during your fact-checking work?
+  C1 <== SELECTED
+     Q: What specific details or aspects related to the translation process would you like me to consider first?
+  C2
+     Q: What kind of financial metrics or analyses would you like me to perform first to understand the current state of your processes?
+  C3
+     Q: What kind of documentation or guidelines would you need initially to begin improving this process?
+
+MAS RESPONSE: When considering the translation process, here are some specific details and aspects to keep in mind:  1. **Source and Target Languages**: Identify the languages involved in the translation to ensure appropriate linguistic and cultural nuances are addressed.  2. **Context and Purpose**: Understand the context in which the text will be used and its intended audience. This influences tone, formality, and style.  3. **Terminology**: Pay attention to specific terminology, especially in technical or specialized fields, to maintain accuracy and consistency.  4. **Cultural Nuances**: Consider cultural references, idioms, and expressions that may not have direct equivalents in the target language.  5. **Tone and Style**: Maintain the original tone and style of the text, whether it is formal, informal, persuasive, or descriptive.  6. **Ambiguities**: Identify any ambiguous phrases or terms that may require clarification to ensure the intended meaning is preserved.  7. **Formatting and Structure**: Keep the formatting and structure of the original text in mind, especially for documents that require specific layouts.  8. **Proofreading and Editing**: Plan for a review process to catch any errors and ensure the translation flows naturally in the target language.  By considering these aspects, you can enhance the quality and effectiveness of the translation.
+
+SENSOR TOP POSITIVE: requirements_analysis=+3.039 | translation*=+1.891 | writing=+1.518 | fact_checking=-1.116 | research=-1.219 | customer_support_triage=-1.221 | planning=-1.676
+SENSOR MOST NEGATIVE: math=-4.820 | code=-4.645 | database_design=-4.119 | data=-3.916 | experiment_design=-3.840
+
+GOOD TRUE-vs-FALSE FLIPS: 11
+  + translation > customer_support_triage: before 0.1341 vs 0.1469 -> after 0.2485 vs 0.1608
+  + translation > database_design: before 0.1341 vs 0.1456 -> after 0.2485 vs 0.1591
+  + translation > design: before 0.1341 vs 0.1772 -> after 0.2485 vs 0.1817
+  + translation > documentation: before 0.1341 vs 0.1938 -> after 0.2485 vs 0.2088
+  + translation > fact_checking: before 0.1341 vs 0.1789 -> after 0.2485 vs 0.2017
+  + translation > incident_management: before 0.1341 vs 0.2223 -> after 0.2485 vs 0.2219
+  + translation > math: before 0.1341 vs 0.1698 -> after 0.2485 vs 0.1771
+  + translation > operations: before 0.1341 vs 0.1621 -> after 0.2485 vs 0.1750
+  + translation > planning: before 0.1341 vs 0.2142 -> after 0.2485 vs 0.2035
+  + translation > research: before 0.1341 vs 0.2258 -> after 0.2485 vs 0.2285
+  + translation > writing: before 0.1341 vs 0.1369 -> after 0.2485 vs 0.2388
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_05_docs_qa_writing
+TRUTH: documentation, qa_testing, writing
+AUC: 0.431373 -> 0.607843 delta=+0.176471 ≈ +9.0 pair points
+
+PRE TOP: 1:database_design=0.2810 | 2:incident_management=0.2785 | 3:operations=0.2685 | 4:financial_analysis=0.2449 | 5:experiment_design=0.2401 | 6:risk_assessment=0.2328 | 7:data=0.2315 | 8:writing*=0.2306 | 9:fact_checking=0.2285 | 10:research=0.2213
+POST TOP: 1:qa_testing*=0.3014 | 2:database_design=0.2784 | 3:operations=0.2778 | 4:incident_management=0.2724 | 5:financial_analysis=0.2558 | 6:risk_assessment=0.2466 | 7:data=0.2423 | 8:writing*=0.2415 | 9:fact_checking=0.2388 | 10:research=0.2384
+PRE UNCERTAINTY: database_design=0.2810 | incident_management=0.2785 | operations=0.2685 | financial_analysis=0.2449 | experiment_design=0.2401 | risk_assessment=0.2328 | data=0.2315
+
+SELECTED CANDIDATE = 1
+QUERY: What tools or techniques would you use first to effectively debug this particular software issue?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: What are the primary steps involved in evaluating and validating scientific hypotheses?
+  C1 <== SELECTED
+     Q: What tools or techniques would you use first to effectively debug this particular software issue?
+  C2
+     Q: What are the primary considerations when starting a financial analysis task?
+  C3
+     Q: How would you typically approach checking the accuracy of a mathematical calculation or solution?
+
+MAS RESPONSE: To effectively debug a software issue, I would recommend the following tools and techniques:  1. **Reproduce the Issue**:    - **Step-by-Step Reproduction**: Document the exact steps to reproduce the issue. This includes the environment setup, input data, and any specific configurations.    - **Environment Consistency**: Ensure that the testing environment matches the production environment as closely as possible.  2. **Logging and Monitoring**:    - **Enable Detailed Logging**: Check application logs for any error messages or warnings that occur around the time of the issue.    - **Use Monitoring Tools**: Tools like New Relic, Datadog, or Prometheus can help track performance metrics and identify anomalies.  3. **Debugging Tools**:    - **Integrated Development Environment (IDE) Debugger**: Use the built-in debugger in your IDE (e.g., Visual Studio, Eclipse) to step through the code and inspect variables at runtime.    - **Browser Developer Tools**: For web applications, use the browser's developer tools (F12) to inspect network requests, console errors, and DOM changes.  4. **Static Code Analysis**:    - **Linting Tools**: Use tools like ESLint for JavaScript or SonarQube for multiple languages to identify potential code issues before runtime.  5. **Unit and Integration Tests**:    - **Run Existing Tests**: Execute existing unit and integration tests to see if they pass or fa
+
+SENSOR TOP POSITIVE: qa_testing*=+2.129 | research=-3.086 | customer_support_triage=-3.938 | code=-4.003 | requirements_analysis=-4.016 | design=-4.133 | operations=-5.051
+SENSOR MOST NEGATIVE: translation=-7.766 | database_design=-7.398 | data=-6.754 | financial_analysis=-6.426 | experiment_design=-6.340
+
+GOOD TRUE-vs-FALSE FLIPS: 12
+  + qa_testing > data: before 0.2117 vs 0.2315 -> after 0.3014 vs 0.2423
+  + qa_testing > database_design: before 0.2117 vs 0.2810 -> after 0.3014 vs 0.2784
+  + qa_testing > experiment_design: before 0.2117 vs 0.2401 -> after 0.3014 vs 0.2371
+  + qa_testing > fact_checking: before 0.2117 vs 0.2285 -> after 0.3014 vs 0.2388
+  + qa_testing > financial_analysis: before 0.2117 vs 0.2449 -> after 0.3014 vs 0.2558
+  + qa_testing > incident_management: before 0.2117 vs 0.2785 -> after 0.3014 vs 0.2724
+  + qa_testing > math: before 0.2117 vs 0.2166 -> after 0.3014 vs 0.2273
+  + qa_testing > operations: before 0.2117 vs 0.2685 -> after 0.3014 vs 0.2778
+  + qa_testing > planning: before 0.2117 vs 0.2158 -> after 0.3014 vs 0.2261
+  + qa_testing > research: before 0.2117 vs 0.2213 -> after 0.3014 vs 0.2384
+  + qa_testing > risk_assessment: before 0.2117 vs 0.2328 -> after 0.3014 vs 0.2466
+  + writing > experiment_design: before 0.2306 vs 0.2401 -> after 0.2415 vs 0.2371
+BAD TRUE-vs-FALSE FLIPS: 3
+  - documentation > accessibility_review: before 0.2121 vs 0.2064 -> after 0.2103 vs 0.2215
+  - documentation > customer_support_triage: before 0.2121 vs 0.1970 -> after 0.2103 vs 0.2113
+  - documentation > requirements_analysis: before 0.2121 vs 0.2116 -> after 0.2103 vs 0.2198
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_03_data_db_requirements
+TRUTH: data, database_design, requirements_analysis
+AUC: 0.745098 -> 0.803922 delta=+0.058824 ≈ +3.0 pair points
+
+PRE TOP: 1:requirements_analysis*=0.3470 | 2:operations=0.3143 | 3:writing=0.3125 | 4:math=0.3093 | 5:design=0.2967 | 6:data*=0.2947 | 7:incident_management=0.2929 | 8:financial_analysis=0.2847 | 9:risk_assessment=0.2746 | 10:accessibility_review=0.2725
+POST TOP: 1:requirements_analysis*=0.3146 | 2:math=0.2961 | 3:writing=0.2849 | 4:data*=0.2816 | 5:financial_analysis=0.2754 | 6:risk_assessment=0.2749 | 7:design=0.2741 | 8:operations=0.2731 | 9:incident_management=0.2684 | 10:accessibility_review=0.2628
+PRE UNCERTAINTY: requirements_analysis*=0.3470 | operations=0.3143 | writing=0.3125 | math=0.3093 | design=0.2967 | data*=0.2947 | incident_management=0.2929
+
+SELECTED CANDIDATE = 3
+QUERY: What specific techniques or frameworks would you apply to systematically identify and prioritize potential risks during the early stages of risk assessment?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: What are the foundational elements of effective budgeting and forecasting practices in a financial analysis approach?
+  C1
+     Q: What are some common challenges encountered when fact-checking online content, and how do different sources validate their claims before publication?
+  C2
+     Q: What tools or strategies would you prioritize when trying to identify the root cause of a recurring failure in your process, ensuring that these tools help streamline the identification and resolution of issues efficiently?
+  C3 <== SELECTED
+     Q: What specific techniques or frameworks would you apply to systematically identify and prioritize potential risks during the early stages of risk assessment?
+
+MAS RESPONSE: To systematically identify and prioritize potential risks during the early stages of risk assessment, I would recommend the following techniques and frameworks:  1. **SWOT Analysis**: This technique helps identify strengths, weaknesses, opportunities, and threats related to the project. By analyzing these areas, you can uncover potential risks that may impact the project's success.  2. **Risk Breakdown Structure (RBS)**: This hierarchical decomposition of risks categorizes them into different levels, making it easier to identify and prioritize risks based on their sources (e.g., technical, organizational, external).  3. **Delphi Technique**: This method involves gathering insights from a panel of experts through multiple rounds of questioning. It helps in identifying risks that may not be immediately apparent and allows for consensus on their significance.  4. **Brainstorming Sessions**: Conducting brainstorming sessions with stakeholders can generate a wide range of potential risks. This collaborative approach encourages diverse perspectives and can uncover risks that may not be considered in isolation.  5. **Checklists**: Utilizing pre-existing risk checklists relevant to the industry or project type can help ensure that common risks are not overlooked. These checklists can be tailored to fit the specific context of the project.  6. **Interviews and Surveys**: Engaging with s
+
+SENSOR TOP POSITIVE: research=-0.461 | requirements_analysis*=-0.645 | planning=-0.648 | risk_assessment=-0.800 | financial_analysis=-1.121 | fact_checking=-1.900 | documentation=-2.099
+SENSOR MOST NEGATIVE: translation=-5.684 | database_design*=-4.729 | code=-4.183 | math=-3.727 | accessibility_review=-3.707
+
+GOOD TRUE-vs-FALSE FLIPS: 3
+  + data > design: before 0.2947 vs 0.2967 -> after 0.2816 vs 0.2741
+  + data > operations: before 0.2947 vs 0.3143 -> after 0.2816 vs 0.2731
+  + database_design > research: before 0.2630 vs 0.2667 -> after 0.2595 vs 0.2480
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_04_support_incident_ops
+TRUTH: customer_support_triage, incident_management, operations
+AUC: 0.470588 -> 0.411765 delta=-0.058824 ≈ -3.0 pair points
+
+PRE TOP: 1:operations*=0.4372 | 2:planning=0.3279 | 3:requirements_analysis=0.3159 | 4:risk_assessment=0.3129 | 5:qa_testing=0.2943 | 6:code=0.2933 | 7:financial_analysis=0.2896 | 8:design=0.2696 | 9:database_design=0.2647 | 10:math=0.2639
+POST TOP: 1:operations*=0.3428 | 2:planning=0.3096 | 3:risk_assessment=0.2985 | 4:requirements_analysis=0.2978 | 5:code=0.2959 | 6:financial_analysis=0.2868 | 7:qa_testing=0.2785 | 8:database_design=0.2730 | 9:design=0.2674 | 10:data=0.2672
+PRE UNCERTAINTY: operations*=0.4372 | planning=0.3279 | requirements_analysis=0.3159 | risk_assessment=0.3129 | qa_testing=0.2943 | code=0.2933 | financial_analysis=0.2896
+
+SELECTED CANDIDATE = 0
+QUERY: What initial steps should I take to prepare myself for analyzing my dataset and applying various data manipulations and analyses effectively?
+
+ALL 4 GENERATED CANDIDATES:
+  C0 <== SELECTED
+     Q: What initial steps should I take to prepare myself for analyzing my dataset and applying various data manipulations and analyses effectively?
+  C1
+     Q: 
+  C2
+     Q: What specific numerical results or computations will you share so I can verify the correctness of your analysis or solution?
+  C3
+     Q: What specific symptoms should I report to best understand the nature of the issue before proceeding with more advanced diagnostics?
+
+MAS RESPONSE: Preparing to analyze your dataset and apply various data manipulations and analyses involves several key steps. Here’s a structured approach to get you started:  ### 1. Define Your Objectives - **Identify Goals**: Clearly outline what you want to achieve with your analysis. Are you looking to uncover trends, make predictions, or derive insights? - **Formulate Questions**: Develop specific questions that your analysis should answer.  ### 2. Understand Your Dataset - **Data Familiarization**: Review the dataset to understand its structure, including the types of data (numerical, categorical, text, etc.), the number of records, and the variables present. - **Data Dictionary**: If available, create or refer to a data dictionary that explains each variable, its type, and its significance.  ### 3. Data Cleaning - **Identify Missing Values**: Check for any missing or null values and decide how to handle them (e.g., imputation, removal). - **Outlier Detection**: Look for outliers that may skew your analysis and determine how to address them. - **Data Type Verification**: Ensure that each column is in the correct format (e.g., dates as date types, numbers as numeric types).  ### 4. Data Exploration - **Descriptive Statistics**: Calculate basic statistics (mean, median, mode, standard deviation) to get a sense of the data distribution. - **Visualizations**: Create visualizations (histogr
+
+SENSOR TOP POSITIVE: data=+2.232 | research=+2.116 | code=+1.567 | design=+1.502 | customer_support_triage*=+1.141 | experiment_design=+0.867 | database_design=+0.816
+SENSOR MOST NEGATIVE: incident_management*=-4.219 | fact_checking=-3.336 | translation=-2.453 | requirements_analysis=-1.664 | qa_testing=-1.586
+
+GOOD TRUE-vs-FALSE FLIPS: 0
+BAD TRUE-vs-FALSE FLIPS: 3
+  - customer_support_triage > accessibility_review: before 0.2333 vs 0.2310 -> after 0.2308 vs 0.2400
+  - incident_management > accessibility_review: before 0.2398 vs 0.2310 -> after 0.2131 vs 0.2400
+  - incident_management > data: before 0.2398 vs 0.2373 -> after 0.2131 vs 0.2672
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_01_code_plan_research
+TRUTH: code, planning, research
+AUC: 0.470588 -> 0.411765 delta=-0.058824 ≈ -3.0 pair points
+
+PRE TOP: 1:research*=0.3082 | 2:incident_management=0.3029 | 3:math=0.2917 | 4:financial_analysis=0.2914 | 5:design=0.2811 | 6:data=0.2715 | 7:accessibility_review=0.2685 | 8:risk_assessment=0.2682 | 9:writing=0.2639 | 10:fact_checking=0.2625
+POST TOP: 1:incident_management=0.3020 | 2:financial_analysis=0.3005 | 3:research*=0.2869 | 4:math=0.2856 | 5:design=0.2792 | 6:data=0.2658 | 7:writing=0.2646 | 8:accessibility_review=0.2644 | 9:operations=0.2627 | 10:customer_support_triage=0.2624
+PRE UNCERTAINTY: research*=0.3082 | incident_management=0.3029 | math=0.2917 | financial_analysis=0.2914 | design=0.2811 | data=0.2715 | accessibility_review=0.2685
+
+SELECTED CANDIDATE = 3
+QUERY: What specific aspects or sections of a documentation document should I cover first to best understand and apply the principles needed for effective documentation?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: What kind of tools or resources will you need to perform QA testing effectively during this process?
+  C1
+     Q: What kind of reports or summaries do you typically generate when conducting a financial analysis?
+  C2
+     Q: What type of documentation or guidelines would you find most helpful to begin understanding and improving the effectiveness of this recurring process?
+  C3 <== SELECTED
+     Q: What specific aspects or sections of a documentation document should I cover first to best understand and apply the principles needed for effective documentation?
+
+MAS RESPONSE: To effectively understand and apply the principles of documentation, it's important to approach the subject systematically, focusing on key aspects that will provide a solid foundation. Here’s a structured guide to the essential sections to cover:  Start with **Purpose and Audience**. Understanding the primary goal of the documentation—whether it's for user manuals, technical documentation, or training materials—is crucial. Identifying the target audience will help tailor the content to their needs, knowledge level, and expectations.  Next, familiarize yourself with **Documentation Standards and Guidelines**. This includes learning about existing style guides, such as the Microsoft Manual of Style or the Chicago Manual of Style, which dictate formatting, tone, and terminology. Consistency in terminology and structure throughout the document is vital for clarity.  Then, focus on **Structure and Organization**. A clear and logical table of contents is essential for navigation. Learn how to effectively use headings and subheadings to break down information into manageable sections, enhancing readability.  **Content Development** is another critical area. Gather relevant data and examples to support your documentation, ensuring that your content is clear, concise, and straightforward. Avoid jargon unless necessary, and provide definitions for technical terms when used.  Incorporati
+
+SENSOR TOP POSITIVE: research*=+0.109 | documentation=-1.461 | requirements_analysis=-1.729 | fact_checking=-2.227 | design=-2.254 | planning*=-2.344 | experiment_design=-2.641
+SENSOR MOST NEGATIVE: translation=-6.172 | database_design=-4.594 | incident_management=-4.348 | math=-3.945 | financial_analysis=-3.914
+
+GOOD TRUE-vs-FALSE FLIPS: 0
+BAD TRUE-vs-FALSE FLIPS: 3
+  - code > customer_support_triage: before 0.2539 vs 0.2455 -> after 0.2590 vs 0.2624
+  - research > financial_analysis: before 0.3082 vs 0.2914 -> after 0.2869 vs 0.3005
+  - research > incident_management: before 0.3082 vs 0.3029 -> after 0.2869 vs 0.3020
+
+
+##############################################################################################################
+ROUND 16
+##############################################################################################################
+GLOBAL: 0.694118 -> 0.760784 delta=+0.066667 ≈ +17.0/255 pair-ordering points
+
+PER-SYSTEM CONTRIBUTION:
+  simple5_01_code_plan_research            0.392157 -> 0.745098 delta=+0.352941 pairs≈+18.0
+  simple5_05_docs_qa_writing               0.549020 -> 0.745098 delta=+0.196078 pairs≈+10.0
+  simple5_02_risk_access_translation       0.960784 -> 0.921569 delta=-0.039216 pairs≈-2.0
+  simple5_04_support_incident_ops          0.784314 -> 0.725490 delta=-0.058824 pairs≈-3.0
+  simple5_03_data_db_requirements          0.784314 -> 0.666667 delta=-0.117647 pairs≈-6.0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_01_code_plan_research
+TRUTH: code, planning, research
+AUC: 0.392157 -> 0.745098 delta=+0.352941 ≈ +18.0 pair points
+
+PRE TOP: 1:incident_management=0.2789 | 2:fact_checking=0.2767 | 3:accessibility_review=0.2651 | 4:math=0.2649 | 5:design=0.2640 | 6:research*=0.2627 | 7:requirements_analysis=0.2618 | 8:financial_analysis=0.2558 | 9:operations=0.2428 | 10:qa_testing=0.2357
+POST TOP: 1:planning*=0.3629 | 2:requirements_analysis=0.3134 | 3:fact_checking=0.2808 | 4:risk_assessment=0.2799 | 5:research*=0.2647 | 6:math=0.2634 | 7:incident_management=0.2580 | 8:accessibility_review=0.2568 | 9:design=0.2520 | 10:operations=0.2404
+PRE UNCERTAINTY: incident_management=0.2789 | fact_checking=0.2767 | accessibility_review=0.2651 | math=0.2649 | design=0.2640 | research*=0.2627 | requirements_analysis=0.2618
+
+SELECTED CANDIDATE = 3
+QUERY: What specific information should I provide first to organize my project plan and decide on the next steps?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Can you guide me on how to conduct a basic risk assessment for my business, including identifying potential risks, assessing their likelihood and impact, and determining control measures?
+  C1
+     Q: I want to check if my calculated value for the area of a circle is correct. Could you help me confirm this by providing the necessary information?
+  C2
+     Q: What key information should I share initially to ensure accurate translation results, considering preservation of language nuances?
+  C3 <== SELECTED
+     Q: What specific information should I provide first to organize my project plan and decide on the next steps?
+
+MAS RESPONSE: To effectively organize your project plan and determine the next steps, you should provide the following specific information:  1. **Project Objectives**: Clearly define the main goals of your project. What do you want to achieve?   2. **Scope**: Outline the boundaries of the project. What is included and what is excluded?   3. **Stakeholders**: Identify who is involved in the project. Who are the key stakeholders, and what are their roles and responsibilities?  4. **Timeline**: Provide an estimated timeline for the project. When do you expect to start and finish? Are there any critical deadlines?  5. **Resources**: List the resources available for the project, including budget, personnel, tools, and technology.  6. **Milestones**: Identify key milestones or deliverables that will mark significant points in the project timeline.  7. **Dependencies**: Note any dependencies that may affect the project. Are there tasks that must be completed before others can begin?  8. **Risks**: Highlight potential risks that could impact the project. What are the uncertainties, and how might they affect your goals?  9. **Contingencies**: Describe any contingency plans you have in place to address the identified risks.  10. **Priorities**: Indicate which tasks or objectives are the highest priority and should be addressed first.  Once you provide this information, we can work together to create 
+
+SENSOR TOP POSITIVE: planning*=+3.428 | requirements_analysis=+0.318 | risk_assessment=-1.078 | research*=-4.250 | documentation=-5.945 | fact_checking=-6.102 | customer_support_triage=-6.523
+SENSOR MOST NEGATIVE: database_design=-9.555 | accessibility_review=-9.172 | code*=-8.539 | math=-8.289 | qa_testing=-8.195
+
+GOOD TRUE-vs-FALSE FLIPS: 21
+  + code > qa_testing: before 0.2337 vs 0.2357 -> after 0.2244 vs 0.2217
+  + code > translation: before 0.2337 vs 0.2344 -> after 0.2244 vs 0.2181
+  + planning > accessibility_review: before 0.2103 vs 0.2651 -> after 0.3629 vs 0.2568
+  + planning > customer_support_triage: before 0.2103 vs 0.2219 -> after 0.3629 vs 0.2122
+  + planning > data: before 0.2103 vs 0.2306 -> after 0.3629 vs 0.2177
+  + planning > database_design: before 0.2103 vs 0.2223 -> after 0.3629 vs 0.2040
+  + planning > design: before 0.2103 vs 0.2640 -> after 0.3629 vs 0.2520
+  + planning > fact_checking: before 0.2103 vs 0.2767 -> after 0.3629 vs 0.2808
+  + planning > financial_analysis: before 0.2103 vs 0.2558 -> after 0.3629 vs 0.2402
+  + planning > incident_management: before 0.2103 vs 0.2789 -> after 0.3629 vs 0.2580
+  + planning > math: before 0.2103 vs 0.2649 -> after 0.3629 vs 0.2634
+  + planning > operations: before 0.2103 vs 0.2428 -> after 0.3629 vs 0.2404
+  + planning > qa_testing: before 0.2103 vs 0.2357 -> after 0.3629 vs 0.2217
+  + planning > requirements_analysis: before 0.2103 vs 0.2618 -> after 0.3629 vs 0.3134
+  + planning > risk_assessment: before 0.2103 vs 0.2212 -> after 0.3629 vs 0.2799
+BAD TRUE-vs-FALSE FLIPS: 3
+  - code > risk_assessment: before 0.2337 vs 0.2212 -> after 0.2244 vs 0.2799
+  - research > requirements_analysis: before 0.2627 vs 0.2618 -> after 0.2647 vs 0.3134
+  - research > risk_assessment: before 0.2627 vs 0.2212 -> after 0.2647 vs 0.2799
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_05_docs_qa_writing
+TRUTH: documentation, qa_testing, writing
+AUC: 0.549020 -> 0.745098 delta=+0.196078 ≈ +10.0 pair points
+
+PRE TOP: 1:incident_management=0.2672 | 2:database_design=0.2595 | 3:operations=0.2564 | 4:qa_testing*=0.2505 | 5:financial_analysis=0.2423 | 6:risk_assessment=0.2375 | 7:experiment_design=0.2311 | 8:fact_checking=0.2282 | 9:writing*=0.2263 | 10:data=0.2246
+POST TOP: 1:incident_management=0.2397 | 2:documentation*=0.2338 | 3:database_design=0.2301 | 4:qa_testing*=0.2264 | 5:experiment_design=0.2249 | 6:operations=0.2182 | 7:financial_analysis=0.2159 | 8:risk_assessment=0.2139 | 9:fact_checking=0.2134 | 10:planning=0.2123
+PRE UNCERTAINTY: incident_management=0.2672 | database_design=0.2595 | operations=0.2564 | qa_testing*=0.2505 | financial_analysis=0.2423 | risk_assessment=0.2375 | experiment_design=0.2311
+
+SELECTED CANDIDATE = 1
+QUERY: I need help with a customer support triage task. What specific information should I provide first so you can start assisting effectively?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Could you please walk me through how I could clean and summarize my sales data set?
+  C1 <== SELECTED
+     Q: I need help with a customer support triage task. What specific information should I provide first so you can start assisting effectively?
+  C2
+     Q: What kind of detailed defect report structure should I create to ensure comprehensive coverage of different types of bugs during unit testing?
+  C3
+     Q: Could you please walk through an example calculation for converting temperatures from Celsius to Fahrenheit?
+
+MAS RESPONSE: To assist you effectively with a customer support triage task, please provide the following specific information:  1. **Nature of the Issue**: Describe the problem or request the customer has raised. Is it a technical issue, billing question, product inquiry, etc.?  2. **Customer Details**: Include any relevant information about the customer, such as their account status, previous interactions, or any specific identifiers (e.g., ticket number).  3. **Context**: Provide background information that may be relevant to the issue, such as recent changes to the product or service, known outages, or updates that could affect the customer.  4. **Priority Level**: Indicate the urgency of the issue. Is it a critical problem affecting many users, or is it a minor concern?  5. **Desired Outcome**: What does the customer hope to achieve? Are they looking for a resolution, a refund, more information, etc.?  6. **Available Resources**: Mention any documentation, FAQs, or troubleshooting guides that are already available that could assist in resolving the issue.  7. **Previous Actions Taken**: If any steps have already been taken to address the issue, please outline them.  Providing this information will help me give you tailored advice on how to proceed with the triage task effectively.
+
+SENSOR TOP POSITIVE: documentation*=+0.387 | customer_support_triage=-0.246 | planning=-1.055 | risk_assessment=-2.664 | requirements_analysis=-2.988 | incident_management=-3.195 | design=-3.523
+SENSOR MOST NEGATIVE: code=-5.625 | experiment_design=-5.164 | translation=-5.117 | qa_testing*=-5.008 | database_design=-5.008
+
+GOOD TRUE-vs-FALSE FLIPS: 13
+  + documentation > accessibility_review: before 0.2080 vs 0.2180 -> after 0.2338 vs 0.1900
+  + documentation > data: before 0.2080 vs 0.2246 -> after 0.2338 vs 0.1944
+  + documentation > database_design: before 0.2080 vs 0.2595 -> after 0.2338 vs 0.2301
+  + documentation > experiment_design: before 0.2080 vs 0.2311 -> after 0.2338 vs 0.2249
+  + documentation > fact_checking: before 0.2080 vs 0.2282 -> after 0.2338 vs 0.2134
+  + documentation > financial_analysis: before 0.2080 vs 0.2423 -> after 0.2338 vs 0.2159
+  + documentation > math: before 0.2080 vs 0.2210 -> after 0.2338 vs 0.2019
+  + documentation > operations: before 0.2080 vs 0.2564 -> after 0.2338 vs 0.2182
+  + documentation > planning: before 0.2080 vs 0.2181 -> after 0.2338 vs 0.2123
+  + documentation > requirements_analysis: before 0.2080 vs 0.2087 -> after 0.2338 vs 0.1860
+  + documentation > research: before 0.2080 vs 0.2196 -> after 0.2338 vs 0.2097
+  + documentation > risk_assessment: before 0.2080 vs 0.2375 -> after 0.2338 vs 0.2139
+  + qa_testing > operations: before 0.2505 vs 0.2564 -> after 0.2264 vs 0.2182
+BAD TRUE-vs-FALSE FLIPS: 3
+  - writing > customer_support_triage: before 0.2263 vs 0.2071 -> after 0.2030 vs 0.2095
+  - writing > planning: before 0.2263 vs 0.2181 -> after 0.2030 vs 0.2123
+  - writing > research: before 0.2263 vs 0.2196 -> after 0.2030 vs 0.2097
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_02_risk_access_translation
+TRUTH: accessibility_review, risk_assessment, translation
+AUC: 0.960784 -> 0.921569 delta=-0.039216 ≈ -2.0 pair points
+
+PRE TOP: 1:accessibility_review*=0.4387 | 2:risk_assessment*=0.4327 | 3:financial_analysis=0.2669 | 4:requirements_analysis=0.2544 | 5:translation*=0.2355 | 6:research=0.2235 | 7:writing=0.2229 | 8:incident_management=0.2161 | 9:planning=0.2035 | 10:fact_checking=0.1988
+POST TOP: 1:risk_assessment*=0.4085 | 2:accessibility_review*=0.4055 | 3:fact_checking=0.3306 | 4:financial_analysis=0.2476 | 5:research=0.2395 | 6:requirements_analysis=0.2306 | 7:translation*=0.2173 | 8:writing=0.2100 | 9:incident_management=0.1957 | 10:planning=0.1724
+PRE UNCERTAINTY: accessibility_review*=0.4387 | risk_assessment*=0.4327 | financial_analysis=0.2669 | requirements_analysis=0.2544 | translation*=0.2355 | research=0.2235 | writing=0.2229
+
+SELECTED CANDIDATE = 3
+QUERY: What information should I provide first so that you can effectively perform a fact-checking task?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: How can I prioritize tasks based on their importance and urgency in a project schedule?
+  C1
+     Q: I need help with a customer support triage task. What information should I provide first so you can start analyzing my issue?
+  C2
+     Q: What key pieces of data or insights do I need to collect first to begin performing a comprehensive financial analysis on our budget and cash flow projections?
+  C3 <== SELECTED
+     Q: What information should I provide first so that you can effectively perform a fact-checking task?
+
+MAS RESPONSE: To effectively perform a fact-checking task, please provide the following information:  1. **Claim or Statement**: Clearly state the claim or assertion that needs to be fact-checked.  2. **Context**: Provide any relevant context surrounding the claim, including where it was found (e.g., article, speech, social media) and the date it was made.  3. **Source Information**: Include details about the sources that support or contradict the claim, if available. This could be links to articles, studies, or data.  4. **Specific Questions**: Outline any specific questions or aspects of the claim that you want to focus on during the fact-checking process.  5. **Relevance**: Explain why this claim is important or relevant to your needs.  With this information, I can better assist you in evaluating the accuracy of the claim.
+
+SENSOR TOP POSITIVE: fact_checking=+3.469 | research=+0.164 | customer_support_triage=-2.344 | documentation=-2.750 | planning=-3.492 | requirements_analysis=-3.508 | translation*=-3.562
+SENSOR MOST NEGATIVE: code=-6.477 | qa_testing=-5.547 | operations=-5.500 | database_design=-4.945 | incident_management=-4.859
+
+GOOD TRUE-vs-FALSE FLIPS: 0
+BAD TRUE-vs-FALSE FLIPS: 2
+  - translation > fact_checking: before 0.2355 vs 0.1988 -> after 0.2173 vs 0.3306
+  - translation > research: before 0.2355 vs 0.2235 -> after 0.2173 vs 0.2395
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_04_support_incident_ops
+TRUTH: customer_support_triage, incident_management, operations
+AUC: 0.784314 -> 0.725490 delta=-0.058824 ≈ -3.0 pair points
+
+PRE TOP: 1:incident_management*=0.4865 | 2:operations*=0.3525 | 3:math=0.3206 | 4:financial_analysis=0.3131 | 5:data=0.3109 | 6:risk_assessment=0.3107 | 7:planning=0.3099 | 8:requirements_analysis=0.3026 | 9:code=0.3014 | 10:database_design=0.2993
+POST TOP: 1:incident_management*=0.4307 | 2:operations*=0.3304 | 3:risk_assessment=0.3056 | 4:math=0.3042 | 5:financial_analysis=0.3031 | 6:data=0.2925 | 7:code=0.2882 | 8:planning=0.2861 | 9:database_design=0.2717 | 10:writing=0.2681
+PRE UNCERTAINTY: incident_management*=0.4865 | operations*=0.3525 | math=0.3206 | financial_analysis=0.3131 | data=0.3109 | risk_assessment=0.3107 | planning=0.3099
+
+SELECTED CANDIDATE = 3
+QUERY: I need help with a documentation task. What information should I provide first so you can help effectively?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: For a translation task, what are the key pieces of information needed to start accurately translating between languages?
+  C1
+     Q: I am unsure how accurate a given mathematical calculation is. Can you explain how it was calculated and confirm that my input values are correct?
+  C2
+     Q: What are some key considerations for designing a robust database structure that supports efficient querying and retrieval of large datasets?
+  C3 <== SELECTED
+     Q: I need help with a documentation task. What information should I provide first so you can help effectively?
+
+MAS RESPONSE: To assist you effectively with your documentation task, please provide the following information:  1. **Nature of the Task**: What specific documentation are you working on? (e.g., user manual, technical documentation, policy document)    2. **Current Status**: What have you completed so far, and what specific issues or challenges are you facing?  3. **Target Audience**: Who is the intended audience for this documentation? (e.g., end-users, developers, internal staff)  4. **Format and Tools**: What format are you using for the documentation? (e.g., Word, Markdown, Confluence) Are there any specific tools or software involved?  5. **Deadline**: Is there a timeline or deadline for this task?  Providing this information will help me understand your situation better and offer more tailored assistance.
+
+SENSOR TOP POSITIVE: documentation=-1.578 | customer_support_triage*=-2.234 | design=-2.609 | planning=-2.695 | requirements_analysis=-2.969 | research=-3.047 | writing=-3.141
+SENSOR MOST NEGATIVE: code=-5.172 | qa_testing=-4.820 | database_design=-4.750 | experiment_design=-4.516 | operations*=-4.469
+
+GOOD TRUE-vs-FALSE FLIPS: 0
+BAD TRUE-vs-FALSE FLIPS: 3
+  - customer_support_triage > accessibility_review: before 0.2672 vs 0.2635 -> after 0.2464 vs 0.2507
+  - customer_support_triage > qa_testing: before 0.2672 vs 0.2552 -> after 0.2464 vs 0.2467
+  - customer_support_triage > translation: before 0.2672 vs 0.2585 -> after 0.2464 vs 0.2467
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_03_data_db_requirements
+TRUTH: data, database_design, requirements_analysis
+AUC: 0.784314 -> 0.666667 delta=-0.117647 ≈ -6.0 pair points
+
+PRE TOP: 1:requirements_analysis*=0.3374 | 2:financial_analysis=0.3091 | 3:accessibility_review=0.2867 | 4:math=0.2801 | 5:data*=0.2734 | 6:incident_management=0.2689 | 7:design=0.2681 | 8:risk_assessment=0.2649 | 9:writing=0.2638 | 10:fact_checking=0.2627
+POST TOP: 1:requirements_analysis*=0.2787 | 2:financial_analysis=0.2774 | 3:math=0.2472 | 4:risk_assessment=0.2394 | 5:accessibility_review=0.2391 | 6:writing=0.2388 | 7:design=0.2360 | 8:incident_management=0.2360 | 9:data*=0.2301 | 10:fact_checking=0.2297
+PRE UNCERTAINTY: requirements_analysis*=0.3374 | financial_analysis=0.3091 | accessibility_review=0.2867 | math=0.2801 | data*=0.2734 | incident_management=0.2689 | design=0.2681
+
+SELECTED CANDIDATE = 3
+QUERY: I want help improving a piece of writing. What should I send you first so you can help effectively?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Can you help me identify high-risk areas by gathering basic information such as potential threats, impacts if they occur, and existing safeguards?
+  C1
+     Q: What specific test cases or defect detection methods should I run first to optimize my QA testing session?
+  C2
+     Q: What key elements should I analyze first for my financial analysis task?
+  C3 <== SELECTED
+     Q: I want help improving a piece of writing. What should I send you first so you can help effectively?
+
+MAS RESPONSE: To help you effectively improve your writing, please provide the following:  1. **The Text**: Share the piece of writing you want to improve. This could be an essay, article, report, or any other form of writing.  2. **Specific Goals**: Let me know what aspects you want to focus on. For example, are you looking for clarity, conciseness, grammar, style, or overall structure?  3. **Target Audience**: Describe who the intended audience is, as this can influence the tone and style of the writing.  4. **Any Guidelines**: If there are specific guidelines or requirements (like word count, format, or style guide), please include those as well.  Once I have this information, I can provide more tailored feedback and suggestions!
+
+SENSOR TOP POSITIVE: writing=+0.934 | documentation=-1.461 | customer_support_triage=-1.539 | planning=-1.547 | fact_checking=-1.828 | requirements_analysis*=-1.836 | risk_assessment=-2.133
+SENSOR MOST NEGATIVE: code=-5.184 | database_design*=-4.188 | qa_testing=-3.664 | math=-3.531 | operations=-3.469
+
+GOOD TRUE-vs-FALSE FLIPS: 0
+BAD TRUE-vs-FALSE FLIPS: 6
+  - data > design: before 0.2734 vs 0.2681 -> after 0.2301 vs 0.2360
+  - data > incident_management: before 0.2734 vs 0.2689 -> after 0.2301 vs 0.2360
+  - data > risk_assessment: before 0.2734 vs 0.2649 -> after 0.2301 vs 0.2394
+  - data > writing: before 0.2734 vs 0.2638 -> after 0.2301 vs 0.2388
+  - database_design > operations: before 0.2615 vs 0.2607 -> after 0.2219 vs 0.2290
+  - database_design > research: before 0.2615 vs 0.2497 -> after 0.2219 vs 0.2254
+
+
+##############################################################################################################
+ROUND 21
+##############################################################################################################
+GLOBAL: 0.741176 -> 0.796078 delta=+0.054902 ≈ +14.0/255 pair-ordering points
+
+PER-SYSTEM CONTRIBUTION:
+  simple5_05_docs_qa_writing               0.725490 -> 0.882353 delta=+0.156863 pairs≈+8.0
+  simple5_01_code_plan_research            0.666667 -> 0.745098 delta=+0.078431 pairs≈+4.0
+  simple5_03_data_db_requirements          0.666667 -> 0.686275 delta=+0.019608 pairs≈+1.0
+  simple5_02_risk_access_translation       0.941176 -> 0.960784 delta=+0.019608 pairs≈+1.0
+  simple5_04_support_incident_ops          0.705882 -> 0.705882 delta=+0.000000 pairs≈+0.0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_05_docs_qa_writing
+TRUTH: documentation, qa_testing, writing
+AUC: 0.725490 -> 0.882353 delta=+0.156863 ≈ +8.0 pair points
+
+PRE TOP: 1:research=0.2497 | 2:incident_management=0.2429 | 3:writing*=0.2382 | 4:operations=0.2223 | 5:database_design=0.2218 | 6:qa_testing*=0.2217 | 7:experiment_design=0.2199 | 8:fact_checking=0.2180 | 9:financial_analysis=0.2171 | 10:risk_assessment=0.2159
+POST TOP: 1:research=0.2732 | 2:incident_management=0.2524 | 3:writing*=0.2433 | 4:documentation*=0.2406 | 5:qa_testing*=0.2361 | 6:fact_checking=0.2337 | 7:risk_assessment=0.2316 | 8:database_design=0.2297 | 9:operations=0.2287 | 10:experiment_design=0.2262
+PRE UNCERTAINTY: research=0.2497 | incident_management=0.2429 | writing*=0.2382 | operations=0.2223 | database_design=0.2218 | qa_testing*=0.2217 | experiment_design=0.2199
+
+SELECTED CANDIDATE = 0
+QUERY: What should I consider first during the risk assessment phase?
+
+ALL 4 GENERATED CANDIDATES:
+  C0 <== SELECTED
+     Q: What should I consider first during the risk assessment phase?
+  C1
+     Q: I need help starting a new project. How should I prioritize my first steps?
+  C2
+     Q: What should I check first to improve the consistency and reliability of our production processes?
+  C3
+     Q: What specific information should I provide first so you can assist effectively with the documentation task?
+
+MAS RESPONSE: During the risk assessment phase, it is crucial to consider several key factors to ensure a comprehensive evaluation of potential risks. Here are the primary considerations:  1. **Scope Definition**: Clearly define the scope of the assessment. Identify the project, system, or process being evaluated, including its boundaries and objectives.  2. **Stakeholder Identification**: Identify all relevant stakeholders, including project managers, team members, clients, and end-users. Understanding their perspectives and concerns is essential for a thorough assessment.  3. **Asset Identification**: Catalog the assets involved in the project or system, including hardware, software, data, and personnel. Determine which assets are critical to the operation and which could have significant impacts if compromised.  4. **Threat Identification**: Identify potential threats that could exploit vulnerabilities in the system. This includes natural disasters, cyber threats, human errors, and operational failures.  5. **Vulnerability Assessment**: Evaluate the vulnerabilities present in the system or process. This involves analyzing weaknesses that could be exploited by identified threats.  6. **Impact Analysis**: Assess the potential impact of each identified risk on the organization, project, or system. Consider factors such as financial loss, reputational damage, legal implications, and operation
+
+SENSOR TOP POSITIVE: planning=-2.898 | documentation*=-2.906 | risk_assessment=-3.117 | research=-3.141 | requirements_analysis=-3.406 | customer_support_triage=-4.359 | operations=-4.609
+SENSOR MOST NEGATIVE: translation=-7.883 | database_design=-7.148 | code=-6.523 | qa_testing*=-6.234 | accessibility_review=-6.211
+
+GOOD TRUE-vs-FALSE FLIPS: 8
+  + documentation > database_design: before 0.2155 vs 0.2218 -> after 0.2406 vs 0.2297
+  + documentation > experiment_design: before 0.2155 vs 0.2199 -> after 0.2406 vs 0.2262
+  + documentation > fact_checking: before 0.2155 vs 0.2180 -> after 0.2406 vs 0.2337
+  + documentation > financial_analysis: before 0.2155 vs 0.2171 -> after 0.2406 vs 0.2245
+  + documentation > operations: before 0.2155 vs 0.2223 -> after 0.2406 vs 0.2287
+  + documentation > risk_assessment: before 0.2155 vs 0.2159 -> after 0.2406 vs 0.2316
+  + qa_testing > database_design: before 0.2217 vs 0.2218 -> after 0.2361 vs 0.2297
+  + qa_testing > operations: before 0.2217 vs 0.2223 -> after 0.2361 vs 0.2287
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_01_code_plan_research
+TRUTH: code, planning, research
+AUC: 0.666667 -> 0.745098 delta=+0.078431 ≈ +4.0 pair points
+
+PRE TOP: 1:operations=0.2956 | 2:math=0.2849 | 3:incident_management=0.2803 | 4:planning*=0.2782 | 5:fact_checking=0.2752 | 6:research*=0.2709 | 7:requirements_analysis=0.2691 | 8:financial_analysis=0.2651 | 9:writing=0.2636 | 10:accessibility_review=0.2620
+POST TOP: 1:planning*=0.3724 | 2:requirements_analysis=0.3049 | 3:risk_assessment=0.2971 | 4:operations=0.2854 | 5:research*=0.2796 | 6:incident_management=0.2793 | 7:fact_checking=0.2723 | 8:math=0.2710 | 9:financial_analysis=0.2605 | 10:accessibility_review=0.2583
+PRE UNCERTAINTY: operations=0.2956 | math=0.2849 | incident_management=0.2803 | planning*=0.2782 | fact_checking=0.2752 | research*=0.2709 | requirements_analysis=0.2691
+
+SELECTED CANDIDATE = 1
+QUERY: What specific information should I provide first so you can help me plan out the next steps for my project?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Could you translate a paragraph from English into Spanish while maintaining the original meaning and style as closely as possible?
+  C1 <== SELECTED
+     Q: What specific information should I provide first so you can help me plan out the next steps for my project?
+  C2
+     Q: How do I start optimizing the user experience for a mobile app interface to enhance navigation and ease of use?
+  C3
+     Q: What specific information should I provide first so you can start analyzing the potential risks associated with our new software deployment?
+
+MAS RESPONSE: To help you effectively plan out the next steps for your project, please provide the following specific information:  1. **Project Overview**: A brief description of the project, including its purpose and objectives.  2. **Goals**: What are the specific goals you want to achieve with this project? Are there any measurable outcomes?  3. **Timeline**: What is the expected timeline for the project? Are there any key deadlines or milestones?  4. **Resources**: What resources do you currently have available (e.g., budget, team members, tools, technology)?  5. **Stakeholders**: Who are the key stakeholders involved in the project? What are their roles and interests?  6. **Dependencies**: Are there any tasks or components that depend on the completion of other tasks?  7. **Risks**: What potential risks or challenges do you foresee that could impact the project?  8. **Contingencies**: Do you have any backup plans or contingencies in place for addressing risks?  9. **Priorities**: Are there specific tasks or goals that are more critical than others?  Once I have this information, I can help you outline a detailed plan, including decomposition of tasks, prioritization, resource allocation, and risk management strategies.
+
+SENSOR TOP POSITIVE: planning*=+4.527 | risk_assessment=+1.479 | requirements_analysis=+0.633 | research*=-3.445 | documentation=-4.957 | fact_checking=-4.984 | customer_support_triage=-4.992
+SENSOR MOST NEGATIVE: code*=-8.393 | translation=-7.761 | database_design=-7.754 | math=-7.727 | operations=-7.680
+
+GOOD TRUE-vs-FALSE FLIPS: 7
+  + code > data: before 0.2435 vs 0.2455 -> after 0.2415 vs 0.2409
+  + planning > incident_management: before 0.2782 vs 0.2803 -> after 0.3724 vs 0.2793
+  + planning > math: before 0.2782 vs 0.2849 -> after 0.3724 vs 0.2710
+  + planning > operations: before 0.2782 vs 0.2956 -> after 0.3724 vs 0.2854
+  + research > fact_checking: before 0.2709 vs 0.2752 -> after 0.2796 vs 0.2723
+  + research > incident_management: before 0.2709 vs 0.2803 -> after 0.2796 vs 0.2793
+  + research > math: before 0.2709 vs 0.2849 -> after 0.2796 vs 0.2710
+BAD TRUE-vs-FALSE FLIPS: 3
+  - code > risk_assessment: before 0.2435 vs 0.2268 -> after 0.2415 vs 0.2971
+  - research > requirements_analysis: before 0.2709 vs 0.2691 -> after 0.2796 vs 0.3049
+  - research > risk_assessment: before 0.2709 vs 0.2268 -> after 0.2796 vs 0.2971
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_03_data_db_requirements
+TRUTH: data, database_design, requirements_analysis
+AUC: 0.666667 -> 0.686275 delta=+0.019608 ≈ +1.0 pair points
+
+PRE TOP: 1:requirements_analysis*=0.3862 | 2:operations=0.2652 | 3:financial_analysis=0.2651 | 4:risk_assessment=0.2528 | 5:math=0.2496 | 6:accessibility_review=0.2490 | 7:writing=0.2360 | 8:incident_management=0.2330 | 9:data*=0.2251 | 10:fact_checking=0.2240
+POST TOP: 1:requirements_analysis*=0.3577 | 2:financial_analysis=0.2715 | 3:math=0.2579 | 4:risk_assessment=0.2537 | 5:accessibility_review=0.2535 | 6:operations=0.2531 | 7:writing=0.2440 | 8:data*=0.2369 | 9:incident_management=0.2363 | 10:fact_checking=0.2260
+PRE UNCERTAINTY: requirements_analysis*=0.3862 | operations=0.2652 | financial_analysis=0.2651 | risk_assessment=0.2528 | math=0.2496 | accessibility_review=0.2490 | writing=0.2360
+
+SELECTED CANDIDATE = 1
+QUERY: What specific aspects or elements should I investigate first to get started with researching the impact of climate change on global agriculture?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: What specific information do I need to provide first to ensure effective incident management?
+  C1 <== SELECTED
+     Q: What specific aspects or elements should I investigate first to get started with researching the impact of climate change on global agriculture?
+  C2
+     Q: How should I diagnose the reliability issues with our current manufacturing process?
+  C3
+     Q: Please explain to me the general steps involved in preparing a clean dataset for machine learning. Specifically, what should I look at before starting?
+
+MAS RESPONSE: To effectively research the impact of climate change on global agriculture, it is important to explore a variety of interconnected aspects. Begin with a thorough literature review to understand existing research, including meta-analyses that summarize findings across multiple studies. This will provide a solid foundation for your investigation.  Next, examine climate data, focusing on historical and projected changes in temperature, precipitation patterns, and the frequency of extreme weather events. Sources like the IPCC and NOAA can offer valuable datasets. Investigate how these climate variables specifically affect agricultural productivity, analyzing historical crop yield data for key crops such as wheat, rice, maize, and soybeans.  Soil health is another critical area to explore, as climate change can lead to erosion, nutrient depletion, and alterations in soil moisture levels. Additionally, consider the dynamics of pests and diseases, as climate change can shift their prevalence and distribution, impacting crop health and yields.  Water resources are vital for agriculture, so assess how climate change influences water availability and management for irrigation. This ties into the broader economic implications, where you should evaluate how climate change affects market prices, production costs, and food security.  Investigate regional variability in the impacts of climate
+
+SENSOR TOP POSITIVE: research=+0.648 | customer_support_triage=-1.469 | fact_checking=-1.523 | risk_assessment=-1.859 | requirements_analysis*=-2.000 | experiment_design=-2.078 | planning=-2.125
+SENSOR MOST NEGATIVE: code=-4.555 | translation=-4.441 | database_design*=-3.922 | accessibility_review=-3.506 | math=-3.328
+
+GOOD TRUE-vs-FALSE FLIPS: 1
+  + data > incident_management: before 0.2251 vs 0.2330 -> after 0.2369 vs 0.2363
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_02_risk_access_translation
+TRUTH: accessibility_review, risk_assessment, translation
+AUC: 0.941176 -> 0.960784 delta=+0.019608 ≈ +1.0 pair points
+
+PRE TOP: 1:risk_assessment*=0.4165 | 2:accessibility_review*=0.4117 | 3:fact_checking=0.3041 | 4:requirements_analysis=0.2571 | 5:financial_analysis=0.2539 | 6:translation*=0.2514 | 7:planning=0.2432 | 8:operations=0.2415 | 9:research=0.2301 | 10:incident_management=0.2257
+POST TOP: 1:risk_assessment*=0.4324 | 2:accessibility_review*=0.4318 | 3:fact_checking=0.3087 | 4:planning=0.2785 | 5:translation*=0.2704 | 6:requirements_analysis=0.2604 | 7:financial_analysis=0.2600 | 8:research=0.2535 | 9:operations=0.2462 | 10:incident_management=0.2365
+PRE UNCERTAINTY: risk_assessment*=0.4165 | accessibility_review*=0.4117 | fact_checking=0.3041 | requirements_analysis=0.2571 | financial_analysis=0.2539 | translation*=0.2514 | planning=0.2432
+
+SELECTED CANDIDATE = 0
+QUERY: I need to find reliable sources and valid evidence to support a recent proposal in order to make an informed decision. How can I proceed?
+
+ALL 4 GENERATED CANDIDATES:
+  C0 <== SELECTED
+     Q: I need to find reliable sources and valid evidence to support a recent proposal in order to make an informed decision. How can I proceed?
+  C1
+     Q: What specific mathematical data or calculations should I provide first so that you can quickly determine if my model predicts results accurately?
+  C2
+     Q: Can you help me verify the date format and source credibility of the information provided?
+  C3
+     Q: I need help with a recent incident where our server experienced downtime. Can you walk me through how to determine which resources were impacted and their extent?
+
+MAS RESPONSE: To find reliable sources and valid evidence to support your proposal, follow these structured steps:  ### 1. Define Your Information Needs    - **Identify Key Questions**: What specific aspects of your proposal need support? (e.g., market trends, financial projections, regulatory compliance)    - **Determine Scope**: Are you looking for quantitative data, qualitative insights, or both?  ### 2. Identify Reliable Sources    - **Academic Journals**: Use databases like JSTOR, Google Scholar, or PubMed for peer-reviewed articles.    - **Industry Reports**: Look for reports from reputable organizations (e.g., Gartner, McKinsey, or industry-specific associations).    - **Government Publications**: Access data from government websites (e.g., census data, economic reports).    - **News Outlets**: Use established news organizations with a reputation for fact-checking (e.g., BBC, Reuters).    - **Books and White Papers**: Search for books authored by experts in the field or white papers from credible institutions.  ### 3. Evaluate the Evidence    - **Authorship**: Check the credentials of the authors and their affiliations.    - **Publication Date**: Ensure the information is current and relevant to your proposal.    - **Citations**: Look for sources that are frequently cited by other reputable works.    - **Bias and Objectivity**: Assess whether the source presents information objectivel
+
+SENSOR TOP POSITIVE: research=-1.516 | fact_checking=-3.500 | requirements_analysis=-4.062 | customer_support_triage=-4.078 | design=-4.156 | data=-4.453 | documentation=-4.484
+SENSOR MOST NEGATIVE: code=-6.719 | translation*=-6.500 | database_design=-6.031 | qa_testing=-5.375 | planning=-5.359
+
+GOOD TRUE-vs-FALSE FLIPS: 2
+  + translation > financial_analysis: before 0.2514 vs 0.2539 -> after 0.2704 vs 0.2600
+  + translation > requirements_analysis: before 0.2514 vs 0.2571 -> after 0.2704 vs 0.2604
+BAD TRUE-vs-FALSE FLIPS: 1
+  - translation > planning: before 0.2514 vs 0.2432 -> after 0.2704 vs 0.2785
+
+
+##############################################################################################################
+ROUND 24
+##############################################################################################################
+GLOBAL: 0.745098 -> 0.823529 delta=+0.078431 ≈ +20.0/255 pair-ordering points
+
+PER-SYSTEM CONTRIBUTION:
+  simple5_04_support_incident_ops          0.725490 -> 0.882353 delta=+0.156863 pairs≈+8.0
+  simple5_01_code_plan_research            0.647059 -> 0.803922 delta=+0.156863 pairs≈+8.0
+  simple5_05_docs_qa_writing               0.764706 -> 0.843137 delta=+0.078431 pairs≈+4.0
+  simple5_03_data_db_requirements          0.666667 -> 0.686275 delta=+0.019608 pairs≈+1.0
+  simple5_02_risk_access_translation       0.921569 -> 0.901961 delta=-0.019608 pairs≈-1.0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_04_support_incident_ops
+TRUTH: customer_support_triage, incident_management, operations
+AUC: 0.725490 -> 0.882353 delta=+0.156863 ≈ +8.0 pair points
+
+PRE TOP: 1:incident_management*=0.3997 | 2:operations*=0.3174 | 3:math=0.3097 | 4:financial_analysis=0.2959 | 5:risk_assessment=0.2938 | 6:planning=0.2800 | 7:data=0.2763 | 8:code=0.2735 | 9:database_design=0.2628 | 10:accessibility_review=0.2616
+POST TOP: 1:incident_management*=0.3799 | 2:operations*=0.2871 | 3:math=0.2758 | 4:financial_analysis=0.2721 | 5:risk_assessment=0.2565 | 6:code=0.2525 | 7:planning=0.2491 | 8:data=0.2476 | 9:customer_support_triage*=0.2412 | 10:database_design=0.2396
+PRE UNCERTAINTY: incident_management*=0.3997 | operations*=0.3174 | math=0.3097 | financial_analysis=0.2959 | risk_assessment=0.2938 | planning=0.2800 | data=0.2763
+
+SELECTED CANDIDATE = 3
+QUERY: What specific diagnostic clues or initial symptoms should I report first so that you can more effectively triage this issue?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Could you help me gather some basic guidelines and templates related to creating good quality technical documents?
+  C1
+     Q: How should I proceed to validate the accuracy of a statistical model?
+  C2
+     Q: What are some important points to consider when conducting an accessibility review of my web application?
+  C3 <== SELECTED
+     Q: What specific diagnostic clues or initial symptoms should I report first so that you can more effectively triage this issue?
+
+MAS RESPONSE: To effectively triage your issue, please provide the following diagnostic clues or initial symptoms:  1. **Description of the Problem**: Clearly explain what the issue is, including any error messages or unexpected behavior.  2. **Steps to Reproduce**: Outline the specific steps you took leading up to the issue. This helps in reproducing the problem.  3. **Frequency of the Issue**: Indicate whether this is a one-time occurrence or if it happens consistently.  4. **Device and Environment**: Specify the device you are using (e.g., PC, smartphone, tablet), the operating system (e.g., Windows, macOS, iOS, Android), and the version of the software or application involved.  5. **Recent Changes**: Mention any recent changes made to your system or application, such as updates, installations, or configuration changes.  6. **Network Conditions**: If applicable, describe your network environment (e.g., Wi-Fi, Ethernet, VPN) and any connectivity issues.  7. **Screenshots or Logs**: If possible, provide screenshots of error messages or logs that may help in diagnosing the issue.  By providing this information, I can better understand the context and severity of the problem, allowing for more effective triage and support.
+
+SENSOR TOP POSITIVE: customer_support_triage*=+1.415 | incident_management*=-0.992 | risk_assessment=-3.156 | research=-3.320 | qa_testing=-3.531 | fact_checking=-3.547 | documentation=-3.992
+SENSOR MOST NEGATIVE: database_design=-6.049 | math=-5.883 | writing=-5.742 | translation=-5.643 | design=-4.883
+
+GOOD TRUE-vs-FALSE FLIPS: 8
+  + customer_support_triage > accessibility_review: before 0.2327 vs 0.2616 -> after 0.2412 vs 0.2300
+  + customer_support_triage > database_design: before 0.2327 vs 0.2628 -> after 0.2412 vs 0.2396
+  + customer_support_triage > design: before 0.2327 vs 0.2556 -> after 0.2412 vs 0.2388
+  + customer_support_triage > documentation: before 0.2327 vs 0.2390 -> after 0.2412 vs 0.2084
+  + customer_support_triage > qa_testing: before 0.2327 vs 0.2443 -> after 0.2412 vs 0.2123
+  + customer_support_triage > requirements_analysis: before 0.2327 vs 0.2537 -> after 0.2412 vs 0.2310
+  + customer_support_triage > research: before 0.2327 vs 0.2544 -> after 0.2412 vs 0.2242
+  + customer_support_triage > writing: before 0.2327 vs 0.2479 -> after 0.2412 vs 0.2304
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_01_code_plan_research
+TRUTH: code, planning, research
+AUC: 0.647059 -> 0.803922 delta=+0.156863 ≈ +8.0 pair points
+
+PRE TOP: 1:planning*=0.3565 | 2:requirements_analysis=0.2985 | 3:operations=0.2983 | 4:incident_management=0.2860 | 5:risk_assessment=0.2845 | 6:math=0.2845 | 7:accessibility_review=0.2814 | 8:financial_analysis=0.2765 | 9:research*=0.2724 | 10:writing=0.2723
+POST TOP: 1:planning*=0.3601 | 2:financial_analysis=0.2843 | 3:research*=0.2842 | 4:incident_management=0.2799 | 5:requirements_analysis=0.2786 | 6:operations=0.2731 | 7:accessibility_review=0.2723 | 8:risk_assessment=0.2722 | 9:math=0.2709 | 10:writing=0.2683
+PRE UNCERTAINTY: planning*=0.3565 | requirements_analysis=0.2985 | operations=0.2983 | incident_management=0.2860 | risk_assessment=0.2845 | math=0.2845 | accessibility_review=0.2814
+
+SELECTED CANDIDATE = 1
+QUERY: What specific information should I provide first so you can start helping me with my incident management task?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: What are the essential details I need to know before starting a translation task?
+  C1 <== SELECTED
+     Q: What specific information should I provide first so you can start helping me with my incident management task?
+  C2
+     Q: What specific facts should I verify to ensure accuracy in my report?
+  C3
+     Q: What specific information should I provide first so you can help classify my computer issue?
+
+MAS RESPONSE: To assist you effectively with your incident management task, please provide the following specific information:  1. **Objective**: What is the primary goal of your incident management task? Are you aiming to improve response times, reduce incident frequency, enhance communication, etc.?  2. **Scope**: What types of incidents are you managing? (e.g., IT incidents, safety incidents, customer service issues)  3. **Current Process**: Describe your current incident management process. What tools or systems are you using? What are the existing workflows?  4. **Stakeholders**: Who are the key stakeholders involved in the incident management process? (e.g., IT team, management, customers)  5. **Resources**: What resources do you have available? This includes personnel, tools, budget, and time.  6. **Challenges**: What specific challenges or pain points are you facing in your current incident management process?  7. **Timeline**: What is your desired timeline for implementing improvements or changes?  8. **Metrics**: What metrics or KPIs are you currently using to measure the effectiveness of your incident management process?  9. **Risks**: Are there any known risks or concerns that could impact your incident management efforts?  Once I have this information, I can help you with goal setting, decomposition, prioritization, resource allocation, milestones, dependencies, risk management,
+
+SENSOR TOP POSITIVE: planning*=+2.105 | risk_assessment=-2.789 | requirements_analysis=-4.027 | customer_support_triage=-5.336 | research*=-5.422 | incident_management=-5.594 | fact_checking=-6.445
+SENSOR MOST NEGATIVE: code*=-10.215 | database_design=-9.703 | math=-9.680 | qa_testing=-9.215 | accessibility_review=-9.078
+
+GOOD TRUE-vs-FALSE FLIPS: 8
+  + code > data: before 0.2501 vs 0.2581 -> after 0.2538 vs 0.2510
+  + code > design: before 0.2501 vs 0.2596 -> after 0.2538 vs 0.2449
+  + research > accessibility_review: before 0.2724 vs 0.2814 -> after 0.2842 vs 0.2723
+  + research > incident_management: before 0.2724 vs 0.2860 -> after 0.2842 vs 0.2799
+  + research > math: before 0.2724 vs 0.2845 -> after 0.2842 vs 0.2709
+  + research > operations: before 0.2724 vs 0.2983 -> after 0.2842 vs 0.2731
+  + research > requirements_analysis: before 0.2724 vs 0.2985 -> after 0.2842 vs 0.2786
+  + research > risk_assessment: before 0.2724 vs 0.2845 -> after 0.2842 vs 0.2722
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_05_docs_qa_writing
+TRUTH: documentation, qa_testing, writing
+AUC: 0.764706 -> 0.843137 delta=+0.078431 ≈ +4.0 pair points
+
+PRE TOP: 1:research=0.2405 | 2:documentation*=0.2344 | 3:incident_management=0.2277 | 4:risk_assessment=0.2204 | 5:database_design=0.2175 | 6:fact_checking=0.2172 | 7:writing*=0.2155 | 8:operations=0.2118 | 9:qa_testing*=0.2108 | 10:math=0.2073
+POST TOP: 1:research=0.2492 | 2:documentation*=0.2384 | 3:incident_management=0.2349 | 4:writing*=0.2289 | 5:database_design=0.2274 | 6:operations=0.2252 | 7:risk_assessment=0.2228 | 8:qa_testing*=0.2215 | 9:financial_analysis=0.2185 | 10:fact_checking=0.2168
+PRE UNCERTAINTY: research=0.2405 | documentation*=0.2344 | incident_management=0.2277 | risk_assessment=0.2204 | database_design=0.2175 | fact_checking=0.2172 | writing*=0.2155
+
+SELECTED CANDIDATE = 1
+QUERY: What specific pieces of information or details should I provide initially to get started with a requirements analysis task?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Could you provide guidance on how to calculate the mean of a set of numbers provided by me?
+  C1 <== SELECTED
+     Q: What specific pieces of information or details should I provide initially to get started with a requirements analysis task?
+  C2
+     Q: What should I start doing first to begin a comprehensive risk assessment task?
+  C3
+     Q: First, could you recommend where I should start providing information for a detailed financial analysis task?
+
+MAS RESPONSE: To effectively initiate a requirements analysis task, it's crucial to gather and provide specific pieces of information that will guide the process. Here are the key details to include:  - **Project Overview**: A brief description of the project or system, including its purpose and goals.  - **Stakeholders**: A list of key stakeholders involved, such as users, clients, and project sponsors, along with their roles and responsibilities.  - **Scope**: A clear definition of the project boundaries, specifying what is included and excluded, as well as any constraints or limitations.  - **Current State**: An overview of the existing system or process, if applicable, including any known issues or pain points.  - **User Needs**: Information about the target users and their needs, including any developed user personas or profiles.  - **Business Objectives**: Key business goals that the project aims to achieve, along with metrics for success or performance indicators.  - **Regulatory and Compliance Requirements**: Any industry standards or regulations that must be adhered to during the project.  - **Timeline and Milestones**: An outline of the project timeline, including key milestones and deadlines.  - **Budget Constraints**: An overview of any financial limitations or budgetary considerations that may impact the project.  - **Tools and Technologies**: Information about any specific tool
+
+SENSOR TOP POSITIVE: planning=-2.664 | requirements_analysis=-3.246 | research=-3.969 | customer_support_triage=-3.984 | risk_assessment=-4.828 | experiment_design=-4.938 | fact_checking=-5.234
+SENSOR MOST NEGATIVE: code=-8.648 | database_design=-8.039 | translation=-7.062 | accessibility_review=-7.004 | data=-6.984
+
+GOOD TRUE-vs-FALSE FLIPS: 4
+  + qa_testing > fact_checking: before 0.2108 vs 0.2172 -> after 0.2215 vs 0.2168
+  + writing > database_design: before 0.2155 vs 0.2175 -> after 0.2289 vs 0.2274
+  + writing > fact_checking: before 0.2155 vs 0.2172 -> after 0.2289 vs 0.2168
+  + writing > risk_assessment: before 0.2155 vs 0.2204 -> after 0.2289 vs 0.2228
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_03_data_db_requirements
+TRUTH: data, database_design, requirements_analysis
+AUC: 0.666667 -> 0.686275 delta=+0.019608 ≈ +1.0 pair points
+
+PRE TOP: 1:requirements_analysis*=0.3464 | 2:incident_management=0.2569 | 3:operations=0.2542 | 4:financial_analysis=0.2506 | 5:risk_assessment=0.2484 | 6:accessibility_review=0.2424 | 7:math=0.2389 | 8:writing=0.2340 | 9:fact_checking=0.2247 | 10:data*=0.2232
+POST TOP: 1:requirements_analysis*=0.3661 | 2:operations=0.2813 | 3:incident_management=0.2803 | 4:risk_assessment=0.2740 | 5:financial_analysis=0.2653 | 6:math=0.2532 | 7:accessibility_review=0.2509 | 8:writing=0.2397 | 9:fact_checking=0.2345 | 10:data*=0.2310
+PRE UNCERTAINTY: requirements_analysis*=0.3464 | incident_management=0.2569 | operations=0.2542 | financial_analysis=0.2506 | risk_assessment=0.2484 | accessibility_review=0.2424 | math=0.2389
+
+SELECTED CANDIDATE = 2
+QUERY: What initial data points or insights should I gather first to effectively manage and prioritize an incident within the framework of incident management?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: Could you help me review a recent article on the effects of remote working during the pandemic?
+  C1
+     Q: What specific information or log files should I check first to ensure that the QA testing tools are properly configured and functioning correctly?
+  C2 <== SELECTED
+     Q: What initial data points or insights should I gather first to effectively manage and prioritize an incident within the framework of incident management?
+  C3
+     Q: Could you help me fact check a recent news article about the impact of climate change on polar bear populations?
+
+MAS RESPONSE: To effectively manage and prioritize an incident within the framework of incident management, it is essential to gather a comprehensive set of initial data points and insights. Start with a clear and concise incident description that includes what happened, when it occurred, and the systems or services affected. This should be accompanied by an impact assessment that identifies the number of users impacted, their roles, and the potential business consequences, such as effects on operations, revenue, and customer satisfaction.  Next, classify the incident based on its severity and urgency, using predefined criteria to establish a priority level. Document the exact time the incident was reported and any relevant timestamps related to its progression. Understanding the source of the incident—whether it was detected through user reports or automated monitoring—is also crucial, as is noting the current status of the incident and any actions taken so far.  Identify any dependencies that may be affected by the incident, as well as key stakeholders who need to be informed or consulted throughout the incident management process. Gathering historical data related to similar incidents can provide valuable insights into patterns and previous resolutions, which can inform your approach to the current situation.  Additionally, consider any regulatory or compliance requirements that may be re
+
+SENSOR TOP POSITIVE: risk_assessment=+0.070 | customer_support_triage=-1.801 | incident_management=-1.818 | requirements_analysis*=-1.859 | research=-2.016 | planning=-2.461 | fact_checking=-2.461
+SENSOR MOST NEGATIVE: translation=-5.656 | math=-5.297 | code=-5.133 | financial_analysis=-4.773 | database_design*=-4.672
+
+GOOD TRUE-vs-FALSE FLIPS: 1
+  + database_design > design: before 0.2073 vs 0.2085 -> after 0.2281 vs 0.2277
+BAD TRUE-vs-FALSE FLIPS: 0
+
+--------------------------------------------------------------------------------------------------------------
+SYSTEM: simple5_02_risk_access_translation
+TRUTH: accessibility_review, risk_assessment, translation
+AUC: 0.921569 -> 0.901961 delta=-0.019608 ≈ -1.0 pair points
+
+PRE TOP: 1:risk_assessment*=0.4361 | 2:accessibility_review*=0.4326 | 3:fact_checking=0.3203 | 4:incident_management=0.2804 | 5:requirements_analysis=0.2801 | 6:financial_analysis=0.2730 | 7:translation*=0.2687 | 8:planning=0.2633 | 9:research=0.2556 | 10:math=0.2503
+POST TOP: 1:risk_assessment*=0.4464 | 2:accessibility_review*=0.4167 | 3:experiment_design=0.2961 | 4:fact_checking=0.2958 | 5:planning=0.2587 | 6:requirements_analysis=0.2567 | 7:incident_management=0.2541 | 8:translation*=0.2437 | 9:research=0.2410 | 10:financial_analysis=0.2396
+PRE UNCERTAINTY: risk_assessment*=0.4361 | accessibility_review*=0.4326 | fact_checking=0.3203 | incident_management=0.2804 | requirements_analysis=0.2801 | financial_analysis=0.2730 | translation*=0.2687
+
+SELECTED CANDIDATE = 3
+QUERY: What specific types of datasets or experimental conditions should I provide first so you can best determine the accuracy and consistency of the statistical results?
+
+ALL 4 GENERATED CANDIDATES:
+  C0
+     Q: For a recent scientific study supporting a new medical treatment, which key aspects should I examine when compiling the review?
+  C1
+     Q: What specific details or aspects should I share first so you can best understand my goal in creating this experiment design?
+  C2
+     Q: What key details should I focus on when preparing a comprehensive review and analysis report for the latest scientific research paper that supports a novel medical treatment?
+  C3 <== SELECTED
+     Q: What specific types of datasets or experimental conditions should I provide first so you can best determine the accuracy and consistency of the statistical results?
+
+MAS RESPONSE: To effectively determine the accuracy and consistency of statistical results, you should provide the following types of datasets and experimental conditions:  1. **Dataset Characteristics**:    - **Sample Size**: Indicate the number of observations or data points in the dataset. Larger sample sizes generally provide more reliable results.    - **Data Type**: Specify whether the data is categorical, continuous, ordinal, etc. This affects the choice of statistical tests.    - **Distribution**: Provide information on the distribution of the data (e.g., normal, skewed, etc.), as this influences the validity of certain statistical methods.  2. **Experimental Design**:    - **Control and Treatment Groups**: Describe how the groups are defined, including any randomization methods used.    - **Blinding**: Indicate whether the study was single-blind, double-blind, or unblinded, as this impacts bias.    - **Replication**: Provide details on how many times the experiment was repeated and whether the results are consistent across trials.  3. **Statistical Methods Used**:    - **Analysis Techniques**: Specify the statistical tests or models applied (e.g., t-tests, ANOVA, regression analysis) and the rationale for their selection.    - **Assumptions**: List any assumptions made during the analysis (e.g., homogeneity of variance, independence of observations).  4. **Results Reporting**:    - 
+
+SENSOR TOP POSITIVE: experiment_design=+3.523 | risk_assessment*=+0.586 | planning=-1.715 | research=-2.039 | fact_checking=-3.883 | math=-4.262 | data=-5.086
+SENSOR MOST NEGATIVE: translation*=-8.148 | code=-7.828 | database_design=-7.570 | accessibility_review*=-6.809 | operations=-6.711
+
+GOOD TRUE-vs-FALSE FLIPS: 1
+  + translation > financial_analysis: before 0.2687 vs 0.2730 -> after 0.2437 vs 0.2396
+BAD TRUE-vs-FALSE FLIPS: 2
+  - translation > experiment_design: before 0.2687 vs 0.1987 -> after 0.2437 vs 0.2961
+  - translation > planning: before 0.2687 vs 0.2633 -> after 0.2437 vs 0.2587
+
+
+==============================================================================================================
+END
+==============================================================================================================

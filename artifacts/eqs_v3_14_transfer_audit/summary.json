@@ -1,0 +1,20 @@
+{
+  "systems": 24,
+  "states_per_system": 5,
+  "queries": 24,
+  "mean_cross_system_query_rank_corr": 0.012672089056382481,
+  "median_cross_system_query_rank_corr": 0.01260992478645245,
+  "random_expected_delta_auc": -0.008883539526921884,
+  "loo_global_static_delta_auc": -0.036439557072829136,
+  "knn_state_selector_delta_auc": {
+    "1": -0.008302258403361351,
+    "3": -0.015650735294117653,
+    "5": -0.016184757236227826,
+    "10": 0.0007615108543417348
+  },
+  "tabular_state_query_delta_auc": -0.008794117647058819,
+  "tabular_state_query_spearman": 0.011387226714142896,
+  "tabular_unique_queries_per_system": 2.7916666666666665,
+  "contextual_oracle_delta_auc": 0.19936022117180208,
+  "per_system_static_oracle_delta_auc": 0.18216488678804857
+}

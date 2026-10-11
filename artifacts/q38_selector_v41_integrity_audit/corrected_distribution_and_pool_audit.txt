@@ -1,0 +1,98 @@
+================================================================================
+CORRECTED OFFLINE DISTRIBUTION
+================================================================================
+
+--- TRAIN ---
+entropy                   n= 2389 mean=10.606 median=10.663 min=8.133 max=12.674
+history observations      n= 2389 mean=1.406 median=2.000 min=0.000 max=3.000
+query words               n=18184 mean=12.816 median=12.000 min=5.000 max=119.000
+roles near 0.5            n= 2389 mean=0.632 median=0.000 min=0.000 max=9.000
+rounds = {1: 473, 2: 473, 3: 440, 4: 358, 5: 274, 6: 175, 7: 125, 8: 71}
+
+--- VAL ---
+entropy                   n=  424 mean=10.573 median=10.663 min=8.284 max=12.323
+history observations      n=  424 mean=1.406 median=2.000 min=0.000 max=2.000
+query words               n= 3200 mean=13.027 median=13.000 min=5.000 max=47.000
+roles near 0.5            n=  424 mean=0.656 median=0.000 min=0.000 max=6.000
+rounds = {1: 84, 2: 84, 3: 78, 4: 66, 5: 47, 6: 34, 7: 21, 8: 10}
+
+--- CHALLENGE ---
+entropy                   n=  715 mean=10.547 median=10.663 min=8.586 max=12.367
+history observations      n=  715 mean=1.417 median=2.000 min=0.000 max=2.000
+query words               n= 5464 mean=12.935 median=12.000 min=5.000 max=57.000
+roles near 0.5            n=  715 mean=0.648 median=0.000 min=0.000 max=7.000
+rounds = {1: 139, 2: 139, 3: 130, 4: 112, 5: 87, 6: 55, 7: 38, 8: 15}
+
+================================================================================
+SIMPLE5 ONLINE DISTRIBUTION
+================================================================================
+entropy                   n=   45 mean=11.132 median=11.021 min=10.663 max=12.118
+history observations      n=   45 mean=4.000 median=4.000 min=0.000 max=8.000
+query words               n=  320 mean=15.700 median=16.000 min=0.000 max=47.000
+roles near 0.5            n=   45 mean=1.400 median=1.000 min=0.000 max=6.000
+rounds = {0: 5, 1: 5, 2: 5, 3: 5, 4: 5, 5: 5, 6: 5, 7: 5, 8: 5}
+
+================================================================================
+CANDIDATE-POOL FOCUS AVAILABILITY
+================================================================================
+
+ROUND 1
+simple5_01_code_plan_research | pool_focus= ['research', 'data', 'incident_management', 'risk_assessment', 'database_design', 'math', 'translation', 'design'] | true_available= ['research'] | selected= incident_management
+simple5_02_risk_access_translation | pool_focus= ['fact_checking', 'requirements_analysis', 'customer_support_triage', 'financial_analysis', 'research', 'data', 'incident_management', 'risk_assessment'] | true_available= ['risk_assessment'] | selected= incident_management
+simple5_03_data_db_requirements | pool_focus= ['experiment_design', 'qa_testing', 'code', 'fact_checking', 'requirements_analysis', 'customer_support_triage', 'financial_analysis', 'research'] | true_available= ['requirements_analysis'] | selected= research
+simple5_04_support_incident_ops | pool_focus= ['requirements_analysis', 'customer_support_triage', 'financial_analysis', 'research', 'data', 'incident_management', 'risk_assessment', 'database_design'] | true_available= ['customer_support_triage', 'incident_management'] | selected= risk_assessment
+simple5_05_docs_qa_writing | pool_focus= ['financial_analysis', 'research', 'data', 'incident_management', 'risk_assessment', 'database_design', 'math', 'translation'] | true_available= [] | selected= incident_management
+
+ROUND 2
+simple5_01_code_plan_research | pool_focus= ['documentation', 'planning', 'accessibility_review', 'qa_testing', 'requirements_analysis', 'financial_analysis', 'experiment_design', 'fact_checking'] | true_available= ['planning'] | selected= accessibility_review
+simple5_02_risk_access_translation | pool_focus= ['customer_support_triage', 'data', 'financial_analysis', 'math', 'code', 'operations', 'database_design', 'qa_testing'] | true_available= [] | selected= operations
+simple5_03_data_db_requirements | pool_focus= ['math', 'requirements_analysis', 'research', 'financial_analysis', 'customer_support_triage', 'fact_checking', 'database_design', 'writing'] | true_available= ['requirements_analysis', 'database_design'] | selected= customer_support_triage
+simple5_04_support_incident_ops | pool_focus= ['code', 'requirements_analysis', 'database_design', 'writing', 'documentation', 'design', 'accessibility_review', 'research'] | true_available= [] | selected= code
+simple5_05_docs_qa_writing | pool_focus= ['fact_checking', 'writing', 'requirements_analysis', 'financial_analysis', 'experiment_design', 'design', 'risk_assessment', 'qa_testing'] | true_available= ['writing', 'qa_testing'] | selected= qa_testing
+
+ROUND 3
+simple5_01_code_plan_research | pool_focus= ['code', 'operations', 'writing', 'documentation', 'math', 'requirements_analysis', 'experiment_design', 'translation'] | true_available= ['code'] | selected= operations
+simple5_02_risk_access_translation | pool_focus= ['math', 'code', 'operations', 'database_design', 'qa_testing', 'incident_management', 'accessibility_review', 'experiment_design'] | true_available= ['accessibility_review'] | selected= code
+simple5_03_data_db_requirements | pool_focus= ['math', 'writing', 'research', 'customer_support_triage', 'design', 'incident_management', 'financial_analysis', 'accessibility_review'] | true_available= [] | selected= incident_management
+simple5_04_support_incident_ops | pool_focus= ['writing', 'documentation', 'customer_support_triage', 'data', 'requirements_analysis', 'design', 'accessibility_review', 'math'] | true_available= ['customer_support_triage'] | selected= requirements_analysis
+simple5_05_docs_qa_writing | pool_focus= ['design', 'risk_assessment', 'documentation', 'financial_analysis', 'writing', 'research', 'accessibility_review', 'data'] | true_available= ['documentation', 'writing'] | selected= design
+
+ROUND 4
+simple5_01_code_plan_research | pool_focus= ['accessibility_review', 'operations', 'data', 'customer_support_triage', 'translation', 'writing', 'code', 'math'] | true_available= ['code'] | selected= customer_support_triage
+simple5_02_risk_access_translation | pool_focus= ['writing', 'code', 'operations', 'database_design', 'customer_support_triage', 'incident_management', 'accessibility_review', 'qa_testing'] | true_available= ['accessibility_review'] | selected= code
+simple5_03_data_db_requirements | pool_focus= ['operations', 'code', 'risk_assessment', 'fact_checking', 'requirements_analysis', 'research', 'math', 'writing'] | true_available= ['requirements_analysis'] | selected= operations
+simple5_04_support_incident_ops | pool_focus= ['data', 'requirements_analysis', 'customer_support_triage', 'code', 'math', 'writing', 'accessibility_review', 'financial_analysis'] | true_available= ['customer_support_triage'] | selected= accessibility_review
+simple5_05_docs_qa_writing | pool_focus= ['fact_checking', 'customer_support_triage', 'qa_testing', 'experiment_design', 'risk_assessment', 'research', 'planning', 'data'] | true_available= ['qa_testing'] | selected= planning
+
+ROUND 5
+simple5_01_code_plan_research | pool_focus= ['qa_testing', 'planning', 'financial_analysis', 'code', 'math', 'writing', 'experiment_design', 'requirements_analysis'] | true_available= ['planning', 'code'] | selected= planning
+simple5_02_risk_access_translation | pool_focus= ['database_design', 'data', 'operations', 'writing', 'customer_support_triage', 'incident_management', 'documentation', 'qa_testing'] | true_available= [] | selected= writing
+simple5_03_data_db_requirements | pool_focus= ['planning', 'accessibility_review', 'risk_assessment', 'documentation', 'code', 'research', 'math', 'writing'] | true_available= [] | selected= planning
+simple5_04_support_incident_ops | pool_focus= ['customer_support_triage', 'risk_assessment', 'writing', 'planning', 'financial_analysis', 'research', 'qa_testing', 'requirements_analysis'] | true_available= ['customer_support_triage'] | selected= planning
+simple5_05_docs_qa_writing | pool_focus= ['qa_testing', 'accessibility_review', 'documentation', 'math', 'customer_support_triage', 'requirements_analysis', 'design', 'data'] | true_available= ['qa_testing', 'documentation'] | selected= design
+
+ROUND 6
+simple5_01_code_plan_research | pool_focus= ['accessibility_review', 'requirements_analysis', 'database_design', 'code', 'risk_assessment', 'fact_checking', 'customer_support_triage', 'design'] | true_available= ['code'] | selected= accessibility_review
+simple5_02_risk_access_translation | pool_focus= ['fact_checking', 'data', 'operations', 'writing', 'customer_support_triage', 'incident_management', 'database_design', 'code'] | true_available= [] | selected= customer_support_triage
+simple5_03_data_db_requirements | pool_focus= ['documentation', 'writing', 'requirements_analysis', 'fact_checking', 'customer_support_triage', 'data', 'experiment_design', 'design'] | true_available= ['requirements_analysis', 'data'] | selected= customer_support_triage
+simple5_04_support_incident_ops | pool_focus= ['qa_testing', 'risk_assessment', 'financial_analysis', 'database_design', 'requirements_analysis', 'writing', 'data', 'operations'] | true_available= ['operations'] | selected= writing
+simple5_05_docs_qa_writing | pool_focus= ['financial_analysis', 'writing', 'requirements_analysis', 'math', 'accessibility_review', 'risk_assessment', 'fact_checking', 'data'] | true_available= ['writing'] | selected= accessibility_review
+
+ROUND 7
+simple5_01_code_plan_research | pool_focus= ['accessibility_review', 'financial_analysis', 'code', 'customer_support_triage', 'data', 'qa_testing', 'database_design', 'risk_assessment'] | true_available= ['code'] | selected= database_design
+simple5_02_risk_access_translation | pool_focus= ['research', 'code', 'operations', 'database_design', 'data', 'incident_management', 'writing', 'customer_support_triage'] | true_available= [] | selected= database_design
+simple5_03_data_db_requirements | pool_focus= ['customer_support_triage', 'writing', 'risk_assessment', 'fact_checking', 'design', 'research', 'documentation', 'accessibility_review'] | true_available= [] | selected= fact_checking
+simple5_04_support_incident_ops | pool_focus= ['customer_support_triage', 'accessibility_review', 'design', 'data', 'operations', 'math', 'qa_testing', 'risk_assessment'] | true_available= ['customer_support_triage', 'operations'] | selected= qa_testing
+simple5_05_docs_qa_writing | pool_focus= ['design', 'code', 'incident_management', 'math', 'data', 'risk_assessment', 'qa_testing', 'accessibility_review'] | true_available= ['qa_testing'] | selected= design
+
+ROUND 8
+simple5_01_code_plan_research | pool_focus= ['accessibility_review', 'financial_analysis', 'requirements_analysis', 'customer_support_triage', 'data', 'code', 'database_design', 'design'] | true_available= ['code'] | selected= design
+simple5_02_risk_access_translation | pool_focus= ['research', 'accessibility_review', 'operations', 'database_design', 'data', 'incident_management', 'math', 'customer_support_triage'] | true_available= ['accessibility_review'] | selected= incident_management
+simple5_03_data_db_requirements | pool_focus= ['math', 'writing', 'requirements_analysis', 'planning', 'accessibility_review', 'fact_checking', 'customer_support_triage', 'design'] | true_available= ['requirements_analysis'] | selected= planning
+simple5_04_support_incident_ops | pool_focus= ['data', 'accessibility_review', 'design', 'experiment_design', 'writing', 'database_design', 'code', 'risk_assessment'] | true_available= [] | selected= design
+simple5_05_docs_qa_writing | pool_focus= ['database_design', 'accessibility_review', 'incident_management', 'math', 'data', 'planning', 'qa_testing', 'code'] | true_available= ['qa_testing'] | selected= planning
+
+states = 40
+states with >=1 true-focus candidate = 30 / 40
+selected true-focus = 2
+selected true given true available = 2/30

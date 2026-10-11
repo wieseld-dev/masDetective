@@ -1,0 +1,26 @@
+FILES:
+  artifacts/q38_selector_v41_data/challenge_groups.jsonl lines= 715
+  artifacts/q38_selector_v41_data/train_groups.jsonl lines= 2389
+  artifacts/q38_selector_v41_data/val_groups.jsonl lines= 424
+
+====================================================================================================
+challenge_groups.jsonl
+rows = 715
+keys = ['auc_gains', 'candidate_indices', 'history_text', 'pair_gains', 'queries', 'role_probs_before', 'round', 'state_id', 'system_id']
+state_id unique= 715 min/max= (1, 1)
+system_id unique= 139 min/max= (2, 8)
+
+====================================================================================================
+train_groups.jsonl
+rows = 2389
+keys = ['auc_gains', 'candidate_indices', 'history_text', 'pair_gains', 'queries', 'role_probs_before', 'round', 'state_id', 'system_id']
+state_id unique= 2389 min/max= (1, 1)
+system_id unique= 473 min/max= (2, 8)
+
+====================================================================================================
+val_groups.jsonl
+rows = 424
+keys = ['auc_gains', 'candidate_indices', 'history_text', 'pair_gains', 'queries', 'role_probs_before', 'round', 'state_id', 'system_id']
+state_id unique= 424 min/max= (1, 1)
+system_id unique= 84 min/max= (2, 8)
+

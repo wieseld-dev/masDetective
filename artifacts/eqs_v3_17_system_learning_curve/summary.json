@@ -1,0 +1,39 @@
+{
+  "experiment": "V3.17 strict unseen-system sample-complexity curve",
+  "random_expected_delta_auc": -0.008883539526921884,
+  "contextual_oracle_delta_auc": 0.19936022117180208,
+  "train_sizes": {
+    "4": {
+      "runs": 20,
+      "mean_selected_delta_auc": -0.015426817810457525,
+      "std_selected_delta_auc": 0.02561490256879836,
+      "mean_state_query_spearman": 0.016675053852906623,
+      "mean_positive_delta_rate": 0.43666666666666665,
+      "mean_unique_queries_per_system": 1.8
+    },
+    "8": {
+      "runs": 20,
+      "mean_selected_delta_auc": -0.006095807072829131,
+      "std_selected_delta_auc": 0.021761487819699894,
+      "mean_state_query_spearman": 0.015143500924828458,
+      "mean_positive_delta_rate": 0.4666666666666667,
+      "mean_unique_queries_per_system": 1.9500000000000004
+    },
+    "12": {
+      "runs": 20,
+      "mean_selected_delta_auc": -0.011432396708683472,
+      "std_selected_delta_auc": 0.021841558414386748,
+      "mean_state_query_spearman": 0.025263023434766347,
+      "mean_positive_delta_rate": 0.4366666666666667,
+      "mean_unique_queries_per_system": 2.4499999999999997
+    },
+    "18": {
+      "runs": 20,
+      "mean_selected_delta_auc": -0.009364819677871148,
+      "std_selected_delta_auc": 0.016145835153568756,
+      "mean_state_query_spearman": 0.01627425221107097,
+      "mean_positive_delta_rate": 0.43666666666666665,
+      "mean_unique_queries_per_system": 2.9833333333333334
+    }
+  }
+}

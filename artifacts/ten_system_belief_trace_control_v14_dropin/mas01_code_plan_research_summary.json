@@ -1,0 +1,83 @@
+{
+  "system_id": "mas01_code_plan_research",
+  "true_roles": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.2127955425330288,
+    "4": 0.24093799679223732,
+    "5": 0.2503587162467532,
+    "6": 0.29590774442798085
+  },
+  "final_role_probs": {
+    "code": 0.1941076513576713,
+    "writing": 0.3370527793903022,
+    "math": 0.1893407849666255,
+    "planning": 0.16715080224862092,
+    "research": 0.26149992107497116,
+    "data": 0.174362630899008,
+    "design": 0.23587830601677018,
+    "operations": 0.22811715805004407,
+    "qa_testing": 0.22516519895700407,
+    "translation": 0.38122861128431323,
+    "financial_analysis": 0.2154016850867435,
+    "database_design": 0.20635466517233877,
+    "accessibility_review": 0.21140706611533147,
+    "fact_checking": 0.16916449941658399,
+    "requirements_analysis": 0.29069187694448045,
+    "incident_management": 0.28265209541840014,
+    "experiment_design": 0.2710430451763572,
+    "risk_assessment": 0.18853490900030478,
+    "documentation": 0.179147857641718,
+    "customer_support_triage": 0.2210771183520976
+  },
+  "belief_auc": 0.3333333333333333,
+  "present_vs_absent_correct": 17,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.3333333333333333,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "translation",
+    "writing",
+    "requirements_analysis"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.16715080224862092,
+  "max_false_belief": 0.38122861128431323,
+  "ranking": [
+    "translation",
+    "writing",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "research",
+    "design",
+    "operations",
+    "qa_testing",
+    "customer_support_triage",
+    "financial_analysis",
+    "accessibility_review",
+    "database_design",
+    "code",
+    "math",
+    "risk_assessment",
+    "documentation",
+    "data",
+    "fact_checking",
+    "planning"
+  ],
+  "predicted_k": 6,
+  "predicted_k_correct": false
+}

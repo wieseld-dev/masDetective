@@ -1,0 +1,159 @@
+{
+  "n_rows": 720,
+  "n_systems": 36,
+  "roles": [
+    "accessibility_review",
+    "code",
+    "customer_support_triage",
+    "data",
+    "database_design",
+    "design",
+    "documentation",
+    "experiment_design",
+    "fact_checking",
+    "financial_analysis",
+    "incident_management",
+    "math",
+    "operations",
+    "planning",
+    "qa_testing",
+    "requirements_analysis",
+    "research",
+    "risk_assessment",
+    "translation",
+    "writing"
+  ],
+  "direct_k3_k4": {
+    "logistic": {
+      "mean_fold_accuracy": 0.40333333333333327,
+      "std_fold_accuracy": 0.14564034849968985,
+      "aggregate_accuracy": 0.375,
+      "confusion_matrix": [
+        [
+          3,
+          9
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "aggregate_pred": [
+        4,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4
+      ]
+    },
+    "extratrees": {
+      "mean_fold_accuracy": 0.39166666666666666,
+      "std_fold_accuracy": 0.1552328000849763,
+      "aggregate_accuracy": 0.2916666666666667,
+      "confusion_matrix": [
+        [
+          3,
+          9
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "aggregate_pred": [
+        4,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4
+      ]
+    },
+    "randomforest": {
+      "mean_fold_accuracy": 0.37166666666666665,
+      "std_fold_accuracy": 0.16474728121175983,
+      "aggregate_accuracy": 0.375,
+      "confusion_matrix": [
+        [
+          5,
+          7
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "aggregate_pred": [
+        4,
+        3,
+        3,
+        4,
+        3,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4
+      ]
+    }
+  },
+  "permutation": {
+    "model": "logistic",
+    "n_permutations": 500,
+    "real_fixed_cv_accuracy": 0.3333333333333333,
+    "permutation_mean": 0.49708333333333327,
+    "permutation_std": 0.1223404573311707,
+    "p_value": 0.9421157684630739
+  }
+}

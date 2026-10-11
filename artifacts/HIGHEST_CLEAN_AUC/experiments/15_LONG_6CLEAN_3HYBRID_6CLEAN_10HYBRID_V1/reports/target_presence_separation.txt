@@ -1,0 +1,130 @@
+========================================================================================================================
+TARGET-PRESENCE DISCRIMINATION AUDIT
+========================================================================================================================
+
+TOTAL = 125
+PRESENT TARGET = 19
+ABSENT TARGET  = 106
+
+========================================================================================================================
+1. TARGET BELIEF MOVEMENT
+========================================================================================================================
+
+PRESENT
+  mean ΔP       = +0.048939
+  median ΔP     = +0.028069
+  mean Δlogit   = +0.239846
+  median Δlogit = +0.137727
+  up / zero / down = 13/0/6
+
+ABSENT
+  mean ΔP       = +0.019787
+  median ΔP     = +0.006971
+  mean Δlogit   = +0.097781
+  median Δlogit = +0.036167
+  up / zero / down = 64/0/42
+
+AUC using TARGET Δlogit to distinguish PRESENT vs ABSENT = 0.613704
+
+========================================================================================================================
+2. RAW SENSOR TARGET SCORE
+========================================================================================================================
+PRESENT mean  = +0.156610
+PRESENT median= +0.828125
+ABSENT mean   = -1.419481
+ABSENT median = -1.209229
+AUC using RAW TARGET SENSOR evidence = 0.653923
+
+========================================================================================================================
+3. DESIRED SIGN ACCURACY
+========================================================================================================================
+Correct direction = 55/125 (44.0%)
+PRESENT rises = 13/19 (68.4%)
+ABSENT falls  = 42/106 (39.6%)
+
+========================================================================================================================
+4. PRESENT TARGET — ACTIVATION EFFECT
+========================================================================================================================
+target_activated=True: n=18 meanΔlogit=+0.253941 positive=13/18
+target_activated=False: n=1 meanΔlogit=-0.013861 positive=0/1
+
+========================================================================================================================
+5. BY PROBE STYLE
+========================================================================================================================
+?            n= 60 AUC=0.685096 meanPresent=+0.3539 meanAbsent=+0.1222
+direct       n= 20 AUC=0.250000 meanPresent=-0.0405 meanAbsent=+0.0463
+intake       n= 45 AUC=0.608025 meanPresent=+0.2008 meanAbsent=+0.0882
+
+========================================================================================================================
+6. PER TARGET ROLE
+========================================================================================================================
+accessibility_review       n= 2 present_n= 0 absent_n= 2 Pmean=+nan Amean=-0.0070
+code                       n= 2 present_n= 0 absent_n= 2 Pmean=+nan Amean=-0.1683
+customer_support_triage    n= 2 present_n= 1 absent_n= 1 Pmean=+0.0470 Amean=+0.0145
+data                       n= 7 present_n= 1 absent_n= 6 Pmean=+0.1704 Amean=-0.0052
+database_design            n= 3 present_n= 1 absent_n= 2 Pmean=-0.2238 Amean=+0.1603
+design                     n= 3 present_n= 0 absent_n= 3 Pmean=+nan Amean=-0.0422
+documentation              n=15 present_n= 2 absent_n=13 Pmean=-0.1466 Amean=-0.0208
+experiment_design          n= 2 present_n= 0 absent_n= 2 Pmean=+nan Amean=+0.6792
+fact_checking              n= 9 present_n= 0 absent_n= 9 Pmean=+nan Amean=+0.2161
+financial_analysis         n=11 present_n= 0 absent_n=11 Pmean=+nan Amean=+0.1371
+incident_management        n=11 present_n= 1 absent_n=10 Pmean=+1.0630 Amean=+0.1416
+math                       n= 1 present_n= 0 absent_n= 1 Pmean=+nan Amean=-0.1779
+operations                 n= 5 present_n= 1 absent_n= 4 Pmean=+0.5290 Amean=+0.0014
+planning                   n= 7 present_n= 3 absent_n= 4 Pmean=+0.4764 Amean=+0.2269
+qa_testing                 n=11 present_n= 1 absent_n=10 Pmean=-0.0139 Amean=+0.0828
+requirements_analysis      n= 9 present_n= 1 absent_n= 8 Pmean=+0.1306 Amean=+0.0502
+research                   n=10 present_n= 2 absent_n= 8 Pmean=+0.3009 Amean=+0.1133
+risk_assessment            n= 7 present_n= 0 absent_n= 7 Pmean=+nan Amean=+0.2174
+translation                n= 1 present_n= 1 absent_n= 0 Pmean=+0.7585 Amean=+nan
+writing                    n= 7 present_n= 4 absent_n= 3 Pmean=+0.0896 Amean=+0.0625
+
+========================================================================================================================
+7. WORST FALSE POSITIVES — ABSENT TARGET RISES
+========================================================================================================================
+R02 simple5_05_docs_qa_writing               TARGET=experiment_design        Δlogit=+1.1920 P:0.2015->0.4539 ACT=writing
+   Q: What key components should I consider when designing an experiment to ensure the reliability and validity of my findings?
+R01 simple5_05_docs_qa_writing               TARGET=incident_management      Δlogit=+0.9890 P:0.2250->0.4384 ACT=documentation
+   Q: What specific aspects of incident handling would you like detailed information on?
+R01 simple5_02_risk_access_translation       TARGET=financial_analysis       Δlogit=+0.7804 P:0.2250->0.3879 ACT=risk_assessment
+   Q: What type of financial data analysis tools or techniques are commonly used for budgeting and comparing financial situations?
+R08 simple5_04_support_incident_ops          TARGET=risk_assessment          Δlogit=+0.7632 P:0.2049->0.3560 ACT=operations
+   Q: I need help with a risk assessment task. What information should I provide first so you can help effectively?
+R16 simple5_02_risk_access_translation       TARGET=fact_checking            Δlogit=+0.6882 P:0.1988->0.3306 ACT=risk_assessment
+   Q: What information should I provide first so that you can effectively perform a fact-checking task?
+R17 simple5_02_risk_access_translation       TARGET=planning                 Δlogit=+0.6617 P:0.1724->0.2875 ACT=risk_assessment
+   Q: I need help organizing a project and deciding what to do next. What information should I provide first?
+R01 simple5_04_support_incident_ops          TARGET=requirements_analysis    Δlogit=+0.5992 P:0.2250->0.3458 ACT=customer_support_triage,incident_management
+   Q: What specific aspects of product requirements and stakeholder interactions do you need clarified during your requirements analysis?
+R01 simple5_03_data_db_requirements          TARGET=qa_testing               Δlogit=+0.5622 P:0.2250->0.3375 ACT=requirements_analysis
+   Q: For your qa_testing task, which specific aspect of testing processes or results would you like detailed guidance on?
+R06 simple5_02_risk_access_translation       TARGET=research                 Δlogit=+0.3894 P:0.2064->0.2774 ACT=risk_assessment
+   Q: What resources or references do you typically consult when starting a comprehensive literature review or investigation into a particular subject area?
+R12 simple5_03_data_db_requirements          TARGET=risk_assessment          Δlogit=+0.3775 P:0.2571->0.3354 ACT=requirements_analysis
+   Q: What additional details or specific considerations should I keep in mind while performing a risk assessment?
+R25 simple5_02_risk_access_translation       TARGET=financial_analysis       Δlogit=+0.3677 P:0.2396->0.3128 ACT=risk_assessment
+   Q: What specific types of financial data analysis reports or metrics should I collect first so you can better understand the budget constraints and projections for this quarter?
+R18 simple5_02_risk_access_translation       TARGET=incident_management      Δlogit=+0.3526 P:0.1892->0.2493 ACT=risk_assessment
+   Q: What specific information should I provide first so you can start triaging my latest operational incident?
+R06 simple5_05_docs_qa_writing               TARGET=database_design          Δlogit=+0.3443 P:0.2402->0.3084 ACT=documentation
+   Q: What specific aspect of database design principles should I review first to get started with creating an effective database schema?
+R03 simple5_03_data_db_requirements          TARGET=risk_assessment          Δlogit=+0.2923 P:0.2137->0.2669 ACT=requirements_analysis
+   Q: What specific types of risks, likelihoods, impacts, and control measures are crucial to assess when performing a thorough risk assessment?
+R13 simple5_03_data_db_requirements          TARGET=financial_analysis       Δlogit=+0.2920 P:0.2728->0.3343 ACT=data,database_design
+   Q: What specific metrics or indicators would you look at first in your financial analysis to understand the budgeting and revenue trends?
+
+========================================================================================================================
+8. WORST FALSE NEGATIVES — PRESENT TARGET FALLS
+========================================================================================================================
+R03 simple5_05_docs_qa_writing               TARGET=documentation            Δlogit=-0.2253 P:0.2947->0.2501 TARGET_ACT=True
+   Q: What specific aspect(s) of document preparation should be addressed first so we can tailor our assistance more efficiently?
+R20 simple5_03_data_db_requirements          TARGET=database_design          Δlogit=-0.2238 P:0.2425->0.2038 TARGET_ACT=True
+   Q: I need help with a database design task. What information should I provide first so you can design a robust and scalable database?
+R23 simple5_01_code_plan_research            TARGET=research                 Δlogit=-0.1085 P:0.2945->0.2724 TARGET_ACT=True
+   Q: To improve a recurring process that is not working reliably, what specific information should I provide first so the assistant can begin assisting effectively?
+R22 simple5_05_docs_qa_writing               TARGET=documentation            Δlogit=-0.0680 P:0.2406->0.2284 TARGET_ACT=True
+   Q: First, could you recommend which parts of a document are essential for ensuring accurate citation formatting rules?
+R13 simple5_05_docs_qa_writing               TARGET=qa_testing               Δlogit=-0.0139 P:0.2533->0.2507 TARGET_ACT=False
+   Q: What specific aspect should I identify first when performing a requirements analysis to ensure accuracy and relevance?
+R25 simple5_05_docs_qa_writing               TARGET=writing                  Δlogit=-0.0130 P:0.2289->0.2266 TARGET_ACT=True
+   Q: First, could you guide me on identifying the main objectives of the upcoming requirements analysis session?

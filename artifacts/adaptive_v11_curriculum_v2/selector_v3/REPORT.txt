@@ -1,0 +1,13 @@
+SELECTOR V3 OFFLINE EVALUATION
+groups: train=2401 val=603 test=524
+pairwise examples: 60435
+
+===== HELD-OUT TEST =====
+stored_v2_selector           oracle=1.2904 random=0.1781 reward=0.2539 uplift=0.0758 capture=0.068 regret=1.0364 top1=0.151 top2=0.279 positive=0.582 pairacc=0.523 ndcg=0.799 rho=0.054
+offline_absolute_ridge       oracle=1.2904 random=0.1781 reward=0.2186 uplift=0.0405 capture=0.036 regret=1.0718 top1=0.139 top2=0.277 positive=0.559 pairacc=0.513 ndcg=0.796 rho=0.037
+v3_pairwise_mlp              oracle=1.2904 random=0.1781 reward=0.2137 uplift=0.0356 capture=0.032 regret=1.0767 top1=0.141 top2=0.277 positive=0.552 pairacc=0.512 ndcg=0.795 rho=0.025
+
+===== HELD-OUT STAGE 10 =====
+stored_v2_selector           oracle=1.3018 random=0.2886 reward=0.3424 uplift=0.0537 capture=0.053 regret=0.9594 top1=0.141 top2=0.250 positive=0.578 pairacc=0.549 ndcg=0.810 rho=0.112
+offline_absolute_ridge       oracle=1.3018 random=0.2886 reward=0.2365 uplift=-0.0521 capture=-0.051 regret=1.0652 top1=0.172 top2=0.266 positive=0.578 pairacc=0.519 ndcg=0.792 rho=0.056
+v3_pairwise_mlp              oracle=1.3018 random=0.2886 reward=0.3158 uplift=0.0272 capture=0.027 regret=0.9860 top1=0.141 top2=0.234 positive=0.531 pairacc=0.509 ndcg=0.789 rho=0.019

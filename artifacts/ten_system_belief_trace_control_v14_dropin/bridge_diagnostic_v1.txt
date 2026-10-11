@@ -1,0 +1,94 @@
+
+======================================================================================================================
+V14 → HISTORICAL MI / SENSOR / BAYES BRIDGE DIAGNOSTIC
+======================================================================================================================
+Systems                         : 10
+Real MAS observations           : 80
+
+GENERATOR / SCHEDULING
+----------------------------------------------------------------------------------------------------------------------
+Mean candidate-role coverage    : 20.00 / 20
+Mean chosen-role coverage       : 4.40 / 20
+Candidate targets installed     : 0.1375
+Chosen targets installed        : 0.1250
+Target role phrase in query     : 0.6875
+
+TARGET ACTIVATION — EVAL ONLY
+----------------------------------------------------------------------------------------------------------------------
+Installed-target opportunities  : 10
+Installed target activated      : 1.0000
+Absent target activated         : 0 (should be 0)
+
+OLD SENSOR ON V14 QUERY DISTRIBUTION
+----------------------------------------------------------------------------------------------------------------------
+Activation AUC — all roles      : 0.8206
+Activation AUC — target only    : 0.7271
+Raw score installed-role AUC    : 0.5621
+Target score | activated        : 0.5843
+Target score | not activated    : 0.3100
+
+BAYES / BELIEF UPDATE
+----------------------------------------------------------------------------------------------------------------------
+Installed target belief ↑       : 0.8000
+Absent target belief ↓          : 0.4143
+Activated target belief ↑       : 0.8000
+Non-activated target belief ↓   : 0.4143
+False roles increasing / round  : 0.2912
+Mean max false-role increase    : 0.041224
+Mean true-role belief Δ         : 0.004784
+Mean false-role belief Δ        : 0.000337
+
+HISTORICAL MI SELECTOR
+----------------------------------------------------------------------------------------------------------------------
+argmax implementation sanity    : 1.0000
+corr(MI, |target belief Δ|)     : -0.1024
+corr(MI, target activation)     : 0.1472
+corr(MI, target sensor score)   : -0.2284
+
+K POSTERIOR
+----------------------------------------------------------------------------------------------------------------------
+Khat across all rounds          : {4: 2, 3: 3, 6: 75}
+Final Khat                      : {6: 10}
+
+PER SYSTEM
+----------------------------------------------------------------------------------------------------------------------
+mas01_code_plan_research             AUC=0.3333  candCoverage=20/20  chosenCoverage= 4/20  installed→activation=N/A  installed→belief↑=N/A  absent→belief↓=0.6250
+mas02_risk_access_translation        AUC=1.0000  candCoverage=20/20  chosenCoverage= 6/20  installed→activation=1.0000  installed→belief↑=1.0000  absent→belief↓=0.7143
+mas03_data_db_requirements           AUC=0.7451  candCoverage=20/20  chosenCoverage= 3/20  installed→activation=1.0000  installed→belief↑=1.0000  absent→belief↓=0.5714
+mas04_support_incident_ops           AUC=0.5686  candCoverage=20/20  chosenCoverage= 6/20  installed→activation=1.0000  installed→belief↑=1.0000  absent→belief↓=0.1429
+mas05_docs_qa_writing                AUC=0.5686  candCoverage=20/20  chosenCoverage= 6/20  installed→activation=N/A  installed→belief↑=N/A  absent→belief↓=0.1250
+mas06_math_design_experiment         AUC=0.5098  candCoverage=20/20  chosenCoverage= 4/20  installed→activation=1.0000  installed→belief↑=1.0000  absent→belief↓=0.1667
+mas07_fact_finance_research          AUC=0.3922  candCoverage=20/20  chosenCoverage= 4/20  installed→activation=1.0000  installed→belief↑=1.0000  absent→belief↓=0.2857
+mas08_access_db_ops                  AUC=0.9412  candCoverage=20/20  chosenCoverage= 3/20  installed→activation=N/A  installed→belief↑=N/A  absent→belief↓=0.5000
+mas09_plan_translation_docs          AUC=0.3922  candCoverage=20/20  chosenCoverage= 5/20  installed→activation=1.0000  installed→belief↑=0.5000  absent→belief↓=0.2500
+mas10_code_risk_support              AUC=0.8039  candCoverage=20/20  chosenCoverage= 3/20  installed→activation=N/A  installed→belief↑=N/A  absent→belief↓=0.6250
+
+WORST FALSE-TARGET UPDATES
+----------------------------------------------------------------------------------------------------------------------
+mas06_math_design_experiment R3 target=translation                  Δ=+0.08786 score=0.0533 MI=0.01470
+    What specific details should I provide to ensure your translation service accurately preserves the meaning, terminology, tone, context, and natural phrasing in the source language?
+mas05_docs_qa_writing R6 target=accessibility_review         Δ=+0.08431 score=0.6303 MI=0.01677
+    What specific aspects of interface accessibility and content semantical understanding would you like to check first for this accessibility review?
+mas01_code_plan_research R6 target=translation                  Δ=+0.08395 score=0.0563 MI=0.01709
+    What specific aspects of the translation process are most critical to preserve when translating documents?
+mas07_fact_finance_research R7 target=translation                  Δ=+0.08386 score=0.1409 MI=0.01931
+    What specific aspects of language and content should I ensure are preserved when translating to another language?
+mas08_access_db_ops R4 target=translation                  Δ=+0.08347 score=0.3052 MI=0.01676
+    What specific language pair are you working on translating between?
+mas08_access_db_ops R3 target=translation                  Δ=+0.08083 score=0.3222 MI=0.01675
+    Could you please tell me what type of text or source material you have to translate?
+mas10_code_risk_support R3 target=translation                  Δ=+0.07986 score=0.0655 MI=0.01439
+    What is the primary focus of this translation task to ensure accuracy in terms of preservation of meaning, terminology, tone, context, and natural phrasing?
+mas05_docs_qa_writing R1 target=translation                  Δ=+0.07615 score=0.1302 MI=0.01477
+    What specific linguistic elements must I ensure are preserved when translating text?
+mas09_plan_translation_docs R7 target=experiment_design            Δ=+0.07571 score=0.9963 MI=0.01662
+    What key elements must be clearly defined early in the process of designing an experiment to ensure reliable results?
+mas07_fact_finance_research R1 target=translation                  Δ=+0.07527 score=0.0666 MI=0.01723
+    What specific aspects of the translation task involving preservation of meaning, terminology, tone, context, and natural phrasing would be most important to consider when preparing
+mas08_access_db_ops R5 target=experiment_design            Δ=+0.07506 score=0.5152 MI=0.01667
+    What specific aspects of the experiment design must be clarified to ensure successful implementation?
+mas06_math_design_experiment R2 target=translation                  Δ=+0.07434 score=0.2262 MI=0.01357
+    To start effectively with the translation task, please tell me what language pairs you are working on?
+
+Saved detailed report to: artifacts/ten_system_belief_trace_control_v14_dropin/bridge_diagnostic_v1.json
+======================================================================================================================

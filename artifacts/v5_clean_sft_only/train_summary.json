@@ -1,0 +1,23 @@
+{
+  "mode": "sft",
+  "input_adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "output_adapter": "artifacts/v5_clean_sft_only/policy",
+  "positives": 17,
+  "preferences": 0,
+  "epochs": 3,
+  "optimizer_steps": 13,
+  "lr": 2e-06,
+  "sft_weight": 1.0,
+  "pref_weight": 0.5,
+  "dpo_beta": 1.0,
+  "anchor_weight": 0.05,
+  "mean_train_sft": 1.6312614889705883,
+  "mean_train_anchor": 9.533003264782475e-05,
+  "mean_train_dpo": 0.0,
+  "mean_positive_lp_gain": 0.026252297794117647,
+  "min_positive_lp_gain": 0.0126953125,
+  "mean_preference_margin_gain": 0.0203857421875,
+  "direction_margin_gain": 0.020182291666666668,
+  "meta_margin_gain": 0.02099609375,
+  "input_adapter_sha256": "6f4e0d2e03b048eb5333199f18a0ba74562ee8abf4a7bfdcee7a380e764dde68"
+}

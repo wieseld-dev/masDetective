@@ -1,0 +1,72 @@
+{
+  "version": "v14_simple5_eval_v1",
+  "seed": 20261007,
+  "systems": [
+    {
+      "session_id": "simple5_01_code_plan_research",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "code",
+        "planning",
+        "research"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "simple5_02_risk_access_translation",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "risk_assessment",
+        "accessibility_review",
+        "translation"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "simple5_03_data_db_requirements",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "data",
+        "database_design",
+        "requirements_analysis"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "simple5_04_support_incident_ops",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "customer_support_triage",
+        "incident_management",
+        "operations"
+      ],
+      "k": 3
+    },
+    {
+      "session_id": "simple5_05_docs_qa_writing",
+      "split": "dev",
+      "mode": "mixed",
+      "style": "s1",
+      "roles": [
+        "documentation",
+        "qa_testing",
+        "writing"
+      ],
+      "k": 3
+    }
+  ],
+  "sha256": "eeed55f833e482484fec2f34acc5f0b24c6ef8b03579042c04380d9ffff09ff2",
+  "notes": {
+    "purpose": "Same five simple K=3 MAS compositions as historical belief-AUC control",
+    "privileged": true,
+    "truth_evaluation_only": true
+  }
+}

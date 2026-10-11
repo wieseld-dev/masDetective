@@ -1,0 +1,95 @@
+========================================================================================================================
+EXACT ORIGINAL R7 RECONSTRUCTION
+========================================================================================================================
+rows                  = 1200
+groups                = 24
+max advantage error   = 0
+mismatching rows      = 0/1200
+nonzero advantages    = 1020
+
+========================================================================================================================
+TARGET AUX COVERAGE
+========================================================================================================================
+joined = 1166
+missing = 34
+
+========================================================================================================================
+composite_sign
+========================================================================================================================
+sign rule            = composite
+rows                 = 1200
+nonzero advantages   = 1049
+OLD ADV+ correct     = 381/524 (72.7%)
+NEW ADV+ correct     = 496/585 (84.8%)
+old + -> new <=0     = 57
+old 0 -> new +       = 77
+old - -> new +       = 41
+output               = artifacts/HIGHEST_CLEAN_AUC/experiments/16_CLEAN_R7_TARGETAUX_V1/composite_sign/grpo_train_round_07.jsonl
+
+========================================================================================================================
+global_sign
+========================================================================================================================
+sign rule            = global
+rows                 = 1200
+nonzero advantages   = 961
+OLD ADV+ correct     = 381/524 (72.7%)
+NEW ADV+ correct     = 392/496 (79.0%)
+old + -> new <=0     = 42
+old 0 -> new +       = 14
+old - -> new +       = 0
+output               = artifacts/HIGHEST_CLEAN_AUC/experiments/16_CLEAN_R7_TARGETAUX_V1/global_sign/grpo_train_round_07.jsonl
+
+========================================================================================================================
+CONFIG
+========================================================================================================================
+{
+  "source": "artifacts/v14_adaptive_role_v1",
+  "round": 7,
+  "parent_checkpoint": "artifacts/v14_adaptive_role_v1/checkpoints/round_06/policy",
+  "tau": 1.0,
+  "lambda": 0.1,
+  "exact_r7_reconstruction": {
+    "max_error": 0.0,
+    "mismatches": 0,
+    "nonzero_advantages": 1020
+  },
+  "target_aux_coverage": {
+    "joined": 1166,
+    "missing": 34
+  },
+  "variants": [
+    {
+      "name": "composite_sign",
+      "sign_source": "composite",
+      "rows": 1200,
+      "nonzero_advantages": 1049,
+      "old_positive_correct": 0.7270992366412213,
+      "new_positive_correct": 0.8478632478632478,
+      "old_positive_count": 524,
+      "new_positive_count": 585,
+      "old_positive_to_nonpositive": 57,
+      "old_zero_to_positive": 77,
+      "old_negative_to_positive": 41
+    },
+    {
+      "name": "global_sign",
+      "sign_source": "global",
+      "rows": 1200,
+      "nonzero_advantages": 961,
+      "old_positive_correct": 0.7270992366412213,
+      "new_positive_correct": 0.7903225806451613,
+      "old_positive_count": 524,
+      "new_positive_count": 496,
+      "old_positive_to_nonpositive": 42,
+      "old_zero_to_positive": 14,
+      "old_negative_to_positive": 0
+    }
+  ],
+  "original_training": {
+    "epochs": 1,
+    "lr": 1.5e-06,
+    "clip": 0.2,
+    "kl_beta": 0.05,
+    "samples": 1020
+  }
+}

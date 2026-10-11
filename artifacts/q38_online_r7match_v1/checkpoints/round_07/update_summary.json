@@ -1,0 +1,20 @@
+{
+  "clip": 0.2,
+  "epochs": 1,
+  "kl_beta": 0.05,
+  "lr": 1.5e-06,
+  "phase": "role_only",
+  "round": 7,
+  "samples": 835,
+  "start_adapter": "artifacts/q38_online_r7match_v1/checkpoints/round_06/policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.0006081586826347306,
+      "loss": 0.08902357638239147,
+      "n": 835,
+      "pg": 0.08901739977077096
+    }
+  ],
+  "v11_reference": "artifacts/q38_utility_lora_v1/policy"
+}

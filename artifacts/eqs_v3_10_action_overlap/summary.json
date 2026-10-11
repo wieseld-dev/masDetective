@@ -1,0 +1,321 @@
+{
+  "summary": {
+    "systems": 24,
+    "unique_queries_total": 829,
+    "mean_unique_queries_per_system": 34.541666666666664,
+    "exact_queries_shared_by_all_systems": 0,
+    "max_system_support_for_any_query": 1,
+    "max_support_fraction": 0.041666666666666664,
+    "mean_pairwise_shared_queries": 0.0,
+    "median_pairwise_shared_queries": 0.0,
+    "mean_pairwise_jaccard": 0.0,
+    "fixed_bank_size": 512,
+    "mean_queries_per_system_in_fixed_bank": 21.333333333333332,
+    "mean_fraction_system_pool_in_fixed_bank": 0.6185495094502448,
+    "queries_in_at_least_100pct_systems": 0,
+    "queries_in_at_least_75pct_systems": 0,
+    "queries_in_at_least_50pct_systems": 0,
+    "queries_in_at_least_25pct_systems": 0,
+    "queries_in_at_least_10pct_systems": 0
+  },
+  "top_cross_system_queries": [
+    {
+      "query": "Before starting my experiment design task, what specific procedure should I follow to ensure rigorous planning and accurate execution?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Can you describe a specific method or process you would typically follow when analyzing and understanding a dataset?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Can you provide an example of how a mathematical calculation might be performed?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Can you provide me with some examples of well-written articles or papers?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you describe a situation where a high level of accuracy in mathematical calculations is critical?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you explain a specific step in your process of designing a relational or document-based database schema?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you explain how you preserve meaning, tone, and context during translation between languages?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you explain in more detail how you determine if an interface is accessible based on guidelines such as WCAG (Web Content Accessibility Guidelines) when reviewing existing systems?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you explain the process you follow when conducting an accessibility review of an interface or content?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you explain the specific steps you take to preserve the meaning, terminology, tone, context, and natural phrasing during the translation process?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you explain the typical process you go through when performing a financial analysis using budget analysis, financial comparison, margin calculations, cash flow projections, and scenario testing?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you give an example of a situation where you have used your ability in calculations, equations, or statistical analyses?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you give me an example of how someone might go about revising their writing with feedback?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please describe a situation where you would perform an accessibility review to assess the interface and content?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please describe a specific instance where you had to verify a factual claim, ensure the reliability of the sources used, and compare different pieces of evidence?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please describe the process or steps you follow when conducting an accessibility review?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please explain how documentation helps ensure clear and consistent usage across different platforms or departments?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please explain how translation preserves meaning, terminology, tone, context, and natural phrasing during the process?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please explain how translations typically preserve semantic meaning when translating between languages?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please explain how translations typically preserve the meaning, terminology, tone, context, and natural phrasing?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please explain how you would approach defining and executing test cases for a new software release?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please explain how you would approach translating a text from English to Spanish?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please tell me how I should approach improving a piece of writing?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you please tell me more about how translation works?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you provide examples of situations where this candidate demonstrates their proficiency in performing mathematical calculations and analyzing statistical data?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you walk me through a scenario where you encountered a situation requiring the preservation of meaning, terminology, tone, context, and natural phrasing during a language translation process?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you walk me through how you generally handle incidents involving large-scale disruptions, especially focusing on ensuring data integrity and continuity during such events?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you walk me through how you typically approach designing a database schema?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you walk me through how you typically approach solving mathematical problems?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    },
+    {
+      "query": "Could you walk me through the typical steps involved in preparing technical documentation?",
+      "systems": 1,
+      "fraction": 0.041666666666666664
+    }
+  ],
+  "fixed_bank_overlap": [
+    {
+      "session_id": "av11_023efb442571d117",
+      "queries": 35,
+      "bank_overlap": 21,
+      "fraction": 0.6
+    },
+    {
+      "session_id": "av11_0958d195a346cdb1",
+      "queries": 33,
+      "bank_overlap": 22,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "session_id": "av11_20f1ec3cfdaa5518",
+      "queries": 35,
+      "bank_overlap": 19,
+      "fraction": 0.5428571428571428
+    },
+    {
+      "session_id": "av11_27e20625aee8ca5d",
+      "queries": 34,
+      "bank_overlap": 21,
+      "fraction": 0.6176470588235294
+    },
+    {
+      "session_id": "av11_2d355538615f00ff",
+      "queries": 35,
+      "bank_overlap": 21,
+      "fraction": 0.6
+    },
+    {
+      "session_id": "av11_2d97f9f748e0fb9e",
+      "queries": 35,
+      "bank_overlap": 21,
+      "fraction": 0.6
+    },
+    {
+      "session_id": "av11_38108c805bd533a1",
+      "queries": 36,
+      "bank_overlap": 20,
+      "fraction": 0.5555555555555556
+    },
+    {
+      "session_id": "av11_486b21e22324059f",
+      "queries": 34,
+      "bank_overlap": 15,
+      "fraction": 0.4411764705882353
+    },
+    {
+      "session_id": "av11_5df7e71a9829f052",
+      "queries": 35,
+      "bank_overlap": 22,
+      "fraction": 0.6285714285714286
+    },
+    {
+      "session_id": "av11_60adcadf2277b949",
+      "queries": 36,
+      "bank_overlap": 24,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "session_id": "av11_6488732ca6cd1f03",
+      "queries": 35,
+      "bank_overlap": 26,
+      "fraction": 0.7428571428571429
+    },
+    {
+      "session_id": "av11_8ab66a778c443eeb",
+      "queries": 35,
+      "bank_overlap": 22,
+      "fraction": 0.6285714285714286
+    },
+    {
+      "session_id": "av11_93d32f31d67faa9c",
+      "queries": 32,
+      "bank_overlap": 24,
+      "fraction": 0.75
+    },
+    {
+      "session_id": "av11_953769178d62214f",
+      "queries": 32,
+      "bank_overlap": 18,
+      "fraction": 0.5625
+    },
+    {
+      "session_id": "av11_be75be6f961ea65a",
+      "queries": 34,
+      "bank_overlap": 23,
+      "fraction": 0.6764705882352942
+    },
+    {
+      "session_id": "av11_c146ae3a378bfec3",
+      "queries": 36,
+      "bank_overlap": 20,
+      "fraction": 0.5555555555555556
+    },
+    {
+      "session_id": "av11_c290a3a477cfe91b",
+      "queries": 35,
+      "bank_overlap": 19,
+      "fraction": 0.5428571428571428
+    },
+    {
+      "session_id": "av11_d0544071f1ec78f2",
+      "queries": 36,
+      "bank_overlap": 18,
+      "fraction": 0.5
+    },
+    {
+      "session_id": "av11_d7cd28142f2a04b9",
+      "queries": 35,
+      "bank_overlap": 26,
+      "fraction": 0.7428571428571429
+    },
+    {
+      "session_id": "av11_da6eb645b311f910",
+      "queries": 33,
+      "bank_overlap": 21,
+      "fraction": 0.6363636363636364
+    },
+    {
+      "session_id": "av11_f38ade721933a587",
+      "queries": 36,
+      "bank_overlap": 22,
+      "fraction": 0.6111111111111112
+    },
+    {
+      "session_id": "av11_fa269d1328d0991f",
+      "queries": 34,
+      "bank_overlap": 23,
+      "fraction": 0.6764705882352942
+    },
+    {
+      "session_id": "av11_fcbc5e8f6c849e2b",
+      "queries": 33,
+      "bank_overlap": 25,
+      "fraction": 0.7575757575757576
+    },
+    {
+      "session_id": "av11_fe6081f59a94aebf",
+      "queries": 35,
+      "bank_overlap": 19,
+      "fraction": 0.5428571428571428
+    }
+  ],
+  "diagnosis": "BANK_ALIGNED_BUT_SPARSE_CROSS_SYSTEM",
+  "interpretation": "Pools substantially overlap the deployment bank, but individual systems do not share enough executed queries for clean cross-system contextual supervision."
+}

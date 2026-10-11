@@ -1,0 +1,15 @@
+{
+  "source_rows": 14928,
+  "safe_groups": 552,
+  "pairs_total": 279,
+  "train_pairs": 253,
+  "val_pairs": 26,
+  "pairs_by_source": {
+    "q38_self": 119,
+    "small_g50_teacher": 70,
+    "small_r7_teacher": 90
+  },
+  "mean_chosen_words": 15.222222222222221,
+  "mean_rejected_words": 24.415770609318997,
+  "mean_reward_gap": 1.2679887319296075
+}

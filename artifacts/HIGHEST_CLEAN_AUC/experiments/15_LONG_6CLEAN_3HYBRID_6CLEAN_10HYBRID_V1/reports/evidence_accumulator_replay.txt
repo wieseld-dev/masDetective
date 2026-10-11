@@ -1,0 +1,67 @@
+==============================================================================================================
+OFFLINE EVIDENCE-ACCUMULATOR REPLAY
+==============================================================================================================
+
+  R     FROZEN   TARGET_RAW  TARGET_SIGN  TARGET_CLIP4    ALL_RAW
+  1   0.529412     0.533333     0.533333      0.533333   0.509804
+  2   0.505882     0.549020     0.549020      0.549020   0.470588
+  3   0.556863     0.517647     0.515686      0.517647   0.517647
+  4   0.556863     0.501961     0.503922      0.501961   0.560784
+  5   0.537255     0.494118     0.496078      0.494118   0.611765
+  6   0.552941     0.507843     0.509804      0.507843   0.596078
+  7   0.596078     0.529412     0.533333      0.529412   0.627451
+  8   0.580392     0.531373     0.539216      0.531373   0.623529
+  9   0.572549     0.582353     0.584314      0.582353   0.611765
+ 10   0.639216     0.603922     0.613725      0.603922   0.635294
+ 11   0.658824     0.615686     0.617647      0.615686   0.639216
+ 12   0.662745     0.611765     0.607843      0.611765   0.623529
+ 13   0.674510     0.609804     0.603922      0.611765   0.639216
+ 14   0.698039     0.637255     0.631373      0.639216   0.666667
+ 15   0.694118     0.650980     0.647059      0.652941   0.658824
+ 16   0.760784     0.643137     0.647059      0.645098   0.666667
+ 17   0.713725     0.639216     0.647059      0.641176   0.654902
+ 18   0.725490     0.649020     0.658824      0.650980   0.643137
+ 19   0.745098     0.611765     0.635294      0.613725   0.643137
+ 20   0.741176     0.625490     0.637255      0.627451   0.666667
+ 21   0.796078     0.637255     0.643137      0.639216   0.670588
+ 22   0.764706     0.647059     0.633333      0.645098   0.666667
+ 23   0.745098     0.603922     0.627451      0.609804   0.662745
+ 24   0.823529     0.631373     0.654902      0.633333   0.650980
+ 25   0.780392     0.588235     0.639216      0.594118   0.650980
+
+==============================================================================================================
+FINAL / PEAK
+==============================================================================================================
+frozen         final=0.780392 peak=0.823529 peak_round=R24
+target_raw     final=0.588235 peak=0.650980 peak_round=R15
+target_sign    final=0.639216 peak=0.658824 peak_round=R18
+target_clip4   final=0.594118 peak=0.652941 peak_round=R15
+all_raw        final=0.650980 peak=0.670588 peak_round=R21
+
+==============================================================================================================
+PER-SYSTEM FINAL AUC
+==============================================================================================================
+simple5_01_code_plan_research              FROZEN=0.823529 TARGET_RAW=0.666667 TARGET_SIGN=0.823529 TARGET_CLIP4=0.686275 ALL_RAW=0.705882
+simple5_02_risk_access_translation         FROZEN=0.882353 TARGET_RAW=0.784314 TARGET_SIGN=0.803922 TARGET_CLIP4=0.784314 ALL_RAW=0.549020
+simple5_03_data_db_requirements            FROZEN=0.686275 TARGET_RAW=0.352941 TARGET_SIGN=0.352941 TARGET_CLIP4=0.333333 ALL_RAW=0.450980
+simple5_04_support_incident_ops            FROZEN=0.784314 TARGET_RAW=0.921569 TARGET_SIGN=0.882353 TARGET_CLIP4=0.921569 ALL_RAW=0.862745
+simple5_05_docs_qa_writing                 FROZEN=0.725490 TARGET_RAW=0.215686 TARGET_SIGN=0.333333 TARGET_CLIP4=0.245098 ALL_RAW=0.686275
+
+==============================================================================================================
+TARGET PROBE COUNTS AT R25
+==============================================================================================================
+
+simple5_01_code_plan_research
+documentation:5 fact_checking:4 planning:3 qa_testing:3 incident_management:2 research:2 risk_assessment:2 design:1 financial_analysis:1 operations:1 requirements_analysis:1
+
+simple5_02_risk_access_translation
+financial_analysis:4 documentation:3 fact_checking:3 research:3 data:2 incident_management:2 operations:2 code:1 design:1 math:1 planning:1 requirements_analysis:1 translation:1
+
+simple5_03_data_db_requirements
+incident_management:4 documentation:3 research:3 risk_assessment:3 financial_analysis:2 writing:2 data:1 database_design:1 design:1 fact_checking:1 operations:1 planning:1 qa_testing:1 requirements_analysis:1
+
+simple5_04_support_incident_ops
+qa_testing:6 data:4 accessibility_review:2 documentation:2 financial_analysis:2 customer_support_triage:1 database_design:1 incident_management:1 operations:1 planning:1 requirements_analysis:1 research:1 risk_assessment:1 writing:1
+
+simple5_05_docs_qa_writing
+requirements_analysis:5 writing:4 documentation:2 experiment_design:2 financial_analysis:2 incident_management:2 code:1 customer_support_triage:1 database_design:1 fact_checking:1 planning:1 qa_testing:1 research:1 risk_assessment:1

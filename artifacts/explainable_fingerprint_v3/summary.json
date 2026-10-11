@@ -1,0 +1,223 @@
+{
+  "experiment": "explainable_fingerprint_v3",
+  "development_only": true,
+  "concept_profile_input": "public role name + public role description only",
+  "concept_profile_model": "gpt-4o-mini",
+  "C": 0.05,
+  "train_roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "financial_analysis",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation",
+    "customer_support_triage"
+  ],
+  "dev_unseen_roles": [
+    "legal_contract_review",
+    "procurement_analysis",
+    "travel_itinerary",
+    "spreadsheet_audit",
+    "scientific_peer_review",
+    "inventory_forecasting"
+  ],
+  "train_branches": 827,
+  "dev_branches": 288,
+  "concept_keys": [
+    "evidence_artifacts",
+    "decision_criteria",
+    "verification_behavior",
+    "failure_modes",
+    "constraints_dependencies",
+    "reasoning_actions"
+  ],
+  "results": {
+    "pairwise_geom": {
+      "global_dev_auc": 0.6121901523919753,
+      "mean_role_auc": 0.6359541220832015,
+      "median_role_auc": 0.6302462544454056,
+      "mean_role_pair_accuracy": 0.6330694314762942,
+      "mean_role_strict_branch_win": 0.5437480547774666,
+      "per_role_auc": {
+        "legal_contract_review": 0.5416666666666667,
+        "procurement_analysis": 0.7029478458049886,
+        "travel_itinerary": 0.5976547481737793,
+        "spreadsheet_audit": 0.6239907727797,
+        "scientific_peer_review": 0.7129629629629629,
+        "inventory_forecasting": 0.6365017361111112
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5476190476190477,
+        "procurement_analysis": 0.6904761904761905,
+        "travel_itinerary": 0.5784313725490197,
+        "spreadsheet_audit": 0.7156862745098039,
+        "scientific_peer_review": 0.6203703703703703,
+        "inventory_forecasting": 0.6458333333333334
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.40476190476190477,
+        "procurement_analysis": 0.6428571428571429,
+        "travel_itinerary": 0.47058823529411764,
+        "spreadsheet_audit": 0.6470588235294118,
+        "scientific_peer_review": 0.5555555555555556,
+        "inventory_forecasting": 0.5416666666666666
+      }
+    },
+    "pairwise_concept": {
+      "global_dev_auc": 0.5681001639660493,
+      "mean_role_auc": 0.5739948347043873,
+      "median_role_auc": 0.5609930246608448,
+      "mean_role_pair_accuracy": 0.5861101384998444,
+      "mean_role_strict_branch_win": 0.48524224504616664,
+      "per_role_auc": {
+        "legal_contract_review": 0.5714285714285714,
+        "procurement_analysis": 0.5858843537414966,
+        "travel_itinerary": 0.5182622068435218,
+        "spreadsheet_audit": 0.550557477893118,
+        "scientific_peer_review": 0.7223936899862826,
+        "inventory_forecasting": 0.49544270833333337
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.6785714285714286,
+        "procurement_analysis": 0.5952380952380952,
+        "travel_itinerary": 0.49019607843137253,
+        "spreadsheet_audit": 0.5686274509803921,
+        "scientific_peer_review": 0.6944444444444444,
+        "inventory_forecasting": 0.4895833333333333
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.5476190476190477,
+        "procurement_analysis": 0.5,
+        "travel_itinerary": 0.4117647058823529,
+        "spreadsheet_audit": 0.47058823529411764,
+        "scientific_peer_review": 0.6481481481481481,
+        "inventory_forecasting": 0.3333333333333333
+      }
+    },
+    "pointwise_geom_concept": {
+      "global_dev_auc": 0.5935088734567902,
+      "mean_role_auc": 0.6240959228139736,
+      "median_role_auc": 0.63780371746859,
+      "mean_role_pair_accuracy": 0.6236885958086938,
+      "mean_role_strict_branch_win": 0.5308285351177509,
+      "per_role_auc": {
+        "legal_contract_review": 0.5405328798185941,
+        "procurement_analysis": 0.6590136054421769,
+        "travel_itinerary": 0.5732410611303346,
+        "spreadsheet_audit": 0.6497500961168783,
+        "scientific_peer_review": 0.6258573388203018,
+        "inventory_forecasting": 0.6961805555555556
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5238095238095238,
+        "procurement_analysis": 0.6071428571428571,
+        "travel_itinerary": 0.5980392156862745,
+        "spreadsheet_audit": 0.7156862745098039,
+        "scientific_peer_review": 0.6203703703703703,
+        "inventory_forecasting": 0.6770833333333334
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.38095238095238093,
+        "procurement_analysis": 0.5476190476190477,
+        "travel_itinerary": 0.49019607843137253,
+        "spreadsheet_audit": 0.6666666666666666,
+        "scientific_peer_review": 0.5370370370370371,
+        "inventory_forecasting": 0.5625
+      }
+    },
+    "pairwise_geom_concept": {
+      "global_dev_auc": 0.6135886863425926,
+      "mean_role_auc": 0.6129711997299424,
+      "median_role_auc": 0.6240145797902494,
+      "mean_role_pair_accuracy": 0.6277946363730678,
+      "mean_role_strict_branch_win": 0.5510393972403776,
+      "per_role_auc": {
+        "legal_contract_review": 0.5510204081632653,
+        "procurement_analysis": 0.6258503401360545,
+        "travel_itinerary": 0.5878508266051519,
+        "spreadsheet_audit": 0.6328335255670896,
+        "scientific_peer_review": 0.658093278463649,
+        "inventory_forecasting": 0.6221788194444444
+      },
+      "per_role_pair_accuracy": {
+        "legal_contract_review": 0.5595238095238095,
+        "procurement_analysis": 0.5833333333333334,
+        "travel_itinerary": 0.6176470588235294,
+        "spreadsheet_audit": 0.696078431372549,
+        "scientific_peer_review": 0.6851851851851852,
+        "inventory_forecasting": 0.625
+      },
+      "per_role_strict_branch_win": {
+        "legal_contract_review": 0.4523809523809524,
+        "procurement_analysis": 0.5476190476190477,
+        "travel_itinerary": 0.5098039215686274,
+        "spreadsheet_audit": 0.6274509803921569,
+        "scientific_peer_review": 0.6481481481481481,
+        "inventory_forecasting": 0.5208333333333334
+      }
+    }
+  },
+  "role_explanation_summary": {
+    "legal_contract_review": {
+      "evidence_artifacts": 0.009726970151643314,
+      "decision_criteria": 0.00017366563856956505,
+      "verification_behavior": -0.04146645728143908,
+      "failure_modes": 0.05252639640266785,
+      "constraints_dependencies": -0.0019080707736845528,
+      "reasoning_actions": -0.03931236581411213
+    },
+    "procurement_analysis": {
+      "evidence_artifacts": 0.018749052431390044,
+      "decision_criteria": -0.09489187985725168,
+      "verification_behavior": 0.006948424636253289,
+      "failure_modes": 0.03406455131923957,
+      "constraints_dependencies": -0.0034791089683061556,
+      "reasoning_actions": -0.04150855262664014
+    },
+    "travel_itinerary": {
+      "evidence_artifacts": 0.02646895711921959,
+      "decision_criteria": 0.0054424697871082554,
+      "verification_behavior": 0.04082668787233677,
+      "failure_modes": -0.04321809525729394,
+      "constraints_dependencies": 0.0059007577890274575,
+      "reasoning_actions": -0.0005346206975552966
+    },
+    "spreadsheet_audit": {
+      "evidence_artifacts": 0.02493819905680093,
+      "decision_criteria": -0.017857027751411878,
+      "verification_behavior": -0.020484965513734257,
+      "failure_modes": -0.004915224579984651,
+      "constraints_dependencies": 0.026776432004921576,
+      "reasoning_actions": 0.006085382190112974
+    },
+    "scientific_peer_review": {
+      "evidence_artifacts": 0.055723328764239945,
+      "decision_criteria": -0.1453277013971712,
+      "verification_behavior": -0.005100931144422955,
+      "failure_modes": 0.1531557605765691,
+      "constraints_dependencies": -0.0781419636224638,
+      "reasoning_actions": -0.0069646549031690316
+    },
+    "inventory_forecasting": {
+      "evidence_artifacts": -0.0053355790878413245,
+      "decision_criteria": -0.02680722150883715,
+      "verification_behavior": -0.048929170317326985,
+      "failure_modes": 0.06004848101292737,
+      "constraints_dependencies": -0.014269888090590635,
+      "reasoning_actions": -0.005911704327445477
+    }
+  }
+}

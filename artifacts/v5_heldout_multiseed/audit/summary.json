@@ -1,0 +1,451 @@
+{
+  "contexts_total": 192,
+  "per_seed": {
+    "20260924": {
+      "sft": {
+        "rows": 64,
+        "valid": 56,
+        "valid_rate": 0.875,
+        "clean": 12,
+        "clean_rate": 0.21428571428571427,
+        "bad": 42,
+        "bad_rate": 0.75,
+        "meta": 28,
+        "meta_rate": 0.5,
+        "assistant": 37,
+        "assistant_rate": 0.6607142857142857
+      },
+      "combined": {
+        "rows": 64,
+        "valid": 56,
+        "valid_rate": 0.875,
+        "clean": 13,
+        "clean_rate": 0.23214285714285715,
+        "bad": 41,
+        "bad_rate": 0.7321428571428571,
+        "meta": 28,
+        "meta_rate": 0.5,
+        "assistant": 35,
+        "assistant_rate": 0.625
+      },
+      "paired": {
+        "changed": 6,
+        "both_valid": 56,
+        "changed_both_valid": 6,
+        "clean_gain": 1,
+        "clean_loss": 0,
+        "bad_removed": 1,
+        "bad_added": 0,
+        "net_clean": 1,
+        "net_bad_removed": 1,
+        "clean_sign_p": 1.0,
+        "bad_sign_p": 1.0
+      }
+    },
+    "20260925": {
+      "sft": {
+        "rows": 64,
+        "valid": 56,
+        "valid_rate": 0.875,
+        "clean": 14,
+        "clean_rate": 0.25,
+        "bad": 39,
+        "bad_rate": 0.6964285714285714,
+        "meta": 27,
+        "meta_rate": 0.48214285714285715,
+        "assistant": 34,
+        "assistant_rate": 0.6071428571428571
+      },
+      "combined": {
+        "rows": 64,
+        "valid": 56,
+        "valid_rate": 0.875,
+        "clean": 14,
+        "clean_rate": 0.25,
+        "bad": 39,
+        "bad_rate": 0.6964285714285714,
+        "meta": 26,
+        "meta_rate": 0.4642857142857143,
+        "assistant": 35,
+        "assistant_rate": 0.625
+      },
+      "paired": {
+        "changed": 9,
+        "both_valid": 56,
+        "changed_both_valid": 9,
+        "clean_gain": 1,
+        "clean_loss": 1,
+        "bad_removed": 1,
+        "bad_added": 1,
+        "net_clean": 0,
+        "net_bad_removed": 0,
+        "clean_sign_p": 1.0,
+        "bad_sign_p": 1.0
+      }
+    },
+    "20260926": {
+      "sft": {
+        "rows": 64,
+        "valid": 58,
+        "valid_rate": 0.90625,
+        "clean": 14,
+        "clean_rate": 0.2413793103448276,
+        "bad": 40,
+        "bad_rate": 0.6896551724137931,
+        "meta": 27,
+        "meta_rate": 0.46551724137931033,
+        "assistant": 35,
+        "assistant_rate": 0.603448275862069
+      },
+      "combined": {
+        "rows": 64,
+        "valid": 59,
+        "valid_rate": 0.921875,
+        "clean": 13,
+        "clean_rate": 0.22033898305084745,
+        "bad": 43,
+        "bad_rate": 0.7288135593220338,
+        "meta": 28,
+        "meta_rate": 0.4745762711864407,
+        "assistant": 37,
+        "assistant_rate": 0.6271186440677966
+      },
+      "paired": {
+        "changed": 6,
+        "both_valid": 58,
+        "changed_both_valid": 5,
+        "clean_gain": 0,
+        "clean_loss": 1,
+        "bad_removed": 0,
+        "bad_added": 2,
+        "net_clean": -1,
+        "net_bad_removed": -2,
+        "clean_sign_p": 1.0,
+        "bad_sign_p": 0.5
+      }
+    }
+  },
+  "pooled": {
+    "sft": {
+      "rows": 192,
+      "valid": 170,
+      "valid_rate": 0.8854166666666666,
+      "clean": 40,
+      "clean_rate": 0.23529411764705882,
+      "bad": 121,
+      "bad_rate": 0.711764705882353,
+      "meta": 82,
+      "meta_rate": 0.4823529411764706,
+      "assistant": 106,
+      "assistant_rate": 0.6235294117647059
+    },
+    "combined": {
+      "rows": 192,
+      "valid": 171,
+      "valid_rate": 0.890625,
+      "clean": 40,
+      "clean_rate": 0.23391812865497075,
+      "bad": 123,
+      "bad_rate": 0.7192982456140351,
+      "meta": 82,
+      "meta_rate": 0.47953216374269003,
+      "assistant": 107,
+      "assistant_rate": 0.6257309941520468
+    },
+    "paired": {
+      "changed": 21,
+      "both_valid": 170,
+      "changed_both_valid": 20,
+      "clean_gain": 2,
+      "clean_loss": 2,
+      "bad_removed": 2,
+      "bad_added": 3,
+      "net_clean": 0,
+      "net_bad_removed": -1,
+      "clean_sign_p": 1.0,
+      "bad_sign_p": 1.0
+    }
+  },
+  "changed_examples": [
+    {
+      "key": [
+        1,
+        "v3_3be09f5ac3716b74",
+        0
+      ],
+      "sft": "What specific aspect of my existing processes could benefit from improved documentation and clear communication?",
+      "combined": "What specific aspect of my existing processes could benefit from improved monitoring and feedback loops?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260924"
+    },
+    {
+      "key": [
+        1,
+        "v3_3be09f5ac3716b74",
+        4
+      ],
+      "sft": "How can I ensure that our current setup is robust against unexpected failures in the ongoing execution?",
+      "combined": "How can I ensure that our current process is consistently reliable over time?",
+      "sft_clean": true,
+      "combined_clean": true,
+      "sft_bad": false,
+      "combined_bad": false,
+      "master_seed": "20260924"
+    },
+    {
+      "key": [
+        1,
+        "v3_446ab89ba9908cdd",
+        0
+      ],
+      "sft": "What specific aspect of your current project will require rigorous statistical analysis and extensive data preprocessing before moving forward?",
+      "combined": "What specific aspect of our current project will require further investigation based on the provided data sets and schemas?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260924"
+    },
+    {
+      "key": [
+        1,
+        "v3_7625e577c4bd6a33",
+        4
+      ],
+      "sft": "What specific aspect of the current operation are you concerned about, and what kind of insights would help us identify potential improvements?",
+      "combined": "What specific aspect of the operational procedures could be improved?",
+      "sft_clean": false,
+      "combined_clean": true,
+      "sft_bad": true,
+      "combined_bad": false,
+      "master_seed": "20260924"
+    },
+    {
+      "key": [
+        1,
+        "v3_a76e1853adfc5dd0",
+        0
+      ],
+      "sft": "Can you describe a recent project where you had to optimize performance in an existing process?",
+      "combined": "Can you describe a specific scenario where understanding the impact of your current processes helps in identifying potential bottlenecks?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260924"
+    },
+    {
+      "key": [
+        1,
+        "v3_a76e1853adfc5dd0",
+        3
+      ],
+      "sft": "Could you please clarify if your current focus region includes **financial analysis**, as it might significantly impact decision-making processes?",
+      "combined": "Could you please clarify if your current focus region includes **financial analysis**, as it might offer additional insights?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260924"
+    },
+    {
+      "key": [
+        1,
+        "v3_40a103a931961c5a",
+        1
+      ],
+      "sft": "Are there specific metrics being used in your dataset?",
+      "combined": "Are there specific metrics being used in the experimental validation?",
+      "sft_clean": false,
+      "combined_clean": true,
+      "sft_bad": true,
+      "combined_bad": false,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_446ab89ba9908cdd",
+        3
+      ],
+      "sft": "What specific aspect of my current focus region (research) could be further developed based on these least-resolved capabilities?",
+      "combined": "Does your current methodological approach involve thorough stakeholder engagement in every phase?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_5ad3f930bee3a6aa",
+        4
+      ],
+      "sft": "Which feature could potentially enhance our current problem-solving efficiency in handling complex processes?",
+      "combined": "Which specific aspect of operational processes in my current project requires clarification or further investigation?",
+      "sft_clean": true,
+      "combined_clean": false,
+      "sft_bad": false,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_5ad3f930bee3a6aa",
+        5
+      ],
+      "sft": "What specific piece of data do you need to start addressing this QA testing task?",
+      "combined": "What specific piece of data do you need to start addressing this QA testing task efficiently?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_7625e577c4bd6a33",
+        4
+      ],
+      "sft": "What specific aspect of my current process could use improvement, and what initial details should I provide to facilitate an effective review?",
+      "combined": "What specific aspect of my current process could use improvement, and what initial details should I share to facilitate an effective review?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_a76e1853adfc5dd0",
+        0
+      ],
+      "sft": "What are some key aspects I should focus on before proceeding further?",
+      "combined": "What are some additional features that could be implemented in our project to enhance data analysis?",
+      "sft_clean": true,
+      "combined_clean": true,
+      "sft_bad": false,
+      "combined_bad": false,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_a76e1853adfc5dd0",
+        2
+      ],
+      "sft": "Can you describe a situation where you had to balance multiple functionalities simultaneously in your work?",
+      "combined": "Can you describe a situation where you had to balance multiple functionalities simultaneously?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_f1b5c45dd7a176b3",
+        1
+      ],
+      "sft": "Is there any specific mathematical calculation related to your recent work that requires validation against established benchmarks?",
+      "combined": "Is there any specific mathematical calculation related to your recent work that requires validation?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_f1b5c45dd7a176b3",
+        5
+      ],
+      "sft": "Do you frequently review multiple sets of data to ensure consistency before running any analyses?",
+      "combined": "Do you frequently review multiple sets of data to ensure they align with each other before starting a new analysis?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260925"
+    },
+    {
+      "key": [
+        1,
+        "v3_40a103a931961c5a",
+        1
+      ],
+      "sft": "What specific piece of data or calculation are you unsure about that could impact our ability to accurately assess this aspect?",
+      "combined": "Can you explain how different datasets are selected and used in your current methodology?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260926"
+    },
+    {
+      "key": [
+        1,
+        "v3_40a103a931961c5a",
+        5
+      ],
+      "sft": "Do you have experience in conducting performance evaluations of software systems?",
+      "combined": "Do you have experience in conducting performance evaluations?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": true,
+      "combined_bad": true,
+      "master_seed": "20260926"
+    },
+    {
+      "key": [
+        1,
+        "v3_446ab89ba9908cdd",
+        1
+      ],
+      "sft": "What specific aspects of our current dataset are challenging in terms of handling missing values during preprocessing?",
+      "combined": "What specific aspects of our current dataset are particularly challenging in terms of data preprocessing?",
+      "sft_clean": true,
+      "combined_clean": true,
+      "sft_bad": false,
+      "combined_bad": false,
+      "master_seed": "20260926"
+    },
+    {
+      "key": [
+        1,
+        "v3_5ad3f930bee3a6aa",
+        1
+      ],
+      "sft": "Is there any additional specific analytical skills needed in addition to mathematical analysis?",
+      "combined": "Is there any additional specific task related to \"translation\" that could help diagnose its level of maturity?",
+      "sft_clean": true,
+      "combined_clean": false,
+      "sft_bad": false,
+      "combined_bad": true,
+      "master_seed": "20260926"
+    },
+    {
+      "key": [
+        1,
+        "v3_7625e577c4bd6a33",
+        4
+      ],
+      "sft": "Do I need more details about how to improve process execution reliability?",
+      "combined": "Do I need more details about how to improve process execution?",
+      "sft_clean": false,
+      "combined_clean": false,
+      "sft_bad": false,
+      "combined_bad": true,
+      "master_seed": "20260926"
+    }
+  ]
+}

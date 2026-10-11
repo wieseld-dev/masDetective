@@ -1,0 +1,45 @@
+{
+  "experiment": "v7_hardrank_night",
+  "best_dev_within_output_auc": 0.6817955749322756,
+  "history": [
+    {
+      "epoch": 1,
+      "optimizer_steps": 625,
+      "dev_metrics": {
+        "rows": 512,
+        "candidate_scores": 10240,
+        "micro_auc": 0.6254185267857143,
+        "macro_role_auc": 0.6581369423031728,
+        "within_output_auc": 0.6592618235616616,
+        "topk_activation_recall": 0.3056640625,
+        "exact_activation_set": 0.146484375,
+        "mean_selected_minus_absent_logit": 1.4277566288308585,
+        "role_auc": {
+          "code": 0.6223147104794445,
+          "writing": 0.6636984352773826,
+          "math": 0.6424692076423237,
+          "planning": 0.7038291380625477,
+          "research": 0.6042718446601941,
+          "data": 0.6240412979351032,
+          "design": 0.6954888971823101,
+          "operations": 0.6217837775470174,
+          "qa_testing": 0.6061632351954933,
+          "translation": 0.8362802881466929,
+          "financial_analysis": 0.6437632135306554,
+          "database_design": 0.7367886178861789,
+          "accessibility_review": 0.6803339517625232,
+          "fact_checking": 0.6212752525252525,
+          "requirements_analysis": 0.708668431232821,
+          "incident_management": 0.49755718409948924,
+          "experiment_design": 0.6064058567833448,
+          "risk_assessment": 0.7308849045691151,
+          "documentation": 0.6648917748917749,
+          "customer_support_triage": 0.6518288266537905
+        }
+      }
+    }
+  ],
+  "best_adapter": "/home/wieseld/mas_rl_detective/artifacts/system_v2_rankfirst/v7_hardrank_v2/best_adapter",
+  "last_adapter": "/home/wieseld/mas_rl_detective/artifacts/system_v2_rankfirst/v7_hardrank_v2/last_adapter",
+  "test_split_used_for_training_or_selection": false
+}

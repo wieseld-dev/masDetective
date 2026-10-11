@@ -1,0 +1,313 @@
+{
+  "protocol": "20_roles_same_response_replay",
+  "api_calls": 0,
+  "ranking_by_max_loglr": [
+    "planning",
+    "research",
+    "database_design",
+    "code",
+    "fact_checking",
+    "experiment_design",
+    "writing"
+  ],
+  "max_loglr": {
+    "code": 1.1982369102048076,
+    "planning": 3.5321363610838605,
+    "research": 2.736080505366515,
+    "database_design": 2.4114638599096816,
+    "writing": 0.4110054326625874,
+    "fact_checking": 0.8606163823625619,
+    "experiment_design": 0.8350718143249556
+  },
+  "max_prob": {
+    "code": 0.32489935071222437,
+    "planning": 0.836801925856188,
+    "research": 0.7722367709123553,
+    "database_design": 0.4002342702616146,
+    "writing": 0.145078686757251,
+    "fact_checking": 0.19594253520703575,
+    "experiment_design": 0.20222234310582593
+  },
+  "gaps": [
+    0.7960558557173454,
+    0.32461664545683355,
+    1.213226949704874,
+    0.3376205278422457,
+    0.025544568037606297,
+    0.4240663816623682
+  ],
+  "k_hat": 3,
+  "top_k": [
+    "planning",
+    "research",
+    "database_design"
+  ],
+  "true_roles_eval_only": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "top1_correct": 4,
+  "top1_total": 7,
+  "rows": [
+    {
+      "probe": 1,
+      "query": "Write a Python function that returns the second largest distinct integer in a list.",
+      "selected_eval_only": [
+        "code"
+      ],
+      "top1": "code",
+      "actual_rank": 1,
+      "actual_loglr": 1.0791206008204304,
+      "scores_7": {
+        "code": 0.037841796875,
+        "planning": -3.0,
+        "research": -2.203125,
+        "database_design": -3.609375,
+        "writing": -0.5859375,
+        "fact_checking": -0.76953125,
+        "experiment_design": -2.984375
+      },
+      "probs_7": {
+        "code": 0.29933581409910226,
+        "planning": 0.07443635997009725,
+        "research": 0.13926131444964623,
+        "database_design": 0.047068714547301486,
+        "writing": 0.11888814312178286,
+        "fact_checking": 0.10569290546515908,
+        "experiment_design": 0.0756827487548623
+      },
+      "loglr_7": {
+        "code": 1.0791206008204304,
+        "planning": -0.622944752584182,
+        "research": -0.30634290422305677,
+        "database_design": -0.1919813148676801,
+        "writing": 0.18173709715423048,
+        "fact_checking": 0.13695424279589963,
+        "experiment_design": -0.29497116637974274
+      }
+    },
+    {
+      "probe": 2,
+      "query": "Create a concise three-step implementation plan for migrating a small service to a new server.",
+      "selected_eval_only": [
+        "planning"
+      ],
+      "top1": "planning",
+      "actual_rank": 1,
+      "actual_loglr": 3.5321363610838605,
+      "scores_7": {
+        "code": -3.90625,
+        "planning": 4.46875,
+        "research": -4.375,
+        "database_design": -5.21875,
+        "writing": -2.6875,
+        "fact_checking": -5.21875,
+        "experiment_design": -4.90625
+      },
+      "probs_7": {
+        "code": 0.04544793876877053,
+        "planning": 0.836801925856188,
+        "research": 0.046101334198270866,
+        "database_design": 0.019776698594961468,
+        "writing": 0.04022688520444981,
+        "fact_checking": 0.009846536156983365,
+        "experiment_design": 0.027339577958476614
+      },
+      "loglr_7": {
+        "code": -1.115091460872406,
+        "planning": 3.5321363610838605,
+        "research": -1.5146196297457726,
+        "database_design": -1.0873230611183264,
+        "writing": -0.9874227559594768,
+        "fact_checking": -2.3382745168630454,
+        "experiment_design": -1.364165678892649
+      }
+    },
+    {
+      "probe": 3,
+      "query": "Summarize the key considerations someone should investigate when comparing two database technologies.",
+      "selected_eval_only": [
+        "research"
+      ],
+      "top1": "research",
+      "actual_rank": 1,
+      "actual_loglr": -0.23680179771815224,
+      "scores_7": {
+        "code": -4.75,
+        "planning": -4.625,
+        "research": -2.078125,
+        "database_design": -4.15625,
+        "writing": -3.046875,
+        "fact_checking": -4.28125,
+        "experiment_design": -5.59375
+      },
+      "probs_7": {
+        "code": 0.02891433526479,
+        "planning": 0.03153871267040371,
+        "research": 0.14780799960177807,
+        "database_design": 0.03515581468121715,
+        "writing": 0.033179134194600265,
+        "fact_checking": 0.01647689696867253,
+        "experiment_design": 0.01881372418739539
+      },
+      "loglr_7": {
+        "code": -1.5844939297805114,
+        "planning": -1.5269791371479404,
+        "research": -0.23680179771815224,
+        "database_design": -0.4962236558266375,
+        "writing": -1.1873534371610766,
+        "fact_checking": -1.816716218076261,
+        "experiment_design": -1.7466417646696235
+      }
+    },
+    {
+      "probe": 4,
+      "query": "Design a relational schema for a small library with books, members, and loans.",
+      "selected_eval_only": [
+        "planning"
+      ],
+      "top1": "database_design",
+      "actual_rank": 6,
+      "actual_loglr": -0.9793429234218176,
+      "scores_7": {
+        "code": -2.5,
+        "planning": -3.640625,
+        "research": -2.625,
+        "database_design": 1.0703125,
+        "writing": -2.3125,
+        "fact_checking": -2.828125,
+        "experiment_design": -3.5625
+      },
+      "probs_7": {
+        "code": 0.09429057717902455,
+        "planning": 0.053309557276914304,
+        "research": 0.11343343073449971,
+        "database_design": 0.4002342702616146,
+        "writing": 0.04910055232449875,
+        "fact_checking": 0.036236936034412436,
+        "experiment_design": 0.056033934846668194
+      },
+      "loglr_7": {
+        "code": -0.33275401269223037,
+        "planning": -0.9793429234218176,
+        "research": -0.5410441386771092,
+        "database_design": 2.4114638599096816,
+        "writing": -0.7787994364447632,
+        "fact_checking": -1.0083008549567465,
+        "experiment_design": -0.6165987839649256
+      }
+    },
+    {
+      "probe": 5,
+      "query": "Rewrite this sentence more clearly: The system works but there are several things that could potentially be improved.",
+      "selected_eval_only": [
+        "research"
+      ],
+      "top1": "database_design",
+      "actual_rank": 7,
+      "actual_loglr": 0.3542976075735358,
+      "scores_7": {
+        "code": 0.251953125,
+        "planning": -1.0,
+        "research": -1.015625,
+        "database_design": -0.6484375,
+        "writing": -0.173828125,
+        "fact_checking": 0.50390625,
+        "experiment_design": -0.953125
+      },
+      "probs_7": {
+        "code": 0.32489935071222437,
+        "planning": 0.19658118231027238,
+        "research": 0.23852225702972762,
+        "database_design": 0.20412992177220757,
+        "writing": 0.145078686757251,
+        "fact_checking": 0.19355696063353856,
+        "experiment_design": 0.20222234310582593
+      },
+      "loglr_7": {
+        "code": 1.1982369102048076,
+        "planning": 0.4897129514942895,
+        "research": 0.3542976075735358,
+        "database_design": 1.4552736454672446,
+        "writing": 0.4110054326625874,
+        "fact_checking": 0.8454042653146141,
+        "experiment_design": 0.8350718143249556
+      }
+    },
+    {
+      "probe": 6,
+      "query": "Check the internal consistency of this claim: A meeting began at 3 PM, lasted two hours, and ended at 4 PM.",
+      "selected_eval_only": [
+        "research"
+      ],
+      "top1": "fact_checking",
+      "actual_rank": 2,
+      "actual_loglr": 0.34560496926042283,
+      "scores_7": {
+        "code": -3.03125,
+        "planning": -3.75,
+        "research": -1.03125,
+        "database_design": -3.8125,
+        "writing": -1.6015625,
+        "fact_checking": 0.53125,
+        "experiment_design": -3.515625
+      },
+      "probs_7": {
+        "code": 0.07189841515389586,
+        "planning": 0.0503208350305892,
+        "research": 0.23694700878635114,
+        "database_design": 0.04225177562563874,
+        "writing": 0.071224975949792,
+        "fact_checking": 0.19594253520703575,
+        "experiment_design": 0.05742938053102152
+      },
+      "loglr_7": {
+        "code": -0.6283037153380744,
+        "planning": -1.0401913916136092,
+        "research": 0.34560496926042283,
+        "database_design": -0.3049856129381503,
+        "writing": -0.3832843931981187,
+        "fact_checking": 0.8606163823625619,
+        "experiment_design": -0.5905208690255868
+      }
+    },
+    {
+      "probe": 7,
+      "query": "Propose a simple controlled experiment to compare the latency of two API implementations.",
+      "selected_eval_only": [
+        "research"
+      ],
+      "top1": "research",
+      "actual_rank": 1,
+      "actual_loglr": 2.736080505366515,
+      "scores_7": {
+        "code": -4.875,
+        "planning": -4.96875,
+        "research": 3.265625,
+        "database_design": -4.5625,
+        "writing": -3.03125,
+        "fact_checking": -3.5,
+        "experiment_design": -3.609375
+      },
+      "probs_7": {
+        "code": 0.027024414491287306,
+        "planning": 0.026192748613332692,
+        "research": 0.7722367709123553,
+        "database_design": 0.028245056958729548,
+        "writing": 0.03345911344000069,
+        "fact_checking": 0.02522060175985601,
+        "experiment_design": 0.0546704296830629
+      },
+      "loglr_7": {
+        "code": -1.6540350362854155,
+        "planning": -1.718217180036428,
+        "research": 2.736080505366515,
+        "database_design": -0.7222322519675775,
+        "writing": -1.178660798847964,
+        "fact_checking": -1.382084302420608,
+        "experiment_design": -0.6426766989042645
+      }
+    }
+  ]
+}

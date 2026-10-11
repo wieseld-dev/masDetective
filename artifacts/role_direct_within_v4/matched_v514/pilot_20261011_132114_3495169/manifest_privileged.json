@@ -1,0 +1,132 @@
+{
+  "version": "MAS5_V514_DIAGNOSTIC",
+  "systems": [
+    {
+      "background_roles": [
+        "financial_analysis",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v514_code",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "customer_support_triage",
+        "code"
+      ],
+      "session_id": "v514_code_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v514_code",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "customer_support_triage",
+        "design"
+      ],
+      "session_id": "v514_code_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "writing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v514_planning",
+      "pair_index": 4,
+      "roles": [
+        "documentation",
+        "writing",
+        "planning"
+      ],
+      "session_id": "v514_planning_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "writing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v514_planning",
+      "pair_index": 4,
+      "roles": [
+        "documentation",
+        "writing",
+        "incident_management"
+      ],
+      "session_id": "v514_planning_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "code",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v514_research",
+      "pair_index": 4,
+      "roles": [
+        "code",
+        "database_design",
+        "research"
+      ],
+      "session_id": "v514_research_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "code",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v514_research",
+      "pair_index": 4,
+      "roles": [
+        "code",
+        "database_design",
+        "writing"
+      ],
+      "session_id": "v514_research_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "research"
+    }
+  ],
+  "sha256": "b7f87136a604bc7dbeb13784e636d1f1459821509af147fd01cd6bcbf901fb64"
+}

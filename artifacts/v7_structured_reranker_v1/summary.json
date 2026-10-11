@@ -1,0 +1,527 @@
+{
+  "experiment": "v7_structured_reranker_v1",
+  "query_used": false,
+  "sensor_frozen": true,
+  "sensor": "artifacts/v7_benign_output_sensor_pilot_v1/best_adapter",
+  "reranker_parameters": 420,
+  "train_rows": 2048,
+  "best_step": 650,
+  "best_dev_within_auc": 0.8388290588987788,
+  "raw": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.7808682696048905,
+      "macro_role_auc": 0.7664866193340735,
+      "within_output_auc": 0.8224018465664775,
+      "topk_activation_recall": 0.5270182291666666,
+      "exact_activation_set_topk": 0.263671875,
+      "role_auc": {
+        "code": 0.7369770580296896,
+        "writing": 0.6871677046939085,
+        "math": 0.7216825024020498,
+        "planning": 0.776347135564379,
+        "research": 0.7665794683257918,
+        "data": 0.7110019408054342,
+        "design": 0.8476443768996961,
+        "operations": 0.7780095211161387,
+        "qa_testing": 0.6711200869970483,
+        "translation": 0.7055226824457593,
+        "financial_analysis": 0.8263379968909615,
+        "database_design": 0.8260382192804526,
+        "accessibility_review": 0.9537654485640615,
+        "fact_checking": 0.6001029737572939,
+        "requirements_analysis": 0.848028548028548,
+        "incident_management": 0.7847472638704371,
+        "experiment_design": 0.7349147992530346,
+        "risk_assessment": 0.8969368439167097,
+        "documentation": 0.8003030303030303,
+        "customer_support_triage": 0.6565047855370436
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8009245022431614,
+      "macro_role_auc": 0.7942231111379954,
+      "within_output_auc": 0.8394895907238993,
+      "topk_activation_recall": 0.5690104166666666,
+      "exact_activation_set_topk": 0.369140625,
+      "role_auc": {
+        "code": 0.7320862101138272,
+        "writing": 0.6494274688429177,
+        "math": 0.7610319076714189,
+        "planning": 0.8032854974076938,
+        "research": 0.7475237449118046,
+        "data": 0.7322388769926244,
+        "design": 0.8965044351073763,
+        "operations": 0.8952081461515424,
+        "qa_testing": 0.669606720122184,
+        "translation": 0.7086666666666667,
+        "financial_analysis": 0.8934364548494983,
+        "database_design": 0.8362953524243847,
+        "accessibility_review": 0.9195845004668534,
+        "fact_checking": 0.7834272540983607,
+        "requirements_analysis": 0.7970904597410622,
+        "incident_management": 0.858225471128697,
+        "experiment_design": 0.8117469132741607,
+        "risk_assessment": 0.8922943722943723,
+        "documentation": 0.794005183873534,
+        "customer_support_triage": 0.7027765866209262
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.8164601657217114,
+      "macro_role_auc": 0.800097156171857,
+      "within_output_auc": 0.843016425868593,
+      "topk_activation_recall": 0.5583333333333333,
+      "exact_activation_set_topk": 0.33,
+      "role_auc": {
+        "code": 0.6702127659574468,
+        "writing": 0.6236979166666666,
+        "math": 0.876358695652174,
+        "planning": 0.876078431372549,
+        "research": 0.786875,
+        "data": 0.7105978260869565,
+        "design": 0.8854166666666666,
+        "operations": 0.82,
+        "qa_testing": 0.8648097826086957,
+        "translation": NaN,
+        "financial_analysis": 0.7616666666666667,
+        "database_design": 0.9432624113475178,
+        "accessibility_review": 0.8702757916241062,
+        "fact_checking": 0.3957894736842105,
+        "requirements_analysis": 0.7009966777408638,
+        "incident_management": 0.9452631578947368,
+        "experiment_design": 0.9293394777265745,
+        "risk_assessment": 0.909035409035409,
+        "documentation": 0.9199823165340407,
+        "customer_support_triage": 0.7121875
+      }
+    },
+    "strict_82": {
+      "rows": 82,
+      "micro_auc": 0.7918318436977894,
+      "macro_role_auc": 0.7782078299165152,
+      "within_output_auc": 0.8266311552434411,
+      "topk_activation_recall": 0.5182926829268293,
+      "exact_activation_set_topk": 0.2804878048780488,
+      "role_auc": {
+        "code": 0.4935897435897436,
+        "writing": 0.7447257383966245,
+        "math": 0.8628571428571429,
+        "planning": 0.8220230473751601,
+        "research": 0.7725806451612903,
+        "data": 0.6685714285714286,
+        "design": 0.8858447488584474,
+        "operations": 0.8028919330289194,
+        "qa_testing": 0.8555743243243243,
+        "translation": NaN,
+        "financial_analysis": 0.5441558441558442,
+        "database_design": 0.9294871794871795,
+        "accessibility_review": 0.8506944444444444,
+        "fact_checking": 0.4551282051282051,
+        "requirements_analysis": 0.6767001114827201,
+        "incident_management": 1.0,
+        "experiment_design": 0.9161904761904762,
+        "risk_assessment": 0.8972602739726028,
+        "documentation": 0.8964992389649924,
+        "customer_support_triage": 0.7111742424242424
+      }
+    }
+  },
+  "structured": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.8181327206132352,
+      "macro_role_auc": 0.787158840222526,
+      "within_output_auc": 0.8388290588987788,
+      "topk_activation_recall": 0.5348307291666666,
+      "exact_activation_set_topk": 0.26171875,
+      "role_auc": {
+        "code": 0.7456333140543667,
+        "writing": 0.7929515418502202,
+        "math": 0.7753816590156933,
+        "planning": 0.7785876347135564,
+        "research": 0.7539121417797888,
+        "data": 0.6992560245835355,
+        "design": 0.8860688956433638,
+        "operations": 0.8098133484162896,
+        "qa_testing": 0.7529905235358086,
+        "translation": 0.6891518737672584,
+        "financial_analysis": 0.8854097268487675,
+        "database_design": 0.739938080495356,
+        "accessibility_review": 0.9603449808837913,
+        "fact_checking": 0.675133397821949,
+        "requirements_analysis": 0.8268632268632269,
+        "incident_management": 0.7559941797937623,
+        "experiment_design": 0.8024042950513539,
+        "risk_assessment": 0.9090001720874205,
+        "documentation": 0.8126839826839827,
+        "customer_support_triage": 0.6916578045610303
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8350279465601527,
+      "macro_role_auc": 0.8108311126800917,
+      "within_output_auc": 0.8487693700012899,
+      "topk_activation_recall": 0.5725911458333334,
+      "exact_activation_set_topk": 0.359375,
+      "role_auc": {
+        "code": 0.6867419294644523,
+        "writing": 0.6548364648573417,
+        "math": 0.8001163805644458,
+        "planning": 0.8417117813869553,
+        "research": 0.8201944821347806,
+        "data": 0.7624553890078515,
+        "design": 0.9129318394024276,
+        "operations": 0.8623539982030548,
+        "qa_testing": 0.7395189003436426,
+        "translation": 0.837,
+        "financial_analysis": 0.9070652173913043,
+        "database_design": 0.8907517939776004,
+        "accessibility_review": 0.8384103641456583,
+        "fact_checking": 0.7505122950819673,
+        "requirements_analysis": 0.796051338220013,
+        "incident_management": 0.8290523774394742,
+        "experiment_design": 0.8123667377398721,
+        "risk_assessment": 0.9019480519480519,
+        "documentation": 0.7994200220699567,
+        "customer_support_triage": 0.7731828902229846
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.8405471189717497,
+      "macro_role_auc": 0.8215441404493621,
+      "within_output_auc": 0.8578998968008256,
+      "topk_activation_recall": 0.6016666666666667,
+      "exact_activation_set_topk": 0.37,
+      "role_auc": {
+        "code": 0.7783687943262412,
+        "writing": 0.5859375,
+        "math": 0.9035326086956522,
+        "planning": 0.8501960784313726,
+        "research": 0.788125,
+        "data": 0.8654891304347826,
+        "design": 0.9109848484848485,
+        "operations": 0.8311111111111111,
+        "qa_testing": 0.845108695652174,
+        "translation": NaN,
+        "financial_analysis": 0.7888888888888889,
+        "database_design": 0.8865248226950354,
+        "accessibility_review": 0.8621041879468846,
+        "fact_checking": 0.6231578947368421,
+        "requirements_analysis": 0.6935215946843853,
+        "incident_management": 0.9726315789473684,
+        "experiment_design": 0.7803379416282642,
+        "risk_assessment": 0.9352869352869353,
+        "documentation": 0.918656056587091,
+        "customer_support_triage": 0.789375
+      }
+    },
+    "strict_82": {
+      "rows": 82,
+      "micro_auc": 0.8246195738539971,
+      "macro_role_auc": 0.8074468067146182,
+      "within_output_auc": 0.8423349442472752,
+      "topk_activation_recall": 0.5589430894308943,
+      "exact_activation_set_topk": 0.3170731707317073,
+      "role_auc": {
+        "code": 0.6634615384615384,
+        "writing": 0.5780590717299579,
+        "math": 0.900952380952381,
+        "planning": 0.7797695262483995,
+        "research": 0.7814516129032258,
+        "data": 0.8323809523809523,
+        "design": 0.9375951293759512,
+        "operations": 0.8097412480974124,
+        "qa_testing": 0.8327702702702703,
+        "translation": NaN,
+        "financial_analysis": 0.6987012987012987,
+        "database_design": 0.8525641025641025,
+        "accessibility_review": 0.8597222222222223,
+        "fact_checking": 0.7435897435897436,
+        "requirements_analysis": 0.6900780379041248,
+        "incident_management": 1.0,
+        "experiment_design": 0.7657142857142857,
+        "risk_assessment": 0.9315068493150684,
+        "documentation": 0.8964992389649924,
+        "customer_support_triage": 0.7869318181818182
+      }
+    }
+  },
+  "structured_calibrated": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.8313605922960949,
+      "macro_role_auc": 0.787158840222526,
+      "within_output_auc": 0.8462733743442552,
+      "topk_activation_recall": 0.54296875,
+      "exact_activation_set_topk": 0.275390625,
+      "role_auc": {
+        "code": 0.7456333140543667,
+        "writing": 0.7929515418502202,
+        "math": 0.7753816590156933,
+        "planning": 0.7785876347135564,
+        "research": 0.7539121417797888,
+        "data": 0.6992560245835355,
+        "design": 0.8860688956433638,
+        "operations": 0.8098133484162896,
+        "qa_testing": 0.7529905235358086,
+        "translation": 0.6891518737672584,
+        "financial_analysis": 0.8854097268487675,
+        "database_design": 0.739938080495356,
+        "accessibility_review": 0.9603449808837913,
+        "fact_checking": 0.675133397821949,
+        "requirements_analysis": 0.8268632268632269,
+        "incident_management": 0.7559941797937623,
+        "experiment_design": 0.8024042950513539,
+        "risk_assessment": 0.9090001720874205,
+        "documentation": 0.8126839826839827,
+        "customer_support_triage": 0.6916578045610303
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8246529732591922,
+      "macro_role_auc": 0.8108311126800917,
+      "within_output_auc": 0.8380537213514793,
+      "topk_activation_recall": 0.537109375,
+      "exact_activation_set_topk": 0.3203125,
+      "role_auc": {
+        "code": 0.6867419294644523,
+        "writing": 0.6548364648573417,
+        "math": 0.8001163805644458,
+        "planning": 0.8417117813869553,
+        "research": 0.8201944821347806,
+        "data": 0.7624553890078515,
+        "design": 0.9129318394024276,
+        "operations": 0.8623539982030548,
+        "qa_testing": 0.7395189003436426,
+        "translation": 0.837,
+        "financial_analysis": 0.9070652173913043,
+        "database_design": 0.8907517939776004,
+        "accessibility_review": 0.8384103641456583,
+        "fact_checking": 0.7505122950819673,
+        "requirements_analysis": 0.796051338220013,
+        "incident_management": 0.8290523774394742,
+        "experiment_design": 0.8123667377398721,
+        "risk_assessment": 0.9019480519480519,
+        "documentation": 0.7994200220699567,
+        "customer_support_triage": 0.7731828902229846
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.837273782339032,
+      "macro_role_auc": 0.8215441404493621,
+      "within_output_auc": 0.8635904712762299,
+      "topk_activation_recall": 0.5983333333333334,
+      "exact_activation_set_topk": 0.36,
+      "role_auc": {
+        "code": 0.7783687943262412,
+        "writing": 0.5859375,
+        "math": 0.9035326086956522,
+        "planning": 0.8501960784313726,
+        "research": 0.788125,
+        "data": 0.8654891304347826,
+        "design": 0.9109848484848485,
+        "operations": 0.8311111111111111,
+        "qa_testing": 0.845108695652174,
+        "translation": NaN,
+        "financial_analysis": 0.7888888888888889,
+        "database_design": 0.8865248226950354,
+        "accessibility_review": 0.8621041879468846,
+        "fact_checking": 0.6231578947368421,
+        "requirements_analysis": 0.6935215946843853,
+        "incident_management": 0.9726315789473684,
+        "experiment_design": 0.7803379416282642,
+        "risk_assessment": 0.9352869352869353,
+        "documentation": 0.918656056587091,
+        "customer_support_triage": 0.789375
+      }
+    },
+    "strict_82": {
+      "rows": 82,
+      "micro_auc": 0.8234212798123961,
+      "macro_role_auc": 0.8074468067146182,
+      "within_output_auc": 0.8519930864943325,
+      "topk_activation_recall": 0.5711382113821138,
+      "exact_activation_set_topk": 0.32926829268292684,
+      "role_auc": {
+        "code": 0.6634615384615384,
+        "writing": 0.5780590717299579,
+        "math": 0.900952380952381,
+        "planning": 0.7797695262483995,
+        "research": 0.7814516129032258,
+        "data": 0.8323809523809523,
+        "design": 0.9375951293759512,
+        "operations": 0.8097412480974124,
+        "qa_testing": 0.8327702702702703,
+        "translation": NaN,
+        "financial_analysis": 0.6987012987012987,
+        "database_design": 0.8525641025641025,
+        "accessibility_review": 0.8597222222222223,
+        "fact_checking": 0.7435897435897436,
+        "requirements_analysis": 0.6900780379041248,
+        "incident_management": 1.0,
+        "experiment_design": 0.7657142857142857,
+        "risk_assessment": 0.9315068493150684,
+        "documentation": 0.8964992389649924,
+        "customer_support_triage": 0.7869318181818182
+      }
+    }
+  },
+  "threshold_target_dev_recall": 0.8,
+  "threshold_metrics": {
+    "raw": {
+      "test": {
+        "precision": 0.16579062636881298,
+        "recall": 0.77482088024565,
+        "fpr": 0.41120587282737775,
+        "false_positives": 3809,
+        "false_negatives": 220,
+        "avg_fp_per_output": 7.439453125,
+        "avg_fn_per_output": 0.4296875,
+        "exact_activation_set_threshold": 0.013671875
+      },
+      "strict_82": {
+        "precision": 0.16421895861148197,
+        "recall": 0.7834394904458599,
+        "fpr": 0.42211732973701954,
+        "false_positives": 626,
+        "false_negatives": 34,
+        "avg_fp_per_output": 7.634146341463414,
+        "avg_fn_per_output": 0.4146341463414634,
+        "exact_activation_set_threshold": 0.0
+      }
+    },
+    "structured": {
+      "test": {
+        "precision": 0.1651143099068586,
+        "recall": 0.7983623336745138,
+        "fpr": 0.425779984886106,
+        "false_positives": 3944,
+        "false_negatives": 197,
+        "avg_fp_per_output": 7.703125,
+        "avg_fn_per_output": 0.384765625,
+        "exact_activation_set_threshold": 0.0
+      },
+      "strict_82": {
+        "precision": 0.1636828644501279,
+        "recall": 0.8152866242038217,
+        "fpr": 0.44099797707349964,
+        "false_positives": 654,
+        "false_negatives": 29,
+        "avg_fp_per_output": 7.975609756097561,
+        "avg_fn_per_output": 0.35365853658536583,
+        "exact_activation_set_threshold": 0.0
+      }
+    },
+    "structured_calibrated": {
+      "test": {
+        "precision": 0.1651143099068586,
+        "recall": 0.7983623336745138,
+        "fpr": 0.425779984886106,
+        "false_positives": 3944,
+        "false_negatives": 197,
+        "avg_fp_per_output": 7.703125,
+        "avg_fn_per_output": 0.384765625,
+        "exact_activation_set_threshold": 0.0
+      },
+      "strict_82": {
+        "precision": 0.1636828644501279,
+        "recall": 0.8152866242038217,
+        "fpr": 0.44099797707349964,
+        "false_positives": 654,
+        "false_negatives": 29,
+        "avg_fp_per_output": 7.975609756097561,
+        "avg_fn_per_output": 0.35365853658536583,
+        "exact_activation_set_threshold": 0.0
+      }
+    }
+  },
+  "role_calibration": {
+    "code": {
+      "scale": 0.7647818922996521,
+      "bias": -0.6467305421829224
+    },
+    "writing": {
+      "scale": 1.2557001113891602,
+      "bias": -0.2819828391075134
+    },
+    "math": {
+      "scale": 0.9987033009529114,
+      "bias": -1.2110322713851929
+    },
+    "planning": {
+      "scale": 1.1128697395324707,
+      "bias": -0.5909830331802368
+    },
+    "research": {
+      "scale": 0.9007326364517212,
+      "bias": -0.8209607601165771
+    },
+    "data": {
+      "scale": 0.8040797710418701,
+      "bias": -1.2233978509902954
+    },
+    "design": {
+      "scale": 1.2778080701828003,
+      "bias": -0.38224801421165466
+    },
+    "operations": {
+      "scale": 0.8315629959106445,
+      "bias": -0.02716638520359993
+    },
+    "qa_testing": {
+      "scale": 0.9140092730522156,
+      "bias": -0.5263510346412659
+    },
+    "translation": {
+      "scale": 0.6358064413070679,
+      "bias": -2.23100209236145
+    },
+    "financial_analysis": {
+      "scale": 1.0434587001800537,
+      "bias": -0.6494206786155701
+    },
+    "database_design": {
+      "scale": 0.802708089351654,
+      "bias": -1.6400352716445923
+    },
+    "accessibility_review": {
+      "scale": 1.7227873802185059,
+      "bias": -0.08675401657819748
+    },
+    "fact_checking": {
+      "scale": 0.9382672905921936,
+      "bias": -0.38387417793273926
+    },
+    "requirements_analysis": {
+      "scale": 0.9837039709091187,
+      "bias": -0.8272563219070435
+    },
+    "incident_management": {
+      "scale": 0.8277647495269775,
+      "bias": -1.4141817092895508
+    },
+    "experiment_design": {
+      "scale": 1.0858306884765625,
+      "bias": -0.7461308240890503
+    },
+    "risk_assessment": {
+      "scale": 0.9887804388999939,
+      "bias": -0.9022529125213623
+    },
+    "documentation": {
+      "scale": 1.0490803718566895,
+      "bias": -1.0305043458938599
+    },
+    "customer_support_triage": {
+      "scale": 0.6080986261367798,
+      "bias": -0.8826085925102234
+    }
+  }
+}

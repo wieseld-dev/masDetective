@@ -1,0 +1,12 @@
+27:SYSTEM = (
+76:def stable_seed(*parts):
+165:def render_user(
+208:        "CURRENT ROLE BELIEF\n"
+211:        + "RECENT PUBLIC HISTORY\n"
+214:        + "CANDIDATES\n"
+242:        return tokenizer.apply_chat_template(
+246:            enable_thinking=False,
+249:        return tokenizer.apply_chat_template(
+256:def make_prompt(
+472:        "LABEL IDS =",
+564:                stable_seed(

@@ -1,0 +1,165 @@
+
+===== artifacts/q38_selector_v41/summary.json =====
+{
+  "version": "q38_selector_v41",
+  "model": "Qwen/Qwen3.8-27B",
+  "best_epoch": 1,
+  "objective": "restricted A-H soft listwise CE + weighted pairwise logistic",
+  "thinking_disabled": true,
+  "candidate_order_training": "random permutations",
+  "evaluation": "3-permutation score ensemble",
+  "duplicate_denoising": "exact same-query utility averaged",
+  "train_states": 2389,
+  "train_examples_per_epoch": 9556,
+  "global_micro": 18000,
+  "optimizer_steps": 2251,
+  "epoch0_zero_shot": {
+    "states": 424,
+    "mean_selected_gain": 0.02266050288039744,
+    "mean_random_gain": 0.0255567500305335,
+    "mean_oracle_gain": 0.13306689815802952,
+    "mean_regret": 0.11040639527763207,
+    "oracle_top1_hit": 0.1721698113207547,
+    "oracle_top2_hit": 0.3113207547169811,
+    "mean_spearman": -0.009827964855218588,
+    "mean_pair_accuracy": 0.4944226710883328,
+    "oracle_signal_captured": -0.02693929085374717
+  },
+  "val": {
+    "states": 424,
+    "mean_selected_gain": 0.035560526460221245,
+    "mean_random_gain": 0.0255567500305335,
+    "mean_oracle_gain": 0.13306689815802952,
+    "mean_regret": 0.09750637169780828,
+    "oracle_top1_hit": 0.18396226415094338,
+    "oracle_top2_hit": 0.3561320754716981,
+    "mean_spearman": 0.05963649826579268,
+    "mean_pair_accuracy": 0.5232639935684856,
+    "oracle_signal_captured": 0.0930496013997143
+  },
+  "challenge": {
+    "states": 715,
+    "mean_selected_gain": 0.03568203478271351,
+    "mean_random_gain": 0.029052938012214025,
+    "mean_oracle_gain": 0.13387890898694066,
+    "mean_regret": 0.09819687420422715,
+    "oracle_top1_hit": 0.18041958041958042,
+    "oracle_top2_hit": 0.35104895104895106,
+    "mean_spearman": 0.046062238521302874,
+    "mean_pair_accuracy": 0.5163757370541188,
+    "oracle_signal_captured": 0.06323906860922617
+  },
+  "runtime_hours": 11.066254629294077,
+  "peak_gpu_gib": 53.827879905700684
+}
+
+===== artifacts/q38_selector_v41/training_history.json =====
+[
+  {
+    "epoch": 0,
+    "train_loss": null,
+    "val": {
+      "states": 424,
+      "mean_selected_gain": 0.02266050288039744,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.11040639527763207,
+      "oracle_top1_hit": 0.1721698113207547,
+      "oracle_top2_hit": 0.3113207547169811,
+      "mean_spearman": -0.009827964855218588,
+      "mean_pair_accuracy": 0.4944226710883328,
+      "oracle_signal_captured": -0.02693929085374717
+    }
+  },
+  {
+    "epoch": 1,
+    "train_loss": 2.403120071104427,
+    "list_loss": 2.0532514574041287,
+    "pair_loss": 0.7097820927669259,
+    "micro_seen": 9556,
+    "optimizer_steps": 1195,
+    "val": {
+      "states": 424,
+      "mean_selected_gain": 0.04231024657686006,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.09075665158116947,
+      "oracle_top1_hit": 0.22877358490566038,
+      "oracle_top2_hit": 0.37971698113207547,
+      "mean_spearman": 0.06558016422114221,
+      "mean_pair_accuracy": 0.521254145312029,
+      "oracle_signal_captured": 0.15583176879691982
+    },
+    "elapsed_hours": 5.80298333591885
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.35464318566049,
+    "list_loss": 2.014702469646959,
+    "pair_loss": 0.6900905380029918,
+    "micro_seen": 18000,
+    "optimizer_steps": 2251,
+    "val": {
+      "states": 424,
+      "mean_selected_gain": 0.03672868662160075,
+      "mean_random_gain": 0.0255567500305335,
+      "mean_oracle_gain": 0.13306689815802952,
+      "mean_regret": 0.09633821153642877,
+      "oracle_top1_hit": 0.2099056603773585,
+      "oracle_top2_hit": 0.36792452830188677,
+      "mean_spearman": 0.05888020267031055,
+      "mean_pair_accuracy": 0.5222590694402572,
+      "oracle_signal_captured": 0.1039151818284026
+    },
+    "elapsed_hours": 10.795000071061983
+  }
+]
+
+===== artifacts/q38_selector_v41_data/summary.json =====
+{
+  "version": "q38_selector_v41_data",
+  "source": "artifacts/llm_selector_v3_auc_data",
+  "train": {
+    "states": 2389,
+    "systems": 473,
+    "mean_random_auc_gain": 0.02802529891932843,
+    "mean_oracle_auc_gain": 0.1372899920102629,
+    "oracle_minus_random": 0.10926469309093448,
+    "mean_pair_spread": 15.919631645039766,
+    "candidate_count": {
+      "6": 464,
+      "8": 1925
+    }
+  },
+  "val": {
+    "states": 424,
+    "systems": 84,
+    "mean_random_auc_gain": 0.025556750030533506,
+    "mean_oracle_auc_gain": 0.13306689815802972,
+    "oracle_minus_random": 0.10751014812749621,
+    "mean_pair_spread": 15.549528301886792,
+    "candidate_count": {
+      "6": 96,
+      "8": 328
+    }
+  },
+  "challenge": {
+    "states": 715,
+    "systems": 139,
+    "mean_random_auc_gain": 0.029052938012214022,
+    "mean_oracle_auc_gain": 0.13387890898694102,
+    "oracle_minus_random": 0.104825970974727,
+    "mean_pair_spread": 15.572027972027971,
+    "candidate_count": {
+      "6": 128,
+      "8": 587
+    }
+  },
+  "notes": [
+    "split by system",
+    "exact duplicate probes share averaged realized utility",
+    "all decision states retained",
+    "pair gain used as soft ranking supervision",
+    "challenge never used for model selection"
+  ]
+}

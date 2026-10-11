@@ -1,0 +1,383 @@
+{
+  "protocol": "v13_10_global_hard_multineg_v1",
+  "initial_adapter": "artifacts/v13_8b_balanced_repair_2048_run1/best_adapter",
+  "hardneg_artifact": "artifacts/v13_10_global_hard_v1/hardneg_train.json",
+  "hard_mass": 0.4,
+  "samples_per_epoch": 2048,
+  "epochs": 2,
+  "lr": 2e-06,
+  "baseline_global_val": {
+    "n": 216,
+    "top1": 0.6111111111111112,
+    "top3": 0.7962962962962963,
+    "mrr": 0.7268714760034205,
+    "mean_rank": 2.5231481481481484,
+    "pairwise_accuracy": 0.8287037037037037,
+    "by_true_role": {
+      "code": {
+        "n": 12,
+        "top1": 0.08333333333333333,
+        "top3": 0.5833333333333334,
+        "mean_rank": 4.75
+      },
+      "writing": {
+        "n": 18,
+        "top1": 0.7777777777777778,
+        "top3": 0.8888888888888888,
+        "mean_rank": 1.6666666666666667
+      },
+      "planning": {
+        "n": 30,
+        "top1": 0.7666666666666667,
+        "top3": 0.9,
+        "mean_rank": 2.1333333333333333
+      },
+      "research": {
+        "n": 30,
+        "top1": 0.8666666666666667,
+        "top3": 0.9666666666666667,
+        "mean_rank": 1.3333333333333333
+      },
+      "data": {
+        "n": 12,
+        "top1": 0.3333333333333333,
+        "top3": 0.6666666666666666,
+        "mean_rank": 3.25
+      },
+      "design": {
+        "n": 6,
+        "top1": 0.3333333333333333,
+        "top3": 0.3333333333333333,
+        "mean_rank": 5.0
+      },
+      "operations": {
+        "n": 6,
+        "top1": 0.6666666666666666,
+        "top3": 0.6666666666666666,
+        "mean_rank": 3.0
+      },
+      "qa_testing": {
+        "n": 6,
+        "top1": 0.6666666666666666,
+        "top3": 0.8333333333333334,
+        "mean_rank": 2.3333333333333335
+      },
+      "translation": {
+        "n": 6,
+        "top1": 0.8333333333333334,
+        "top3": 1.0,
+        "mean_rank": 1.1666666666666667
+      },
+      "database_design": {
+        "n": 18,
+        "top1": 0.5555555555555556,
+        "top3": 0.7777777777777778,
+        "mean_rank": 3.111111111111111
+      },
+      "accessibility_review": {
+        "n": 6,
+        "top1": 1.0,
+        "top3": 1.0,
+        "mean_rank": 1.0
+      },
+      "fact_checking": {
+        "n": 18,
+        "top1": 0.6111111111111112,
+        "top3": 0.8333333333333334,
+        "mean_rank": 1.7222222222222223
+      },
+      "requirements_analysis": {
+        "n": 12,
+        "top1": 0.5,
+        "top3": 0.6666666666666666,
+        "mean_rank": 2.4166666666666665
+      },
+      "incident_management": {
+        "n": 6,
+        "top1": 0.16666666666666666,
+        "top3": 0.3333333333333333,
+        "mean_rank": 7.0
+      },
+      "experiment_design": {
+        "n": 12,
+        "top1": 0.6666666666666666,
+        "top3": 0.8333333333333334,
+        "mean_rank": 2.6666666666666665
+      },
+      "risk_assessment": {
+        "n": 6,
+        "top1": 1.0,
+        "top3": 1.0,
+        "mean_rank": 1.0
+      },
+      "documentation": {
+        "n": 12,
+        "top1": 0.08333333333333333,
+        "top3": 0.5833333333333334,
+        "mean_rank": 3.6666666666666665
+      }
+    }
+  },
+  "baseline_old": {
+    "selection_score": 0.6879423262398205,
+    "same_role_cf_role_macro": 0.6614572135881231,
+    "target_absent_role_macro": 0.7457164545980335,
+    "hard_neighbor_role_macro": 0.6597032353611301
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_mean_loss": 0.8915922760419335,
+      "hard_seen": 819,
+      "old_seen": 1229,
+      "global_val": {
+        "n": 216,
+        "top1": 0.6620370370370371,
+        "top3": 0.8055555555555556,
+        "mrr": 0.7627230986605987,
+        "mean_rank": 2.384259259259259,
+        "pairwise_accuracy": 0.8148148148148148,
+        "by_true_role": {
+          "code": {
+            "n": 12,
+            "top1": 0.5,
+            "top3": 0.5833333333333334,
+            "mean_rank": 3.3333333333333335
+          },
+          "writing": {
+            "n": 18,
+            "top1": 0.5555555555555556,
+            "top3": 0.6666666666666666,
+            "mean_rank": 3.111111111111111
+          },
+          "planning": {
+            "n": 30,
+            "top1": 0.8,
+            "top3": 0.9,
+            "mean_rank": 1.8333333333333333
+          },
+          "research": {
+            "n": 30,
+            "top1": 0.8333333333333334,
+            "top3": 0.9333333333333333,
+            "mean_rank": 1.5666666666666667
+          },
+          "data": {
+            "n": 12,
+            "top1": 0.5833333333333334,
+            "top3": 0.8333333333333334,
+            "mean_rank": 2.3333333333333335
+          },
+          "design": {
+            "n": 6,
+            "top1": 0.3333333333333333,
+            "top3": 0.3333333333333333,
+            "mean_rank": 4.333333333333333
+          },
+          "operations": {
+            "n": 6,
+            "top1": 0.5,
+            "top3": 0.6666666666666666,
+            "mean_rank": 2.5
+          },
+          "qa_testing": {
+            "n": 6,
+            "top1": 0.8333333333333334,
+            "top3": 1.0,
+            "mean_rank": 1.1666666666666667
+          },
+          "translation": {
+            "n": 6,
+            "top1": 0.8333333333333334,
+            "top3": 1.0,
+            "mean_rank": 1.1666666666666667
+          },
+          "database_design": {
+            "n": 18,
+            "top1": 0.7222222222222222,
+            "top3": 0.8888888888888888,
+            "mean_rank": 2.611111111111111
+          },
+          "accessibility_review": {
+            "n": 6,
+            "top1": 1.0,
+            "top3": 1.0,
+            "mean_rank": 1.0
+          },
+          "fact_checking": {
+            "n": 18,
+            "top1": 0.6666666666666666,
+            "top3": 0.8333333333333334,
+            "mean_rank": 1.8333333333333333
+          },
+          "requirements_analysis": {
+            "n": 12,
+            "top1": 0.5833333333333334,
+            "top3": 0.9166666666666666,
+            "mean_rank": 1.5833333333333333
+          },
+          "incident_management": {
+            "n": 6,
+            "top1": 0.3333333333333333,
+            "top3": 0.5,
+            "mean_rank": 4.666666666666667
+          },
+          "experiment_design": {
+            "n": 12,
+            "top1": 0.75,
+            "top3": 0.8333333333333334,
+            "mean_rank": 2.5
+          },
+          "risk_assessment": {
+            "n": 6,
+            "top1": 1.0,
+            "top3": 1.0,
+            "mean_rank": 1.0
+          },
+          "documentation": {
+            "n": 12,
+            "top1": 0.08333333333333333,
+            "top3": 0.4166666666666667,
+            "mean_rank": 5.416666666666667
+          }
+        }
+      },
+      "old_val": {
+        "selection_score": 0.6761890167812776,
+        "same_role_cf_role_macro": 0.6377111950128744,
+        "target_absent_role_macro": 0.7558095961056488,
+        "hard_neighbor_role_macro": 0.6245965292017923
+      },
+      "eligible": false
+    },
+    {
+      "epoch": 2,
+      "train_mean_loss": 0.7942416549824429,
+      "hard_seen": 819,
+      "old_seen": 1229,
+      "global_val": {
+        "n": 216,
+        "top1": 0.6666666666666666,
+        "top3": 0.7962962962962963,
+        "mrr": 0.7604266553919332,
+        "mean_rank": 2.4722222222222223,
+        "pairwise_accuracy": 0.8148148148148148,
+        "by_true_role": {
+          "code": {
+            "n": 12,
+            "top1": 0.5,
+            "top3": 0.5833333333333334,
+            "mean_rank": 3.25
+          },
+          "writing": {
+            "n": 18,
+            "top1": 0.5555555555555556,
+            "top3": 0.5555555555555556,
+            "mean_rank": 3.888888888888889
+          },
+          "planning": {
+            "n": 30,
+            "top1": 0.7333333333333333,
+            "top3": 0.9,
+            "mean_rank": 1.9333333333333333
+          },
+          "research": {
+            "n": 30,
+            "top1": 0.8333333333333334,
+            "top3": 0.9333333333333333,
+            "mean_rank": 1.6333333333333333
+          },
+          "data": {
+            "n": 12,
+            "top1": 0.6666666666666666,
+            "top3": 0.8333333333333334,
+            "mean_rank": 2.1666666666666665
+          },
+          "design": {
+            "n": 6,
+            "top1": 0.3333333333333333,
+            "top3": 0.3333333333333333,
+            "mean_rank": 4.333333333333333
+          },
+          "operations": {
+            "n": 6,
+            "top1": 0.5,
+            "top3": 0.6666666666666666,
+            "mean_rank": 2.1666666666666665
+          },
+          "qa_testing": {
+            "n": 6,
+            "top1": 0.8333333333333334,
+            "top3": 1.0,
+            "mean_rank": 1.1666666666666667
+          },
+          "translation": {
+            "n": 6,
+            "top1": 0.8333333333333334,
+            "top3": 1.0,
+            "mean_rank": 1.1666666666666667
+          },
+          "database_design": {
+            "n": 18,
+            "top1": 0.7222222222222222,
+            "top3": 0.8888888888888888,
+            "mean_rank": 2.611111111111111
+          },
+          "accessibility_review": {
+            "n": 6,
+            "top1": 1.0,
+            "top3": 1.0,
+            "mean_rank": 1.0
+          },
+          "fact_checking": {
+            "n": 18,
+            "top1": 0.6666666666666666,
+            "top3": 0.8888888888888888,
+            "mean_rank": 1.8888888888888888
+          },
+          "requirements_analysis": {
+            "n": 12,
+            "top1": 0.5833333333333334,
+            "top3": 0.9166666666666666,
+            "mean_rank": 1.5833333333333333
+          },
+          "incident_management": {
+            "n": 6,
+            "top1": 0.3333333333333333,
+            "top3": 0.5,
+            "mean_rank": 4.5
+          },
+          "experiment_design": {
+            "n": 12,
+            "top1": 0.75,
+            "top3": 0.8333333333333334,
+            "mean_rank": 2.5
+          },
+          "risk_assessment": {
+            "n": 6,
+            "top1": 1.0,
+            "top3": 1.0,
+            "mean_rank": 1.0
+          },
+          "documentation": {
+            "n": 12,
+            "top1": 0.25,
+            "top3": 0.3333333333333333,
+            "mean_rank": 5.833333333333333
+          }
+        }
+      },
+      "old_val": {
+        "selection_score": 0.6763709803599668,
+        "same_role_cf_role_macro": 0.6408876968735868,
+        "target_absent_role_macro": 0.7641887169847696,
+        "hard_neighbor_role_macro": 0.6067393863446495
+      },
+      "eligible": false
+    }
+  ],
+  "best": null,
+  "test_used": false,
+  "api_calls": 0,
+  "mas_calls": 0
+}

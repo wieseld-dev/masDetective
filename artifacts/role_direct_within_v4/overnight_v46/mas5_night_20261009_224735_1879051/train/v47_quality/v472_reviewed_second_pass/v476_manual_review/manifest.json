@@ -1,0 +1,13 @@
+{
+  "status": "REVIEWED_NOT_DISCRIMINATION_VERIFIED",
+  "approved_previous": 102,
+  "approved_new": 16,
+  "approved_total": 118,
+  "regenerate": 42,
+  "no_mas_calls": true,
+  "approved_source_sha256": "7fa4ca9c69b41773c2836eef57bd3fe076064a2492e2ea4f7a2d8d53b9f079c2",
+  "candidate_source_sha256": "4b11e41967a8ab0b3aff98c36f298457ff1e04bdb9ada6b8e4f149305865acec",
+  "review_sha256": "d87155aee4deb8faaee73312cbf8dd2740025a738afd9be8d819f33176d58093",
+  "approved_path": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/overnight_v46/mas5_night_20261009_224735_1879051/train/v47_quality/v472_reviewed_second_pass/v476_manual_review/approved_118.jsonl",
+  "rejected_path": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/overnight_v46/mas5_night_20261009_224735_1879051/train/v47_quality/v472_reviewed_second_pass/v476_manual_review/rejected_42.jsonl"
+}

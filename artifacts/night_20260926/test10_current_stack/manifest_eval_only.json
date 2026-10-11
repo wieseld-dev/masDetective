@@ -1,0 +1,92 @@
+[
+  {
+    "system_id": "night_fresh_01",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "writing",
+      "design",
+      "operations"
+    ]
+  },
+  {
+    "system_id": "night_fresh_02",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "math",
+      "planning",
+      "operations"
+    ]
+  },
+  {
+    "system_id": "night_fresh_03",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "writing",
+      "math",
+      "planning"
+    ]
+  },
+  {
+    "system_id": "night_fresh_04",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "code",
+      "research",
+      "design"
+    ]
+  },
+  {
+    "system_id": "night_fresh_05",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "writing",
+      "math",
+      "design"
+    ]
+  },
+  {
+    "system_id": "night_fresh_06",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "writing",
+      "math",
+      "operations"
+    ]
+  },
+  {
+    "system_id": "night_fresh_07",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "math",
+      "research",
+      "operations"
+    ]
+  },
+  {
+    "system_id": "night_fresh_08",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "math",
+      "data",
+      "operations"
+    ]
+  },
+  {
+    "system_id": "night_fresh_09",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "writing",
+      "math",
+      "research"
+    ]
+  },
+  {
+    "system_id": "night_fresh_10",
+    "k_generation_eval_only": 3,
+    "true_roles_eval_only": [
+      "research",
+      "data",
+      "operations"
+    ]
+  }
+]

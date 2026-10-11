@@ -1,0 +1,1020 @@
+
+====================================================================================================
+G02 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+BEST score=36.32
+REJECTED:
+Can you explain how this process ensures technical details are kept clear in translations?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.316
+judge:
+The rejected question maintains the topic of translations and meaning, clearly expresses a dangling reference, is isolated in its defect, is plausible, and is a strong near-miss.
+
+WEAKEST score=36.16
+REJECTED:
+How do these processes contribute to keeping meaning preserved in translations?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.158
+judge:
+The rejected question maintains the topic of translations and clearly expresses a dangling reference.
+
+====================================================================================================
+G02 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+BEST score=36.19
+REJECTED:
+What details about translations are you unsure of?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.188
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of translation while clearly expressing a direction failure.
+
+WEAKEST score=36.10
+REJECTED:
+Which details of translation would be helpful for you to explore?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.100
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of translations while clearly expressing a direction failure.
+
+====================================================================================================
+G02 / META / selected=15
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+BEST score=36.57
+REJECTED:
+Could you explain how your translations maintain both meaning and clarity?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.571
+judge:
+The rejected question clearly addresses the same topic and expresses the intended META failure family.
+
+WEAKEST score=36.24
+REJECTED:
+What methods do you use to preserve meaning in translations?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.235
+judge:
+The rejected question is relevant and clearly indicates the META failure family.
+
+====================================================================================================
+G06 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+BEST score=36.59
+REJECTED:
+What specific information could improve my assessment of this area in accessibility compliance?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.588
+judge:
+The rejected question stays on topic regarding accessibility compliance and clearly indicates a dangling reference, making it a strong hard negative.
+
+WEAKEST score=36.35
+REJECTED:
+What specific information might aid my understanding of this detail concerning accessibility compliance?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.350
+judge:
+The rejected question preserves the topic of accessibility compliance and clearly presents a dangling reference, making it a strong hard negative.
+
+====================================================================================================
+G06 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+BEST score=36.28
+REJECTED:
+What information would clarify your understanding of accessibility compliance?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.278
+judge:
+The rejected question is relevant and seeks clarification, aligning perfectly with the failure family.
+
+WEAKEST score=36.20
+REJECTED:
+What particular area of accessibility compliance are you currently navigating?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.200
+judge:
+The rejected question is on topic and asks for guidance, clearly fitting the DIRECTION family.
+
+====================================================================================================
+G06 / META / selected=15
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+BEST score=36.33
+REJECTED:
+How does your system improve the assessment of accessibility compliance?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.333
+judge:
+The rejected question clearly relates to the same topic of accessibility compliance and directly addresses the system's capabilities, making it a strong hard negative.
+
+WEAKEST score=36.16
+REJECTED:
+What’s your process for ensuring accessibility compliance?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.158
+judge:
+The rejected question is directly related to the topic and asks about the process, making it a clear hard negative.
+
+====================================================================================================
+G08 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+BEST score=36.18
+REJECTED:
+Can you discuss the challenges presented by this method in incident management?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.182
+judge:
+The rejected question is relevant and contains a clear dangling reference.
+
+WEAKEST score=36.12
+REJECTED:
+What challenges do you think arise from using this specific method for incident management?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.120
+judge:
+The rejected question preserves the topic and clearly expresses a dangling reference.
+
+====================================================================================================
+G08 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+BEST score=36.28
+REJECTED:
+What incident management topic are you struggling to navigate?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.278
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of incident management while clearly expressing a request for clarification.
+
+WEAKEST score=36.22
+REJECTED:
+What incident management strategies are you currently questioning?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.222
+judge:
+High-quality hard negative; maintains topic and expresses clear DIRECTION failure.
+
+====================================================================================================
+G08 / META / selected=15
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+BEST score=36.53
+REJECTED:
+How do you handle situations where incident management processes are particularly challenging?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.529
+judge:
+The rejected question clearly expresses the META failure family by asking about the system's handling of challenging situations, while preserving the substantive topic of incident management.
+
+WEAKEST score=36.25
+REJECTED:
+How do you typically respond to challenges in incident management processes?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.250
+judge:
+The rejected question is closely related to the GOLD and clearly indicates the META failure family.
+
+====================================================================================================
+G09 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+BEST score=36.31
+REJECTED:
+Which section of my work could use further analysis?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.312
+judge:
+The rejected question maintains the topic and has a dangling reference to 'my work'.
+
+WEAKEST score=36.05
+REJECTED:
+What section of this method needs further assessment?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.053
+judge:
+The rejected question is relevant to the topic and includes a dangling reference to 'this method'.
+
+====================================================================================================
+G09 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+BEST score=33.37
+REJECTED:
+Which element of your work do you feel could benefit from some targeted testing?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.368
+judge:
+The rejected question stays on topic and clearly indicates a DIRECTION failure by asking about targeted testing rather than the user's work.
+
+WEAKEST score=33.20
+REJECTED:
+Which segment of your work would you like assistance with regarding testing?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.200
+judge:
+The rejected question maintains the topic and expresses a need for assistance, aligning with the intended failure family.
+
+====================================================================================================
+G09 / META / selected=15
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+BEST score=36.47
+REJECTED:
+What is your method for recognizing which areas of my work could benefit from additional testing?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.474
+judge:
+The rejected question maintains the same substantive topic, clearly expresses the intended META failure, is isolated from other defects, is plausible, and is a strong near-miss.
+
+WEAKEST score=36.33
+REJECTED:
+How do you assess which aspects of my work require rigorous testing?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.333
+judge:
+The rejected question clearly addresses the same topic and expresses the intended META failure family effectively.
+
+====================================================================================================
+G10 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+BEST score=33.37
+REJECTED:
+Can you explain a specific instance when we might need this approach?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.368
+judge:
+The rejected question stays on topic and presents a dangling reference effectively.
+
+WEAKEST score=33.20
+REJECTED:
+Could you share a situation where this technique is relevant?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.200
+judge:
+The rejected question preserves the topic and effectively illustrates a dangling reference.
+
+====================================================================================================
+G10 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+BEST score=36.32
+REJECTED:
+What specific information do you need about our project management tools?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.316
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of project management tools while clearly expressing a direction failure by asking for user preferences.
+
+WEAKEST score=36.19
+REJECTED:
+Which aspect of project management tools are you currently looking into?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.190
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of project management tools while clearly expressing a direction failure by asking for user preferences.
+
+====================================================================================================
+G10 / META / selected=15
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+BEST score=36.28
+REJECTED:
+Can you explain how you deal with project management tools?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.278
+judge:
+The rejected question clearly expresses the META failure family by asking how the system deals with project management tools.
+
+WEAKEST score=36.19
+REJECTED:
+What tools do you use to assist with project management tasks?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.190
+judge:
+The rejected question inquires about tools used to assist with project management tasks, fitting the META family and preserving the topic.
+
+====================================================================================================
+G16 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+BEST score=36.71
+REJECTED:
+What specific obstacle might arise during the implementation phase of this task if there are discrepancies between actual incidents reported by users and the identified risks?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.714
+judge:
+The rejected question maintains the same substantive topic and clearly expresses the intended dangling failure, making it a strong hard negative.
+
+WEAKEST score=36.59
+REJECTED:
+What specific problem might surface during the implementation phase concerning this area if there are discrepancies between actual incidents reported and the identified risks?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.586
+judge:
+The rejected question maintains the same topic and clearly expresses a dangling reference, qualifying it as a strong hard negative.
+
+====================================================================================================
+G16 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+BEST score=36.16
+REJECTED:
+What specific challenge in the incident management phase do you want help with?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.161
+judge:
+The rejected question maintains the topic and requests help, aligning well with the DIRECTION family.
+
+WEAKEST score=36.06
+REJECTED:
+Which specific incident management challenge do you wish to resolve?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.065
+judge:
+The rejected question is relevant and asks about resolving challenges, fitting the DIRECTION family.
+
+====================================================================================================
+G16 / META / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+BEST score=36.58
+REJECTED:
+What do you do if significant discrepancies arise between user-reported incidents and the identified risks during the implementation phase?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.577
+judge:
+The rejected question preserves the topic and clearly indicates the META failure family.
+
+WEAKEST score=36.41
+REJECTED:
+How does your application handle situations where there are gaps between incidents reported by users and identified risks during the implementation phase?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.406
+judge:
+The rejected question is closely related to the GOLD and clearly expresses the intended META failure.
+
+====================================================================================================
+G23 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+BEST score=30.92
+REJECTED:
+Is there any specific information regarding the current setup that is important for our project?
+scores: T=3 F=2 I=3 P=3 H=2 lex=0.421
+judge:
+The question is relevant but refers to 'the current setup', which is vague and creates a dangling reference.
+
+WEAKEST score=30.69
+REJECTED:
+Is there any essential information on this process that we should cover?
+scores: T=3 F=2 I=3 P=3 H=2 lex=0.190
+judge:
+The rejected question is on-topic but introduces a dangling reference to 'this process'.
+
+====================================================================================================
+G23 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+BEST score=36.22
+REJECTED:
+What information do you require regarding your project timeline?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.222
+judge:
+The rejected question stays on topic and clearly expresses a direction failure by asking what information is required.
+
+WEAKEST score=36.14
+REJECTED:
+What specific part of the project timeline should I help clarify?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.143
+judge:
+The rejected question maintains the topic of project timeline and resource allocation while clearly expressing a direction failure by asking for clarification.
+
+====================================================================================================
+G23 / META / selected=15
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+BEST score=36.25
+REJECTED:
+What is your process for handling project resource allocation and timeline adjustments?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.250
+judge:
+The rejected question is closely related to the GOLD and clearly expresses the META failure family.
+
+WEAKEST score=36.14
+REJECTED:
+How do you normally manage project timelines along with resource allocation?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.143
+judge:
+The rejected question preserves the topic and effectively conveys the intended META failure.
+
+====================================================================================================
+G24 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+BEST score=33.61
+REJECTED:
+Could you explain this process for the execution of a risk assessment in our project?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.611
+judge:
+The rejected question preserves the topic and clearly indicates a dangling reference.
+
+WEAKEST score=33.43
+REJECTED:
+Can you detail this area of focus when doing a comprehensive risk assessment in our project?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.429
+judge:
+The rejected question is on topic and clearly presents a dangling reference.
+
+====================================================================================================
+G24 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+BEST score=36.39
+REJECTED:
+What components of the risk assessment process are you interested in?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.389
+judge:
+High-quality hard negative; maintains topic and expresses intended failure clearly.
+
+WEAKEST score=36.30
+REJECTED:
+What specific stage of the risk assessment process are you focusing on?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.300
+judge:
+High-quality hard negative; maintains topic and expresses intended failure clearly.
+
+====================================================================================================
+G24 / META / selected=15
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+BEST score=36.50
+REJECTED:
+How do you approach the process of risk assessment in our specific project?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.500
+judge:
+The rejected question clearly expresses the intended META failure by asking about the approach to risk assessment.
+
+WEAKEST score=36.30
+REJECTED:
+What is your method for conducting a risk assessment in our project?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.300
+judge:
+The rejected question inquires about the method for conducting a risk assessment, maintaining the topic and clearly expressing the intended failure family.
+
+====================================================================================================
+G26 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+BEST score=36.42
+REJECTED:
+What specific challenge might arise during execution if this area of QA testing isn't fully addressed?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.417
+judge:
+The rejected question maintains the same substantive topic and clearly expresses a dangling reference, making it a strong hard negative.
+
+WEAKEST score=36.28
+REJECTED:
+What kind of problems could arise if this area of QA testing is not carefully validated?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.280
+judge:
+The rejected question maintains the topic of QA testing and presents a clear dangling reference to 'this area', making it a strong hard negative.
+
+====================================================================================================
+G26 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+BEST score=36.21
+REJECTED:
+What part of the QA testing implementation are you currently unsure about?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.208
+judge:
+The rejected question is relevant to QA testing and clearly expresses a DIRECTION failure by inquiring about uncertainty.
+
+WEAKEST score=36.16
+REJECTED:
+What specific focus do you have in mind for QA testing assistance?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.160
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of QA testing while clearly expressing a DIRECTION failure by asking for clarification.
+
+====================================================================================================
+G26 / META / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+BEST score=36.29
+REJECTED:
+What is your method for managing issues that arise during the QA testing phase?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.292
+judge:
+The rejected question maintains the topic and clearly reflects the META failure family.
+
+WEAKEST score=36.17
+REJECTED:
+How does your application address challenges during the QA testing process?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.167
+judge:
+The rejected question is relevant to the topic and effectively expresses the intended META failure family.
+
+====================================================================================================
+G27 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+BEST score=33.39
+REJECTED:
+Which aspect of my current tasks might benefit from additional insight to navigate potential problems?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.391
+judge:
+The rejected question maintains the substantive topic and clearly expresses a dangling reference.
+
+WEAKEST score=33.24
+REJECTED:
+Which area in this setup might benefit from specialized feedback to catch issues early?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.240
+judge:
+The rejected question maintains the substantive topic and clearly expresses a dangling reference, qualifying it as a strong hard negative.
+
+====================================================================================================
+G27 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+BEST score=36.21
+REJECTED:
+Which element of my workflow would you like me to explain further?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.208
+judge:
+The rejected question is on topic and requests further explanation, fitting the DIRECTION family.
+
+WEAKEST score=36.07
+REJECTED:
+What specific detail in my operations would you like me to elaborate on?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.071
+judge:
+The rejected question maintains the workflow topic and requests elaboration, fitting the DIRECTION family.
+
+====================================================================================================
+G27 / META / selected=15
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+BEST score=36.27
+REJECTED:
+How can you help identify potential workflow inefficiencies before they escalate?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.273
+judge:
+The rejected question preserves the topic and effectively conveys the intended META failure family.
+
+WEAKEST score=36.16
+REJECTED:
+What do you typically do to address possible workflow setbacks before they occur?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.160
+judge:
+The rejected question maintains the substantive topic and clearly reflects the META failure family.
+
+====================================================================================================
+G32 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+BEST score=36.38
+REJECTED:
+Is there any additional component in requirement analysis that requires focusing now?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.375
+judge:
+The rejected question remains on topic and presents a clear dangling reference, making it a strong hard negative.
+
+WEAKEST score=36.10
+REJECTED:
+What remaining details in requirement analysis are crucial for us moving forward?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.100
+judge:
+The rejected question is relevant to requirement analysis and contains a clear dangling reference, making it a strong hard negative.
+
+====================================================================================================
+G32 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+BEST score=36.19
+REJECTED:
+Which specific elements of requirement analysis require additional attention?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.188
+judge:
+The rejected question is relevant and asks about attention needed, clearly fitting the DIRECTION family.
+
+WEAKEST score=36.12
+REJECTED:
+What particular requirement analysis details should I focus on?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.118
+judge:
+The rejected question is relevant to requirement analysis and clearly expresses a direction failure by asking for focus on details.
+
+====================================================================================================
+G32 / META / selected=15
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+BEST score=36.25
+REJECTED:
+How do you process requirement analysis work before moving ahead?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.250
+judge:
+The rejected question clearly relates to the same substantive topic of requirement analysis and directly addresses the system's method, making it a strong hard negative.
+
+WEAKEST score=36.18
+REJECTED:
+What is the way you typically manage requirement analysis tasks?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.176
+judge:
+The rejected question maintains the topic of requirement analysis and focuses on the system's management approach, fitting the META failure family well.
+
+====================================================================================================
+G33 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+BEST score=36.53
+REJECTED:
+Can you highlight a scenario where this method regarding customer support triaging was crucial?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.529
+judge:
+The rejected question stays on topic and has a dangling reference to 'this method', qualifying it as a strong hard negative.
+
+WEAKEST score=36.42
+REJECTED:
+Can you describe a case where this area related to customer support triaging became vital?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.421
+judge:
+The rejected question stays on topic and has a dangling reference to 'this area', qualifying it as a strong hard negative.
+
+====================================================================================================
+G33 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+BEST score=36.33
+REJECTED:
+Can you describe what part of customer support triaging you are struggling with?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.333
+judge:
+The rejected question addresses struggles, maintaining the topic and fitting the DIRECTION family.
+
+WEAKEST score=36.22
+REJECTED:
+What aspects of customer support triaging are you currently examining?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.222
+judge:
+The rejected question focuses on examination aspects, fitting the DIRECTION family and preserving the topic.
+
+====================================================================================================
+G33 / META / selected=15
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+BEST score=36.40
+REJECTED:
+Can you describe your workflow for customer support triaging?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.400
+judge:
+The rejected question asks about workflow for triaging, which is a clear meta inquiry that stays on topic.
+
+WEAKEST score=36.25
+REJECTED:
+How do you typically navigate customer support triaging?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.250
+judge:
+The rejected question inquires about navigation through triaging, fitting the meta failure family.
+
+====================================================================================================
+G35 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+BEST score=33.62
+REJECTED:
+What is an important consideration in the current process design phase?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.615
+judge:
+The rejected question is closely related to the gold question and clearly expresses a dangling reference, qualifying it as a hard negative.
+
+WEAKEST score=33.33
+REJECTED:
+What matters most during this segment of the process design?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.333
+judge:
+The rejected question maintains the topic and has a clear dangling reference, qualifying it as a hard negative.
+
+====================================================================================================
+G35 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+BEST score=36.43
+REJECTED:
+What specific step in the process design phase confuses you?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.429
+judge:
+The rejected question maintains the topic of process design and clearly expresses a request for clarification, fitting the DIRECTION family.
+
+WEAKEST score=36.29
+REJECTED:
+What detail about the process design phase do you want to clarify?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.294
+judge:
+The rejected question maintains the topic and seeks clarification, making it a strong hard negative.
+
+====================================================================================================
+G35 / META / selected=15
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+BEST score=36.46
+REJECTED:
+What is your strategy for the process design phase?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.462
+judge:
+The rejected question focuses on strategy, which is a clear meta inquiry about the process design phase.
+
+WEAKEST score=36.33
+REJECTED:
+What support can you provide for the process design phase?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.333
+judge:
+The rejected question addresses support, maintaining the topic while being a meta inquiry.
+
+====================================================================================================
+G37 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+BEST score=36.71
+REJECTED:
+What specific challenge might arise in implementing this area within customer support triage?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.714
+judge:
+The rejected question maintains the substantive topic and clearly expresses a dangling reference, qualifying it as a strong hard negative.
+
+WEAKEST score=36.60
+REJECTED:
+What specific challenge might arise in addressing this method for customer support triage?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.600
+judge:
+The rejected question preserves the topic and contains a dangling reference, making it a strong hard negative.
+
+====================================================================================================
+G37 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+BEST score=36.40
+REJECTED:
+What specific problem in customer support triage are you considering?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.400
+judge:
+The rejected question is relevant and asks about a specific problem, clearly fitting the DIRECTION family.
+
+WEAKEST score=36.31
+REJECTED:
+What specific concern do you have regarding customer support triage?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.312
+judge:
+The rejected question is focused on customer support triage and seeks clarification on a specific concern, aligning well with the intended failure family.
+
+====================================================================================================
+G37 / META / selected=15
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+BEST score=36.47
+REJECTED:
+What challenges might arise in your approach to customer support triage?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.467
+judge:
+The rejected question inquires about challenges in the system's approach, clearly indicating a meta failure.
+
+WEAKEST score=36.31
+REJECTED:
+What challenges does your system see in customer support triage?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.312
+judge:
+The rejected question maintains the topic and clearly reflects the META failure family.
+
+====================================================================================================
+G39 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+BEST score=33.48
+REJECTED:
+What are some key aspects that play a role in the accuracy of this task within customer support?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.478
+judge:
+The rejected question maintains the topic of customer support triaging and clearly expresses a dangling reference, making it a strong hard negative.
+
+WEAKEST score=33.25
+REJECTED:
+What important points should be looked at in this method of customer support triaging?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.250
+judge:
+The rejected question preserves the topic and contains a clear dangling reference, making it a strong hard negative.
+
+====================================================================================================
+G39 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+BEST score=36.32
+REJECTED:
+What part of customer support triaging are you questioning?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.316
+judge:
+The rejected question is relevant and clearly seeks clarification, making it a strong hard negative.
+
+WEAKEST score=36.25
+REJECTED:
+What segment of customer support triaging requires further exploration?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.250
+judge:
+The rejected question is relevant and asks for further exploration, fitting the DIRECTION family.
+
+====================================================================================================
+G39 / META / selected=15
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+BEST score=36.45
+REJECTED:
+What is your typical approach to guaranteeing the accuracy and consistency of customer support triaging responses?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.455
+judge:
+The rejected question maintains the topic and clearly asks about the system's approach, fitting the META failure family.
+
+WEAKEST score=36.38
+REJECTED:
+What steps do you follow for ensuring the accuracy of customer support triaging?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.381
+judge:
+The rejected question preserves the topic and effectively expresses the intended META failure.
+
+====================================================================================================
+G43 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+BEST score=33.47
+REJECTED:
+Can you explain how to prioritize the incidents we encounter here?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.467
+judge:
+The rejected question maintains the topic and includes a dangling reference to 'the incidents we encounter here', making it a strong hard negative.
+
+WEAKEST score=33.32
+REJECTED:
+Can you explain how to address these types of incidents in the current setup?
+scores: T=3 F=2 I=3 P=3 H=3 lex=0.316
+judge:
+The rejected question is relevant and contains a dangling reference to 'these types of incidents in the current setup', making it a strong hard negative.
+
+====================================================================================================
+G43 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+BEST score=36.31
+REJECTED:
+What assistance do you need to effectively manage multiple incidents?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.312
+judge:
+The rejected question asks for assistance in managing incidents, maintaining the topic and fitting the DIRECTION family.
+
+WEAKEST score=36.16
+REJECTED:
+What particular factors do you need to consider when handling incidents?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.158
+judge:
+The rejected question focuses on factors to consider, fitting the DIRECTION family well.
+
+====================================================================================================
+G43 / META / selected=15
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+BEST score=36.47
+REJECTED:
+How do you typically prioritize and manage multiple incidents at once?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.467
+judge:
+The rejected question clearly asks about the system's method, preserving the topic and expressing the META failure family.
+
+WEAKEST score=36.22
+REJECTED:
+How do you ensure effective management of multiple incidents at once?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.222
+judge:
+The rejected question focuses on the system's management effectiveness, preserving the topic and clearly indicating the META failure family.
+
+====================================================================================================
+G44 / DANGLING / selected=15
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+BEST score=36.47
+REJECTED:
+Is there anything crucial about this method I should consider before acting?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.471
+judge:
+The rejected question preserves the topic of experiment planning and contains a dangling reference, qualifying it as a strong hard negative.
+
+WEAKEST score=36.14
+REJECTED:
+What should I pay attention to regarding this current setup before I act?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.136
+judge:
+The rejected question is on the topic of experiment planning and contains a dangling reference, making it a strong hard negative.
+
+====================================================================================================
+G44 / DIRECTION / selected=15
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+BEST score=36.24
+REJECTED:
+What initial details do you have about 'experiment planning' that we should cover?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.238
+judge:
+The rejected question inquires about initial details, maintaining the topic and fitting the DIRECTION family.
+
+WEAKEST score=36.14
+REJECTED:
+What specific challenges do you want to tackle in 'experiment planning'?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.143
+judge:
+The rejected question asks about specific challenges, maintaining the topic and fitting the DIRECTION family.
+
+====================================================================================================
+G44 / META / selected=15
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+BEST score=36.22
+REJECTED:
+What should I consider when preparing an experiment plan?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.222
+judge:
+The rejected question is a high-quality hard negative as it maintains the topic of experiment planning while clearly expressing a meta failure by asking about considerations in a way that reflects the system's capabilities.
+
+WEAKEST score=36.15
+REJECTED:
+What do you believe is critical for comprehensive experiment planning?
+scores: T=3 F=3 I=3 P=3 H=3 lex=0.150
+judge:
+The rejected question addresses critical aspects of experiment planning, clearly expressing a meta inquiry.

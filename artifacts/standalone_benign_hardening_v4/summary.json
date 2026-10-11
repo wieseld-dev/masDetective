@@ -1,0 +1,17 @@
+{
+  "hard_train_total": 200,
+  "hard_train_labels": {
+    "BENIGN": 100,
+    "NONSTANDALONE": 100
+  },
+  "challenge_total": 60,
+  "challenge_labels": {
+    "BENIGN": 30,
+    "NONSTANDALONE": 30
+  },
+  "hard_base_exact_overlap": 0,
+  "challenge_base_exact_overlap": 0,
+  "hard_challenge_exact_overlap": 0,
+  "old_failures_in_hard_train": 0,
+  "old_failures_in_challenge": 3
+}

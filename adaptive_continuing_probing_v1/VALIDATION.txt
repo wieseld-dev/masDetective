@@ -1,0 +1,5 @@
+Adaptive Continuing Probing v1 - static validation
+Python compile: PASS
+SBATCH/bash syntax: PASS
+.                                                                        [100%]
+1 passed in 0.73s

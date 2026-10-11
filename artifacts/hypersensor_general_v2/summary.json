@@ -1,0 +1,1127 @@
+{
+  "version": "hypersensor_general_v2_anchored",
+  "device": "cuda",
+  "internal_test_used": false,
+  "core_change": "score response-specific delta geometry; no context-dependent bias; unit-normalized decoding direction",
+  "variants": {
+    "anchor_shared": {
+      "context": "none",
+      "alpha": 0.0,
+      "mag": false
+    },
+    "anchor_hyper_role_a25": {
+      "context": "role",
+      "alpha": 0.25,
+      "mag": false
+    },
+    "anchor_hyper_rq_a10": {
+      "context": "rq",
+      "alpha": 0.1,
+      "mag": false
+    },
+    "anchor_hyper_rq_a25": {
+      "context": "rq",
+      "alpha": 0.25,
+      "mag": false
+    },
+    "anchor_hyper_rq_a50": {
+      "context": "rq",
+      "alpha": 0.5,
+      "mag": false
+    },
+    "anchor_hyper_rq_a25_mag": {
+      "context": "rq",
+      "alpha": 0.25,
+      "mag": true
+    }
+  },
+  "strict_T0_double_holdout": {
+    "anchor_shared": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.5458675529138571,
+      "per_role_auc": {
+        "accessibility_review": 0.6981818181818181,
+        "code": 0.6666666666666667,
+        "customer_support_triage": 0.3258928571428571,
+        "data": 0.3923076923076923,
+        "database_design": 0.4807692307692308,
+        "design": 0.5722222222222222,
+        "documentation": 0.2674897119341564,
+        "experiment_design": 0.4444444444444444,
+        "fact_checking": 0.375,
+        "financial_analysis": 0.5972222222222223,
+        "incident_management": 0.4,
+        "math": 0.7901785714285714,
+        "operations": 0.6258064516129033,
+        "planning": 0.5884615384615385,
+        "qa_testing": 0.724025974025974,
+        "requirements_analysis": 0.6000000000000001,
+        "research": 0.4461538461538462,
+        "risk_assessment": 0.5267489711934157,
+        "translation": 0.5,
+        "writing": 0.5344827586206896
+      },
+      "mean_role_auc": 0.5278027488694125,
+      "median_role_auc": 0.5306158649070527,
+      "mean_within_system_auc": 0.5488098417785917,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.31972424968801166
+    },
+    "anchor_hyper_role_a25": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.46582835351889135,
+      "per_role_auc": {
+        "accessibility_review": 0.64,
+        "code": 0.18930041152263377,
+        "customer_support_triage": 0.4508928571428571,
+        "data": 0.5615384615384615,
+        "database_design": 0.6269230769230769,
+        "design": 0.6055555555555556,
+        "documentation": 0.4238683127572016,
+        "experiment_design": 0.611111111111111,
+        "fact_checking": 0.609375,
+        "financial_analysis": 0.6111111111111112,
+        "incident_management": 0.6,
+        "math": 0.25000000000000006,
+        "operations": 0.4516129032258065,
+        "planning": 0.5884615384615385,
+        "qa_testing": 0.2824675324675325,
+        "requirements_analysis": 0.38461538461538464,
+        "research": 0.4961538461538461,
+        "risk_assessment": 0.5308641975308641,
+        "translation": 0.6071428571428571,
+        "writing": 0.4261083743842365
+      },
+      "mean_role_auc": 0.49735512658220377,
+      "median_role_auc": 0.5462013295346628,
+      "mean_within_system_auc": 0.4579990917307094,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.5441097624737905
+    },
+    "anchor_hyper_rq_a10": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.501384761235207,
+      "per_role_auc": {
+        "accessibility_review": 0.6690909090909091,
+        "code": 0.8106995884773662,
+        "customer_support_triage": 0.5133928571428572,
+        "data": 0.523076923076923,
+        "database_design": 0.20384615384615387,
+        "design": 0.5277777777777778,
+        "documentation": 0.7407407407407407,
+        "experiment_design": 0.4833333333333333,
+        "fact_checking": 0.6015625,
+        "financial_analysis": 0.4340277777777778,
+        "incident_management": 0.5806451612903226,
+        "math": 0.7410714285714286,
+        "operations": 0.5225806451612902,
+        "planning": 0.5269230769230769,
+        "qa_testing": 0.30194805194805197,
+        "requirements_analysis": 0.4923076923076923,
+        "research": 0.3615384615384616,
+        "risk_assessment": 0.42386831275720166,
+        "translation": 0.6071428571428571,
+        "writing": 0.42610837438423643
+      },
+      "mean_role_auc": 0.524584131164423,
+      "median_role_auc": 0.5228287841191066,
+      "mean_within_system_auc": 0.4961439704086763,
+      "perfect_order_rate": 0.027777777777777776,
+      "exact_topK_oracleK_rate": 0.027777777777777776,
+      "mean_full_separation_margin": -1.4509605495604103
+    },
+    "anchor_hyper_rq_a25": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.4940348746791082,
+      "per_role_auc": {
+        "accessibility_review": 0.5818181818181818,
+        "code": 0.8189300411522634,
+        "customer_support_triage": 0.5178571428571429,
+        "data": 0.5192307692307692,
+        "database_design": 0.1653846153846154,
+        "design": 0.5166666666666666,
+        "documentation": 0.7037037037037037,
+        "experiment_design": 0.5833333333333334,
+        "fact_checking": 0.5859375,
+        "financial_analysis": 0.4340277777777778,
+        "incident_management": 0.5870967741935484,
+        "math": 0.7544642857142857,
+        "operations": 0.5096774193548388,
+        "planning": 0.6307692307692307,
+        "qa_testing": 0.3051948051948052,
+        "requirements_analysis": 0.43076923076923074,
+        "research": 0.3576923076923077,
+        "risk_assessment": 0.34567901234567905,
+        "translation": 0.6071428571428571,
+        "writing": 0.480295566502463
+      },
+      "mean_role_auc": 0.521783561080185,
+      "median_role_auc": 0.518543956043956,
+      "mean_within_system_auc": 0.4853232024647466,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.4618002523978548
+    },
+    "anchor_hyper_rq_a50": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.4915103484272308,
+      "per_role_auc": {
+        "accessibility_review": 0.5672727272727274,
+        "code": 0.5679012345679013,
+        "customer_support_triage": 0.4821428571428572,
+        "data": 0.5269230769230769,
+        "database_design": 0.15000000000000002,
+        "design": 0.5555555555555556,
+        "documentation": 0.6954732510288066,
+        "experiment_design": 0.5722222222222222,
+        "fact_checking": 0.5859375,
+        "financial_analysis": 0.5208333333333333,
+        "incident_management": 0.6,
+        "math": 0.7366071428571429,
+        "operations": 0.6258064516129033,
+        "planning": 0.6192307692307693,
+        "qa_testing": 0.3084415584415584,
+        "requirements_analysis": 0.4076923076923077,
+        "research": 0.43846153846153846,
+        "risk_assessment": 0.33333333333333337,
+        "translation": 0.6071428571428571,
+        "writing": 0.46551724137931033
+      },
+      "mean_role_auc": 0.5183247479099101,
+      "median_role_auc": 0.5614141414141415,
+      "mean_within_system_auc": 0.4807699789317436,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.4618502615226638
+    },
+    "anchor_hyper_rq_a25_mag": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.48943320657442024,
+      "per_role_auc": {
+        "accessibility_review": 0.5418181818181818,
+        "code": 0.8106995884773662,
+        "customer_support_triage": 0.5133928571428571,
+        "data": 0.5384615384615384,
+        "database_design": 0.3192307692307692,
+        "design": 0.6000000000000001,
+        "documentation": 0.7366255144032922,
+        "experiment_design": 0.5722222222222222,
+        "fact_checking": 0.5546875,
+        "financial_analysis": 0.4340277777777778,
+        "incident_management": 0.6193548387096774,
+        "math": 0.35267857142857145,
+        "operations": 0.4774193548387097,
+        "planning": 0.5538461538461539,
+        "qa_testing": 0.30194805194805197,
+        "requirements_analysis": 0.3730769230769231,
+        "research": 0.33461538461538465,
+        "risk_assessment": 0.34979423868312765,
+        "translation": 0.6071428571428571,
+        "writing": 0.4852216748768472
+      },
+      "mean_role_auc": 0.5038131999350155,
+      "median_role_auc": 0.5259271978021978,
+      "mean_within_system_auc": 0.4839225487203429,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.5182193930916212
+    }
+  },
+  "T0_to_T1_unseen_role": {
+    "anchor_shared": {
+      "pairs": 95,
+      "pair_accuracy": 0.5,
+      "mean_margin": 0.00029553457310325265,
+      "median_margin": 0.0,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.01548329368233681
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.03386987062791983
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.029092562695344295
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0044628717005252855
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.015426399807135283
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.8333333333333334,
+          "mean_margin": 0.04346331043375864
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.0012683793902397156
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.3333333333333333,
+          "mean_margin": -0.035085475279225245
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 0.0,
+          "mean_margin": -0.06050141900777817
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.0016995271046956334
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.42857142857142855,
+          "mean_margin": 0.00045093681131090434
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -6.302756567795609e-05
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 0.012588870312486376
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.002352322141329459
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.03362256909410159
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.004663734696805481
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.004597457746664686
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.00426061016817888
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.1,
+          "mean_margin": -0.008543624232212702
+        }
+      }
+    },
+    "anchor_hyper_role_a25": {
+      "pairs": 95,
+      "pair_accuracy": 0.5736842105263158,
+      "mean_margin": 0.02583298543631508,
+      "median_margin": 0.004173556963602776,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.0005214046686887706
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.11070728550354642
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.06177806854248044
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.00400765030644834
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.002481530110041319
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.6666666666666666,
+          "mean_margin": 0.09382186830043791
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.017789920171101897
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.01584651817878088
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.16135240097840625
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.00620799014965695
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.42857142857142855,
+          "mean_margin": -0.018259693824109573
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.009090892970561953
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.5714285714285714,
+          "mean_margin": 0.021682220910276686
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.03090932965278624
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.036109211544195816
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": -0.011867071191469819
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.013398281919459507
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.0038495445623993874
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.3,
+          "mean_margin": -0.005000476042429591
+        }
+      }
+    },
+    "anchor_hyper_rq_a10": {
+      "pairs": 95,
+      "pair_accuracy": 0.5421052631578948,
+      "mean_margin": 0.029403757807194144,
+      "median_margin": 0.0018379489580789832,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0008501391857862403
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.11280705935011308
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.03560308615366617
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.004427252958218247
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.0,
+          "mean_margin": -0.03041718900203705
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.6666666666666666,
+          "mean_margin": 0.09127266994780964
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.0027362008889516287
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.3333333333333333,
+          "mean_margin": -0.029100598146518056
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.14526904498537382
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.005207483967145293
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.42857142857142855,
+          "mean_margin": 0.08451463503851775
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.010430619120597812
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.5714285714285714,
+          "mean_margin": 0.016917183285667776
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.051824136947592095
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.04284289479255675
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": -0.01675797129670778
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.008742953340212509
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.0023284554481506348
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.1,
+          "mean_margin": -0.051351173718770335
+        }
+      }
+    },
+    "anchor_hyper_rq_a25": {
+      "pairs": 95,
+      "pair_accuracy": 0.5631578947368421,
+      "mean_margin": 0.02902792503959255,
+      "median_margin": 0.0029511749744415283,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.0031424121310313635
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.048630115576088415
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.03368646403153738
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.0013988837599754195
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.01796416938304901
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.6666666666666666,
+          "mean_margin": 0.0935115178840028
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.011428726216157287
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.017246302631166232
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.1433576907341679
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.006069585680961609
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 0.06809339033705848
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.013781954844792665
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.5714285714285714,
+          "mean_margin": 0.018689193895884932
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.04680605108539264
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.044861733913421645
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": -0.014055773615837097
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.01357720233500004
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.012267033259073884
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.1,
+          "mean_margin": -0.023524268468220998
+        }
+      }
+    },
+    "anchor_hyper_rq_a50": {
+      "pairs": 95,
+      "pair_accuracy": 0.5947368421052631,
+      "mean_margin": 0.03340170369075055,
+      "median_margin": 0.00929894546667731,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0013902454326550073
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0428788469483455
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.04366391400496164
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.0009401192267735753
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.013589933514595032
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.6666666666666666,
+          "mean_margin": 0.08997249003085823
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.019101267059644073
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.012901966770490029
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.14193792920559645
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.005212649703025818
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 0.07892716605038867
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.016928551097710937
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.5714285714285714,
+          "mean_margin": 0.018644047634942186
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.04097474118073781
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.04048516104618708
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": -0.007354001204172775
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.013658529147505758
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.015354533990224212
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.9,
+          "mean_margin": 0.04313811461130781
+        }
+      }
+    },
+    "anchor_hyper_rq_a25_mag": {
+      "pairs": 95,
+      "pair_accuracy": 0.5842105263157895,
+      "mean_margin": 0.037440056732872075,
+      "median_margin": 0.00855893393357593,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.007005158811807629
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0332912529508273
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.04190996289253235
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": 0.0043935105204582076
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.025737176338831574
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.6666666666666666,
+          "mean_margin": 0.09972931899958187
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.010323117176691654
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.04040392074320052
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.17104443473120529
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.0022070134679476328
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 0.08765446146329244
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.022486612200736986
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.5714285714285714,
+          "mean_margin": 0.019647271860213516
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.033292767902215345
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.050455252329508454
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.0048638482888539725
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.011444871624310807
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.014535307884216309
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.9,
+          "mean_margin": 0.0757302443186442
+        }
+      }
+    }
+  },
+  "T0_to_D_unseen_role": {
+    "anchor_shared": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.489338162579114,
+      "per_role_auc": {
+        "accessibility_review": 0.7857142857142857,
+        "code": 0.7071428571428572,
+        "customer_support_triage": 0.7000000000000001,
+        "data": 0.6787878787878788,
+        "database_design": 0.8161764705882353,
+        "design": 0.8088235294117647,
+        "documentation": 0.6911764705882353,
+        "experiment_design": 0.1875,
+        "fact_checking": 0.31417624521072796,
+        "financial_analysis": 0.4953917050691244,
+        "incident_management": 0.34285714285714286,
+        "math": 0.5852534562211982,
+        "operations": 0.6168582375478927,
+        "planning": 0.48333333333333334,
+        "qa_testing": 0.8110599078341014,
+        "requirements_analysis": 0.7720588235294118,
+        "research": 0.21875,
+        "risk_assessment": 0.2,
+        "translation": 1.0,
+        "writing": 0.4375
+      },
+      "mean_role_auc": 0.5826280171918095,
+      "median_role_auc": 0.6478230581678858,
+      "mean_within_system_auc": 0.4827544504643961,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.24618601968936754
+    },
+    "anchor_hyper_role_a25": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.45800163172468356,
+      "per_role_auc": {
+        "accessibility_review": 0.7142857142857143,
+        "code": 0.75,
+        "customer_support_triage": 0.7791666666666667,
+        "data": 0.23636363636363636,
+        "database_design": 0.4852941176470588,
+        "design": 0.6691176470588236,
+        "documentation": 0.2647058823529412,
+        "experiment_design": 0.6125,
+        "fact_checking": 0.636015325670498,
+        "financial_analysis": 0.48156682027649766,
+        "incident_management": 0.3238095238095238,
+        "math": 0.45161290322580644,
+        "operations": 0.6091954022988506,
+        "planning": 0.29583333333333334,
+        "qa_testing": 0.2119815668202765,
+        "requirements_analysis": 0.823529411764706,
+        "research": 0.5364583333333333,
+        "risk_assessment": 0.28571428571428575,
+        "translation": 0.0,
+        "writing": 0.4
+      },
+      "mean_role_auc": 0.47835752853109775,
+      "median_role_auc": 0.4834304689617782,
+      "mean_within_system_auc": 0.45979263415892674,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.224802948273065
+    },
+    "anchor_hyper_rq_a10": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.5227514339398734,
+      "per_role_auc": {
+        "accessibility_review": 0.7142857142857143,
+        "code": 0.7357142857142857,
+        "customer_support_triage": 0.8083333333333333,
+        "data": 0.7090909090909091,
+        "database_design": 0.7794117647058824,
+        "design": 0.6617647058823529,
+        "documentation": 0.2720588235294118,
+        "experiment_design": 0.3583333333333334,
+        "fact_checking": 0.632183908045977,
+        "financial_analysis": 0.46313364055299544,
+        "incident_management": 0.47619047619047616,
+        "math": 0.4700460829493087,
+        "operations": 0.6168582375478927,
+        "planning": 0.7208333333333334,
+        "qa_testing": 0.23963133640552997,
+        "requirements_analysis": 0.8235294117647058,
+        "research": 0.20833333333333331,
+        "risk_assessment": 0.07619047619047617,
+        "translation": 0.9705882352941176,
+        "writing": 0.39583333333333337
+      },
+      "mean_role_auc": 0.5566172337408352,
+      "median_role_auc": 0.6245210727969348,
+      "mean_within_system_auc": 0.5203253998968008,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.0722632570388286
+    },
+    "anchor_hyper_rq_a25": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.5146793413765822,
+      "per_role_auc": {
+        "accessibility_review": 0.7321428571428571,
+        "code": 0.31785714285714284,
+        "customer_support_triage": 0.775,
+        "data": 0.2,
+        "database_design": 0.7941176470588235,
+        "design": 0.7058823529411765,
+        "documentation": 0.2720588235294118,
+        "experiment_design": 0.6083333333333333,
+        "fact_checking": 0.632183908045977,
+        "financial_analysis": 0.47235023041474655,
+        "incident_management": 0.3047619047619048,
+        "math": 0.4746543778801843,
+        "operations": 0.6091954022988506,
+        "planning": 0.6833333333333333,
+        "qa_testing": 0.21658986175115208,
+        "requirements_analysis": 0.8382352941176471,
+        "research": 0.17708333333333331,
+        "risk_assessment": 0.07619047619047617,
+        "translation": 0.9705882352941176,
+        "writing": 0.3666666666666667
+      },
+      "mean_role_auc": 0.5113612590475568,
+      "median_role_auc": 0.5414938556067588,
+      "mean_within_system_auc": 0.5113599716202271,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.2347022100890939
+    },
+    "anchor_hyper_rq_a50": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.5057048556170887,
+      "per_role_auc": {
+        "accessibility_review": 0.7321428571428571,
+        "code": 0.28928571428571437,
+        "customer_support_triage": 0.7416666666666667,
+        "data": 0.23636363636363636,
+        "database_design": 0.7941176470588235,
+        "design": 0.7205882352941176,
+        "documentation": 0.2720588235294118,
+        "experiment_design": 0.675,
+        "fact_checking": 0.632183908045977,
+        "financial_analysis": 0.47235023041474655,
+        "incident_management": 0.3142857142857143,
+        "math": 0.4746543778801843,
+        "operations": 0.6130268199233717,
+        "planning": 0.625,
+        "qa_testing": 0.1797235023041475,
+        "requirements_analysis": 0.18382352941176472,
+        "research": 0.21354166666666666,
+        "risk_assessment": 0.07619047619047617,
+        "translation": 0.9705882352941176,
+        "writing": 0.41666666666666663
+      },
+      "mean_role_auc": 0.48166293537125304,
+      "median_role_auc": 0.4735023041474654,
+      "mean_within_system_auc": 0.5081672471620227,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.318013580058489
+    },
+    "anchor_hyper_rq_a25_mag": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.49588978441455694,
+      "per_role_auc": {
+        "accessibility_review": 0.7464285714285714,
+        "code": 0.28571428571428575,
+        "customer_support_triage": 0.7583333333333333,
+        "data": 0.2303030303030303,
+        "database_design": 0.7941176470588235,
+        "design": 0.7205882352941176,
+        "documentation": 0.2867647058823529,
+        "experiment_design": 0.5958333333333334,
+        "fact_checking": 0.6206896551724138,
+        "financial_analysis": 0.4861751152073732,
+        "incident_management": 0.44761904761904764,
+        "math": 0.5207373271889401,
+        "operations": 0.6130268199233716,
+        "planning": 0.6041666666666666,
+        "qa_testing": 0.2534562211981567,
+        "requirements_analysis": 0.18382352941176472,
+        "research": 0.171875,
+        "risk_assessment": 0.07619047619047617,
+        "translation": 0.9705882352941176,
+        "writing": 0.43749999999999994
+      },
+      "mean_role_auc": 0.4901965618110088,
+      "median_role_auc": 0.5034562211981566,
+      "mean_within_system_auc": 0.4978392672858617,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -1.0147089522920159
+    },
+    "anchor_hyper_rq_a25_T0plusT1": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.48518468156645567,
+      "per_role_auc": {
+        "accessibility_review": 0.7892857142857143,
+        "code": 0.3142857142857143,
+        "customer_support_triage": 0.21250000000000002,
+        "data": 0.22424242424242424,
+        "database_design": 0.7941176470588235,
+        "design": 0.6985294117647058,
+        "documentation": 0.2867647058823529,
+        "experiment_design": 0.7541666666666667,
+        "fact_checking": 0.632183908045977,
+        "financial_analysis": 0.532258064516129,
+        "incident_management": 0.6476190476190476,
+        "math": 0.5253456221198156,
+        "operations": 0.632183908045977,
+        "planning": 0.48333333333333334,
+        "qa_testing": 0.06451612903225806,
+        "requirements_analysis": 0.8382352941176471,
+        "research": 0.515625,
+        "risk_assessment": 0.07619047619047617,
+        "translation": 0.9705882352941176,
+        "writing": 0.5208333333333334
+      },
+      "mean_role_auc": 0.5256402317917257,
+      "median_role_auc": 0.5288018433179723,
+      "mean_within_system_auc": 0.4850683694530443,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.990612835672341
+    }
+  },
+  "D_shuffled_primary": {
+    "repeats": 10,
+    "mean_global_auc": 0.5137404816060127,
+    "mean_role_auc": 0.4942897282619523,
+    "mean_within_system_auc": 0.5158507481940144
+  }
+}

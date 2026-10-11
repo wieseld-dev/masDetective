@@ -1,0 +1,90 @@
+{
+  "version": "V10.1-posthoc-elite-diagnostic",
+  "diagnostic_only": true,
+  "final_set_was_already_consumed_before_this_run": true,
+  "no_training": true,
+  "policy_updated": false,
+  "purpose": "separate stochastic frozen-policy generation quality from exact confirmed-elite probe generalization",
+  "confirmed_elites_total": 11,
+  "roles_with_confirmed_elites": [
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design"
+  ],
+  "roles_with_elite_strict_specific": 6,
+  "roles_rescued_vs_original_generator_final": [
+    "writing",
+    "research",
+    "design"
+  ],
+  "role_stats": {
+    "code": {
+      "confirmed_elites": 0,
+      "any_strict_specific": false,
+      "strict_specific_count": 0,
+      "best_robust_specific": null,
+      "best_activation": null,
+      "original_final_generator_any_strict": false
+    },
+    "writing": {
+      "confirmed_elites": 3,
+      "strict_specific_count": 2,
+      "any_strict_specific": true,
+      "best_robust_specific": 0.3698153793811798,
+      "best_activation": 1.0,
+      "original_final_generator_any_strict": false
+    },
+    "math": {
+      "confirmed_elites": 1,
+      "strict_specific_count": 1,
+      "any_strict_specific": true,
+      "best_robust_specific": 0.14597758650779724,
+      "best_activation": 1.0,
+      "original_final_generator_any_strict": true
+    },
+    "planning": {
+      "confirmed_elites": 3,
+      "strict_specific_count": 3,
+      "any_strict_specific": true,
+      "best_robust_specific": 0.11400848627090454,
+      "best_activation": 1.0,
+      "original_final_generator_any_strict": true
+    },
+    "research": {
+      "confirmed_elites": 2,
+      "strict_specific_count": 2,
+      "any_strict_specific": true,
+      "best_robust_specific": 0.047168195247650146,
+      "best_activation": 1.0,
+      "original_final_generator_any_strict": false
+    },
+    "data": {
+      "confirmed_elites": 1,
+      "strict_specific_count": 1,
+      "any_strict_specific": true,
+      "best_robust_specific": 0.03049352765083313,
+      "best_activation": 1.0,
+      "original_final_generator_any_strict": true
+    },
+    "design": {
+      "confirmed_elites": 1,
+      "strict_specific_count": 1,
+      "any_strict_specific": true,
+      "best_robust_specific": 0.026292473077774048,
+      "best_activation": 1.0,
+      "original_final_generator_any_strict": false
+    },
+    "operations": {
+      "confirmed_elites": 0,
+      "any_strict_specific": false,
+      "strict_specific_count": 0,
+      "best_robust_specific": null,
+      "best_activation": null,
+      "original_final_generator_any_strict": false
+    }
+  },
+  "warning": "These post-hoc numbers are development diagnostics and MUST NOT be reported as untouched final-test results."
+}

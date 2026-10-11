@@ -1,0 +1,15 @@
+{
+  "method": "role-wise 2-probe logistic belief head",
+  "cv": "5-fold GroupKFold by composition",
+  "systems": 20,
+  "mean_within_system_auc": 0.889375,
+  "median_within_system_auc": 0.96875,
+  "minimum_system_auc": 0.4666666666666666,
+  "perfect_separation": 10,
+  "perfect_separation_rate": 0.5,
+  "pairwise_ordering_accuracy": 0.8903225806451613,
+  "inversions": 34,
+  "pairs": 310,
+  "mean_margin": -0.0073303371888155475,
+  "median_margin": -0.006677383143807173
+}

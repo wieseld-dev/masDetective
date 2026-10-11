@@ -1,0 +1,360 @@
+{
+  "BAD": {
+    "version": "BAD",
+    "rows": 36,
+    "systems": 12,
+    "roles": 20,
+    "micro_auc": 0.511542999621541,
+    "mean_within_row_auc": 0.5553883346711005,
+    "mean_topk_selected_recall": 0.2916666666666667,
+    "exact_selected_set_at_true_k": 0.1388888888888889,
+    "macro_role_auc": 0.25650647095959594,
+    "roles_with_auc": 16,
+    "per_role_auc": {
+      "accessibility_review": 0.9,
+      "code": 0.09090909090909088,
+      "data": 0.09090909090909088,
+      "database_design": 0.09090909090909088,
+      "design": 0.5798611111111112,
+      "documentation": 0.5333333333333333,
+      "experiment_design": 0.09090909090909088,
+      "fact_checking": 0.09090909090909088,
+      "financial_analysis": 1.0,
+      "incident_management": 0.09090909090909088,
+      "operations": 0.09090909090909088,
+      "qa_testing": 0.09090909090909088,
+      "requirements_analysis": 0.09090909090909088,
+      "research": 0.09090909090909088,
+      "risk_assessment": 0.09090909090909088,
+      "writing": 0.09090909090909088
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62809217eb15272d",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d21d709b889ebb8b"
+        ],
+        "test_systems": [
+          "av11cur_553d0cc73fd60213",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 14
+      },
+      {
+        "fold": 2,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62809217eb15272d",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_4d1e345176a53b70",
+          "av11cur_62f5e868544023d2",
+          "av11cur_d21d709b889ebb8b"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 15
+      },
+      {
+        "fold": 3,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_d21d709b889ebb8b",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_62809217eb15272d",
+          "av11cur_cc81be84ca3aea87"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 13
+      },
+      {
+        "fold": 4,
+        "train_systems": [
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_62809217eb15272d",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d21d709b889ebb8b",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_bf40317cc0b5b39b"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 10
+      }
+    ]
+  },
+  "V3": {
+    "version": "V3",
+    "rows": 36,
+    "systems": 12,
+    "roles": 20,
+    "micro_auc": 0.5269373761659877,
+    "mean_within_row_auc": 0.5582012288346138,
+    "mean_topk_selected_recall": 0.3194444444444444,
+    "exact_selected_set_at_true_k": 0.08333333333333333,
+    "macro_role_auc": 0.2943102904040404,
+    "roles_with_auc": 16,
+    "per_role_auc": {
+      "accessibility_review": 1.0,
+      "code": 0.09090909090909088,
+      "data": 0.09090909090909088,
+      "database_design": 0.09090909090909088,
+      "design": 0.6458333333333334,
+      "documentation": 0.09090909090909088,
+      "experiment_design": 0.09090909090909088,
+      "fact_checking": 0.09090909090909088,
+      "financial_analysis": 1.0,
+      "incident_management": 0.09090909090909088,
+      "math": 0.9722222222222222,
+      "operations": 0.09090909090909088,
+      "qa_testing": 0.09090909090909088,
+      "requirements_analysis": 0.09090909090909088,
+      "research": 0.09090909090909088,
+      "writing": 0.09090909090909088
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62809217eb15272d",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d21d709b889ebb8b"
+        ],
+        "test_systems": [
+          "av11cur_553d0cc73fd60213",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 13
+      },
+      {
+        "fold": 2,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62809217eb15272d",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_4d1e345176a53b70",
+          "av11cur_62f5e868544023d2",
+          "av11cur_d21d709b889ebb8b"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 15
+      },
+      {
+        "fold": 3,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_d21d709b889ebb8b",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_62809217eb15272d",
+          "av11cur_cc81be84ca3aea87"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 13
+      },
+      {
+        "fold": 4,
+        "train_systems": [
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_62809217eb15272d",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d21d709b889ebb8b",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_bf40317cc0b5b39b"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 11
+      }
+    ]
+  },
+  "V4": {
+    "version": "V4",
+    "rows": 36,
+    "systems": 12,
+    "roles": 20,
+    "micro_auc": 0.5942644032921811,
+    "mean_within_row_auc": 0.5834097771662271,
+    "mean_topk_selected_recall": 0.20833333333333331,
+    "exact_selected_set_at_true_k": 0.027777777777777776,
+    "macro_role_auc": 0.31498717332050663,
+    "roles_with_auc": 14,
+    "per_role_auc": {
+      "accessibility_review": 1.0,
+      "code": 0.09090909090909088,
+      "database_design": 0.09090909090909088,
+      "design": 0.6625514403292182,
+      "documentation": 0.09090909090909088,
+      "experiment_design": 0.09090909090909088,
+      "fact_checking": 0.27222222222222225,
+      "financial_analysis": 0.6666666666666667,
+      "incident_management": 0.09090909090909088,
+      "operations": 0.09090909090909088,
+      "planning": 0.26666666666666666,
+      "qa_testing": 0.0,
+      "research": 0.09090909090909088,
+      "risk_assessment": 0.9053497942386831
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62809217eb15272d",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d21d709b889ebb8b"
+        ],
+        "test_systems": [
+          "av11cur_553d0cc73fd60213",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 11
+      },
+      {
+        "fold": 2,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62809217eb15272d",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_4d1e345176a53b70",
+          "av11cur_62f5e868544023d2",
+          "av11cur_d21d709b889ebb8b"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 14
+      },
+      {
+        "fold": 3,
+        "train_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_bf40317cc0b5b39b",
+          "av11cur_d21d709b889ebb8b",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_62809217eb15272d",
+          "av11cur_cc81be84ca3aea87"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 12
+      },
+      {
+        "fold": 4,
+        "train_systems": [
+          "av11cur_2d11f5070ccdf88a",
+          "av11cur_4d1e345176a53b70",
+          "av11cur_553d0cc73fd60213",
+          "av11cur_62809217eb15272d",
+          "av11cur_62f5e868544023d2",
+          "av11cur_bbd6b50d1536ee8c",
+          "av11cur_cc81be84ca3aea87",
+          "av11cur_d21d709b889ebb8b",
+          "av11cur_d6f2ed6984ff4219"
+        ],
+        "test_systems": [
+          "av11cur_01c23c9450355e09",
+          "av11cur_565fcba904b0aa1e",
+          "av11cur_bf40317cc0b5b39b"
+        ],
+        "train_rows": 27,
+        "test_rows": 9,
+        "trainable_roles": 12
+      }
+    ]
+  }
+}

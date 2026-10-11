@@ -1,0 +1,13 @@
+{
+  "states": 8,
+  "group_size": 4,
+  "updates": 4,
+  "mean_group_reward": 0.08297325165245834,
+  "mean_valid_rate": 0.78125,
+  "include_sham": false,
+  "rl_train_base_systems": 16,
+  "detector_reserved_base_systems": 8,
+  "policy_dir": "artifacts/v8_grpo_policy_smoke",
+  "reward": "training-only target activation + incremental matched external separability + optional sham specificity",
+  "v65_detector_used_in_reward": false
+}

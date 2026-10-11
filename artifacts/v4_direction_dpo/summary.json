@@ -1,0 +1,7 @@
+{
+  "strict_gold": 24,
+  "pure_direction_negative_candidates": 18,
+  "gold_with_direction_negative": 12,
+  "direction_pairs": 12,
+  "max_pairs_per_gold": 1
+}

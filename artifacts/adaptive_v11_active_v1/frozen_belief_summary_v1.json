@@ -1,0 +1,47 @@
+{
+  "baseline_dev": {
+    "exact_set": 0.0,
+    "k_exact": 0.25,
+    "k_mae": 1.125,
+    "note": "held-out baseline-bank dev; still controller-development data, not final paper test",
+    "role_set_f1": 0.4800595238095238,
+    "systems": 8
+  },
+  "descriptive_final_train_k_acc": 0.4583333333333333,
+  "descriptive_final_train_role_acc_at_05": 0.75625,
+  "folds": 4,
+  "ks": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "oof_direct_k_prefixes": 672,
+  "oof_role_rows": 13440,
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "financial_analysis",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation",
+    "customer_support_triage"
+  ],
+  "source_bank": "artifacts/adaptive_v1/replay_bank.jsonl",
+  "systems": 24,
+  "version": "adaptive_v11_frozen_belief_v1",
+  "warning": "descriptive in-sample final-model checks only; use disjoint dev for performance claims"
+}

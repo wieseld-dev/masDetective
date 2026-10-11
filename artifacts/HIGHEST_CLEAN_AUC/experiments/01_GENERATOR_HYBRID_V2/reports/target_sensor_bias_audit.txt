@@ -1,0 +1,90 @@
+===== TARGET SENSOR BIAS AUDIT =====
+ROUNDS = [1, 2, 3, 4, 5, 6, 7, 8]
+ROWS   = 40
+
+--- TARGET PRESENT ---
+N = 8
+v135                   mean=+0.4528 median=+0.9763
+v135_margin_mean       mean=+3.2251 median=+3.3414
+v135_margin_median     mean=+3.4020 median=+3.7507
+v135_rank              mean=+2.7500 median=+1.0000
+v134                   mean=-7.2549 median=-6.5625
+v134_margin_mean       mean=-0.6210 median=-0.5090
+v134_margin_median     mean=-0.6650 median=-0.4844
+v134_rank              mean=+14.8750 median=+17.0000
+delta_p                mean=+0.0430 median=+0.0347
+
+--- TARGET ABSENT ---
+N = 32
+v135                   mean=-1.4559 median=-1.5195
+v135_margin_mean       mean=+3.4063 median=+2.9322
+v135_margin_median     mean=+3.7796 median=+2.9648
+v135_rank              mean=+2.7500 median=+2.0000
+v134                   mean=-7.8635 median=-8.0469
+v134_margin_mean       mean=-0.2786 median=-0.2936
+v134_margin_median     mean=-0.2771 median=-0.3125
+v134_rank              mean=+12.5312 median=+15.0000
+delta_p                mean=+0.0428 median=+0.0246
+
+===== PRESENT-vs-ABSENT TARGET AUC =====
+v135                   AUC=0.746094
+v135_margin_mean       AUC=0.484375
+v135_margin_median     AUC=0.492188
+v135_rank              AUC=0.609375
+v134                   AUC=0.597656
+v134_margin_mean       AUC=0.429688
+v134_margin_median     AUC=0.412109
+v134_rank              AUC=0.392578
+delta_p                AUC=0.507812
+
+===== PER-ROUND =====
+R1: N=5 target_true=0/5 mean_target_V135=-1.994 mean_ΔP=+0.0531
+R2: N=5 target_true=2/5 mean_target_V135=-0.690 mean_ΔP=+0.0880
+R3: N=5 target_true=1/5 mean_target_V135=-1.644 mean_ΔP=+0.0414
+R4: N=5 target_true=0/5 mean_target_V135=-1.321 mean_ΔP=+0.0354
+R5: N=5 target_true=1/5 mean_target_V135=-0.761 mean_ΔP=+0.0518
+R6: N=5 target_true=1/5 mean_target_V135=-2.839 mean_ΔP=+0.0002
+R7: N=5 target_true=2/5 mean_target_V135=+0.728 mean_ΔP=+0.0173
+R8: N=5 target_true=1/5 mean_target_V135=-0.073 mean_ΔP=+0.0552
+
+===== INDIVIDUAL TARGETS =====
+R1 simple5_01_code_plan_research          ABSENT  target=incident_management         V135= -3.408 M135= +0.949 rank135= 5 V134= -1.984 rank134= 3 ΔP=+0.1300
+R1 simple5_02_risk_access_translation     ABSENT  target=requirements_analysis       V135= -1.256 M135= +4.417 rank135= 2 V134= -7.188 rank134=18 ΔP=+0.0170
+R1 simple5_03_data_db_requirements        ABSENT  target=fact_checking               V135= -3.086 M135= +0.244 rank135= 6 V134= -6.281 rank134=12 ΔP=+0.0032
+R1 simple5_04_support_incident_ops        ABSENT  target=requirements_analysis       V135= -0.273 M135= +4.874 rank135= 1 V134= -8.562 rank134=16 ΔP=+0.0372
+R1 simple5_05_docs_qa_writing             ABSENT  target=research                    V135= -1.945 M135= +6.862 rank135= 1 V134= -8.812 rank134= 1 ΔP=+0.0783
+R2 simple5_01_code_plan_research          PRESENT target=planning                    V135= -1.671 M135= +2.539 rank135= 2 V134= -1.727 rank134= 7 ΔP=+0.0288
+R2 simple5_02_risk_access_translation     ABSENT  target=data                        V135= +0.016 M135= +5.305 rank135= 2 V134=-11.125 rank134=17 ΔP=+0.1617
+R2 simple5_03_data_db_requirements        ABSENT  target=operations                  V135= -2.414 M135= +1.160 rank135= 5 V134= -3.125 rank134= 3 ΔP=-0.0185
+R2 simple5_04_support_incident_ops        ABSENT  target=writing                     V135= +0.844 M135= +2.935 rank135= 1 V134= -7.031 rank134= 9 ΔP=+0.1212
+R2 simple5_05_docs_qa_writing             PRESENT target=documentation               V135= -0.227 M135= +4.535 rank135= 1 V134= -6.250 rank134= 9 ΔP=+0.1468
+R3 simple5_01_code_plan_research          ABSENT  target=risk_assessment             V135= -2.023 M135= +3.280 rank135= 3 V134= -7.938 rank134=20 ΔP=-0.0019
+R3 simple5_02_risk_access_translation     ABSENT  target=incident_management         V135= +0.172 M135= +2.929 rank135= 6 V134=-11.062 rank134=19 ΔP=+0.1505
+R3 simple5_03_data_db_requirements        ABSENT  target=fact_checking               V135= -4.688 M135= +0.769 rank135= 5 V134= -7.719 rank134=17 ΔP=-0.0099
+R3 simple5_04_support_incident_ops        ABSENT  target=accessibility_review        V135= -0.750 M135= +2.254 rank135= 3 V134= -8.500 rank134= 8 ΔP=+0.0275
+R3 simple5_05_docs_qa_writing             PRESENT target=qa_testing                  V135= -0.932 M135= +0.355 rank135= 7 V134= -5.625 rank134=16 ΔP=+0.0406
+R4 simple5_01_code_plan_research          ABSENT  target=risk_assessment             V135= +2.355 M135= +8.755 rank135= 1 V134=-10.688 rank134=20 ΔP=+0.1132
+R4 simple5_02_risk_access_translation     ABSENT  target=fact_checking               V135= -5.012 M135= +0.724 rank135= 6 V134= -8.125 rank134=13 ΔP=-0.0187
+R4 simple5_03_data_db_requirements        ABSENT  target=writing                     V135= -5.849 M135= +1.749 rank135= 6 V134=-10.750 rank134=18 ΔP=-0.0248
+R4 simple5_04_support_incident_ops        ABSENT  target=design                      V135= -0.555 M135= +0.566 rank135= 4 V134= -8.625 rank134=18 ΔP=+0.0071
+R4 simple5_05_docs_qa_writing             ABSENT  target=research                    V135= +2.457 M135= +6.945 rank135= 1 V134= -5.250 rank134=15 ΔP=+0.1001
+R5 simple5_01_code_plan_research          ABSENT  target=math                        V135= +0.070 M135= +2.425 rank135= 3 V134=-11.188 rank134=19 ΔP=+0.0663
+R5 simple5_02_risk_access_translation     ABSENT  target=planning                    V135= -3.086 M135= +3.151 rank135= 3 V134= -7.594 rank134=10 ΔP=+0.0257
+R5 simple5_03_data_db_requirements        PRESENT target=data                        V135= +1.098 M135= +6.483 rank135= 1 V134=-12.000 rank134=19 ΔP=+0.1129
+R5 simple5_04_support_incident_ops        ABSENT  target=planning                    V135= -3.219 M135= +4.080 rank135= 1 V134= -7.500 rank134= 4 ΔP=+0.0253
+R5 simple5_05_docs_qa_writing             ABSENT  target=risk_assessment             V135= +1.332 M135= +5.016 rank135= 1 V134= -4.062 rank134=20 ΔP=+0.0287
+R6 simple5_01_code_plan_research          ABSENT  target=database_design             V135= -4.314 M135= +2.049 rank135= 2 V134=-10.062 rank134=17 ΔP=+0.0054
+R6 simple5_02_risk_access_translation     ABSENT  target=operations                  V135= -1.930 M135= +2.793 rank135= 2 V134= -7.844 rank134=12 ΔP=+0.0072
+R6 simple5_03_data_db_requirements        ABSENT  target=code                        V135= -4.520 M135= +1.180 rank135= 2 V134=-12.125 rank134=15 ΔP=+0.0001
+R6 simple5_04_support_incident_ops        PRESENT target=customer_support_triage     V135= +1.211 M135= +4.143 rank135= 1 V134= -6.875 rank134=18 ΔP=-0.0152
+R6 simple5_05_docs_qa_writing             ABSENT  target=requirements_analysis       V135= -4.641 M135= +2.081 rank135= 3 V134=-10.875 rank134= 7 ΔP=+0.0034
+R7 simple5_01_code_plan_research          PRESENT target=planning                    V135= +1.477 M135= +1.078 rank135= 8 V134= -8.375 rank134=20 ΔP=+0.0036
+R7 simple5_02_risk_access_translation     ABSENT  target=research                    V135= -1.422 M135= +4.160 rank135= 3 V134= -7.969 rank134= 2 ΔP=+0.0159
+R7 simple5_03_data_db_requirements        ABSENT  target=fact_checking               V135= +1.005 M135= +1.968 rank135= 2 V134= -2.047 rank134= 1 ΔP=+0.0239
+R7 simple5_04_support_incident_ops        PRESENT target=customer_support_triage     V135= +0.855 M135= +2.252 rank135= 1 V134= -5.188 rank134=10 ΔP=-0.0348
+R7 simple5_05_docs_qa_writing             ABSENT  target=fact_checking               V135= +1.725 M135= +6.562 rank135= 1 V134= -6.969 rank134=20 ΔP=+0.0780
+R8 simple5_01_code_plan_research          ABSENT  target=fact_checking               V135= +4.012 M135= +7.285 rank135= 2 V134= -1.945 rank134= 2 ΔP=+0.1725
+R8 simple5_02_risk_access_translation     ABSENT  target=planning                    V135= +0.697 M135= +6.857 rank135= 2 V134= -8.688 rank134= 8 ΔP=+0.0439
+R8 simple5_03_data_db_requirements        ABSENT  target=customer_support_triage     V135= -1.617 M135= +3.462 rank135= 1 V134=-11.250 rank134=17 ΔP=+0.0043
+R8 simple5_04_support_incident_ops        ABSENT  target=financial_analysis          V135= -5.266 M135= +1.217 rank135= 2 V134= -8.750 rank134=20 ΔP=-0.0060
+R8 simple5_05_docs_qa_writing             PRESENT target=writing                     V135= +1.811 M135= +4.415 rank135= 1 V134=-12.000 rank134=20 ΔP=+0.0611

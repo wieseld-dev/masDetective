@@ -1,0 +1,14 @@
+{
+  "source_v43_probe_bank": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/runs/v4_20261009_185359_1475154/role_upgrade_v3/hmhy_20261009_215152_1793839/v43_hmhy_candidate_probes_round_01.jsonl",
+  "source_mas5_manifest": "/home/wieseld/mas_rl_detective/artifacts/role_direct_routing_pilot_v1/manifest_privileged.json",
+  "source_cf_manifest": "/home/wieseld/mas_rl_detective/artifacts/role_direct_matched_cf_v1/manifest_privileged.json",
+  "source_generator_adapter": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/runs/v4_20261009_185359_1475154/checkpoints/generator_activation_sft",
+  "source_sensor_adapter": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/runs/v4_20261009_185359_1475154/checkpoints/sensor_epoch02",
+  "source_teacher": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/runs/v4_20261009_185359_1475154/role_upgrade_v2/run_20261009_210625_1725844/sensor_candidate.joblib",
+  "max_train_mas_executions": 960,
+  "max_test_mas_executions": 200,
+  "total_mas_executions_upper_bound": 1160,
+  "external_llm_calls_per_mas_execution": "possibly more than one",
+  "notes": "MAS5 previously explored; prospective fresh executions not novel sealed compositions",
+  "protocol": "3 backgrounds/role x 8 probes x present-absent; two-round 5x20 role attack"
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "system_id": "v12_count_fanout2_k3_r00",
+    "execution_mode": "fanout2",
+    "style": "s1",
+    "k_true_workers_eval_only": 3,
+    "true_roles_eval_only": [
+      "customer_support_triage",
+      "requirements_analysis",
+      "database_design"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout2_k4_r00",
+    "execution_mode": "fanout2",
+    "style": "s2",
+    "k_true_workers_eval_only": 4,
+    "true_roles_eval_only": [
+      "code",
+      "research",
+      "risk_assessment",
+      "data"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout2_k5_r00",
+    "execution_mode": "fanout2",
+    "style": "s3",
+    "k_true_workers_eval_only": 5,
+    "true_roles_eval_only": [
+      "planning",
+      "fact_checking",
+      "writing",
+      "qa_testing",
+      "design"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout2_k6_r00",
+    "execution_mode": "fanout2",
+    "style": "s1",
+    "k_true_workers_eval_only": 6,
+    "true_roles_eval_only": [
+      "incident_management",
+      "documentation",
+      "financial_analysis",
+      "accessibility_review",
+      "risk_assessment",
+      "math"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout3_k3_r00",
+    "execution_mode": "fanout3",
+    "style": "s2",
+    "k_true_workers_eval_only": 3,
+    "true_roles_eval_only": [
+      "financial_analysis",
+      "writing",
+      "design"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout3_k4_r00",
+    "execution_mode": "fanout3",
+    "style": "s3",
+    "k_true_workers_eval_only": 4,
+    "true_roles_eval_only": [
+      "research",
+      "documentation",
+      "requirements_analysis",
+      "translation"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout3_k5_r00",
+    "execution_mode": "fanout3",
+    "style": "s1",
+    "k_true_workers_eval_only": 5,
+    "true_roles_eval_only": [
+      "operations",
+      "translation",
+      "fact_checking",
+      "qa_testing",
+      "data"
+    ]
+  },
+  {
+    "system_id": "v12_count_fanout3_k6_r00",
+    "execution_mode": "fanout3",
+    "style": "s2",
+    "k_true_workers_eval_only": 6,
+    "true_roles_eval_only": [
+      "accessibility_review",
+      "database_design",
+      "math",
+      "incident_management",
+      "planning",
+      "customer_support_triage"
+    ]
+  }
+]

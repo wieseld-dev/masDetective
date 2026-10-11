@@ -1,0 +1,180 @@
+========================================================================================================================
+_series_stats
+========================================================================================================================
+def _series_stats(xs: Sequence[float]) -> list[float]:
+    if not xs:
+        return [0.0] * 9
+    a = np.asarray(xs, dtype=np.float64)
+    slope = float(a[-1] - a[0]) / max(1, len(a) - 1)
+    q25, med, q75 = np.quantile(a, [0.25, 0.50, 0.75])
+    return [
+        float(a[-1]),
+        float(a.mean()),
+        float(a.std()),
+        float(a.min()),
+        float(q25),
+        float(med),
+        float(q75),
+        float(a.max()),
+        slope,
+    ]
+
+
+========================================================================================================================
+_summary9
+========================================================================================================================
+def _summary9(xs: Sequence[float]) -> list[float]:
+    if not xs:
+        return [0.0] * 9
+    a = np.asarray(xs, dtype=np.float64)
+    s = np.sort(a)
+    top1 = float(s[-1])
+    top2 = float(s[-2]) if len(s) > 1 else top1
+    q25, med, q75 = np.quantile(a, [0.25, 0.50, 0.75])
+    return [
+        float(a.mean()), float(a.std()), float(a.min()), float(q25),
+        float(med), float(q75), float(a.max()), top1, float(top1 - top2),
+    ]
+
+
+========================================================================================================================
+_rank_fraction
+========================================================================================================================
+def _rank_fraction(values: Mapping[str, float], role: str) -> float:
+    ordered = sorted(values.items(), key=lambda kv: kv[1], reverse=True)
+    for i, (r, _) in enumerate(ordered):
+        if r == role:
+            return i / max(1, len(ordered) - 1)
+    return 1.0
+
+
+========================================================================================================================
+MODEL DIMENSIONS
+========================================================================================================================
+n_features = 81
+intercept_scaled = [-0.1089491]
+
+========================================================================================================================
+TOP 30 EFFECTIVE FEATURE COEFFICIENTS
+========================================================================================================================
+01 feature[021] scaled_coef=+0.096170 effective_coef=+1.007512 mean=+0.173014 scale=+0.095453
+02 feature[076] scaled_coef=+0.183899 effective_coef=+0.843786 mean=+0.050000 scale=+0.217945
+03 feature[064] scaled_coef=-0.150630 effective_coef=-0.691136 mean=+0.050000 scale=+0.217945
+04 feature[023] scaled_coef=-0.171010 effective_coef=-0.664919 mean=+0.403308 scale=+0.257189
+05 feature[033] scaled_coef=-0.165606 effective_coef=-0.663811 mean=+0.491273 scale=+0.249478
+06 feature[072] scaled_coef=+0.141933 effective_coef=+0.651233 mean=+0.050000 scale=+0.217945
+07 feature[022] scaled_coef=+0.160606 effective_coef=+0.634810 mean=+0.218376 scale=+0.252999
+08 feature[077] scaled_coef=-0.132800 effective_coef=-0.609330 mean=+0.050000 scale=+0.217945
+09 feature[079] scaled_coef=-0.117644 effective_coef=-0.539787 mean=+0.050000 scale=+0.217945
+10 feature[080] scaled_coef=-0.117277 effective_coef=-0.538105 mean=+0.050000 scale=+0.217945
+11 feature[030] scaled_coef=-0.052644 effective_coef=-0.520857 mean=+0.179936 scale=+0.101072
+12 feature[063] scaled_coef=+0.112111 effective_coef=+0.514400 mean=+0.050000 scale=+0.217945
+13 feature[000] scaled_coef=-0.357082 effective_coef=-0.510585 mean=+1.960270 scale=+0.699358
+14 feature[075] scaled_coef=-0.111267 effective_coef=-0.510530 mean=+0.050000 scale=+0.217945
+15 feature[061] scaled_coef=+0.109765 effective_coef=+0.503637 mean=+0.050000 scale=+0.217945
+16 feature[019] scaled_coef=+0.151485 effective_coef=+0.499145 mean=+0.500000 scale=+0.303488
+17 feature[035] scaled_coef=-0.112614 effective_coef=-0.453687 mean=+0.794425 scale=+0.248219
+18 feature[020] scaled_coef=-0.103619 effective_coef=-0.449837 mean=+0.500000 scale=+0.230348
+19 feature[065] scaled_coef=-0.089136 effective_coef=-0.408984 mean=+0.050000 scale=+0.217945
+20 feature[070] scaled_coef=+0.086186 effective_coef=+0.395447 mean=+0.050000 scale=+0.217945
+21 feature[069] scaled_coef=-0.079963 effective_coef=-0.366894 mean=+0.050000 scale=+0.217945
+22 feature[031] scaled_coef=+0.094520 effective_coef=+0.356125 mean=+0.249569 scale=+0.265412
+23 feature[073] scaled_coef=+0.074454 effective_coef=+0.341617 mean=+0.050000 scale=+0.217945
+24 feature[025] scaled_coef=-0.080618 effective_coef=-0.320819 mean=+0.609737 scale=+0.251289
+25 feature[071] scaled_coef=+0.062498 effective_coef=+0.286759 mean=+0.050000 scale=+0.217945
+26 feature[026] scaled_coef=+0.067278 effective_coef=+0.270157 mean=+0.736957 scale=+0.249035
+27 feature[034] scaled_coef=+0.062040 effective_coef=+0.263518 mean=+0.604906 scale=+0.235431
+28 feature[027] scaled_coef=+0.030261 effective_coef=+0.236302 mean=-0.000000 scale=+0.128059
+29 feature[008] scaled_coef=+0.554965 effective_coef=+0.232087 mean=-1.170008 scale=+2.391196
+30 feature[028] scaled_coef=+0.067431 effective_coef=+0.222187 mean=+0.500000 scale=+0.303488
+
+========================================================================================================================
+ALL COEFFICIENTS
+========================================================================================================================
+feature[000] scaled=-0.35708153 effective=-0.51058458 mean=+1.96026968 scale=+0.69935824
+feature[001] scaled=-0.07551274 effective=-0.03295531 mean=-3.73838025 scale=+2.29136791
+feature[002] scaled=+0.02683482 effective=+0.01874622 mean=-3.84510726 scale=+1.43147897
+feature[003] scaled=-0.10307152 effective=-0.11536943 mean=+1.61033595 scale=+0.89340409
+feature[004] scaled=-0.03503190 effective=-0.01885046 mean=-6.15876308 scale=+1.85841061
+feature[005] scaled=-0.17191535 effective=-0.11353973 mean=-4.87506761 scale=+1.51414266
+feature[006] scaled=+0.10352103 effective=+0.06900820 mean=-3.93595091 scale=+1.50012655
+feature[007] scaled=+0.00598471 effective=+0.00361288 mean=-2.91238421 scale=+1.65649394
+feature[008] scaled=+0.55496514 effective=+0.23208685 mean=-1.17000766 scale=+2.39119600
+feature[009] scaled=+0.02846318 effective=+0.02477761 mean=+0.06672197 scale=+1.14874576
+feature[010] scaled=+0.01774698 effective=+0.00677862 mean=-5.11514811 scale=+2.61807971
+feature[011] scaled=+0.06938983 effective=+0.04951598 mean=-5.17786574 scale=+1.40136218
+feature[012] scaled=-0.10876928 effective=-0.11632549 mean=+1.87607509 scale=+0.93504255
+feature[013] scaled=+0.11669684 effective=+0.05891914 mean=-7.96114565 scale=+1.98062689
+feature[014] scaled=+0.02096190 effective=+0.01372117 mean=-6.39150428 scale=+1.52770531
+feature[015] scaled=-0.10598633 effective=-0.07194152 mean=-5.23381425 scale=+1.47322910
+feature[016] scaled=+0.13701057 effective=+0.08236883 mean=-4.04995317 scale=+1.66337891
+feature[017] scaled=-0.17627208 effective=-0.07704847 mean=-2.18754547 scale=+2.28780774
+feature[018] scaled=-0.02325926 effective=-0.01893604 mean=+0.03502888 scale=+1.22830671
+feature[019] scaled=+0.15148489 effective=+0.49914542 mean=+0.50000000 scale=+0.30348849
+feature[020] scaled=-0.10361909 effective=-0.44983710 mean=+0.50000000 scale=+0.23034803
+feature[021] scaled=+0.09617022 effective=+1.00751197 mean=+0.17301369 scale=+0.09545318
+feature[022] scaled=+0.16060641 effective=+0.63480985 mean=+0.21837620 scale=+0.25299925
+feature[023] scaled=-0.17101000 effective=-0.66491912 mean=+0.40330816 scale=+0.25718918
+feature[024] scaled=-0.01298532 effective=-0.05021848 mean=+0.51216482 scale=+0.25857642
+feature[025] scaled=-0.08061820 effective=-0.32081911 mean=+0.60973697 scale=+0.25128865
+feature[026] scaled=+0.06727847 effective=+0.27015680 mean=+0.73695674 scale=+0.24903488
+feature[027] scaled=+0.03026064 effective=+0.23630210 mean=-0.00000000 scale=+0.12805912
+feature[028] scaled=+0.06743106 effective=+0.22218656 mean=+0.50000000 scale=+0.30348849
+feature[029] scaled=-0.03567179 effective=-0.16031216 mean=+0.50000000 scale=+0.22251459
+feature[030] scaled=-0.05264377 effective=-0.52085658 mean=+0.17993629 scale=+0.10107152
+feature[031] scaled=+0.09451990 effective=+0.35612483 mean=+0.24956888 scale=+0.26541227
+feature[032] scaled=+0.00158599 effective=+0.00617343 mean=+0.38227858 scale=+0.25690617
+feature[033] scaled=-0.16560620 effective=-0.66381071 mean=+0.49127293 scale=+0.24947805
+feature[034] scaled=+0.06204021 effective=+0.26351760 mean=+0.60490618 scale=+0.23543101
+feature[035] scaled=-0.11261367 effective=-0.45368707 mean=+0.79442534 scale=+0.24821882
+feature[036] scaled=-0.01996783 effective=-0.16324258 mean=-0.00000000 scale=+0.12232000
+feature[037] scaled=+0.07659742 effective=+0.02673089 mean=-1.37676786 scale=+2.86550236
+feature[038] scaled=+0.03453977 effective=+0.02027975 mean=-1.33275848 scale=+1.70316490
+feature[039] scaled=-0.03446758 effective=-0.03154198 mean=+2.05403887 scale=+1.09275261
+feature[040] scaled=-0.25833425 effective=-0.08186546 mean=-4.92098394 scale=+3.15559509
+feature[041] scaled=-0.02776005 effective=-0.01380959 mean=-2.45643694 scale=+2.01020117
+feature[042] scaled=+0.02132938 effective=+0.01194470 mean=-1.11992473 scale=+1.78567712
+feature[043] scaled=-0.11488661 effective=-0.06606078 mean=+0.03054949 scale=+1.73910478
+feature[044] scaled=+0.19773579 effective=+0.09783897 mean=+1.42164694 scale=+2.02103299
+feature[045] scaled=-0.04164213 effective=-0.02830362 mean=-0.03169309 scale=+1.47126519
+feature[046] scaled=-0.03164282 effective=-0.01582224 mean=-4.42676418 scale=+1.99989454
+feature[047] scaled=+0.05992132 effective=+0.05293697 mean=-4.51148650 scale=+1.13193698
+feature[048] scaled=+0.00682880 effective=+0.00952785 mean=+1.42326161 scale=+0.71672025
+feature[049] scaled=-0.11379911 effective=-0.06737313 mean=-6.72719585 scale=+1.68908758
+feature[050] scaled=-0.00402475 effective=-0.00323413 mean=-5.41322153 scale=+1.24446292
+feature[051] scaled=-0.04018798 effective=-0.03329342 mean=-4.50469981 scale=+1.20708480
+feature[052] scaled=+0.01382974 effective=+0.01077691 mean=-3.60184229 scale=+1.28327529
+feature[053] scaled=+0.14348449 effective=+0.08321719 mean=-2.35329659 scale=+1.72421692
+feature[054] scaled=+0.00220846 effective=+0.00236362 mean=+0.05087543 scale=+0.93435635
+feature[055] scaled=+0.16699645 effective=+0.10266289 mean=-0.00000000 scale=+1.62664870
+feature[056] scaled=+0.02404287 effective=+0.03262238 mean=+0.00000000 scale=+0.73700538
+feature[057] scaled=+0.06937998 effective=+0.04199667 mean=+0.29846568 scale=+1.65203535
+feature[058] scaled=+0.04469254 effective=+0.05995404 mean=-0.04381373 scale=+0.74544670
+feature[059] scaled=+0.04718298 effective=+0.01703412 mean=-4.08642300 scale=+2.76990966
+feature[060] scaled=-0.01568685 effective=-0.01920981 mean=-1.26338355 scale=+0.81660635
+feature[061] scaled=+0.10976516 effective=+0.50363708 mean=+0.05000000 scale=+0.21794495
+feature[062] scaled=+0.00640625 effective=+0.02939391 mean=+0.05000000 scale=+0.21794495
+feature[063] scaled=+0.11211088 effective=+0.51440001 mean=+0.05000000 scale=+0.21794495
+feature[064] scaled=-0.15062959 effective=-0.69113598 mean=+0.05000000 scale=+0.21794495
+feature[065] scaled=-0.08913606 effective=-0.40898428 mean=+0.05000000 scale=+0.21794495
+feature[066] scaled=+0.02176068 effective=+0.09984484 mean=+0.05000000 scale=+0.21794495
+feature[067] scaled=+0.01515200 effective=+0.06952213 mean=+0.05000000 scale=+0.21794495
+feature[068] scaled=-0.02825102 effective=-0.12962459 mean=+0.05000000 scale=+0.21794495
+feature[069] scaled=-0.07996267 effective=-0.36689390 mean=+0.05000000 scale=+0.21794495
+feature[070] scaled=+0.08618566 effective=+0.39544695 mean=+0.05000000 scale=+0.21794495
+feature[071] scaled=+0.06249757 effective=+0.28675852 mean=+0.05000000 scale=+0.21794495
+feature[072] scaled=+0.14193304 effective=+0.65123345 mean=+0.05000000 scale=+0.21794495
+feature[073] scaled=+0.07445364 effective=+0.34161672 mean=+0.05000000 scale=+0.21794495
+feature[074] scaled=+0.00548024 effective=+0.02514505 mean=+0.05000000 scale=+0.21794495
+feature[075] scaled=-0.11126748 effective=-0.51053020 mean=+0.05000000 scale=+0.21794495
+feature[076] scaled=+0.18389899 effective=+0.84378641 mean=+0.05000000 scale=+0.21794495
+feature[077] scaled=-0.13280034 effective=-0.60932975 mean=+0.05000000 scale=+0.21794495
+feature[078] scaled=+0.00732620 effective=+0.03361491 mean=+0.05000000 scale=+0.21794495
+feature[079] scaled=-0.11764380 effective=-0.53978676 mean=+0.05000000 scale=+0.21794495
+feature[080] scaled=-0.11727718 effective=-0.53810458 mean=+0.05000000 scale=+0.21794495
+
+========================================================================================================================
+PLATT
+========================================================================================================================
+coef      = [[0.39953117]]
+intercept = [-1.19486903]

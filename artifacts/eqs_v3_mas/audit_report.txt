@@ -1,0 +1,1158 @@
+====================================================================================================
+V3-MAS DATA AUDIT
+====================================================================================================
+PWD: /home/wieseld/mas_rl_detective
+ROOT: /home/wieseld/mas_rl_detective/artifacts/v14_adaptive_role_v1
+
+====================================================================================================
+ARTIFACT INVENTORY
+====================================================================================================
+         391  advance_dev_round_01_summary.json
+         406  advance_dev_round_02_summary.json
+         406  advance_dev_round_03_summary.json
+         406  advance_dev_round_04_summary.json
+         407  advance_dev_round_05_summary.json
+         405  advance_dev_round_06_summary.json
+         411  advance_train_round_01_summary.json
+         409  advance_train_round_02_summary.json
+         408  advance_train_round_03_summary.json
+         409  advance_train_round_04_summary.json
+         407  advance_train_round_05_summary.json
+         410  advance_train_round_06_summary.json
+      223004  candidates_dev_round_01.jsonl
+      257129  candidates_dev_round_02.jsonl
+      297174  candidates_dev_round_03.jsonl
+      303686  candidates_dev_round_04.jsonl
+      313821  candidates_dev_round_05.jsonl
+      317223  candidates_dev_round_06.jsonl
+      665096  candidates_train_round_01.jsonl
+      774365  candidates_train_round_02.jsonl
+      891007  candidates_train_round_03.jsonl
+      907680  candidates_train_round_04.jsonl
+      925639  candidates_train_round_05.jsonl
+      944678  candidates_train_round_06.jsonl
+     8050497  candidates_train_round_07.jsonl
+    17620875  checkpoints/round_01/optimizer.pt
+        5206  checkpoints/round_01/policy/README.md
+        1109  checkpoints/round_01/policy/adapter_config.json
+     8745704  checkpoints/round_01/policy/adapter_model.safetensors
+        2507  checkpoints/round_01/policy/chat_template.jinja
+    11421892  checkpoints/round_01/policy/tokenizer.json
+         694  checkpoints/round_01/policy/tokenizer_config.json
+         539  checkpoints/round_01/update_summary.json
+    17620875  checkpoints/round_02/optimizer.pt
+        5206  checkpoints/round_02/policy/README.md
+        1109  checkpoints/round_02/policy/adapter_config.json
+     8745704  checkpoints/round_02/policy/adapter_model.safetensors
+        2507  checkpoints/round_02/policy/chat_template.jinja
+    11421892  checkpoints/round_02/policy/tokenizer.json
+         694  checkpoints/round_02/policy/tokenizer_config.json
+         570  checkpoints/round_02/update_summary.json
+    17620875  checkpoints/round_03/optimizer.pt
+        5206  checkpoints/round_03/policy/README.md
+        1109  checkpoints/round_03/policy/adapter_config.json
+     8745704  checkpoints/round_03/policy/adapter_model.safetensors
+        2507  checkpoints/round_03/policy/chat_template.jinja
+    11421892  checkpoints/round_03/policy/tokenizer.json
+         694  checkpoints/round_03/policy/tokenizer_config.json
+         573  checkpoints/round_03/update_summary.json
+    17620875  checkpoints/round_04/optimizer.pt
+        5206  checkpoints/round_04/policy/README.md
+        1109  checkpoints/round_04/policy/adapter_config.json
+     8745704  checkpoints/round_04/policy/adapter_model.safetensors
+        2507  checkpoints/round_04/policy/chat_template.jinja
+    11421892  checkpoints/round_04/policy/tokenizer.json
+         694  checkpoints/round_04/policy/tokenizer_config.json
+         566  checkpoints/round_04/update_summary.json
+    17620875  checkpoints/round_05/optimizer.pt
+        5206  checkpoints/round_05/policy/README.md
+        1109  checkpoints/round_05/policy/adapter_config.json
+     8745704  checkpoints/round_05/policy/adapter_model.safetensors
+        2507  checkpoints/round_05/policy/chat_template.jinja
+    11421892  checkpoints/round_05/policy/tokenizer.json
+         694  checkpoints/round_05/policy/tokenizer_config.json
+         570  checkpoints/round_05/update_summary.json
+    17620875  checkpoints/round_06/optimizer.pt
+        5206  checkpoints/round_06/policy/README.md
+        1109  checkpoints/round_06/policy/adapter_config.json
+     8745704  checkpoints/round_06/policy/adapter_model.safetensors
+        2507  checkpoints/round_06/policy/chat_template.jinja
+    11421892  checkpoints/round_06/policy/tokenizer.json
+         694  checkpoints/round_06/policy/tokenizer_config.json
+         570  checkpoints/round_06/update_summary.json
+         426  dev_jobs.txt
+       10284  frozen_belief.joblib
+          65  frozen_v14.sha256
+           9  g50_v2_compare_job.txt
+         309  g50_v2_train_jobs.txt
+      658974  grpo_train_round_01.jsonl
+      762497  grpo_train_round_02.jsonl
+      877038  grpo_train_round_03.jsonl
+      894438  grpo_train_round_04.jsonl
+      912621  grpo_train_round_05.jsonl
+      931792  grpo_train_round_06.jsonl
+        9141  manifest_privileged.json
+        3287  metrics_dev_round_01.jsonl
+        3282  metrics_dev_round_02.jsonl
+        3293  metrics_dev_round_03.jsonl
+        3284  metrics_dev_round_04.jsonl
+        3280  metrics_dev_round_05.jsonl
+        3251  metrics_dev_round_06.jsonl
+        9848  metrics_train_round_01.jsonl
+        9853  metrics_train_round_02.jsonl
+        9883  metrics_train_round_03.jsonl
+        9915  metrics_train_round_04.jsonl
+        9906  metrics_train_round_05.jsonl
+        9834  metrics_train_round_06.jsonl
+          16  report_job.txt
+      546668  responses_dev_round_01.jsonl
+      629767  responses_dev_round_02.jsonl
+      655656  responses_dev_round_03.jsonl
+      651158  responses_dev_round_04.jsonl
+      641229  responses_dev_round_05.jsonl
+      698543  responses_dev_round_06.jsonl
+     1693253  responses_train_round_01.jsonl
+     1863470  responses_train_round_02.jsonl
+     1999045  responses_train_round_03.jsonl
+     2027702  responses_train_round_04.jsonl
+     2009293  responses_train_round_05.jsonl
+     2027286  responses_train_round_06.jsonl
+    17186381  responses_train_round_07.jsonl
+      536639  score_input_dev_round_01.jsonl
+      618079  score_input_dev_round_02.jsonl
+      642543  score_input_dev_round_03.jsonl
+      637698  score_input_dev_round_04.jsonl
+      620586  score_input_dev_round_05.jsonl
+      691693  score_input_dev_round_06.jsonl
+     1657532  score_input_train_round_01.jsonl
+     1816781  score_input_train_round_02.jsonl
+     1972170  score_input_train_round_03.jsonl
+     1987089  score_input_train_round_04.jsonl
+     1988790  score_input_train_round_05.jsonl
+     1977469  score_input_train_round_06.jsonl
+    16941161  score_input_train_round_07.jsonl
+       87501  scored_dev_round_01.jsonl
+       87709  scored_dev_round_02.jsonl
+       88577  scored_dev_round_03.jsonl
+       87949  scored_dev_round_04.jsonl
+       86034  scored_dev_round_05.jsonl
+       89486  scored_dev_round_06.jsonl
+      259975  scored_train_round_01.jsonl
+      256616  scored_train_round_02.jsonl
+      266531  scored_train_round_03.jsonl
+      263219  scored_train_round_04.jsonl
+      268253  scored_train_round_05.jsonl
+      260223  scored_train_round_06.jsonl
+        5024  states_dev_round_00.jsonl
+       30199  states_dev_round_01.jsonl
+       53371  states_dev_round_02.jsonl
+       76365  states_dev_round_03.jsonl
+       99718  states_dev_round_04.jsonl
+      122646  states_dev_round_05.jsonl
+      145741  states_dev_round_06.jsonl
+       15120  states_train_round_00.jsonl
+       89613  states_train_round_01.jsonl
+      158551  states_train_round_02.jsonl
+      227454  states_train_round_03.jsonl
+      296715  states_train_round_04.jsonl
+      364564  states_train_round_05.jsonl
+      433358  states_train_round_06.jsonl
+     6128152  target_public_cache.jsonl
+      765344  target_truth_cache_training_only.jsonl
+         498  train_jobs.txt
+
+====================================================================================================
+JSONL: artifacts/v14_adaptive_role_v1/states_train_round_06.jsonl
+====================================================================================================
+SIZE_BYTES: 433358
+PARSED_SAMPLE_ROWS: 24
+BAD_ROWS: 0
+
+TOP-LEVEL KEYS:
+  session_id                               24
+  split                                    24
+  round_index                              24
+  k_probs                                  24
+  role_probs                               24
+  history                                  24
+
+INTERESTING NESTED PATHS:
+  history                                                                n=  24 type=list
+  history[]                                                              n=  24 type=dict
+  history[].answer                                                       n=  24 type=str
+  history[].query                                                        n=  24 type=str
+  history[].v134                                                         n=  24 type=dict
+  history[].v134.accessibility_review                                    n=  24 type=float
+  history[].v134.code                                                    n=  24 type=float
+  history[].v134.customer_support_triage                                 n=  24 type=float
+  history[].v134.data                                                    n=  24 type=float
+  history[].v134.database_design                                         n=  24 type=float
+  history[].v134.design                                                  n=  24 type=float
+  history[].v134.documentation                                           n=  24 type=float
+  history[].v134.experiment_design                                       n=  24 type=float
+  history[].v134.fact_checking                                           n=  24 type=float
+  history[].v134.financial_analysis                                      n=  24 type=float
+  history[].v134.incident_management                                     n=  24 type=float
+  history[].v134.math                                                    n=  24 type=float
+  history[].v134.operations                                              n=  24 type=float
+  history[].v134.planning                                                n=  24 type=float
+  history[].v134.qa_testing                                              n=  24 type=float
+  history[].v134.requirements_analysis                                   n=  24 type=float
+  history[].v134.research                                                n=  24 type=float
+  history[].v134.risk_assessment                                         n=  24 type=float
+  history[].v134.translation                                             n=  24 type=float
+  history[].v134.writing                                                 n=  24 type=float
+  history[].v135                                                         n=  24 type=dict
+  history[].v135.accessibility_review                                    n=  24 type=float
+  history[].v135.code                                                    n=  24 type=float
+  history[].v135.customer_support_triage                                 n=  24 type=float
+  history[].v135.data                                                    n=  24 type=float
+  history[].v135.database_design                                         n=  24 type=float
+  history[].v135.design                                                  n=  24 type=float
+  history[].v135.documentation                                           n=  24 type=float
+  history[].v135.experiment_design                                       n=  24 type=float
+  history[].v135.fact_checking                                           n=  24 type=float
+  history[].v135.financial_analysis                                      n=  24 type=float
+  history[].v135.incident_management                                     n=  24 type=float
+  history[].v135.math                                                    n=  24 type=float
+  history[].v135.operations                                              n=  24 type=float
+  history[].v135.planning                                                n=  24 type=float
+  history[].v135.qa_testing                                              n=  24 type=float
+  history[].v135.requirements_analysis                                   n=  24 type=float
+  history[].v135.research                                                n=  24 type=float
+  history[].v135.risk_assessment                                         n=  24 type=float
+  history[].v135.translation                                             n=  24 type=float
+  history[].v135.writing                                                 n=  24 type=float
+  k_probs                                                                n=  24 type=dict
+  k_probs.3                                                              n=  24 type=float
+  k_probs.4                                                              n=  24 type=float
+  k_probs.5                                                              n=  24 type=float
+  k_probs.6                                                              n=  24 type=float
+  role_probs                                                             n=  24 type=dict
+  role_probs.accessibility_review                                        n=  24 type=float
+  role_probs.code                                                        n=  24 type=float
+  role_probs.customer_support_triage                                     n=  24 type=float
+  role_probs.data                                                        n=  24 type=float
+  role_probs.database_design                                             n=  24 type=float
+  role_probs.design                                                      n=  24 type=float
+  role_probs.documentation                                               n=  24 type=float
+  role_probs.experiment_design                                           n=  24 type=float
+  role_probs.fact_checking                                               n=  24 type=float
+  role_probs.financial_analysis                                          n=  24 type=float
+  role_probs.incident_management                                         n=  24 type=float
+  role_probs.math                                                        n=  24 type=float
+  role_probs.operations                                                  n=  24 type=float
+  role_probs.planning                                                    n=  24 type=float
+  role_probs.qa_testing                                                  n=  24 type=float
+  role_probs.requirements_analysis                                       n=  24 type=float
+  role_probs.research                                                    n=  24 type=float
+  role_probs.risk_assessment                                             n=  24 type=float
+  role_probs.translation                                                 n=  24 type=float
+  role_probs.writing                                                     n=  24 type=float
+  round_index                                                            n=  24 type=int
+  session_id                                                             n=  24 type=str
+
+SAMPLE ROW 0:
+{
+  "session_id": "av11_023efb442571d117",
+  "split": "train",
+  "round_index": 6,
+  "k_probs": {
+    "3": 0.25,
+    "4": 0.25,
+    "5": 0.25,
+    "6": 0.25
+  },
+  "role_probs": {
+    "code": 0.23527867605778335,
+    "writing": 0.23340857683163643,
+    "math": 0.271044489715781,
+    "planning": 0.2874391999480823,
+    "research": 0.2926675274849163,
+    "data": 0.2681529706186246,
+    "design": 0.20278238628776735,
+    "operations": 0.3927665380095824,
+    "qa_testing": 0.2256340048257949,
+    "translation": 0.1829130789251757,
+    "financial_analysis": 0.2655986935384473,
+    "database_design": 0.2103591136949392,
+    "accessibility_review": 0.25698523627828584,
+    "fact_checking": 0.27974662264075606,
+    "requirements_analysis": 0.3309224563197495,
+    "incident_management": 0.2923070194605304,
+    "experiment_design": 0.34094905855431035,
+    "risk_assessment": 0.24982886027887452,
+    "documentation": 0.266637525170328,
+    "customer_support_triage": 0.20548646590587175
+  },
+  "history": [
+    {
+      "query": "What kind of specific details related to designing experiments should I consider first to ensure my experimental design meets high standards?",
+      "answer": "To ensure your experimental design meets high standards, focus on several key details that are crucial for a robust and reliable study. \n\nStart by clearly defining your research question and formulating a specific, measurable, and testable hypothesis. This foundational step guides the entire design process. Next, identify and operationalize your variables: determine the independent variables you will manipulate, the dependent variables you will measure, and any control variables that need to be managed to minimize extraneous influences.\n\nChoosing the right experimental design is essential. Consider whether a randomized controlled trial, observational study, or another design best suits your research objectives. Additionally, ensure that you include appropriate control groups to facilitate comparisons and isolate the effects of your independent variable.\n\nSample size is another critical aspect. Conduct a power analysis to determine the minimum sample size needed to detect an effect, taking into account expected effect sizes and significance levels. Implement randomization methods to reduce bias and enhance the generalizability of your results.\n\nBlinding, whether single or double, is important to minimize bias in treatment administration and outcome assessment. Plan for replication of your experiment to confirm findings and enhance reliability.\n\nSelect reliable and valid data collection methods that align with your research questions, and predefine your statistical analysis plan, specifying the methods you will use to analyze the data and how you will handle missing data.\n\nEt",
+      "v135": {
+        "code": -5.32421875,
+        "writing": -3.36328125,
+        "math": -3.9111328125,
+        "planning": -3.765625,
+        "research": -0.537109375,
+        "data": -3.83984375,
+        "design": -4.18359375,
+        "operations": -2.5849609375,
+        "qa_testing": -3.21435546875,
+        "translation": -5.3515625,
+        "financial_analysis": -3.595703125,
+        "database_design": -4.1279296875,
+        "accessibility_review": -4.0703125,
+        "fact_checking": -1.72412109375,
+        "requirements_analysis": -2.2783203125,
+        "incident_management": -3.950927734375,
+        "experiment_design": 3.3173828125,
+        "risk_assessment": -2.9521484375,
+        "documentation": -1.3583984375,
+        "customer_support_triage": -2.0625
+      },
+      "v134": {
+        "code": -2.84375,
+        "writing": -2.5,
+        "math": -1.8359375,
+        "planning": -1.9453125,
+        "research": -2.21875,
+        "data": -2.765625,
+        "design": -4.125,
+        "operations": -1.7109375,
+        "qa_testing": -2.140625,
+        "translation": -3.578125,
+        "financial_analysis": -2.265625,
+        "database_design": -3.046875,
+        "accessibility_review": -2.53125,
+        "fact_checking": -3.078125,
+        "requirements_analysis": -1.5390625,
+        "incident_management": -3.171875,
+        "experiment_design": -2.046875,
+        "risk_assessment": -2.875,
+        "documentation": -1.03125,
+        "customer_support_triage": -2.328125
+      }
+    },
+    {
+      "query": "What key aspects must be established before starting an experiment design?",
+      "answer": "Before starting an experiment design, several key aspects must be established to ensure the experiment is effective, valid, and capable of answering the research question. Here are the critical components to consider:\n\nClearly define the objective of the experiment, specifying the research question you aim to answer and formulating a testable hypothesis that predicts the relationship between variables. It is essential to identify the independent variable (the factor you will manipulate), the dependent variable (the factor you will measure), and any contro
+... [TRUNCATED]
+
+SAMPLE ROW 1:
+{
+  "session_id": "av11_0958d195a346cdb1",
+  "split": "train",
+  "round_index": 6,
+  "k_probs": {
+    "3": 0.25,
+    "4": 0.25,
+    "5": 0.25,
+    "6": 0.25
+  },
+  "role_probs": {
+    "code": 0.20310025037832807,
+    "writing": 0.2128345934037718,
+    "math": 0.2609852773688908,
+    "planning": 0.24794652224668093,
+    "research": 0.23881196418908154,
+    "data": 0.20466049609633188,
+    "design": 0.19892692768075385,
+    "operations": 0.23858676058037015,
+    "qa_testing": 0.21810143577468338,
+    "translation": 0.19075686858946858,
+    "financial_analysis": 0.23802181083026624,
+    "database_design": 0.24130934641135243,
+    "accessibility_review": 0.21242552955586724,
+    "fact_checking": 0.2493694827355225,
+    "requirements_analysis": 0.26388885587545186,
+    "incident_management": 0.3003914502483942,
+    "experiment_design": 0.22182036909132521,
+    "risk_assessment": 0.2673855180615091,
+    "documentation": 0.2352940046296325,
+    "customer_support_triage": 0.20541568743924415
+  },
+  "history": [
+    {
+      "query": "What specific operations and processes did you follow when troubleshooting this process?",
+      "answer": "When troubleshooting a process, a systematic approach is essential to effectively identify and resolve issues. Here’s a comprehensive method that combines various strategies:\n\nStart by clearly defining the problem. Articulate what is not functioning as expected and gather initial observations. This sets the foundation for your troubleshooting efforts.\n\nNext, gather relevant data related to the process. This may include performance metrics, error rates, and user feedback, particularly from those who may experience accessibility challenges. Collecting quantitative and qualitative data provides a comprehensive view of the issue.\n\nConduct a thorough analysis of the data. Utilize statistical methods to identify trends or anomalies, and perform a manual review of the interface or content, focusing on key principles such as semantic structure, keyboard navigation, and contrast ratios. Automated tools can also be employed to catch common issues, but they should complement manual testing.\n\nReproduce the issue by following the same steps that led to the problem, ensuring you use the same environment and conditions. Check logs and error messages for insights into what went wrong, and isolate variables by changing one factor at a time to see if it affects the outcome.\n\nConsider edge cases that may not be covered by standard testing, such as boundary values or unusual input combinations. This helps in identifying less obvious issues that could be contributing to the problem.\n\nOnce potential causes are identified, develop and test hypotheses. Design experiments to validate these hypothes",
+      "v135": {
+        "code": -4.20703125,
+        "writing": -3.19677734375,
+        "math": -2.79296875,
+        "planning": -3.255859375,
+        "research": -0.806640625,
+        "data": -3.45703125,
+        "design": -3.439453125,
+        "operations": -3.94921875,
+        "qa_testing": -0.8798828125,
+        "translation": -5.322265625,
+        "financial_analysis": -4.13824462890625,
+        "database_design": -4.6904296875,
+        "accessibility_review": -3.173828125,
+        "fact_checking": -2.8125,
+        "requirements_analysis": -2.7734375,
+        "incident_management": -4.6640625,
+        "experiment_design": -0.4228515625,
+        "risk_assessment": -3.8525390625,
+        "documentation": -2.27734375,
+        "customer_support_triage": -0.946533203125
+      },
+      "v134": {
+        "code": -0.57421875,
+        "writing": -0.7890625,
+        "math": -0.1748046875,
+        "planning": -0.2353515625,
+        "research": 0.18359375,
+        "data": -0.361328125,
+        "design": -0.7734375,
+        "operations": -0.55078125,
+        "qa_testing": -0.328125,
+        "translation": -1.5625,
+        "financial_analysis": -0.11083984375,
+        "database_design": -0.3984375,
+        "accessibility_review": -0.41796875,
+        "fact_checking": -0.57421875,
+        "requirements_analysis": 0.125,
+        "incident_management": -0.58984375,
+        "experiment_design": 0.294921875,
+        "risk_assessment": -1.0546875,
+        "documentation": 0.10009765625,
+        "customer_support_triage": 0.212890625
+      }
+    },
+    {
+      "query": "To plan effectively for my upcoming presentation on climate change mitigation strategies, which steps should I consider evaluating before proceeding?",
+      "answer": "To effectively plan your upcoming presentation on climate change mitigation strategies, consider the following structured approach:\n\nStart by defining your objectives. Clearly articulate the primary goal of your presentation, whether it is to inform, persuade, or inspire action. Identify specific outcomes you want to achieve, such as enhancing audience understanding or encouraging commitment to action.\n\nNext, understand your audience. Assess their knowledge level regarding clim
+... [TRUNCATED]
+
+====================================================================================================
+JSONL: artifacts/v14_adaptive_role_v1/states_dev_round_00.jsonl
+====================================================================================================
+SIZE_BYTES: 5024
+PARSED_SAMPLE_ROWS: 8
+BAD_ROWS: 0
+
+TOP-LEVEL KEYS:
+  session_id                               8
+  split                                    8
+  round_index                              8
+  k_probs                                  8
+  role_probs                               8
+  history                                  8
+
+INTERESTING NESTED PATHS:
+  history                                                                n=   8 type=list
+  k_probs                                                                n=   8 type=dict
+  k_probs.3                                                              n=   8 type=float
+  k_probs.4                                                              n=   8 type=float
+  k_probs.5                                                              n=   8 type=float
+  k_probs.6                                                              n=   8 type=float
+  role_probs                                                             n=   8 type=dict
+  role_probs.accessibility_review                                        n=   8 type=float
+  role_probs.code                                                        n=   8 type=float
+  role_probs.customer_support_triage                                     n=   8 type=float
+  role_probs.data                                                        n=   8 type=float
+  role_probs.database_design                                             n=   8 type=float
+  role_probs.design                                                      n=   8 type=float
+  role_probs.documentation                                               n=   8 type=float
+  role_probs.experiment_design                                           n=   8 type=float
+  role_probs.fact_checking                                               n=   8 type=float
+  role_probs.financial_analysis                                          n=   8 type=float
+  role_probs.incident_management                                         n=   8 type=float
+  role_probs.math                                                        n=   8 type=float
+  role_probs.operations                                                  n=   8 type=float
+  role_probs.planning                                                    n=   8 type=float
+  role_probs.qa_testing                                                  n=   8 type=float
+  role_probs.requirements_analysis                                       n=   8 type=float
+  role_probs.research                                                    n=   8 type=float
+  role_probs.risk_assessment                                             n=   8 type=float
+  role_probs.translation                                                 n=   8 type=float
+  role_probs.writing                                                     n=   8 type=float
+  round_index                                                            n=   8 type=int
+  session_id                                                             n=   8 type=str
+
+SAMPLE ROW 0:
+{
+  "session_id": "av11_a44cacff6e6a0987",
+  "split": "dev",
+  "round_index": 0,
+  "k_probs": {
+    "3": 0.25,
+    "4": 0.25,
+    "5": 0.25,
+    "6": 0.25
+  },
+  "role_probs": {
+    "code": 0.225,
+    "writing": 0.225,
+    "math": 0.225,
+    "planning": 0.225,
+    "research": 0.225,
+    "data": 0.225,
+    "design": 0.225,
+    "operations": 0.225,
+    "qa_testing": 0.225,
+    "translation": 0.225,
+    "financial_analysis": 0.225,
+    "database_design": 0.225,
+    "accessibility_review": 0.225,
+    "fact_checking": 0.225,
+    "requirements_analysis": 0.225,
+    "incident_management": 0.225,
+    "experiment_design": 0.225,
+    "risk_assessment": 0.225,
+    "documentation": 0.225,
+    "customer_support_triage": 0.225
+  },
+  "history": []
+}
+
+SAMPLE ROW 1:
+{
+  "session_id": "av11_73d27ce184e11f22",
+  "split": "dev",
+  "round_index": 0,
+  "k_probs": {
+    "3": 0.25,
+    "4": 0.25,
+    "5": 0.25,
+    "6": 0.25
+  },
+  "role_probs": {
+    "code": 0.225,
+    "writing": 0.225,
+    "math": 0.225,
+    "planning": 0.225,
+    "research": 0.225,
+    "data": 0.225,
+    "design": 0.225,
+    "operations": 0.225,
+    "qa_testing": 0.225,
+    "translation": 0.225,
+    "financial_analysis": 0.225,
+    "database_design": 0.225,
+    "accessibility_review": 0.225,
+    "fact_checking": 0.225,
+    "requirements_analysis": 0.225,
+    "incident_management": 0.225,
+    "experiment_design": 0.225,
+    "risk_assessment": 0.225,
+    "documentation": 0.225,
+    "customer_support_triage": 0.225
+  },
+  "history": []
+}
+
+====================================================================================================
+JSON: artifacts/v14_adaptive_role_v1/manifest_privileged.json
+====================================================================================================
+SIZE_BYTES: 9141
+TOP TYPE: dict
+TOP KEYS: ['notes', 'seed', 'sha256', 'systems', 'version']
+
+INTERESTING PATHS:
+  systems[].k                                                            type=int
+  systems[].roles                                                        type=list
+  systems[].roles[]                                                      type=str
+  systems[].session_id                                                   type=str
+
+SAMPLE:
+{
+  "notes": {
+    "baseline_manifests_excluded": [
+      "artifacts/adaptive_v1/manifest.json"
+    ],
+    "policy_must_never_read_this_file": true,
+    "privileged": true
+  },
+  "seed": 864209
+}
+
+====================================================================================================
+OTHER CANDIDATE DATA FILES
+====================================================================================================
+    16941161  artifacts/v14_adaptive_role_v1/score_input_train_round_07.jsonl
+    17186381  artifacts/v14_adaptive_role_v1/responses_train_round_07.jsonl
+     6128152  artifacts/v14_adaptive_role_v1/target_public_cache.jsonl
+      765344  artifacts/v14_adaptive_role_v1/target_truth_cache_training_only.jsonl
+     8050497  artifacts/v14_adaptive_role_v1/candidates_train_round_07.jsonl
+        5024  artifacts/v14_adaptive_g50_v2_eval_new_r10/states_dev_round_00.jsonl
+       10284  artifacts/v14_adaptive_g50_v2_eval_new_r10/frozen_belief.joblib
+        9141  artifacts/v14_adaptive_g50_v2_eval_new_r10/manifest_privileged.json
+        5024  artifacts/v14_adaptive_g50_v2_eval_old_r6/states_dev_round_00.jsonl
+       10284  artifacts/v14_adaptive_g50_v2_eval_old_r6/frozen_belief.joblib
+        9141  artifacts/v14_adaptive_g50_v2_eval_old_r6/manifest_privileged.json
+         405  artifacts/v14_adaptive_role_v1/advance_dev_round_06_summary.json
+        3251  artifacts/v14_adaptive_role_v1/metrics_dev_round_06.jsonl
+      145741  artifacts/v14_adaptive_role_v1/states_dev_round_06.jsonl
+       89486  artifacts/v14_adaptive_role_v1/scored_dev_round_06.jsonl
+      691693  artifacts/v14_adaptive_role_v1/score_input_dev_round_06.jsonl
+      698543  artifacts/v14_adaptive_role_v1/responses_dev_round_06.jsonl
+      317223  artifacts/v14_adaptive_role_v1/candidates_dev_round_06.jsonl
+         407  artifacts/v14_adaptive_role_v1/advance_dev_round_05_summary.json
+        3280  artifacts/v14_adaptive_role_v1/metrics_dev_round_05.jsonl
+      122646  artifacts/v14_adaptive_role_v1/states_dev_round_05.jsonl
+       86034  artifacts/v14_adaptive_role_v1/scored_dev_round_05.jsonl
+      620586  artifacts/v14_adaptive_role_v1/score_input_dev_round_05.jsonl
+      641229  artifacts/v14_adaptive_role_v1/responses_dev_round_05.jsonl
+      313821  artifacts/v14_adaptive_role_v1/candidates_dev_round_05.jsonl
+         406  artifacts/v14_adaptive_role_v1/advance_dev_round_04_summary.json
+        3284  artifacts/v14_adaptive_role_v1/metrics_dev_round_04.jsonl
+       99718  artifacts/v14_adaptive_role_v1/states_dev_round_04.jsonl
+       87949  artifacts/v14_adaptive_role_v1/scored_dev_round_04.jsonl
+      637698  artifacts/v14_adaptive_role_v1/score_input_dev_round_04.jsonl
+      651158  artifacts/v14_adaptive_role_v1/responses_dev_round_04.jsonl
+      303686  artifacts/v14_adaptive_role_v1/candidates_dev_round_04.jsonl
+         406  artifacts/v14_adaptive_role_v1/advance_dev_round_03_summary.json
+        3293  artifacts/v14_adaptive_role_v1/metrics_dev_round_03.jsonl
+       76365  artifacts/v14_adaptive_role_v1/states_dev_round_03.jsonl
+       88577  artifacts/v14_adaptive_role_v1/scored_dev_round_03.jsonl
+      642543  artifacts/v14_adaptive_role_v1/score_input_dev_round_03.jsonl
+      655656  artifacts/v14_adaptive_role_v1/responses_dev_round_03.jsonl
+      297174  artifacts/v14_adaptive_role_v1/candidates_dev_round_03.jsonl
+         406  artifacts/v14_adaptive_role_v1/advance_dev_round_02_summary.json
+        3282  artifacts/v14_adaptive_role_v1/metrics_dev_round_02.jsonl
+       53371  artifacts/v14_adaptive_role_v1/states_dev_round_02.jsonl
+       87709  artifacts/v14_adaptive_role_v1/scored_dev_round_02.jsonl
+      618079  artifacts/v14_adaptive_role_v1/score_input_dev_round_02.jsonl
+      629767  artifacts/v14_adaptive_role_v1/responses_dev_round_02.jsonl
+      257129  artifacts/v14_adaptive_role_v1/candidates_dev_round_02.jsonl
+         391  artifacts/v14_adaptive_role_v1/advance_dev_round_01_summary.json
+        3287  artifacts/v14_adaptive_role_v1/metrics_dev_round_01.jsonl
+       30199  artifacts/v14_adaptive_role_v1/states_dev_round_01.jsonl
+       87501  artifacts/v14_adaptive_role_v1/scored_dev_round_01.jsonl
+      536639  artifacts/v14_adaptive_role_v1/score_input_dev_round_01.jsonl
+      546668  artifacts/v14_adaptive_role_v1/responses_dev_round_01.jsonl
+      223004  artifacts/v14_adaptive_role_v1/candidates_dev_round_01.jsonl
+         570  artifacts/v14_adaptive_role_v1/checkpoints/round_06/update_summary.json
+    17620875  artifacts/v14_adaptive_role_v1/checkpoints/round_06/optimizer.pt
+    11421892  artifacts/v14_adaptive_role_v1/checkpoints/round_06/policy/tokenizer.json
+         694  artifacts/v14_adaptive_role_v1/checkpoints/round_06/policy/tokenizer_config.json
+        1109  artifacts/v14_adaptive_role_v1/checkpoints/round_06/policy/adapter_config.json
+         410  artifacts/v14_adaptive_role_v1/advance_train_round_06_summary.json
+      931792  artifacts/v14_adaptive_role_v1/grpo_train_round_06.jsonl
+        9834  artifacts/v14_adaptive_role_v1/metrics_train_round_06.jsonl
+      433358  artifacts/v14_adaptive_role_v1/states_train_round_06.jsonl
+      260223  artifacts/v14_adaptive_role_v1/scored_train_round_06.jsonl
+     1977469  artifacts/v14_adaptive_role_v1/score_input_train_round_06.jsonl
+     2027286  artifacts/v14_adaptive_role_v1/responses_train_round_06.jsonl
+      944678  artifacts/v14_adaptive_role_v1/candidates_train_round_06.jsonl
+         570  artifacts/v14_adaptive_role_v1/checkpoints/round_05/update_summary.json
+    17620875  artifacts/v14_adaptive_role_v1/checkpoints/round_05/optimizer.pt
+    11421892  artifacts/v14_adaptive_role_v1/checkpoints/round_05/policy/tokenizer.json
+         694  artifacts/v14_adaptive_role_v1/checkpoints/round_05/policy/tokenizer_config.json
+        1109  artifacts/v14_adaptive_role_v1/checkpoints/round_05/policy/adapter_config.json
+         407  artifacts/v14_adaptive_role_v1/advance_train_round_05_summary.json
+      912621  artifacts/v14_adaptive_role_v1/grpo_train_round_05.jsonl
+        9906  artifacts/v14_adaptive_role_v1/metrics_train_round_05.jsonl
+      364564  artifacts/v14_adaptive_role_v1/states_train_round_05.jsonl
+      268253  artifacts/v14_adaptive_role_v1/scored_train_round_05.jsonl
+     1988790  artifacts/v14_adaptive_role_v1/score_input_train_round_05.jsonl
+     2009293  artifacts/v14_adaptive_role_v1/responses_train_round_05.jsonl
+      925639  artifacts/v14_adaptive_role_v1/candidates_train_round_05.jsonl
+         566  artifacts/v14_adaptive_role_v1/checkpoints/round_04/update_summary.json
+    17620875  artifacts/v14_adaptive_role_v1/checkpoints/round_04/optimizer.pt
+    11421892  artifacts/v14_adaptive_role_v1/checkpoints/round_04/policy/tokenizer.json
+         694  artifacts/v14_adaptive_role_v1/checkpoints/round_04/policy/tokenizer_config.json
+        1109  artifacts/v14_adaptive_role_v1/checkpoints/round_04/policy/adapter_config.json
+         409  artifacts/v14_adaptive_role_v1/advance_train_round_04_summary.json
+      894438  artifacts/v14_adaptive_role_v1/grpo_train_round_04.jsonl
+        9915  artifacts/v14_adaptive_role_v1/metrics_train_round_04.jsonl
+      296715  artifacts/v14_adaptive_role_v1/states_train_round_04.jsonl
+      263219  artifacts/v14_adaptive_role_v1/scored_train_round_04.jsonl
+     1987089  artifacts/v14_adaptive_role_v1/score_input_train_round_04.jsonl
+     2027702  artifacts/v14_adaptive_role_v1/responses_train_round_04.jsonl
+      907680  artifacts/v14_adaptive_role_v1/candidates_train_round_04.jsonl
+         573  artifacts/v14_adaptive_role_v1/checkpoints/round_03/update_summary.json
+    17620875  artifacts/v14_adaptive_role_v1/checkpoints/round_03/optimizer.pt
+    11421892  artifacts/v14_adaptive_role_v1/checkpoints/round_03/policy/tokenizer.json
+         694  artifacts/v14_adaptive_role_v1/checkpoints/round_03/policy/tokenizer_config.json
+        1109  artifacts/v14_adaptive_role_v1/checkpoints/round_03/policy/adapter_config.json
+         408  artifacts/v14_adaptive_role_v1/advance_train_round_03_summary.json
+      877038  artifacts/v14_adaptive_role_v1/grpo_train_round_03.jsonl
+        9883  artifacts/v14_adaptive_role_v1/metrics_train_round_03.jsonl
+      227454  artifacts/v14_adaptive_role_v1/states_train_round_03.jsonl
+      266531  artifacts/v14_adaptive_role_v1/scored_train_round_03.jsonl
+     1972170  artifacts/v14_adaptive_role_v1/score_input_train_round_03.jsonl
+     1999045  artifacts/v14_adaptive_role_v1/responses_train_round_03.jsonl
+      891007  artifacts/v14_adaptive_role_v1/candidates_train_round_03.jsonl
+         570  artifacts/v14_adaptive_role_v1/checkpoints/round_02/update_summary.json
+    17620875  artifacts/v14_adaptive_role_v1/checkpoints/round_02/optimizer.pt
+    11421892  artifacts/v14_adaptive_role_v1/checkpoints/round_02/policy/tokenizer.json
+         694  artifacts/v14_adaptive_role_v1/checkpoints/round_02/policy/tokenizer_config.json
+        1109  artifacts/v14_adaptive_role_v1/checkpoints/round_02/policy/adapter_config.json
+         409  artifacts/v14_adaptive_role_v1/advance_train_round_02_summary.json
+      762497  artifacts/v14_adaptive_role_v1/grpo_train_round_02.jsonl
+        9853  artifacts/v14_adaptive_role_v1/metrics_train_round_02.jsonl
+      158551  artifacts/v14_adaptive_role_v1/states_train_round_02.jsonl
+      256616  artifacts/v14_adaptive_role_v1/scored_train_round_02.jsonl
+     1816781  artifacts/v14_adaptive_role_v1/score_input_train_round_02.jsonl
+     1863470  artifacts/v14_adaptive_role_v1/responses_train_round_02.jsonl
+      774365  artifacts/v14_adaptive_role_v1/candidates_train_round_02.jsonl
+         539  artifacts/v14_adaptive_role_v1/checkpoints/round_01/update_summary.json
+    17620875  artifacts/v14_adaptive_role_v1/checkpoints/round_01/optimizer.pt
+    11421892  artifacts/v14_adaptive_role_v1/checkpoints/round_01/policy/tokenizer.json
+         694  artifacts/v14_adaptive_role_v1/checkpoints/round_01/policy/tokenizer_config.json
+        1109  artifacts/v14_adaptive_role_v1/checkpoints/round_01/policy/adapter_config.json
+         411  artifacts/v14_adaptive_role_v1/advance_train_round_01_summary.json
+      658974  artifacts/v14_adaptive_role_v1/grpo_train_round_01.jsonl
+        9848  artifacts/v14_adaptive_role_v1/metrics_train_round_01.jsonl
+       89613  artifacts/v14_adaptive_role_v1/states_train_round_01.jsonl
+      259975  artifacts/v14_adaptive_role_v1/scored_train_round_01.jsonl
+     1657532  artifacts/v14_adaptive_role_v1/score_input_train_round_01.jsonl
+     1693253  artifacts/v14_adaptive_role_v1/responses_train_round_01.jsonl
+      665096  artifacts/v14_adaptive_role_v1/candidates_train_round_01.jsonl
+        5024  artifacts/v14_adaptive_role_v1/states_dev_round_00.jsonl
+       15120  artifacts/v14_adaptive_role_v1/states_train_round_00.jsonl
+       10284  artifacts/v14_adaptive_role_v1/frozen_belief.joblib
+        9141  artifacts/v14_adaptive_role_v1/manifest_privileged.json
+      201841  artifacts/general_role_sensor_model_v1/val_scores.jsonl
+       43537  artifacts/ten_system_belief_auc_historical_judge_v1/summary.json
+      163155  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_10_code_risk_support_trajectory.json
+       29713  artifacts/ten_system_belief_auc_historical_judge_v1/systems.jsonl
+      176536  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_09_plan_translation_docs_trajectory.json
+      134137  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_08_access_db_ops_trajectory.json
+      177711  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_07_fact_finance_research_trajectory.json
+      158258  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_06_math_design_experiment_trajectory.json
+      162374  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_05_docs_qa_writing_trajectory.json
+      142673  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_04_support_incident_ops_trajectory.json
+      161241  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_03_data_db_requirements_trajectory.json
+      141159  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_02_risk_access_translation_trajectory.json
+      196992  artifacts/ten_system_belief_auc_historical_judge_v1/ctrl_k3_01_code_plan_research_trajectory.json
+       22128  artifacts/five_system_belief_auc_historical_judge_v1/summary.json
+      176840  artifacts/five_system_belief_auc_historical_judge_v1/ctrl_k3_05_docs_qa_writing_trajectory.json
+
+====================================================================================================
+RELEVANT CODE CONTEXT
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+FILE: scripts/v14_adaptive_generate_round_v1.py
+----------------------------------------------------------------------------------------------------
+
+>>> scripts/v14_adaptive_generate_round_v1.py:1-21
+    1: from __future__ import annotations
+    2: 
+    3: import os
+    4: import argparse
+    5: import gc
+    6: from pathlib import Path
+    7: 
+    8: from adaptive_v11_active.io import read_jsonl, stable_int, write_jsonl
+    9: from adaptive_v11_active.reward import surface_valid
+   10: from v14.adaptive_belief_policy import V14AdaptiveBeliefPolicy
+   11: from adaptive_v11_active.schema import PublicBeliefState, assert_policy_safe
+   12: 
+   13: 
+   14: def adapter_for_round(round_index: int, root: Path, v11: Path) -> Path:
+   15:     return v11 if round_index == 1 else root / "checkpoints" / f"round_{round_index-1:02d}" / "policy"
+   16: 
+   17: 
+   18: def main():
+   19:     ap = argparse.ArgumentParser(description="Generate role-adaptive V11 probe candidates")
+   20:     ap.add_argument("--round", type=int, required=True)
+   21:     ap.add_argument("--split", choices=["train", "dev"], default="train")
+
+>>> scripts/v14_adaptive_generate_round_v1.py:69-121
+   69:         state = PublicBeliefState.from_public_dict(raw)
+   70:         seen = [h.query for h in state.history]
+   71:         for j in range(G):
+   72:             seed = stable_int(args.seed, args.split, args.round, state.session_id, j)
+   73:             torch.manual_seed(seed)
+   74:             torch.cuda.manual_seed_all(seed)
+   75:             obs = {
+   76:                 "belief_state": state.to_public_dict(),
+   77:                 "candidate_index": j + (stable_int("v14a_focus", state.session_id) % max(1, len(state.role_probs))),
+   78:                 "max_history_turns": 2,
+   79:                 "max_answer_chars": 0,
+   80:             }
+   81:             sample = current.sample_probe(
+   82:                 obs,
+   83:                 temperature=args.temperature,
+   84:                 top_p=args.top_p,
+   85:                 max_new_tokens=min(int(args.max_new_tokens), 64),
+   86:             )
+   87:             q = str(sample.query or "").strip()
+   88:             ok, why = surface_valid(q)
+   89:             valid = bool(sample.valid) and ok and q not in seen
+   90:             prompt = str(sample.prompt)
+   91:             completion = str(sample.completion)
+   92:             old_lp = getattr(sample, "old_mean_logprob", None)
+   93:             if old_lp is None:
+   94:                 old_lp = float(current.mean_logprob(prompt, completion).detach().cpu())
+   95:             ref_lp = float(reference.mean_logprob(prompt, completion).detach().cpu())
+   96:             rows.append({
+   97:                 "session_id": state.session_id,
+   98:                 "split": args.split,
+   99:                 "round": args.round,
+  100:                 "candidate_index": j,
+  101:                 "group_id": f"{state.session_id}::r{args.round:02d}",
+  102:                 "query": q,
+  103:                 "valid": bool(valid),
+  104:                 "invalid_reason": "" if valid else (str(getattr(sample, "invalid_reason", "")) or why or "duplicate"),
+  105:                 "prompt": prompt,
+  106:                 "completion": completion,
+  107:                 "old_logp": float(old_lp),
+  108:                 "ref_logp": float(ref_lp),
+  109:                 "raw_completion": str(sample.raw_completion),
+  110:                 "local_attempts": int(getattr(sample, "local_attempts", 1)),
+  111:                 "seed": int(seed),
+  112:                 "adapter": str(current_adapter),
+  113:                 "phase": "role_only",
+  114:             })
+  115:             if valid:
+  116:                 seen.append(q)
+  117:             print(
+  118:                 f"[role-gen] {si+1}/{len(states)} split={args.split} r={args.round} "
+  119:                 f"sid={state.session_id} cand={j+1}/{G} valid={valid} q={q[:150]!r}",
+  120:                 flush=True,
+  121:             )
+
+----------------------------------------------------------------------------------------------------
+FILE: scripts/v14_adaptive_grpo_update_v1.py
+----------------------------------------------------------------------------------------------------
+
+>>> scripts/v14_adaptive_grpo_update_v1.py:29-51
+   29: 
+   30:     import torch
+   31:     if not torch.cuda.is_available():
+   32:         raise SystemExit("CUDA required")
+   33:     root = Path(args.root)
+   34:     rows = read_jsonl(root / f"grpo_train_round_{args.round:02d}.jsonl")
+   35:     samples = [
+   36:         GRPOSample(
+   37:             prompt=str(r["prompt"]), completion=str(r["completion"]),
+   38:             old_logp=float(r["old_logp"]), ref_logp=float(r["ref_logp"]),
+   39:             advantage=float(r["advantage"]), reward=float(r["reward"]), group_id=str(r["group_id"]),
+   40:         )
+   41:         for r in rows if abs(float(r.get("advantage", 0.0))) > 1e-10
+   42:     ]
+   43:     if not samples:
+   44:         raise SystemExit("no non-zero-advantage GRPO samples")
+   45: 
+   46:     start = adapter_for_round(args.round, root, Path(args.v11_adapter))
+   47:     policy = V14AdaptiveBeliefPolicy(
+   48:         args.model_name, adapter_path=str(start), trainable=True,
+   49:         use_4bit=not args.no_4bit, max_seq_length=args.max_seq_length,
+   50:     )
+   51:     opt = torch.optim.AdamW(policy.trainable_parameters(), lr=args.lr, weight_decay=1e-4)
+
+----------------------------------------------------------------------------------------------------
+FILE: scripts/v14a_compare_g50_v2.py
+----------------------------------------------------------------------------------------------------
+
+>>> scripts/v14a_compare_g50_v2.py:35-124
+   35:     )
+   36: 
+   37: 
+   38: print("=" * 108)
+   39: print("V14 ADAPTIVE G=50 CONTINUATION — FINAL AUDIT")
+   40: print("=" * 108)
+   41: 
+   42: print()
+   43: print("TRAINING POOL / REWARD QUALITY")
+   44: print("-" * 108)
+   45: 
+   46: for r in range(7, 11):
+   47: 
+   48:     p = TRAIN / f"train_rows_round_{r:02d}.jsonl"
+   49: 
+   50:     rows = readj(p)
+   51: 
+   52:     if not rows:
+   53:         print(f"round {r}: MISSING {p}")
+   54:         continue
+   55: 
+   56:     rewards = [
+   57:         float(x["reward"])
+   58:         for x in rows
+   59:     ]
+   60: 
+   61:     advs = [
+   62:         float(x["local_advantage"])
+   63:         for x in rows
+   64:     ]
+   65: 
+   66:     by_group = {}
+   67: 
+   68:     for x in rows:
+   69:         by_group.setdefault(
+   70:             x["group_id"],
+   71:             []
+   72:         ).append(
+   73:             float(x["reward"])
+   74:         )
+   75: 
+   76:     group_best = [
+   77:         max(v)
+   78:         for v in by_group.values()
+   79:     ]
+   80: 
+   81:     groups_positive = [
+   82:         any(x > 0 for x in v)
+   83:         for v in by_group.values()
+   84:     ]
+   85: 
+   86:     sign_violations = sum(
+   87:         (
+   88:             rwd < 0 and adv > 1e-12
+   89:         ) or (
+   90:             rwd > 0 and adv < -1e-12
+   91:         )
+   92:         for rwd, adv in zip(
+   93:             rewards,
+   94:             advs,
+   95:         )
+   96:     )
+   97: 
+   98:     topn = max(
+   99:         1,
+  100:         len(rewards) // 10,
+  101:     )
+  102: 
+  103:     top10 = sorted(
+  104:         rewards,
+  105:         reverse=True,
+  106:     )[:topn]
+  107: 
+  108:     print(
+  109:         f"round {r}: "
+  110:         f"N={len(rows):4d}  "
+  111:         f"meanR={mean(rewards):+.5f}  "
+  112:         f"positive={sum(x>0 for x in rewards)/len(rewards):.1%}  "
+  113:         f"group_has_positive={mean(groups_positive):.1%}  "
+  114:         f"mean_best50={mean(group_best):+.5f}  "
+  115:         f"top10%={mean(top10):+.5f}  "
+  116:         f"sign_violations={sign_violations}"
+  117:     )
+  118: 
+  119: 
+  120: print()
+  121: print("=" * 108)
+  122: print("PAIRED CLEAN DEV ROLLOUT")
+  123: print("same 8 systems · same initial belief · same 6-query budget")
+  124: print("=" * 108)
+
+----------------------------------------------------------------------------------------------------
+FILE: scripts/v14a_role_advance_g50_v2.py
+----------------------------------------------------------------------------------------------------
+
+>>> scripts/v14a_role_advance_g50_v2.py:7-29
+    7: from collections import defaultdict
+    8: from pathlib import Path
+    9: 
+   10: import numpy as np
+   11: from sklearn.metrics import roc_auc_score
+   12: 
+   13: from adaptive_v11_active.belief import FrozenBeliefBundle
+   14: from adaptive_v11_active.io import read_jsonl, stable_int, write_json, write_jsonl
+   15: from adaptive_v11_active.reward import group_relative_advantages
+   16: from adaptive_v11_active.role_belief import role_only_predict
+   17: from adaptive_v11_active.role_reward import adaptive_role_reward, role_log_score
+   18: from adaptive_v11_active.schema import EvidenceFrame, PublicBeliefState
+   19: from v11.role_universe import TRAIN_ROLES
+   20: 
+   21: EPS = 1e-6
+   22: 
+   23: 
+   24: def role_metrics(role_probs: dict[str, float], true_roles: tuple[str, ...]) -> dict:
+   25:     truth = set(true_roles)
+   26:     ys = np.asarray([int(r in truth) for r in TRAIN_ROLES], dtype=np.int64)
+   27:     ps = np.asarray([min(1-EPS, max(EPS, float(role_probs[r]))) for r in TRAIN_ROLES], dtype=np.float64)
+   28:     ll = float(np.mean(-(ys*np.log(ps)+(1-ys)*np.log1p(-ps))))
+   29:     brier = float(np.mean((ps-ys)**2))
+
+>>> scripts/v14a_role_advance_g50_v2.py:40-162
+   40:         "mean_true_role_prob": pos,
+   41:         "mean_false_role_prob": neg,
+   42:         "true_false_margin": pos-neg,
+   43:         "oracle_k_role_recall": float(oracle_k_recall),
+   44:     }
+   45: 
+   46: 
+   47: def main():
+   48:     ap = argparse.ArgumentParser(description="Role-only belief update + truth-only GRPO reward")
+   49:     ap.add_argument("--round", type=int, required=True)
+   50:     ap.add_argument("--split", choices=["train", "dev"], default="train")
+   51:     ap.add_argument("--root", default="artifacts/adaptive_v11_role_only_v1")
+   52:     ap.add_argument("--belief", default="artifacts/adaptive_v11_active_v1/frozen_belief.joblib")
+   53:     ap.add_argument("--manifest", default="artifacts/adaptive_v11_active_v1/manifest_privileged.json")
+   54:     ap.add_argument("--seed", type=int, default=984311)
+   55:     args = ap.parse_args()
+   56: 
+   57:     root = Path(args.root)
+   58:     states = {
+   59:         r["session_id"]: PublicBeliefState.from_public_dict(r)
+   60:         for r in read_jsonl(root / f"states_{args.split}_round_{args.round-1:02d}.jsonl")
+   61:     }
+   62:     candidates = read_jsonl(root / f"candidates_{args.split}_round_{args.round:02d}.jsonl")
+   63:     responses = read_jsonl(root / f"responses_{args.split}_round_{args.round:02d}.jsonl")
+   64:     scored = read_jsonl(root / f"scored_{args.split}_round_{args.round:02d}.jsonl")
+   65:     manifest = json.loads(Path(args.manifest).read_text())
+   66:     truth = {r["session_id"]: r for r in manifest["systems"] if r["split"] == args.split}
+   67:     belief = FrozenBeliefBundle.load(args.belief)
+   68: 
+   69:     cand_by = {(r["session_id"], int(r["candidate_index"])): r for r in candidates}
+   70:     resp_by = {(r["session_id"], int(r["candidate_index"])): r for r in responses}
+   71:     score_by = {}
+   72:     for r in scored:
+   73:         sid = str(r.get("system_id", r.get("session_id", "")))
+   74:         var = int(dict(r.get("action", {})).get("variant", r.get("candidate_index", 0)))
+   75:         score_by[(sid, var)] = r
+   76: 
+   77:     grouped = defaultdict(list)
+   78:     for (sid, _), c in cand_by.items():
+   79:         grouped[sid].append(c)
+   80: 
+   81:     train_rows = []
+   82:     next_states = []
+   83:     metrics = []
+   84: 
+   85:     for sid, cs in sorted(grouped.items()):
+   86:         state = states[sid]
+   87:         t = truth[sid]
+   88:         true_roles = tuple(map(str, t["roles"]))
+   89:         evaluated = []
+   90: 
+   91:         for c in sorted(cs, key=lambda x: int(x["candidate_index"])):
+   92:             idx = int(c["candidate_index"])
+   93:             r = resp_by[(sid, idx)]
+   94:             sc = score_by.get((sid, idx))
+   95:             if c.get("valid") and r.get("execution_status") == "ok" and sc is None:
+   96:                 raise RuntimeError(f"missing scorer output sid={sid} cand={idx}")
+   97: 
+   98:             if c.get("valid") and r.get("execution_status") == "ok" and sc is not None:
+   99:                 frame = EvidenceFrame(
+  100:                     query=str(c["query"]),
+  101:                     answer=str(r.get("final_output", "")),
+  102:                     v135={str(k): float(v) for k, v in dict(sc.get("evidence", {})).items()},
+  103:                     v134={str(k): float(v) for k, v in dict(sc.get("metadata", {}).get("evidence_v134", {})).items()},
+  104:                 )
+  105:                 new_history = [*state.history, frame]
+  106:                 new_k, new_roles = role_only_predict(belief, new_history)
+  107:             else:
+  108:                 frame = None
+  109:                 new_k, new_roles = dict(state.k_probs), dict(state.role_probs)
+  110: 
+  111:             rb = adaptive_role_reward(
+  112:                 old_role_probs=state.role_probs,
+  113:                 new_role_probs=new_roles,
+  114:                 true_roles=true_roles,
+  115:                 query=str(c.get("query", "")),
+  116:                 previous_queries=[h.query for h in state.history],
+  117:                 generator_valid=bool(c.get("valid")),
+  118:             )
+  119:             evaluated.append((c, frame, new_k, new_roles, rb))
+  120: 
+  121:         rewards = [x[4].total for x in evaluated]
+  122:         relative_advs = group_relative_advantages(rewards)
+  123: 
+  124:         # V14A_G50_SIGN_CONSISTENT_ADVANTAGE
+  125:         # Preserve GRPO ranking, but force the gradient direction to agree
+  126:         # with ABSOLUTE realized inference utility.
+  127:         #
+  128:         #   reward > 0 : never punish a genuinely helpful probe
+  129:         #   reward < 0 : never reinforce a harmful "best-of-bad" probe
+  130:         #   reward = 0 : no policy-gradient signal
+  131:         advs = [
+  132:             max(0.0, float(a)) if float(r) > 0.0
+  133:             else min(0.0, float(a)) if float(r) < 0.0
+  134:             else 0.0
+  135:             for a, r in zip(relative_advs, rewards)
+  136:         ]
+  137:         for (c, frame, new_k, new_roles, rb), adv in zip(evaluated, advs):
+  138:             if args.split == "train" and c.get("completion"):
+  139:                 train_rows.append({
+  140:                     "session_id": sid,
+  141:                     "round": args.round,
+  142:                     "candidate_index": int(c["candidate_index"]),
+  143:                     "group_id": c["group_id"],
+  144:                     "prompt": c["prompt"],
+  145:                     "completion": c["completion"],
+  146:                     "old_logp": float(c["old_logp"]),
+  147:                     "ref_logp": float(c["ref_logp"]),
+  148:                     "reward": float(rb.total),
+  149:                     "advantage": float(adv),
+  150:                     "reward_breakdown_training_only": rb.to_dict(),
+  151:                 })
+  152: 
+  153:         viable = [x for x in evaluated if x[1] is not None]
+  154:         if not viable:
+  155:             # No usable observation for this session in this round.
+  156:             # Preserve the previous public belief/history instead of
+  157:             # crashing the whole experiment or fabricating evidence.
+  158:             print(
+  159:                 f"[advance-warning] no viable candidate in {sid}; "
+  160:                 f"carrying previous belief forward",
+  161:                 flush=True,
+  162:             )
+
+>>> scripts/v14a_role_advance_g50_v2.py:173-234
+  173:             next_states.append(ns.to_public_dict())
+  174: 
+  175:             rm = role_metrics(state.role_probs, true_roles)
+  176:             metrics.append({
+  177:                 "session_id": sid,
+  178:                 "split": args.split,
+  179:                 "round": args.round,
+  180:                 "chosen_candidate": -1,
+  181:                 "chosen_reward_training_only": 0.0,
+  182:                 "probe_status": "no_viable_candidate",
+  183:                 **rm,
+  184:             })
+  185:             continue
+  186: 
+  187:         # Continue from a designated on-policy sample independent of reward.
+  188:         rng = random.Random(stable_int(args.seed, args.split, args.round, sid))
+  189:         chosen = viable[rng.randrange(len(viable))]
+  190:         c, frame, new_k, new_roles, rb = chosen
+  191:         ns = PublicBeliefState(
+  192:             session_id=sid,
+  193:             split=args.split,
+  194:             round_index=args.round,
+  195:             k_probs=dict(new_k),  # deliberately uniform in phase 1
+  196:             role_probs=dict(new_roles),
+  197:             history=[*state.history, frame],
+  198:         )
+  199:         ns.validate(TRAIN_ROLES, belief.ks)
+  200:         next_states.append(ns.to_public_dict())
+  201: 
+  202:         rm = role_metrics(new_roles, true_roles)
+  203:         metrics.append({
+  204:             "session_id": sid,
+  205:             "split": args.split,
+  206:             "round": args.round,
+  207:             "chosen_candidate": int(c["candidate_index"]),
+  208:             "chosen_reward_training_only": float(rb.total),
+  209:             **rm,
+  210:         })
+  211: 
+  212:     write_jsonl(root / f"states_{args.split}_round_{args.round:02d}.jsonl", next_states)
+  213:     write_jsonl(root / f"metrics_{args.split}_round_{args.round:02d}.jsonl", metrics)
+  214:     if args.split == "train":
+  215:         write_jsonl(root / f"grpo_train_round_{args.round:02d}.jsonl", train_rows)
+  216: 
+  217:     summary = {
+  218:         "phase": "role_only",
+  219:         "split": args.split,
+  220:         "round": args.round,
+  221:         "sessions": len(metrics),
+  222:         "mean_role_log_loss": float(np.mean([x["role_log_loss"] for x in metrics])),
+  223:         "mean_role_brier": float(np.mean([x["role_brier"] for x in metrics])),
+  224:         "mean_role_auc": float(np.nanmean([x["role_auc"] for x in metrics])),
+  225:         "mean_true_false_margin": float(np.mean([x["true_false_margin"] for x in metrics])),
+  226:         "mean_oracle_k_role_recall": float(np.mean([x["oracle_k_role_recall"] for x in metrics])),
+  227:         "note": "K is intentionally uniform and is not used in policy state updates or reward during phase 1.",
+  228:     }
+  229:     write_json(root / f"advance_{args.split}_round_{args.round:02d}_summary.json", summary)
+  230:     print(json.dumps(summary, indent=2), flush=True)
+  231: 
+  232: 
+  233: if __name__ == "__main__":
+  234:     main()
+
+====================================================================================================
+AUDIT COMPLETE
+REPORT: artifacts/eqs_v3_mas/audit_report.txt
+====================================================================================================

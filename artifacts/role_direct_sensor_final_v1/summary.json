@@ -1,0 +1,11 @@
+{
+  "version": "role_direct_sensor_final_v1",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "train_matched_queries": 300,
+  "train_rows": 600,
+  "train_matched_system_pairs": 100,
+  "epochs": 2,
+  "objective": "BCE + 0.5 matched pairwise ranking",
+  "input": "target role + description + query + visible response",
+  "sealed_test_used": false
+}

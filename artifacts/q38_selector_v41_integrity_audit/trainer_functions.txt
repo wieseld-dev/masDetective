@@ -1,0 +1,14 @@
+124:SYSTEM = (
+249:            "content": SYSTEM,
+260:        return tokenizer.apply_chat_template(
+264:            enable_thinking=False,
+267:        return tokenizer.apply_chat_template(
+338:def render_user(
+383:        "CURRENT ROLE BELIEF\n"
+386:        + "RECENT PUBLIC HISTORY\n"
+389:        + "CANDIDATES\n"
+401:def make_prompt(g, order):
+560:            "HISTORY_COMPRESSED =",
+727:def restricted_scores(
+986:def score_group(
+1084:def evaluate(

@@ -1,0 +1,774 @@
+
+====================================================================================================
+G02 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+lex=0.100
+NEG:
+Which details of translation would be helpful for you to explore?
+
+lex=0.105
+NEG:
+What aspect of translation do you need more details on?
+
+lex=0.105
+NEG:
+What specific aspect of translations do you want to discuss?
+
+====================================================================================================
+G02 / META / n=15
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+lex=0.235
+NEG:
+How do you handle translations to ensure meaning is preserved?
+
+lex=0.235
+NEG:
+What methods do you use to preserve meaning in translations?
+
+lex=0.250
+NEG:
+Do you have methods to ensure translations preserve meaning?
+
+====================================================================================================
+G02 / DANGLING / n=5
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+lex=0.238
+NEG:
+What is essential in this method to ensure both meaning and technical details are preserved?
+
+lex=0.238
+NEG:
+Can you explain how this process works to ensure the meaning is preserved in translations?
+
+lex=0.238
+NEG:
+What part of this area is key to maintaining both meaning and details in translations?
+
+====================================================================================================
+G06 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+lex=0.200
+NEG:
+What specific accessibility compliance issues are you facing right now?
+
+lex=0.200
+NEG:
+What particular area of accessibility compliance are you currently navigating?
+
+lex=0.211
+NEG:
+What dimensions of accessibility compliance are you uncertain about?
+
+====================================================================================================
+G06 / META / n=15
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+lex=0.158
+NEG:
+What is your approach to determining accessibility compliance?
+
+lex=0.158
+NEG:
+What is your method for assessing accessibility compliance?
+
+lex=0.158
+NEG:
+Does your system support verification of accessibility compliance?
+
+====================================================================================================
+G06 / DANGLING / n=5
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+lex=0.421
+NEG:
+What particular detail could improve my assessment of this approach concerning accessibility compliance?
+
+lex=0.429
+NEG:
+What specific factor might enhance my evaluation of the current state of this task in accessibility compliance?
+
+lex=0.474
+NEG:
+What particular piece of input could improve my assessment of this aspect within accessibility compliance?
+
+====================================================================================================
+G08 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+lex=0.222
+NEG:
+What incident management strategies are you currently questioning?
+
+lex=0.227
+NEG:
+What aspects of your current incident management situation would you like to discuss?
+
+lex=0.238
+NEG:
+What details would you need to share about your incident management situation?
+
+====================================================================================================
+G08 / META / n=15
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+lex=0.250
+NEG:
+Can you explain your method for managing difficult incident management events?
+
+lex=0.250
+NEG:
+How would your system approach a challenging situation in incident management?
+
+lex=0.250
+NEG:
+What methods do you use to tackle tough incident management processes?
+
+====================================================================================================
+G08 / DANGLING / n=5
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+lex=0.174
+NEG:
+Can you highlight some difficulties that arise in this process of incident management?
+
+lex=0.174
+NEG:
+Can you share what challenges often surface in this area of incident management?
+
+lex=0.182
+NEG:
+Can you discuss the challenges presented by this method in incident management?
+
+====================================================================================================
+G09 / META / n=15
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+lex=0.333
+NEG:
+What criteria do you use to determine which parts of my work need additional rigorous testing?
+
+lex=0.333
+NEG:
+How would you assess the areas in my work that could benefit from further rigorous testing?
+
+lex=0.333
+NEG:
+What is your method for assessing which areas in my work could benefit from more testing?
+
+====================================================================================================
+G09 / DANGLING / n=5
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+lex=0.200
+NEG:
+What feature in this current work could benefit from a detailed review?
+
+lex=0.222
+NEG:
+Which component of this method might benefit from further evaluation?
+
+lex=0.235
+NEG:
+Which aspect of these tasks calls for additional evaluation?
+
+====================================================================================================
+G10 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+lex=0.190
+NEG:
+What specific area of project management would you like to explore?
+
+lex=0.190
+NEG:
+Which element of project management tools are you interested in discussing?
+
+lex=0.190
+NEG:
+Which aspect of project management tools are you currently looking into?
+
+====================================================================================================
+G10 / META / n=15
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+lex=0.190
+NEG:
+What tools do you use to assist with project management tasks?
+
+lex=0.200
+NEG:
+Can you share your experience with handling project management tools?
+
+lex=0.200
+NEG:
+What tools do you have for handling project management tasks?
+
+====================================================================================================
+G16 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+lex=0.065
+NEG:
+What specific part of your incident management process needs attention?
+
+lex=0.065
+NEG:
+Which part of the incident management implementation are you unsure of?
+
+lex=0.065
+NEG:
+What specific details in your incident management task require discussion?
+
+====================================================================================================
+G16 / META / n=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+lex=0.406
+NEG:
+How does your application handle situations where there are gaps between incidents reported by users and identified risks during the implementation phase?
+
+lex=0.414
+NEG:
+How does your system deal with significant discrepancies between actual incidents reported and the risks identified during implementation?
+
+lex=0.414
+NEG:
+What is your approach to resolving discrepancies that arise between incidents reported by users and the identified risks?
+
+====================================================================================================
+G16 / DANGLING / n=5
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+lex=0.643
+NEG:
+What specific issue might arise during the implementation phase concerning this approach if there are significant discrepancies between reported incidents and the identified risks?
+
+lex=0.645
+NEG:
+What specific complication might occur during the implementation phase in relation to this area if there are significant discrepancies between actual incidents reported by users and the identified risks?
+
+lex=0.645
+NEG:
+What specific issue could present a challenge during the implementation phase concerning this area if there are significant discrepancies between actual incidents reported by users and the identified risks?
+
+====================================================================================================
+G23 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+lex=0.143
+NEG:
+What part of the resource allocation process presents issues for you?
+
+lex=0.143
+NEG:
+Which elements of the project timeline do you think are missing?
+
+lex=0.143
+NEG:
+What specific part of the project timeline should I help clarify?
+
+====================================================================================================
+G23 / META / n=15
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+lex=0.143
+NEG:
+What steps do you take for project resource and timeline management?
+
+lex=0.143
+NEG:
+What is your assessment protocol for project timelines and resource allocations?
+
+lex=0.143
+NEG:
+How does your application usually address project timelines and resource allocation?
+
+====================================================================================================
+G24 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+lex=0.300
+NEG:
+What features of the risk assessment process do you need assistance with?
+
+lex=0.300
+NEG:
+What elements of performing a risk assessment do you need help with?
+
+lex=0.300
+NEG:
+Which factors of the risk assessment process do you need guidance on?
+
+====================================================================================================
+G24 / META / n=15
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+lex=0.300
+NEG:
+What is your method for conducting a risk assessment in our project?
+
+lex=0.316
+NEG:
+Can you detail your typical process for risk assessment in projects?
+
+lex=0.316
+NEG:
+What is your method for performing a risk assessment for our project?
+
+====================================================================================================
+G26 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+lex=0.160
+NEG:
+What specific focus do you have in mind for QA testing assistance?
+
+lex=0.167
+NEG:
+What specific areas within QA testing do you need assistance with?
+
+lex=0.167
+NEG:
+What aspect of QA testing implementation do you want to discuss?
+
+====================================================================================================
+G26 / META / n=15
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+lex=0.167
+NEG:
+How do you typically approach challenges encountered during QA testing implementation?
+
+lex=0.167
+NEG:
+What is your approach to managing potential issues during QA testing?
+
+lex=0.167
+NEG:
+How does your application address challenges during the QA testing process?
+
+====================================================================================================
+G26 / DANGLING / n=5
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+lex=0.333
+NEG:
+What complications might surface if the methods used for QA testing are not properly validated?
+
+lex=0.333
+NEG:
+What difficulties might arise during testing if this method for QA testing is not thoroughly utilized?
+
+lex=0.346
+NEG:
+What specific issues could emerge during the rollout of this process of QA testing if it is not validated?
+
+====================================================================================================
+G27 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+lex=0.071
+NEG:
+What specific detail in my operations would you like me to elaborate on?
+
+lex=0.080
+NEG:
+What aspect of your process should I clarify for you?
+
+lex=0.080
+NEG:
+What challenges in my workflow do you think need clarification?
+
+====================================================================================================
+G27 / META / n=15
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+lex=0.160
+NEG:
+What approaches do you have to improve early detection of workflow issues?
+
+lex=0.160
+NEG:
+Can you explain how you address potential workflow issues as they come up?
+
+lex=0.160
+NEG:
+How do you help users in detecting workflow issues before they happen?
+
+====================================================================================================
+G32 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+lex=0.118
+NEG:
+What particular requirement analysis details should I focus on?
+
+lex=0.125
+NEG:
+Which requirement analysis challenges are you currently facing?
+
+lex=0.125
+NEG:
+Which elements of requirement analysis require further elaboration?
+
+====================================================================================================
+G32 / META / n=15
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+lex=0.176
+NEG:
+What is the way you typically manage requirement analysis tasks?
+
+lex=0.188
+NEG:
+What protocols do you follow for requirement analysis work?
+
+lex=0.188
+NEG:
+What is your standard approach to requirement analysis tasks?
+
+====================================================================================================
+G32 / DANGLING / n=5
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+lex=0.211
+NEG:
+Are there any pending items regarding requirement analysis that need our input soon?
+
+lex=0.222
+NEG:
+Are there any outstanding points regarding requirement analysis that still need clarifying?
+
+lex=0.238
+NEG:
+Is there any part of requirement analysis linked to this issue that we haven't covered?
+
+====================================================================================================
+G33 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+lex=0.222
+NEG:
+Which customer support triaging problem are you currently dealing with?
+
+lex=0.222
+NEG:
+What aspects of customer support triaging are you currently examining?
+
+lex=0.235
+NEG:
+What challenges are you encountering in customer support triaging?
+
+====================================================================================================
+G33 / META / n=15
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+lex=0.250
+NEG:
+How do you usually handle customer support triaging?
+
+lex=0.250
+NEG:
+Do you have experience with customer support triaging?
+
+lex=0.250
+NEG:
+How do you manage customer support triaging tasks?
+
+====================================================================================================
+G33 / DANGLING / n=5
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+lex=0.444
+NEG:
+Can you explain a case where this method in customer support triaging was crucial?
+
+lex=0.471
+NEG:
+Can you outline a scenario where this scenario involving customer support triaging was critical?
+
+lex=0.474
+NEG:
+Can you describe a situation where these tasks related to customer support triaging were really crucial?
+
+====================================================================================================
+G35 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+lex=0.294
+NEG:
+What question do you have about the design phase of your process?
+
+lex=0.294
+NEG:
+What detail about the process design phase do you want to clarify?
+
+lex=0.312
+NEG:
+What question do you have about any step during process design?
+
+====================================================================================================
+G35 / META / n=15
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+lex=0.333
+NEG:
+What support can you provide for the process design phase?
+
+lex=0.357
+NEG:
+What is typically included in your process design phase?
+
+lex=0.375
+NEG:
+What is your process for handling the design phase of a project?
+
+====================================================================================================
+G37 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+lex=0.312
+NEG:
+What specific concern do you have regarding customer support triage?
+
+lex=0.353
+NEG:
+What challenge in customer support triage would you say you're grappling with?
+
+lex=0.353
+NEG:
+What specific issue in customer support triage seems to require your input?
+
+====================================================================================================
+G37 / META / n=15
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+lex=0.312
+NEG:
+What issues do you typically see in customer support triage?
+
+lex=0.312
+NEG:
+What tactics do you employ for effective customer support triage?
+
+lex=0.312
+NEG:
+What challenges does your system see in customer support triage?
+
+====================================================================================================
+G37 / DANGLING / n=5
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+lex=0.714
+NEG:
+What specific challenge might arise in implementing this area within customer support triage?
+
+lex=0.714
+NEG:
+What specific challenge might arise in implementing this practice for customer support triage?
+
+lex=0.714
+NEG:
+What specific challenge might arise in implementing the following procedures in customer support triage?
+
+====================================================================================================
+G39 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+lex=0.250
+NEG:
+What part of the customer support triaging process would you prefer to discuss further?
+
+lex=0.250
+NEG:
+What segment of customer support triaging requires further exploration?
+
+lex=0.261
+NEG:
+What elements of customer support triaging are you looking to evaluate more closely?
+
+====================================================================================================
+G39 / META / n=15
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+lex=0.381
+NEG:
+How do you handle the maintenance of accuracy in customer support triaging responses?
+
+lex=0.381
+NEG:
+What is your approach to customer support triaging responses in terms of accuracy?
+
+lex=0.381
+NEG:
+How does your system assess the accuracy of triaging responses in customer support?
+
+====================================================================================================
+G43 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+lex=0.158
+NEG:
+What else do you want to know about managing simultaneous incidents?
+
+lex=0.158
+NEG:
+How can I assist you with your current incident management task?
+
+lex=0.158
+NEG:
+How can I help clarify your thoughts on managing several incidents?
+
+====================================================================================================
+G43 / META / n=15
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+lex=0.222
+NEG:
+How do you ensure effective management of multiple incidents at once?
+
+lex=0.235
+NEG:
+What techniques do you use to handle several incidents simultaneously?
+
+lex=0.235
+NEG:
+How do you handle prioritization among incidents that occur simultaneously?
+
+====================================================================================================
+G44 / DIRECTION / n=15
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+lex=0.143
+NEG:
+Which considerations about 'experiment planning' do you think are most important?
+
+lex=0.143
+NEG:
+What specific challenges do you want to tackle in 'experiment planning'?
+
+lex=0.150
+NEG:
+What focus points in 'experiment planning' should we address together?
+
+====================================================================================================
+G44 / META / n=15
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+lex=0.150
+NEG:
+What details are crucial to consider in your experiment planning?
+
+lex=0.150
+NEG:
+What do you believe is critical for comprehensive experiment planning?
+
+lex=0.158
+NEG:
+What insights can you provide about 'experiment planning' tasks?
+
+====================================================================================================
+G44 / DANGLING / n=5
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+lex=0.300
+NEG:
+Is there something in these tasks that I should review before I get started?
+
+lex=0.300
+NEG:
+Are there notable factors in this area that I should consider before starting?
+
+lex=0.333
+NEG:
+Are there specific factors in the current setup I should be cautious about before proceeding?

@@ -1,0 +1,40 @@
+{
+  "gpt4o_mini_v3": {
+    "n": 64,
+    "strict_clean_n": 63,
+    "strict_clean_rate": 0.984375,
+    "failure_reasons": {
+      "reversed_direction": 1
+    },
+    "states_with_clean_candidate": 8,
+    "mean_utility_all": 0.13506571394840555,
+    "mean_utility_clean": 0.1320173679524831,
+    "mean_best_clean_utility_per_state": 0.3765081244255647
+  },
+  "local_benign_v3": {
+    "n": 64,
+    "strict_clean_n": 56,
+    "strict_clean_rate": 0.875,
+    "failure_reasons": {
+      "not_question": 8
+    },
+    "states_with_clean_candidate": 8,
+    "mean_utility_all": 0.41051813035218543,
+    "mean_utility_clean": 0.3673291313402511,
+    "mean_best_clean_utility_per_state": 0.6140281139379122
+  },
+  "local_current": {
+    "n": 64,
+    "strict_clean_n": 34,
+    "strict_clean_rate": 0.53125,
+    "failure_reasons": {
+      "reversed_direction": 10,
+      "dangling": 15,
+      "not_question": 5
+    },
+    "states_with_clean_candidate": 8,
+    "mean_utility_all": 0.6320511483271539,
+    "mean_utility_clean": 0.6112661143801312,
+    "mean_best_clean_utility_per_state": 0.762745157141081
+  }
+}

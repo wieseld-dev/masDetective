@@ -1,0 +1,21 @@
+{
+  "name": "generator_frozen_v3",
+  "status": "DEV_FROZEN",
+  "parent": "generator_frozen_v2",
+  "n_roles": 8,
+  "probes_per_role": 2,
+  "n_probes": 16,
+  "development_roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations"
+  ],
+  "selection": "semantic-clean pool + DEV router tournament",
+  "important": "Do not use these 8 roles as generator-generalization evidence.",
+  "sha256": "c9f61370c53dfd69b8b7ff5bb06bfb0e16b660302a3e19aa7da8de812cf7f6a7"
+}

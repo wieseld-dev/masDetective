@@ -1,0 +1,12 @@
+[
+  {
+    "system_id": "v13_eval_fanout2_k3_r00",
+    "mode": "fanout2",
+    "k_true_workers_eval_only": 3,
+    "true_roles_eval_only": [
+      "design",
+      "requirements_analysis",
+      "accessibility_review"
+    ]
+  }
+]

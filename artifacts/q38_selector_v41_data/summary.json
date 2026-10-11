@@ -1,0 +1,47 @@
+{
+  "version": "q38_selector_v41_data",
+  "source": "artifacts/llm_selector_v3_auc_data",
+  "train": {
+    "states": 2389,
+    "systems": 473,
+    "mean_random_auc_gain": 0.02802529891932843,
+    "mean_oracle_auc_gain": 0.1372899920102629,
+    "oracle_minus_random": 0.10926469309093448,
+    "mean_pair_spread": 15.919631645039766,
+    "candidate_count": {
+      "6": 464,
+      "8": 1925
+    }
+  },
+  "val": {
+    "states": 424,
+    "systems": 84,
+    "mean_random_auc_gain": 0.025556750030533506,
+    "mean_oracle_auc_gain": 0.13306689815802972,
+    "oracle_minus_random": 0.10751014812749621,
+    "mean_pair_spread": 15.549528301886792,
+    "candidate_count": {
+      "6": 96,
+      "8": 328
+    }
+  },
+  "challenge": {
+    "states": 715,
+    "systems": 139,
+    "mean_random_auc_gain": 0.029052938012214022,
+    "mean_oracle_auc_gain": 0.13387890898694102,
+    "oracle_minus_random": 0.104825970974727,
+    "mean_pair_spread": 15.572027972027971,
+    "candidate_count": {
+      "6": 128,
+      "8": 587
+    }
+  },
+  "notes": [
+    "split by system",
+    "exact duplicate probes share averaged realized utility",
+    "all decision states retained",
+    "pair gain used as soft ranking supervision",
+    "challenge never used for model selection"
+  ]
+}

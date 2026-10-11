@@ -1,0 +1,15 @@
+{
+  "candidate_queries": 14000,
+  "teacher_model": "gpt-4o-mini-2024-07-18",
+  "agreement": 10801,
+  "trainable_conf_ge_088": 4350,
+  "label_counts": {
+    "BENIGN": 1985,
+    "NONSTANDALONE": 357,
+    "CAPABILITY": 1240,
+    "TAXONOMY": 294,
+    "REVERSED_DIRECTION": 463,
+    "INTERNAL_META": 11
+  },
+  "strict_gold": 41
+}

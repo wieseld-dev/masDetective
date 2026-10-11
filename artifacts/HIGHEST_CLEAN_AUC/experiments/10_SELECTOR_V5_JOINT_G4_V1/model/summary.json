@@ -1,0 +1,91 @@
+{
+  "version": "selector_v5_joint_g4",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "best_epoch": 3,
+  "selection_metric": "VAL mean_regret",
+  "training_target": "joint 4-way realized role \u0394AUC; 0.65 soft KL + 0.35 hard CE",
+  "soft_tau": 0.06,
+  "train": {
+    "states": 2409,
+    "systems": 18
+  },
+  "val": {
+    "states": 814,
+    "systems": 6,
+    "systems_ids": [
+      "av11_2d355538615f00ff",
+      "av11_486b21e22324059f",
+      "av11_5df7e71a9829f052",
+      "av11_60adcadf2277b949",
+      "av11_fcbc5e8f6c849e2b",
+      "av11_fe6081f59a94aebf"
+    ]
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8143796697939085,
+      "val": {
+        "states": 814,
+        "mean_selected_gain": 0.0051367804408073425,
+        "mean_random_gain": 0.0064041209407150745,
+        "mean_oracle_gain": 0.07868733257055283,
+        "mean_regret": 0.07355055212974548,
+        "oracle_top1_hit": 0.24324324324324326,
+        "oracle_top2_hit": 0.47174447174447176,
+        "mean_spearman": -0.0039684220859327645,
+        "mean_pair_accuracy": 0.49782608695652175,
+        "oracle_signal_captured": -0.017532985479363886
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7462586734799429,
+      "val": {
+        "states": 814,
+        "mean_selected_gain": 0.006115559488534927,
+        "mean_random_gain": 0.0064041209407150745,
+        "mean_oracle_gain": 0.07868733257055283,
+        "mean_regret": 0.0725717768073082,
+        "oracle_top1_hit": 0.28378378378378377,
+        "oracle_top2_hit": 0.5233415233415234,
+        "mean_spearman": 0.012647457983914409,
+        "mean_pair_accuracy": 0.5045652173913043,
+        "oracle_signal_captured": -0.003992095061545827
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7259716124208142,
+      "val": {
+        "states": 814,
+        "mean_selected_gain": 0.0066759902983903885,
+        "mean_random_gain": 0.0064041209407150745,
+        "mean_oracle_gain": 0.07868733257055283,
+        "mean_regret": 0.07201134413480759,
+        "oracle_top1_hit": 0.22481572481572482,
+        "oracle_top2_hit": 0.4557739557739558,
+        "mean_spearman": -0.012104687298645453,
+        "mean_pair_accuracy": 0.4945652173913043,
+        "oracle_signal_captured": 0.0037611687630532613
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.7307070023291339,
+      "val": {
+        "states": 814,
+        "mean_selected_gain": 0.005938194692134857,
+        "mean_random_gain": 0.0064041209407150745,
+        "mean_oracle_gain": 0.07868733257055283,
+        "mean_regret": 0.07274913787841797,
+        "oracle_top1_hit": 0.22358722358722358,
+        "oracle_top2_hit": 0.4864864864864865,
+        "mean_spearman": -0.002180556249143651,
+        "mean_pair_accuracy": 0.5006521739130435,
+        "oracle_signal_captured": -0.0064458432058363034
+      }
+    }
+  ],
+  "runtime_hours": 0.5030185828606287
+}

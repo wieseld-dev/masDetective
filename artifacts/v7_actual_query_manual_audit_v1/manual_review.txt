@@ -1,0 +1,1200 @@
+[001] split=train  MISTRAL=KEEP
+Q: Should I start by explaining how to set up an effective experiment design?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[002] split=dev  MISTRAL=KEEP
+Q: What specific guidance could you provide regarding how to efficiently manage unexpected outcomes during the incident response process?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[003] split=train  MISTRAL=KEEP
+Q: What specific aspects of my current situation would be most helpful for determining if I have sufficient knowledge in financial analysis?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[004] split=test  MISTRAL=KEEP
+Q: Should I focus first on improving the accuracy and consistency of our project documentation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[005] split=train  MISTRAL=KEEP
+Q: How do I properly configure the email settings on my device?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[006] split=dev  MISTRAL=KEEP
+Q: Do my Python scripts behave consistently across different environments?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[007] split=test  MISTRAL=KEEP
+Q: Should I begin by detailing how to troubleshoot network connectivity issues?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[008] split=test  MISTRAL=KEEP
+Q: Which feature of our product/service would you like support with right now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[009] split=dev  MISTRAL=KEEP
+Q: Do these tasks seem similar based on the visible answers?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[010] split=test  MISTRAL=KEEP
+Q: How can I check if my financial projections are accurate based on recent market trends?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[011] split=dev  MISTRAL=KEEP
+Q: Should I begin by reviewing the potential risks associated with our security protocols?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[012] split=test  MISTRAL=KEEP
+Q: Do these tasks involve analyzing large amounts of unstructured text?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[013] split=test  MISTRAL=KEEP
+Q: Do I need more details on how to approach this **math** challenge?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[014] split=dev  MISTRAL=KEEP
+Q: How can I quickly determine if my Excel spreadsheet contains errors using QA Testing techniques?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[015] split=train  MISTRAL=KEEP
+Q: Should I focus on understanding how to implement a simple algorithm today?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[016] split=dev  MISTRAL=KEEP
+Q: Which specific aspect of my job involves **reducing risks associated with potential incidents**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[017] split=dev  MISTRAL=KEEP
+Q: Should I first investigate the accessibility review guidelines?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[018] split=test  MISTRAL=KEEP
+Q: Which aspect of my current tasks involves conducting extensive requirement analyses?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[019] split=dev  MISTRAL=KEEP
+Q: Should I start by providing a clear specification of my project requirements so we can begin designing a custom solution?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[020] split=test  MISTRAL=KEEP
+Q: Do these tasks involve customer support triage?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[021] split=dev  MISTRAL=KEEP
+Q: Should I begin by explaining my current financial analysis situation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[022] split=dev  MISTRAL=KEEP
+Q: Should I start by providing details on how to access our financial analysis data?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[023] split=train  MISTRAL=KEEP
+Q: Should I begin by describing the primary functionalities I require for this project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[024] split=train  MISTRAL=KEEP
+Q: Should I begin by analyzing a sample case study or by reviewing some existing databases?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[025] split=test  MISTRAL=KEEP
+Q: Should I start by providing some basic financial statements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[026] split=dev  MISTRAL=KEEP
+Q: Should I start with reviewing the accessibility of the navigation features on this website?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[027] split=train  MISTRAL=KEEP
+Q: What specific feature of our product would you like us to test today?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[028] split=test  MISTRAL=KEEP
+Q: Which feature of these tasks do you think you could least effectively perform?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[029] split=train  MISTRAL=KEEP
+Q: Should I start by providing more detailed insights into how I plan to approach **incident management**, including specific steps like incident prioritization and communication strategies?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[030] split=test  MISTRAL=KEEP
+Q: Should I start by reviewing the accessibility reviews?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[031] split=train  MISTRAL=KEEP
+Q: Which type of development process will you prefer for me to follow during this project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[032] split=train  MISTRAL=KEEP
+Q: Should I provide more details regarding the coding standards?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[033] split=test  MISTRAL=KEEP
+Q: Which project-related issue resolution strategy would you find most beneficial?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[034] split=test  MISTRAL=KEEP
+Q: How can I create a simple Python script that reads from an Excel file and calculates basic statistics like mean and median?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[035] split=test  MISTRAL=KEEP
+Q: How do I calculate compound interest on my savings?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[036] split=test  MISTRAL=KEEP
+Q: Should I start by reviewing some sample accessibility guidelines?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[037] split=dev  MISTRAL=KEEP
+Q: Should I begin by reviewing how accessible the design options are?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[038] split=dev  MISTRAL=KEEP
+Q: Should we begin by analyzing the current financial status of the company?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[039] split=train  MISTRAL=KEEP
+Q: What specific type of mathematical problem are you trying to solve for this scenario?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[040] split=train  MISTRAL=KEEP
+Q: Should I start by explaining the difference between revenue growth rates versus compound annual growth rates?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[041] split=test  MISTRAL=KEEP
+Q: Which category of analysis-related tasks do you require assistance with?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[042] split=dev  MISTRAL=KEEP
+Q: Do these tasks involve analyzing data security measures?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[043] split=train  MISTRAL=KEEP
+Q: How can I optimize my database query performance without altering the existing SQL code?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[044] split=test  MISTRAL=KEEP
+Q: I need help planning my budget. Could you guide me on how to allocate funds effectively?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[045] split=test  MISTRAL=KEEP
+Q: Do you often encounter problems related to **documentation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[046] split=dev  MISTRAL=KEEP
+Q: I need help understanding if we have enough information to analyze this specific financial scenario. Please describe how we could proceed?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[047] split=test  MISTRAL=KEEP
+Q: Can you guide me on how to perform a thorough accessibility review?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[048] split=train  MISTRAL=KEEP
+Q: Should I begin by detailing our plan for addressing potential accessibility issues?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[049] split=dev  MISTRAL=KEEP
+Q: Should I start by auditing the logical consistency of these financial analysis reports?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[050] split=test  MISTRAL=KEEP
+Q: Should I start by providing details on how to format my draft document, or would you prefer I focus on specifying where I intend to use this translated text?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[051] split=train  MISTRAL=KEEP
+Q: Should I start by providing some sample code snippets related to my current project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[052] split=test  MISTRAL=KEEP
+Q: Should I review the accessibility features now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[053] split=test  MISTRAL=KEEP
+Q: Which type of problem-solving skills would you find most valuable for handling unexpected errors in my current workflow?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[054] split=dev  MISTRAL=KEEP
+Q: Should I start by providing some sample code snippets or a description of a specific programming challenge?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[055] split=train  MISTRAL=KEEP
+Q: Which of these types of tasks might be most helpful for you today?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[056] split=dev  MISTRAL=KEEP
+Q: Which of these specific types of technical skills do you think I might need more guidance on?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[057] split=test  MISTRAL=KEEP
+Q: Should I focus on understanding how to perform effective **experiment design** right now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[058] split=train  MISTRAL=KEEP
+Q: How can I clarify my understanding regarding potential project timelines and resource allocation for this upcoming initiative?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[059] split=dev  MISTRAL=KEEP
+Q: Should I start by providing an explanation of how to set up a coding environment?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[060] split=dev  MISTRAL=KEEP
+Q: Which of these tasks would best align with my specific needs and objectives?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[061] split=train  MISTRAL=KEEP
+Q: How might I best prepare my team for handling upcoming changes in our technology stack?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[062] split=dev  MISTRAL=KEEP
+Q: Do these tasks involve analyzing financial statements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[063] split=train  MISTRAL=KEEP
+Q: What type of document would be most suitable for performing a detailed cost-benefit analysis?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[064] split=dev  MISTRAL=KEEP
+Q: How can I best describe my project requirements (e.g., functionality, scalability, security) to ensure smooth deployment?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[065] split=train  MISTRAL=KEEP
+Q: Should I discuss how this accessibility issue affects daily operations and current technological solutions?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[066] split=train  MISTRAL=KEEP
+Q: Which type of document review would you appreciate the most?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[067] split=test  MISTRAL=KEEP
+Q: Which type of document analysis skills are required to ensure compliance with legal standards?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[068] split=train  MISTRAL=KEEP
+Q: Should I start by explaining the specific objectives of my project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[069] split=dev  MISTRAL=KEEP
+Q: Do you specialize in handling complex incident management tasks?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[070] split=train  MISTRAL=KEEP
+Q: Which of these areas does your professional experience primarily cover?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[071] split=dev  MISTRAL=KEEP
+Q: Should I begin by evaluating the accuracy and completeness of my bank statements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[072] split=test  MISTRAL=KEEP
+Q: How do I properly clean and transform a dataset before analyzing its patterns?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[073] split=train  MISTRAL=KEEP
+Q: Should I describe my project goals and challenges for better collaboration?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[074] split=train  MISTRAL=KEEP
+Q: Should I start by outlining my project timeline and resources?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[075] split=dev  MISTRAL=KEEP
+Q: Do these tasks involve analyzing large datasets?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[076] split=train  MISTRAL=KEEP
+Q: Should I focus on verifying the accuracy of financial reports or analyzing historical sales trends when conducting a **math** task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[077] split=test  MISTRAL=KEEP
+Q: Should I explain to you the specific steps involved in setting up a secure access control policy?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[078] split=test  MISTRAL=KEEP
+Q: Should I include detailed examples or specific inputs when asking about **database design**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[079] split=dev  MISTRAL=KEEP
+Q: Should I begin by conducting a thorough review of all the mathematical formulas included in this document?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[080] split=train  MISTRAL=KEEP
+Q: Which specific part of your current coding project could benefit the most from additional support?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[081] split=test  MISTRAL=KEEP
+Q: What kind of technical support would you find helpful today?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[082] split=dev  MISTRAL=KEEP
+Q: Do you handle complex mathematical problems regularly?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[083] split=test  MISTRAL=KEEP
+Q: Should I start by reviewing these financial reports for accuracy?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[084] split=train  MISTRAL=KEEP
+Q: Should I start by providing examples of my current security measures?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[085] split=train  MISTRAL=KEEP
+Q: What specific detail about the accessibility review process would you like clarified?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[086] split=dev  MISTRAL=KEEP
+Q: Do these tasks typically involve analyzing financial data?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[087] split=dev  MISTRAL=KEEP
+Q: Should I start with providing more details on how often previous projects have encountered similar issues?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[088] split=dev  MISTRAL=KEEP
+Q: How can I best describe my specific coding issue to get relevant help from this AI assistant?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[089] split=train  MISTRAL=KEEP
+Q: Which specific scenario would you be looking to enhance by leveraging advanced techniques in **database management**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[090] split=train  MISTRAL=KEEP
+Q: Should I start by improving the accuracy of our incident management systems?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[091] split=test  MISTRAL=KEEP
+Q: Do you have any specific coding problem where I could assist by providing some sample inputs or identifying common mistakes?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[092] split=dev  MISTRAL=KEEP
+Q: What specific aspect of our documentation will benefit from additional detail before proceeding?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[093] split=dev  MISTRAL=KEEP
+Q: Which kind of technical writing assignment could benefit most from your expertise?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[094] split=test  MISTRAL=KEEP
+Q: Which aspect of my work environment is most critical for enhancing overall efficiency?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[095] split=dev  MISTRAL=KEEP
+Q: Should I focus my inquiry on improving the overall planning and strategy aspects of our operation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[096] split=dev  MISTRAL=KEEP
+Q: Given my current financial situation, what specific aspects of my budget allocation would you recommend analyzing?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[097] split=dev  MISTRAL=KEEP
+Q: Do I need help with conducting an **incident management** analysis?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[098] split=dev  MISTRAL=KEEP
+Q: Should I start by reviewing the current coding standards for this project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[099] split=test  MISTRAL=KEEP
+Q: Should I explain the steps involved in conducting a feasibility study for our project proposal?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[100] split=train  MISTRAL=KEEP
+Q: What specific aspect of the upcoming project schedule do you need assistance with?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[101] split=dev  MISTRAL=KEEP
+Q: Should I focus on identifying potential issues with the accuracy of our coding scripts?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[102] split=dev  MISTRAL=KEEP
+Q: Do these tasks typically focus on analyzing customer support logs?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[103] split=train  MISTRAL=KEEP
+Q: Should I begin by reviewing access controls before starting the accessibility review?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[104] split=test  MISTRAL=KEEP
+Q: Should I begin by determining how many employees we have access to initially?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[105] split=dev  MISTRAL=KEEP
+Q: Should I begin by translating a complex legal document into another language?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[106] split=dev  MISTRAL=KEEP
+Q: Do these tasks require more focus on "math"?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[107] split=test  MISTRAL=KEEP
+Q: Should I begin by analyzing potential calculation errors in my math assignments?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[108] split=test  MISTRAL=KEEP
+Q: Which specific set of skills or tasks would you like to apply to this data?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[109] split=train  MISTRAL=KEEP
+Q: Should I start by reviewing the readability and accessibility of this interface?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[110] split=dev  MISTRAL=KEEP
+Q: Do you typically engage with data handling incidents?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[111] split=test  MISTRAL=KEEP
+Q: Should I start by checking if this app supports adaptive learning features?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[112] split=test  MISTRAL=KEEP
+Q: Which task-related capability would you benefit most from today?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[113] split=train  MISTRAL=KEEP
+Q: Should I start by providing details on our budget projections?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[114] split=test  MISTRAL=KEEP
+Q: What are some key factors I should consider when developing an effective accessibility review strategy?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[115] split=dev  MISTRAL=KEEP
+Q: Should I begin by understanding the typical steps involved in creating effective digital accessibility reviews?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[116] split=train  MISTRAL=KEEP
+Q: What specific kind of incident management details should I share first?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[117] split=dev  MISTRAL=KEEP
+Q: Should I prioritize starting by analyzing the mathematical formulas on this page?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[118] split=train  MISTRAL=KEEP
+Q: I have two projects due on Monday. Which should I prioritize based on their deadlines?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[119] split=test  MISTRAL=KEEP
+Q: Should I begin with reviewing the accessibility features available?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[120] split=dev  MISTRAL=KEEP
+Q: Should I begin by conducting a requirement analysis on this software project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[121] split=train  MISTRAL=KEEP
+Q: Should I begin by preparing detailed requirements documents for our project before discussing potential funding sources?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[122] split=dev  MISTRAL=KEEP
+Q: Which aspect of my task involves verifying the accuracy of reported facts?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[123] split=test  MISTRAL=KEEP
+Q: Should I start by reviewing the accessibility features of this tool?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[124] split=dev  MISTRAL=KEEP
+Q: Should I begin by explaining my current workflow in detail?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[125] split=dev  MISTRAL=KEEP
+Q: Which specific aspects of our product or service do you believe require the most attention during a requirements analysis phase?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[126] split=train  MISTRAL=KEEP
+Q: Should I start by analyzing our incident management procedures to see where they might fall short?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[127] split=dev  MISTRAL=KEEP
+Q: Is this task related to improving the efficiency of database queries?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[128] split=dev  MISTRAL=KEEP
+Q: Should I start with clarifying how we determine the relevance of each dataset before proceeding further?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[129] split=test  MISTRAL=KEEP
+Q: Should I start by explaining what aspects of accessibility should be checked when reviewing a website?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[130] split=test  MISTRAL=KEEP
+Q: Should I start by providing some specific requirements for an incident management task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[131] split=test  MISTRAL=KEEP
+Q: Which aspect of my current tasks involves conducting risk assessment?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[132] split=dev  MISTRAL=KEEP
+Q: Does this challenge involve using advanced machine learning techniques such as neural networks or deep learning?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[133] split=test  MISTRAL=KEEP
+Q: Which of these tasks require specialized knowledge beyond your core competencies?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[134] split=dev  MISTRAL=KEEP
+Q: Should we begin with clarifying our budget allocation strategies?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[135] split=test  MISTRAL=KEEP
+Q: Should I start by examining the latest reports on market trends and competitive analyses?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[136] split=train  MISTRAL=KEEP
+Q: Should I prepare a custom sample for the database design task to better understand its requirements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[137] split=dev  MISTRAL=KEEP
+Q: Is there anything specific related to **incident management** that could clarify the availability of these tasks?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[138] split=test  MISTRAL=KEEP
+Q: Do these tasks focus on **operations**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[139] split=train  MISTRAL=KEEP
+Q: Is there anything specific about the project requirements or objectives that we should be aware of?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[140] split=test  MISTRAL=KEEP
+Q: Which project management tool would you prefer to utilize?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[141] split=dev  MISTRAL=KEEP
+Q: Do these tasks involve managing operational processes?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[142] split=train  MISTRAL=KEEP
+Q: Does my current understanding of the problem involve designing a specific feature for a product?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[143] split=test  MISTRAL=KEEP
+Q: Do these tasks require evaluating multiple sources of information simultaneously?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[144] split=train  MISTRAL=KEEP
+Q: Should I start by describing my current process flow for managing user support tickets?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[145] split=train  MISTRAL=KEEP
+Q: Should I start by determining if there are any specific security vulnerabilities related to our recent network activity?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[146] split=train  MISTRAL=KEEP
+Q: Should I begin by providing details on how to conduct financial analyses?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[147] split=train  MISTRAL=KEEP
+Q: Which of these tasks or skills does your expertise specifically involve in relation to **design**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[148] split=train  MISTRAL=KEEP
+Q: Should I start by reviewing the accessibility features provided?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[149] split=train  MISTRAL=KEEP
+Q: Should I start by explaining how to assess the effectiveness of our current software products based on customer feedback?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[150] split=train  MISTRAL=KEEP
+Q: Should I start by summarizing our current inventory management practices and discussing potential improvements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[151] split=test  MISTRAL=KEEP
+Q: Which aspect of my current workflow is most likely to benefit from additional training?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[152] split=dev  MISTRAL=KEEP
+Q: Should I begin by describing how to properly set up an incident management process?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[153] split=test  MISTRAL=KEEP
+Q: Should I start by gathering more details on company-specific policies regarding remote work arrangements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[154] split=dev  MISTRAL=KEEP
+Q: Should I start by understanding our current customer support triage process?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[155] split=dev  MISTRAL=KEEP
+Q: Should I start by creating a detailed plan for conducting user interviews?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[156] split=train  MISTRAL=KEEP
+Q: Do you often encounter situations where you need to compare different financial models?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[157] split=dev  MISTRAL=KEEP
+Q: Should I start by reviewing the current text for potential errors in grammar, punctuation, or spelling?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[158] split=train  MISTRAL=KEEP
+Q: Should I start by examining these data points to evaluate their accuracy?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[159] split=dev  MISTRAL=KEEP
+Q: How can I optimize my workflow when using this tool efficiently?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[160] split=train  MISTRAL=KEEP
+Q: Should I begin by gathering more details on the financial impacts of implementing this project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[161] split=train  MISTRAL=KEEP
+Q: Do these documents have any specific requirements related to coding practices?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[162] split=test  MISTRAL=KEEP
+Q: Do these tasks require assistance with accessibility reviews?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[163] split=test  MISTRAL=KEEP
+Q: Should I focus on researching potential solutions for my project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[164] split=train  MISTRAL=KEEP
+Q: Do these databases contain all the necessary tables for performing advanced SQL queries?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[165] split=train  MISTRAL=KEEP
+Q: Should I describe my daily routine involving both work-related and personal activities?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[166] split=train  MISTRAL=KEEP
+Q: Is there anything specific about your recent project where you encountered challenges with data validation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[167] split=train  MISTRAL=KEEP
+Q: Does this person have extensive experience in creating detailed documentation for technical manuals?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[168] split=train  MISTRAL=KEEP
+Q: Do these tasks involve evaluating the effectiveness of written communication materials?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[169] split=dev  MISTRAL=KEEP
+Q: Should I begin by performing a detailed requirement analysis on our current project document?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[170] split=test  MISTRAL=KEEP
+Q: should the current focus region on "documentation" tasks require more details when compared to other topics?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[171] split=train  MISTRAL=KEEP
+Q: Should I begin by explaining my **prior experience** related to these topics?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[172] split=train  MISTRAL=KEEP
+Q: Which specific type of problem do you need assistance with?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[173] split=train  MISTRAL=KEEP
+Q: Should I start by explaining my current database schema design, including relationships between tables and primary/foreign keys, so you can suggest improvements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[174] split=dev  MISTRAL=KEEP
+Q: Is there anything specific related to **mathematics** that could assist in determining the feasibility of these tasks?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[175] split=dev  MISTRAL=KEEP
+Q: Should I provide the full set of translated text along with annotations indicating which parts were difficult or where there might be cultural nuances?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[176] split=dev  MISTRAL=KEEP
+Q: Should we begin by examining our recent budget forecasts for better understanding how we might be shortchanging ourselves?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[177] split=test  MISTRAL=KEEP
+Q: Should I detail my experience working with a particular coding library?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[178] split=dev  MISTRAL=KEEP
+Q: Should I begin by reviewing the customer support triage process?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[179] split=test  MISTRAL=KEEP
+Q: Do you routinely handle incidents related to customer support?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[180] split=dev  MISTRAL=KEEP
+Q: Should we begin by assessing the current efficiency and effectiveness of our customer support response triage process?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[181] split=dev  MISTRAL=KEEP
+Q: Should we focus on improving our project organization right now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[182] split=test  MISTRAL=KEEP
+Q: Which specific aspect of your interface or design requires assistance?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[183] split=test  MISTRAL=KEEP
+Q: Should I clarify some basic coding principles before diving into advanced debugging tasks?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[184] split=dev  MISTRAL=KEEP
+Q: What specific mathematical concept are you trying to demonstrate understanding of?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[185] split=dev  MISTRAL=KEEP
+Q: Should I start by assessing the feasibility of implementing a custom algorithm using Python?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[186] split=test  MISTRAL=KEEP
+Q: Do you sometimes work on adapting procedures or workflows?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[187] split=train  MISTRAL=KEEP
+Q: Should I start by exploring how we could improve our database schema for efficient data retrieval?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[188] split=test  MISTRAL=KEEP
+Q: Should I share my budget allocation plan with you for analyzing its effectiveness?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[189] split=dev  MISTRAL=KEEP
+Q: Is there a specific type of financial analysis you would like to conduct right now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[190] split=train  MISTRAL=KEEP
+Q: Is there anything specific I should start with regarding **documentation**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[191] split=test  MISTRAL=KEEP
+Q: Which specific aspect of my current project requires the most rigorous scrutiny, considering both technical feasibility and compliance regulations?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[192] split=train  MISTRAL=KEEP
+Q: How can I best prepare for this upcoming math problem?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[193] split=test  MISTRAL=KEEP
+Q: Should I start by providing examples of past successful product modifications?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[194] split=train  MISTRAL=KEEP
+Q: What key metrics should I collect during a cost-benefit analysis when evaluating a potential project investment?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[195] split=test  MISTRAL=KEEP
+Q: Which specific project management tool features would you recommend for enhancing collaboration among team members?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[196] split=dev  MISTRAL=KEEP
+Q: Should we focus on improving a recurring workflow issue involving data processing efficiency?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[197] split=dev  MISTRAL=KEEP
+Q: Should I focus on improving the documentation process by specifying common terms and definitions?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[198] split=dev  MISTRAL=KEEP
+Q: How can I efficiently plan my weekly study schedule given limited time slots?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[199] split=test  MISTRAL=KEEP
+Q: Should I start by providing a sample dataset for my project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[200] split=test  MISTRAL=KEEP
+Q: Does this task encompass **mathematics**, specifically involving calculations, equations, or logical reasoning?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[201] split=dev  MISTRAL=KEEP
+Q: Should we focus on understanding the symptoms of a specific technical issue related to database performance optimization?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[202] split=test  MISTRAL=KEEP
+Q: What specific feature do you think would most improve the overall performance of this machine learning model?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[203] split=test  MISTRAL=KEEP
+Q: Should I start by explaining how we can streamline our operational processes?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[204] split=train  MISTRAL=KEEP
+Q: Should I start by providing details on how to analyze financial statements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[205] split=train  MISTRAL=KEEP
+Q: Which type of technical document would you need assistance with specifically?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[206] split=test  MISTRAL=KEEP
+Q: Should I start by providing detailed schema information for this project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[207] split=test  MISTRAL=KEEP
+Q: Should I begin by reviewing the latest updates on the financial analysis capabilities?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[208] split=test  MISTRAL=KEEP
+Q: Should I begin by analyzing the mathematical aspects of this project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[209] split=dev  MISTRAL=KEEP
+Q: Should I start by assessing the efficiency of our current workflow?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[210] split=test  MISTRAL=KEEP
+Q: Which type of document-related skills are most important for someone who needs to prepare detailed project plans?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[211] split=test  MISTRAL=KEEP
+Q: How do I ensure my website loads faster without compromising security measures?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[212] split=dev  MISTRAL=KEEP
+Q: Should I prioritize starting with a breakdown of my current project timelines?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[213] split=train  MISTRAL=KEEP
+Q: How can I set up notifications for my project tasks using a smart calendar, ensuring they sync across all devices without disrupting my workflow?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[214] split=test  MISTRAL=KEEP
+Q: Should I start by determining if there are any mathematical errors in the budget projections?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[215] split=train  MISTRAL=KEEP
+Q: Should I start by providing some sample data or detailed user requirements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[216] split=test  MISTRAL=KEEP
+Q: How do I create a detailed project schedule using Gantt charts?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[217] split=dev  MISTRAL=KEEP
+Q: Do you know what kind of project this involves?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[218] split=test  MISTRAL=KEEP
+Q: Do you need assistance with creating a plan for **software quality assurance (QA)**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[219] split=train  MISTRAL=KEEP
+Q: Do these questions look familiar?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[220] split=train  MISTRAL=KEEP
+Q: Would you appreciate guidance on creating a plan for analyzing customer complaints?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[221] split=test  MISTRAL=KEEP
+Q: What specific aspect of the analysis task would you like us to focus on for this round?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[222] split=train  MISTRAL=KEEP
+Q: Which specific aspect of the current project requires your expertise today?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[223] split=dev  MISTRAL=KEEP
+Q: Should I start by exploring ways to enhance the data entry process?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[224] split=train  MISTRAL=KEEP
+Q: Which type of critical thinking skill would you like to enhance?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[225] split=train  MISTRAL=KEEP
+Q: Should I begin by showing some real-world examples of financial statements and their key components?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[226] split=test  MISTRAL=KEEP
+Q: Should I start by providing examples of how I plan to use this software to ensure it meets my specific needs?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[227] split=test  MISTRAL=KEEP
+Q: Should I start by outlining my specific pain points related to our latest project?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[228] split=dev  MISTRAL=KEEP
+Q: Should I start by reviewing this incident management plan or focusing on setting up preliminary testing procedures?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[229] split=test  MISTRAL=KEEP
+Q: Should I start by providing some sample SQL queries to better understand the data schema?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[230] split=dev  MISTRAL=KEEP
+Q: I need help with an incident management task. Can you guide me on how to prioritize action steps based on current status?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[231] split=test  MISTRAL=KEEP
+Q: Should I start by conducting a risk assessment?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[232] split=train  MISTRAL=KEEP
+Q: Should I list all the steps involved in setting up a home office environment, including hardware specifications, software installations, and ergonomic considerations?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[233] split=train  MISTRAL=KEEP
+Q: Do you handle **mathematics**-related problems professionally?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[234] split=test  MISTRAL=KEEP
+Q: Which aspect of my current tasks involves conducting requirement analyses?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[235] split=test  MISTRAL=KEEP
+Q: Should I describe the steps involved in performing an accessibility review during this session?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[236] split=dev  MISTRAL=KEEP
+Q: Do you handle incident management tasks regularly?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[237] split=dev  MISTRAL=KEEP
+Q: Is it more helpful for me to focus on the **accessibility** aspects of the task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[238] split=dev  MISTRAL=KEEP
+Q: Do you frequently encounter incidents involving human error?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[239] split=dev  MISTRAL=KEEP
+Q: Do these tasks always require thorough requirement analysis?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[240] split=dev  MISTRAL=KEEP
+Q: Should I begin by detailing the current status of my project requirements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[241] split=train  MISTRAL=KEEP
+Q: How can I quickly identify which specific coding patterns are causing errors in this piece of code?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[242] split=dev  MISTRAL=KEEP
+Q: Should I start by translating the given text into another language?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[243] split=dev  MISTRAL=KEEP
+Q: Which of these tasks would most benefit my upcoming business decision?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[244] split=test  MISTRAL=KEEP
+Q: Should I share a list of specific SQL tables and their column names, or just some sample rows from these tables?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[245] split=train  MISTRAL=KEEP
+Q: Should we begin by evaluating the accuracy of our risk assessment reports?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[246] split=test  MISTRAL=KEEP
+Q: Do I need more details on how to properly implement multilingual text summarization techniques?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[247] split=test  MISTRAL=KEEP
+Q: What specific types of calculations or mathematical problems do you need assistance with?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[248] split=train  MISTRAL=KEEP
+Q: What additional information could you require to determine whether this financial situation involves significant risk?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[249] split=train  MISTRAL=KEEP
+Q: Should I start by examining the budget projections to understand our financial situation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[250] split=test  MISTRAL=KEEP
+Q: Should I begin by describing my main objectives for this initiative?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[251] split=dev  MISTRAL=KEEP
+Q: Should I begin by reviewing the project documentation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[252] split=dev  MISTRAL=KEEP
+Q: Should I focus on analyzing my budget projections before getting started?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[253] split=dev  MISTRAL=KEEP
+Q: Do I need help with a **financial_analysis** task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[254] split=train  MISTRAL=KEEP
+Q: What specific aspect of my existing knowledge base or experience would you find most helpful in understanding and executing this task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[255] split=train  MISTRAL=KEEP
+Q: Do you usually work with project documentation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[256] split=test  MISTRAL=KEEP
+Q: Which of the following types of support would you need the most?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[257] split=train  MISTRAL=KEEP
+Q: Should I begin by checking if the interface design adheres to WCAG guidelines?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[258] split=train  MISTRAL=KEEP
+Q: How can I configure a Redis instance efficiently for caching purposes while ensuring optimal performance across different clients?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[259] split=test  MISTRAL=KEEP
+Q: Which specific type of analysis task does your current needs fall under?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[260] split=test  MISTRAL=KEEP
+Q: Should I describe my current problem involving data manipulation and error detection?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[261] split=train  MISTRAL=KEEP
+Q: Should I share the following dataset along with its labels when requesting a risk assessment?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[262] split=train  MISTRAL=KEEP
+Q: Should I explain my current project related to accessibility review?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[263] split=train  MISTRAL=KEEP
+Q: How can I identify potential bottlenecks in our current database queries?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[264] split=dev  MISTRAL=KEEP
+Q: What information should I provide first so you can help me address a writing issue?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[265] split=train  MISTRAL=KEEP
+Q: Should I focus on understanding the customer service communication protocols to better assist users facing urgent issues?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[266] split=dev  MISTRAL=KEEP
+Q: Should I start by providing details on how to improve the readability of this document?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[267] split=train  MISTRAL=KEEP
+Q: Do you typically address customers who need assistance understanding complex statistical models?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[268] split=train  MISTRAL=KEEP
+Q: Which specific type of customer service problem do you believe would be best suited for a customer support triage session?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[269] split=train  MISTRAL=KEEP
+Q: Should I focus on evaluating the accessibility of the UI interface right now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[270] split=dev  MISTRAL=KEEP
+Q: Should we begin by conducting thorough tests on our customer support tickets to identify areas where documentation could be improved?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[271] split=train  MISTRAL=KEEP
+Q: What specific pieces of information would you most like me to collect in order to optimize this code algorithm?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[272] split=train  MISTRAL=KEEP
+Q: Should I begin by detailing the specific processes involved in handling incidents?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[273] split=test  MISTRAL=KEEP
+Q: What specific guidance would you need regarding incident management tasks to ensure they align well with our current best practices?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[274] split=test  MISTRAL=KEEP
+Q: What specific type of technical problem am I experiencing?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[275] split=train  MISTRAL=KEEP
+Q: Should I start with a database design task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[276] split=test  MISTRAL=KEEP
+Q: What specific feature of our financial analysis dashboard would you recommend we improve based on our recent performance reports?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[277] split=dev  MISTRAL=KEEP
+Q: Do these projects require extensive coding?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[278] split=train  MISTRAL=KEEP
+Q: Do you require support with **financial analysis**?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[279] split=test  MISTRAL=KEEP
+Q: Do these tasks involve translating text, writing documents, making software changes, addressing customer support issues, analyzing data sets, or optimizing operations?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[280] split=test  MISTRAL=KEEP
+Q: How can I effectively manage and automate data entry tasks for my sales team using an automation tool?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[281] split=train  MISTRAL=KEEP
+Q: Should I provide details about our current IT security protocols?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[282] split=test  MISTRAL=KEEP
+Q: Do these tasks require analyzing detailed project schedules?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[283] split=dev  MISTRAL=KEEP
+Q: Should I start by assessing the financial statements?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[284] split=train  MISTRAL=KEEP
+Q: Do these projects involve primarily coding tasks?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[285] split=test  MISTRAL=KEEP
+Q: Should I begin by conducting a financial analysis now?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[286] split=test  MISTRAL=KEEP
+Q: How can I best prepare for a virtual job interview using both written notes and practice questions?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[287] split=train  MISTRAL=KEEP
+Q: Which specific aspect of my current tasks requires your expertise?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[288] split=dev  MISTRAL=KEEP
+Q: Should I begin by providing details on how to perform an **incident management** task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[289] split=train  MISTRAL=KEEP
+Q: Should I begin by demonstrating different types of mathematical expressions?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[290] split=dev  MISTRAL=KEEP
+Q: Should I begin by discussing how we can improve the efficiency of our incident response procedures?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[291] split=dev  MISTRAL=KEEP
+Q: Should I share this text for a customer support triage task?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[292] split=dev  MISTRAL=KEEP
+Q: Should I begin by explaining what specific types of financial analyses we might discuss?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[293] split=dev  MISTRAL=KEEP
+Q: Do these tasks all involve creating detailed user support documentation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[294] split=train  MISTRAL=KEEP
+Q: How can I best prepare for a meeting to ensure we cover all necessary topics?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[295] split=test  MISTRAL=KEEP
+Q: What additional steps should I take when performing a risk assessment for potential data breaches?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[296] split=test  MISTRAL=KEEP
+Q: Should I start by reviewing the latest updates on the documentation?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[297] split=test  MISTRAL=KEEP
+Q: Which type of analysis task would you prefer additional guidance on?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[298] split=test  MISTRAL=KEEP
+Q: Which type of problem-solving strategy would you prefer for the upcoming research work?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[299] split=dev  MISTRAL=KEEP
+Q: Should I start by reviewing the accessibility review section?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------
+[300] split=dev  MISTRAL=KEEP
+Q: Do you handle incidents that involve both financial issues and operational concerns?
+HUMAN: ____________________
+----------------------------------------------------------------------------------------------------

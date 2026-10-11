@@ -1,0 +1,20 @@
+{
+  "clip": 0.2,
+  "epochs": 1,
+  "kl_beta": 0.05,
+  "lr": 1.5e-06,
+  "phase": "role_only",
+  "round": 5,
+  "samples": 1012,
+  "start_adapter": "artifacts/v14_adaptive_g50_fresh_v3/checkpoints/round_04/policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.020488015276641243,
+      "loss": 0.020577819499126432,
+      "n": 1012,
+      "pg": 0.019553420638029183
+    }
+  ],
+  "v11_reference": "artifacts/v14_benign_policy"
+}

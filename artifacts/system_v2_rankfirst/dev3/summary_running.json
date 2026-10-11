@@ -1,0 +1,159 @@
+{
+  "completed": 3,
+  "top3_exact": 0,
+  "systems": [
+    {
+      "system_id": "rankv2_01",
+      "true_roles_eval_only": [
+        "data",
+        "design",
+        "writing"
+      ],
+      "final_ranking": [
+        "research",
+        "code",
+        "math",
+        "design",
+        "data",
+        "writing",
+        "planning",
+        "operations"
+      ],
+      "top3": [
+        "research",
+        "code",
+        "math"
+      ],
+      "top3_exact_eval_only": false,
+      "true_role_ranks_eval_only": {
+        "data": 5,
+        "writing": 6,
+        "design": 4
+      },
+      "worst_true_rank_eval_only": 6,
+      "mean_true_rank_eval_only": 5.0,
+      "final_belief": {
+        "code": 0.9463390433194517,
+        "writing": 0.1092832480817033,
+        "math": 0.8108927632810949,
+        "planning": 0.03160388873969062,
+        "research": 0.9942945176409603,
+        "data": 0.1270248833779739,
+        "design": 0.6425811119789535,
+        "operations": 0.02941462580565959
+      },
+      "final_logbf": {
+        "code": 2.8699152281878124,
+        "writing": -2.0980833599046433,
+        "math": 1.4558215734038267,
+        "planning": -3.4223610350180746,
+        "research": 5.160605928217278,
+        "data": -1.9275240527602941,
+        "design": 0.5865846033894742,
+        "operations": -3.4964073410010776
+      }
+    },
+    {
+      "system_id": "rankv2_02",
+      "true_roles_eval_only": [
+        "math",
+        "planning",
+        "research"
+      ],
+      "final_ranking": [
+        "research",
+        "code",
+        "writing",
+        "operations",
+        "math",
+        "data",
+        "planning",
+        "design"
+      ],
+      "top3": [
+        "research",
+        "code",
+        "writing"
+      ],
+      "top3_exact_eval_only": false,
+      "true_role_ranks_eval_only": {
+        "math": 5,
+        "planning": 7,
+        "research": 1
+      },
+      "worst_true_rank_eval_only": 7,
+      "mean_true_rank_eval_only": 4.333333333333333,
+      "final_belief": {
+        "code": 0.8359042601069475,
+        "writing": 0.8331853344955734,
+        "math": 0.5079674150343955,
+        "planning": 0.37609510744023983,
+        "research": 0.9561438794619133,
+        "data": 0.39904778714243555,
+        "design": 0.1339202417560662,
+        "operations": 0.5926870642904616
+      },
+      "final_logbf": {
+        "code": 1.628064047796728,
+        "writing": 1.6083726990622886,
+        "math": 0.03187235798399923,
+        "planning": -0.5061558842589411,
+        "research": 3.081994115202673,
+        "data": -0.40943424166509473,
+        "design": -1.8667325919433353,
+        "operations": 0.37508476969147764
+      }
+    },
+    {
+      "system_id": "rankv2_03",
+      "true_roles_eval_only": [
+        "code",
+        "design",
+        "operations"
+      ],
+      "final_ranking": [
+        "code",
+        "design",
+        "data",
+        "math",
+        "operations",
+        "research",
+        "planning",
+        "writing"
+      ],
+      "top3": [
+        "code",
+        "design",
+        "data"
+      ],
+      "top3_exact_eval_only": false,
+      "true_role_ranks_eval_only": {
+        "code": 1,
+        "operations": 5,
+        "design": 2
+      },
+      "worst_true_rank_eval_only": 5,
+      "mean_true_rank_eval_only": 2.6666666666666665,
+      "final_belief": {
+        "code": 0.8476226969238659,
+        "writing": 0.06598708173268213,
+        "math": 0.5235480084390602,
+        "planning": 0.08994831036613785,
+        "research": 0.12712854691991002,
+        "data": 0.5913628063060793,
+        "design": 0.6034348987607826,
+        "operations": 0.4301000934441909
+      },
+      "final_logbf": {
+        "code": 1.7160759016923497,
+        "writing": -2.6500312777089667,
+        "math": 0.09426176698532918,
+        "planning": -2.3142662236182856,
+        "research": -1.9265895426456399,
+        "data": 0.36960200912232277,
+        "design": 0.41979794455590747,
+        "operations": -0.28144278582378424
+      }
+    }
+  ]
+}

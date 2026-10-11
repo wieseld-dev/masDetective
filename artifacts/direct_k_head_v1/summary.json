@@ -1,0 +1,1295 @@
+{
+  "n_systems": 571,
+  "k_distribution": {
+    "3": 172,
+    "4": 112,
+    "5": 146,
+    "6": 141
+  },
+  "stage_distribution": {
+    "1": {
+      "3": 48
+    },
+    "2": {
+      "3": 56
+    },
+    "3": {
+      "4": 20,
+      "3": 36
+    },
+    "4": {
+      "4": 32,
+      "3": 32
+    },
+    "5": {
+      "5": 36,
+      "4": 28
+    },
+    "6": {
+      "5": 40,
+      "4": 32
+    },
+    "7": {
+      "5": 35,
+      "6": 37
+    },
+    "8": {
+      "5": 35,
+      "6": 45
+    },
+    "9": {
+      "6": 26
+    },
+    "10": {
+      "6": 33
+    }
+  },
+  "stage_only_val_accuracy": 0.7017543859649122,
+  "stage_only_test_accuracy": 0.6434782608695652,
+  "majority_k": 3,
+  "majority_test_accuracy": 0.30434782608695654,
+  "budgets": {
+    "6": {
+      "selected_model": "full_extra_trees",
+      "validation": {
+        "accuracy": 0.5,
+        "mae": 0.8421052631578947,
+        "confusion": [
+          [
+            21,
+            1,
+            4,
+            9
+          ],
+          [
+            3,
+            7,
+            10,
+            2
+          ],
+          [
+            3,
+            6,
+            14,
+            6
+          ],
+          [
+            5,
+            2,
+            6,
+            15
+          ]
+        ],
+        "mean_true_k_probability": 0.33833134657415465,
+        "confidence_0.60_coverage": 0.07894736842105263,
+        "confidence_0.60_accuracy": 0.7777777777777778,
+        "confidence_0.70_coverage": 0.03508771929824561,
+        "confidence_0.70_accuracy": 0.75,
+        "confidence_0.80_coverage": 0.02631578947368421,
+        "confidence_0.80_accuracy": 1.0,
+        "confidence_0.90_coverage": 0.0,
+        "confidence_0.90_accuracy": null
+      },
+      "test": {
+        "accuracy": 0.4,
+        "mae": 0.991304347826087,
+        "confusion": [
+          [
+            16,
+            5,
+            3,
+            11
+          ],
+          [
+            9,
+            4,
+            6,
+            4
+          ],
+          [
+            2,
+            8,
+            11,
+            8
+          ],
+          [
+            7,
+            0,
+            6,
+            15
+          ]
+        ],
+        "mean_true_k_probability": 0.34240090096817233,
+        "confidence_0.60_coverage": 0.1391304347826087,
+        "confidence_0.60_accuracy": 0.6875,
+        "confidence_0.70_coverage": 0.0782608695652174,
+        "confidence_0.70_accuracy": 0.5555555555555556,
+        "confidence_0.80_coverage": 0.043478260869565216,
+        "confidence_0.80_accuracy": 0.8,
+        "confidence_0.90_coverage": 0.02608695652173913,
+        "confidence_0.90_accuracy": 1.0
+      },
+      "seen_fit": {
+        "accuracy": 1.0,
+        "mae": 0.0,
+        "confusion": [
+          [
+            137,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            89,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            117,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            113
+          ]
+        ],
+        "mean_true_k_probability": 0.8143052539651863,
+        "confidence_0.60_coverage": 0.9890350877192983,
+        "confidence_0.60_accuracy": 1.0,
+        "confidence_0.70_coverage": 0.9429824561403509,
+        "confidence_0.70_accuracy": 1.0,
+        "confidence_0.80_coverage": 0.6030701754385965,
+        "confidence_0.80_accuracy": 1.0,
+        "confidence_0.90_coverage": 0.10964912280701754,
+        "confidence_0.90_accuracy": 1.0
+      },
+      "all_validation_candidates": [
+        {
+          "name": "full_extra_trees",
+          "mode": "full",
+          "model_name": "extra_trees",
+          "val": {
+            "accuracy": 0.5,
+            "mae": 0.8421052631578947,
+            "confusion": [
+              [
+                21,
+                1,
+                4,
+                9
+              ],
+              [
+                3,
+                7,
+                10,
+                2
+              ],
+              [
+                3,
+                6,
+                14,
+                6
+              ],
+              [
+                5,
+                2,
+                6,
+                15
+              ]
+            ],
+            "mean_true_k_probability": 0.33833134657415465,
+            "confidence_0.60_coverage": 0.07894736842105263,
+            "confidence_0.60_accuracy": 0.7777777777777778,
+            "confidence_0.70_coverage": 0.03508771929824561,
+            "confidence_0.70_accuracy": 0.75,
+            "confidence_0.80_coverage": 0.02631578947368421,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.0,
+            "confidence_0.90_accuracy": null
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.8108847849536607,
+            "confidence_0.60_coverage": 0.9941520467836257,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.9298245614035088,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.5906432748538012,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.1023391812865497,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "shape_random_forest",
+          "mode": "shape",
+          "model_name": "random_forest",
+          "val": {
+            "accuracy": 0.45614035087719296,
+            "mae": 1.0175438596491229,
+            "confusion": [
+              [
+                18,
+                1,
+                4,
+                12
+              ],
+              [
+                2,
+                7,
+                11,
+                2
+              ],
+              [
+                4,
+                7,
+                14,
+                4
+              ],
+              [
+                8,
+                4,
+                3,
+                13
+              ]
+            ],
+            "mean_true_k_probability": 0.3353722389106363,
+            "confidence_0.60_coverage": 0.08771929824561403,
+            "confidence_0.60_accuracy": 0.8,
+            "confidence_0.70_coverage": 0.043859649122807015,
+            "confidence_0.70_accuracy": 0.8,
+            "confidence_0.80_coverage": 0.03508771929824561,
+            "confidence_0.80_accuracy": 0.75,
+            "confidence_0.90_coverage": 0.0,
+            "confidence_0.90_accuracy": null
+          },
+          "train": {
+            "accuracy": 0.9970760233918129,
+            "mae": 0.005847953216374269,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                87,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.6614087856856596,
+            "confidence_0.60_coverage": 0.7368421052631579,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.2894736842105263,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.08771929824561403,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.014619883040935672,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "full_random_forest",
+          "mode": "full",
+          "model_name": "random_forest",
+          "val": {
+            "accuracy": 0.43859649122807015,
+            "mae": 0.8771929824561403,
+            "confusion": [
+              [
+                21,
+                1,
+                4,
+                9
+              ],
+              [
+                3,
+                4,
+                14,
+                1
+              ],
+              [
+                1,
+                8,
+                11,
+                9
+              ],
+              [
+                4,
+                4,
+                6,
+                14
+              ]
+            ],
+            "mean_true_k_probability": 0.3381026089119267,
+            "confidence_0.60_coverage": 0.07017543859649122,
+            "confidence_0.60_accuracy": 0.75,
+            "confidence_0.70_coverage": 0.043859649122807015,
+            "confidence_0.70_accuracy": 0.8,
+            "confidence_0.80_coverage": 0.02631578947368421,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.0,
+            "confidence_0.90_accuracy": null
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.6682413849239794,
+            "confidence_0.60_coverage": 0.7953216374269005,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.31871345029239767,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.07017543859649122,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.02046783625730994,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "full_logreg",
+          "mode": "full",
+          "model_name": "logreg",
+          "val": {
+            "accuracy": 0.43859649122807015,
+            "mae": 0.8859649122807017,
+            "confusion": [
+              [
+                17,
+                7,
+                4,
+                7
+              ],
+              [
+                3,
+                7,
+                7,
+                5
+              ],
+              [
+                3,
+                5,
+                13,
+                8
+              ],
+              [
+                4,
+                3,
+                8,
+                13
+              ]
+            ],
+            "mean_true_k_probability": 0.4088257158251582,
+            "confidence_0.60_coverage": 0.7017543859649122,
+            "confidence_0.60_accuracy": 0.4875,
+            "confidence_0.70_coverage": 0.5701754385964912,
+            "confidence_0.70_accuracy": 0.47692307692307695,
+            "confidence_0.80_coverage": 0.41228070175438597,
+            "confidence_0.80_accuracy": 0.46808510638297873,
+            "confidence_0.90_coverage": 0.30701754385964913,
+            "confidence_0.90_accuracy": 0.4857142857142857
+          },
+          "train": {
+            "accuracy": 0.9912280701754386,
+            "mae": 0.014619883040935672,
+            "confusion": [
+              [
+                100,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                84
+              ]
+            ],
+            "mean_true_k_probability": 0.8296525727329467,
+            "confidence_0.60_coverage": 0.9152046783625731,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.7923976608187134,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.6783625730994152,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.40058479532163743,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "shape_extra_trees",
+          "mode": "shape",
+          "model_name": "extra_trees",
+          "val": {
+            "accuracy": 0.4298245614035088,
+            "mae": 1.0350877192982457,
+            "confusion": [
+              [
+                18,
+                0,
+                6,
+                11
+              ],
+              [
+                2,
+                8,
+                10,
+                2
+              ],
+              [
+                3,
+                8,
+                11,
+                7
+              ],
+              [
+                8,
+                4,
+                4,
+                12
+              ]
+            ],
+            "mean_true_k_probability": 0.3274824596890561,
+            "confidence_0.60_coverage": 0.06140350877192982,
+            "confidence_0.60_accuracy": 0.7142857142857143,
+            "confidence_0.70_coverage": 0.043859649122807015,
+            "confidence_0.70_accuracy": 0.6,
+            "confidence_0.80_coverage": 0.02631578947368421,
+            "confidence_0.80_accuracy": 0.6666666666666666,
+            "confidence_0.90_coverage": 0.008771929824561403,
+            "confidence_0.90_accuracy": 1.0
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.7826732807063375,
+            "confidence_0.60_coverage": 0.97953216374269,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.827485380116959,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.4239766081871345,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.06432748538011696,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "shape_logreg",
+          "mode": "shape",
+          "model_name": "logreg",
+          "val": {
+            "accuracy": 0.3684210526315789,
+            "mae": 1.0789473684210527,
+            "confusion": [
+              [
+                13,
+                6,
+                6,
+                10
+              ],
+              [
+                4,
+                8,
+                7,
+                3
+              ],
+              [
+                2,
+                9,
+                10,
+                8
+              ],
+              [
+                8,
+                4,
+                5,
+                11
+              ]
+            ],
+            "mean_true_k_probability": 0.33502507996500325,
+            "confidence_0.60_coverage": 0.4824561403508772,
+            "confidence_0.60_accuracy": 0.32727272727272727,
+            "confidence_0.70_coverage": 0.30701754385964913,
+            "confidence_0.70_accuracy": 0.4,
+            "confidence_0.80_coverage": 0.18421052631578946,
+            "confidence_0.80_accuracy": 0.38095238095238093,
+            "confidence_0.90_coverage": 0.043859649122807015,
+            "confidence_0.90_accuracy": 0.8
+          },
+          "train": {
+            "accuracy": 0.6929824561403509,
+            "mae": 0.4766081871345029,
+            "confusion": [
+              [
+                74,
+                11,
+                8,
+                9
+              ],
+              [
+                5,
+                49,
+                9,
+                4
+              ],
+              [
+                4,
+                18,
+                56,
+                10
+              ],
+              [
+                6,
+                12,
+                9,
+                58
+              ]
+            ],
+            "mean_true_k_probability": 0.5342612093347207,
+            "confidence_0.60_coverage": 0.45321637426900585,
+            "confidence_0.60_accuracy": 0.896774193548387,
+            "confidence_0.70_coverage": 0.30409356725146197,
+            "confidence_0.70_accuracy": 0.9615384615384616,
+            "confidence_0.80_coverage": 0.17251461988304093,
+            "confidence_0.80_accuracy": 0.9830508474576272,
+            "confidence_0.90_coverage": 0.08187134502923976,
+            "confidence_0.90_accuracy": 1.0
+          }
+        }
+      ],
+      "model_path": "artifacts/direct_k_head_v1/best_budget_6.joblib"
+    },
+    "12": {
+      "selected_model": "full_random_forest",
+      "validation": {
+        "accuracy": 0.4649122807017544,
+        "mae": 0.8070175438596491,
+        "confusion": [
+          [
+            23,
+            2,
+            4,
+            6
+          ],
+          [
+            7,
+            2,
+            10,
+            3
+          ],
+          [
+            4,
+            4,
+            16,
+            5
+          ],
+          [
+            3,
+            2,
+            11,
+            12
+          ]
+        ],
+        "mean_true_k_probability": 0.3852769969943534,
+        "confidence_0.60_coverage": 0.16666666666666666,
+        "confidence_0.60_accuracy": 0.8947368421052632,
+        "confidence_0.70_coverage": 0.11403508771929824,
+        "confidence_0.70_accuracy": 0.9230769230769231,
+        "confidence_0.80_coverage": 0.07017543859649122,
+        "confidence_0.80_accuracy": 0.875,
+        "confidence_0.90_coverage": 0.017543859649122806,
+        "confidence_0.90_accuracy": 1.0
+      },
+      "test": {
+        "accuracy": 0.5130434782608696,
+        "mae": 0.8173913043478261,
+        "confusion": [
+          [
+            22,
+            3,
+            6,
+            4
+          ],
+          [
+            7,
+            6,
+            8,
+            2
+          ],
+          [
+            2,
+            3,
+            19,
+            5
+          ],
+          [
+            10,
+            0,
+            6,
+            12
+          ]
+        ],
+        "mean_true_k_probability": 0.38082069984459854,
+        "confidence_0.60_coverage": 0.20869565217391303,
+        "confidence_0.60_accuracy": 0.75,
+        "confidence_0.70_coverage": 0.12173913043478261,
+        "confidence_0.70_accuracy": 0.6428571428571429,
+        "confidence_0.80_coverage": 0.05217391304347826,
+        "confidence_0.80_accuracy": 1.0,
+        "confidence_0.90_coverage": 0.008695652173913044,
+        "confidence_0.90_accuracy": 1.0
+      },
+      "seen_fit": {
+        "accuracy": 1.0,
+        "mae": 0.0,
+        "confusion": [
+          [
+            137,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            89,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            117,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            113
+          ]
+        ],
+        "mean_true_k_probability": 0.6938988729290697,
+        "confidence_0.60_coverage": 0.8333333333333334,
+        "confidence_0.60_accuracy": 1.0,
+        "confidence_0.70_coverage": 0.40789473684210525,
+        "confidence_0.70_accuracy": 1.0,
+        "confidence_0.80_coverage": 0.16228070175438597,
+        "confidence_0.80_accuracy": 1.0,
+        "confidence_0.90_coverage": 0.07675438596491228,
+        "confidence_0.90_accuracy": 1.0
+      },
+      "all_validation_candidates": [
+        {
+          "name": "full_random_forest",
+          "mode": "full",
+          "model_name": "random_forest",
+          "val": {
+            "accuracy": 0.4649122807017544,
+            "mae": 0.8070175438596491,
+            "confusion": [
+              [
+                23,
+                2,
+                4,
+                6
+              ],
+              [
+                7,
+                2,
+                10,
+                3
+              ],
+              [
+                4,
+                4,
+                16,
+                5
+              ],
+              [
+                3,
+                2,
+                11,
+                12
+              ]
+            ],
+            "mean_true_k_probability": 0.3852769969943534,
+            "confidence_0.60_coverage": 0.16666666666666666,
+            "confidence_0.60_accuracy": 0.8947368421052632,
+            "confidence_0.70_coverage": 0.11403508771929824,
+            "confidence_0.70_accuracy": 0.9230769230769231,
+            "confidence_0.80_coverage": 0.07017543859649122,
+            "confidence_0.80_accuracy": 0.875,
+            "confidence_0.90_coverage": 0.017543859649122806,
+            "confidence_0.90_accuracy": 1.0
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.6903221621638522,
+            "confidence_0.60_coverage": 0.8333333333333334,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.41812865497076024,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.13450292397660818,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.05847953216374269,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "shape_extra_trees",
+          "mode": "shape",
+          "model_name": "extra_trees",
+          "val": {
+            "accuracy": 0.4649122807017544,
+            "mae": 0.8508771929824561,
+            "confusion": [
+              [
+                23,
+                1,
+                4,
+                7
+              ],
+              [
+                6,
+                8,
+                6,
+                2
+              ],
+              [
+                4,
+                10,
+                11,
+                4
+              ],
+              [
+                4,
+                4,
+                9,
+                11
+              ]
+            ],
+            "mean_true_k_probability": 0.37710997944547037,
+            "confidence_0.60_coverage": 0.19298245614035087,
+            "confidence_0.60_accuracy": 0.8636363636363636,
+            "confidence_0.70_coverage": 0.11403508771929824,
+            "confidence_0.70_accuracy": 0.8461538461538461,
+            "confidence_0.80_coverage": 0.05263157894736842,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.02631578947368421,
+            "confidence_0.90_accuracy": 1.0
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.7988536738889442,
+            "confidence_0.60_coverage": 0.9678362573099415,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.8801169590643275,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.5058479532163743,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.11695906432748537,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "shape_random_forest",
+          "mode": "shape",
+          "model_name": "random_forest",
+          "val": {
+            "accuracy": 0.4473684210526316,
+            "mae": 0.8947368421052632,
+            "confusion": [
+              [
+                22,
+                2,
+                3,
+                8
+              ],
+              [
+                6,
+                4,
+                9,
+                3
+              ],
+              [
+                3,
+                8,
+                14,
+                4
+              ],
+              [
+                5,
+                4,
+                8,
+                11
+              ]
+            ],
+            "mean_true_k_probability": 0.3843657920122496,
+            "confidence_0.60_coverage": 0.18421052631578946,
+            "confidence_0.60_accuracy": 0.8095238095238095,
+            "confidence_0.70_coverage": 0.12280701754385964,
+            "confidence_0.70_accuracy": 0.9285714285714286,
+            "confidence_0.80_coverage": 0.08771929824561403,
+            "confidence_0.80_accuracy": 0.9,
+            "confidence_0.90_coverage": 0.02631578947368421,
+            "confidence_0.90_accuracy": 1.0
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.6865248966680786,
+            "confidence_0.60_coverage": 0.8011695906432749,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.4152046783625731,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.13450292397660818,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.07602339181286549,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "full_extra_trees",
+          "mode": "full",
+          "model_name": "extra_trees",
+          "val": {
+            "accuracy": 0.4298245614035088,
+            "mae": 0.9210526315789473,
+            "confusion": [
+              [
+                23,
+                2,
+                4,
+                6
+              ],
+              [
+                6,
+                3,
+                10,
+                3
+              ],
+              [
+                8,
+                5,
+                12,
+                4
+              ],
+              [
+                6,
+                1,
+                10,
+                11
+              ]
+            ],
+            "mean_true_k_probability": 0.3806919902068889,
+            "confidence_0.60_coverage": 0.14912280701754385,
+            "confidence_0.60_accuracy": 0.8823529411764706,
+            "confidence_0.70_coverage": 0.09649122807017543,
+            "confidence_0.70_accuracy": 0.9090909090909091,
+            "confidence_0.80_coverage": 0.06140350877192982,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.017543859649122806,
+            "confidence_0.90_accuracy": 1.0
+          },
+          "train": {
+            "accuracy": 1.0,
+            "mae": 0.0,
+            "confusion": [
+              [
+                102,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                88,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                85
+              ]
+            ],
+            "mean_true_k_probability": 0.8239833819019399,
+            "confidence_0.60_coverage": 0.9853801169590644,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.9415204678362573,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.6842105263157895,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.11695906432748537,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "full_logreg",
+          "mode": "full",
+          "model_name": "logreg",
+          "val": {
+            "accuracy": 0.42105263157894735,
+            "mae": 1.0789473684210527,
+            "confusion": [
+              [
+                19,
+                5,
+                3,
+                8
+              ],
+              [
+                4,
+                6,
+                6,
+                6
+              ],
+              [
+                6,
+                2,
+                14,
+                7
+              ],
+              [
+                10,
+                6,
+                3,
+                9
+              ]
+            ],
+            "mean_true_k_probability": 0.4022734646060588,
+            "confidence_0.60_coverage": 0.7017543859649122,
+            "confidence_0.60_accuracy": 0.45,
+            "confidence_0.70_coverage": 0.5789473684210527,
+            "confidence_0.70_accuracy": 0.48484848484848486,
+            "confidence_0.80_coverage": 0.4473684210526316,
+            "confidence_0.80_accuracy": 0.5490196078431373,
+            "confidence_0.90_coverage": 0.34210526315789475,
+            "confidence_0.90_accuracy": 0.48717948717948717
+          },
+          "train": {
+            "accuracy": 0.9883040935672515,
+            "mae": 0.02046783625730994,
+            "confusion": [
+              [
+                101,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                67,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                86,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                84
+              ]
+            ],
+            "mean_true_k_probability": 0.8502562291989206,
+            "confidence_0.60_coverage": 0.9473684210526315,
+            "confidence_0.60_accuracy": 1.0,
+            "confidence_0.70_coverage": 0.8801169590643275,
+            "confidence_0.70_accuracy": 1.0,
+            "confidence_0.80_coverage": 0.695906432748538,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.43567251461988304,
+            "confidence_0.90_accuracy": 1.0
+          }
+        },
+        {
+          "name": "shape_logreg",
+          "mode": "shape",
+          "model_name": "logreg",
+          "val": {
+            "accuracy": 0.37719298245614036,
+            "mae": 1.0087719298245614,
+            "confusion": [
+              [
+                17,
+                5,
+                3,
+                10
+              ],
+              [
+                7,
+                4,
+                8,
+                3
+              ],
+              [
+                2,
+                7,
+                11,
+                9
+              ],
+              [
+                6,
+                4,
+                7,
+                11
+              ]
+            ],
+            "mean_true_k_probability": 0.3415094213330456,
+            "confidence_0.60_coverage": 0.5789473684210527,
+            "confidence_0.60_accuracy": 0.42424242424242425,
+            "confidence_0.70_coverage": 0.37719298245614036,
+            "confidence_0.70_accuracy": 0.46511627906976744,
+            "confidence_0.80_coverage": 0.23684210526315788,
+            "confidence_0.80_accuracy": 0.4444444444444444,
+            "confidence_0.90_coverage": 0.14035087719298245,
+            "confidence_0.90_accuracy": 0.5
+          },
+          "train": {
+            "accuracy": 0.7748538011695907,
+            "mae": 0.3567251461988304,
+            "confusion": [
+              [
+                85,
+                5,
+                7,
+                5
+              ],
+              [
+                5,
+                49,
+                10,
+                3
+              ],
+              [
+                3,
+                8,
+                69,
+                8
+              ],
+              [
+                6,
+                10,
+                7,
+                62
+              ]
+            ],
+            "mean_true_k_probability": 0.5736762809550815,
+            "confidence_0.60_coverage": 0.5029239766081871,
+            "confidence_0.60_accuracy": 0.9069767441860465,
+            "confidence_0.70_coverage": 0.3508771929824561,
+            "confidence_0.70_accuracy": 0.9583333333333334,
+            "confidence_0.80_coverage": 0.20760233918128654,
+            "confidence_0.80_accuracy": 1.0,
+            "confidence_0.90_coverage": 0.1111111111111111,
+            "confidence_0.90_accuracy": 1.0
+          }
+        }
+      ],
+      "model_path": "artifacts/direct_k_head_v1/best_budget_12.joblib"
+    }
+  }
+}

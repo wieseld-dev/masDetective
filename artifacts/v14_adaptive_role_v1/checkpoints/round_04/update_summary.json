@@ -1,0 +1,27 @@
+{
+  "clip": 0.2,
+  "epochs": 2,
+  "kl_beta": 0.05,
+  "lr": 3e-06,
+  "phase": "role_only",
+  "round": 4,
+  "samples": 144,
+  "start_adapter": "artifacts/v14_adaptive_role_v1/checkpoints/round_03/policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.027713759905762143,
+      "loss": 0.01804207828697852,
+      "n": 144,
+      "pg": 0.01665639227333789
+    },
+    {
+      "epoch": 2,
+      "kl": 0.027350773413976032,
+      "loss": 0.01768518492786421,
+      "n": 144,
+      "pg": 0.01631764687287311
+    }
+  ],
+  "v11_reference": "artifacts/v14_benign_policy"
+}

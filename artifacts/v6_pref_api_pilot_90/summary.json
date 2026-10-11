@@ -1,0 +1,32 @@
+{
+  "gold_ids": [
+    2,
+    16,
+    32
+  ],
+  "families": [
+    "DIRECTION",
+    "META",
+    "DANGLING"
+  ],
+  "api_calls": 9,
+  "candidates": 90,
+  "counts_per_gold": {
+    "2": 30,
+    "16": 30,
+    "32": 30
+  },
+  "counts_per_family": {
+    "DIRECTION": 30,
+    "META": 30,
+    "DANGLING": 30
+  },
+  "minimal_count": 54,
+  "diverse_count": 36,
+  "mean_word_ratio": 0.8238047138047138,
+  "min_word_ratio": 0.3333333333333333,
+  "max_word_ratio": 1.4,
+  "gold_unchanged": true,
+  "local_generator_loaded": false,
+  "local_generator_modified": false
+}

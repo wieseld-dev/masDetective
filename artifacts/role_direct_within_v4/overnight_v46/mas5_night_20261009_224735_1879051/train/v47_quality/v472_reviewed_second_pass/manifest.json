@@ -1,0 +1,13 @@
+{
+  "status": "TEXT_REVIEW_READY_FOR_REGENERATION",
+  "kept_previous": 61,
+  "kept_new": 41,
+  "approved_so_far": 102,
+  "needs_regeneration": 58,
+  "original_candidate_sha256": "3a3cd361e0aa14aa27d8ac7332ad8db68267823b2d9bc1b72bdacdff1213acf6",
+  "review_decisions_sha256": "f73100bb275e70f25cbf2f41071d2b026e42b457ce71cb9471ed8d2e01c7df9d",
+  "approved_sha256": "7fa4ca9c69b41773c2836eef57bd3fe076064a2492e2ea4f7a2d8d53b9f079c2",
+  "no_mas_or_model_execution": true,
+  "discrimination_verified": false,
+  "warning": "Use a separate output folder when generating replacements. Do not overwrite the original 160 candidate bank."
+}

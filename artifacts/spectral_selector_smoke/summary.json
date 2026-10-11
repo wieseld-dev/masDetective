@@ -1,0 +1,10 @@
+{
+  "num_states": 30,
+  "mean_state_spearman": -0.022222222222222233,
+  "mean_chosen_oracle_gain": 1.3207582672437033,
+  "mean_oracle_best_gain": 1.7141322533289591,
+  "mean_regret": 0.3933739860852559,
+  "top1_oracle_hit_rate": 0.06666666666666667,
+  "mean_random_oracle_gain": 1.3553449551264445,
+  "mean_current_selector_oracle_gain": NaN
+}

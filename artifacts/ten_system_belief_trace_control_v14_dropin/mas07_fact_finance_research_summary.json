@@ -1,0 +1,83 @@
+{
+  "system_id": "mas07_fact_finance_research",
+  "true_roles": [
+    "fact_checking",
+    "financial_analysis",
+    "research"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.21733444701904636,
+    "4": 0.21253745712074523,
+    "5": 0.2395716321028272,
+    "6": 0.33055646375738124
+  },
+  "final_role_probs": {
+    "code": 0.25376754903181775,
+    "writing": 0.31463641397600706,
+    "math": 0.21411643954869036,
+    "planning": 0.2277523721011029,
+    "research": 0.1986423729943747,
+    "data": 0.2525397161576164,
+    "design": 0.25925515867570964,
+    "operations": 0.22500040211583913,
+    "qa_testing": 0.22068384918501263,
+    "translation": 0.37485723145918637,
+    "financial_analysis": 0.19766300193918712,
+    "database_design": 0.3142608942579801,
+    "accessibility_review": 0.21621376211349908,
+    "fact_checking": 0.23070779669126718,
+    "requirements_analysis": 0.1514261490732043,
+    "incident_management": 0.192065468653537,
+    "experiment_design": 0.3275918604213566,
+    "risk_assessment": 0.19334035369760602,
+    "documentation": 0.13922415157079404,
+    "customer_support_triage": 0.1796051689347556
+  },
+  "belief_auc": 0.392156862745098,
+  "present_vs_absent_correct": 20,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.39215686274509803,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "translation",
+    "experiment_design",
+    "writing"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.19766300193918712,
+  "max_false_belief": 0.37485723145918637,
+  "ranking": [
+    "translation",
+    "experiment_design",
+    "writing",
+    "database_design",
+    "design",
+    "code",
+    "data",
+    "fact_checking",
+    "planning",
+    "operations",
+    "qa_testing",
+    "accessibility_review",
+    "math",
+    "research",
+    "financial_analysis",
+    "risk_assessment",
+    "incident_management",
+    "customer_support_triage",
+    "requirements_analysis",
+    "documentation"
+  ],
+  "predicted_k": 6,
+  "predicted_k_correct": false
+}

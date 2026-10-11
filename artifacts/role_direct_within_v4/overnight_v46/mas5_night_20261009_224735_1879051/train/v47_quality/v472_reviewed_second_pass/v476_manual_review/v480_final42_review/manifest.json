@@ -1,0 +1,16 @@
+{
+  "status": "TEXT_REVIEWED_PENDING_MATCHED_EVALUATION",
+  "approved_previous": 118,
+  "approved_from_final42": 16,
+  "approved_total": 134,
+  "rejected_from_final42": 26,
+  "open_slots": 26,
+  "source_full_bank_sha256": "5069ae8dfa4ce1c4f8df97b4c7f3f924bab06eb87f1a657d2f80cc45f712260c",
+  "source_approved_sha256": "8556b5b1f96102b800b9fc6f63d6a0bbc10cfdf1d0781f037a8e52343c43b865",
+  "review_sha256": "bb0244eb8de6f4a03910158c4adcd1207ea707d2e22d34fee5d32eb86bfc4ac7",
+  "approved_134_sha256": "6cd3270226342ed69f637e55ef31e3f7544af9d28e2423b9926689479f9a0e28",
+  "no_mas_calls": true,
+  "discrimination_verified": false,
+  "approved_path": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/overnight_v46/mas5_night_20261009_224735_1879051/train/v47_quality/v472_reviewed_second_pass/v476_manual_review/v480_final42_review/approved_134.jsonl",
+  "rejected_path": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/overnight_v46/mas5_night_20261009_224735_1879051/train/v47_quality/v472_reviewed_second_pass/v476_manual_review/v480_final42_review/rejected_26.jsonl"
+}

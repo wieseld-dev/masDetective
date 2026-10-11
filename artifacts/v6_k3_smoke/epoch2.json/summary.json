@@ -1,0 +1,51 @@
+{
+  "true_k": 3,
+  "pred_k": 6,
+  "p_k3": 0.22189730668419352,
+  "true_roles": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "top3_predicted": [
+    "code",
+    "experiment_design",
+    "math"
+  ],
+  "k_correct": false,
+  "top3_exact": false,
+  "final_k_probs": {
+    "3": 0.22189730668419352,
+    "4": 0.24045072096513437,
+    "5": 0.237871459761493,
+    "6": 0.29978051258917915
+  },
+  "final_role_probs": {
+    "code": 0.44038021145029,
+    "writing": 0.24499260475866708,
+    "math": 0.25487227520529554,
+    "planning": 0.21580666285194897,
+    "research": 0.23366184225168987,
+    "data": 0.184780725544182,
+    "design": 0.19359009290694684,
+    "operations": 0.23475415677282388,
+    "qa_testing": 0.20988871180848773,
+    "translation": 0.19195794292516383,
+    "financial_analysis": 0.22226040590045562,
+    "database_design": 0.18670531996223877,
+    "accessibility_review": 0.20772633543290023,
+    "fact_checking": 0.2328773965509902,
+    "requirements_analysis": 0.18886518231535865,
+    "incident_management": 0.21572303713488372,
+    "experiment_design": 0.3094529571236226,
+    "risk_assessment": 0.23511964322059248,
+    "documentation": 0.23395715508092757,
+    "customer_support_triage": 0.1781625190581925
+  },
+  "rounds": 5,
+  "group_size": 8,
+  "mode": "mixed",
+  "adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "inference_inputs": "query + final_output only",
+  "trace_usage": "evaluation only"
+}

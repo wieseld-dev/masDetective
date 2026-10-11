@@ -1,0 +1,15 @@
+{
+  "chosen_is_best_fraction": 1.0,
+  "mean_best_reward": 1.1781803496889491,
+  "mean_chosen_reward": 1.1781803496889491,
+  "mean_role_log_loss": 0.5792270932962302,
+  "mean_selector_regret": 0.0,
+  "pool_positive_fraction": 0.75,
+  "round": 3,
+  "selector_model": null,
+  "split": "dev",
+  "stage": 7,
+  "systems": 16,
+  "train_rows": 0,
+  "valid_state_updates": 16
+}

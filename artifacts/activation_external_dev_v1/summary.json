@@ -1,0 +1,70 @@
+{
+  "train_rows": 1133,
+  "dev_rows": 46,
+  "dev_systems": 8,
+  "results": [
+    {
+      "name": "role_only",
+      "positive_auc": 0.5497076023391813,
+      "global_spearman": 0.038153679758337236,
+      "mean_within_system_spearman": -0.17639728340464444,
+      "mse": 0.16206351921229134,
+      "pearson": -0.05845739024070507,
+      "predicted_positive_accuracy": 0.5434782608695652
+    },
+    {
+      "name": "role_plus_resid_L16",
+      "positive_auc": 0.5029239766081871,
+      "global_spearman": -0.044711686709836565,
+      "mean_within_system_spearman": -0.13214285714285715,
+      "mse": 0.33975567411489643,
+      "pearson": -0.03708591720051869,
+      "predicted_positive_accuracy": 0.5652173913043478,
+      "incremental_vs_role_only": {
+        "mean_mse_reduction": -0.17486443214510858,
+        "systems_improved": 1,
+        "systems_worse": 7,
+        "bootstrap_95_ci": [
+          -0.28496707678440863,
+          -0.0712131837198663
+        ]
+      }
+    },
+    {
+      "name": "role_plus_resid_L24",
+      "positive_auc": 0.5633528265107213,
+      "global_spearman": 0.12759790317607153,
+      "mean_within_system_spearman": 0.11071428571428574,
+      "mse": 0.5848855112386604,
+      "pearson": 0.19552295567686734,
+      "predicted_positive_accuracy": 0.5,
+      "incremental_vs_role_only": {
+        "mean_mse_reduction": -0.44665679638378564,
+        "systems_improved": 0,
+        "systems_worse": 8,
+        "bootstrap_95_ci": [
+          -0.7909973269518604,
+          -0.21400449343041975
+        ]
+      }
+    },
+    {
+      "name": "role_plus_resid_L16_L24",
+      "positive_auc": 0.5614035087719299,
+      "global_spearman": 0.13314831945729264,
+      "mean_within_system_spearman": -0.025,
+      "mse": 0.42726696407669407,
+      "pearson": 0.2018289073927699,
+      "predicted_positive_accuracy": 0.5434782608695652,
+      "incremental_vs_role_only": {
+        "mean_mse_reduction": -0.2837558667689348,
+        "systems_improved": 1,
+        "systems_worse": 7,
+        "bootstrap_95_ci": [
+          -0.5269355104352629,
+          -0.09649255099768417
+        ]
+      }
+    }
+  ]
+}

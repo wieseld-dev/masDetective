@@ -1,0 +1,262 @@
+====================================================================================================
+CONSTANTS
+====================================================================================================
+
+SYSTEM
+TRAIN : "You select the most diagnostically useful benign probe "
+    "for black-box inference of an application's installed roles. "
+    "Compare the candidate probes against the current public belief "
+    "and previous visible interactions. "
+    "Do not answer the probes. "
+    "Select the probe expected to best separate plausible competing "
+    "role configurations and improve the role ranking."
+ONLINE: "You select the most diagnostically useful benign probe "
+    "for black-box inference of an application's installed roles. "
+    "Compare the candidate probes against the current public belief "
+    "and previous visible interactions. "
+    "Do not answer the probes. "
+    "Select the probe expected to best separate plausible competing "
+    "role configurations and improve the role ranking."
+SAME  : True
+
+LETTERS
+TRAIN : list(
+    "ABCDEFGH"
+)
+ONLINE: list("ABCDEFGH")
+SAME  : False
+
+MAX_LEN
+TRAIN : int(
+    os.environ.get(
+        "MAX_LEN",
+        "1024",
+    )
+)
+ONLINE: None
+SAME  : False
+
+EVAL_PERMS
+TRAIN : int(
+    os.environ.get(
+        "EVAL_PERMS",
+        "3",
+    )
+)
+ONLINE: None
+SAME  : False
+
+====================================================================================================
+FUNCTION DIFFS
+====================================================================================================
+
+
+
+####################################################################################################
+stable_seed
+####################################################################################################
+TRAIN SIGNATURE : []
+ONLINE SIGNATURE: []
+
+STRING LITERALS ONLY IN TRAINER:
+
+STRING LITERALS ONLY IN ONLINE:
+
+UNIFIED SOURCE DIFF:
+
+
+
+####################################################################################################
+role_block
+####################################################################################################
+TRAIN SIGNATURE : ['g']
+ONLINE SIGNATURE: ['state']
+
+STRING LITERALS ONLY IN TRAINER:
+   'role_probs_before'
+
+STRING LITERALS ONLY IN ONLINE:
+   'role_probs'
+
+UNIFIED SOURCE DIFF:
+--- TRAIN::role_block
++++ ONLINE::role_block
+@@ -1,10 +1,10 @@
+-def role_block(g):
++def role_block(state):
+     rp = {
+         str(k): float(v)
+         for k, v
+-        in g[
+-            "role_probs_before"
+-        ].items()
++        in dict(
++            state["role_probs"]
++        ).items()
+     }
+ 
+     ordered = sorted(
+
+
+
+####################################################################################################
+render_user
+####################################################################################################
+TRAIN SIGNATURE : ['g', 'order', 'history_chars', 'query_chars']
+ONLINE SIGNATURE: ['state', 'candidates', 'order', 'history_chars', 'query_chars']
+
+STRING LITERALS ONLY IN TRAINER:
+   '- none'
+   'history_text'
+   'queries'
+
+STRING LITERALS ONLY IN ONLINE:
+   'query'
+
+UNIFIED SOURCE DIFF:
+--- TRAIN::render_user
++++ ONLINE::render_user
+@@ -1,34 +1,32 @@
+ def render_user(
+-    g,
++    state,
++    candidates,
+     order,
+     history_chars,
+     query_chars,
+ ):
+-    history = " ".join(
+-        str(
+-            g.get(
+-                "history_text",
+-                "- none",
+-            )
++    hist = " ".join(
++        history_text(
++            state
+         ).split()
+     )
+ 
+-    if len(history) > history_chars:
+-        history = (
+-            history[:history_chars]
++    if len(hist) > history_chars:
++        hist = (
++            hist[:history_chars]
+             + "..."
+         )
+ 
+-    candidates = []
++    lines = []
+ 
+     for display_i, original_i in enumerate(
+         order
+     ):
+         q = " ".join(
+             str(
+-                g["queries"][
++                candidates[
+                     original_i
+-                ]
++                ]["query"]
+             ).split()
+         )
+ 
+@@ -38,19 +36,19 @@
+                 + "..."
+             )
+ 
+-        candidates.append(
++        lines.append(
+             f"{LETTERS[display_i]}. {q}"
+         )
+ 
+     return (
+         "CURRENT ROLE BELIEF\n"
+-        + role_block(g)
++        + role_block(state)
+         + "\n\n"
+         + "RECENT PUBLIC HISTORY\n"
+-        + history
++        + hist
+         + "\n\n"
+         + "CANDIDATES\n"
+-        + "\n".join(candidates)
++        + "\n".join(lines)
+         + "\n\n"
+         + "Rank these probes comparatively. "
+           "Prefer the probe most likely to resolve current ambiguity, "
+
+
+
+####################################################################################################
+make_prompt
+####################################################################################################
+TRAIN SIGNATURE : ['g', 'order']
+ONLINE SIGNATURE: ['tokenizer', 'state', 'candidates', 'order', 'max_len']
+
+STRING LITERALS ONLY IN TRAINER:
+   ': state='
+   'Prompt cannot fit MAX_LEN='
+   'state_id'
+
+STRING LITERALS ONLY IN ONLINE:
+   'Unable to fit selector prompt inside max_len='
+
+UNIFIED SOURCE DIFF:
+--- TRAIN::make_prompt
++++ ONLINE::make_prompt
+@@ -1,6 +1,11 @@
+-def make_prompt(g, order):
+-    # NEVER silently truncate away belief/candidates.
+-    # Reduce optional history first.
++def make_prompt(
++    tokenizer,
++    state,
++    candidates,
++    order,
++    max_len,
++):
++    # Same explicit compression strategy as V4.1 training.
+     settings = [
+         (1200, 320),
+         (900, 300),
+@@ -13,14 +18,16 @@
+     for hchars, qchars in settings:
+ 
+         user = render_user(
+-            g,
++            state,
++            candidates,
+             order,
+             hchars,
+             qchars,
+         )
+ 
+         text = apply_chat(
+-            user
++            tokenizer,
++            user,
+         )
+ 
+         ids = tokenizer.encode(
+@@ -28,15 +35,10 @@
+             add_special_tokens=False,
+         )
+ 
+-        if len(ids) <= MAX_LEN:
+-            return (
+-                text,
+-                ids,
+-                hchars,
+-                qchars,
+-            )
++        if len(ids) <= max_len:
++            return ids
+ 
+     raise RuntimeError(
+-        f"Prompt cannot fit MAX_LEN={MAX_LEN}: "
+-        f"state={g['state_id']}"
++        "Unable to fit selector prompt "
++        f"inside max_len={max_len}"
+     )

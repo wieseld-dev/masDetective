@@ -1,0 +1,486 @@
+{
+  "existing_forbidden_before_new": 656,
+  "final_test_systems": 32,
+  "new_compositions": 874,
+  "seed": 20260918,
+  "stages": [
+    {
+      "cycles": [
+        {
+          "K": {
+            "3": 24
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_01/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 14,
+            "single": 10
+          },
+          "systems": 24
+        },
+        {
+          "K": {
+            "3": 24
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_01/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 9,
+            "single": 15
+          },
+          "systems": 24
+        }
+      ],
+      "dev": {
+        "K": {
+          "3": 12
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_01/manifest_dev.json",
+        "mode": {
+          "fanout2": 7,
+          "single": 5
+        },
+        "systems": 12
+      },
+      "group_size": 6,
+      "horizon": 2,
+      "name": "easy_distinct_3",
+      "stage": 1
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "3": 28
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_02/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 15,
+            "single": 13
+          },
+          "systems": 28
+        },
+        {
+          "K": {
+            "3": 28
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_02/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 15,
+            "single": 13
+          },
+          "systems": 28
+        }
+      ],
+      "dev": {
+        "K": {
+          "3": 12
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_02/manifest_dev.json",
+        "mode": {
+          "fanout2": 7,
+          "single": 5
+        },
+        "systems": 12
+      },
+      "group_size": 6,
+      "horizon": 3,
+      "name": "easy_distinct_3",
+      "stage": 2
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "3": 16,
+            "4": 12
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_03/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 13,
+            "single": 15
+          },
+          "systems": 28
+        },
+        {
+          "K": {
+            "3": 20,
+            "4": 8
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_03/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 18,
+            "single": 10
+          },
+          "systems": 28
+        }
+      ],
+      "dev": {
+        "K": {
+          "3": 5,
+          "4": 7
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_03/manifest_dev.json",
+        "mode": {
+          "fanout2": 4,
+          "single": 8
+        },
+        "systems": 12
+      },
+      "group_size": 6,
+      "horizon": 3,
+      "name": "easy_distinct_3_4",
+      "stage": 3
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "3": 13,
+            "4": 19
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_04/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 15,
+            "single": 17
+          },
+          "systems": 32
+        },
+        {
+          "K": {
+            "3": 19,
+            "4": 13
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_04/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 17,
+            "single": 15
+          },
+          "systems": 32
+        }
+      ],
+      "dev": {
+        "K": {
+          "3": 8,
+          "4": 6
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_04/manifest_dev.json",
+        "mode": {
+          "fanout2": 8,
+          "single": 6
+        },
+        "systems": 14
+      },
+      "group_size": 6,
+      "horizon": 4,
+      "name": "easy_distinct_3_4",
+      "stage": 4
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "4": 16,
+            "5": 16
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_05/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 19,
+            "fanout3": 13
+          },
+          "systems": 32
+        },
+        {
+          "K": {
+            "4": 12,
+            "5": 20
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_05/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 13,
+            "fanout3": 19
+          },
+          "systems": 32
+        }
+      ],
+      "dev": {
+        "K": {
+          "4": 6,
+          "5": 8
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_05/manifest_dev.json",
+        "mode": {
+          "fanout2": 7,
+          "fanout3": 7
+        },
+        "systems": 14
+      },
+      "group_size": 8,
+      "horizon": 4,
+      "name": "medium_overlap_4_5",
+      "stage": 5
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "4": 20,
+            "5": 16
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_06/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 16,
+            "fanout3": 20
+          },
+          "systems": 36
+        },
+        {
+          "K": {
+            "4": 12,
+            "5": 24
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_06/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 17,
+            "fanout3": 19
+          },
+          "systems": 36
+        }
+      ],
+      "dev": {
+        "K": {
+          "4": 5,
+          "5": 9
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_06/manifest_dev.json",
+        "mode": {
+          "fanout2": 6,
+          "fanout3": 8
+        },
+        "systems": 14
+      },
+      "group_size": 8,
+      "horizon": 5,
+      "name": "medium_overlap_4_5",
+      "stage": 6
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "5": 15,
+            "6": 21
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_07/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 18,
+            "fanout3": 11,
+            "mixed": 7
+          },
+          "systems": 36
+        },
+        {
+          "K": {
+            "5": 20,
+            "6": 16
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_07/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 15,
+            "fanout3": 10,
+            "mixed": 11
+          },
+          "systems": 36
+        }
+      ],
+      "dev": {
+        "K": {
+          "5": 6,
+          "6": 10
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_07/manifest_dev.json",
+        "mode": {
+          "fanout2": 3,
+          "fanout3": 5,
+          "mixed": 8
+        },
+        "systems": 16
+      },
+      "group_size": 8,
+      "horizon": 5,
+      "name": "hard_overlap_5_6",
+      "stage": 7
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "5": 18,
+            "6": 22
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_08/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 16,
+            "fanout3": 12,
+            "mixed": 12
+          },
+          "systems": 40
+        },
+        {
+          "K": {
+            "5": 17,
+            "6": 23
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_08/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 19,
+            "fanout3": 11,
+            "mixed": 10
+          },
+          "systems": 40
+        }
+      ],
+      "dev": {
+        "K": {
+          "5": 6,
+          "6": 10
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_08/manifest_dev.json",
+        "mode": {
+          "fanout2": 6,
+          "fanout3": 5,
+          "mixed": 5
+        },
+        "systems": 16
+      },
+      "group_size": 8,
+      "horizon": 6,
+      "name": "hard_overlap_5_6",
+      "stage": 8
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "6": 9,
+            "7": 22,
+            "8": 13
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_09/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 8,
+            "fanout3": 9,
+            "mixed": 16,
+            "single": 11
+          },
+          "systems": 44
+        },
+        {
+          "K": {
+            "6": 17,
+            "7": 12,
+            "8": 15
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_09/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 13,
+            "fanout3": 11,
+            "mixed": 9,
+            "single": 11
+          },
+          "systems": 44
+        }
+      ],
+      "dev": {
+        "K": {
+          "6": 6,
+          "7": 3,
+          "8": 9
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_09/manifest_dev.json",
+        "mode": {
+          "fanout2": 3,
+          "fanout3": 4,
+          "mixed": 5,
+          "single": 6
+        },
+        "systems": 18
+      },
+      "group_size": 8,
+      "horizon": 7,
+      "name": "large_mixed_6_8",
+      "stage": 9
+    },
+    {
+      "cycles": [
+        {
+          "K": {
+            "6": 20,
+            "7": 16,
+            "8": 12
+          },
+          "cycle": 1,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_10/manifest_train_cycle_01.json",
+          "mode": {
+            "fanout2": 11,
+            "fanout3": 10,
+            "mixed": 9,
+            "single": 18
+          },
+          "systems": 48
+        },
+        {
+          "K": {
+            "6": 13,
+            "7": 21,
+            "8": 14
+          },
+          "cycle": 2,
+          "file": "artifacts/adaptive_v11_curriculum_v2/stage_10/manifest_train_cycle_02.json",
+          "mode": {
+            "fanout2": 16,
+            "fanout3": 6,
+            "mixed": 14,
+            "single": 12
+          },
+          "systems": 48
+        }
+      ],
+      "dev": {
+        "K": {
+          "6": 4,
+          "7": 7,
+          "8": 7
+        },
+        "file": "artifacts/adaptive_v11_curriculum_v2/stage_10/manifest_dev.json",
+        "mode": {
+          "fanout2": 6,
+          "fanout3": 4,
+          "mixed": 4,
+          "single": 4
+        },
+        "systems": 18
+      },
+      "group_size": 8,
+      "horizon": 8,
+      "name": "large_mixed_6_8",
+      "stage": 10
+    }
+  ]
+}

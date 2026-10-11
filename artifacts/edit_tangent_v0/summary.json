@@ -1,0 +1,102 @@
+{
+  "experiment": "structural_edit_tangent_v0",
+  "rows": 1334,
+  "replicate": {
+    "n": 1334,
+    "paired_pm_sm": [
+      0.6428537072950721,
+      0.6297655462422003,
+      0.6557543331697273
+    ],
+    "same_role_wrong_pair": [
+      0.0960789257763825,
+      0.08420588217412496,
+      0.1078328390877747
+    ],
+    "paired_minus_wrong_delta": [
+      0.5467747815186896,
+      0.531207799784346,
+      0.5627467381379806
+    ],
+    "signflip_p": 4.999750012499375e-05
+  },
+  "cross_source_pair_auc": {
+    "n_pairs": 419289,
+    "positive_rate": 0.04980812756833592,
+    "exact_query_pairs_excluded": 0,
+    "query_similarity_auc": 0.8899052497210909,
+    "tangent_similarity_auc": 0.5237319908951923,
+    "tangent_residualized_on_query_auc": 0.5184727123249966
+  },
+  "centroid_transfer": {
+    "v11_to_v13": {
+      "roles": 20,
+      "chance_top1": 0.05,
+      "n_test": 507,
+      "top1": 0.1755424063116371,
+      "mrr": 0.3105683719485999,
+      "mean_true_minus_best_wrong": -0.12323979891462683,
+      "n_strict_unseen_query": 507,
+      "strict_unseen_query_top1": 0.1755424063116371,
+      "strict_unseen_query_mrr": 0.3105683719485999
+    },
+    "v13_to_v11": {
+      "roles": 20,
+      "chance_top1": 0.05,
+      "n_test": 827,
+      "top1": 0.19105199516324062,
+      "mrr": 0.3198367676571374,
+      "mean_true_minus_best_wrong": -0.11508786378685386,
+      "n_strict_unseen_query": 827,
+      "strict_unseen_query_top1": 0.19105199516324062,
+      "strict_unseen_query_mrr": 0.3198367676571374
+    }
+  },
+  "within_source_leave_query_out": {
+    "v11": {
+      "n": 827,
+      "roles": 20,
+      "chance": 0.05,
+      "top1": 0.3143893591293833,
+      "mrr": 0.44223174380369057
+    },
+    "v13": {
+      "n": 507,
+      "roles": 20,
+      "chance": 0.05,
+      "top1": 0.2583826429980276,
+      "mrr": 0.3828815595399214
+    }
+  },
+  "geometry": {
+    "n_role_centroids": 20,
+    "singular_values": [
+      1.2766777121355224,
+      1.271115640240215,
+      1.2135130268165715,
+      1.1937852969234508,
+      1.1649992896103758,
+      1.0957010459737986,
+      1.0727089866294874,
+      1.036387666270869,
+      1.0036688224785646,
+      0.9509340914038228,
+      0.9388731825895014,
+      0.9099188182926383,
+      0.8711640778164619,
+      0.8509923053176993,
+      0.8156286096744708,
+      0.8138859771443938,
+      0.7396712685923452,
+      0.7069731344015017,
+      0.6743350142259196,
+      4.089610400909406e-16
+    ],
+    "stable_rank": 11.570885563541108,
+    "effective_rank": 17.748059842156977
+  },
+  "decision": {
+    "pass": false,
+    "note": "Exploratory continuation gate only; not a claim of statistical identifiability."
+  }
+}

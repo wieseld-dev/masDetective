@@ -1,0 +1,164 @@
+PRESENCE 3-of-10 — TRAINED ADAPTIVE V11
+========================================
+
+Candidate pool:
+  code, writing, math, research, design, operations, translation, financial_analysis, database_design, customer_support_triage
+
+Hidden truth [evaluation only]:
+  translation, financial_analysis, database_design
+
+==============================================================================
+ROUND 0
+Top3(pool)=['code', 'writing', 'math'] recall@3=0.000 exact@3=False
+true_mean=0.3000 false_mean=0.3000 separation=0.0000
+strict_top3_all20=['code', 'writing', 'math']
+
+rank role                                p  truth
+1    code                           0.3000  
+2    writing                        0.3000  
+3    math                           0.3000  
+4    research                       0.3000  
+5    design                         0.3000  
+6    operations                     0.3000  
+7    translation                    0.3000  *
+8    financial_analysis             0.3000  *
+9    database_design                0.3000  *
+10   customer_support_triage        0.3000  
+
+==============================================================================
+ROUND 1
+PROBE: Which specific aspect of your current work involves handling large databases?
+Top3(pool)=['database_design', 'financial_analysis', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3903 false_mean=0.2997 separation=0.0906
+strict_top3_all20=['database_design', 'financial_analysis', 'math']
+
+rank role                                p  truth
+1    database_design                0.4990  *
+2    financial_analysis             0.4404  *
+3    math                           0.3707  
+4    operations                     0.3213  
+5    design                         0.2981  
+6    research                       0.2910  
+7    code                           0.2864  
+8    writing                        0.2704  
+9    customer_support_triage        0.2598  
+10   translation                    0.2314  *
+
+==============================================================================
+ROUND 2
+PROBE: What specific type of problem are you facing where understanding data relationships might be particularly helpful?
+Top3(pool)=['database_design', 'financial_analysis', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3847 false_mean=0.2832 separation=0.1015
+strict_top3_all20=['database_design', 'financial_analysis', 'math']
+
+rank role                                p  truth
+1    database_design                0.4613  *
+2    financial_analysis             0.4446  *
+3    math                           0.3830  
+4    operations                     0.3080  
+5    design                         0.2876  
+6    research                       0.2754  
+7    writing                        0.2688  
+8    translation                    0.2483  *
+9    customer_support_triage        0.2328  
+10   code                           0.2269  
+
+==============================================================================
+ROUND 3
+PROBE: Which specific scenario involving mathematical computations are you currently dealing with?
+Top3(pool)=['database_design', 'financial_analysis', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3638 false_mean=0.2704 separation=0.0933
+strict_top3_all20=['database_design', 'financial_analysis', 'math']
+
+rank role                                p  truth
+1    database_design                0.4496  *
+2    financial_analysis             0.3967  *
+3    math                           0.3467  
+4    operations                     0.3171  
+5    writing                        0.2597  
+6    research                       0.2591  
+7    design                         0.2588  
+8    translation                    0.2450  *
+9    customer_support_triage        0.2272  
+10   code                           0.2244  
+
+==============================================================================
+ROUND 4
+PROBE: Which specific coding-related issue are you encountering?
+Top3(pool)=['financial_analysis', 'database_design', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3769 false_mean=0.2646 separation=0.1123
+strict_top3_all20=['financial_analysis', 'database_design', 'math']
+
+rank role                                p  truth
+1    financial_analysis             0.4336  *
+2    database_design                0.4309  *
+3    math                           0.3406  
+4    operations                     0.2865  
+5    translation                    0.2662  *
+6    design                         0.2627  
+7    writing                        0.2603  
+8    research                       0.2395  
+9    code                           0.2338  
+10   customer_support_triage        0.2285  
+
+==============================================================================
+ROUND 5
+PROBE: Which specific feature of these tasks requires you to analyze market trends and predict future economic outcomes?
+Top3(pool)=['financial_analysis', 'database_design', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3788 false_mean=0.2611 separation=0.1177
+strict_top3_all20=['financial_analysis', 'database_design', 'math']
+
+rank role                                p  truth
+1    financial_analysis             0.4494  *
+2    database_design                0.4222  *
+3    math                           0.3223  
+4    operations                     0.2699  
+5    design                         0.2698  
+6    translation                    0.2649  *
+7    writing                        0.2570  
+8    code                           0.2394  
+9    research                       0.2362  
+10   customer_support_triage        0.2333  
+
+==============================================================================
+ROUND 6
+PROBE: Which specific skill or knowledge area are you looking to enhance right now?
+Top3(pool)=['database_design', 'financial_analysis', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3804 false_mean=0.2488 separation=0.1316
+strict_top3_all20=['database_design', 'financial_analysis', 'math']
+
+rank role                                p  truth
+1    database_design                0.4700  *
+2    financial_analysis             0.4205  *
+3    math                           0.2977  
+4    design                         0.2673  
+5    operations                     0.2587  
+6    translation                    0.2508  *
+7    writing                        0.2397  
+8    research                       0.2353  
+9    code                           0.2218  
+10   customer_support_triage        0.2212  
+
+==============================================================================
+ROUND 7
+PROBE: Which specific programming challenge are you currently tackling?
+Top3(pool)=['database_design', 'financial_analysis', 'math'] recall@3=0.667 exact@3=False
+true_mean=0.3652 false_mean=0.2441 separation=0.1211
+strict_top3_all20=['database_design', 'financial_analysis', 'math']
+
+rank role                                p  truth
+1    database_design                0.4182  *
+2    financial_analysis             0.3966  *
+3    math                           0.2946  
+4    translation                    0.2807  *
+5    design                         0.2559  
+6    operations                     0.2502  
+7    writing                        0.2399  
+8    code                           0.2230  
+9    customer_support_triage        0.2227  
+10   research                       0.2224  
+
+==============================================================================
+FINAL
+final_top3=['database_design', 'financial_analysis', 'math']
+first_exact_round=NEVER

@@ -1,0 +1,103 @@
+BELIEF = artifacts/HIGHEST_CLEAN_AUC/models/frozen_belief.joblib
+BELIEF SHA = d10c91b7321e5cf08ee754a0cbfcfd7c4cc6a459f4463a6e206816ecd90ae74f
+
+===== HYBRID R7 SELECTOR ORACLE GAP =====
+
+==============================================================================================================
+simple5_01_code_plan_research
+R6 BASE AUC       = 0.588235
+C0 AUC=0.352941 DELTA=-0.235294 cache=True <<< SELECTED
+     Could you guide me on how to prioritize goals and resources for my upcoming project?
+C1 AUC=0.529412 DELTA=-0.058824 cache=False
+     What specific information or details should I provide first so you can start verifying a claimed historical event date?
+C2 AUC=0.647059 DELTA=+0.058824 cache=False <<< ORACLE
+     What key information do I need to translate from English to French accurately and ensure cultural sensitivity?
+C3 AUC=0.529412 DELTA=-0.058824 cache=False
+     What specific information or details should I provide first so you can begin creating my database model?
+SELECTOR AUC      = 0.352941
+RANDOM-MEAN AUC   = 0.514706
+ORACLE AUC        = 0.647059
+ORACLE GAP        = +0.294118
+SELECTOR TRUE RANK= 4/4
+
+==============================================================================================================
+simple5_02_risk_access_translation
+R6 BASE AUC       = 0.568627
+C0 AUC=0.490196 DELTA=-0.078431 cache=False
+     What are the first steps I should take to plan and organize my project effectively?
+C1 AUC=0.823529 DELTA=+0.254902 cache=False <<< ORACLE
+     What specific aspects of the interface or content accessibility should I review initially?
+C2 AUC=0.509804 DELTA=-0.058824 cache=False
+     What key information do I need to gather first to effectively manage and resolve incidents related to network outages?
+C3 AUC=0.568627 DELTA=+0.000000 cache=True <<< SELECTED
+     What specific facts and reliable sources should I provide first to begin researching the topic?
+SELECTOR AUC      = 0.568627
+RANDOM-MEAN AUC   = 0.598039
+ORACLE AUC        = 0.823529
+ORACLE GAP        = +0.254902
+SELECTOR TRUE RANK= 2/4
+
+==============================================================================================================
+simple5_03_data_db_requirements
+R6 BASE AUC       = 0.882353
+C0 AUC=0.941176 DELTA=+0.058824 cache=True <<< SELECTED
+     Please confirm what specific fact or claim you would like verified or checked first so that we can proceed more efficiently with your fact-checking task?
+C1 AUC=0.823529 DELTA=-0.058824 cache=False
+     Could you guide me through setting up test cases for our new feature release?
+C2 AUC=0.882353 DELTA=+0.000000 cache=False
+     What specific details do I need from the dataset first to get started with data analysis?
+C3 AUC=0.960784 DELTA=+0.078431 cache=False <<< ORACLE
+     What specific data structures or relationships should I define first so you can efficiently build my database?
+SELECTOR AUC      = 0.941176
+RANDOM-MEAN AUC   = 0.901961
+ORACLE AUC        = 0.960784
+ORACLE GAP        = +0.019608
+SELECTOR TRUE RANK= 2/4
+
+==============================================================================================================
+simple5_04_support_incident_ops
+R6 BASE AUC       = 0.764706
+C0 AUC=0.686275 DELTA=-0.078431 cache=False
+     First, could you help me identify the specific feature causing performance degradation in my application?
+C1 AUC=0.784314 DELTA=+0.019608 cache=True <<< SELECTED <<< ORACLE
+     First, could you please explain the specific issue or problem you are encountering?
+C2 AUC=0.764706 DELTA=+0.000000 cache=False
+     Could you help me find more detailed information on how to create effective documentation for technical products?
+C3 AUC=0.705882 DELTA=-0.058824 cache=False
+     First, could you show me the basic structure of the data set?
+SELECTOR AUC      = 0.784314
+RANDOM-MEAN AUC   = 0.735294
+ORACLE AUC        = 0.784314
+ORACLE GAP        = +0.000000
+SELECTOR TRUE RANK= 1/4
+
+==============================================================================================================
+simple5_05_docs_qa_writing
+R6 BASE AUC       = 0.666667
+C0 AUC=0.470588 DELTA=-0.196078 cache=False
+     Could you please walk me through how to conduct a requirements analysis to properly understand and fulfill the needs of our upcoming project?
+C1 AUC=0.509804 DELTA=-0.156863 cache=True <<< SELECTED
+     What specific facts or claims should I provide first to ensure accurate verification in the fact-checking task?
+C2 AUC=0.529412 DELTA=-0.137255 cache=False
+     Could you assist me in evaluating the accuracy of a mathematical calculation by providing the necessary input values?
+C3 AUC=0.568627 DELTA=-0.098039 cache=False <<< ORACLE
+     I want to enhance the user experience by improving the interface. How can I best proceed to understand the core features and user interactions?
+SELECTOR AUC      = 0.509804
+RANDOM-MEAN AUC   = 0.519608
+ORACLE AUC        = 0.568627
+ORACLE GAP        = +0.058824
+SELECTOR TRUE RANK= 3/4
+
+==============================================================================================================
+===== FIVE-SYSTEM SUMMARY =====
+base         mean=0.694118
+selected     mean=0.631373
+random       mean=0.653922
+oracle       mean=0.756863
+oracle_gap   mean=0.125490
+selector_top1 = 1 / 5
+selector_top2 = 3 / 5
+
+Expected original Hybrid R7 = 0.627451
+Recomputed selected R7      = 0.631373
+Reproduction difference     = +0.003921569

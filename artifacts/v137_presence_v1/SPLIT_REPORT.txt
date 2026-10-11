@@ -1,0 +1,162 @@
+====================================================================================================
+V13.7 SYSTEM SPLIT FREEZE V1
+====================================================================================================
+seed: 138
+all unique curriculum systems: 696
+legacy TRAIN-only systems: 36
+fresh K3-K8 systems: 660
+
+STRATA:
+K=3 mode=fanout2    total= 88 train= 62 dev= 13 test= 13
+K=3 mode=single     total= 72 train= 50 dev= 11 test= 11
+K=4 mode=fanout2    total= 47 train= 33 dev=  7 test=  7
+K=4 mode=fanout3    total= 23 train= 17 dev=  3 test=  3
+K=4 mode=single     total= 30 train= 22 dev=  4 test=  4
+K=5 mode=fanout2    total= 67 train= 47 dev= 10 test= 10
+K=5 mode=fanout3    total= 63 train= 45 dev=  9 test=  9
+K=5 mode=mixed      total= 16 train= 12 dev=  2 test=  2
+K=6 mode=fanout2    total= 53 train= 37 dev=  8 test=  8
+K=6 mode=fanout3    total= 32 train= 22 dev=  5 test=  5
+K=6 mode=mixed      total= 38 train= 26 dev=  6 test=  6
+K=6 mode=single     total= 15 train= 11 dev=  2 test=  2
+K=7 mode=fanout2    total= 14 train= 10 dev=  2 test=  2
+K=7 mode=fanout3    total= 15 train= 11 dev=  2 test=  2
+K=7 mode=mixed      total= 21 train= 15 dev=  3 test=  3
+K=7 mode=single     total= 18 train= 12 dev=  3 test=  3
+K=8 mode=fanout2    total= 13 train=  9 dev=  2 test=  2
+K=8 mode=fanout3    total=  9 train=  7 dev=  1 test=  1
+K=8 mode=mixed      total= 10 train=  6 dev=  2 test=  2
+K=8 mode=single     total= 16 train= 12 dev=  2 test=  2
+
+====================================================================================================
+LEGACY TRAIN ONLY
+====================================================================================================
+systems: 36
+K: {3: 12, 4: 12, 6: 3, 7: 3, 8: 6}
+mode: {'fanout2': 15, 'fanout3': 9, 'mixed': 3, 'single': 9}
+
+role                           pos    neg    K3/4+    K3/4-
+code                             9     27        4       20
+writing                          7     29        2       22
+math                             8     28        4       20
+planning                        10     26        4       20
+research                        10     26        7       17
+data                            10     26        5       19
+design                           6     30        3       21
+operations                       5     31        2       22
+qa_testing                      14     22        6       18
+translation                      8     28        2       22
+financial_analysis              12     24        7       17
+database_design                 10     26        6       18
+accessibility_review            11     25        7       17
+fact_checking                    4     32        2       22
+requirements_analysis           10     26        5       19
+incident_management              5     31        1       23
+experiment_design                6     30        3       21
+risk_assessment                  9     27        5       19
+documentation                    9     27        3       21
+customer_support_triage          8     28        6       18
+
+minimum coverage: {'min_positive': 4, 'min_negative': 22, 'min_small_positive': 1, 'min_small_negative': 17}
+
+====================================================================================================
+FRESH TRAIN
+====================================================================================================
+systems: 466
+K: {3: 112, 4: 72, 5: 104, 6: 96, 7: 48, 8: 34}
+mode: {'fanout2': 198, 'fanout3': 102, 'mixed': 59, 'single': 107}
+
+role                           pos    neg    K3/4+    K3/4-
+code                           118    348       32      152
+writing                        121    345       36      148
+math                           121    345       29      155
+planning                       113    353       33      151
+research                       117    349       30      154
+data                           118    348       34      150
+design                         128    338       38      146
+operations                     109    357       30      154
+qa_testing                     124    342       37      147
+translation                    126    340       41      143
+financial_analysis             102    364       20      164
+database_design                112    354       29      155
+accessibility_review           108    358       27      157
+fact_checking                  122    344       31      153
+requirements_analysis          114    352       27      157
+incident_management            111    355       31      153
+experiment_design              120    346       33      151
+risk_assessment                125    341       37      147
+documentation                   99    367       19      165
+customer_support_triage        120    346       30      154
+
+minimum coverage: {'min_positive': 99, 'min_negative': 338, 'min_small_positive': 19, 'min_small_negative': 143}
+
+====================================================================================================
+DEV
+====================================================================================================
+systems: 97
+K: {3: 24, 4: 14, 5: 21, 6: 21, 7: 10, 8: 7}
+mode: {'fanout2': 42, 'fanout3': 20, 'mixed': 13, 'single': 22}
+
+role                           pos    neg    K3/4+    K3/4-
+code                            25     72       10       28
+writing                         22     75        8       30
+math                            21     76        7       31
+planning                        29     68        8       30
+research                        28     69        6       32
+data                            23     74        5       33
+design                          23     74        4       34
+operations                      32     65        9       29
+qa_testing                      21     76        7       31
+translation                     20     77        4       34
+financial_analysis              24     73        7       31
+database_design                 28     69        4       34
+accessibility_review            25     72       10       28
+fact_checking                   23     74        9       29
+requirements_analysis           21     76        4       34
+incident_management             20     77        3       35
+experiment_design               20     77        8       30
+risk_assessment                 29     68        3       35
+documentation                   25     72        4       34
+customer_support_triage         26     71        8       30
+
+minimum coverage: {'min_positive': 20, 'min_negative': 65, 'min_small_positive': 3, 'min_small_negative': 28}
+
+====================================================================================================
+INTERNAL TEST
+====================================================================================================
+systems: 97
+K: {3: 24, 4: 14, 5: 21, 6: 21, 7: 10, 8: 7}
+mode: {'fanout2': 42, 'fanout3': 20, 'mixed': 13, 'single': 22}
+
+role                           pos    neg    K3/4+    K3/4-
+code                            27     70        6       32
+writing                         22     75        5       33
+math                            29     68        7       31
+planning                        21     76        6       32
+research                        21     76        6       32
+data                            18     79        3       35
+design                          20     77        6       32
+operations                      22     75        7       31
+qa_testing                      18     79        4       34
+translation                     22     75        7       31
+financial_analysis              33     64       12       26
+database_design                 23     74        4       34
+accessibility_review            32     65        9       29
+fact_checking                   27     70        8       30
+requirements_analysis           26     71        5       33
+incident_management             37     60       10       28
+experiment_design               27     70        5       33
+risk_assessment                 12     85        5       33
+documentation                   25     72        7       31
+customer_support_triage         23     74        6       32
+
+minimum coverage: {'min_positive': 12, 'min_negative': 60, 'min_small_positive': 3, 'min_small_negative': 26}
+
+====================================================================================================
+FINAL
+====================================================================================================
+NO SYSTEM OVERLAP: PASS
+UNTOUCHED FINAL TEST USED: NO
+manifest: artifacts/v137_presence_v1/system_splits.json
+sha256: 8169d889a99027a11be1b445a20354cdd2b8ac029d3320773c193db7c3358e7f
+SPLIT FREEZE AUDIT: PASS

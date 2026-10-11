@@ -1,0 +1,28 @@
+{
+  "base_no_adapter": {
+    "n": 16,
+    "mean_words": 51.25,
+    "median_words": 41,
+    "min_words": 21,
+    "max_words": 126,
+    "gate_pass_rate": 0.5,
+    "quality_bands": {
+      "unknown": 8,
+      "thin": 2,
+      "usable": 6
+    }
+  },
+  "old_adapter": {
+    "n": 16,
+    "mean_words": 32.375,
+    "median_words": 33,
+    "min_words": 15,
+    "max_words": 59,
+    "gate_pass_rate": 0.5625,
+    "quality_bands": {
+      "usable": 5,
+      "unknown": 7,
+      "thin": 4
+    }
+  }
+}

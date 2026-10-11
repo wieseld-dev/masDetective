@@ -1,0 +1,22 @@
+{
+  "artifacts/robust_visible_generator_v1_epoch2/policy": {
+    "source_sha256": "f23b9690157c7e70667160945299d8a496035255e829e9f931e7efc0283b71a4",
+    "backup_sha256": "f23b9690157c7e70667160945299d8a496035255e829e9f931e7efc0283b71a4",
+    "identical": true
+  },
+  "artifacts/v5_clean_sft_only/policy": {
+    "source_sha256": "8a9440fda8a997df8a5d033b43d3025e39c5d2d95ab4f13d810b25ac0a4b6db4",
+    "backup_sha256": "8a9440fda8a997df8a5d033b43d3025e39c5d2d95ab4f13d810b25ac0a4b6db4",
+    "identical": true
+  },
+  "artifacts/v5_clean_sft_dpo/policy": {
+    "source_sha256": "37664d37b26b19e0c6af9ccb50d2582242820672d23f7e941bf42bfe171d5961",
+    "backup_sha256": "37664d37b26b19e0c6af9ccb50d2582242820672d23f7e941bf42bfe171d5961",
+    "identical": true
+  },
+  "artifacts/v4_training_ready": {
+    "source_sha256": "5b6895bb3c9acc21dfd88b0ab0549d9db90768855dd1e2bb5dffe0ffd9a7931f",
+    "backup_sha256": "5b6895bb3c9acc21dfd88b0ab0549d9db90768855dd1e2bb5dffe0ffd9a7931f",
+    "identical": true
+  }
+}

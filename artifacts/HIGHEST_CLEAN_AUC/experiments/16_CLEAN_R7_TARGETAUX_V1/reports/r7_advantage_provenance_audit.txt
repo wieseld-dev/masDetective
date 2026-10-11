@@ -1,0 +1,468 @@
+======================================================================
+1. EXACT G50 ADVANCE CODE
+======================================================================
+    90	
+    91	        for c in sorted(cs, key=lambda x: int(x["candidate_index"])):
+    92	            idx = int(c["candidate_index"])
+    93	            r = resp_by[(sid, idx)]
+    94	            sc = score_by.get((sid, idx))
+    95	            if c.get("valid") and r.get("execution_status") == "ok" and sc is None:
+    96	                raise RuntimeError(f"missing scorer output sid={sid} cand={idx}")
+    97	
+    98	            if c.get("valid") and r.get("execution_status") == "ok" and sc is not None:
+    99	                frame = EvidenceFrame(
+   100	                    query=str(c["query"]),
+   101	                    answer=str(r.get("final_output", "")),
+   102	                    v135={str(k): float(v) for k, v in dict(sc.get("evidence", {})).items()},
+   103	                    v134={str(k): float(v) for k, v in dict(sc.get("metadata", {}).get("evidence_v134", {})).items()},
+   104	                )
+   105	                new_history = [*state.history, frame]
+   106	                new_k, new_roles = role_only_predict(belief, new_history)
+   107	            else:
+   108	                frame = None
+   109	                new_k, new_roles = dict(state.k_probs), dict(state.role_probs)
+   110	
+   111	            rb = adaptive_role_reward(
+   112	                old_role_probs=state.role_probs,
+   113	                new_role_probs=new_roles,
+   114	                true_roles=true_roles,
+   115	                query=str(c.get("query", "")),
+   116	                previous_queries=[h.query for h in state.history],
+   117	                generator_valid=bool(c.get("valid")),
+   118	            )
+   119	            evaluated.append((c, frame, new_k, new_roles, rb))
+   120	
+   121	        rewards = [x[4].total for x in evaluated]
+   122	        relative_advs = group_relative_advantages(rewards)
+   123	
+   124	        # V14A_G50_SIGN_CONSISTENT_ADVANTAGE
+   125	        # Preserve GRPO ranking, but force the gradient direction to agree
+   126	        # with ABSOLUTE realized inference utility.
+   127	        #
+   128	        #   reward > 0 : never punish a genuinely helpful probe
+   129	        #   reward < 0 : never reinforce a harmful "best-of-bad" probe
+   130	        #   reward = 0 : no policy-gradient signal
+   131	        advs = [
+   132	            max(0.0, float(a)) if float(r) > 0.0
+   133	            else min(0.0, float(a)) if float(r) < 0.0
+   134	            else 0.0
+   135	            for a, r in zip(relative_advs, rewards)
+   136	        ]
+   137	        for (c, frame, new_k, new_roles, rb), adv in zip(evaluated, advs):
+   138	            if args.split == "train" and c.get("completion"):
+   139	                train_rows.append({
+   140	                    "session_id": sid,
+   141	                    "round": args.round,
+   142	                    "candidate_index": int(c["candidate_index"]),
+   143	                    "group_id": c["group_id"],
+   144	                    "prompt": c["prompt"],
+   145	                    "completion": c["completion"],
+   146	                    "old_logp": float(c["old_logp"]),
+   147	                    "ref_logp": float(c["ref_logp"]),
+   148	                    "reward": float(rb.total),
+   149	                    "advantage": float(adv),
+   150	                    "reward_breakdown_training_only": rb.to_dict(),
+   151	                })
+   152	
+   153	        viable = [x for x in evaluated if x[1] is not None]
+   154	        if not viable:
+   155	            # No usable observation for this session in this round.
+   156	            # Preserve the previous public belief/history instead of
+   157	            # crashing the whole experiment or fabricating evidence.
+   158	            print(
+   159	                f"[advance-warning] no viable candidate in {sid}; "
+   160	                f"carrying previous belief forward",
+   161	                flush=True,
+   162	            )
+   163	
+   164	            ns = PublicBeliefState(
+   165	                session_id=sid,
+   166	                split=args.split,
+   167	                round_index=args.round,
+   168	                k_probs=dict(state.k_probs),
+   169	                role_probs=dict(state.role_probs),
+   170	                history=list(state.history),
+   171	            )
+   172	            ns.validate(TRAIN_ROLES, belief.ks)
+   173	            next_states.append(ns.to_public_dict())
+   174	
+   175	            rm = role_metrics(state.role_probs, true_roles)
+   176	            metrics.append({
+   177	                "session_id": sid,
+   178	                "split": args.split,
+   179	                "round": args.round,
+   180	                "chosen_candidate": -1,
+   181	                "chosen_reward_training_only": 0.0,
+   182	                "probe_status": "no_viable_candidate",
+   183	                **rm,
+   184	            })
+   185	            continue
+   186	
+   187	        # Continue from a designated on-policy sample independent of reward.
+   188	        rng = random.Random(stable_int(args.seed, args.split, args.round, sid))
+   189	        chosen = viable[rng.randrange(len(viable))]
+   190	        c, frame, new_k, new_roles, rb = chosen
+   191	        ns = PublicBeliefState(
+   192	            session_id=sid,
+   193	            split=args.split,
+   194	            round_index=args.round,
+   195	            k_probs=dict(new_k),  # deliberately uniform in phase 1
+   196	            role_probs=dict(new_roles),
+   197	            history=[*state.history, frame],
+   198	        )
+   199	        ns.validate(TRAIN_ROLES, belief.ks)
+   200	        next_states.append(ns.to_public_dict())
+   201	
+   202	        rm = role_metrics(new_roles, true_roles)
+   203	        metrics.append({
+   204	            "session_id": sid,
+   205	            "split": args.split,
+   206	            "round": args.round,
+   207	            "chosen_candidate": int(c["candidate_index"]),
+   208	            "chosen_reward_training_only": float(rb.total),
+   209	            **rm,
+   210	        })
+   211	
+   212	    write_jsonl(root / f"states_{args.split}_round_{args.round:02d}.jsonl", next_states)
+   213	    write_jsonl(root / f"metrics_{args.split}_round_{args.round:02d}.jsonl", metrics)
+   214	    if args.split == "train":
+   215	        write_jsonl(root / f"grpo_train_round_{args.round:02d}.jsonl", train_rows)
+   216	
+   217	    summary = {
+   218	        "phase": "role_only",
+   219	        "split": args.split,
+   220	        "round": args.round,
+   221	        "sessions": len(metrics),
+   222	        "mean_role_log_loss": float(np.mean([x["role_log_loss"] for x in metrics])),
+   223	        "mean_role_brier": float(np.mean([x["role_brier"] for x in metrics])),
+   224	        "mean_role_auc": float(np.nanmean([x["role_auc"] for x in metrics])),
+   225	        "mean_true_false_margin": float(np.mean([x["true_false_margin"] for x in metrics])),
+   226	        "mean_oracle_k_role_recall": float(np.mean([x["oracle_k_role_recall"] for x in metrics])),
+   227	        "note": "K is intentionally uniform and is not used in policy state updates or reward during phase 1.",
+   228	    }
+   229	    write_json(root / f"advance_{args.split}_round_{args.round:02d}_summary.json", summary)
+   230	    print(json.dumps(summary, indent=2), flush=True)
+   231	
+   232	
+   233	if __name__ == "__main__":
+   234	    main()
+
+======================================================================
+2. ALL ADVANTAGE-RELATED LINES IN G50 SCRIPT
+======================================================================
+15:from adaptive_v11_active.reward import group_relative_advantages
+17:from adaptive_v11_active.role_reward import adaptive_role_reward, role_log_score
+28:    ll = float(np.mean(-(ys*np.log(ps)+(1-ys)*np.log1p(-ps))))
+29:    brier = float(np.mean((ps-ys)**2))
+31:    pos = float(ps[ys == 1].mean()) if np.any(ys == 1) else float("nan")
+32:    neg = float(ps[ys == 0].mean()) if np.any(ys == 0) else float("nan")
+40:        "mean_true_role_prob": pos,
+41:        "mean_false_role_prob": neg,
+48:    ap = argparse.ArgumentParser(description="Role-only belief update + truth-only GRPO reward")
+111:            rb = adaptive_role_reward(
+121:        rewards = [x[4].total for x in evaluated]
+122:        relative_advs = group_relative_advantages(rewards)
+128:        #   reward > 0 : never punish a genuinely helpful probe
+129:        #   reward < 0 : never reinforce a harmful "best-of-bad" probe
+130:        #   reward = 0 : no policy-gradient signal
+131:        advs = [
+135:            for a, r in zip(relative_advs, rewards)
+137:        for (c, frame, new_k, new_roles, rb), adv in zip(evaluated, advs):
+148:                    "reward": float(rb.total),
+149:                    "advantage": float(adv),
+150:                    "reward_breakdown_training_only": rb.to_dict(),
+181:                "chosen_reward_training_only": 0.0,
+187:        # Continue from a designated on-policy sample independent of reward.
+208:            "chosen_reward_training_only": float(rb.total),
+222:        "mean_role_log_loss": float(np.mean([x["role_log_loss"] for x in metrics])),
+223:        "mean_role_brier": float(np.mean([x["role_brier"] for x in metrics])),
+224:        "mean_role_auc": float(np.nanmean([x["role_auc"] for x in metrics])),
+225:        "mean_true_false_margin": float(np.mean([x["true_false_margin"] for x in metrics])),
+226:        "mean_oracle_k_role_recall": float(np.mean([x["oracle_k_role_recall"] for x in metrics])),
+227:        "note": "K is intentionally uniform and is not used in policy state updates or reward during phase 1.",
+
+======================================================================
+3. ORIGINAL R7 UPDATE SUMMARY
+======================================================================
+{
+  "clip": 0.2,
+  "epochs": 1,
+  "kl_beta": 0.05,
+  "lr": 1.5e-06,
+  "phase": "role_only",
+  "round": 7,
+  "samples": 1020,
+  "start_adapter": "artifacts/v14_adaptive_role_v1/checkpoints/round_06/policy",
+  "stats": [
+    {
+      "epoch": 1,
+      "kl": 0.019786690847546445,
+      "loss": 0.02080512760633913,
+      "n": 1020,
+      "pg": 0.019815793831252912
+    }
+  ],
+  "v11_reference": "artifacts/v14_benign_policy"
+}
+======================================================================
+4. R7 FILE METADATA
+======================================================================
+-rw-r--r-- 1 wieseld domain users     423 2026-10-05 22:49:47.344367343 +0300 artifacts/v14_adaptive_role_v1/checkpoints/round_07/update_summary.json
+-rw-r--r-- 1 wieseld domain users 7932747 2026-10-05 22:45:37.971973321 +0300 artifacts/v14_adaptive_role_v1/grpo_train_round_07.jsonl
+
+artifacts/v14_adaptive_role_v1/checkpoints/round_07/policy:
+total 12279
+-rw-r--r-- 1 wieseld domain users     1109 2026-10-05 22:49:47.148363890 +0300 adapter_config.json
+-rw------- 1 wieseld domain users  8745704 2026-10-05 22:49:47.140363748 +0300 adapter_model.safetensors
+-rw-r--r-- 1 wieseld domain users     2507 2026-10-05 22:49:47.148363890 +0300 chat_template.jinja
+-rw-r--r-- 1 wieseld domain users     5206 2026-10-05 22:49:46.736356630 +0300 README.md
+-rw-r--r-- 1 wieseld domain users      694 2026-10-05 22:49:47.152363960 +0300 tokenizer_config.json
+-rw-r--r-- 1 wieseld domain users 11421892 2026-10-05 22:49:47.252365722 +0300 tokenizer.json
+
+======================================================================
+5. MISMATCH DISTRIBUTION
+======================================================================
+GROUP                                            N   BAD       MAXERR      MEANERR
+av11_023efb442571d117::r07                      50     5  0.210020236  0.011647611
+av11_0958d195a346cdb1::r07                      50     2  0.043060232  0.000891192
+av11_20f1ec3cfdaa5518::r07                      50     5  0.053448424  0.003579934
+av11_27e20625aee8ca5d::r07                      50     2  0.059418419  0.002122823
+av11_2d355538615f00ff::r07                      50    11  0.466667843  0.047708453
+av11_2d97f9f748e0fb9e::r07                      50     6  0.111410255  0.010469328
+av11_38108c805bd533a1::r07                      50     1  0.032469679  0.000649394
+av11_486b21e22324059f::r07                      50    14  0.537349043  0.066939582
+av11_5df7e71a9829f052::r07                      50     7  0.192220412  0.011958481
+av11_60adcadf2277b949::r07                      50     6  0.259006810  0.012584248
+av11_6488732ca6cd1f03::r07                      50     4  0.047491067  0.002387203
+av11_8ab66a778c443eeb::r07                      50     4  0.109423010  0.004484801
+av11_93d32f31d67faa9c::r07                      50     7  0.142651797  0.009356106
+av11_953769178d62214f::r07                      50     8  0.395497599  0.042590744
+av11_be75be6f961ea65a::r07                      50     2  0.016680115  0.000356253
+av11_c146ae3a378bfec3::r07                      50     7  0.054421125  0.004713524
+av11_c290a3a477cfe91b::r07                      50    26  0.287348304  0.084003172
+av11_d0544071f1ec78f2::r07                      50     5  0.202265490  0.016450898
+av11_d7cd28142f2a04b9::r07                      50     0  0.000000000  0.000000000
+av11_da6eb645b311f910::r07                      50    22  0.836723195  0.118181081
+av11_f38ade721933a587::r07                      50     8  0.189686045  0.018842383
+av11_fa269d1328d0991f::r07                      50     8  0.124244011  0.012325365
+av11_fcbc5e8f6c849e2b::r07                      50     8  0.184892451  0.017452011
+av11_fe6081f59a94aebf::r07                      50    12  0.128839744  0.017466463
+
+========================================================================================================================
+ONLY GROUPS WITH MISMATCHES
+========================================================================================================================
+
+GROUP: av11_023efb442571d117::r07 N= 50 BAD= 5 MAXERR= 0.21002023613762041
+  cand=13 reward=-0.01450473 stored_adv=+0.00000000 plain_z=+0.12921082 delta=-0.12921082
+  cand=23 reward=-0.01298567 stored_adv=+0.00000000 plain_z=+0.14188141 delta=-0.14188141
+  cand=28 reward=-0.00481659 stored_adv=+0.00000000 plain_z=+0.21002024 delta=-0.21002024
+  cand=38 reward=-0.02180337 stored_adv=+0.00000000 plain_z=+0.06833235 delta=-0.06833235
+  cand=48 reward=-0.02604702 stored_adv=+0.00000000 plain_z=+0.03293572 delta=-0.03293572
+
+GROUP: av11_0958d195a346cdb1::r07 N= 50 BAD= 2 MAXERR= 0.04306023215385586
+  cand=04 reward=-0.00314984 stored_adv=+0.00000000 plain_z=+0.04306023 delta=-0.04306023
+  cand=10 reward=-0.01173249 stored_adv=+0.00000000 plain_z=+0.00149936 delta=-0.00149936
+
+GROUP: av11_20f1ec3cfdaa5518::r07 N= 50 BAD= 5 MAXERR= 0.05344842369581676
+  cand=04 reward=-0.00450230 stored_adv=+0.00000000 plain_z=+0.04867159 delta=-0.04867159
+  cand=10 reward=-0.02052904 stored_adv=+0.00000000 plain_z=+0.01389758 delta=-0.01389758
+  cand=21 reward=-0.01105995 stored_adv=+0.00000000 plain_z=+0.03444313 delta=-0.03444313
+  cand=37 reward=-0.01378246 stored_adv=+0.00000000 plain_z=+0.02853597 delta=-0.02853597
+  cand=42 reward=-0.00230074 stored_adv=+0.00000000 plain_z=+0.05344842 delta=-0.05344842
+
+GROUP: av11_27e20625aee8ca5d::r07 N= 50 BAD= 2 MAXERR= 0.059418419495606
+  cand=14 reward=+0.00278309 stored_adv=+0.00000000 plain_z=-0.05941842 delta=+0.05941842
+  cand=31 reward=+0.00630031 stored_adv=+0.00000000 plain_z=-0.04672275 delta=+0.04672275
+
+GROUP: av11_2d355538615f00ff::r07 N= 50 BAD= 11 MAXERR= 0.4666678429337085
+  cand=00 reward=-0.11859266 stored_adv=+0.00000000 plain_z=+0.03824994 delta=-0.03824994
+  cand=06 reward=-0.01142607 stored_adv=+0.00000000 plain_z=+0.46666784 delta=-0.46666784
+  cand=09 reward=-0.08254066 stored_adv=+0.00000000 plain_z=+0.18237437 delta=-0.18237437
+  cand=12 reward=-0.06491093 stored_adv=+0.00000000 plain_z=+0.25285242 delta=-0.25285242
+  cand=13 reward=-0.05801815 stored_adv=+0.00000000 plain_z=+0.28040754 delta=-0.28040754
+  cand=19 reward=-0.05298327 stored_adv=+0.00000000 plain_z=+0.30053541 delta=-0.30053541
+  cand=24 reward=-0.01590478 stored_adv=+0.00000000 plain_z=+0.44876339 delta=-0.44876339
+  cand=27 reward=-0.10394197 stored_adv=+0.00000000 plain_z=+0.09681876 delta=-0.09681876
+  cand=34 reward=-0.06564327 stored_adv=+0.00000000 plain_z=+0.24992474 delta=-0.24992474
+  cand=37 reward=-0.12013660 stored_adv=+0.00000000 plain_z=+0.03207778 delta=-0.03207778
+  cand=44 reward=-0.11896776 stored_adv=+0.00000000 plain_z=+0.03675045 delta=-0.03675045
+
+GROUP: av11_2d97f9f748e0fb9e::r07 N= 50 BAD= 6 MAXERR= 0.11141025460383866
+  cand=03 reward=+0.02365441 stored_adv=+0.00000000 plain_z=-0.08693821 delta=+0.08693821
+  cand=05 reward=+0.01977870 stored_adv=+0.00000000 plain_z=-0.10154708 delta=+0.10154708
+  cand=08 reward=+0.01716202 stored_adv=+0.00000000 plain_z=-0.11141025 delta=+0.11141025
+  cand=15 reward=+0.02046978 stored_adv=+0.00000000 plain_z=-0.09894219 delta=+0.09894219
+  cand=18 reward=+0.04191478 stored_adv=+0.00000000 plain_z=-0.01810872 delta=+0.01810872
+  cand=21 reward=+0.01845940 stored_adv=+0.00000000 plain_z=-0.10651998 delta=+0.10651998
+
+GROUP: av11_38108c805bd533a1::r07 N= 50 BAD= 1 MAXERR= 0.03246967897547131
+  cand=46 reward=+0.00891735 stored_adv=+0.00000000 plain_z=-0.03246968 delta=+0.03246968
+
+GROUP: av11_486b21e22324059f::r07 N= 50 BAD= 14 MAXERR= 0.5373490432170712
+  cand=01 reward=-0.23924613 stored_adv=+0.00000000 plain_z=+0.03390877 delta=-0.03390877
+  cand=03 reward=-0.17603534 stored_adv=+0.00000000 plain_z=+0.17012476 delta=-0.17012476
+  cand=06 reward=-0.13287006 stored_adv=+0.00000000 plain_z=+0.26314371 delta=-0.26314371
+  cand=07 reward=-0.05615476 stored_adv=+0.00000000 plain_z=+0.42846123 delta=-0.42846123
+  cand=12 reward=-0.17452417 stored_adv=+0.00000000 plain_z=+0.17338125 delta=-0.17338125
+  cand=14 reward=-0.13644315 stored_adv=+0.00000000 plain_z=+0.25544389 delta=-0.25544389
+  cand=19 reward=-0.00562556 stored_adv=+0.00000000 plain_z=+0.53734904 delta=-0.53734904
+  cand=21 reward=-0.21058859 stored_adv=+0.00000000 plain_z=+0.09566430 delta=-0.09566430
+  cand=35 reward=-0.20643749 stored_adv=+0.00000000 plain_z=+0.10460969 delta=-0.10460969
+  cand=37 reward=-0.18395004 stored_adv=+0.00000000 plain_z=+0.15306899 delta=-0.15306899
+  cand=40 reward=-0.14583266 stored_adv=+0.00000000 plain_z=+0.23520998 delta=-0.23520998
+  cand=41 reward=-0.06883260 stored_adv=+0.00000000 plain_z=+0.40114113 delta=-0.40114113
+
+GROUP: av11_5df7e71a9829f052::r07 N= 50 BAD= 7 MAXERR= 0.1922204115538445
+  cand=03 reward=-0.01553998 stored_adv=+0.00000000 plain_z=+0.09095737 delta=-0.09095737
+  cand=04 reward=-0.02644786 stored_adv=+0.00000000 plain_z=+0.00562636 delta=-0.00562636
+  cand=08 reward=-0.00259551 stored_adv=+0.00000000 plain_z=+0.19222041 delta=-0.19222041
+  cand=21 reward=-0.01960589 stored_adv=+0.00000000 plain_z=+0.05915028 delta=-0.05915028
+  cand=28 reward=-0.01957461 stored_adv=+0.00000000 plain_z=+0.05939496 delta=-0.05939496
+  cand=40 reward=-0.01075374 stored_adv=+0.00000000 plain_z=+0.12839952 delta=-0.12839952
+  cand=48 reward=-0.01921922 stored_adv=+0.00000000 plain_z=+0.06217515 delta=-0.06217515
+
+GROUP: av11_60adcadf2277b949::r07 N= 50 BAD= 6 MAXERR= 0.2590068097630625
+  cand=05 reward=-0.06450361 stored_adv=+0.00000000 plain_z=+0.03309499 delta=-0.03309499
+  cand=06 reward=-0.04165626 stored_adv=+0.00000000 plain_z=+0.11592465 delta=-0.11592465
+  cand=09 reward=-0.00218914 stored_adv=+0.00000000 plain_z=+0.25900681 delta=-0.25900681
+  cand=22 reward=-0.04374744 stored_adv=+0.00000000 plain_z=+0.10834340 delta=-0.10834340
+  cand=24 reward=-0.05547520 stored_adv=+0.00000000 plain_z=+0.06582615 delta=-0.06582615
+  cand=40 reward=-0.06066360 stored_adv=+0.00000000 plain_z=+0.04701639 delta=-0.04701639
+
+GROUP: av11_6488732ca6cd1f03::r07 N= 50 BAD= 4 MAXERR= 0.04749106710118559
+  cand=00 reward=-0.00143166 stored_adv=+0.00000000 plain_z=+0.04483858 delta=-0.04483858
+  cand=21 reward=-0.01099969 stored_adv=+0.00000000 plain_z=+0.01682777 delta=-0.01682777
+  cand=36 reward=-0.01326269 stored_adv=+0.00000000 plain_z=+0.01020273 delta=-0.01020273
+  cand=43 reward=-0.00052562 stored_adv=+0.00000000 plain_z=+0.04749107 delta=-0.04749107
+
+GROUP: av11_8ab66a778c443eeb::r07 N= 50 BAD= 4 MAXERR= 0.10942300972427073
+  cand=00 reward=-0.00446433 stored_adv=+0.00000000 plain_z=+0.10942301 delta=-0.10942301
+  cand=05 reward=-0.03484776 stored_adv=+0.00000000 plain_z=+0.00445655 delta=-0.00445655
+  cand=18 reward=-0.03291128 stored_adv=+0.00000000 plain_z=+0.01114656 delta=-0.01114656
+  cand=47 reward=-0.00741944 stored_adv=+0.00000000 plain_z=+0.09921393 delta=-0.09921393
+
+GROUP: av11_93d32f31d67faa9c::r07 N= 50 BAD= 7 MAXERR= 0.14265179743919776
+  cand=01 reward=-0.02414501 stored_adv=+0.00000000 plain_z=+0.09843605 delta=-0.09843605
+  cand=21 reward=-0.00631797 stored_adv=+0.00000000 plain_z=+0.14265180 delta=-0.14265180
+  cand=31 reward=-0.06020283 stored_adv=+0.00000000 plain_z=+0.00900324 delta=-0.00900324
+  cand=36 reward=-0.06363529 stored_adv=+0.00000000 plain_z=+0.00048985 delta=-0.00048985
+  cand=38 reward=-0.05453975 stored_adv=+0.00000000 plain_z=+0.02304917 delta=-0.02304917
+  cand=44 reward=-0.00701791 stored_adv=+0.00000000 plain_z=+0.14091576 delta=-0.14091576
+  cand=48 reward=-0.04235948 stored_adv=+0.00000000 plain_z=+0.05325942 delta=-0.05325942
+
+GROUP: av11_953769178d62214f::r07 N= 50 BAD= 8 MAXERR= 0.3954975993817452
+  cand=06 reward=-0.03268251 stored_adv=+0.00000000 plain_z=+0.31620416 delta=-0.31620416
+  cand=11 reward=-0.02190424 stored_adv=+0.00000000 plain_z=+0.35931707 delta=-0.35931707
+  cand=14 reward=-0.10510705 stored_adv=+0.00000000 plain_z=+0.02650713 delta=-0.02650713
+  cand=19 reward=-0.03610108 stored_adv=+0.00000000 plain_z=+0.30252995 delta=-0.30252995
+  cand=22 reward=-0.02972366 stored_adv=+0.00000000 plain_z=+0.32803954 delta=-0.32803954
+  cand=27 reward=-0.06745748 stored_adv=+0.00000000 plain_z=+0.17710482 delta=-0.17710482
+  cand=34 reward=-0.05564941 stored_adv=+0.00000000 plain_z=+0.22433693 delta=-0.22433693
+  cand=40 reward=-0.01285907 stored_adv=+0.00000000 plain_z=+0.39549760 delta=-0.39549760
+
+GROUP: av11_be75be6f961ea65a::r07 N= 50 BAD= 2 MAXERR= 0.01668011501381349
+  cand=36 reward=+0.00689310 stored_adv=+0.00000000 plain_z=-0.00113252 delta=+0.00113252
+  cand=47 reward=+0.00236890 stored_adv=+0.00000000 plain_z=-0.01668012 delta=+0.01668012
+
+GROUP: av11_c146ae3a378bfec3::r07 N= 50 BAD= 7 MAXERR= 0.05442112516663106
+  cand=13 reward=+0.00882107 stored_adv=+0.00000000 plain_z=-0.03078081 delta=+0.03078081
+  cand=18 reward=+0.00316949 stored_adv=+0.00000000 plain_z=-0.05355560 delta=+0.05355560
+  cand=25 reward=+0.00295471 stored_adv=+0.00000000 plain_z=-0.05442113 delta=+0.05442113
+  cand=26 reward=+0.01126915 stored_adv=+0.00000000 plain_z=-0.02091552 delta=+0.02091552
+  cand=27 reward=+0.01113177 stored_adv=+0.00000000 plain_z=-0.02146913 delta=+0.02146913
+  cand=32 reward=+0.00599750 stored_adv=+0.00000000 plain_z=-0.04215925 delta=+0.04215925
+  cand=35 reward=+0.01338854 stored_adv=+0.00000000 plain_z=-0.01237477 delta=+0.01237477
+
+GROUP: av11_c290a3a477cfe91b::r07 N= 50 BAD= 26 MAXERR= 0.2873483043605175
+  cand=00 reward=-0.06453854 stored_adv=+0.00000000 plain_z=+0.11232636 delta=-0.11232636
+  cand=04 reward=-0.09620791 stored_adv=+0.00000000 plain_z=+0.00601571 delta=-0.00601571
+  cand=05 reward=-0.02351507 stored_adv=+0.00000000 plain_z=+0.25003770 delta=-0.25003770
+  cand=06 reward=-0.04699357 stored_adv=+0.00000000 plain_z=+0.17122292 delta=-0.17122292
+  cand=09 reward=-0.07913575 stored_adv=+0.00000000 plain_z=+0.06332508 delta=-0.06332508
+  cand=11 reward=-0.04404699 stored_adv=+0.00000000 plain_z=+0.18111427 delta=-0.18111427
+  cand=18 reward=-0.07130603 stored_adv=+0.00000000 plain_z=+0.08960863 delta=-0.08960863
+  cand=21 reward=-0.04170344 stored_adv=+0.00000000 plain_z=+0.18898130 delta=-0.18898130
+  cand=22 reward=-0.01547605 stored_adv=+0.00000000 plain_z=+0.27702383 delta=-0.27702383
+  cand=23 reward=-0.06946954 stored_adv=+0.00000000 plain_z=+0.09577351 delta=-0.09577351
+  cand=24 reward=-0.08240703 stored_adv=+0.00000000 plain_z=+0.05234376 delta=-0.05234376
+  cand=25 reward=-0.05948083 stored_adv=+0.00000000 plain_z=+0.12930454 delta=-0.12930454
+
+GROUP: av11_d0544071f1ec78f2::r07 N= 50 BAD= 5 MAXERR= 0.202265490165355
+  cand=02 reward=+0.01285776 stored_adv=+0.00000000 plain_z=-0.15715595 delta=+0.15715595
+  cand=27 reward=+0.01391312 stored_adv=+0.00000000 plain_z=-0.15215271 delta=+0.15215271
+  cand=28 reward=+0.00573006 stored_adv=+0.00000000 plain_z=-0.19094691 delta=+0.19094691
+  cand=33 reward=+0.02069022 stored_adv=+0.00000000 plain_z=-0.12002384 delta=+0.12002384
+  cand=34 reward=+0.00334258 stored_adv=+0.00000000 plain_z=-0.20226549 delta=+0.20226549
+
+GROUP: av11_da6eb645b311f910::r07 N= 50 BAD= 22 MAXERR= 0.836723195081159
+  cand=02 reward=-0.11405270 stored_adv=+0.00000000 plain_z=+0.41508897 delta=-0.41508897
+  cand=11 reward=-0.05792219 stored_adv=+0.00000000 plain_z=+0.62449680 delta=-0.62449680
+  cand=14 reward=-0.00103618 stored_adv=+0.00000000 plain_z=+0.83672320 delta=-0.83672320
+  cand=16 reward=-0.15098818 stored_adv=+0.00000000 plain_z=+0.27729267 delta=-0.27729267
+  cand=18 reward=-0.15523515 stored_adv=+0.00000000 plain_z=+0.26144836 delta=-0.26144836
+  cand=20 reward=-0.17733531 stored_adv=+0.00000000 plain_z=+0.17899863 delta=-0.17899863
+  cand=21 reward=-0.18666634 stored_adv=+0.00000000 plain_z=+0.14418707 delta=-0.14418707
+  cand=23 reward=-0.19180018 stored_adv=+0.00000000 plain_z=+0.12503407 delta=-0.12503407
+  cand=25 reward=-0.22257640 stored_adv=+0.00000000 plain_z=+0.01021629 delta=-0.01021629
+  cand=27 reward=-0.19956334 stored_adv=+0.00000000 plain_z=+0.09607182 delta=-0.09607182
+  cand=29 reward=-0.12015168 stored_adv=+0.00000000 plain_z=+0.39233534 delta=-0.39233534
+  cand=31 reward=-0.21741637 stored_adv=+0.00000000 plain_z=+0.02946697 delta=-0.02946697
+
+GROUP: av11_f38ade721933a587::r07 N= 50 BAD= 8 MAXERR= 0.18968604530763067
+  cand=06 reward=+0.03027933 stored_adv=+0.00000000 plain_z=-0.13279291 delta=+0.13279291
+  cand=10 reward=+0.06676025 stored_adv=+0.00000000 plain_z=-0.05048296 delta=+0.05048296
+  cand=26 reward=+0.06585795 stored_adv=+0.00000000 plain_z=-0.05251875 delta=+0.05251875
+  cand=27 reward=+0.02835780 stored_adv=+0.00000000 plain_z=-0.13712835 delta=+0.13712835
+  cand=31 reward=+0.06762976 stored_adv=+0.00000000 plain_z=-0.04852113 delta=+0.04852113
+  cand=32 reward=+0.01465681 stored_adv=+0.00000000 plain_z=-0.16804116 delta=+0.16804116
+  cand=34 reward=+0.01691422 stored_adv=+0.00000000 plain_z=-0.16294788 delta=+0.16294788
+  cand=36 reward=+0.00506350 stored_adv=+0.00000000 plain_z=-0.18968605 delta=+0.18968605
+
+GROUP: av11_fa269d1328d0991f::r07 N= 50 BAD= 8 MAXERR= 0.1242440109188329
+  cand=04 reward=-0.01818826 stored_adv=+0.00000000 plain_z=+0.08132397 delta=-0.08132397
+  cand=07 reward=-0.00467903 stored_adv=+0.00000000 plain_z=+0.12424401 delta=-0.12424401
+  cand=09 reward=-0.01775758 stored_adv=+0.00000000 plain_z=+0.08269227 delta=-0.08269227
+  cand=11 reward=-0.02223482 stored_adv=+0.00000000 plain_z=+0.06846768 delta=-0.06846768
+  cand=15 reward=-0.03737406 stored_adv=+0.00000000 plain_z=+0.02036895 delta=-0.02036895
+  cand=18 reward=-0.00573659 stored_adv=+0.00000000 plain_z=+0.12088403 delta=-0.12088403
+  cand=22 reward=-0.00853008 stored_adv=+0.00000000 plain_z=+0.11200889 delta=-0.11200889
+  cand=25 reward=-0.04180910 stored_adv=+0.00000000 plain_z=+0.00627844 delta=-0.00627844
+
+GROUP: av11_fcbc5e8f6c849e2b::r07 N= 50 BAD= 8 MAXERR= 0.18489245058490747
+  cand=04 reward=-0.00023718 stored_adv=+0.00000000 plain_z=+0.18489245 delta=-0.18489245
+  cand=09 reward=-0.00332118 stored_adv=+0.00000000 plain_z=+0.17755509 delta=-0.17755509
+  cand=12 reward=-0.06740241 stored_adv=+0.00000000 plain_z=+0.02509473 delta=-0.02509473
+  cand=15 reward=-0.06950597 stored_adv=+0.00000000 plain_z=+0.02009001 delta=-0.02009001
+  cand=21 reward=-0.04283018 stored_adv=+0.00000000 plain_z=+0.08355632 delta=-0.08355632
+  cand=27 reward=-0.00204005 stored_adv=+0.00000000 plain_z=+0.18060311 delta=-0.18060311
+  cand=31 reward=-0.06000984 stored_adv=+0.00000000 plain_z=+0.04268295 delta=-0.04268295
+  cand=33 reward=-0.01148755 stored_adv=+0.00000000 plain_z=+0.15812589 delta=-0.15812589
+
+GROUP: av11_fe6081f59a94aebf::r07 N= 50 BAD= 12 MAXERR= 0.12883974353111594
+  cand=06 reward=-0.03496722 stored_adv=+0.00000000 plain_z=+0.03974757 delta=-0.03974757
+  cand=19 reward=-0.01590501 stored_adv=+0.00000000 plain_z=+0.12066537 delta=-0.12066537
+  cand=24 reward=-0.03662339 stored_adv=+0.00000000 plain_z=+0.03271723 delta=-0.03271723
+  cand=25 reward=-0.03263064 stored_adv=+0.00000000 plain_z=+0.04966620 delta=-0.04966620
+  cand=28 reward=-0.03933567 stored_adv=+0.00000000 plain_z=+0.02120377 delta=-0.02120377
+  cand=29 reward=-0.04282887 stored_adv=+0.00000000 plain_z=+0.00637538 delta=-0.00637538
+  cand=31 reward=-0.01397933 stored_adv=+0.00000000 plain_z=+0.12883974 delta=-0.12883974
+  cand=33 reward=-0.02426903 stored_adv=+0.00000000 plain_z=+0.08516066 delta=-0.08516066
+  cand=35 reward=-0.01960215 stored_adv=+0.00000000 plain_z=+0.10497123 delta=-0.10497123
+  cand=36 reward=-0.02542149 stored_adv=+0.00000000 plain_z=+0.08026853 delta=-0.08026853
+  cand=40 reward=-0.02638589 stored_adv=+0.00000000 plain_z=+0.07617471 delta=-0.07617471
+  cand=43 reward=-0.01428722 stored_adv=+0.00000000 plain_z=+0.12753278 delta=-0.12753278
+
+======================================================================
+6. SEARCH FOR R7/G50 PROVENANCE
+======================================================================
+scripts/build_q38_short_preferences_v1.py:138:            "artifacts/v14_adaptive_g50_fresh_v3/train_rows_round_*.jsonl",
+scripts/v14a_compare_g50_v2.py:11:    "artifacts/v14_adaptive_g50_v2_eval_old_r6"
+scripts/v14a_compare_g50_v2.py:15:    "artifacts/v14_adaptive_g50_v2_eval_new_r10"
+scripts/build_q38_short_preferences_strict_v2.py:20:    "artifacts/v14_adaptive_g50_fresh_v3/grpo_train_round_*.jsonl",
+scripts/build_q38_short_preferences_strict_v2.py:83:    if "v14_adaptive_g50_fresh_v3" in s:
+scripts/build_q38_short_preferences_strict_v2.py:84:        return "small_g50_teacher"
+scripts/build_q38_short_preferences_strict_v2.py:310:    pairs_by_kind["small_g50_teacher"]
+scripts/v14a_role_advance_g50_v2.py:122:        relative_advs = group_relative_advantages(rewards)
+scripts/v14a_role_advance_g50_v2.py:124:        # V14A_G50_SIGN_CONSISTENT_ADVANTAGE
+scripts/v14a_role_advance_g50_v2.py:135:            for a, r in zip(relative_advs, rewards)
+artifacts/v14_adaptive_role_v1/checkpoints/round_08/update_summary.json:9:  "start_adapter": "artifacts/v14_adaptive_role_v1/checkpoints/round_07/policy",

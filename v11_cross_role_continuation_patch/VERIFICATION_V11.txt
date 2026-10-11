@@ -1,0 +1,43 @@
+V11 CROSS-ROLE CONTINUATION PATCH — VERIFICATION
+Date: 2026-09-09
+
+Reviewed design
+---------------
+- Continues from artifacts/v10_policy; it does not initialize a fresh base-only policy.
+- Exact expected V10.1 policy tree SHA256 is hard-coded and checked before API use:
+  9abbb8cdfa04df70ab8f1dadba23fad15a82e098002df8c6186cf2befaf9a7f9
+- Exact expected frozen V10 summary SHA256 is checked:
+  b965cb9041d2fe323538f6c43591e6d9d82a5ddec95d642f4423d2430087973c
+- V10 artifacts are read-only inputs; outputs are under artifacts/v11_*.
+- 20 training role types and 6 complete unseen-role development holdouts.
+- Held-out roles do not appear in training systems, candidate targets, negative replacements, or SHAM branches.
+- Existing SingleRouterFanoutMAS runtime supports dynamic role registration through the shared ROLE_PROMPTS registry.
+- single / fanout2 / fanout3 / mixed retained; K=3..6 retained.
+- Policy observation contains candidate name/description + benign anchor/avoid probes only; no K, mode, routing, true roles, traces, or branch identity.
+- Privileged routing truth is used only by the environment for scalar reward/diagnostics.
+
+Static verification
+-------------------
+- python compileall: PASS
+- bash syntax: apply_v11.sh: PASS
+- bash syntax: v11_preflight_cpu.sbatch: PASS
+- bash syntax: v11_cross_role_gpu.sbatch: PASS
+- bash syntax: v11_cross_role_resume_gpu.sbatch: PASS
+- unit/design tests: 7/7 PASS
+
+Generated-environment verification
+----------------------------------
+- V11 base training systems: 80
+- RL training systems after reserved split: 72
+- detector-reserved systems: 8
+- training matched counterfactual pairs: 318
+- unseen-role development systems: 32
+- unseen-role development matched pairs: 96
+- dev pair modes: 24 single / 24 fanout2 / 24 fanout3 / 24 mixed
+- dev pair K: 24 each for K=3,4,5,6
+- every unseen development role has all four modes and all K values 3..6
+
+Scientific status
+-----------------
+- V11 unseen-role evaluation is DEVELOPMENT validation, not an untouched final paper test.
+- If the method is changed after inspecting V11 unseen-role results, a new role set is required for final testing.

@@ -1,0 +1,108 @@
+====================================================================================================
+V13.7 EXISTING CANONICAL REUSE AUDIT
+====================================================================================================
+
+[k3]
+meta exists     : True
+responses exists: True
+meta systems    : 12
+response rows   : 240
+first-row keys  : ['action', 'adapter', 'answer', 'cache_hit', 'candidate_index', 'chosen_for_continuation', 'completion', 'curriculum_stage', 'execution_status', 'final_output', 'group_id', 'invalid_reason', 'local_attempts', 'manifest_sha256', 'mode', 'old_logp', 'output', 'prompt', 'query', 'raw_completion', 'ref_logp', 'retries_used', 'round', 'seed', 'selected_roles_training_only', 'selector_epsilon', 'selector_mode', 'selector_model_samples', 'selector_predicted_utility', 'session_id', 'split', 'system_id', 'truth_roles_training_only', 'valid']
+seen systems    : 12
+missing systems : 0
+extra systems   : 0
+
+[k4]
+meta exists     : True
+responses exists: True
+meta systems    : 12
+response rows   : 240
+first-row keys  : ['action', 'adapter', 'answer', 'cache_hit', 'candidate_index', 'chosen_for_continuation', 'completion', 'curriculum_stage', 'execution_status', 'final_output', 'group_id', 'invalid_reason', 'local_attempts', 'manifest_sha256', 'mode', 'old_logp', 'output', 'prompt', 'query', 'raw_completion', 'ref_logp', 'retries_used', 'round', 'seed', 'selected_roles_training_only', 'selector_epsilon', 'selector_mode', 'selector_model_samples', 'selector_predicted_utility', 'session_id', 'split', 'system_id', 'truth_roles_training_only', 'valid']
+seen systems    : 12
+missing systems : 0
+extra systems   : 0
+
+[high]
+meta exists     : True
+responses exists: True
+meta systems    : 12
+response rows   : 240
+first-row keys  : ['action', 'adapter', 'answer', 'cache_hit', 'candidate_index', 'chosen_for_continuation', 'completion', 'curriculum_stage', 'execution_status', 'final_output', 'group_id', 'invalid_reason', 'local_attempts', 'manifest_sha256', 'mode', 'old_logp', 'output', 'prompt', 'query', 'raw_completion', 'ref_logp', 'retries_used', 'round', 'seed', 'selected_roles_training_only', 'selector_epsilon', 'selector_mode', 'selector_model_samples', 'selector_predicted_utility', 'session_id', 'split', 'system_id', 'truth_roles_training_only', 'valid']
+seen systems    : 12
+missing systems : 0
+extra systems   : 0
+
+====================================================================================================
+GLOBAL INTEGRITY
+====================================================================================================
+rows total      : 720
+unique systems  : 36
+cross-cohort systems: 0
+system-target duplicates/missing: 0
+
+Possible visible-response fields:
+  response            : 0
+  final_response      : 0
+  visible_response    : 0
+  final_answer        : 0
+  answer              : 720
+  mas_response        : 0
+  output_text         : 0
+  output              : 720
+
+====================================================================================================
+PER-ROLE EXISTING CANONICAL COVERAGE
+====================================================================================================
+role                            n   pos   neg   act+   route%  need+  need-
+accessibility_review           36    11    25     11   100.0%      1      0
+code                           36     9    27      9   100.0%      3      0
+customer_support_triage        36     8    28      8   100.0%      4      0
+data                           36    10    26     10   100.0%      2      0
+database_design                36    10    26     10   100.0%      2      0
+design                         36     6    30      6   100.0%      6      0
+documentation                  36     9    27      9   100.0%      3      0
+experiment_design              36     6    30      6   100.0%      6      0
+fact_checking                  36     4    32      4   100.0%      8      0
+financial_analysis             36    12    24     12   100.0%      0      0
+incident_management            36     5    31      5   100.0%      7      0
+math                           36     8    28      8   100.0%      4      0
+operations                     36     5    31      5   100.0%      7      0
+planning                       36    10    26      9    90.0%      2      0
+qa_testing                     36    14    22     14   100.0%      0      0
+requirements_analysis          36    10    26     10   100.0%      2      0
+research                       36    10    26     10   100.0%      2      0
+risk_assessment                36     9    27      9   100.0%      3      0
+translation                    36     8    28      8   100.0%      4      0
+writing                        36     7    29      7   100.0%      5      0
+
+====================================================================================================
+NEW TRAINING EXECUTIONS NEEDED TO REACH 12+/12- PER ROLE
+====================================================================================================
+positive deficit total: 71
+negative deficit total: 0
+minimum targeted executions to fill deficits: 71
+  accessibility_review        need_pos= 1 need_neg= 0
+  code                        need_pos= 3 need_neg= 0
+  customer_support_triage     need_pos= 4 need_neg= 0
+  data                        need_pos= 2 need_neg= 0
+  database_design             need_pos= 2 need_neg= 0
+  design                      need_pos= 6 need_neg= 0
+  documentation               need_pos= 3 need_neg= 0
+  experiment_design           need_pos= 6 need_neg= 0
+  fact_checking               need_pos= 8 need_neg= 0
+  incident_management         need_pos= 7 need_neg= 0
+  math                        need_pos= 4 need_neg= 0
+  operations                  need_pos= 7 need_neg= 0
+  planning                    need_pos= 2 need_neg= 0
+  requirements_analysis       need_pos= 2 need_neg= 0
+  research                    need_pos= 2 need_neg= 0
+  risk_assessment             need_pos= 3 need_neg= 0
+  translation                 need_pos= 4 need_neg= 0
+  writing                     need_pos= 5 need_neg= 0
+
+====================================================================================================
+ROUTING WARNINGS
+====================================================================================================
+PASS: all measurable roles route on >=90% of installed targeted probes.
+
+AUDIT COMPLETE

@@ -1,0 +1,414 @@
+{
+  "setting": {
+    "true_Z_used_for_candidate_scoring": false,
+    "recorded_Y_used_only_for_realized_posterior_update_evaluation": true,
+    "particles_per_K": 64,
+    "test_systems": 139,
+    "test_rows": 5350
+  },
+  "round_1_clean": {
+    "k_brier_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 139,
+          "mean_oracle_gain": 0.20553263261464852,
+          "mean_selected_gain": -0.2432170678836647,
+          "gain_optimal_hit_rate": 0.12949640287769784,
+          "mean_regret": 0.44874970049831325,
+          "mean_within_group_spearman": 0.019767043508050704,
+          "spearman_groups": 139
+        },
+        "mi_identity": {
+          "groups": 139,
+          "mean_oracle_gain": 0.20553263261464852,
+          "mean_selected_gain": -0.24840124447082323,
+          "gain_optimal_hit_rate": 0.14388489208633093,
+          "mean_regret": 0.4539338770854718,
+          "mean_within_group_spearman": -0.013223706748886597,
+          "spearman_groups": 139
+        },
+        "mi_z": {
+          "groups": 139,
+          "mean_oracle_gain": 0.20553263261464852,
+          "mean_selected_gain": -0.23709337625714966,
+          "gain_optimal_hit_rate": 0.1366906474820144,
+          "mean_regret": 0.44262600887179815,
+          "mean_within_group_spearman": -0.010071942446043165,
+          "spearman_groups": 139
+        },
+        "exposure": {
+          "groups": 139,
+          "mean_oracle_gain": 0.20553263261464852,
+          "mean_selected_gain": -0.23857537901488896,
+          "gain_optimal_hit_rate": 0.1366906474820144,
+          "mean_regret": 0.4441080116295374,
+          "mean_within_group_spearman": 0.009044193216855078,
+          "spearman_groups": 139
+        },
+        "existing_selector": {
+          "groups": 139,
+          "mean_oracle_gain": 0.20553263261464852,
+          "mean_selected_gain": -0.24384318990549175,
+          "gain_optimal_hit_rate": 0.08633093525179857,
+          "mean_regret": 0.44937582252014024,
+          "mean_within_group_spearman": -0.07207947927372389,
+          "spearman_groups": 139
+        }
+      },
+      "random_mean_gain": -0.24208889201982256
+    },
+    "k_log_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 139,
+          "mean_oracle_gain": 0.043414128577014995,
+          "mean_selected_gain": -1.3459568764128909,
+          "gain_optimal_hit_rate": 0.16546762589928057,
+          "mean_regret": 1.389371004989906,
+          "mean_within_group_spearman": 0.02883355176933158,
+          "spearman_groups": 109
+        },
+        "mi_identity": {
+          "groups": 139,
+          "mean_oracle_gain": 0.043414128577014995,
+          "mean_selected_gain": -1.4441567581231733,
+          "gain_optimal_hit_rate": 0.18705035971223022,
+          "mean_regret": 1.4875708867001884,
+          "mean_within_group_spearman": -0.04150283966797729,
+          "spearman_groups": 109
+        },
+        "mi_z": {
+          "groups": 139,
+          "mean_oracle_gain": 0.043414128577014995,
+          "mean_selected_gain": -1.4230801425918775,
+          "gain_optimal_hit_rate": 0.17985611510791366,
+          "mean_regret": 1.4664942711688924,
+          "mean_within_group_spearman": -0.04368719965050242,
+          "spearman_groups": 109
+        },
+        "exposure": {
+          "groups": 139,
+          "mean_oracle_gain": 0.043414128577014995,
+          "mean_selected_gain": -1.4109507763593925,
+          "gain_optimal_hit_rate": 0.17266187050359713,
+          "mean_regret": 1.4543649049364074,
+          "mean_within_group_spearman": -0.0233726518130188,
+          "spearman_groups": 109
+        },
+        "existing_selector": {
+          "groups": 139,
+          "mean_oracle_gain": 0.043414128577014995,
+          "mean_selected_gain": -1.334061101364912,
+          "gain_optimal_hit_rate": 0.1223021582733813,
+          "mean_regret": 1.377475229941927,
+          "mean_within_group_spearman": -0.050546089995631295,
+          "spearman_groups": 109
+        }
+      },
+      "random_mean_gain": -1.4856554824871562
+    },
+    "k_abs_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 139,
+          "mean_oracle_gain": 0.6530873677274384,
+          "mean_selected_gain": 0.07980426374466598,
+          "gain_optimal_hit_rate": 0.16546762589928057,
+          "mean_regret": 0.5732831039827725,
+          "mean_within_group_spearman": 0.03545734840698869,
+          "spearman_groups": 139
+        },
+        "mi_identity": {
+          "groups": 139,
+          "mean_oracle_gain": 0.6530873677274384,
+          "mean_selected_gain": 0.024744440511481957,
+          "gain_optimal_hit_rate": 0.16546762589928057,
+          "mean_regret": 0.6283429272159564,
+          "mean_within_group_spearman": -0.012949640287769796,
+          "spearman_groups": 139
+        },
+        "mi_z": {
+          "groups": 139,
+          "mean_oracle_gain": 0.6530873677274384,
+          "mean_selected_gain": 0.03144117060853483,
+          "gain_optimal_hit_rate": 0.15827338129496402,
+          "mean_regret": 0.6216461971189036,
+          "mean_within_group_spearman": -0.009660842754367948,
+          "spearman_groups": 139
+        },
+        "exposure": {
+          "groups": 139,
+          "mean_oracle_gain": 0.6530873677274384,
+          "mean_selected_gain": 0.01636197791214639,
+          "gain_optimal_hit_rate": 0.14388489208633093,
+          "mean_regret": 0.636725389815292,
+          "mean_within_group_spearman": -0.014217197670435085,
+          "spearman_groups": 139
+        },
+        "existing_selector": {
+          "groups": 139,
+          "mean_oracle_gain": 0.6530873677274384,
+          "mean_selected_gain": 0.021115589732601636,
+          "gain_optimal_hit_rate": 0.15827338129496402,
+          "mean_regret": 0.6319717779948367,
+          "mean_within_group_spearman": -0.05614936622130867,
+          "spearman_groups": 139
+        }
+      },
+      "random_mean_gain": 0.037019647313360896
+    },
+    "role_brier_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 139,
+          "mean_oracle_gain": 1.333921313943447,
+          "mean_selected_gain": 0.43935118128411654,
+          "gain_optimal_hit_rate": 0.14388489208633093,
+          "mean_regret": 0.8945701326593306,
+          "mean_within_group_spearman": -0.043576567317574526,
+          "spearman_groups": 139
+        },
+        "mi_identity": {
+          "groups": 139,
+          "mean_oracle_gain": 1.333921313943447,
+          "mean_selected_gain": 0.6142543613429852,
+          "gain_optimal_hit_rate": 0.14388489208633093,
+          "mean_regret": 0.719666952600462,
+          "mean_within_group_spearman": 0.014285714285714294,
+          "spearman_groups": 139
+        },
+        "mi_z": {
+          "groups": 139,
+          "mean_oracle_gain": 1.333921313943447,
+          "mean_selected_gain": 0.6143369407876965,
+          "gain_optimal_hit_rate": 0.1510791366906475,
+          "mean_regret": 0.7195843731557504,
+          "mean_within_group_spearman": 0.015930113052415207,
+          "spearman_groups": 139
+        },
+        "exposure": {
+          "groups": 139,
+          "mean_oracle_gain": 1.333921313943447,
+          "mean_selected_gain": 0.5759582593754207,
+          "gain_optimal_hit_rate": 0.12949640287769784,
+          "mean_regret": 0.7579630545680264,
+          "mean_within_group_spearman": 0.019150393970537853,
+          "spearman_groups": 139
+        },
+        "existing_selector": {
+          "groups": 139,
+          "mean_oracle_gain": 1.333921313943447,
+          "mean_selected_gain": 0.5069988432078137,
+          "gain_optimal_hit_rate": 0.11510791366906475,
+          "mean_regret": 0.8269224707356333,
+          "mean_within_group_spearman": -0.02336416581020899,
+          "spearman_groups": 139
+        }
+      },
+      "random_mean_gain": 0.5450816479884223
+    }
+  },
+  "all_rounds_one_step_conditional_on_recorded_state": {
+    "k_brier_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 701,
+          "mean_oracle_gain": 0.14965217460412972,
+          "mean_selected_gain": -0.2558743692268002,
+          "gain_optimal_hit_rate": 0.1355206847360913,
+          "mean_regret": 0.4055265438309298,
+          "mean_within_group_spearman": -0.04045241491746485,
+          "spearman_groups": 701
+        },
+        "mi_identity": {
+          "groups": 701,
+          "mean_oracle_gain": 0.14965217460412972,
+          "mean_selected_gain": -0.27073552035049725,
+          "gain_optimal_hit_rate": 0.12838801711840228,
+          "mean_regret": 0.42038769495462697,
+          "mean_within_group_spearman": -0.046640853202907416,
+          "spearman_groups": 701
+        },
+        "mi_z": {
+          "groups": 701,
+          "mean_oracle_gain": 0.14965217460412972,
+          "mean_selected_gain": -0.2709518355355104,
+          "gain_optimal_hit_rate": 0.12410841654778887,
+          "mean_regret": 0.42060401013964005,
+          "mean_within_group_spearman": -0.0467699205217037,
+          "spearman_groups": 701
+        },
+        "exposure": {
+          "groups": 701,
+          "mean_oracle_gain": 0.14965217460412972,
+          "mean_selected_gain": -0.25732643263147154,
+          "gain_optimal_hit_rate": 0.1340941512125535,
+          "mean_regret": 0.4069786072356012,
+          "mean_within_group_spearman": -0.025018680796141567,
+          "spearman_groups": 701
+        },
+        "existing_selector": {
+          "groups": 701,
+          "mean_oracle_gain": 0.14965217460412972,
+          "mean_selected_gain": -0.2571702044407857,
+          "gain_optimal_hit_rate": 0.11412268188302425,
+          "mean_regret": 0.4068223790449154,
+          "mean_within_group_spearman": -0.015325045852863258,
+          "spearman_groups": 701
+        }
+      },
+      "random_mean_gain": -0.2518894953477469
+    },
+    "k_log_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 701,
+          "mean_oracle_gain": 0.008422291393101734,
+          "mean_selected_gain": -1.2433057459551906,
+          "gain_optimal_hit_rate": 0.14978601997146934,
+          "mean_regret": 1.2517280373482924,
+          "mean_within_group_spearman": 0.010998206814106395,
+          "spearman_groups": 478
+        },
+        "mi_identity": {
+          "groups": 701,
+          "mean_oracle_gain": 0.008422291393101734,
+          "mean_selected_gain": -1.3410695914441586,
+          "gain_optimal_hit_rate": 0.14122681883024252,
+          "mean_regret": 1.3494918828372604,
+          "mean_within_group_spearman": -0.03566447499501893,
+          "spearman_groups": 478
+        },
+        "mi_z": {
+          "groups": 701,
+          "mean_oracle_gain": 0.008422291393101734,
+          "mean_selected_gain": -1.3281339483315409,
+          "gain_optimal_hit_rate": 0.1383737517831669,
+          "mean_regret": 1.3365562397246424,
+          "mean_within_group_spearman": -0.03450886630802949,
+          "spearman_groups": 478
+        },
+        "exposure": {
+          "groups": 701,
+          "mean_oracle_gain": 0.008422291393101734,
+          "mean_selected_gain": -1.2682621415079423,
+          "gain_optimal_hit_rate": 0.1398002853067047,
+          "mean_regret": 1.276684432901044,
+          "mean_within_group_spearman": -0.0244869495915521,
+          "spearman_groups": 478
+        },
+        "existing_selector": {
+          "groups": 701,
+          "mean_oracle_gain": 0.008422291393101734,
+          "mean_selected_gain": -1.239724060734876,
+          "gain_optimal_hit_rate": 0.1355206847360913,
+          "mean_regret": 1.2481463521279779,
+          "mean_within_group_spearman": -0.011954572624028693,
+          "spearman_groups": 478
+        }
+      },
+      "random_mean_gain": -1.2949852791554708
+    },
+    "k_abs_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 701,
+          "mean_oracle_gain": 0.589867601134012,
+          "mean_selected_gain": -0.009364203272512198,
+          "gain_optimal_hit_rate": 0.14978601997146934,
+          "mean_regret": 0.5992318044065242,
+          "mean_within_group_spearman": -0.012906731879627742,
+          "spearman_groups": 701
+        },
+        "mi_identity": {
+          "groups": 701,
+          "mean_oracle_gain": 0.589867601134012,
+          "mean_selected_gain": -0.02006665088659122,
+          "gain_optimal_hit_rate": 0.14835948644793154,
+          "mean_regret": 0.6099342520206033,
+          "mean_within_group_spearman": -0.014897085795801918,
+          "spearman_groups": 701
+        },
+        "mi_z": {
+          "groups": 701,
+          "mean_oracle_gain": 0.589867601134012,
+          "mean_selected_gain": -0.02930069271699638,
+          "gain_optimal_hit_rate": 0.1383737517831669,
+          "mean_regret": 0.6191682938510085,
+          "mean_within_group_spearman": -0.017098023232117385,
+          "spearman_groups": 701
+        },
+        "exposure": {
+          "groups": 701,
+          "mean_oracle_gain": 0.589867601134012,
+          "mean_selected_gain": -0.009510117120107294,
+          "gain_optimal_hit_rate": 0.14978601997146934,
+          "mean_regret": 0.5993777182541193,
+          "mean_within_group_spearman": -0.005821615379389987,
+          "spearman_groups": 701
+        },
+        "existing_selector": {
+          "groups": 701,
+          "mean_oracle_gain": 0.589867601134012,
+          "mean_selected_gain": -0.011128817569041632,
+          "gain_optimal_hit_rate": 0.1369472182596291,
+          "mean_regret": 0.6009964187030538,
+          "mean_within_group_spearman": -0.02323891040010869,
+          "spearman_groups": 701
+        }
+      },
+      "random_mean_gain": -0.007981218417019445
+    },
+    "role_brier_gain": {
+      "methods": {
+        "mi_k": {
+          "groups": 701,
+          "mean_oracle_gain": 1.2037405494864135,
+          "mean_selected_gain": 0.39710056022151735,
+          "gain_optimal_hit_rate": 0.12696148359486448,
+          "mean_regret": 0.8066399892648961,
+          "mean_within_group_spearman": -0.02556891515522044,
+          "spearman_groups": 701
+        },
+        "mi_identity": {
+          "groups": 701,
+          "mean_oracle_gain": 1.2037405494864135,
+          "mean_selected_gain": 0.39042115617716844,
+          "gain_optimal_hit_rate": 0.10841654778887304,
+          "mean_regret": 0.8133193933092451,
+          "mean_within_group_spearman": -0.02914883499762245,
+          "spearman_groups": 701
+        },
+        "mi_z": {
+          "groups": 701,
+          "mean_oracle_gain": 1.2037405494864135,
+          "mean_selected_gain": 0.38139494157932863,
+          "gain_optimal_hit_rate": 0.10984308131241084,
+          "mean_regret": 0.8223456079070848,
+          "mean_within_group_spearman": -0.03228041573262686,
+          "spearman_groups": 701
+        },
+        "exposure": {
+          "groups": 701,
+          "mean_oracle_gain": 1.2037405494864135,
+          "mean_selected_gain": 0.3902200345423879,
+          "gain_optimal_hit_rate": 0.11126961483594865,
+          "mean_regret": 0.8135205149440256,
+          "mean_within_group_spearman": -0.02393179811154134,
+          "spearman_groups": 701
+        },
+        "existing_selector": {
+          "groups": 701,
+          "mean_oracle_gain": 1.2037405494864135,
+          "mean_selected_gain": 0.46839928753235566,
+          "gain_optimal_hit_rate": 0.11982881597717546,
+          "mean_regret": 0.7353412619540578,
+          "mean_within_group_spearman": 0.01599755451395965,
+          "spearman_groups": 701
+        }
+      },
+      "random_mean_gain": 0.4295677908824201
+    }
+  },
+  "important_note": "This evaluates MI against downstream posterior quality, not against new-role exposure count. Y is still a latent training-time outcome, so this is not yet the final deployable black-box evaluation."
+}

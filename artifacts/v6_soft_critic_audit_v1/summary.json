@@ -1,0 +1,11 @@
+{
+  "queries": 100,
+  "generator": "artifacts/v6_matched_sft_dpo/policy",
+  "hard_filter_used": false,
+  "mean_soft_benign_score": 0.4321939435601234,
+  "median_soft_benign_score": 0.44956207275390625,
+  "q10": 0.27770801186561583,
+  "q25": 0.3563157767057419,
+  "q75": 0.5123911201953888,
+  "q90": 0.5656657934188843
+}

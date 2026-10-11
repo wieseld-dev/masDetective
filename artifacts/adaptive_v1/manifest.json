@@ -1,0 +1,443 @@
+{
+  "notes": {
+    "final_test": "NOT final paper test; reserve a new locked seed/composition set",
+    "truth_roles": "privileged labels only; never controller input"
+  },
+  "seed": 97531,
+  "sha256": "077796071c176bd756d84003e25424790c7eabe1510b782b40ed5e6056ea85c4",
+  "systems": [
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "code",
+        "risk_assessment",
+        "accessibility_review"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_000_single_k3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "fact_checking",
+        "operations",
+        "translation",
+        "data"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_001_single_k4"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "research",
+        "planning",
+        "writing",
+        "math",
+        "documentation"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_002_single_k5"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "financial_analysis",
+        "incident_management",
+        "qa_testing",
+        "design",
+        "research"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_003_single_k5"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "translation",
+        "customer_support_triage",
+        "experiment_design",
+        "risk_assessment",
+        "writing",
+        "accessibility_review"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_004_single_k6"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "code",
+        "data",
+        "incident_management",
+        "math",
+        "operations",
+        "research"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_005_single_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "risk_assessment",
+        "experiment_design",
+        "database_design"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_006_fanout2_k3"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "design",
+        "writing",
+        "accessibility_review"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_007_fanout2_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "incident_management",
+        "requirements_analysis",
+        "qa_testing",
+        "documentation"
+      ],
+      "split": "train",
+      "style": "s1",
+      "system_id": "adaptv1_train_008_fanout2_k4"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "qa_testing",
+        "operations",
+        "financial_analysis",
+        "fact_checking"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_009_fanout2_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "math",
+        "design",
+        "code",
+        "data",
+        "requirements_analysis"
+      ],
+      "split": "train",
+      "style": "s1",
+      "system_id": "adaptv1_train_010_fanout2_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "math",
+        "operations",
+        "planning",
+        "requirements_analysis",
+        "research",
+        "fact_checking"
+      ],
+      "split": "train",
+      "style": "s1",
+      "system_id": "adaptv1_train_011_fanout2_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "database_design",
+        "operations",
+        "incident_management"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_012_fanout3_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "financial_analysis",
+        "customer_support_triage",
+        "writing",
+        "incident_management"
+      ],
+      "split": "train",
+      "style": "s1",
+      "system_id": "adaptv1_train_013_fanout3_k4"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "accessibility_review",
+        "code",
+        "planning",
+        "experiment_design"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_014_fanout3_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "qa_testing",
+        "database_design",
+        "requirements_analysis",
+        "translation",
+        "operations"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_015_fanout3_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "data",
+        "math",
+        "accessibility_review",
+        "requirements_analysis",
+        "documentation",
+        "incident_management"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_016_fanout3_k6"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "risk_assessment",
+        "database_design",
+        "translation",
+        "design",
+        "fact_checking",
+        "math"
+      ],
+      "split": "train",
+      "style": "s1",
+      "system_id": "adaptv1_train_017_fanout3_k6"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "documentation",
+        "experiment_design",
+        "accessibility_review"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_018_mixed_k3"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "customer_support_triage",
+        "fact_checking",
+        "operations"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_019_mixed_k3"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "requirements_analysis",
+        "writing",
+        "database_design",
+        "financial_analysis"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_020_mixed_k4"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "incident_management",
+        "code",
+        "documentation",
+        "experiment_design",
+        "qa_testing"
+      ],
+      "split": "train",
+      "style": "s2",
+      "system_id": "adaptv1_train_021_mixed_k5"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "research",
+        "fact_checking",
+        "planning",
+        "financial_analysis",
+        "risk_assessment"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_022_mixed_k5"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "design",
+        "data",
+        "customer_support_triage",
+        "risk_assessment",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "split": "train",
+      "style": "s3",
+      "system_id": "adaptv1_train_023_mixed_k6"
+    },
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "planning",
+        "fact_checking"
+      ],
+      "split": "dev",
+      "style": "s1",
+      "system_id": "adaptv1_dev_024_single_k3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "customer_support_triage",
+        "design"
+      ],
+      "split": "dev",
+      "style": "s3",
+      "system_id": "adaptv1_dev_025_single_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "customer_support_triage",
+        "translation",
+        "experiment_design",
+        "documentation",
+        "research"
+      ],
+      "split": "dev",
+      "style": "s3",
+      "system_id": "adaptv1_dev_026_fanout2_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "data",
+        "translation",
+        "code",
+        "database_design",
+        "planning",
+        "documentation"
+      ],
+      "split": "dev",
+      "style": "s3",
+      "system_id": "adaptv1_dev_027_fanout2_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "design",
+        "risk_assessment",
+        "financial_analysis"
+      ],
+      "split": "dev",
+      "style": "s1",
+      "system_id": "adaptv1_dev_028_fanout3_k3"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "qa_testing",
+        "research",
+        "experiment_design",
+        "fact_checking",
+        "writing"
+      ],
+      "split": "dev",
+      "style": "s2",
+      "system_id": "adaptv1_dev_029_fanout3_k5"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "data",
+        "planning",
+        "customer_support_triage",
+        "risk_assessment"
+      ],
+      "split": "dev",
+      "style": "s1",
+      "system_id": "adaptv1_dev_030_mixed_k4"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "qa_testing",
+        "math",
+        "documentation",
+        "writing",
+        "code",
+        "incident_management"
+      ],
+      "split": "dev",
+      "style": "s2",
+      "system_id": "adaptv1_dev_031_mixed_k6"
+    }
+  ],
+  "version": "adaptive_controller_bank_v1"
+}

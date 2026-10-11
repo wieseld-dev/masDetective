@@ -1,0 +1,9 @@
+{
+  "source": "artifacts/v3_coverage_elimination_pilot",
+  "lambda_margin": 1.0,
+  "reward": "delta_sz + lambda_margin * delta_margin",
+  "rows": 384,
+  "mean_reward": 0.00031948918342873206,
+  "std_reward": 0.03133090532122893,
+  "truth_boundary": "Privileged truth used only to construct TRAINING reward. Deployment receives no truth."
+}

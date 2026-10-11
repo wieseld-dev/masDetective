@@ -1,0 +1,58 @@
+{
+  "overall": {
+    "matched_executions": 36,
+    "activation_exact_rate": 0.8333333333333334,
+    "activation_count_equal_rate": 1.0,
+    "mean_activation_bad_recall": 0.9166666666666666,
+    "mean_activation_jaccard": 0.8888888888888888,
+    "mean_sensor_score_corr": 0.4826576781725131,
+    "mean_sensor_loglr_corr": 0.4360320656127087,
+    "bad_mean_auc": 0.9803372128578527,
+    "repair_mean_auc": 0.6760071474983755,
+    "mean_delta_auc": -0.3043300653594771,
+    "bad_mean_topk": 0.8518518518518517,
+    "repair_mean_topk": 0.4305555555555555,
+    "mean_delta_topk": -0.42129629629629634,
+    "bad_mean_llr_margin": 4.5873460452661785,
+    "repair_mean_llr_margin": 1.882682578063618,
+    "mean_delta_llr_margin": -2.704663467202561,
+    "bad_mean_selected_loglr": 3.958973533300978,
+    "repair_mean_selected_loglr": 1.008480495485615,
+    "mean_delta_selected_loglr": -2.9504930378153627
+  },
+  "by_family": {
+    "DANGLING_BAD": {
+      "n": 12,
+      "activation_exact_rate": 1.0,
+      "activation_bad_recall": 1.0,
+      "activation_jaccard": 1.0,
+      "sensor_score_corr": 0.7559065575720229,
+      "bad_auc": 0.9967320261437909,
+      "repair_auc": 0.8188316993464052,
+      "bad_llr_margin": 5.880819367425569,
+      "repair_llr_margin": 3.7808103689340977
+    },
+    "DIRECTION_BAD": {
+      "n": 12,
+      "activation_exact_rate": 0.5,
+      "activation_bad_recall": 0.75,
+      "activation_jaccard": 0.6666666666666665,
+      "sensor_score_corr": 0.31864445682141496,
+      "bad_auc": 0.9805283224400871,
+      "repair_auc": 0.5642701525054465,
+      "bad_llr_margin": 3.9697999413749603,
+      "repair_llr_margin": 0.8749126017656232
+    },
+    "SYSTEM_SELF_BAD": {
+      "n": 12,
+      "activation_exact_rate": 1.0,
+      "activation_bad_recall": 1.0,
+      "activation_jaccard": 1.0,
+      "sensor_score_corr": 0.37342202012410186,
+      "bad_auc": 0.96375128998968,
+      "repair_auc": 0.6449195906432748,
+      "bad_llr_margin": 3.911418826998006,
+      "repair_llr_margin": 0.9923247634911317
+    }
+  }
+}

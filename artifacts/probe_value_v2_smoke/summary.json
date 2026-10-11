@@ -1,0 +1,10 @@
+{
+  "num_states": 60,
+  "mean_pred_vs_oracle_spearman": 0.1082152053205213,
+  "mean_realized_utility_vs_oracle_spearman": 0.4797619047619048,
+  "mean_chosen_oracle_gain": 1.5091918667157491,
+  "mean_oracle_best_gain": 1.8245243648687999,
+  "mean_regret": 0.31533249815305076,
+  "top1_oracle_hit_rate": 0.2,
+  "mean_random_oracle_gain": 1.423380845785141
+}

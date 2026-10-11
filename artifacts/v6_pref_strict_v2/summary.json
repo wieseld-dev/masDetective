@@ -1,0 +1,68 @@
+{
+  "input": 6120,
+  "strict_eligible": 3974,
+  "selected": 545,
+  "selected_by_family": {
+    "DIRECTION": 240,
+    "META": 255,
+    "DANGLING": 50
+  },
+  "selected_by_gold": {
+    "2": 35,
+    "6": 35,
+    "8": 35,
+    "9": 20,
+    "10": 30,
+    "16": 35,
+    "23": 30,
+    "24": 30,
+    "26": 35,
+    "27": 30,
+    "32": 35,
+    "33": 35,
+    "35": 30,
+    "37": 35,
+    "39": 30,
+    "43": 30,
+    "44": 35
+  },
+  "caps": {
+    "DIRECTION": 15,
+    "META": 15,
+    "DANGLING": 5
+  },
+  "zero_strict_cells": [
+    {
+      "gold_index": 9,
+      "family": "DIRECTION"
+    },
+    {
+      "gold_index": 10,
+      "family": "DANGLING"
+    },
+    {
+      "gold_index": 23,
+      "family": "DANGLING"
+    },
+    {
+      "gold_index": 24,
+      "family": "DANGLING"
+    },
+    {
+      "gold_index": 27,
+      "family": "DANGLING"
+    },
+    {
+      "gold_index": 35,
+      "family": "DANGLING"
+    },
+    {
+      "gold_index": 39,
+      "family": "DANGLING"
+    },
+    {
+      "gold_index": 43,
+      "family": "DANGLING"
+    }
+  ]
+}

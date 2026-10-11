@@ -1,0 +1,127 @@
+{
+  "cycle": 0,
+  "notes": {
+    "policy_must_never_read_this_file": true,
+    "privileged": true,
+    "stage_dev": true
+  },
+  "seed": 20260918,
+  "semantic_rule": "distinct",
+  "sha256": "681bccd084cb30d5f7d0d76ea2e671f9544a93cb0614c91d37b1313d5c061b5d",
+  "stage": 1,
+  "systems": [
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "customer_support_triage",
+        "database_design",
+        "experiment_design"
+      ],
+      "session_id": "av11cur_e14b4177cd2e930d",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "code",
+        "design",
+        "writing"
+      ],
+      "session_id": "av11cur_73d3b91db5b80ad7",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "fact_checking",
+        "requirements_analysis",
+        "translation"
+      ],
+      "session_id": "av11cur_c4aad68db62c087e",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "customer_support_triage",
+        "planning"
+      ],
+      "session_id": "av11cur_f3343faa5d3140d8",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "incident_management",
+        "qa_testing",
+        "research"
+      ],
+      "session_id": "av11cur_33dc18637d423783",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "documentation",
+        "math",
+        "research"
+      ],
+      "session_id": "av11cur_8d96c47e42ae2f1d",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "fact_checking",
+        "operations",
+        "translation"
+      ],
+      "session_id": "av11cur_e021e6cd900315b7",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 1,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "accessibility_review",
+        "experiment_design",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_590dcca3088199bc",
+      "split": "dev",
+      "style": "s1"
+    }
+  ],
+  "version": "adaptive_v11_curriculum_manifest_v1"
+}

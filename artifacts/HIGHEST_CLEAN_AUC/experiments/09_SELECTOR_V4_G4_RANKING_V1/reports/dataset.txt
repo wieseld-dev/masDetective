@@ -1,0 +1,19 @@
+SOURCE_ROWS = 5458
+SOURCE_STATES = 240
+V4_ROWS = 12892
+V4_G4_GROUPS = 3223
+SYSTEMS = 24
+SEED = 240517
+
+SOURCE_GROUP_SIZES = {4: 2, 5: 31, 6: 111, 44: 2, 45: 2, 46: 6, 47: 15, 48: 25, 49: 30, 50: 16}
+
+R01: groups=126 rows=504
+R02: groups=122 rows=488
+R03: groups=126 rows=504
+R04: groups=126 rows=504
+R05: groups=216 rows=864
+R06: groups=203 rows=812
+R07: groups=576 rows=2304
+R08: groups=576 rows=2304
+R09: groups=576 rows=2304
+R10: groups=576 rows=2304

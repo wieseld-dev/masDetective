@@ -1,0 +1,7 @@
+{
+  "sources": 12,
+  "planned_executions": 72,
+  "successful": 72,
+  "failed": 0,
+  "model": "gpt-4o-mini"
+}

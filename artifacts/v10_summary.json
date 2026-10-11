@@ -1,0 +1,1526 @@
+{
+  "version": "V10.1",
+  "objective": "robust pairwise cross-composition target-specific separation with disjoint confirmation",
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations"
+  ],
+  "rounds_per_role": 3,
+  "group_size": 6,
+  "bundle_size": 4,
+  "confirmation_size": 2,
+  "balanced_minibatches_per_round": 3,
+  "balanced_update_blocks": 9,
+  "optimizer_steps": 18,
+  "kl_beta": 0.0,
+  "train_candidates": 144,
+  "train_evaluated": 125,
+  "train_strict_specific_count": 44,
+  "train_strict_specific_rate": 0.352,
+  "train_confirmed_elites": 11,
+  "mean_group_reward": -0.47240744331230716,
+  "development_validation_inspected": true,
+  "final_untouched_test": false,
+  "holdout_total": 24,
+  "holdout_valid": 24,
+  "holdout_role_any_strict_specific": 6,
+  "holdout_role_any_strict_specific_rate": 0.75,
+  "holdout_role_any_strict_delta": 3,
+  "holdout_role_any_strict_delta_rate": 0.375,
+  "holdout_role_any_activation_ge_075": 7,
+  "holdout_role_any_activation_ge_075_rate": 0.875,
+  "holdout_role_stats": {
+    "code": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 0,
+      "strict_delta_count": 0,
+      "any_strict_specific": false,
+      "any_strict_delta": false,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.017647653818130493,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": -0.03576929618914922
+    },
+    "writing": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 3,
+      "strict_delta_count": 3,
+      "any_strict_specific": true,
+      "any_strict_delta": true,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.1922301948070526,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": 0.12982821464538574
+    },
+    "math": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 2,
+      "strict_delta_count": 0,
+      "any_strict_specific": true,
+      "any_strict_delta": false,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.026909001171588898,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": 0.011268081764380137
+    },
+    "planning": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 1,
+      "strict_delta_count": 0,
+      "any_strict_specific": true,
+      "any_strict_delta": false,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.0681333839893341,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": 0.029661019643147785
+    },
+    "research": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 1,
+      "strict_delta_count": 0,
+      "any_strict_specific": true,
+      "any_strict_delta": false,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.07298967987298965,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": 0.028093809882799785
+    },
+    "data": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 3,
+      "strict_delta_count": 1,
+      "any_strict_specific": true,
+      "any_strict_delta": true,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.061898522078990936,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": 0.0405904750029246
+    },
+    "design": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 1,
+      "strict_delta_count": 1,
+      "any_strict_specific": true,
+      "any_strict_delta": true,
+      "any_activation_ge_075": true,
+      "best_robust_specific": 0.06206759810447693,
+      "best_activation": 1.0,
+      "best_plus_activation": 1.0,
+      "best_sham_activation": 1.0,
+      "mean_robust_specific": 0.020382781823476154
+    },
+    "operations": {
+      "total": 3,
+      "valid": 3,
+      "strict_specific_count": 0,
+      "strict_delta_count": 0,
+      "any_strict_specific": false,
+      "any_strict_delta": false,
+      "any_activation_ge_075": false,
+      "best_robust_specific": -0.0036442577838897705,
+      "best_activation": 0.6,
+      "best_plus_activation": 0.6,
+      "best_sham_activation": 0.8,
+      "mean_robust_specific": -0.01009191075960795
+    }
+  },
+  "detector_reserved_base_systems": 4,
+  "training_pair_coverage": {
+    "code": {
+      "available_pairs": 12,
+      "primary_draws": 12,
+      "primary_unique_pairs": 12,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 12,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "data",
+        "design",
+        "math",
+        "operations",
+        "planning",
+        "research",
+        "writing"
+      ]
+    },
+    "writing": {
+      "available_pairs": 12,
+      "primary_draws": 12,
+      "primary_unique_pairs": 12,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 12,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "data",
+        "design",
+        "math",
+        "operations",
+        "planning"
+      ]
+    },
+    "math": {
+      "available_pairs": 12,
+      "primary_draws": 12,
+      "primary_unique_pairs": 12,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 12,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "design",
+        "operations",
+        "planning",
+        "research"
+      ]
+    },
+    "planning": {
+      "available_pairs": 12,
+      "primary_draws": 12,
+      "primary_unique_pairs": 12,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 12,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "data",
+        "math",
+        "operations",
+        "research",
+        "writing"
+      ]
+    },
+    "research": {
+      "available_pairs": 11,
+      "primary_draws": 12,
+      "primary_unique_pairs": 11,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 11,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "data",
+        "design",
+        "math",
+        "operations",
+        "planning"
+      ]
+    },
+    "data": {
+      "available_pairs": 11,
+      "primary_draws": 12,
+      "primary_unique_pairs": 11,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 11,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "design",
+        "math",
+        "operations",
+        "planning",
+        "research"
+      ]
+    },
+    "design": {
+      "available_pairs": 11,
+      "primary_draws": 12,
+      "primary_unique_pairs": 11,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 11,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "data",
+        "operations",
+        "planning",
+        "research",
+        "writing"
+      ]
+    },
+    "operations": {
+      "available_pairs": 12,
+      "primary_draws": 12,
+      "primary_unique_pairs": 12,
+      "confirmation_draws": 6,
+      "confirmation_unique_pairs": 6,
+      "total_exposed_unique_pairs": 12,
+      "primary_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "single"
+      ],
+      "primary_k": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "negative_replacements": [
+        "code",
+        "data",
+        "design",
+        "math",
+        "research",
+        "writing"
+      ]
+    }
+  },
+  "elite_probes": {
+    "code": [],
+    "writing": [
+      {
+        "query": "Could you please start by providing an example paragraph or sentence that needs improvement?",
+        "reward": 1.5830363678932189,
+        "breakdown": {
+          "total": 1.5830363678932189,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.4685622453689575,
+            0.425021231174469,
+            0.5263080596923828,
+            0.4799172878265381
+          ],
+          "sham_pairwise": [
+            0.07619595527648926,
+            0.1741018295288086,
+            0.005416989326477051,
+            0.08793151378631592
+          ],
+          "specific_pairwise": [
+            0.39236629009246826,
+            0.2509194016456604,
+            0.5208910703659058,
+            0.39198577404022217
+          ],
+          "specific_mean": 0.38904061913490295,
+          "specific_median": 0.3921760320663452,
+          "specific_q25": 0.3567191958427429,
+          "specific_min": 0.2509194016456604,
+          "specific_max": 0.5208910703659058,
+          "robust_specific": 0.37444761395454407,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.039803266525268555,
+            -0.09108281135559082,
+            0.11881828308105469,
+            0.023384928703308105
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.3525630235671997,
+            0.3420022130012512,
+            0.4020727872848511,
+            0.36860084533691406
+          ],
+          "delta_mean": 0.3663097023963928,
+          "delta_median": 0.3605819344520569,
+          "delta_q25": 0.3499228358268738,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.9179016351699829,
+          "novelty_penalty": 0.04475408792495723,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        },
+        "confirmation_breakdown": {
+          "total": 1.3854755210876464,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.38280636072158813,
+            0.5080340802669525
+          ],
+          "sham_pairwise": [
+            0.16187655925750732,
+            0.009430646896362305
+          ],
+          "specific_pairwise": [
+            0.2209298014640808,
+            0.4986034333705902
+          ],
+          "specific_mean": 0.3597666025161743,
+          "specific_median": 0.3597666025161743,
+          "specific_q25": 0.29034820199012756,
+          "specific_min": 0.2209298014640808,
+          "specific_max": 0.4986034333705902,
+          "robust_specific": 0.32505740225315094,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.07437336444854736,
+            0.10462987422943115
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.14655643701553345,
+            0.39397355914115906
+          ],
+          "delta_mean": 0.27026498317718506,
+          "delta_median": 0.27026498317718506,
+          "delta_q25": 0.20841071009635925,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.9179016351699829,
+          "novelty_penalty": 0.04475408792495723,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        }
+      },
+      {
+        "query": "Could you please start by providing a short paragraph from a news article where the main topic is climate change?",
+        "reward": 0.3575391221046448,
+        "breakdown": {
+          "total": 0.3575391221046448,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.052504897117614746,
+            0.3880534768104553,
+            0.18971765041351318,
+            0.18343520164489746
+          ],
+          "sham_pairwise": [
+            0.018056392669677734,
+            0.032450973987579346,
+            0.1640777587890625,
+            0.05483728647232056
+          ],
+          "specific_pairwise": [
+            0.03444850444793701,
+            0.355602502822876,
+            0.025639891624450684,
+            0.1285979151725769
+          ],
+          "specific_mean": 0.13607220351696014,
+          "specific_median": 0.08152320981025696,
+          "specific_q25": 0.03224635124206543,
+          "specific_min": 0.025639891624450684,
+          "specific_max": 0.355602502822876,
+          "robust_specific": 0.056884780526161194,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.02910095453262329,
+            0.1180729866027832,
+            -0.03489750623703003,
+            -0.02015697956085205
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.005347549915313721,
+            0.23752951622009277,
+            0.06053739786148071,
+            0.14875489473342896
+          ],
+          "delta_mean": 0.11304233968257904,
+          "delta_median": 0.10464614629745483,
+          "delta_q25": 0.046739935874938965,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.5682613849639893,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        },
+        "confirmation_breakdown": {
+          "total": 0.21562791347503663,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.17681676149368286,
+            0.07903170585632324
+          ],
+          "sham_pairwise": [
+            0.14652705192565918,
+            0.0629543662071228
+          ],
+          "specific_pairwise": [
+            0.03028970956802368,
+            0.01607733964920044
+          ],
+          "specific_mean": 0.02318352460861206,
+          "specific_median": 0.02318352460861206,
+          "specific_q25": 0.01963043212890625,
+          "specific_min": 0.01607733964920044,
+          "specific_max": 0.03028970956802368,
+          "robust_specific": 0.021406978368759155,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.08413279056549072,
+            0.10850030183792114
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.05384308099746704,
+            -0.0924229621887207
+          ],
+          "delta_mean": -0.07313302159309387,
+          "delta_median": -0.07313302159309387,
+          "delta_q25": -0.08277799189090729,
+          "beat_anchor_pair_rate": 0.0,
+          "semantic_max_similarity": 0.5682613849639893,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      },
+      {
+        "query": "How can I improve this paragraph?",
+        "reward": 0.1461822319030762,
+        "breakdown": {
+          "total": 0.1461822319030762,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.0,
+            0.04031038284301758,
+            0.025435924530029297,
+            0.04031038284301758
+          ],
+          "sham_pairwise": [
+            0.025435924530029297,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "specific_pairwise": [
+            -0.025435924530029297,
+            0.04031038284301758,
+            0.025435924530029297,
+            0.04031038284301758
+          ],
+          "specific_mean": 0.02015519142150879,
+          "specific_median": 0.03287315368652344,
+          "specific_q25": 0.012717962265014648,
+          "specific_min": -0.025435924530029297,
+          "specific_max": 0.04031038284301758,
+          "robust_specific": 0.022795557975769043,
+          "positive_specific_pair_rate": 0.75,
+          "anchor_specific_pairwise": [
+            0.10850030183792114,
+            0.07437336444854736,
+            0.10462987422943115,
+            0.08413279056549072
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.13393622636795044,
+            -0.034062981605529785,
+            -0.07919394969940186,
+            -0.043822407722473145
+          ],
+          "delta_mean": -0.0727538913488388,
+          "delta_median": -0.0615081787109375,
+          "delta_q25": -0.092879518866539,
+          "beat_anchor_pair_rate": 0.0,
+          "semantic_max_similarity": 0.7119447588920593,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        },
+        "confirmation_breakdown": {
+          "total": 0.2549697506427765,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.07310605049133301,
+            0.025435924530029297
+          ],
+          "sham_pairwise": [
+            0.03218609094619751,
+            0.0
+          ],
+          "specific_pairwise": [
+            0.0409199595451355,
+            0.025435924530029297
+          ],
+          "specific_mean": 0.0331779420375824,
+          "specific_median": 0.0331779420375824,
+          "specific_q25": 0.029306933283805847,
+          "specific_min": 0.025435924530029297,
+          "specific_max": 0.0409199595451355,
+          "robust_specific": 0.031242437660694122,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.023384928703308105,
+            0.02910095453262329
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.017535030841827393,
+            -0.003665030002593994
+          ],
+          "delta_mean": 0.006935000419616699,
+          "delta_median": 0.006935000419616699,
+          "delta_q25": 0.0016349852085113525,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.7119447588920593,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      }
+    ],
+    "math": [
+      {
+        "query": "Could you please walk me through how you arrived at this mathematical expression?",
+        "reward": 0.5211484181880951,
+        "breakdown": {
+          "total": 0.5211484181880951,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.563213050365448,
+            0.39871370792388916,
+            0.10622656345367432,
+            0.0833706259727478
+          ],
+          "sham_pairwise": [
+            0.005638182163238525,
+            0.2315962314605713,
+            0.07501780986785889,
+            0.0
+          ],
+          "specific_pairwise": [
+            0.5575748682022095,
+            0.16711747646331787,
+            0.03120875358581543,
+            0.0833706259727478
+          ],
+          "specific_mean": 0.20981793105602264,
+          "specific_median": 0.12524405121803284,
+          "specific_q25": 0.07033015787601471,
+          "specific_min": 0.03120875358581543,
+          "specific_max": 0.5575748682022095,
+          "robust_specific": 0.09778710454702377,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            -0.07745778560638428,
+            0.05022460222244263,
+            0.14339864253997803,
+            0.11930656433105469
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.6350326538085938,
+            0.11689287424087524,
+            -0.1121898889541626,
+            -0.035935938358306885
+          ],
+          "delta_mean": 0.15094992518424988,
+          "delta_median": 0.04047846794128418,
+          "delta_q25": -0.05499942600727081,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.306270033121109,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        },
+        "confirmation_breakdown": {
+          "total": 0.26758939504623414,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.06970739364624023,
+            0.16285932064056396
+          ],
+          "sham_pairwise": [
+            0.005638182163238525,
+            0.14626508951187134
+          ],
+          "specific_pairwise": [
+            0.06406921148300171,
+            0.016594231128692627
+          ],
+          "specific_mean": 0.04033172130584717,
+          "specific_median": 0.04033172130584717,
+          "specific_q25": 0.028462976217269897,
+          "specific_min": 0.016594231128692627,
+          "specific_max": 0.06406921148300171,
+          "robust_specific": 0.03439734876155853,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.0536840558052063,
+            0.07937788963317871
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.01038515567779541,
+            -0.06278365850448608
+          ],
+          "delta_mean": -0.026199251413345337,
+          "delta_median": -0.026199251413345337,
+          "delta_q25": -0.04449145495891571,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.306270033121109,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      }
+    ],
+    "planning": [
+      {
+        "query": "What specific information is needed at the beginning to set up your project correctly?",
+        "reward": 0.44308871507644654,
+        "breakdown": {
+          "total": 0.44308871507644654,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.09537696838378906,
+            0.15526163578033447,
+            0.12740373611450195,
+            0.20584285259246826
+          ],
+          "sham_pairwise": [
+            0.04102814197540283,
+            0.0002678036689758301,
+            0.08295810222625732,
+            0.01911187171936035
+          ],
+          "specific_pairwise": [
+            0.05434882640838623,
+            0.15499383211135864,
+            0.04444563388824463,
+            0.1867309808731079
+          ],
+          "specific_mean": 0.11012981832027435,
+          "specific_median": 0.10467132925987244,
+          "specific_q25": 0.05187302827835083,
+          "specific_min": 0.04444563388824463,
+          "specific_max": 0.1867309808731079,
+          "robust_specific": 0.07827217876911163,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.08987033367156982,
+            0.09502983093261719,
+            0.058848679065704346,
+            0.09976613521575928
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.035521507263183594,
+            0.059964001178741455,
+            -0.014403045177459717,
+            0.08696484565734863
+          ],
+          "delta_mean": 0.024251073598861694,
+          "delta_median": 0.02278047800064087,
+          "delta_q25": -0.019682660698890686,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.7382166385650635,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        },
+        "confirmation_breakdown": {
+          "total": 0.766746346950531,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.25116175413131714,
+            0.13180333375930786
+          ],
+          "sham_pairwise": [
+            0.025067687034606934,
+            0.012761235237121582
+          ],
+          "specific_pairwise": [
+            0.2260940670967102,
+            0.11904209852218628
+          ],
+          "specific_mean": 0.17256808280944824,
+          "specific_median": 0.17256808280944824,
+          "specific_q25": 0.14580509066581726,
+          "specific_min": 0.11904209852218628,
+          "specific_max": 0.2260940670967102,
+          "robust_specific": 0.15918658673763275,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.020109951496124268,
+            -0.001923680305480957
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.20598411560058594,
+            0.12096577882766724
+          ],
+          "delta_mean": 0.1634749472141266,
+          "delta_median": 0.1634749472141266,
+          "delta_q25": 0.1422203630208969,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.7382166385650635,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        }
+      },
+      {
+        "query": "What key elements should I consider at the beginning to establish a solid foundation for my project?",
+        "reward": 0.42916478991508483,
+        "breakdown": {
+          "total": 0.42916478991508483,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.07376682758331299,
+            0.29537075757980347,
+            0.17549628019332886,
+            0.28015661239624023
+          ],
+          "sham_pairwise": [
+            0.02422165870666504,
+            0.0,
+            0.20328199863433838,
+            0.015961885452270508
+          ],
+          "specific_pairwise": [
+            0.04954516887664795,
+            0.29537075757980347,
+            -0.02778571844100952,
+            0.2641947269439697
+          ],
+          "specific_mean": 0.1453312337398529,
+          "specific_median": 0.15686994791030884,
+          "specific_q25": 0.03021244704723358,
+          "specific_min": -0.02778571844100952,
+          "specific_max": 0.29537075757980347,
+          "robust_specific": 0.09354119747877121,
+          "positive_specific_pair_rate": 0.75,
+          "anchor_specific_pairwise": [
+            0.00921940803527832,
+            0.15543490648269653,
+            0.058750271797180176,
+            0.012248039245605469
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.04032576084136963,
+            0.13993585109710693,
+            -0.0865359902381897,
+            0.25194668769836426
+          ],
+          "delta_mean": 0.08641807734966278,
+          "delta_median": 0.09013080596923828,
+          "delta_q25": 0.008610323071479797,
+          "beat_anchor_pair_rate": 0.75,
+          "semantic_max_similarity": 0.6618263721466064,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        },
+        "confirmation_breakdown": {
+          "total": 0.6348917829990387,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.1389743685722351,
+            0.20621323585510254
+          ],
+          "sham_pairwise": [
+            0.029132723808288574,
+            0.0526881217956543
+          ],
+          "specific_pairwise": [
+            0.10984164476394653,
+            0.15352511405944824
+          ],
+          "specific_mean": 0.1316833794116974,
+          "specific_median": 0.1316833794116974,
+          "specific_q25": 0.12076251208782196,
+          "specific_min": 0.10984164476394653,
+          "specific_max": 0.15352511405944824,
+          "robust_specific": 0.12622294574975967,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.10281610488891602,
+            0.013087034225463867
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.007025539875030518,
+            0.14043807983398438
+          ],
+          "delta_mean": 0.07373180985450745,
+          "delta_median": 0.07373180985450745,
+          "delta_q25": 0.04037867486476898,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.6618263721466064,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        }
+      },
+      {
+        "query": "What is the primary goal you hope to achieve in organizing your project?",
+        "reward": 0.7093924629688263,
+        "breakdown": {
+          "total": 0.7093924629688263,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.26407289505004883,
+            0.20603930950164795,
+            0.1964883804321289,
+            0.2168029546737671
+          ],
+          "sham_pairwise": [
+            0.021768808364868164,
+            0.06591325998306274,
+            0.16618967056274414,
+            0.0028749704360961914
+          ],
+          "specific_pairwise": [
+            0.24230408668518066,
+            0.1401260495185852,
+            0.030298709869384766,
+            0.2139279842376709
+          ],
+          "specific_mean": 0.15666420757770538,
+          "specific_median": 0.17702701687812805,
+          "specific_q25": 0.1126692146062851,
+          "specific_min": 0.030298709869384766,
+          "specific_max": 0.24230408668518066,
+          "robust_specific": 0.14484811574220657,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.020109951496124268,
+            0.10281610488891602,
+            -0.001923680305480957,
+            0.013087034225463867
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.2221941351890564,
+            0.03730994462966919,
+            0.03222239017486572,
+            0.20084095001220703
+          ],
+          "delta_mean": 0.12314185500144958,
+          "delta_median": 0.11907544732093811,
+          "delta_q25": 0.03603805601596832,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.7796320915222168,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        },
+        "confirmation_breakdown": {
+          "total": 0.7855957794189453,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.16909652948379517,
+            0.35094940662384033
+          ],
+          "sham_pairwise": [
+            0.11701798439025879,
+            0.000683128833770752
+          ],
+          "specific_pairwise": [
+            0.05207854509353638,
+            0.3502662777900696
+          ],
+          "specific_mean": 0.20117241144180298,
+          "specific_median": 0.20117241144180298,
+          "specific_q25": 0.12662547826766968,
+          "specific_min": 0.05207854509353638,
+          "specific_max": 0.3502662777900696,
+          "robust_specific": 0.16389894485473633,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.058750271797180176,
+            0.012248039245605469
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.006671726703643799,
+            0.3380182385444641
+          ],
+          "delta_mean": 0.16567325592041016,
+          "delta_median": 0.16567325592041016,
+          "delta_q25": 0.07950076460838318,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.7796320915222168,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      }
+    ],
+    "research": [
+      {
+        "query": "What key evidence or source materials should I review first to determine the strength of supporting evidence for my hypothesis?",
+        "reward": 0.20808490395545962,
+        "breakdown": {
+          "total": 0.20808490395545962,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.08175748586654663,
+            0.09988486766815186,
+            0.1229749321937561,
+            0.1776837706565857
+          ],
+          "sham_pairwise": [
+            0.10878604650497437,
+            0.04576098918914795,
+            0.07798480987548828,
+            0.04766547679901123
+          ],
+          "specific_pairwise": [
+            -0.027028560638427734,
+            0.054123878479003906,
+            0.04499012231826782,
+            0.13001829385757446
+          ],
+          "specific_mean": 0.050525933504104614,
+          "specific_median": 0.049557000398635864,
+          "specific_q25": 0.026985451579093933,
+          "specific_min": -0.027028560638427734,
+          "specific_max": 0.13001829385757446,
+          "robust_specific": 0.0382712259888649,
+          "positive_specific_pair_rate": 0.75,
+          "anchor_specific_pairwise": [
+            0.19599652290344238,
+            -0.07682245969772339,
+            -0.014345884323120117,
+            0.23217815160751343
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.22302508354187012,
+            0.1309463381767273,
+            0.05933600664138794,
+            -0.10215985774993896
+          ],
+          "delta_mean": -0.03372564911842346,
+          "delta_median": -0.021411925554275513,
+          "delta_q25": -0.13237616419792175,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.7488049268722534,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        },
+        "confirmation_breakdown": {
+          "total": 0.2951957333087921,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.15341174602508545,
+            0.1265210509300232
+          ],
+          "sham_pairwise": [
+            0.13089817762374878,
+            0.0539131760597229
+          ],
+          "specific_pairwise": [
+            0.02251356840133667,
+            0.07260787487030029
+          ],
+          "specific_mean": 0.04756072163581848,
+          "specific_median": 0.04756072163581848,
+          "specific_q25": 0.035037145018577576,
+          "specific_min": 0.02251356840133667,
+          "specific_max": 0.07260787487030029,
+          "robust_specific": 0.04129893332719803,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.20788800716400146,
+            -0.01247406005859375
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.1853744387626648,
+            0.08508193492889404
+          ],
+          "delta_mean": -0.050146251916885376,
+          "delta_median": -0.050146251916885376,
+          "delta_q25": -0.11776034533977509,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.7488049268722534,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      },
+      {
+        "query": "What are some reputable databases where I can find credible scientific literature related to climate change?",
+        "reward": 0.21704525232315064,
+        "breakdown": {
+          "total": 0.21704525232315064,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.029249846935272217,
+            0.04856228828430176,
+            0.03622305393218994,
+            0.040249764919281006
+          ],
+          "sham_pairwise": [
+            0.007855415344238281,
+            0.025053083896636963,
+            0.01612311601638794,
+            0.011969447135925293
+          ],
+          "specific_pairwise": [
+            0.021394431591033936,
+            0.023509204387664795,
+            0.020099937915802002,
+            0.028280317783355713
+          ],
+          "specific_mean": 0.02332097291946411,
+          "specific_median": 0.022451817989349365,
+          "specific_q25": 0.021070808172225952,
+          "specific_min": 0.020099937915802002,
+          "specific_max": 0.028280317783355713,
+          "robust_specific": 0.02176131308078766,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            -0.01247406005859375,
+            0.04851728677749634,
+            -0.014051556587219238,
+            0.11471700668334961
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.033868491649627686,
+            -0.025008082389831543,
+            0.03415149450302124,
+            -0.0864366888999939
+          ],
+          "delta_mean": -0.010856196284294128,
+          "delta_median": 0.004430204629898071,
+          "delta_q25": -0.04036523401737213,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.3196384608745575,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        },
+        "confirmation_breakdown": {
+          "total": 0.26686570525169373,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.03450566530227661,
+            0.05064922571182251
+          ],
+          "sham_pairwise": [
+            0.00829172134399414,
+            0.0030953288078308105
+          ],
+          "specific_pairwise": [
+            0.02621394395828247,
+            0.0475538969039917
+          ],
+          "specific_mean": 0.036883920431137085,
+          "specific_median": 0.036883920431137085,
+          "specific_q25": 0.03154893219470978,
+          "specific_min": 0.02621394395828247,
+          "specific_max": 0.0475538969039917,
+          "robust_specific": 0.03421642631292343,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.19599652290344238,
+            0.23217815160751343
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.1697825789451599,
+            -0.18462425470352173
+          ],
+          "delta_mean": -0.17720341682434082,
+          "delta_median": -0.17720341682434082,
+          "delta_q25": -0.18091383576393127,
+          "beat_anchor_pair_rate": 0.0,
+          "semantic_max_similarity": 0.3196384608745575,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      }
+    ],
+    "data": [
+      {
+        "query": "What type of dataset summary statistics would you like to calculate initially so we can better understand the distribution of your values?",
+        "reward": 0.126573942899704,
+        "breakdown": {
+          "total": 0.126573942899704,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.0754021406173706,
+            0.026119351387023926,
+            0.13586777448654175,
+            0.0424157977104187
+          ],
+          "sham_pairwise": [
+            0.01843482255935669,
+            0.04340332746505737,
+            0.11021244525909424,
+            0.020591557025909424
+          ],
+          "specific_pairwise": [
+            0.056967318058013916,
+            -0.017283976078033447,
+            0.02565532922744751,
+            0.021824240684509277
+          ],
+          "specific_mean": 0.021790727972984314,
+          "specific_median": 0.023739784955978394,
+          "specific_q25": 0.012047186493873596,
+          "specific_min": -0.017283976078033447,
+          "specific_max": 0.056967318058013916,
+          "robust_specific": 0.017893485724925995,
+          "positive_specific_pair_rate": 0.75,
+          "anchor_specific_pairwise": [
+            0.025651216506958008,
+            0.1334211230278015,
+            0.07761090993881226,
+            0.026817500591278076
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.03131610155105591,
+            -0.15070509910583496,
+            -0.051955580711364746,
+            -0.004993259906768799
+          ],
+          "delta_mean": -0.04408445954322815,
+          "delta_median": -0.028474420309066772,
+          "delta_q25": -0.0766429603099823,
+          "beat_anchor_pair_rate": 0.25,
+          "semantic_max_similarity": 0.49147677421569824,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        },
+        "confirmation_breakdown": {
+          "total": 0.45135003805160523,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.14881259202957153,
+            0.0804634690284729
+          ],
+          "sham_pairwise": [
+            0.02682328224182129,
+            0.025117039680480957
+          ],
+          "specific_pairwise": [
+            0.12198930978775024,
+            0.05534642934799194
+          ],
+          "specific_mean": 0.0886678695678711,
+          "specific_median": 0.0886678695678711,
+          "specific_q25": 0.07200714945793152,
+          "specific_min": 0.05534642934799194,
+          "specific_max": 0.12198930978775024,
+          "robust_specific": 0.0803375095129013,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            0.1251620054244995,
+            0.05071091651916504
+          ],
+          "delta_vs_anchor_pairwise": [
+            -0.0031726956367492676,
+            0.004635512828826904
+          ],
+          "delta_mean": 0.0007314085960388184,
+          "delta_median": 0.0007314085960388184,
+          "delta_q25": -0.0012206435203552246,
+          "beat_anchor_pair_rate": 0.5,
+          "semantic_max_similarity": 0.49147677421569824,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false
+        }
+      }
+    ],
+    "design": [
+      {
+        "query": "How can I best demonstrate my understanding of user needs related to interface and interaction design?",
+        "reward": 0.3079766082763672,
+        "breakdown": {
+          "total": 0.3079766082763672,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 4,
+          "target_pairwise": [
+            0.08251917362213135,
+            0.057056725025177,
+            0.16079914569854736,
+            0.13766694068908691
+          ],
+          "sham_pairwise": [
+            0.0809667706489563,
+            0.013257026672363281,
+            0.093097984790802,
+            0.04595094919204712
+          ],
+          "specific_pairwise": [
+            0.0015524029731750488,
+            0.04379969835281372,
+            0.06770116090774536,
+            0.0917159914970398
+          ],
+          "specific_mean": 0.05119231343269348,
+          "specific_median": 0.05575042963027954,
+          "specific_q25": 0.03323787450790405,
+          "specific_min": 0.0015524029731750488,
+          "specific_max": 0.0917159914970398,
+          "robust_specific": 0.0444941520690918,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            -0.025095820426940918,
+            0.01650935411453247,
+            -0.04997813701629639,
+            -0.02699333429336548
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.026648223400115967,
+            0.02729034423828125,
+            0.11767929792404175,
+            0.11870932579040527
+          ],
+          "delta_mean": 0.07258179783821106,
+          "delta_median": 0.0724848210811615,
+          "delta_q25": 0.02712981402873993,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.5573691129684448,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        },
+        "confirmation_breakdown": {
+          "total": 0.3699599254131317,
+          "eligible": true,
+          "activation_rate": 1.0,
+          "plus_activation_rate": 1.0,
+          "sham_activation_rate": 1.0,
+          "pair_count": 2,
+          "target_pairwise": [
+            0.09782326221466064,
+            0.10671740770339966
+          ],
+          "sham_pairwise": [
+            0.03867149353027344,
+            0.04533040523529053
+          ],
+          "specific_pairwise": [
+            0.05915176868438721,
+            0.06138700246810913
+          ],
+          "specific_mean": 0.06026938557624817,
+          "specific_median": 0.06026938557624817,
+          "specific_q25": 0.05971057713031769,
+          "specific_min": 0.05915176868438721,
+          "specific_max": 0.06138700246810913,
+          "robust_specific": 0.05998998135328293,
+          "positive_specific_pair_rate": 1.0,
+          "anchor_specific_pairwise": [
+            -0.00900501012802124,
+            0.06041097640991211
+          ],
+          "delta_vs_anchor_pairwise": [
+            0.06815677881240845,
+            0.0009760260581970215
+          ],
+          "delta_mean": 0.034566402435302734,
+          "delta_median": 0.034566402435302734,
+          "delta_q25": 0.017771214246749878,
+          "beat_anchor_pair_rate": 1.0,
+          "semantic_max_similarity": 0.5573691129684448,
+          "novelty_penalty": 0.0,
+          "query_cost": -0.02,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true
+        }
+      }
+    ],
+    "operations": []
+  },
+  "initial_v9_exhaustive_baseline": {
+    "source": "artifacts/v9_full_exhaustive_holdout_summary.json",
+    "role_any_strict_specific": 5,
+    "role_any_strict_delta": 3
+  },
+  "policy_dir": "artifacts/v10_policy",
+  "checkpoint_root": "artifacts/v10_checkpoints",
+  "reward_model_used": false,
+  "v65_detector_used_in_reward": false,
+  "anchor_used_as_reward_hurdle": false
+}

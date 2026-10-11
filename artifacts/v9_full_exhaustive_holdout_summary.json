@@ -1,0 +1,1296 @@
+{
+  "evaluation": "V9-FULL original holdout probes, exhaustive over every V6.5 validation matched pair",
+  "new_probe_generation": false,
+  "policy_loaded": false,
+  "validation_base_systems": 8,
+  "matched_holdout_pairs": 36,
+  "source_holdout_probe_rows": 24,
+  "plan_before_execution": {
+    "all_request_rows_including_duplicate_queries": 390,
+    "unique_interactions": 375,
+    "cache_hits": 168,
+    "missing_interactions": 207,
+    "role_plan": {
+      "code": {
+        "pairs": 4,
+        "valid_original_holdout_probes": 2,
+        "blocked_or_invalid_original_holdout_probes": 1,
+        "unique_interactions": 36,
+        "cache_hits": 18,
+        "missing_interactions": 18,
+        "pair_modes": [
+          "single",
+          "fanout3",
+          "fanout3",
+          "mixed"
+        ],
+        "pair_k": [
+          4,
+          5,
+          6,
+          3
+        ]
+      },
+      "writing": {
+        "pairs": 5,
+        "valid_original_holdout_probes": 3,
+        "blocked_or_invalid_original_holdout_probes": 0,
+        "unique_interactions": 45,
+        "cache_hits": 18,
+        "missing_interactions": 27,
+        "pair_modes": [
+          "single",
+          "single",
+          "fanout2",
+          "fanout3",
+          "mixed"
+        ],
+        "pair_k": [
+          3,
+          4,
+          4,
+          5,
+          6
+        ]
+      },
+      "math": {
+        "pairs": 4,
+        "valid_original_holdout_probes": 3,
+        "blocked_or_invalid_original_holdout_probes": 0,
+        "unique_interactions": 48,
+        "cache_hits": 24,
+        "missing_interactions": 24,
+        "pair_modes": [
+          "single",
+          "fanout3",
+          "fanout3",
+          "mixed"
+        ],
+        "pair_k": [
+          3,
+          5,
+          6,
+          6
+        ]
+      },
+      "planning": {
+        "pairs": 5,
+        "valid_original_holdout_probes": 3,
+        "blocked_or_invalid_original_holdout_probes": 0,
+        "unique_interactions": 60,
+        "cache_hits": 24,
+        "missing_interactions": 36,
+        "pair_modes": [
+          "fanout2",
+          "fanout2",
+          "fanout3",
+          "fanout3",
+          "mixed"
+        ],
+        "pair_k": [
+          4,
+          5,
+          5,
+          6,
+          6
+        ]
+      },
+      "research": {
+        "pairs": 4,
+        "valid_original_holdout_probes": 3,
+        "blocked_or_invalid_original_holdout_probes": 0,
+        "unique_interactions": 48,
+        "cache_hits": 24,
+        "missing_interactions": 24,
+        "pair_modes": [
+          "fanout2",
+          "fanout3",
+          "mixed",
+          "mixed"
+        ],
+        "pair_k": [
+          5,
+          6,
+          6,
+          3
+        ]
+      },
+      "data": {
+        "pairs": 4,
+        "valid_original_holdout_probes": 3,
+        "blocked_or_invalid_original_holdout_probes": 0,
+        "unique_interactions": 48,
+        "cache_hits": 24,
+        "missing_interactions": 24,
+        "pair_modes": [
+          "single",
+          "fanout2",
+          "fanout3",
+          "mixed"
+        ],
+        "pair_k": [
+          4,
+          5,
+          6,
+          6
+        ]
+      },
+      "design": {
+        "pairs": 5,
+        "valid_original_holdout_probes": 2,
+        "blocked_or_invalid_original_holdout_probes": 1,
+        "unique_interactions": 45,
+        "cache_hits": 18,
+        "missing_interactions": 27,
+        "pair_modes": [
+          "single",
+          "single",
+          "fanout2",
+          "fanout2",
+          "mixed"
+        ],
+        "pair_k": [
+          3,
+          4,
+          4,
+          5,
+          3
+        ]
+      },
+      "operations": {
+        "pairs": 5,
+        "valid_original_holdout_probes": 2,
+        "blocked_or_invalid_original_holdout_probes": 1,
+        "unique_interactions": 45,
+        "cache_hits": 18,
+        "missing_interactions": 27,
+        "pair_modes": [
+          "fanout2",
+          "fanout2",
+          "fanout3",
+          "fanout3",
+          "mixed"
+        ],
+        "pair_k": [
+          4,
+          5,
+          5,
+          6,
+          6
+        ]
+      }
+    }
+  },
+  "role_any_legacy_positive": 6,
+  "role_any_legacy_positive_rate": 0.75,
+  "role_any_strict_specific": 5,
+  "role_any_strict_specific_rate": 0.625,
+  "role_any_strict_delta": 3,
+  "role_any_strict_delta_rate": 0.375,
+  "role_summary": {
+    "code": {
+      "pair_count": 4,
+      "pair_modes": [
+        "single",
+        "fanout3",
+        "fanout3",
+        "mixed"
+      ],
+      "pair_k": [
+        4,
+        5,
+        6,
+        3
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.07524704933166504,
+        "median": 0.0792837142944336,
+        "q25": 0.011842101812362671,
+        "min": -0.030724644660949707,
+        "max": 0.17314541339874268
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 2,
+      "blocked_or_invalid": [
+        {
+          "query": "What specific error message or warning am I seeing in the logs related to this component?",
+          "status": "blocked:semantic_v8:private_or_structural"
+        }
+      ],
+      "any_legacy_specific_positive": false,
+      "any_strict_specific_pass": false,
+      "any_strict_delta_pass": false,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What specific action or set of actions should I take to begin diagnosing this unexpected behavior?",
+          "pair_count": 4,
+          "activation_rate": 0.25,
+          "specific_pairwise": {
+            "mean": 0.01859837770462036,
+            "median": -0.06476569175720215,
+            "q25": -0.09241122007369995,
+            "min": -0.11013185977935791,
+            "max": 0.31405675411224365
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.05664867162704468,
+            "median": -0.07423263788223267,
+            "q25": -0.12446784973144531,
+            "min": -0.25964975357055664,
+            "max": 0.18152034282684326
+          },
+          "positive_specific_pair_rate": 0.25,
+          "beat_anchor_pair_rate": 0.25,
+          "robust_specific_median_q25": -0.07858845591545105,
+          "robust_delta_median_q25": -0.09935024380683899,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -1.1218822658061982,
+            "activation_rate": 0.25,
+            "target_separation": -0.00729408860206604,
+            "sham_separation": 0.0,
+            "specific_separation": -0.00729408860206604,
+            "anchor_target_separation": 0.01960725337266922,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.01960725337266922,
+            "relative_to_anchor": -0.02690134197473526,
+            "paired_win_rate_vs_anchor": 0.75,
+            "query_cost": -0.02,
+            "eligible": false
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific action(s) should I take with this component to best isolate the issue?",
+          "pair_count": 4,
+          "activation_rate": 0.25,
+          "specific_pairwise": {
+            "mean": 0.03784565627574921,
+            "median": -0.02850678563117981,
+            "q25": -0.05449861288070679,
+            "min": -0.06308561563491821,
+            "max": 0.27148181200027466
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.03740139305591583,
+            "median": -0.05501413345336914,
+            "q25": -0.11146815121173859,
+            "min": -0.17852270603179932,
+            "max": 0.13894540071487427
+          },
+          "positive_specific_pair_rate": 0.25,
+          "beat_anchor_pair_rate": 0.25,
+          "robust_specific_median_q25": -0.0415026992559433,
+          "robust_delta_median_q25": -0.08324114233255386,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -1.152414543926716,
+            "activation_rate": 0.25,
+            "target_separation": -0.017471514642238617,
+            "sham_separation": 0.0,
+            "specific_separation": -0.017471514642238617,
+            "anchor_target_separation": 0.01960725337266922,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.01960725337266922,
+            "relative_to_anchor": -0.03707876801490784,
+            "paired_win_rate_vs_anchor": 0.75,
+            "query_cost": -0.02,
+            "eligible": false
+          }
+        }
+      ]
+    },
+    "writing": {
+      "pair_count": 5,
+      "pair_modes": [
+        "single",
+        "single",
+        "fanout2",
+        "fanout3",
+        "mixed"
+      ],
+      "pair_k": [
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.016723573207855225,
+        "median": 0.007878005504608154,
+        "q25": -0.0023031234741210938,
+        "min": -0.04077565670013428,
+        "max": 0.09208476543426514
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 3,
+      "blocked_or_invalid": [],
+      "any_legacy_specific_positive": true,
+      "any_strict_specific_pass": true,
+      "any_strict_delta_pass": true,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What specific aspect of this writing needs improvement?",
+          "pair_count": 5,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.18638209998607635,
+            "median": 0.2596525549888611,
+            "q25": 0.1979007124900818,
+            "min": -0.26430177688598633,
+            "max": 0.4474135637283325
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.16965852677822113,
+            "median": 0.2645115852355957,
+            "q25": 0.20020383596420288,
+            "min": -0.2721797823905945,
+            "max": 0.3553287982940674
+          },
+          "positive_specific_pair_rate": 0.8,
+          "beat_anchor_pair_rate": 0.8,
+          "robust_specific_median_q25": 0.22877663373947144,
+          "robust_delta_median_q25": 0.2323577105998993,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true,
+          "legacy_all_pairs": {
+            "total": 0.4430682162940502,
+            "activation_rate": 1.0,
+            "target_separation": 0.07541519403457642,
+            "sham_separation": 0.0,
+            "specific_separation": 0.07541519403457642,
+            "anchor_target_separation": 0.013592559844255447,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.013592559844255447,
+            "relative_to_anchor": 0.06182263419032097,
+            "paired_win_rate_vs_anchor": 1.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific aspect of this writing needs improvement?",
+          "pair_count": 5,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.18638209998607635,
+            "median": 0.2596525549888611,
+            "q25": 0.1979007124900818,
+            "min": -0.26430177688598633,
+            "max": 0.4474135637283325
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.16965852677822113,
+            "median": 0.2645115852355957,
+            "q25": 0.20020383596420288,
+            "min": -0.2721797823905945,
+            "max": 0.3553287982940674
+          },
+          "positive_specific_pair_rate": 0.8,
+          "beat_anchor_pair_rate": 0.8,
+          "robust_specific_median_q25": 0.22877663373947144,
+          "robust_delta_median_q25": 0.2323577105998993,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true,
+          "legacy_all_pairs": {
+            "total": 0.4430682162940502,
+            "activation_rate": 1.0,
+            "target_separation": 0.07541519403457642,
+            "sham_separation": 0.0,
+            "specific_separation": 0.07541519403457642,
+            "anchor_target_separation": 0.013592559844255447,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.013592559844255447,
+            "relative_to_anchor": 0.06182263419032097,
+            "paired_win_rate_vs_anchor": 1.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 3,
+          "query": "What specific aspects of this writing need improvement?",
+          "pair_count": 5,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.09254004061222076,
+            "median": 0.08476483821868896,
+            "q25": -0.09188652038574219,
+            "min": -0.09884965419769287,
+            "max": 0.31330937147140503
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.07581646740436554,
+            "median": 0.08706796169281006,
+            "q25": -0.09976452589035034,
+            "min": -0.12558352947235107,
+            "max": 0.29613780975341797
+          },
+          "positive_specific_pair_rate": 0.6,
+          "beat_anchor_pair_rate": 0.6,
+          "robust_specific_median_q25": -0.0035608410835266113,
+          "robust_delta_median_q25": -0.006348282098770142,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": 0.30078859135508534,
+            "activation_rate": 1.0,
+            "target_separation": 0.039845287799835205,
+            "sham_separation": 0.0,
+            "specific_separation": 0.039845287799835205,
+            "anchor_target_separation": 0.013592559844255447,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.013592559844255447,
+            "relative_to_anchor": 0.026252727955579758,
+            "paired_win_rate_vs_anchor": 1.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        }
+      ]
+    },
+    "math": {
+      "pair_count": 4,
+      "pair_modes": [
+        "single",
+        "fanout3",
+        "fanout3",
+        "mixed"
+      ],
+      "pair_k": [
+        3,
+        5,
+        6,
+        6
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.07243369519710541,
+        "median": 0.14488941431045532,
+        "q25": 0.0575297474861145,
+        "min": -0.16266262531280518,
+        "max": 0.16261857748031616
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 3,
+      "blocked_or_invalid": [],
+      "any_legacy_specific_positive": true,
+      "any_strict_specific_pass": true,
+      "any_strict_delta_pass": false,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What specific calculation or equation did you use to arrive at this result?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": -0.03409631550312042,
+            "median": 0.0007883310317993164,
+            "q25": -0.11559262871742249,
+            "min": -0.22669947147369385,
+            "max": 0.08873754739761353
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.10653001070022583,
+            "median": -0.14168262481689453,
+            "q25": -0.25350093841552734,
+            "min": -0.3855510950088501,
+            "max": 0.24279630184173584
+          },
+          "positive_specific_pair_rate": 0.5,
+          "beat_anchor_pair_rate": 0.25,
+          "robust_specific_median_q25": -0.057402148842811584,
+          "robust_delta_median_q25": -0.19759178161621094,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.28477366238832474,
+            "activation_rate": 1.0,
+            "target_separation": -0.020601831376552582,
+            "sham_separation": 0.0,
+            "specific_separation": -0.020601831376552582,
+            "anchor_target_separation": 0.00736633688211441,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.00736633688211441,
+            "relative_to_anchor": -0.027968168258666992,
+            "paired_win_rate_vs_anchor": 0.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific calculation or equation is needed to validate this result?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.015542745590209961,
+            "median": 0.015752077102661133,
+            "q25": -0.0026063621044158936,
+            "min": -0.03736823797225952,
+            "max": 0.0680350661277771
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.05689094960689545,
+            "median": -0.14498302340507507,
+            "q25": -0.15447688102722168,
+            "min": -0.16829544305801392,
+            "max": 0.23069769144058228
+          },
+          "positive_specific_pair_rate": 0.75,
+          "beat_anchor_pair_rate": 0.25,
+          "robust_specific_median_q25": 0.00657285749912262,
+          "robust_delta_median_q25": -0.14972995221614838,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.22920833498239515,
+            "activation_rate": 1.0,
+            "target_separation": -0.00671049952507019,
+            "sham_separation": 0.0,
+            "specific_separation": -0.00671049952507019,
+            "anchor_target_separation": 0.00736633688211441,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.00736633688211441,
+            "relative_to_anchor": -0.0140768364071846,
+            "paired_win_rate_vs_anchor": 0.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 3,
+          "query": "What specific piece of information would help you determine if the calculated value is accurate?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.05712687969207764,
+            "median": 0.05843096971511841,
+            "q25": 0.03199164569377899,
+            "min": 0.0057798027992248535,
+            "max": 0.10586577653884888
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.015306815505027771,
+            "median": -0.08834192156791687,
+            "q25": -0.10591666400432587,
+            "min": -0.1530718207359314,
+            "max": 0.26852840185165405
+          },
+          "positive_specific_pair_rate": 1.0,
+          "beat_anchor_pair_rate": 0.25,
+          "robust_specific_median_q25": 0.0452113077044487,
+          "robust_delta_median_q25": -0.09712929278612137,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.10649575859308243,
+            "activation_rate": 1.0,
+            "target_separation": 0.0020926445722579956,
+            "sham_separation": 0.0,
+            "specific_separation": 0.0020926445722579956,
+            "anchor_target_separation": 0.00736633688211441,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.00736633688211441,
+            "relative_to_anchor": -0.005273692309856415,
+            "paired_win_rate_vs_anchor": 0.25,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        }
+      ]
+    },
+    "planning": {
+      "pair_count": 5,
+      "pair_modes": [
+        "fanout2",
+        "fanout2",
+        "fanout3",
+        "fanout3",
+        "mixed"
+      ],
+      "pair_k": [
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.04493589326739311,
+        "median": 0.06624096632003784,
+        "q25": -0.01908564567565918,
+        "min": -0.03491973876953125,
+        "max": 0.10833203792572021
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 3,
+      "blocked_or_invalid": [],
+      "any_legacy_specific_positive": false,
+      "any_strict_specific_pass": true,
+      "any_strict_delta_pass": false,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What key information should I prioritize in order to effectively plan and organize this project?",
+          "pair_count": 5,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.019552279263734818,
+            "median": 0.004843354225158691,
+            "q25": 0.0005281567573547363,
+            "min": -0.06696736812591553,
+            "max": 0.1165003776550293
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.025383615866303444,
+            "median": -0.10348868370056152,
+            "q25": -0.1035836935043335,
+            "min": -0.13320833444595337,
+            "max": 0.15142011642456055
+          },
+          "positive_specific_pair_rate": 0.8,
+          "beat_anchor_pair_rate": 0.4,
+          "robust_specific_median_q25": 0.002685755491256714,
+          "robust_delta_median_q25": -0.10353618860244751,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.02,
+            "activation_rate": 1.0,
+            "target_separation": -0.003354981541633606,
+            "sham_separation": 0.0,
+            "specific_separation": -0.003354981541633606,
+            "anchor_target_separation": 0.014204088598489761,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.014204088598489761,
+            "relative_to_anchor": -0.017559070140123367,
+            "paired_win_rate_vs_anchor": 0.6,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific piece of information would you need to start prioritizing tasks effectively?",
+          "pair_count": 5,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": -0.012458491139113903,
+            "median": 0.004769265651702881,
+            "q25": -0.031738102436065674,
+            "min": -0.11187392473220825,
+            "max": 0.043709635734558105
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.05739438533782959,
+            "median": -0.09278827905654907,
+            "q25": -0.09797906875610352,
+            "min": -0.10356277227401733,
+            "max": 0.0677604079246521
+          },
+          "positive_specific_pair_rate": 0.6,
+          "beat_anchor_pair_rate": 0.2,
+          "robust_specific_median_q25": -0.013484418392181396,
+          "robust_delta_median_q25": -0.0953836739063263,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.02,
+            "activation_rate": 1.0,
+            "target_separation": -0.0007147826254367828,
+            "sham_separation": 0.0,
+            "specific_separation": -0.0007147826254367828,
+            "anchor_target_separation": 0.014204088598489761,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.014204088598489761,
+            "relative_to_anchor": -0.014918871223926544,
+            "paired_win_rate_vs_anchor": 0.6,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 3,
+          "query": "What key aspects should I prioritize in order to effectively plan and organize this project?",
+          "pair_count": 5,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": -0.0034081817138940096,
+            "median": -0.02008795738220215,
+            "q25": -0.03931236267089844,
+            "min": -0.1490963101387024,
+            "max": 0.2114349603652954
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.04834407567977905,
+            "median": -0.020226716995239258,
+            "q25": -0.12841999530792236,
+            "min": -0.2532081604003906,
+            "max": 0.14519399404525757
+          },
+          "positive_specific_pair_rate": 0.2,
+          "beat_anchor_pair_rate": 0.4,
+          "robust_specific_median_q25": -0.029700160026550293,
+          "robust_delta_median_q25": -0.07432335615158081,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.07488245919346809,
+            "activation_rate": 1.0,
+            "target_separation": -0.0014195926487445831,
+            "sham_separation": 0.0,
+            "specific_separation": -0.0014195926487445831,
+            "anchor_target_separation": 0.014204088598489761,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.014204088598489761,
+            "relative_to_anchor": -0.015623681247234344,
+            "paired_win_rate_vs_anchor": 0.4,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        }
+      ]
+    },
+    "research": {
+      "pair_count": 4,
+      "pair_modes": [
+        "fanout2",
+        "fanout3",
+        "mixed",
+        "mixed"
+      ],
+      "pair_k": [
+        5,
+        6,
+        6,
+        3
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.12144094705581665,
+        "median": 0.10621288418769836,
+        "q25": 0.04069322347640991,
+        "min": 0.033132970333099365,
+        "max": 0.2402050495147705
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 3,
+      "blocked_or_invalid": [],
+      "any_legacy_specific_positive": true,
+      "any_strict_specific_pass": true,
+      "any_strict_delta_pass": true,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What specific piece of evidence or reference material you recommend I look at initially to understand where this investigation begins?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.2633196711540222,
+            "median": 0.18434172868728638,
+            "q25": 0.12573301792144775,
+            "min": 0.09533894062042236,
+            "max": 0.589256227016449
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.14187870919704437,
+            "median": 0.08316901326179504,
+            "q25": 0.06073637306690216,
+            "min": 0.052125632762908936,
+            "max": 0.34905117750167847
+          },
+          "positive_specific_pair_rate": 1.0,
+          "beat_anchor_pair_rate": 1.0,
+          "robust_specific_median_q25": 0.15503737330436707,
+          "robust_delta_median_q25": 0.0719526931643486,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true,
+          "legacy_all_pairs": {
+            "total": 0.20061588019132615,
+            "activation_rate": 1.0,
+            "target_separation": 0.044108979403972626,
+            "sham_separation": 0.0,
+            "specific_separation": 0.044108979403972626,
+            "anchor_target_separation": 0.04332003742456436,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.04332003742456436,
+            "relative_to_anchor": 0.0007889419794082642,
+            "paired_win_rate_vs_anchor": 0.75,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific piece of evidence or reference material you would recommend as the first step in investigating this question?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.22669093310832977,
+            "median": 0.1247096061706543,
+            "q25": 0.07399784028530121,
+            "min": -0.01544278860092163,
+            "max": 0.6727873086929321
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.10524999350309372,
+            "median": 0.023536890745162964,
+            "q25": -0.03236749768257141,
+            "min": -0.05865609645843506,
+            "max": 0.432582288980484
+          },
+          "positive_specific_pair_rate": 0.75,
+          "beat_anchor_pair_rate": 0.5,
+          "robust_specific_median_q25": 0.09935372322797775,
+          "robust_delta_median_q25": -0.004415303468704224,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": 0.0627983483672142,
+            "activation_rate": 1.0,
+            "target_separation": 0.009654596447944641,
+            "sham_separation": 0.0,
+            "specific_separation": 0.009654596447944641,
+            "anchor_target_separation": 0.04332003742456436,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.04332003742456436,
+            "relative_to_anchor": -0.03366544097661972,
+            "paired_win_rate_vs_anchor": 0.75,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 3,
+          "query": "What should I provide as the first piece of information to investigate the support for a particular claim regarding the effectiveness of a new medication?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.07484428584575653,
+            "median": 0.0545886754989624,
+            "q25": 0.009127214550971985,
+            "min": -0.018191397190093994,
+            "max": 0.2083911895751953
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.04659666121006012,
+            "median": -0.04156911373138428,
+            "q25": -0.058060407638549805,
+            "min": -0.07826852798461914,
+            "max": -0.024979889392852783
+          },
+          "positive_specific_pair_rate": 0.75,
+          "beat_anchor_pair_rate": 0.0,
+          "robust_specific_median_q25": 0.031857945024967194,
+          "robust_delta_median_q25": -0.04981476068496704,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.17446850210428236,
+            "activation_rate": 1.0,
+            "target_separation": 0.015962883830070496,
+            "sham_separation": 0.0,
+            "specific_separation": 0.015962883830070496,
+            "anchor_target_separation": 0.04332003742456436,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.04332003742456436,
+            "relative_to_anchor": -0.027357153594493866,
+            "paired_win_rate_vs_anchor": 0.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        }
+      ]
+    },
+    "data": {
+      "pair_count": 4,
+      "pair_modes": [
+        "single",
+        "fanout2",
+        "fanout3",
+        "mixed"
+      ],
+      "pair_k": [
+        4,
+        5,
+        6,
+        6
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.02838592231273651,
+        "median": 0.031153708696365356,
+        "q25": 0.0169450044631958,
+        "min": 0.0041397809982299805,
+        "max": 0.04709649085998535
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 3,
+      "blocked_or_invalid": [],
+      "any_legacy_specific_positive": true,
+      "any_strict_specific_pass": true,
+      "any_strict_delta_pass": true,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "Please tell me which specific feature or aspect of the dataset you would like me to analyze?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.07878230512142181,
+            "median": 0.07845747470855713,
+            "q25": 0.015042722225189209,
+            "min": -0.1209336519241333,
+            "max": 0.2791479229927063
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.0503963828086853,
+            "median": 0.0657808780670166,
+            "q25": -0.012641459703445435,
+            "min": -0.16803014278411865,
+            "max": 0.23805391788482666
+          },
+          "positive_specific_pair_rate": 0.75,
+          "beat_anchor_pair_rate": 0.75,
+          "robust_specific_median_q25": 0.04675009846687317,
+          "robust_delta_median_q25": 0.026569709181785583,
+          "strict_specific_pass": true,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": 0.1698184634745121,
+            "activation_rate": 1.0,
+            "target_separation": 0.008258886635303497,
+            "sham_separation": 0.0,
+            "specific_separation": 0.008258886635303497,
+            "anchor_target_separation": 0.01821708306670189,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.01821708306670189,
+            "relative_to_anchor": -0.009958196431398392,
+            "paired_win_rate_vs_anchor": 1.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific steps or checks do you recommend performing on this dataset before we begin analyzing its contents?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.10714296996593475,
+            "median": 0.05939573049545288,
+            "q25": 0.01639699935913086,
+            "min": 0.002423584461212158,
+            "max": 0.3073568344116211
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.07875704765319824,
+            "median": 0.033777594566345215,
+            "q25": 0.007988810539245605,
+            "min": -0.018789827823638916,
+            "max": 0.26626282930374146
+          },
+          "positive_specific_pair_rate": 1.0,
+          "beat_anchor_pair_rate": 0.75,
+          "robust_specific_median_q25": 0.03789636492729187,
+          "robust_delta_median_q25": 0.02088320255279541,
+          "strict_specific_pass": true,
+          "strict_delta_pass": true,
+          "legacy_all_pairs": {
+            "total": 0.31738043084740636,
+            "activation_rate": 1.0,
+            "target_separation": 0.04514937847852707,
+            "sham_separation": 0.0,
+            "specific_separation": 0.04514937847852707,
+            "anchor_target_separation": 0.01821708306670189,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.01821708306670189,
+            "relative_to_anchor": 0.02693229541182518,
+            "paired_win_rate_vs_anchor": 1.0,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 3,
+          "query": "What initial steps or inputs should I provide to get started with understanding and checking my dataset?",
+          "pair_count": 4,
+          "activation_rate": 1.0,
+          "specific_pairwise": {
+            "mean": 0.039835453033447266,
+            "median": 0.017022937536239624,
+            "q25": -0.00950692594051361,
+            "min": -0.034765422344207764,
+            "max": 0.16006135940551758
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.011449530720710754,
+            "median": -0.012492656707763672,
+            "q25": -0.0412248820066452,
+            "min": -0.04818391799926758,
+            "max": 0.11896735429763794
+          },
+          "positive_specific_pair_rate": 0.5,
+          "beat_anchor_pair_rate": 0.5,
+          "robust_specific_median_q25": 0.0037580057978630066,
+          "robust_delta_median_q25": -0.026858769357204437,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.02,
+            "activation_rate": 1.0,
+            "target_separation": -0.016991890966892242,
+            "sham_separation": 0.0,
+            "specific_separation": -0.016991890966892242,
+            "anchor_target_separation": 0.01821708306670189,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.01821708306670189,
+            "relative_to_anchor": -0.03520897403359413,
+            "paired_win_rate_vs_anchor": 0.75,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        }
+      ]
+    },
+    "design": {
+      "pair_count": 5,
+      "pair_modes": [
+        "single",
+        "single",
+        "fanout2",
+        "fanout2",
+        "mixed"
+      ],
+      "pair_k": [
+        3,
+        4,
+        4,
+        5,
+        3
+      ],
+      "anchor_specific_pairwise": {
+        "mean": 0.027851153165102005,
+        "median": 0.01485353708267212,
+        "q25": 0.003612041473388672,
+        "min": -0.048311829566955566,
+        "max": 0.09511029720306396
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 2,
+      "blocked_or_invalid": [
+        {
+          "query": "What specific type of information regarding the product features or benefits should I expect upon opening or interacting with it?",
+          "status": "blocked:semantic_v8:private_or_structural"
+        }
+      ],
+      "any_legacy_specific_positive": true,
+      "any_strict_specific_pass": false,
+      "any_strict_delta_pass": false,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What specific type of information should I share first to best understand the current interaction flow and identify potential areas for improvement?",
+          "pair_count": 5,
+          "activation_rate": 0.2,
+          "specific_pairwise": {
+            "mean": -0.014358222484588623,
+            "median": 0.035379111766815186,
+            "q25": -0.041623711585998535,
+            "min": -0.21297454833984375,
+            "max": 0.07535839080810547
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.04220937564969063,
+            "median": -0.0019220709800720215,
+            "q25": -0.1367340087890625,
+            "min": -0.21658658981323242,
+            "max": 0.12367022037506104
+          },
+          "positive_specific_pair_rate": 0.6,
+          "beat_anchor_pair_rate": 0.4,
+          "robust_specific_median_q25": -0.003122299909591675,
+          "robust_delta_median_q25": -0.06932803988456726,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -1.1875674217939376,
+            "activation_rate": 0.2,
+            "target_separation": -0.012522473931312561,
+            "sham_separation": 0.0,
+            "specific_separation": -0.012522473931312561,
+            "anchor_target_separation": 0.004101969301700592,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.004101969301700592,
+            "relative_to_anchor": -0.016624443233013153,
+            "paired_win_rate_vs_anchor": 0.6,
+            "query_cost": -0.02,
+            "eligible": false
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "How can I best prepare myself before interacting with this product?",
+          "pair_count": 5,
+          "activation_rate": 0.4,
+          "specific_pairwise": {
+            "mean": 0.0019221544498577714,
+            "median": -0.016235828399658203,
+            "q25": -0.01965177059173584,
+            "min": -0.03087174892425537,
+            "max": 0.07637012004852295
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.025928998365998268,
+            "median": -0.02326381206512451,
+            "q25": -0.10486346483230591,
+            "min": -0.11134612560272217,
+            "max": 0.06151658296585083
+          },
+          "positive_specific_pair_rate": 0.2,
+          "beat_anchor_pair_rate": 0.4,
+          "robust_specific_median_q25": -0.01794379949569702,
+          "robust_delta_median_q25": -0.06406363844871521,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.95,
+            "activation_rate": 0.4,
+            "target_separation": 0.0011110827326774597,
+            "sham_separation": 0.0,
+            "specific_separation": 0.0011110827326774597,
+            "anchor_target_separation": 0.004101969301700592,
+            "anchor_sham_separation": 0.0,
+            "anchor_specific_separation": 0.004101969301700592,
+            "relative_to_anchor": -0.0029908865690231323,
+            "paired_win_rate_vs_anchor": 0.4,
+            "query_cost": -0.02,
+            "eligible": false
+          }
+        }
+      ]
+    },
+    "operations": {
+      "pair_count": 5,
+      "pair_modes": [
+        "fanout2",
+        "fanout2",
+        "fanout3",
+        "fanout3",
+        "mixed"
+      ],
+      "pair_k": [
+        4,
+        5,
+        5,
+        6,
+        6
+      ],
+      "anchor_specific_pairwise": {
+        "mean": -0.0008001208188943565,
+        "median": 0.016607046127319336,
+        "q25": -0.041774630546569824,
+        "min": -0.05196201801300049,
+        "max": 0.039590418338775635
+      },
+      "original_holdout_probe_count": 3,
+      "valid_probe_count": 2,
+      "blocked_or_invalid": [
+        {
+          "query": "What specific data or information you need to collect initially to address the issue of the non-reliable process?",
+          "status": "blocked:semantic_v8:private_or_structural"
+        }
+      ],
+      "any_legacy_specific_positive": true,
+      "any_strict_specific_pass": false,
+      "any_strict_delta_pass": false,
+      "probes": [
+        {
+          "probe_index": 1,
+          "query": "What specific information or details would you need to begin identifying potential improvements for this unreliable process?",
+          "pair_count": 5,
+          "activation_rate": 0.8,
+          "specific_pairwise": {
+            "mean": 0.0076258182525634766,
+            "median": 0.0200311541557312,
+            "q25": -0.016300201416015625,
+            "min": -0.029155254364013672,
+            "max": 0.03340911865234375
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": 0.00842593889683485,
+            "median": -0.00012946128845214844,
+            "q25": -0.019559264183044434,
+            "min": -0.03290724754333496,
+            "max": 0.07191890478134155
+          },
+          "positive_specific_pair_rate": 0.6,
+          "beat_anchor_pair_rate": 0.4,
+          "robust_specific_median_q25": 0.001865476369857788,
+          "robust_delta_median_q25": -0.009844362735748291,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": 0.0667073832452297,
+            "activation_rate": 0.8,
+            "target_separation": 0.014900721609592438,
+            "sham_separation": 0.0008972920477390289,
+            "specific_separation": 0.014003429561853409,
+            "anchor_target_separation": 0.010224081575870514,
+            "anchor_sham_separation": 0.0059177465736866,
+            "anchor_specific_separation": 0.004306335002183914,
+            "relative_to_anchor": 0.009697094559669495,
+            "paired_win_rate_vs_anchor": 0.6,
+            "query_cost": -0.02,
+            "eligible": true
+          }
+        },
+        {
+          "probe_index": 2,
+          "query": "What specific data points or inputs should I collect at the beginning of this process to best diagnose and identify potential issues contributing to its unreliability?",
+          "pair_count": 5,
+          "activation_rate": 0.4,
+          "specific_pairwise": {
+            "mean": -0.02677295170724392,
+            "median": -0.004176139831542969,
+            "q25": -0.06000089645385742,
+            "min": -0.06358182430267334,
+            "max": -0.002584517002105713
+          },
+          "delta_vs_anchor_pairwise": {
+            "mean": -0.02597283199429512,
+            "median": -0.03612309694290161,
+            "q25": -0.08018887042999268,
+            "min": -0.09959131479263306,
+            "max": 0.04778587818145752
+          },
+          "positive_specific_pair_rate": 0.0,
+          "beat_anchor_pair_rate": 0.4,
+          "robust_specific_median_q25": -0.032088518142700195,
+          "robust_delta_median_q25": -0.058155983686447144,
+          "strict_specific_pass": false,
+          "strict_delta_pass": false,
+          "legacy_all_pairs": {
+            "total": -0.9562628909945488,
+            "activation_rate": 0.4,
+            "target_separation": -0.002087630331516266,
+            "sham_separation": 0.0,
+            "specific_separation": -0.002087630331516266,
+            "anchor_target_separation": 0.010224081575870514,
+            "anchor_sham_separation": 0.0059177465736866,
+            "anchor_specific_separation": 0.004306335002183914,
+            "relative_to_anchor": -0.00639396533370018,
+            "paired_win_rate_vs_anchor": 0.6,
+            "query_cost": -0.02,
+            "eligible": false
+          }
+        }
+      ]
+    }
+  },
+  "rows_out": "artifacts/v9_full_exhaustive_holdout_rows.jsonl"
+}

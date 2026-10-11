@@ -1,0 +1,449 @@
+{
+  "notes": {
+    "forbidden_role_sets": 231,
+    "manifest_sources_excluded": [
+      "artifacts/adaptive_v1/manifest.json",
+      "artifacts/adaptive_v11_active_v1/manifest_privileged.json",
+      "artifacts/adaptive_v11_factorial_heldout32/manifest_privileged.json"
+    ],
+    "policy_must_never_read_this_file": true,
+    "privileged": true
+  },
+  "seed": 2026091601,
+  "sha256": "52a4dd2e97b293b1a17777491210dc698a9495e5d0f161adfa24ed4b75bf6687",
+  "systems": [
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "planning",
+        "documentation",
+        "financial_analysis"
+      ],
+      "session_id": "av11h_d9fe8d2108788fe5",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "risk_assessment",
+        "qa_testing",
+        "experiment_design"
+      ],
+      "session_id": "av11h_8e2684454123a9be",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "design",
+        "math",
+        "database_design",
+        "research"
+      ],
+      "session_id": "av11h_badefdfa8cbaf321",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "code",
+        "fact_checking",
+        "customer_support_triage",
+        "writing"
+      ],
+      "session_id": "av11h_9c588460eec3a043",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "incident_management",
+        "design",
+        "data",
+        "accessibility_review"
+      ],
+      "session_id": "av11h_a9b4c5bf3d9bdffb",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "requirements_analysis",
+        "research",
+        "operations",
+        "code",
+        "writing"
+      ],
+      "session_id": "av11h_01c2b06756cdaa9f",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "qa_testing",
+        "incident_management",
+        "operations",
+        "translation",
+        "customer_support_triage",
+        "accessibility_review"
+      ],
+      "session_id": "av11h_3f51e8b753fe68af",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "fact_checking",
+        "database_design",
+        "experiment_design",
+        "translation",
+        "risk_assessment",
+        "planning"
+      ],
+      "session_id": "av11h_e04cbf92acd1c47a",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "data",
+        "documentation",
+        "risk_assessment"
+      ],
+      "session_id": "av11h_69094095a30ca104",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "requirements_analysis",
+        "math",
+        "writing"
+      ],
+      "session_id": "av11h_43f3f3a1ea4c9af7",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "planning",
+        "financial_analysis",
+        "translation"
+      ],
+      "session_id": "av11h_364e2d4106f69520",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "incident_management",
+        "requirements_analysis",
+        "math",
+        "code"
+      ],
+      "session_id": "av11h_0cf76136c5cc195f",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "experiment_design",
+        "fact_checking",
+        "planning",
+        "data",
+        "research"
+      ],
+      "session_id": "av11h_16bed7f26f778f3e",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "database_design",
+        "operations",
+        "design",
+        "customer_support_triage",
+        "documentation"
+      ],
+      "session_id": "av11h_62ad3840983ec99e",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "fact_checking",
+        "qa_testing",
+        "requirements_analysis",
+        "incident_management",
+        "documentation",
+        "financial_analysis"
+      ],
+      "session_id": "av11h_20bb3903232a3566",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "customer_support_triage",
+        "research",
+        "writing",
+        "financial_analysis",
+        "accessibility_review",
+        "risk_assessment"
+      ],
+      "session_id": "av11h_a75b323e7dd49570",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "operations",
+        "experiment_design",
+        "data"
+      ],
+      "session_id": "av11h_27f9cf94d4d3b22e",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "code",
+        "operations",
+        "translation"
+      ],
+      "session_id": "av11h_a217698decd33761",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "qa_testing",
+        "documentation",
+        "math",
+        "risk_assessment"
+      ],
+      "session_id": "av11h_d37f50e7633f2f9f",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "experiment_design",
+        "fact_checking",
+        "design",
+        "accessibility_review"
+      ],
+      "session_id": "av11h_b68247af29ab0444",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "database_design",
+        "design",
+        "code",
+        "requirements_analysis",
+        "incident_management"
+      ],
+      "session_id": "av11h_adb1a24a1fec4158",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "math",
+        "research",
+        "writing",
+        "incident_management",
+        "financial_analysis"
+      ],
+      "session_id": "av11h_98c334b79005304b",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "qa_testing",
+        "risk_assessment",
+        "customer_support_triage",
+        "data",
+        "fact_checking",
+        "planning"
+      ],
+      "session_id": "av11h_a816712fb4b8dc15",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "operations",
+        "experiment_design",
+        "math",
+        "writing",
+        "translation",
+        "customer_support_triage"
+      ],
+      "session_id": "av11h_08479fb35653666a",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "code",
+        "financial_analysis",
+        "data"
+      ],
+      "session_id": "av11h_2ef8b969afc35004",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "qa_testing",
+        "translation",
+        "accessibility_review"
+      ],
+      "session_id": "av11h_5cada434826e5f36",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "operations",
+        "database_design",
+        "documentation",
+        "research"
+      ],
+      "session_id": "av11h_6f2017ef70bebe2f",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "financial_analysis",
+        "design",
+        "requirements_analysis",
+        "accessibility_review"
+      ],
+      "session_id": "av11h_698219587b791d2a",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "planning",
+        "incident_management",
+        "qa_testing",
+        "code",
+        "risk_assessment"
+      ],
+      "session_id": "av11h_490cc35866e66336",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "writing",
+        "customer_support_triage",
+        "translation",
+        "experiment_design",
+        "database_design"
+      ],
+      "session_id": "av11h_ded1fe77e3b4f69c",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "data",
+        "operations",
+        "qa_testing",
+        "math",
+        "research",
+        "documentation"
+      ],
+      "session_id": "av11h_9f3a6239cb785696",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "risk_assessment",
+        "fact_checking",
+        "data",
+        "planning",
+        "database_design",
+        "requirements_analysis"
+      ],
+      "session_id": "av11h_4cd480d22fcbcb5f",
+      "split": "dev",
+      "style": "s2"
+    }
+  ],
+  "version": "adaptive_v11_factorial_heldout_v1"
+}

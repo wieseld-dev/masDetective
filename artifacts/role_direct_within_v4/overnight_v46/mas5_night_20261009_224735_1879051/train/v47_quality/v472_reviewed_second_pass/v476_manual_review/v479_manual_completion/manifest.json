@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_PENDING_CONTROLLED_EVALUATION",
+  "total": 160,
+  "previously_approved_unchanged": 118,
+  "manual_additions": 2,
+  "families": {
+    "help_me_help_you": 120,
+    "direct_task": 40
+  },
+  "sha256": "5069ae8dfa4ce1c4f8df97b4c7f3f924bab06eb87f1a657d2f80cc45f712260c",
+  "no_mas_api_calls": true,
+  "discrimination_verified": false
+}

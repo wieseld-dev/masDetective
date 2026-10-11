@@ -1,0 +1,384 @@
+{
+  "version": "MAS5_V49_PILOT_TRAIN_ONLY",
+  "systems": [
+    {
+      "background_roles": [
+        "incident_management",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_research_p01",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "database_design",
+        "research"
+      ],
+      "session_id": "v49_research_p01_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_research_p01",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "database_design",
+        "fact_checking"
+      ],
+      "session_id": "v49_research_p01_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_research_p02",
+      "pair_index": 2,
+      "roles": [
+        "database_design",
+        "incident_management",
+        "research"
+      ],
+      "session_id": "v49_research_p02_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_research_p02",
+      "pair_index": 2,
+      "roles": [
+        "database_design",
+        "incident_management",
+        "experiment_design"
+      ],
+      "session_id": "v49_research_p02_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_research_p03",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "research"
+      ],
+      "session_id": "v49_research_p03_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_research_p03",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "data"
+      ],
+      "session_id": "v49_research_p03_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_database_design_p01",
+      "pair_index": 1,
+      "roles": [
+        "risk_assessment",
+        "fact_checking",
+        "database_design"
+      ],
+      "session_id": "v49_database_design_p01_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_database_design_p01",
+      "pair_index": 1,
+      "roles": [
+        "risk_assessment",
+        "fact_checking",
+        "data"
+      ],
+      "session_id": "v49_database_design_p01_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "operations",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_database_design_p02",
+      "pair_index": 2,
+      "roles": [
+        "operations",
+        "research",
+        "database_design"
+      ],
+      "session_id": "v49_database_design_p02_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "operations",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_database_design_p02",
+      "pair_index": 2,
+      "roles": [
+        "operations",
+        "research",
+        "code"
+      ],
+      "session_id": "v49_database_design_p02_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_database_design_p03",
+      "pair_index": 3,
+      "roles": [
+        "incident_management",
+        "risk_assessment",
+        "database_design"
+      ],
+      "session_id": "v49_database_design_p03_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_database_design_p03",
+      "pair_index": 3,
+      "roles": [
+        "incident_management",
+        "risk_assessment",
+        "requirements_analysis"
+      ],
+      "session_id": "v49_database_design_p03_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_customer_support_triage_p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "research",
+        "customer_support_triage"
+      ],
+      "session_id": "v49_customer_support_triage_p01_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_customer_support_triage_p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "research",
+        "incident_management"
+      ],
+      "session_id": "v49_customer_support_triage_p01_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_customer_support_triage_p02",
+      "pair_index": 2,
+      "roles": [
+        "fact_checking",
+        "data",
+        "customer_support_triage"
+      ],
+      "session_id": "v49_customer_support_triage_p02_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_customer_support_triage_p02",
+      "pair_index": 2,
+      "roles": [
+        "fact_checking",
+        "data",
+        "operations"
+      ],
+      "session_id": "v49_customer_support_triage_p02_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_customer_support_triage_p03",
+      "pair_index": 3,
+      "roles": [
+        "experiment_design",
+        "research",
+        "customer_support_triage"
+      ],
+      "session_id": "v49_customer_support_triage_p03_POS",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v49_customer_support_triage_p03",
+      "pair_index": 3,
+      "roles": [
+        "experiment_design",
+        "research",
+        "requirements_analysis"
+      ],
+      "session_id": "v49_customer_support_triage_p03_NEG",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "customer_support_triage"
+    }
+  ],
+  "sha256": "dda3581b89fb2895c56e4d6c525e61d6c5c0ff48c9f071343acd14e7ffd58a6e"
+}

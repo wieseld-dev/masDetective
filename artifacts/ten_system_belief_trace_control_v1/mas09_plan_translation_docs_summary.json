@@ -1,0 +1,83 @@
+{
+  "system_id": "mas09_plan_translation_docs",
+  "true_roles": [
+    "planning",
+    "translation",
+    "documentation"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.22139565454162197,
+    "4": 0.21700661665637724,
+    "5": 0.2634294884998559,
+    "6": 0.2981682403021447
+  },
+  "final_role_probs": {
+    "code": 0.2206080779602793,
+    "writing": 0.2595766527454643,
+    "math": 0.2532944755231408,
+    "planning": 0.3482065588429946,
+    "research": 0.20605135107303743,
+    "data": 0.22536223896379542,
+    "design": 0.21262409801134816,
+    "operations": 0.20734541820324714,
+    "qa_testing": 0.2715591402364296,
+    "translation": 0.22378852719813955,
+    "financial_analysis": 0.24556742117783548,
+    "database_design": 0.22293254449180427,
+    "accessibility_review": 0.17846706976653373,
+    "fact_checking": 0.2383356144995388,
+    "requirements_analysis": 0.22601492632835596,
+    "incident_management": 0.18238423715583768,
+    "experiment_design": 0.1923596076572282,
+    "risk_assessment": 0.20424380285123536,
+    "documentation": 0.2792749072579944,
+    "customer_support_triage": 0.2403736446182827
+  },
+  "belief_auc": 0.8431372549019608,
+  "present_vs_absent_correct": 43,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.8431372549019608,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "planning",
+    "documentation",
+    "qa_testing"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.22378852719813955,
+  "max_false_belief": 0.2715591402364296,
+  "ranking": [
+    "planning",
+    "documentation",
+    "qa_testing",
+    "writing",
+    "math",
+    "financial_analysis",
+    "customer_support_triage",
+    "fact_checking",
+    "requirements_analysis",
+    "data",
+    "translation",
+    "database_design",
+    "code",
+    "design",
+    "operations",
+    "research",
+    "risk_assessment",
+    "experiment_design",
+    "incident_management",
+    "accessibility_review"
+  ],
+  "predicted_k": 6,
+  "predicted_k_correct": false
+}

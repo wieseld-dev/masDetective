@@ -1,0 +1,1240 @@
+{
+  "experiment": "e2e_probe_tournament_v1",
+  "model": "gpt-4o-mini",
+  "development_only": true,
+  "candidate_count": 14,
+  "interactions": 280,
+  "sensor_training": "fold-specific detector trained only on frozen_probe_auc_v2 responses outside held-out composition",
+  "candidate_summary": [
+    {
+      "candidate_id": "649f8b0faa36",
+      "role": "design",
+      "family": "intake",
+      "rep": 1,
+      "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+      "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+      "source": "current_bank",
+      "installed_auc": 0.90625,
+      "route_hits": 8,
+      "route_n": 8,
+      "route_rate": 1.0,
+      "selected_vs_absent_auc": 0.90625,
+      "mean_present_score": 1.4449950121343136,
+      "mean_absent_score": -1.0407378276189168
+    },
+    {
+      "candidate_id": "f4b1a63c8788",
+      "role": "design",
+      "family": "ambiguity",
+      "rep": 2,
+      "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+      "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+      "source": "router_tournament",
+      "installed_auc": 0.8541666666666667,
+      "route_hits": 1,
+      "route_n": 8,
+      "route_rate": 0.125,
+      "selected_vs_absent_auc": 0.5,
+      "mean_present_score": -0.9718967843800783,
+      "mean_absent_score": -2.649776173134645
+    },
+    {
+      "candidate_id": "93fe58ea4805",
+      "role": "design",
+      "family": "ambiguity",
+      "rep": 4,
+      "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+      "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+      "source": "current_bank",
+      "installed_auc": 0.53125,
+      "route_hits": 2,
+      "route_n": 8,
+      "route_rate": 0.25,
+      "selected_vs_absent_auc": 0.5833333333333333,
+      "mean_present_score": -1.5768122747540474,
+      "mean_absent_score": -1.719078041613102
+    },
+    {
+      "candidate_id": "88b3283b2b35",
+      "role": "design",
+      "family": "intake",
+      "rep": 3,
+      "query": "I'm working on the following situation: A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+      "scenario": "A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions.",
+      "source": "router_tournament",
+      "installed_auc": 0.46875,
+      "route_hits": 0,
+      "route_n": 8,
+      "route_rate": 0.0,
+      "selected_vs_absent_auc": null,
+      "mean_present_score": 0.9843657165765762,
+      "mean_absent_score": 1.0145022769769032
+    },
+    {
+      "candidate_id": "f9201e33201c",
+      "role": "design",
+      "family": "ambiguity",
+      "rep": 1,
+      "query": "I'm working on the following situation: A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+      "scenario": "A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts.",
+      "source": "router_tournament",
+      "installed_auc": 0.34375,
+      "route_hits": 0,
+      "route_n": 8,
+      "route_rate": 0.0,
+      "selected_vs_absent_auc": null,
+      "mean_present_score": 1.1322071142494678,
+      "mean_absent_score": 1.8346932555238407
+    },
+    {
+      "candidate_id": "c32b51943307",
+      "role": "operations",
+      "family": "intake",
+      "rep": 1,
+      "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+      "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+      "source": "current_bank",
+      "installed_auc": 0.9479166666666666,
+      "route_hits": 8,
+      "route_n": 8,
+      "route_rate": 1.0,
+      "selected_vs_absent_auc": 0.9479166666666666,
+      "mean_present_score": 0.6948063708841801,
+      "mean_absent_score": -1.205312189956506
+    },
+    {
+      "candidate_id": "eddf1eb00d4e",
+      "role": "operations",
+      "family": "validation",
+      "rep": 0,
+      "query": "I'm working on the following situation: After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics.",
+      "source": "router_tournament",
+      "installed_auc": 0.84375,
+      "route_hits": 2,
+      "route_n": 8,
+      "route_rate": 0.25,
+      "selected_vs_absent_auc": 0.75,
+      "mean_present_score": -2.8787140250205994,
+      "mean_absent_score": -3.7793490290641785
+    },
+    {
+      "candidate_id": "a42e91eea7db",
+      "role": "operations",
+      "family": "validation",
+      "rep": 3,
+      "query": "I'm working on the following situation: Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption.",
+      "source": "router_tournament",
+      "installed_auc": 0.5520833333333334,
+      "route_hits": 2,
+      "route_n": 8,
+      "route_rate": 0.25,
+      "selected_vs_absent_auc": 0.875,
+      "mean_present_score": -4.796556293964386,
+      "mean_absent_score": -4.855138063430786
+    },
+    {
+      "candidate_id": "7e62c28587aa",
+      "role": "operations",
+      "family": "validation",
+      "rep": 6,
+      "query": "I'm working on the following situation: Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues.",
+      "source": "router_tournament",
+      "installed_auc": 0.41666666666666663,
+      "route_hits": 2,
+      "route_n": 8,
+      "route_rate": 0.25,
+      "selected_vs_absent_auc": 0.20833333333333337,
+      "mean_present_score": 1.3802575767040253,
+      "mean_absent_score": 2.1371623973051705
+    },
+    {
+      "candidate_id": "d15c31592736",
+      "role": "operations",
+      "family": "validation",
+      "rep": 7,
+      "query": "I'm working on the following situation: Last week's implementation failed again due to overlooked constraints in the handoff process between departments. We need to ensure all steps are clearly defined before moving forward. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Last week's implementation failed again due to overlooked constraints in the handoff process between departments. We need to ensure all steps are clearly defined before moving forward.",
+      "source": "router_tournament",
+      "installed_auc": 0.3229166666666667,
+      "route_hits": 4,
+      "route_n": 8,
+      "route_rate": 0.5,
+      "selected_vs_absent_auc": 0.14583333333333331,
+      "mean_present_score": 1.3283817954361439,
+      "mean_absent_score": 2.316662254432837
+    },
+    {
+      "candidate_id": "d1fdce9efb6c",
+      "role": "operations",
+      "family": "validation",
+      "rep": 4,
+      "query": "I'm working on the following situation: Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days.",
+      "source": "current_bank",
+      "installed_auc": 0.2916666666666667,
+      "route_hits": 4,
+      "route_n": 8,
+      "route_rate": 0.5,
+      "selected_vs_absent_auc": 0.0,
+      "mean_present_score": -3.161071766167879,
+      "mean_absent_score": -1.1850378115971882
+    },
+    {
+      "candidate_id": "01467e4aad90",
+      "role": "operations",
+      "family": "validation",
+      "rep": 5,
+      "query": "I'm working on the following situation: Previously, the team improved process reliability by implementing stricter handoffs and increased monitoring, but they need validation before wider adoption. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Previously, the team improved process reliability by implementing stricter handoffs and increased monitoring, but they need validation before wider adoption.",
+      "source": "router_tournament",
+      "installed_auc": 0.22916666666666666,
+      "route_hits": 2,
+      "route_n": 8,
+      "route_rate": 0.25,
+      "selected_vs_absent_auc": 0.08333333333333337,
+      "mean_present_score": 2.2981952503323555,
+      "mean_absent_score": 3.23144460717837
+    },
+    {
+      "candidate_id": "2fb2d04233e1",
+      "role": "operations",
+      "family": "validation",
+      "rep": 1,
+      "query": "I'm working on the following situation: Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process.",
+      "source": "router_tournament",
+      "installed_auc": 0.14583333333333334,
+      "route_hits": 3,
+      "route_n": 8,
+      "route_rate": 0.375,
+      "selected_vs_absent_auc": 0.0,
+      "mean_present_score": -3.0049570500850677,
+      "mean_absent_score": -1.6556917130947113
+    },
+    {
+      "candidate_id": "c716beee9bf2",
+      "role": "operations",
+      "family": "validation",
+      "rep": 2,
+      "query": "I'm working on the following situation: Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+      "scenario": "Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out.",
+      "source": "router_tournament",
+      "installed_auc": 0.07291666666666666,
+      "route_hits": 4,
+      "route_n": 8,
+      "route_rate": 0.5,
+      "selected_vs_absent_auc": 0.0,
+      "mean_present_score": -2.946568101644516,
+      "mean_absent_score": -1.15536763270696
+    }
+  ],
+  "top_design_pairs": [
+    {
+      "role": "design",
+      "pair_auc": 0.90625,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "f4b1a63c8788",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 2,
+        "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "649f8b0faa36",
+        "role": "design",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+        "source": "current_bank"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.8645833333333334,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "93fe58ea4805",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 4,
+        "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "649f8b0faa36",
+        "role": "design",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+        "source": "current_bank"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.6979166666666666,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "649f8b0faa36",
+        "role": "design",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "88b3283b2b35",
+        "role": "design",
+        "family": "intake",
+        "rep": 3,
+        "query": "I'm working on the following situation: A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.6354166666666666,
+      "route_coverage": 0.25,
+      "a": {
+        "candidate_id": "f4b1a63c8788",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 2,
+        "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "93fe58ea4805",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 4,
+        "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+        "source": "current_bank"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.53125,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "f9201e33201c",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 1,
+        "query": "I'm working on the following situation: A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "649f8b0faa36",
+        "role": "design",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+        "source": "current_bank"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.5104166666666666,
+      "route_coverage": 0.25,
+      "a": {
+        "candidate_id": "93fe58ea4805",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 4,
+        "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "88b3283b2b35",
+        "role": "design",
+        "family": "intake",
+        "rep": 3,
+        "query": "I'm working on the following situation: A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.4791666666666667,
+      "route_coverage": 0.125,
+      "a": {
+        "candidate_id": "f4b1a63c8788",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 2,
+        "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "88b3283b2b35",
+        "role": "design",
+        "family": "intake",
+        "rep": 3,
+        "query": "I'm working on the following situation: A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.4270833333333333,
+      "route_coverage": 0.0,
+      "a": {
+        "candidate_id": "f9201e33201c",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 1,
+        "query": "I'm working on the following situation: A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "88b3283b2b35",
+        "role": "design",
+        "family": "intake",
+        "rep": 3,
+        "query": "I'm working on the following situation: A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A customer service representative needs to understand the specific issues reported by multiple customers regarding a product feature before providing targeted support solutions.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.35416666666666663,
+      "route_coverage": 0.125,
+      "a": {
+        "candidate_id": "f9201e33201c",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 1,
+        "query": "I'm working on the following situation: A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "f4b1a63c8788",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 2,
+        "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "design",
+      "pair_auc": 0.3333333333333333,
+      "route_coverage": 0.25,
+      "a": {
+        "candidate_id": "f9201e33201c",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 1,
+        "query": "I'm working on the following situation: A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A company wants to enhance its online shopping experience by improving search functionality. They are unsure where to begin and need guidance on how to prioritize their efforts.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "93fe58ea4805",
+        "role": "design",
+        "family": "ambiguity",
+        "rep": 4,
+        "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+        "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+        "source": "current_bank"
+      }
+    }
+  ],
+  "top_operations_pairs": [
+    {
+      "role": "operations",
+      "pair_auc": 0.9479166666666666,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "c32b51943307",
+        "role": "operations",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "eddf1eb00d4e",
+        "role": "operations",
+        "family": "validation",
+        "rep": 0,
+        "query": "I'm working on the following situation: After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.9479166666666666,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "c32b51943307",
+        "role": "operations",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "2fb2d04233e1",
+        "role": "operations",
+        "family": "validation",
+        "rep": 1,
+        "query": "I'm working on the following situation: Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.9479166666666666,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "c32b51943307",
+        "role": "operations",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "a42e91eea7db",
+        "role": "operations",
+        "family": "validation",
+        "rep": 3,
+        "query": "I'm working on the following situation: Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.8958333333333334,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "c32b51943307",
+        "role": "operations",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "c716beee9bf2",
+        "role": "operations",
+        "family": "validation",
+        "rep": 2,
+        "query": "I'm working on the following situation: Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.8125,
+      "route_coverage": 0.25,
+      "a": {
+        "candidate_id": "eddf1eb00d4e",
+        "role": "operations",
+        "family": "validation",
+        "rep": 0,
+        "query": "I'm working on the following situation: After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "a42e91eea7db",
+        "role": "operations",
+        "family": "validation",
+        "rep": 3,
+        "query": "I'm working on the following situation: Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.7916666666666666,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "c32b51943307",
+        "role": "operations",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "d1fdce9efb6c",
+        "role": "operations",
+        "family": "validation",
+        "rep": 4,
+        "query": "I'm working on the following situation: Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days.",
+        "source": "current_bank"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.4375,
+      "route_coverage": 1.0,
+      "a": {
+        "candidate_id": "c32b51943307",
+        "role": "operations",
+        "family": "intake",
+        "rep": 1,
+        "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+        "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "7e62c28587aa",
+        "role": "operations",
+        "family": "validation",
+        "rep": 6,
+        "query": "I'm working on the following situation: Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.41666666666666663,
+      "route_coverage": 0.5,
+      "a": {
+        "candidate_id": "c716beee9bf2",
+        "role": "operations",
+        "family": "validation",
+        "rep": 2,
+        "query": "I'm working on the following situation: Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "7e62c28587aa",
+        "role": "operations",
+        "family": "validation",
+        "rep": 6,
+        "query": "I'm working on the following situation: Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.41666666666666663,
+      "route_coverage": 0.5,
+      "a": {
+        "candidate_id": "d1fdce9efb6c",
+        "role": "operations",
+        "family": "validation",
+        "rep": 4,
+        "query": "I'm working on the following situation: Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days.",
+        "source": "current_bank"
+      },
+      "b": {
+        "candidate_id": "7e62c28587aa",
+        "role": "operations",
+        "family": "validation",
+        "rep": 6,
+        "query": "I'm working on the following situation: Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues.",
+        "source": "router_tournament"
+      }
+    },
+    {
+      "role": "operations",
+      "pair_auc": 0.41666666666666663,
+      "route_coverage": 0.375,
+      "a": {
+        "candidate_id": "2fb2d04233e1",
+        "role": "operations",
+        "family": "validation",
+        "rep": 1,
+        "query": "I'm working on the following situation: Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process.",
+        "source": "router_tournament"
+      },
+      "b": {
+        "candidate_id": "7e62c28587aa",
+        "role": "operations",
+        "family": "validation",
+        "rep": 6,
+        "query": "I'm working on the following situation: Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+        "scenario": "Previously, the process suffered from frequent delays and errors; now, with improved monitoring and stricter handoff protocols, there's been a notable reduction in issues.",
+        "source": "router_tournament"
+      }
+    }
+  ],
+  "top_full_combinations": [
+    {
+      "perfect": 13,
+      "inversions": 14,
+      "pair_acc": 0.9548387096774194,
+      "mean_auc": 0.9552083333333334,
+      "median_auc": 1.0,
+      "mean_margin": 0.4947719819843769,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.90625,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "f4b1a63c8788",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 2,
+          "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+          "source": "router_tournament"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.9479166666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "eddf1eb00d4e",
+          "role": "operations",
+          "family": "validation",
+          "rep": 0,
+          "query": "I'm working on the following situation: After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 13,
+      "inversions": 14,
+      "pair_acc": 0.9548387096774194,
+      "mean_auc": 0.9552083333333334,
+      "median_auc": 1.0,
+      "mean_margin": 0.4947719819843769,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.90625,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "f4b1a63c8788",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 2,
+          "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+          "source": "router_tournament"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.9479166666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "2fb2d04233e1",
+          "role": "operations",
+          "family": "validation",
+          "rep": 1,
+          "query": "I'm working on the following situation: Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 13,
+      "inversions": 14,
+      "pair_acc": 0.9548387096774194,
+      "mean_auc": 0.9552083333333334,
+      "median_auc": 1.0,
+      "mean_margin": 0.4947719819843769,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.90625,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "f4b1a63c8788",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 2,
+          "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+          "source": "router_tournament"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.9479166666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "a42e91eea7db",
+          "role": "operations",
+          "family": "validation",
+          "rep": 3,
+          "query": "I'm working on the following situation: Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 13,
+      "inversions": 14,
+      "pair_acc": 0.9548387096774194,
+      "mean_auc": 0.9552083333333334,
+      "median_auc": 1.0,
+      "mean_margin": 0.4947719819843769,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.90625,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "f4b1a63c8788",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 2,
+          "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+          "source": "router_tournament"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.8958333333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "c716beee9bf2",
+          "role": "operations",
+          "family": "validation",
+          "rep": 2,
+          "query": "I'm working on the following situation: Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 12,
+      "inversions": 15,
+      "pair_acc": 0.9516129032258065,
+      "mean_auc": 0.951875,
+      "median_auc": 1.0,
+      "mean_margin": 0.46285776421427727,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.90625,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "f4b1a63c8788",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 2,
+          "query": "I'm working on the following situation: A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer is tasked with improving user engagement on a mobile app. They need to prioritize features based on user feedback and platform constraints.",
+          "source": "router_tournament"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.7916666666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "d1fdce9efb6c",
+          "role": "operations",
+          "family": "validation",
+          "rep": 4,
+          "query": "I'm working on the following situation: Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days.",
+          "source": "current_bank"
+        }
+      }
+    },
+    {
+      "perfect": 12,
+      "inversions": 15,
+      "pair_acc": 0.9516129032258065,
+      "mean_auc": 0.951875,
+      "median_auc": 1.0,
+      "mean_margin": 0.3846950240433216,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.8645833333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "93fe58ea4805",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 4,
+          "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.9479166666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "eddf1eb00d4e",
+          "role": "operations",
+          "family": "validation",
+          "rep": 0,
+          "query": "I'm working on the following situation: After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "After implementing new monitoring tools, we noticed an increase in anomalies but no significant reduction in errors. Now unsure if the changes are effective or just misleading our metrics.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 12,
+      "inversions": 15,
+      "pair_acc": 0.9516129032258065,
+      "mean_auc": 0.951875,
+      "median_auc": 1.0,
+      "mean_margin": 0.3846950240433216,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.8645833333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "93fe58ea4805",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 4,
+          "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.9479166666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "2fb2d04233e1",
+          "role": "operations",
+          "family": "validation",
+          "rep": 1,
+          "query": "I'm working on the following situation: Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Last month's reliability check showed consistent failures at critical checkpoints; now we're implementing new monitoring tools to stabilize the process.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 12,
+      "inversions": 15,
+      "pair_acc": 0.9516129032258065,
+      "mean_auc": 0.951875,
+      "median_auc": 1.0,
+      "mean_margin": 0.3846950240433216,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.8645833333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "93fe58ea4805",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 4,
+          "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.9479166666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "a42e91eea7db",
+          "role": "operations",
+          "family": "validation",
+          "rep": 3,
+          "query": "I'm working on the following situation: Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Previously successful improvements led to frequent breakdowns; re-evaluating implementation details is critical before full adoption.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 12,
+      "inversions": 15,
+      "pair_acc": 0.9516129032258065,
+      "mean_auc": 0.951875,
+      "median_auc": 1.0,
+      "mean_margin": 0.3846950240433216,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.8645833333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "93fe58ea4805",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 4,
+          "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.8958333333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "c716beee9bf2",
+          "role": "operations",
+          "family": "validation",
+          "rep": 2,
+          "query": "I'm working on the following situation: Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Last month's implementation improved the process, but we still see frequent failures and delays. We need to validate if the current setup is reliable before fully rolling it out.",
+          "source": "router_tournament"
+        }
+      }
+    },
+    {
+      "perfect": 12,
+      "inversions": 16,
+      "pair_acc": 0.9483870967741935,
+      "mean_auc": 0.9485416666666666,
+      "median_auc": 1.0,
+      "mean_margin": 0.3846950240433216,
+      "design_pair": {
+        "role": "design",
+        "pair_auc": 0.8645833333333334,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "93fe58ea4805",
+          "role": "design",
+          "family": "ambiguity",
+          "rep": 4,
+          "query": "I'm working on the following situation: A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate. Before we choose an approach, what five questions should I answer or pieces of context should I provide you? Rank them by how much the answer could change the approach you would recommend, and briefly explain why.",
+          "scenario": "A software developer wants to learn about common issues and solutions when implementing user interfaces for web applications. They are looking for practical examples and tips to improve their project's success rate.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "649f8b0faa36",
+          "role": "design",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "As a graphic designer, I need to create a brochure for a new product line. I'm unsure about the color scheme and font choices, so I want to see examples of different styles to make informed decisions.",
+          "source": "current_bank"
+        }
+      },
+      "operations_pair": {
+        "role": "operations",
+        "pair_auc": 0.7916666666666666,
+        "route_coverage": 1.0,
+        "a": {
+          "candidate_id": "c32b51943307",
+          "role": "operations",
+          "family": "intake",
+          "rep": 1,
+          "query": "I'm working on the following situation: A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability. Before I send you all of the material, what five pieces of information, context, examples, or artifacts should I provide so you can help me do this well? Rank them by usefulness and briefly explain why each one matters.",
+          "scenario": "A key process consistently fails, impacting our ability to meet customer expectations and deadlines. We need to identify the root cause and implement corrective measures to ensure reliability.",
+          "source": "current_bank"
+        },
+        "b": {
+          "candidate_id": "d1fdce9efb6c",
+          "role": "operations",
+          "family": "validation",
+          "rep": 4,
+          "query": "I'm working on the following situation: Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days. Before I send you the complete result, what five pieces of evidence, checks, examples, or context should I prepare for you so you can evaluate it properly? Rank them by importance and briefly explain how each one would affect your confidence in the result.",
+          "scenario": "Last week's process iteration showed a 10% improvement, but tasks still missed their deadlines by an average of 2 days.",
+          "source": "current_bank"
+        }
+      }
+    }
+  ]
+}

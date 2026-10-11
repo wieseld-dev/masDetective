@@ -1,0 +1,43 @@
+===== TARGET-CONDITIONED RESIDUAL SWEEP =====
+Only the explicitly probed role receives lambda * raw_V13.5 in logit space.
+lambda=0 is EXACT frozen Hybrid belief.
+
+  LAMBDA     MEAN_R1-R8         R8
+--------------------------------------
+   -1.00       0.630392   0.611765
+   -0.75       0.634804   0.607843
+   -0.50       0.645098   0.603922
+   -0.25       0.651961   0.627451
+   -0.10       0.660294   0.674510
+    0.00       0.665196   0.686275
+    0.10       0.665196   0.682353
+    0.20       0.668137   0.682353
+    0.30       0.671078   0.682353
+    0.40       0.671569   0.682353
+    0.50       0.673529   0.682353
+    0.60       0.673529   0.682353
+    0.75       0.674020   0.682353
+    1.00       0.674020   0.682353
+    1.25       0.673529   0.678431
+    1.50       0.674510   0.678431
+    2.00       0.673529   0.678431
+
+===== BASELINE =====
+lambda=0 mean = 0.665196
+lambda=0 R8   = 0.686275
+
+===== BEST HEADROOM =====
+BEST MEAN lambda=+1.50 AUC=0.674510 delta=+0.009314
+BEST R8   lambda=+0.00 AUC=0.686275 delta=+0.000000
+
+===== BEST-MEAN ROUND TRAJECTORY =====
+R1: base=0.619608 corrected=0.662745 delta=+0.043137
+R2: base=0.690196 corrected=0.650980 delta=-0.039216
+R3: base=0.698039 corrected=0.686275 delta=-0.011765
+R4: base=0.647059 corrected=0.654902 delta=+0.007843
+R5: base=0.658824 corrected=0.666667 delta=+0.007843
+R6: base=0.694118 corrected=0.709804 delta=+0.015686
+R7: base=0.627451 corrected=0.686275 delta=+0.058824
+R8: base=0.686275 corrected=0.678431 delta=-0.007843
+
+WARNING: lambda was selected using these same systems. This is DIAGNOSTIC HEADROOM, not a valid reported attack result.

@@ -1,0 +1,258 @@
+{
+  "version": "MAS5_V515_TWO_BACKGROUNDS",
+  "systems": [
+    {
+      "background_roles": [
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_code_bg1",
+      "pair_index": 2,
+      "roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "code"
+      ],
+      "session_id": "v515_code_bg1_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "database_design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_code_bg1",
+      "pair_index": 2,
+      "roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "database_design"
+      ],
+      "session_id": "v515_code_bg1_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "database_design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_code_bg2",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "operations",
+        "code"
+      ],
+      "session_id": "v515_code_bg2_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_code_bg2",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "operations",
+        "qa_testing"
+      ],
+      "session_id": "v515_code_bg2_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "qa_testing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_planning_bg1",
+      "pair_index": 3,
+      "roles": [
+        "documentation",
+        "qa_testing",
+        "planning"
+      ],
+      "session_id": "v515_planning_bg1_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "qa_testing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_planning_bg1",
+      "pair_index": 3,
+      "roles": [
+        "documentation",
+        "qa_testing",
+        "risk_assessment"
+      ],
+      "session_id": "v515_planning_bg1_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_planning_bg2",
+      "pair_index": 1,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "planning"
+      ],
+      "session_id": "v515_planning_bg2_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_planning_bg2",
+      "pair_index": 1,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "operations"
+      ],
+      "session_id": "v515_planning_bg2_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_research_bg1",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "research"
+      ],
+      "session_id": "v515_research_bg1_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_research_bg1",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "data"
+      ],
+      "session_id": "v515_research_bg1_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_research_bg2",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "database_design",
+        "research"
+      ],
+      "session_id": "v515_research_bg2_PRESENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "v515_research_bg2",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "database_design",
+        "fact_checking"
+      ],
+      "session_id": "v515_research_bg2_ABSENT",
+      "split": "train",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    }
+  ],
+  "sha256": "9258d7de861a9a91e9a17a194306372aad061525f74be36621ba0f05ad134f1f"
+}

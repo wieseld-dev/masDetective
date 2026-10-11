@@ -1,0 +1,143 @@
+{
+  "source": {
+    "files": 94,
+    "raw_rows": 26848,
+    "bad_json": 0,
+    "missing_query": 0,
+    "missing_output": 0,
+    "missing_selected_roles": 0,
+    "execution_not_ok": 0,
+    "valid_not_true": 0
+  },
+  "usable_before_benign_filter": 26848,
+  "exact_duplicates_removed": 101,
+  "unique_usable": 26747,
+  "strict_benign": 22422,
+  "strict_benign_rate": 0.8382996223875575,
+  "rejected": 4325,
+  "failure_counts": {
+    "DIRECTION_BAD": 2135,
+    "SYSTEM_SELF_BAD": 939,
+    "DANGLING_BAD": 1282
+  },
+  "task_semantic_direct_among_strict": 10933,
+  "task_semantic_direct_rate_among_strict": 0.4876014628489876,
+  "unique_sessions_all": 696,
+  "unique_sessions_strict": 696,
+  "selected_role_positive_counts_strict": {
+    "accessibility_review": 1315,
+    "code": 1845,
+    "customer_support_triage": 2891,
+    "data": 3312,
+    "database_design": 1363,
+    "design": 1647,
+    "documentation": 2979,
+    "experiment_design": 1849,
+    "fact_checking": 2229,
+    "financial_analysis": 1867,
+    "incident_management": 1912,
+    "math": 842,
+    "operations": 2446,
+    "planning": 3147,
+    "qa_testing": 1174,
+    "requirements_analysis": 3831,
+    "research": 4244,
+    "risk_assessment": 2367,
+    "translation": 337,
+    "writing": 2258
+  },
+  "installed_role_counts_strict": {
+    "accessibility_review": 6100,
+    "code": 6210,
+    "customer_support_triage": 6108,
+    "data": 5971,
+    "database_design": 6010,
+    "design": 6189,
+    "documentation": 5881,
+    "experiment_design": 6293,
+    "fact_checking": 6077,
+    "financial_analysis": 6116,
+    "incident_management": 6165,
+    "math": 6097,
+    "operations": 5858,
+    "planning": 5932,
+    "qa_testing": 6235,
+    "requirements_analysis": 6139,
+    "research": 6220,
+    "risk_assessment": 5997,
+    "translation": 6213,
+    "writing": 5946
+  },
+  "by_stage": {
+    "stage_01": {
+      "all": 576,
+      "strict_benign": 552,
+      "strict_benign_rate": 0.9583333333333334,
+      "task_semantic_direct": 207,
+      "sessions": 48
+    },
+    "stage_02": {
+      "all": 1008,
+      "strict_benign": 961,
+      "strict_benign_rate": 0.9533730158730159,
+      "task_semantic_direct": 379,
+      "sessions": 56
+    },
+    "stage_03": {
+      "all": 1008,
+      "strict_benign": 927,
+      "strict_benign_rate": 0.9196428571428571,
+      "task_semantic_direct": 495,
+      "sessions": 56
+    },
+    "stage_04": {
+      "all": 1535,
+      "strict_benign": 1438,
+      "strict_benign_rate": 0.9368078175895765,
+      "task_semantic_direct": 784,
+      "sessions": 64
+    },
+    "stage_05": {
+      "all": 2045,
+      "strict_benign": 1999,
+      "strict_benign_rate": 0.9775061124694376,
+      "task_semantic_direct": 967,
+      "sessions": 64
+    },
+    "stage_06": {
+      "all": 2879,
+      "strict_benign": 2823,
+      "strict_benign_rate": 0.9805488016672456,
+      "task_semantic_direct": 1387,
+      "sessions": 72
+    },
+    "stage_07": {
+      "all": 2878,
+      "strict_benign": 2787,
+      "strict_benign_rate": 0.9683808200138986,
+      "task_semantic_direct": 1387,
+      "sessions": 72
+    },
+    "stage_08": {
+      "all": 3832,
+      "strict_benign": 3237,
+      "strict_benign_rate": 0.8447286012526096,
+      "task_semantic_direct": 2124,
+      "sessions": 80
+    },
+    "stage_09": {
+      "all": 4876,
+      "strict_benign": 3529,
+      "strict_benign_rate": 0.7237489745693191,
+      "task_semantic_direct": 2762,
+      "sessions": 88
+    },
+    "stage_10": {
+      "all": 6110,
+      "strict_benign": 4169,
+      "strict_benign_rate": 0.6823240589198036,
+      "task_semantic_direct": 2522,
+      "sessions": 96
+    }
+  }
+}

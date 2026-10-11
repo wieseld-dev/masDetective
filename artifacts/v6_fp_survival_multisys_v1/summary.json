@@ -1,0 +1,325 @@
+{
+  "experiment": "V6-DPO multi-system fingerprint survival",
+  "generator": "artifacts/v6_matched_sft_dpo/policy",
+  "reader": "artifacts/v3_coverage_elimination_pilot/visible_bridge.joblib",
+  "systems": 8,
+  "executions": 40,
+  "generator_seeds": [
+    20261011,
+    20261012,
+    20261013,
+    20261014,
+    20261015
+  ],
+  "actual": {
+    "micro_auc": 0.8408091954022989,
+    "average_precision": 0.5559676285947368,
+    "positive_events": 75,
+    "negative_events": 725,
+    "active_mean_score": 0.3498600975823809,
+    "inactive_mean_score": 0.056085136059715275,
+    "recall_at_1": 0.3466666666666667,
+    "recall_at_3": 0.52,
+    "recall_at_5": 0.68,
+    "mean_reciprocal_rank": 0.4963851983929384,
+    "top1_execution_hit_rate": 0.65,
+    "mean_execution_margin": 0.023038830544367228
+  },
+  "per_seed": {
+    "20261011": {
+      "micro_auc": 0.792183908045977,
+      "average_precision": 0.4235489223890714,
+      "positive_events": 15,
+      "negative_events": 145,
+      "active_mean_score": 0.2549829104079805,
+      "inactive_mean_score": 0.05719281658314559,
+      "recall_at_1": 0.2,
+      "recall_at_3": 0.4666666666666667,
+      "recall_at_5": 0.7333333333333333,
+      "mean_reciprocal_rank": 0.41287581699346404,
+      "top1_execution_hit_rate": 0.375,
+      "mean_execution_margin": -0.03420794772542257
+    },
+    "20261012": {
+      "micro_auc": 0.8850574712643677,
+      "average_precision": 0.6074761172436799,
+      "positive_events": 15,
+      "negative_events": 145,
+      "active_mean_score": 0.42416950158297495,
+      "inactive_mean_score": 0.06838343648602943,
+      "recall_at_1": 0.4,
+      "recall_at_3": 0.4666666666666667,
+      "recall_at_5": 0.6666666666666666,
+      "mean_reciprocal_rank": 0.5185881370091897,
+      "top1_execution_hit_rate": 0.75,
+      "mean_execution_margin": -0.10074279323622416
+    },
+    "20261013": {
+      "micro_auc": 0.8767123287671232,
+      "average_precision": 0.6523234698829937,
+      "positive_events": 14,
+      "negative_events": 146,
+      "active_mean_score": 0.41601617120245465,
+      "inactive_mean_score": 0.04296041994020167,
+      "recall_at_1": 0.5,
+      "recall_at_3": 0.6428571428571429,
+      "recall_at_5": 0.6428571428571429,
+      "mean_reciprocal_rank": 0.6008158508158508,
+      "top1_execution_hit_rate": 0.875,
+      "mean_execution_margin": 0.2278359314923079
+    },
+    "20261014": {
+      "micro_auc": 0.8386206896551723,
+      "average_precision": 0.5560619854616624,
+      "positive_events": 15,
+      "negative_events": 145,
+      "active_mean_score": 0.35350049731563055,
+      "inactive_mean_score": 0.06052670637191726,
+      "recall_at_1": 0.3333333333333333,
+      "recall_at_3": 0.6,
+      "recall_at_5": 0.8,
+      "mean_reciprocal_rank": 0.5103992303992304,
+      "top1_execution_hit_rate": 0.625,
+      "mean_execution_margin": 0.019039257042422333
+    },
+    "20261015": {
+      "micro_auc": 0.8025173611111112,
+      "average_precision": 0.5151895132189837,
+      "positive_events": 16,
+      "negative_events": 144,
+      "active_mean_score": 0.3078429551403382,
+      "inactive_mean_score": 0.051420647312956626,
+      "recall_at_1": 0.3125,
+      "recall_at_3": 0.4375,
+      "recall_at_5": 0.5625,
+      "mean_reciprocal_rank": 0.4493450126262626,
+      "top1_execution_hit_rate": 0.625,
+      "mean_execution_margin": 0.0032697051487526746
+    }
+  },
+  "per_k": {
+    "3": {
+      "micro_auc": 0.866111111111111,
+      "average_precision": 0.588741548447773,
+      "positive_events": 20,
+      "negative_events": 180,
+      "active_mean_score": 0.3784460214043545,
+      "inactive_mean_score": 0.046032947808485186,
+      "recall_at_1": 0.35,
+      "recall_at_3": 0.5,
+      "recall_at_5": 0.65,
+      "mean_reciprocal_rank": 0.48941890926411047,
+      "top1_execution_hit_rate": 0.7,
+      "mean_execution_margin": 0.25534435618446877
+    },
+    "4": {
+      "micro_auc": 0.9053887289181406,
+      "average_precision": 0.7103088189156043,
+      "positive_events": 13,
+      "negative_events": 187,
+      "active_mean_score": 0.468557297990666,
+      "inactive_mean_score": 0.04986211189980043,
+      "recall_at_1": 0.6153846153846154,
+      "recall_at_3": 0.6923076923076923,
+      "recall_at_5": 0.8461538461538461,
+      "mean_reciprocal_rank": 0.7078215901745313,
+      "top1_execution_hit_rate": 0.8,
+      "mean_execution_margin": 0.11271663131500649
+    },
+    "5": {
+      "micro_auc": 0.7764571428571428,
+      "average_precision": 0.5208489608747306,
+      "positive_events": 25,
+      "negative_events": 175,
+      "active_mean_score": 0.29910025477024843,
+      "inactive_mean_score": 0.06559854848467411,
+      "recall_at_1": 0.24,
+      "recall_at_3": 0.48,
+      "recall_at_5": 0.64,
+      "mean_reciprocal_rank": 0.4160359248594543,
+      "top1_execution_hit_rate": 0.6,
+      "mean_execution_margin": -0.2018190753137433
+    },
+    "6": {
+      "micro_auc": 0.8466730954676952,
+      "average_precision": 0.49267128893656564,
+      "positive_events": 17,
+      "negative_events": 183,
+      "active_mean_score": 0.30010797926215327,
+      "inactive_mean_score": 0.06323405534254423,
+      "recall_at_1": 0.29411764705882354,
+      "recall_at_3": 0.47058823529411764,
+      "recall_at_5": 0.6470588235294118,
+      "mean_reciprocal_rank": 0.4610548764960529,
+      "top1_execution_hit_rate": 0.5,
+      "mean_execution_margin": -0.07408659000826301
+    }
+  },
+  "output_match_permutation": {
+    "n": 1000,
+    "actual_auc": 0.8408091954022989,
+    "shuffle_mean_auc": 0.5706211126436782,
+    "shuffle_std_auc": 0.02724783202670148,
+    "auc_lift": 0.2701880827586207,
+    "p_value": 0.000999000999000999,
+    "null_95": [
+      0.5189388505747127,
+      0.6286174712643677
+    ]
+  },
+  "system_cluster_bootstrap": {
+    "mean": 0.8426653691133521,
+    "ci95": [
+      0.7831492468637196,
+      0.9105041475640407
+    ]
+  },
+  "per_role": {
+    "code": {
+      "auc": 0.8558558558558558,
+      "positive_n": 3,
+      "negative_n": 37,
+      "positive_mean": 0.33510765247215235,
+      "negative_mean": 0.038231558291150165
+    },
+    "writing": {
+      "auc": 1.0,
+      "positive_n": 1,
+      "negative_n": 39,
+      "positive_mean": 0.34042122487393245,
+      "negative_mean": 0.06878540567590863
+    },
+    "math": {
+      "auc": null,
+      "positive_n": 0,
+      "negative_n": 40,
+      "positive_mean": null,
+      "negative_mean": 0.012628914532544727
+    },
+    "planning": {
+      "auc": 0.6153846153846154,
+      "positive_n": 1,
+      "negative_n": 39,
+      "positive_mean": 0.1316520006998103,
+      "negative_mean": 0.14490115578265308
+    },
+    "research": {
+      "auc": 0.8268398268398269,
+      "positive_n": 7,
+      "negative_n": 33,
+      "positive_mean": 0.3590541643214132,
+      "negative_mean": 0.09351281393930663
+    },
+    "data": {
+      "auc": 0.963963963963964,
+      "positive_n": 3,
+      "negative_n": 37,
+      "positive_mean": 0.44222943937325826,
+      "negative_mean": 0.054613767998349605
+    },
+    "design": {
+      "auc": 0.8970588235294117,
+      "positive_n": 6,
+      "negative_n": 34,
+      "positive_mean": 0.45194441277270697,
+      "negative_mean": 0.036025450883197294
+    },
+    "operations": {
+      "auc": 0.7777777777777777,
+      "positive_n": 4,
+      "negative_n": 36,
+      "positive_mean": 0.32689312700779527,
+      "negative_mean": 0.056079111036332036
+    },
+    "qa_testing": {
+      "auc": 0.5641025641025641,
+      "positive_n": 1,
+      "negative_n": 39,
+      "positive_mean": 0.02689932421000132,
+      "negative_mean": 0.037554487230350424
+    },
+    "translation": {
+      "auc": null,
+      "positive_n": 0,
+      "negative_n": 40,
+      "positive_mean": null,
+      "negative_mean": 0.003818185780255644
+    },
+    "financial_analysis": {
+      "auc": 0.8095238095238095,
+      "positive_n": 7,
+      "negative_n": 33,
+      "positive_mean": 0.12352184801131558,
+      "negative_mean": 0.015134422559086797
+    },
+    "database_design": {
+      "auc": 1.0,
+      "positive_n": 2,
+      "negative_n": 38,
+      "positive_mean": 0.8727744221395877,
+      "negative_mean": 0.039988877184696785
+    },
+    "accessibility_review": {
+      "auc": 0.8333333333333334,
+      "positive_n": 6,
+      "negative_n": 34,
+      "positive_mean": 0.2621912856736513,
+      "negative_mean": 0.0491873856917796
+    },
+    "fact_checking": {
+      "auc": 0.7892156862745097,
+      "positive_n": 6,
+      "negative_n": 34,
+      "positive_mean": 0.18278294327505581,
+      "negative_mean": 0.09701746927439717
+    },
+    "requirements_analysis": {
+      "auc": 0.8458781362007168,
+      "positive_n": 9,
+      "negative_n": 31,
+      "positive_mean": 0.5824831685681346,
+      "negative_mean": 0.17284084984000025
+    },
+    "incident_management": {
+      "auc": 1.0,
+      "positive_n": 3,
+      "negative_n": 37,
+      "positive_mean": 0.9752817521912139,
+      "negative_mean": 0.01913060196377849
+    },
+    "experiment_design": {
+      "auc": 0.8421052631578947,
+      "positive_n": 2,
+      "negative_n": 38,
+      "positive_mean": 0.34395658642854976,
+      "negative_mean": 0.030498867025152577
+    },
+    "risk_assessment": {
+      "auc": 0.68,
+      "positive_n": 5,
+      "negative_n": 35,
+      "positive_mean": 0.10524101510954682,
+      "negative_mean": 0.037467882278831466
+    },
+    "documentation": {
+      "auc": 0.8114285714285714,
+      "positive_n": 5,
+      "negative_n": 35,
+      "positive_mean": 0.13629409826172914,
+      "negative_mean": 0.05399242244001778
+    },
+    "customer_support_triage": {
+      "auc": 0.8541666666666667,
+      "positive_n": 4,
+      "negative_n": 36,
+      "positive_mean": 0.3830189227475787,
+      "negative_mean": 0.08401613599263978
+    }
+  },
+  "benign_surface_audit": {
+    "attack_marker_flagged": 0,
+    "total": 40,
+    "flagged": []
+  },
+  "note": "selected_roles are used only as evaluation labels. The frozen fingerprint reader receives query + final output."
+}

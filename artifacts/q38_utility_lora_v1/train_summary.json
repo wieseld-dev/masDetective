@@ -1,0 +1,12 @@
+{
+  "base_model": "Qwen/Qwen3.8-27B",
+  "max_len": 1024,
+  "lr": 2e-05,
+  "grad_acc": 8,
+  "epochs": 1,
+  "max_steps": 0,
+  "micro_steps": 265,
+  "optimizer_steps": 34,
+  "peak_vram_gib": 55.57248592376709,
+  "elapsed_seconds": 786.6920111179352
+}

@@ -1,0 +1,55 @@
+{
+  "setting": {
+    "test_systems": 139,
+    "particles_per_K": 16,
+    "forward_temperature": 1.25,
+    "likelihood_beta": 0.1,
+    "runtime_visible_inputs": [
+      "query",
+      "final_output"
+    ],
+    "later_rounds": "one-step conditional on recorded history; not full counterfactual replay"
+  },
+  "visible_fingerprint_detector": {
+    "micro_f1": 0.468419575184804,
+    "macro_f1": 0.46661286939092106,
+    "brier": 0.06437374809630908,
+    "true_cardinality": 1.9026168224299065,
+    "pred_cardinality": 2.0925233644859813,
+    "prob_cardinality": 1.8908930160518906,
+    "micro_auroc": 0.8490611022895092,
+    "mean_tpr": 0.5246879148923409,
+    "mean_fpr": 0.06271324298561345
+  },
+  "one_step_visible_belief_update_and_selection": {
+    "oracle_log": 0.044608273552290856,
+    "visible_mi_log": 0.004877111558360983,
+    "hidden_mi_log": 0.0059360618245373935,
+    "old_log": 0.0038408036622199233,
+    "random_log": 0.003305600152776545,
+    "oracle_brier": 0.022560458019139543,
+    "visible_mi_brier": 0.0024453440043156523,
+    "hidden_mi_brier": 0.0029785697985705325,
+    "old_brier": 0.001931659802453408,
+    "random_brier": 0.0016487111740049604,
+    "oracle_abs": 0.023274563037180607,
+    "visible_mi_abs": 0.004455043338614389,
+    "hidden_mi_abs": 0.004950317237171881,
+    "old_abs": 0.0034181393262852455,
+    "random_abs": 0.003173716888921082,
+    "oracle_ptrue": 0.01153043212750674,
+    "visible_mi_ptrue": 0.0014326979456986298,
+    "hidden_mi_ptrue": 0.0016937711104607288,
+    "old_ptrue": 0.0011136540782512216,
+    "random_ptrue": 0.0009749991708465539,
+    "visible_mi_vs_log_gain_spearman": 0.023899183104204025,
+    "visible_optimal_hit": 0.1506276150627615,
+    "hidden_optimal_hit": 0.16736401673640167,
+    "old_optimal_hit": 0.16317991631799164
+  },
+  "interpretation": {
+    "visible_mi_k": "selector score based on predicted detector-visible evidence, not hidden selected_roles",
+    "hidden_mi_k": "diagnostic comparator using latent activation channel",
+    "oracle": "best candidate by realized visible-evidence K log-probability gain; evaluation only"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "adapter_sha256": "6f96a63ce5cf25e4df68016785b5657325e7e500663999b54d1492da6bee3909",
+  "manifest_sha256": "b5727683beb19c8e5f371eb64f0d11422a498ca7f0da0b90c413b21ddddcbbe6",
+  "training_seed": 1313,
+  "seed": 1314,
+  "systems_per_cell": 1,
+  "min_probes": 3,
+  "max_probes": 7,
+  "max_total": 120,
+  "confidence": 0.9,
+  "evidence_discount": 0.45,
+  "evidence_clip": 1.5,
+  "run_hash": "0b194bf216e859b68118036690609cb1e49f793150116d06ca9e0c1db811969e"
+}

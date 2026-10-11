@@ -1,0 +1,30 @@
+{
+  "experiment": "V3.16 seen-system unseen-state diagnostic",
+  "diagnostic_only": true,
+  "systems": 24,
+  "states_per_system": 5,
+  "queries": 24,
+  "random_expected_delta_auc": -0.008883539526921884,
+  "same_system_four_state_static_delta_auc": 0.17220754551820727,
+  "contextual_oracle_delta_auc": 0.19936022117180208,
+  "variants": {
+    "public_fingerprint": {
+      "mean_selected_delta_auc": 0.1300813783846872,
+      "mean_state_query_spearman": 0.5856305332343894,
+      "positive_delta_rate": 0.8083333333333333,
+      "mean_unique_queries_per_system": 2.6666666666666665
+    },
+    "system_id": {
+      "mean_selected_delta_auc": 0.17220754551820727,
+      "mean_state_query_spearman": 0.8178071478102263,
+      "positive_delta_rate": 0.9083333333333333,
+      "mean_unique_queries_per_system": 1.2916666666666667
+    },
+    "system_id_plus_fingerprint": {
+      "mean_selected_delta_auc": 0.14383771008403362,
+      "mean_state_query_spearman": 0.6391143303339272,
+      "positive_delta_rate": 0.8416666666666667,
+      "mean_unique_queries_per_system": 2.4583333333333335
+    }
+  }
+}

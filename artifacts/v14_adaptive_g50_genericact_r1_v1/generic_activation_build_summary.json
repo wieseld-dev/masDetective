@@ -1,0 +1,23 @@
+{
+  "source": "artifacts/v14_adaptive_g50_fresh_v3",
+  "teacher": "artifacts/generic_activation_teacher_v1",
+  "rows": 1200,
+  "groups": 24,
+  "group_size": 50,
+  "lambda": 0.2,
+  "teacher_used": 1133,
+  "teacher_missing": 67,
+  "teacher_coverage": 0.9441666666666667,
+  "group_coverage_min": 0.84,
+  "visible_reward_mean": -0.11267666273306294,
+  "visible_reward_std": 0.6130545918901882,
+  "activation_bonus_mean": -0.13680305112103708,
+  "activation_bonus_std": 0.46261280053966025,
+  "shaped_score_mean": -0.14003727295727034,
+  "shaped_score_std": 0.6304144301134026,
+  "advantage_positive_fraction": 0.4058333333333333,
+  "advantage_negative_fraction": 0.42333333333333334,
+  "advantage_zero_fraction": 0.17083333333333334,
+  "sign_violations": 0,
+  "principle": "Cross-family activation consensus changes only within-group ranking/advantage magnitude. Original visible reward controls gradient sign."
+}

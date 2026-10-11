@@ -1,0 +1,118 @@
+====================================================================================================
+V3.3 FORENSIC DIAGNOSTIC — CLOSED-LOOP SELECTOR
+====================================================================================================
+Systems: 8
+Semantic similarity: Qwen2.5 semantic embeddings
+No new MAS/API executions were performed.
+
+ROUND SUMMARY
+----------------------------------------------------------------------------------------------------
+policy                    r   AUC      dAUC     uniqueQ   pairSim   novelty   selMargin   beliefShift
+random                    1   0.5393  +0.0393       8    0.9791    1.0000        nan      0.0408
+random                    2   0.5751  +0.0359       8    0.9775    0.0212        nan      0.0313
+random                    3   0.6276  +0.0525       8    0.9767    0.0198        nan      0.0263
+random                    4   0.6512  +0.0236       8    0.9720    0.0238        nan      0.0168
+random                    5   0.6727  +0.0215       8    0.9671    0.0237        nan      0.0179
+random                    6   0.7190  +0.0462       8    0.9736    0.0199        nan      0.0140
+query_only                1   0.5853  +0.0853       1    1.0000    1.0000        nan      0.0449
+query_only                2   0.5630  -0.0222       1    1.0000    0.0232     0.1637      0.0301
+query_only                3   0.6164  +0.0534       1    1.0000    0.0350     0.0242      0.0309
+query_only                4   0.6120  -0.0044       1    1.0000    0.0130     0.1743      0.0150
+query_only                5   0.6625  +0.0505       1    1.0000    0.0233     0.0304      0.0196
+query_only                6   0.6239  -0.0386       1    1.0000    0.0065     0.0599      0.0106
+history_belief_query      1   0.5805  +0.0805       1    1.0000    1.0000        nan      0.0522
+history_belief_query      2   0.5644  -0.0161       1    1.0000    0.0467     0.1823      0.0329
+history_belief_query      3   0.6702  +0.1058       1    1.0000    0.0310     0.1188      0.0236
+history_belief_query      4   0.6493  -0.0209       1    1.0000    0.0106     0.0644      0.0147
+history_belief_query      5   0.6310  -0.0183       1    1.0000    0.0212     0.0015      0.0185
+history_belief_query      6   0.6454  +0.0144       1    1.0000    0.0135     0.0021      0.0160
+
+HBQ VS QUERY-ONLY DIVERGENCE
+----------------------------------------------------------------------------------------------------
+round=1 exactly_different=1.000 semantic_similarity=0.965
+round=2 exactly_different=0.000 semantic_similarity=1.000
+round=3 exactly_different=1.000 semantic_similarity=0.953
+round=4 exactly_different=1.000 semantic_similarity=0.979
+round=5 exactly_different=1.000 semantic_similarity=0.973
+round=6 exactly_different=1.000 semantic_similarity=0.969
+
+CORRELATIONS WITH HBQ ROUND-TO-ROUND ΔAUC (ROUNDS 2–6)
+----------------------------------------------------------------------------------------------------
+HBQ_novelty_vs_delta_auc                        : 0.07829731975891828
+HBQ_selector_margin_vs_delta_auc                : 0.0990991491453949
+HBQ_belief_shift_vs_delta_auc                   : 0.05537289939248162
+HBQ_similarity_to_QOnly_vs_delta_auc            : -0.36447716396146784
+
+HBQ VS BASELINES BY ROUND
+----------------------------------------------------------------------------------------------------
+r=0 history_belief_query_minus_query_only         mean_diff=+0.0000 W/L/T=0/0/8
+r=0 history_belief_query_minus_random             mean_diff=+0.0000 W/L/T=0/0/8
+r=1 history_belief_query_minus_query_only         mean_diff=-0.0048 W/L/T=3/5/0
+r=1 history_belief_query_minus_random             mean_diff=+0.0412 W/L/T=4/4/0
+r=2 history_belief_query_minus_query_only         mean_diff=+0.0014 W/L/T=2/6/1
+r=2 history_belief_query_minus_random             mean_diff=-0.0107 W/L/T=3/5/0
+r=3 history_belief_query_minus_query_only         mean_diff=+0.0538 W/L/T=5/3/0
+r=3 history_belief_query_minus_random             mean_diff=+0.0425 W/L/T=4/4/0
+r=4 history_belief_query_minus_query_only         mean_diff=+0.0373 W/L/T=4/4/0
+r=4 history_belief_query_minus_random             mean_diff=-0.0019 W/L/T=4/4/0
+r=5 history_belief_query_minus_query_only         mean_diff=-0.0315 W/L/T=3/5/0
+r=5 history_belief_query_minus_random             mean_diff=-0.0417 W/L/T=4/4/0
+r=6 history_belief_query_minus_query_only         mean_diff=+0.0215 W/L/T=4/4/0
+r=6 history_belief_query_minus_random             mean_diff=-0.0736 W/L/T=3/4/1
+
+10 WORST HBQ TRANSITIONS
+----------------------------------------------------------------------------------------------------
+av11_6ad58795fe81d17f r=2 AUC 0.562->0.391 d=-0.172 novelty=0.047 margin=0.182373046875 shift=0.038
+    Q: To determine if a quantitative result is correct, what additional information would you provide that would allow us to evaluate its accuracy properly?
+av11_73d27ce184e11f22 r=5 AUC 0.875->0.703 d=-0.172 novelty=0.021 margin=0.001367807388305664 shift=0.054
+    Q: To start improving a recurring process that is not working reliably, what specific actions or tools will you initially implement to identify potential areas where improvements can be made?
+av11_88df51dd13b124fb r=1 AUC 0.500->0.373 d=-0.127 novelty=1.000 margin=None shift=0.055
+    Q: How will you preprocess your dataset before performing any analyses?
+av11_c71fb37e10ca9d3a r=2 AUC 0.476->0.369 d=-0.107 novelty=0.047 margin=0.1823652982711792 shift=0.025
+    Q: To determine if a quantitative result is correct, what additional information would you provide that would allow us to evaluate its accuracy properly?
+av11_6f7fdcc524d51e6f r=4 AUC 0.833->0.738 d=-0.095 novelty=0.011 margin=0.06440258026123047 shift=0.014
+    Q: What kind of information would be most useful for me to have before starting to plan a complex project?
+av11_73d27ce184e11f22 r=4 AUC 0.969->0.875 d=-0.094 novelty=0.011 margin=0.06466913223266602 shift=0.020
+    Q: What kind of information would be most useful for me to have before starting to plan a complex project?
+av11_88df51dd13b124fb r=5 AUC 0.587->0.493 d=-0.093 novelty=0.021 margin=0.0015732049942016602 shift=0.014
+    Q: To start improving a recurring process that is not working reliably, what specific actions or tools will you initially implement to identify potential areas where improvements can be made?
+av11_a44cacff6e6a0987 r=4 AUC 0.471->0.392 d=-0.078 novelty=0.011 margin=0.06437623500823975 shift=0.012
+    Q: What kind of information would be most useful for me to have before starting to plan a complex project?
+av11_45cef9ed95060cb6 r=5 AUC 0.627->0.569 d=-0.059 novelty=0.021 margin=0.0016564130783081055 shift=0.019
+    Q: To start improving a recurring process that is not working reliably, what specific actions or tools will you initially implement to identify potential areas where improvements can be made?
+av11_45cef9ed95060cb6 r=2 AUC 0.667->0.608 d=-0.059 novelty=0.047 margin=0.1823333501815796 shift=0.023
+    Q: To determine if a quantitative result is correct, what additional information would you provide that would allow us to evaluate its accuracy properly?
+
+10 BEST HBQ TRANSITIONS
+----------------------------------------------------------------------------------------------------
+av11_6ad58795fe81d17f r=3 AUC 0.391->0.719 d=+0.328 novelty=0.031 margin=0.11885571479797363 shift=0.034
+    Q: What kind of information would be most helpful in deciding how to prioritize the handling of a new customer issue?
+av11_73d27ce184e11f22 r=1 AUC 0.500->0.812 d=+0.312 novelty=1.000 margin=None shift=0.044
+    Q: How will you preprocess your dataset before performing any analyses?
+av11_6f7fdcc524d51e6f r=1 AUC 0.500->0.762 d=+0.262 novelty=1.000 margin=None shift=0.049
+    Q: How will you preprocess your dataset before performing any analyses?
+av11_c71fb37e10ca9d3a r=3 AUC 0.369->0.595 d=+0.226 novelty=0.031 margin=0.11878836154937744 shift=0.033
+    Q: What kind of information would be most helpful in deciding how to prioritize the handling of a new customer issue?
+av11_73d27ce184e11f22 r=3 AUC 0.781->0.969 d=+0.188 novelty=0.031 margin=0.11896204948425293 shift=0.021
+    Q: What kind of information would be most helpful in deciding how to prioritize the handling of a new customer issue?
+av11_88df51dd13b124fb r=3 AUC 0.333->0.520 d=+0.187 novelty=0.031 margin=0.11877238750457764 shift=0.027
+    Q: What kind of information would be most helpful in deciding how to prioritize the handling of a new customer issue?
+av11_acb4c27f9f4f9928 r=2 AUC 0.520->0.693 d=+0.173 novelty=0.047 margin=0.18228685855865479 shift=0.037
+    Q: To determine if a quantitative result is correct, what additional information would you provide that would allow us to evaluate its accuracy properly?
+av11_45cef9ed95060cb6 r=1 AUC 0.500->0.667 d=+0.167 novelty=1.000 margin=None shift=0.057
+    Q: How will you preprocess your dataset before performing any analyses?
+av11_6f7fdcc524d51e6f r=2 AUC 0.762->0.869 d=+0.107 novelty=0.047 margin=0.1823786497116089 shift=0.034
+    Q: To determine if a quantitative result is correct, what additional information would you provide that would allow us to evaluate its accuracy properly?
+av11_6f7fdcc524d51e6f r=5 AUC 0.738->0.821 d=+0.083 novelty=0.021 margin=0.0015065670013427734 shift=0.010
+    Q: To start improving a recurring process that is not working reliably, what specific actions or tools will you initially implement to identify potential areas where improvements can be made?
+
+AUTOMATIC DIAGNOSTIC FLAGS
+----------------------------------------------------------------------------------------------------
+* HBQ information gain degrades in later rounds.
+
+FILES
+----------------------------------------------------------------------------------------------------
+artifacts/eqs_v3_3_forensic/session_round_forensics.csv
+artifacts/eqs_v3_3_forensic/round_summary.csv
+artifacts/eqs_v3_3_forensic/round_comparison.csv
+artifacts/eqs_v3_3_forensic/summary.json

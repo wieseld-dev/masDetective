@@ -1,0 +1,19 @@
+{
+  "raw": 768,
+  "valid_unique": 704,
+  "meta_counts": {
+    "NON_META": 418,
+    "META": 286
+  },
+  "userlike_counts": {
+    "USER_LIKE": 284,
+    "ASSISTANT_LIKE": 389,
+    "AMBIGUOUS": 31
+  },
+  "direction_negatives": 83,
+  "direction_gold_coverage": 21,
+  "clean_alternatives": 210,
+  "clean_gold_coverage": 24,
+  "meta_candidates": 58,
+  "meta_candidate_gold_coverage": 21
+}

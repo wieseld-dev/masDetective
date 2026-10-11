@@ -1,0 +1,33 @@
+{
+  "input_from_v4": 21946,
+  "valid_benign": 19912,
+  "valid_rate": 0.9073179622710289,
+  "rejected": 2034,
+  "unique_sessions_valid": 695,
+  "rejection_reason_counts": {
+    "DIRECT_CAPABILITY": 1977,
+    "MISSING_CONTEXT": 57
+  },
+  "selected_role_positive_counts_valid": {
+    "accessibility_review": 1181,
+    "code": 1609,
+    "customer_support_triage": 2660,
+    "data": 2775,
+    "database_design": 1200,
+    "design": 1475,
+    "documentation": 2743,
+    "experiment_design": 1666,
+    "fact_checking": 2004,
+    "financial_analysis": 1636,
+    "incident_management": 1645,
+    "math": 753,
+    "operations": 2065,
+    "planning": 2978,
+    "qa_testing": 1093,
+    "requirements_analysis": 3405,
+    "research": 3806,
+    "risk_assessment": 2135,
+    "translation": 305,
+    "writing": 2098
+  }
+}

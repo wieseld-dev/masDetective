@@ -1,0 +1,33 @@
+BELIEF = artifacts/HIGHEST_CLEAN_AUC/models/frozen_belief.joblib
+SHA    = d10c91b7321e5cf08ee754a0cbfcfd7c4cc6a459f4463a6e206816ecd90ae74f
+
+TRAIN SYSTEMS = 24
+
+===== ROUND COVERAGE =====
+R01 states=24 candidates=144 responses=144 scores=137 usable=137 missing_resp=0 missing_score=7 group_sizes={6: 24}
+R02 states=24 candidates=144 responses=144 scores=136 usable=136 missing_resp=0 missing_score=8 group_sizes={6: 24}
+R03 states=24 candidates=144 responses=144 scores=140 usable=140 missing_resp=0 missing_score=4 group_sizes={6: 24}
+R04 states=24 candidates=144 responses=144 scores=138 usable=138 missing_resp=0 missing_score=6 group_sizes={6: 24}
+R05 states=24 candidates=144 responses=144 scores=141 usable=141 missing_resp=0 missing_score=3 group_sizes={6: 24}
+R06 states=24 candidates=144 responses=144 scores=137 usable=137 missing_resp=0 missing_score=7 group_sizes={6: 24}
+R07 states=24 candidates=1200 responses=1200 scores=1166 usable=1166 missing_resp=0 missing_score=34 group_sizes={50: 24}
+R08 states=24 candidates=1200 responses=1200 scores=1149 usable=1149 missing_resp=0 missing_score=51 group_sizes={50: 24}
+R09 states=24 candidates=1200 responses=1200 scores=1163 usable=1163 missing_resp=0 missing_score=37 group_sizes={50: 24}
+R10 states=24 candidates=1200 responses=1200 scores=1151 usable=1151 missing_resp=0 missing_score=49 group_sizes={50: 24}
+
+===== DATASET SUMMARY =====
+ROWS             = 5458
+GROUPS >=2       = 240
+SYSTEMS          = 24
+ROUNDS           = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+MEAN GROUP SIZE  = 22.741666666666667
+MEAN AUC SPAN    = 0.24813692664565826
+MEDIAN AUC SPAN  = 0.23483455882352938
+MEAN RANDOM GAIN = 0.009520191353676367
+MEAN ORACLE GAIN = 0.1411935545051354
+ORACLE HEADROOM  = 0.13167336315145903
+GROUPS BEST>0    = 231 / 240
+GROUPS ALL<=0    = 9 / 240
+TOP TIES         = 33 / 240
+
+SAVED = artifacts/HIGHEST_CLEAN_AUC/experiments/05_SELECTOR_V3_AUC/data/selector_v3_auc_train_rows.jsonl

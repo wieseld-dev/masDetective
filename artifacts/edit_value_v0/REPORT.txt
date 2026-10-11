@@ -1,0 +1,31 @@
+========================================================================================
+EDIT-CONDITIONED PROBE VALUE V0
+========================================================================================
+cases=1335 groups=332 V11=828 V13=507
+
+GROUPED OUT-OF-FOLD
+  target_only          rho=+0.1127 top20-gain=+0.0736
+  q_only               rho=+0.0858 top20-gain=+0.0321
+  q_edit               rho=+0.1263 top20-gain=+0.0813
+  q_edit_context       rho=+0.1311 top20-gain=+0.0317
+
+PAIRED MODEL IMPROVEMENTS
+  q+edit - q: delta-rho=+0.0405 p=0.08739
+  q+edit+context - q: delta-rho=+0.0453 p=0.06779
+  q+edit+context - q+edit: delta-rho=+0.0048 p=0.37166
+
+CROSS-SOURCE TRANSFER
+  [v11_to_v13]
+    target_only          rho=+0.0429 top20-gain=+0.0172
+    q_only               rho=-0.0028 top20-gain=+0.0552
+    q_edit               rho=+0.0488 top20-gain=+0.0352
+    q_edit_context       rho=+0.0488 top20-gain=+0.0352
+  [v13_to_v11]
+    target_only          rho=+0.0569 top20-gain=+0.0552
+    q_only               rho=+0.0283 top20-gain=+0.0249
+    q_edit               rho=+0.0483 top20-gain=+0.0457
+    q_edit_context       rho=+0.0824 top20-gain=+0.0580
+
+========================================================================================
+OVERALL: NO-GO — edit/context conditioning does not materially outperform intrinsic q-only informativeness.
+========================================================================================

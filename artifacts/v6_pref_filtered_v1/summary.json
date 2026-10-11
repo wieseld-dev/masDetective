@@ -1,0 +1,38 @@
+{
+  "input": 6120,
+  "judged": 6120,
+  "passed_gate": 6120,
+  "selected": 765,
+  "passed_by_family": {
+    "DIRECTION": 2040,
+    "META": 2040,
+    "DANGLING": 2040
+  },
+  "selected_by_family": {
+    "DANGLING": 255,
+    "DIRECTION": 255,
+    "META": 255
+  },
+  "selected_per_gold": {
+    "2": 45,
+    "6": 45,
+    "8": 45,
+    "9": 45,
+    "10": 45,
+    "16": 45,
+    "23": 45,
+    "24": 45,
+    "26": 45,
+    "27": 45,
+    "32": 45,
+    "33": 45,
+    "35": 45,
+    "37": 45,
+    "39": 45,
+    "43": 45,
+    "44": 45
+  },
+  "selected_gold_family_min": 15,
+  "selected_gold_family_max": 15,
+  "target_per_gold_family": 15
+}

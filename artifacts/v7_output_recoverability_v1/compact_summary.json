@@ -1,0 +1,32 @@
+{
+  "BAD": {
+    "rows": 36,
+    "systems": 12,
+    "micro_auc": 0.511542999621541,
+    "mean_within_row_auc": 0.5553883346711005,
+    "mean_topk_selected_recall": 0.2916666666666667,
+    "exact_selected_set_at_true_k": 0.1388888888888889,
+    "macro_role_auc": 0.25650647095959594,
+    "roles_with_auc": 16
+  },
+  "V3": {
+    "rows": 36,
+    "systems": 12,
+    "micro_auc": 0.5269373761659877,
+    "mean_within_row_auc": 0.5582012288346138,
+    "mean_topk_selected_recall": 0.3194444444444444,
+    "exact_selected_set_at_true_k": 0.08333333333333333,
+    "macro_role_auc": 0.2943102904040404,
+    "roles_with_auc": 16
+  },
+  "V4": {
+    "rows": 36,
+    "systems": 12,
+    "micro_auc": 0.5942644032921811,
+    "mean_within_row_auc": 0.5834097771662271,
+    "mean_topk_selected_recall": 0.20833333333333331,
+    "exact_selected_set_at_true_k": 0.027777777777777776,
+    "macro_role_auc": 0.31498717332050663,
+    "roles_with_auc": 14
+  }
+}

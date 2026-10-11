@@ -1,0 +1,9 @@
+{
+  "episodes": 16,
+  "max_followups": 2,
+  "gate_mode": "hybrid",
+  "final_recent_reward_mean": -2.047927389516919,
+  "policy_dir": "artifacts/v7_generative_policy_smoke",
+  "public_response_cache": "artifacts/v7_smoke_response_public.jsonl",
+  "truth_response_cache_training_only": "artifacts/v7_smoke_response_truth.jsonl"
+}

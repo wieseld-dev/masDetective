@@ -1,0 +1,50 @@
+{
+  "true_k": 3,
+  "true_roles": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "pred_k": 3,
+  "p_k3": 0.8571844925169027,
+  "k_correct": true,
+  "top3": [
+    "planning",
+    "research",
+    "code"
+  ],
+  "top3_exact": true,
+  "true_composition_mass": 0.8571844924945473,
+  "final_k_probs": {
+    "3": 0.8571844925169027,
+    "4": 0.12860655646630978,
+    "5": 0.013053842512676744,
+    "6": 0.0011551085041108305
+  },
+  "final_role_probs": {
+    "code": 0.9999999999764629,
+    "writing": 0.003138925205888348,
+    "math": 0.007526537966569443,
+    "planning": 1.0,
+    "research": 1.0,
+    "data": 8.072185963284019e-05,
+    "design": 0.00011154390245707773,
+    "operations": 6.8612928099314994e-09,
+    "qa_testing": 0.016422937243224772,
+    "translation": 0.03320468869016872,
+    "financial_analysis": 0.003681332820841752,
+    "database_design": 0.0023480671919392532,
+    "accessibility_review": 3.9442137350741796e-05,
+    "fact_checking": 0.07887223297933514,
+    "requirements_analysis": 1.0740135149808418e-07,
+    "incident_management": 0.008186741695613894,
+    "experiment_design": 0.0033590439369336365,
+    "risk_assessment": 0.0007342424997384798,
+    "documentation": 7.12753812089177e-08,
+    "customer_support_triage": 0.0004729233598132911
+  },
+  "beta": 1.0,
+  "n_probes": 20,
+  "mode": "mixed",
+  "note": "ORACLE diagnostic: selected_roles is privileged evaluation-only evidence."
+}

@@ -1,0 +1,24 @@
+{
+  "version": "faithful_simple_k3_v1",
+  "seed": 20260921,
+  "systems": [
+    {
+      "session_id": "faithful_simple_k3_single_001",
+      "split": "dev",
+      "mode": "single",
+      "style": "s1",
+      "roles": [
+        "translation",
+        "code",
+        "financial_analysis"
+      ],
+      "k": 3
+    }
+  ],
+  "sha256": "da0b47ffef1169f307cbbc846b6f7aa542196b0bb35395ad86b1bf5f15f545ad",
+  "notes": {
+    "privileged": true,
+    "policy_must_never_read_this_file": true,
+    "purpose": "minimal faithful post-training sanity test"
+  }
+}

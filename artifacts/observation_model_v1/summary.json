@@ -1,0 +1,81 @@
+{
+  "dataset": {
+    "root": "artifacts/adaptive_v11_curriculum_v2",
+    "parents": 20,
+    "examples": 26848,
+    "roles": 20,
+    "systems_train": 487,
+    "systems_val": 70,
+    "systems_test": 139,
+    "rows_train": 18510,
+    "rows_val": 2988,
+    "rows_test": 5350,
+    "skipped": {}
+  },
+  "model": {
+    "type": "oracle-Z multilabel observation model",
+    "text_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "best_val_loss": 0.37151394247849145,
+    "structural_constraint": "Y subset of Z enforced in logits"
+  },
+  "validation_multilabel": {
+    "true_cardinality_mean": 1.894243597984314,
+    "pred_cardinality_mean": 2.1947791164658637,
+    "prob_cardinality_mean": 3.557368755340576,
+    "exact_multilabel_set_accuracy": 0.2563587684069612,
+    "micro_f1": 0.7189392699296121,
+    "macro_f1": 0.6892492590988855,
+    "samples_f1": 0.6944866768661949,
+    "hamming_loss": 0.05746318607764391,
+    "micro_auroc": 0.9714947453674977,
+    "macro_auroc_valid_roles": 0.9683340184461473,
+    "macro_ap_valid_roles": 0.7517178249522641
+  },
+  "test_multilabel": {
+    "true_cardinality_mean": 1.9026168584823608,
+    "pred_cardinality_mean": 2.2454205607476636,
+    "prob_cardinality_mean": 3.576061725616455,
+    "exact_multilabel_set_accuracy": 0.2467289719626168,
+    "micro_f1": 0.7091744772891132,
+    "macro_f1": 0.6864279050682496,
+    "samples_f1": 0.6851664441477525,
+    "hamming_loss": 0.060317757009345795,
+    "micro_auroc": 0.9727982944238038,
+    "macro_auroc_valid_roles": 0.9703607729519345,
+    "macro_ap_valid_roles": 0.7675296081834952
+  },
+  "test_selector_ranking": {
+    "round_1_clean": {
+      "groups": 139,
+      "mean_oracle_new": 1.9928057553956835,
+      "mean_predicted_new_realized": 1.8633093525179856,
+      "reward_optimal_hit_rate": 0.8848920863309353,
+      "exact_oracle_candidate_match_rate": 0.19424460431654678,
+      "mean_regret": 0.12949640287769784,
+      "mean_within_group_spearman": 0.0022904744619105964,
+      "spearman_groups": 20,
+      "random_mean_reward": 1.8732014388489209,
+      "existing_selector_mean_reward": 1.856115107913669,
+      "existing_selector_reward_optimal_rate": 0.8848920863309353,
+      "actual_chosen_mean_reward": 1.8633093525179856
+    },
+    "all_rounds_teacher_forced_actual_history": {
+      "groups": 701,
+      "mean_oracle_new": 1.158345221112696,
+      "mean_predicted_new_realized": 0.9229671897289586,
+      "reward_optimal_hit_rate": 0.7774607703281027,
+      "exact_oracle_candidate_match_rate": 0.2967189728958631,
+      "mean_regret": 0.23537803138373753,
+      "mean_within_group_spearman": 0.37846803826702474,
+      "spearman_groups": 448,
+      "random_mean_reward": 0.704945316214931,
+      "existing_selector_mean_reward": 0.7089871611982882,
+      "existing_selector_reward_optimal_rate": 0.5991440798858774,
+      "actual_chosen_mean_reward": 0.7018544935805991
+    }
+  },
+  "interpretation": {
+    "important": "ORACLE-Z diagnostic only; not yet a deployable selector.",
+    "next_if_good": "Integrate P(Y|Z,q,b) over posterior Z and compute expected information gain."
+  }
+}

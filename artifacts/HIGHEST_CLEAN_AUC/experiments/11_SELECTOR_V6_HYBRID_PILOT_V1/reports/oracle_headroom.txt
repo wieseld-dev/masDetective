@@ -1,0 +1,58 @@
+
+===== ROUND 7 =====
+av11_0958d195a346cdb1                  before=0.562500 selected=+0.093750 random=+0.054688 oracle=+0.093750 rank=1/4
+av11_486b21e22324059f                  before=0.690476 selected=+0.059524 random=-0.014881 oracle=+0.059524 rank=1/4
+av11_5df7e71a9829f052                  before=0.718750 selected=-0.078125 random=-0.015625 oracle=+0.031250 rank=4/4
+av11_6488732ca6cd1f03                  before=0.146667 selected=-0.013333 random=+0.023333 oracle=+0.066667 rank=4/4
+av11_8ab66a778c443eeb                  before=0.745098 selected=+0.000000 random=-0.093137 oracle=+0.058824 rank=3/4
+av11_93d32f31d67faa9c                  before=0.607143 selected=-0.047619 random=+0.002976 oracle=+0.035714 rank=4/4
+av11_d7cd28142f2a04b9                  before=0.745098 selected=-0.039216 random=-0.024510 oracle=+0.000000 rank=4/4
+av11_fa269d1328d0991f                  before=0.578125 selected=-0.062500 random=+0.007812 oracle=+0.062500 rank=4/4
+R7 MEAN: selected=-0.010940 random=-0.007418 oracle=+0.051029 headroom=+0.061968 mean_rank=3.125
+
+===== ROUND 8 =====
+av11_0958d195a346cdb1                  before=0.656250 selected=+0.000000 random=-0.023438 oracle=+0.000000 rank=1/4
+av11_486b21e22324059f                  before=0.750000 selected=-0.035714 random=-0.014881 oracle=+0.011905 rank=3/4
+av11_5df7e71a9829f052                  before=0.640625 selected=+0.015625 random=+0.042969 oracle=+0.078125 rank=4/4
+av11_6488732ca6cd1f03                  before=0.133333 selected=+0.200000 random=+0.086667 oracle=+0.200000 rank=1/4
+av11_8ab66a778c443eeb                  before=0.745098 selected=+0.000000 random=-0.073529 oracle=+0.019608 rank=2/4
+av11_93d32f31d67faa9c                  before=0.559524 selected=+0.059524 random=+0.101190 oracle=+0.178571 rank=4/4
+av11_d7cd28142f2a04b9                  before=0.705882 selected=-0.039216 random=-0.044118 oracle=-0.019608 rank=2/4
+av11_fa269d1328d0991f                  before=0.515625 selected=+0.015625 random=+0.003906 oracle=+0.046875 rank=2/4
+R8 MEAN: selected=+0.026980 random=+0.009846 oracle=+0.064435 headroom=+0.037454 mean_rank=2.375
+
+===== ROUND 9 =====
+av11_0958d195a346cdb1                  before=0.656250 selected=-0.062500 random=-0.101562 oracle=-0.062500 rank=2/4
+av11_486b21e22324059f                  before=0.714286 selected=-0.011905 random=-0.005952 oracle=+0.011905 rank=2/4
+av11_5df7e71a9829f052                  before=0.656250 selected=+0.015625 random=+0.000000 oracle=+0.031250 rank=2/4
+av11_6488732ca6cd1f03                  before=0.333333 selected=+0.040000 random=-0.060000 oracle=+0.040000 rank=1/4
+av11_8ab66a778c443eeb                  before=0.745098 selected=+0.000000 random=-0.063725 oracle=+0.000000 rank=1/4
+av11_93d32f31d67faa9c                  before=0.619048 selected=+0.047619 random=+0.020833 oracle=+0.047619 rank=1/4
+av11_d7cd28142f2a04b9                  before=0.666667 selected=-0.019608 random=-0.019608 oracle=+0.019608 rank=2/4
+av11_fa269d1328d0991f                  before=0.531250 selected=+0.015625 random=+0.011719 oracle=+0.046875 rank=2/4
+R9 MEAN: selected=+0.003107 random=-0.027287 oracle=+0.016845 headroom=+0.013738 mean_rank=1.625
+
+===== ROUND 10 =====
+av11_0958d195a346cdb1                  before=0.593750 selected=+0.062500 random=+0.042969 oracle=+0.062500 rank=1/4
+av11_486b21e22324059f                  before=0.702381 selected=+0.023810 random=-0.002976 oracle=+0.023810 rank=1/4
+av11_5df7e71a9829f052                  before=0.671875 selected=-0.109375 random=-0.042969 oracle=+0.000000 rank=4/4
+av11_6488732ca6cd1f03                  before=0.373333 selected=-0.066667 random=-0.016667 oracle=+0.120000 rank=3/4
+av11_8ab66a778c443eeb                  before=0.745098 selected=+0.078431 random=-0.019608 oracle=+0.078431 rank=1/4
+av11_93d32f31d67faa9c                  before=0.666667 selected=+0.011905 random=+0.011905 oracle=+0.083333 rank=2/4
+av11_d7cd28142f2a04b9                  before=0.647059 selected=-0.019608 random=+0.024510 oracle=+0.058824 rank=4/4
+av11_fa269d1328d0991f                  before=0.546875 selected=+0.062500 random=+0.019531 oracle=+0.062500 rank=1/4
+R10 MEAN: selected=+0.005437 random=+0.002087 oracle=+0.061175 headroom=+0.055738 mean_rank=2.125
+
+======================================
+ ALL HYBRID PILOT STATES
+======================================
+STATES = 32
+CANDIDATES = 128
+V2 SELECTED MEAN GAIN = +0.006146
+RANDOM MEAN GAIN      = -0.005693
+ORACLE MEAN GAIN      = +0.048371
+ORACLE HEADROOM       = +0.042224
+SELECTOR TOP1         = 0.344
+SELECTOR TOP2         = 0.625
+MEAN SELECTOR RANK    = 2.312
+GROUPS ORACLE > 0     = 26/32

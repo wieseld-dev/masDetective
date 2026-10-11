@@ -1,0 +1,41 @@
+analysis/train_q38_selector_v41.py:1:from __future__ import annotations
+analysis/train_q38_selector_v41.py:136:    return [
+analysis/train_q38_selector_v41.py:163:    return int(
+analysis/train_q38_selector_v41.py:260:        return tokenizer.apply_chat_template(
+analysis/train_q38_selector_v41.py:267:        return tokenizer.apply_chat_template(
+analysis/train_q38_selector_v41.py:332:    return " | ".join(
+analysis/train_q38_selector_v41.py:382:    return (
+analysis/train_q38_selector_v41.py:432:            return (
+analysis/train_q38_selector_v41.py:573:        return len(
+analysis/train_q38_selector_v41.py:578:        return self.items[i]
+analysis/train_q38_selector_v41.py:598:    return {
+analysis/train_q38_selector_v41.py:746:    return logits.index_select(
+analysis/train_q38_selector_v41.py:908:    return (
+analysis/train_q38_selector_v41.py:961:    return ranks
+analysis/train_q38_selector_v41.py:975:        return None
+analysis/train_q38_selector_v41.py:977:    return float(
+analysis/train_q38_selector_v41.py:1077:    return (
+analysis/train_q38_selector_v41.py:1297:    return result
+analysis/train_q38_selector_v41.py:1341:    return {
+analysis/build_llm_selector_v3_auc_dataset.py:2:from __future__ import annotations
+analysis/build_llm_selector_v3_auc_dataset.py:30:    return [
+analysis/build_llm_selector_v3_auc_dataset.py:60:        return float("nan")
+analysis/build_llm_selector_v3_auc_dataset.py:71:    return wins / (len(pos) * len(neg))
+analysis/build_llm_selector_v3_auc_dataset.py:76:        return "- no previous public interaction"
+analysis/build_llm_selector_v3_auc_dataset.py:92:    return "\n\n".join(blocks)
+analysis/build_llm_selector_v3_auc_dataset.py:110:        return None
+analysis/build_llm_selector_v3_auc_dataset.py:115:        return None
+analysis/build_llm_selector_v3_auc_dataset.py:117:    return sid, idx
+analysis/build_llm_selector_v3_auc_dataset.py:124:        return p
+analysis/build_llm_selector_v3_auc_dataset.py:129:        return p
+analysis/build_llm_selector_v3_auc_dataset.py:131:    return None
+analysis/build_llm_selector_v3_auc_dataset.py:145:    return int(m.group(1))
+analysis/build_llm_selector_v3_auc_dataset.py:149:    # Current active implementation returns (k_probs, role_probs).
+analysis/build_llm_selector_v3_auc_dataset.py:150:    # Keep compatibility with older helper variants that returned only roles.
+analysis/build_llm_selector_v3_auc_dataset.py:156:        return dict(pred[1])
+analysis/build_llm_selector_v3_auc_dataset.py:158:    return dict(pred)
+analysis/build_llm_selector_v3_auc_dataset.py:423:                    "role_auc_gain_training_only":
+analysis/build_llm_selector_v3_auc_dataset.py:433:                    "role_pairwise_gain_training_only":
+analysis/build_llm_selector_v3_auc_dataset.py:512:        float(x["role_auc_gain_training_only"])
+analysis/build_llm_selector_v3_auc_dataset.py:523:            float(x["role_auc_gain_training_only"])
+analysis/build_llm_selector_v3_auc_dataset.py:573:            "role_auc_gain_training_only",

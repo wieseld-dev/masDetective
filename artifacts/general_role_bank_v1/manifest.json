@@ -1,0 +1,14 @@
+{
+  "version": "general_role_bank_v1",
+  "roles_total": 72,
+  "train_roles": 60,
+  "val_roles": 12,
+  "semantic_families": 12,
+  "train_per_family": 5,
+  "val_per_family": 1,
+  "canonical_probes_per_role": 3,
+  "canonical_probe_rows": 216,
+  "old_internal_test_used": false,
+  "existing_20_roles_all_train": true,
+  "role_bank_sha256": "ef94b569fadc09f7b1b580cf556cefb895351da604915908b18aaa7856fd22af"
+}

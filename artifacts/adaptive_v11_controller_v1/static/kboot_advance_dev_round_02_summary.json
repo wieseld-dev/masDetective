@@ -1,0 +1,14 @@
+{
+  "mean_history_len": 2.0,
+  "mean_oracle_k_role_recall": 0.24791666666666662,
+  "mean_role_auc": 0.5778254114145659,
+  "mean_role_brier": 0.17167410705503533,
+  "mean_role_log_loss": 0.5252481965441932,
+  "mean_true_false_margin": 0.015502561523603013,
+  "note": "K is held exactly uniform over 3..6 during acquisition; only role belief and public history adapt.",
+  "observed": 32,
+  "phase": "k_bootstrap_uniform_k_role_adaptive",
+  "round": 2,
+  "sessions": 32,
+  "split": "dev"
+}

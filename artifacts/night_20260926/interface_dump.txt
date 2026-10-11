@@ -1,0 +1,3066 @@
+============================================================
+ NIGHT INTERFACE DUMP
+============================================================
+Sat 26 Sep 2026 23:45:35 IDT
+slurm-login-01.auth.ad.bgu.ac.il
+/home/wieseld/mas_rl_detective
+
+===== PYTHON =====
+Python 3.11.16
+executable: /home/wieseld/.conda/envs/masdetective/bin/python
+torch: 2.14.0+cu126
+cuda available: False
+
+===== ENV PRESENCE (NO SECRETS PRINTED) =====
+.env: PRESENT
+OPENAI_API_KEY: PRESENT
+HF_TOKEN: MISSING/OPTIONAL
+
+===== GIT =====
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+===== REQUIRED FILES =====
+OK   analysis/one_system_k3_demo.py
+OK   analysis/adaptive_fanout_count_v13.py
+OK   targets/single_router_fanout_mas.py
+OK   v11/role_universe.py
+OK   analysis/train_v7_benign_output_sensor_pilot_v1.py
+OK   analysis/v7_structured_reranker_v1.py
+OK   analysis/v7_rolewise_calibration_v1.py
+OK   analysis/v7_targeted_toprank_v1.py
+
+===== REQUIRED ARTIFACTS =====
+OK   artifacts/v7_benign_output_sensor_pilot_v1/best_adapter
+OK   artifacts/v7_benign_final_pool_v2/train.jsonl
+OK   artifacts/v7_benign_final_pool_v2/dev.jsonl
+OK   artifacts/v7_benign_final_pool_v2/test.jsonl
+OK   artifacts/v7_rolewise_calibration_v1
+OK   artifacts/v7_structured_reranker_v1
+OK   artifacts/v7_targeted_toprank_v1/targeted_ranker.pt
+
+===== PY_COMPILE =====
+PY_COMPILE: PASS
+
+===== TOP LEVEL SYMBOLS / SIGNATURES =====
+
+================================================================================
+analysis/one_system_k3_demo.py
+================================================================================
+   25-   26  def norm(w):
+   28-   29  def k_probs(W,K):
+   31-   33  def role_probs(W,Z,roles):
+   35-   42  def show(rnd,kp,rp):
+   44-   49  def make_state(sid,rnd,kp,rp,history):
+   51-  235  def main():
+
+================================================================================
+analysis/adaptive_fanout_count_v13.py
+================================================================================
+   37-   40  def recent_majority(evidence:Sequence[float],positive:bool,n:int=3)->bool:
+   43-  100  def run_session(*,system_id:str,query_fn:Callable[[str],tuple[str,bool]],candidate_roles:Sequence[str],neighbor_map:dict[str,list[str]],detector,policy,gate,embedder,seed:int,min_probes:int,max_probes:int,max_total:int,confidence:float,evidence_discount:float,evidence_clip:float,temperature:float,top_p:float,generation_retries:int)->dict:
+  103-  214  def main():
+
+================================================================================
+targets/single_router_fanout_mas.py
+================================================================================
+   36-   51  class SingleRouterSystemSpec:
+   55-   78  class PrivilegedFanoutTrace:
+   81-  249  class SingleRouterFanoutMAS:
+
+================================================================================
+v11/role_universe.py
+================================================================================
+  155-  156  def human_label(role: str) -> str:
+  159-  175  def anchor_probe(role: str) -> str:
+  178-  190  def validate_role_universe() -> None:
+
+================================================================================
+analysis/train_v7_benign_output_sensor_pilot_v1.py
+================================================================================
+   53-   65  def read_jsonl(path: Path):
+   68-   81  def dump(path: Path, obj):
+   84-   98  def get_answer(row):
+  101-  116  def get_selected(row):
+  132-  154  def sensor_text(
+  168-  336  def build_pairs(
+  339-  357  class PairDataset(Dataset):
+  360-  395  def make_collate(
+  402-  480  def load_model():
+  487-  566  def binary_auc(
+  574-  629  def score_texts(
+  632-  899  def evaluate(
+  906- 1303  def train(args):
+ 1306- 1381  def parse_args():
+
+================================================================================
+analysis/v7_structured_reranker_v1.py
+================================================================================
+   72-   84  def read_jsonl(path):
+   87-   95  def dump(path, obj):
+   98-  103  def norm_q(x):
+  106-  121  def sample_fixed(
+  124-  167  def load_sensor():
+  171-  206  def score_rows(
+  209-  232  def labels_matrix(
+  235-  239  def binary_auc(y, s):
+  242-  349  def ranking_metrics(
+  361-  410  def fit_thresholds(
+  413-  503  def threshold_metrics(
+  520-  576  class StructuredReranker(nn.Module):
+  579-  606  def pairwise_loss(
+  609-  675  def hard_pairwise_loss(
+  683-  779  def fit_role_calibration(
+  782-  797  def apply_affine(
+  800-  890  def build_audited_test(
+  893- 1663  def main():
+
+================================================================================
+analysis/v7_rolewise_calibration_v1.py
+================================================================================
+   68-   76  def read_jsonl(path):
+   79-   82  def norm_q(x):
+   85-  123  def load_adapter(path):
+  127-  160  def score_rows(
+  163-  181  def labels_matrix(
+  184-  191  def binary_auc(
+  194-  300  def evaluate_matrix(
+  303-  340  def build_pair_indices(
+  343-  500  def fit_calibration(
+  503-  512  def apply_calibration(
+  515-  530  def sample_fixed(
+  533-  606  def build_audited_test(
+  609- 1019  def main():
+
+================================================================================
+analysis/v7_targeted_toprank_v1.py
+================================================================================
+   31-   39  def dump(path, obj):
+   42-   67  def ranks_from_scores(scores):
+   70-  109  def within_auc(scores, y):
+  112-  134  def recall_at_k(
+  137-  210  def oracle_k_metrics(
+  213-  264  def metrics(scores, y):
+  278-  318  def build_features(scores):
+  321-  365  class TargetedRanker(nn.Module):
+  381-  471  def targeted_pair_loss(
+  474-  528  def worst_true_loss(
+  535-  797  def train_variant(
+  801-  821  def predict(
+  824-  858  def normalize(
+  867-  951  def search_blend(
+  954- 1451  def main():
+
+===== KEY CODE LOCATIONS =====
+
+### analysis/one_system_k3_demo.py
+19:from targets.single_router_fanout_mas import SingleRouterFanoutMAS, SingleRouterSystemSpec
+20:from v11.role_universe import TRAIN_ROLES
+67:    # Universe is exactly the 20 TRAIN_ROLES used by the current observation model.
+68:    roles=list(TRAIN_ROLES)
+77:    caldir=Path("artifacts/calibrated_bayes_diag_v1")
+88:    Yhist=vb.labels(examples,roles,"selected_roles")
+94:    ckpt=torch.load(obsdir/"model.pt",map_location="cpu")
+100:        for r in examples[i]["selected_roles"]: pos[ri[r]]+=1
+107:    # Initial belief: uniform K over 3..6, exchangeable role marginals E[K]/20.
+120:    spec=SingleRouterSystemSpec(system_id=sid,split="demo",execution_mode=a.mode,
+121:                                style=a.style,worker_roles=TRUE_ROLES)
+122:    target=SingleRouterFanoutMAS(spec,model=a.model)
+145:                    {"belief_state":st.to_public_dict(),"candidate_index":j,"max_history_turns":5},
+157:        belief=np.array([rp[r] for r in roles],np.float32)
+160:        L=vb.particle_logits(fwd,Q,belief,kvec,rnorm,Z,"cpu",4096)
+161:        pY=vb.calibrated_hidden_probs(L,log_posw,T)
+173:        output=str(target.query(q))
+175:        tr=getattr(target,"_last_trace",None)
+176:        selected_eval=list(map(str,getattr(tr,"selected_roles",()))) if tr else []
+193:        print("\n[EVAL ONLY selected_roles trace]:",selected_eval)
+198:        # We still adapt generator through posterior belief even if schema history
+203:            "selected_roles_eval_only":selected_eval,
+223:      "true_roles":list(TRUE_ROLES),"top3_predicted":top3,
+
+### analysis/adaptive_fanout_count_v13.py
+27:from v11.role_universe import ROLE_DESCRIPTIONS, TRAIN_ROLES, anchor_probe
+44:    states={r:{"n":0,"log_odds":0.0,"belief":0.5,"queries":[],"outputs":[],"scores":[],"evidence":[],"resolved":False,"decision":None,"exhausted":False,"generation_failures":0} for r in candidate_roles}
+50:        b=float(s["belief"])
+62:                own=entropy01(states[r]["belief"])
+63:                neigh=max((entropy01(states[n]["belief"]) for n in neighbor_map.get(r,[])[:4]),default=0.0)
+68:        comp=sorted(neighbor_map.get(role,[])[:6],key=lambda n:(states[n]["belief"],entropy01(states[n]["belief"])),reverse=True)[:4]
+72:                "candidate_role":role,"candidate_description":ROLE_DESCRIPTIONS[role],"anchor_probe":anchor_probe(role),
+74:                "confusable_roles":[{"role":n,"description":ROLE_DESCRIPTIONS[n]} for n in comp],
+93:        s["log_odds"]+=ev; s["belief"]=sigmoid(s["log_odds"]); total+=1; resolve(role)
+94:        history.append({"step":total,"role":role,"competitors_public":comp,"query":query,"output":output,"cache_hit":hit,"detector_score":score,"probe_p":p,"evidence":ev,"belief_after":s["belief"],"resolved_after":s["resolved"]})
+95:        print(f"[{system_id}] q={total:03d} role={role:<26} probe_p={p:.3f} belief={s['belief']:.3f} n={s['n']} resolved={s['resolved']} competitors={comp[:2]}",flush=True)
+98:        if s["decision"] is None: s["decision"]=bool(s["belief"]>=0.5)
+100:    return {"system_id":system_id,"total_queries":total,"predicted_roles":present,"k_hat_workers":len(present),"unresolved_roles":[r for r in candidate_roles if not states[r]["resolved"]],"states":states,"history":history}
+133:    excluded=excluded_v12_compositions(TRAIN_ROLES)
+134:    v13train=make_fresh_fanout_specs(TRAIN_ROLES,prefix="v13_train",systems_per_cell=args.train_systems_per_cell,seed=args.training_seed,excluded_compositions=excluded)
+135:    excluded |= {composition_key(s.worker_roles) for s in v13train}
+136:    specs=make_fresh_fanout_specs(TRAIN_ROLES,prefix="v13_eval",systems_per_cell=args.systems_per_cell,seed=args.seed,excluded_compositions=excluded)
+137:    manifest=[{"system_id":s.system_id,"mode":s.execution_mode,"k_true_workers_eval_only":len(s.worker_roles),"true_roles_eval_only":list(s.worker_roles)} for s in specs]
+138:    examples=load_fingerprint_examples([(args.v13_log,1.0),(args.v11_log,.35)],set(TRAIN_ROLES))
+148:    for s in specs: print(f"  EVAL-ONLY {s.system_id}: mode={s.execution_mode} K={len(s.worker_roles)} roles={list(s.worker_roles)}")
+158:    from targets.single_router_fanout_mas import SingleRouterFanoutMAS
+171:    neighbor_map=build_neighbor_map(embedder,TRAIN_ROLES,top_k=args.neighbor_k)
+172:    detector=BehavioralFingerprintDetectorV13(embedder,ROLE_DESCRIPTIONS,c=args.detector_c)
+173:    report=detector.fit(examples,TRAIN_ROLES,folds=args.detector_folds)
+193:        mas=SingleRouterFanoutMAS(spec)
+194:        def public_query(q,_sid=spec.system_id,_mas=mas): return cache.run(_sid,q,_mas.query)
+195:        sess=run_session(system_id=spec.system_id,query_fn=public_query,candidate_roles=TRAIN_ROLES,neighbor_map=neighbor_map,detector=detector,policy=policy,gate=gate,embedder=embedder,seed=args.seed,min_probes=args.min_probes_per_role,max_probes=args.max_probes_per_role,max_total=args.max_total_queries,confidence=args.confidence,evidence_discount=args.evidence_discount,evidence_clip=args.evidence_clip,temperature=args.temperature,top_p=args.top_p,generation_retries=args.generation_retries)
+197:        true=set(spec.worker_roles); pred=set(sess["predicted_roles"])
+203:    summary={"protocol":"v13_hard_negative_policy_plus_behavioral_residual_fingerprint_detector","development_test":True,"not_final_untouched_paper_test":True,"run_hash":run_hash,"adapter_sha256":config["adapter_sha256"],"manifest_sha256":config["manifest_sha256"],"detector_oof":report,"neighbor_map_public":neighbor_map,"metrics":aggregate_results(results,TRAIN_ROLES),"systems":[{"system_id":r["system_id"],"mode":r["execution_mode_eval_only"],"k_true":r["k_true_workers_eval_only"],"k_hat":r["k_hat_workers"],"queries":r["total_queries"],"unresolved":len(r["unresolved_roles"]),"role_f1":r["role_metrics_eval_only"]["f1"]} for r in results]}
+
+### targets/single_router_fanout_mas.py
+36:class SingleRouterSystemSpec:
+41:    worker_roles: Tuple[str, ...]
+47:        return len(self.worker_roles)
+50:    def estimated_calls_per_query(self) -> int:
+64:    selected_roles: Tuple[str, ...]
+78:        return self.selected_roles[0] if self.selected_roles else ""
+81:class SingleRouterFanoutMAS:
+84:    def __init__(self, spec: SingleRouterSystemSpec, *, model: Optional[str] = None, client=None):
+87:        if len(spec.worker_roles) < 3:
+89:        unknown = set(spec.worker_roles) - set(ROLE_PROMPTS)
+99:        self.worker_ids = tuple(f"w{i}" for i in range(len(spec.worker_roles)))
+100:        self.role_by_worker = dict(zip(self.worker_ids, spec.worker_roles))
+101:        self._last_trace: Optional[PrivilegedFanoutTrace] = None
+209:    def query(self, query: str) -> str:
+213:        selected_roles = tuple(self.role_by_worker[w] for w in selected)
+224:        self._last_trace = PrivilegedFanoutTrace(
+231:            selected_roles=selected_roles,
+237:            true_roles=tuple(self.system.worker_roles),
+241:    def privileged_last_trace(self) -> PrivilegedFanoutTrace:
+242:        if self._last_trace is None:
+244:        return self._last_trace
+247:    def estimated_calls_per_query(self) -> int:
+
+### analysis/train_v7_benign_output_sensor_pilot_v1.py
+18:from torch.utils.data import Dataset, DataLoader
+21:    AutoModelForSequenceClassification,
+27:    PeftModel,
+103:        "selected_roles",
+339:class PairDataset(Dataset):
+402:def load_model():
+436:        AutoModelForSequenceClassification
+450:    model = PeftModel.from_pretrained(
+811:            predicted = {
+818:                    predicted
+826:                    predicted
+937:        tr.ROLE_DESCRIPTIONS
+985:        load_model()
+998:    ds = PairDataset(
+1002:    loader = DataLoader(
+1032:    optimizer_steps = 0
+1072:        rank_loss = F.softplus(
+1099:        bce_loss = (
+1106:        loss = (
+1107:            rank_loss
+1109:            * bce_loss
+1113:            loss
+1118:            loss.detach().cpu()
+1139:            optimizer_steps += 1
+1148:                f"loss={running/step:.5f} "
+1149:                f"opt_steps={optimizer_steps}",
+
+### analysis/v7_structured_reranker_v1.py
+16:    AutoModelForSequenceClassification,
+22:    PeftModel,
+124:def load_sensor():
+144:        AutoModelForSequenceClassification
+158:    model = PeftModel.from_pretrained(
+579:def pairwise_loss(
+609:def hard_pairwise_loss(
+615:    losses = []
+661:        losses.append(
+667:    if not losses:
+674:        losses
+717:    best_loss = float("inf")
+734:        pl = pairwise_loss(
+754:        loss = (
+760:        loss.backward()
+764:            loss.detach()
+767:        if v < best_loss:
+768:            best_loss = v
+907:        tr.ROLE_DESCRIPTIONS
+980:        load_sensor()
+1201:        all_pair = pairwise_loss(
+1206:        hard_pair = hard_pairwise_loss(
+1234:        loss = (
+1241:        loss.backward()
+1273:                f"loss={float(loss.detach()):.5f} "
+1397:    calibrated = {
+1483:        "structured_calibrated": {
+1539:        "structured_calibrated":
+1540:            calibrated,
+1571:    torch.save(
+1622:            f"{calibrated[subset]['within_output_auc']:.4f} "
+1624:            f"{calibrated[subset]['micro_auc']:.4f}",
+
+### analysis/v7_rolewise_calibration_v1.py
+15:    AutoModelForSequenceClassification,
+21:    PeftModel,
+103:        AutoModelForSequenceClassification
+114:    model = PeftModel.from_pretrained(
+397:    best_loss = float("inf")
+410:        calibrated = (
+416:        pos_s = calibrated[
+421:        neg_s = calibrated[
+427:        pair_loss = F.softplus(
+432:        bce_loss = (
+434:                calibrated.reshape(-1),
+448:        loss = (
+449:            pair_loss
+450:            + 0.05 * bce_loss
+454:        loss.backward()
+458:            loss.detach()
+461:        if x < best_loss:
+462:            best_loss = x
+480:                f"loss={x:.6f} "
+481:                f"pair={float(pair_loss):.6f} "
+482:                f"bce={float(bce_loss):.6f}",
+499:        best_loss,
+611:        tr.ROLE_DESCRIPTIONS
+820:    scale, bias, best_loss = (
+854:                "best_loss":
+855:                    best_loss,
+870:    calibrated = {
+929:        "calibrated":
+930:            calibrated,
+938:                calibrated[split][metric]
+967:    for k, m in calibrated.items():
+
+### analysis/v7_targeted_toprank_v1.py
+278:def build_features(scores):
+321:class TargetedRanker(nn.Module):
+369:# Targeted loss
+377:# 3. worst-positive vs strongest-negative loss
+381:def targeted_pair_loss(
+460:    losses = F.softplus(
+466:            losses[mask]
+474:def worst_true_loss(
+479:    losses = []
+518:        losses.append(
+527:        losses
+553:    model = TargetedRanker(
+641:            pair = targeted_pair_loss(
+649:            worst = worst_true_loss(
+660:            loss = (
+669:            loss.backward()
+801:def predict(
+862:# Blend targeted ranking with existing calibrated ranking.
+1029:    train_x = build_features(
+1033:    dev_x = build_features(
+1037:    test_x = build_features(
+1041:    audit_x = build_features(
+1076:        "DEV calibrated:",
+1230:    dev_target = predict(
+1236:    test_target = predict(
+1242:    audit_target = predict(
+1249:    # Blend with current high-AUC calibrated system.
+1312:        "baseline_calibrated": {
+1366:    torch.save(
+1412:            "baseline_calibrated"
+
+===== ROLE UNIVERSE =====
+N TRAIN_ROLES = 20
+0 'code' => 'programming, debugging, implementation, testing, and software behavior'
+1 'writing' => 'drafting, editing, tone, clarity, structure, and written communication'
+2 'math' => 'calculations, equations, statistics, units, uncertainty, and quantitative reasoning'
+3 'planning' => 'goals, decomposition, priorities, resources, milestones, dependencies, and risks'
+4 'research' => 'evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation'
+5 'data' => 'datasets, schemas, cleaning, transformations, summaries, diagnostics, and analysis'
+6 'design' => 'interfaces, user needs, interaction flows, usability, information organization, and tradeoffs'
+7 'operations' => 'procedures, reliability, handoffs, monitoring, execution, constraints, and process improvement'
+8 'qa_testing' => 'software quality assurance, test cases, reproducible defects, expected behavior, edge cases, and verification'
+9 'translation' => 'translation between languages while preserving meaning, terminology, tone, context, and natural phrasing'
+10 'financial_analysis' => 'budgets, financial comparisons, margins, cash flows, assumptions, scenarios, and quantitative business interpretation'
+11 'database_design' => 'relational and document data modeling, schemas, keys, normalization, indexes, constraints, and query-oriented design'
+12 'accessibility_review' => 'accessibility of interfaces and content, keyboard use, semantics, contrast, labels, assistive technologies, and inclusive design'
+13 'fact_checking' => 'verification of factual claims, source corroboration, dates, entities, evidence quality, and uncertainty'
+14 'requirements_analysis' => 'clarifying product requirements, acceptance criteria, stakeholders, constraints, ambiguities, priorities, and dependencies'
+15 'incident_management' => 'operational incident triage, impact, timelines, symptoms, mitigation, ownership, recovery, and follow-up actions'
+16 'experiment_design' => 'hypotheses, variables, controls, sampling, measurement, confounders, protocols, and experimental validity'
+17 'risk_assessment' => 'identifying risks, likelihood, impact, controls, assumptions, dependencies, and mitigation priorities'
+18 'documentation' => 'technical documentation, procedures, API or product explanations, examples, structure, completeness, and reader usability'
+19 'customer_support_triage' => 'classifying user-reported problems, collecting diagnostic context, prioritizing issues, reproducing symptoms, and routing next actions'
+
+===== DATASET ROW SCHEMA =====
+
+--- train ---
+keys: ['benign_failures', 'candidate_index', 'chosen_for_continuation', 'cycle', 'dataset_split', 'direct_domains', 'final_output', 'final_validity', 'final_validity_v2', 'query', 'round', 'selected_roles', 'session_id', 'source_file', 'source_line', 'stage', 'strict_benign', 'system_id', 'task_semantic_direct', 'truth_roles']
+source_file: 'artifacts/adaptive_v11_curriculum_v2/stage_01/cycle_01/responses_train_round_01.jsonl'
+source_line: 1
+stage: 'stage_01'
+cycle: 'cycle_01'
+round: 1
+session_id: 'av11cur_7bc67917d8bde596'
+system_id: 'av11cur_7bc67917d8bde596'
+candidate_index: 0
+chosen_for_continuation: True
+query: 'Should I provide a clear description of my current project goals and objectives before starting the code debugging process?'
+final_output: "Yes, providing a clear description of your current project goals and objectives before starting the code debugging process is essential. This clarity offers several advantages that can significantly enhance the debugging experience.\\n\\nFirstly, having well-defined goals helps you maintain focus on what is most critical to the project's success. It allows you to prioritize which parts of the code need immediate attention, ensuring that your efforts are directed towards issues that have the highes...<CUT>"
+selected_roles: ['planning', 'qa_testing']
+truth_roles: ['customer_support_triage', 'planning', 'qa_testing']
+strict_benign: True
+benign_failures: []
+task_semantic_direct: False
+direct_domains: []
+final_validity: {'valid_benign': True, 'invalid_reasons': [], 'matches': {'capability': [], 'internal': [], 'placeholder': []}}
+final_validity_v2: {'valid_benign': True, 'invalid_reasons': [], 'matches': {'direction': [], 'capability_patch': []}}
+dataset_split: 'train'
+
+--- dev ---
+keys: ['benign_failures', 'candidate_index', 'chosen_for_continuation', 'cycle', 'dataset_split', 'direct_domains', 'final_output', 'final_validity', 'final_validity_v2', 'query', 'round', 'selected_roles', 'session_id', 'source_file', 'source_line', 'stage', 'strict_benign', 'system_id', 'task_semantic_direct', 'truth_roles']
+source_file: 'artifacts/adaptive_v11_curriculum_v2/stage_01/cycle_01/responses_train_round_01.jsonl'
+source_line: 37
+stage: 'stage_01'
+cycle: 'cycle_01'
+round: 1
+session_id: 'av11cur_2ce95fca5eac5e22'
+system_id: 'av11cur_2ce95fca5eac5e22'
+candidate_index: 0
+chosen_for_continuation: False
+query: 'Is there an algorithmic approach to optimize the efficiency of machine learning model training by minimizing the number of epochs without significantly compromising accuracy?'
+final_output: 'Yes, there are several algorithmic approaches and techniques that can optimize the efficiency of machine learning model training by minimizing the number of epochs while maintaining accuracy. Here are some key methods and strategies:\\n\\n### 1. **Learning Rate Scheduling**\\n   - **Description**: Adjusting the learning rate during training can help the model converge faster. Techniques include:\\n     - **Step Decay**: Reducing the learning rate at fixed intervals.\\n     - **Exponential Decay**: Gr...<CUT>'
+selected_roles: ['research']
+truth_roles: ['design', 'incident_management', 'research']
+strict_benign: True
+benign_failures: []
+task_semantic_direct: False
+direct_domains: []
+final_validity: {'valid_benign': True, 'invalid_reasons': [], 'matches': {'capability': [], 'internal': [], 'placeholder': []}}
+final_validity_v2: {'valid_benign': True, 'invalid_reasons': [], 'matches': {'direction': [], 'capability_patch': []}}
+dataset_split: 'dev'
+
+--- test ---
+keys: ['benign_failures', 'candidate_index', 'chosen_for_continuation', 'cycle', 'dataset_split', 'direct_domains', 'final_output', 'final_validity', 'final_validity_v2', 'query', 'round', 'selected_roles', 'session_id', 'source_file', 'source_line', 'stage', 'strict_benign', 'system_id', 'task_semantic_direct', 'truth_roles']
+source_file: 'artifacts/adaptive_v11_curriculum_v2/stage_01/cycle_01/responses_train_round_01.jsonl'
+source_line: 55
+stage: 'stage_01'
+cycle: 'cycle_01'
+round: 1
+session_id: 'av11cur_af9c256231521440'
+system_id: 'av11cur_af9c256231521440'
+candidate_index: 0
+chosen_for_continuation: False
+query: 'How can I ensure my code snippet runs smoothly on different versions of Python without errors?'
+final_output: 'To ensure that your code snippet runs smoothly across different versions of Python, you can follow these best practices:\\n\\n### 1. **Use Version Compatibility Libraries**\\n   - Utilize libraries like `six` or `future` that help write code compatible with both Python 2 and Python 3. These libraries provide utilities to handle differences in syntax and standard library functions.\\n\\n### 2. **Avoid Deprecated Features**\\n   - Check the Python documentation for the versions you are targeting to avoi...<CUT>'
+selected_roles: ['documentation']
+truth_roles: ['documentation', 'incident_management', 'planning']
+strict_benign: True
+benign_failures: []
+task_semantic_direct: False
+direct_domains: []
+final_validity: {'valid_benign': True, 'invalid_reasons': [], 'matches': {'capability': [], 'internal': [], 'placeholder': []}}
+final_validity_v2: {'valid_benign': True, 'invalid_reasons': [], 'matches': {'direction': [], 'capability_patch': []}}
+dataset_split: 'test'
+
+===== ARTIFACT FILE LISTS =====
+
+--- artifacts/v7_benign_output_sensor_pilot_v1 ---
+artifacts/v7_benign_output_sensor_pilot_v1/best_adapter/adapter_config.json	1212 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/best_adapter/adapter_model.safetensors	59025256 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/best_adapter/chat_template.jinja	2507 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/best_adapter/README.md	5172 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/best_adapter/tokenizer_config.json	885 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/best_adapter/tokenizer.json	11422158 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/job.txt	9 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/last_adapter/adapter_config.json	1212 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/last_adapter/adapter_model.safetensors	59025256 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/last_adapter/chat_template.jinja	2507 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/last_adapter/README.md	5172 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/last_adapter/tokenizer_config.json	885 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/last_adapter/tokenizer.json	11422158 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/metrics.json	2939 bytes
+artifacts/v7_benign_output_sensor_pilot_v1/train_audit.json	1687 bytes
+
+--- artifacts/v7_structured_reranker_v1 ---
+artifacts/v7_structured_reranker_v1/job.txt	9 bytes
+artifacts/v7_structured_reranker_v1/reranker.pt	5351 bytes
+artifacts/v7_structured_reranker_v1/summary.json	18482 bytes
+
+--- artifacts/v7_rolewise_calibration_v1 ---
+artifacts/v7_rolewise_calibration_v1/calibration.json	2163 bytes
+artifacts/v7_rolewise_calibration_v1/job.txt	9 bytes
+artifacts/v7_rolewise_calibration_v1/summary.json	11159 bytes
+
+--- artifacts/v7_targeted_toprank_v1 ---
+artifacts/v7_targeted_toprank_v1/job.txt	9 bytes
+artifacts/v7_targeted_toprank_v1/summary.json	15847 bytes
+artifacts/v7_targeted_toprank_v1/targeted_ranker.pt	14445 bytes
+
+===== JSON ARTIFACT CONTENT / KEYS =====
+
+### artifacts/v7_structured_reranker_v1
+
+FILE: artifacts/v7_structured_reranker_v1/summary.json
+TOP KEYS: ['best_dev_within_auc', 'best_step', 'experiment', 'query_used', 'raw', 'reranker_parameters', 'role_calibration', 'sensor', 'sensor_frozen', 'structured', 'structured_calibrated', 'threshold_metrics', 'threshold_target_dev_recall', 'train_rows']
+{
+  "experiment": "v7_structured_reranker_v1",
+  "query_used": false,
+  "sensor_frozen": true,
+  "sensor": "artifacts/v7_benign_output_sensor_pilot_v1/best_adapter",
+  "reranker_parameters": 420,
+  "train_rows": 2048,
+  "best_step": 650,
+  "best_dev_within_auc": 0.8388290588987788,
+  "raw": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.7808682696048905,
+      "macro_role_auc": 0.7664866193340735,
+      "within_output_auc": 0.8224018465664775,
+      "topk_activation_recall": 0.5270182291666666,
+      "exact_activation_set_topk": 0.263671875,
+      "role_auc": {
+        "code": 0.7369770580296896,
+        "writing": 0.6871677046939085,
+        "math": 0.7216825024020498,
+        "planning": 0.776347135564379,
+        "research": 0.7665794683257918,
+        "data": 0.7110019408054342,
+        "design": 0.8476443768996961,
+        "operations": 0.7780095211161387,
+        "qa_testing": 0.6711200869970483,
+        "translation": 0.7055226824457593,
+        "financial_analysis": 0.8263379968909615,
+        "database_design": 0.8260382192804526,
+        "accessibility_review": 0.9537654485640615,
+        "fact_checking": 0.6001029737572939,
+        "requirements_analysis": 0.848028548028548,
+        "incident_management": 0.7847472638704371,
+        "experiment_design": 0.7349147992530346,
+        "risk_assessment": 0.8969368439167097,
+        "documentation": 0.8003030303030303,
+        "customer_support_triage": 0.6565047855370436
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8009245022431614,
+      "macro_role_auc": 0.7942231111379954,
+      "within_output_auc": 0.8394895907238993,
+      "topk_activation_recall": 0.5690104166666666,
+      "exact_activation_set_topk": 0.369140625,
+      "role_auc": {
+        "code": 0.7320862101138272,
+        "writing": 0.6494274688429177,
+        "math": 0.7610319076714189,
+        "planning": 0.8032854974076938,
+        "research": 0.7475237449118046,
+        "data": 0.7322388769926244,
+        "design": 0.8965044351073763,
+        "operations": 0.8952081461515424,
+        "qa_testing": 0.669606720122184,
+        "translation": 0.7086666666666667,
+        "financial_analysis": 0.8934364548494983,
+        "database_design": 0.8362953524243847,
+        "accessibility_review": 0.9195845004668534,
+        "fact_checking": 0.7834272540983607,
+        "requirements_analysis": 0.7970904597410622,
+        "incident_management": 0.858225471128697,
+        "experiment_design": 0.8117469132741607,
+        "risk_assessment": 0.8922943722943723,
+        "documentation": 0.794005183873534,
+        "customer_support_triage": 0.7027765866209262
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.8164601657217114,
+      "macro_role_auc": 0.800097156171857,
+      "within_output_auc": 0.843016425868593,
+      "topk_activation_recall": 0.5583333333333333,
+      "exact_activation_set_topk": 0.33,
+      "role_auc": {
+        "code": 0.6702127659574468,
+        "writing": 0.6236979166666666,
+        "math": 0.876358695652174,
+        "planning": 0.876078431372549,
+        "research": 0.786875,
+        "data": 0.7105978260869565,
+        "design": 0.8854166666666666,
+        "operations": 0.82,
+        "qa_testing": 0.8648097826086957,
+        "translation": NaN,
+        "financial_analysis": 0.7616666666666667,
+        "database_design": 0.9432624113475178,
+        "accessibility_review": 0.8702757916241062,
+        "fact_checking": 0.3957894736842105,
+        "requirements_analysis": 0.7009966777408638,
+        "incident_management": 0.9452631578947368,
+        "experiment_design": 0.9293394777265745,
+        "risk_assessment": 0.909035409035409,
+        "documentation": 0.9199823165340407,
+        "customer_support_triage": 0.7121875
+      }
+    },
+    "strict_82": {
+      "rows": 82,
+      "micro_auc": 0.7918318436977894,
+      "macro_role_auc": 0.7782078299165152,
+      "within_output_auc": 0.8266311552434411,
+      "topk_activation_recall": 0.5182926829268293,
+      "exact_activation_set_topk": 0.2804878048780488,
+      "role_auc": {
+        "code": 0.4935897435897436,
+        "writing": 0.7447257383966245,
+        "math": 0.8628571428571429,
+        "planning": 0.8220230473751601,
+        "research": 0.7725806451612903,
+        "data": 0.6685714285714286,
+        "design": 0.8858447488584474,
+        "operations": 0.8028919330289194,
+        "qa_testing": 0.8555743243243243,
+        "translation": NaN,
+        "financial_analysis": 0.5441558441558442,
+        "database_design": 0.9294871794871795,
+        "accessibility_review": 0.8506944444444444,
+        "fact_checking": 0.4551282051282051,
+        "requirements_analysis": 0.6767001114827201,
+        "incident_management": 1.0,
+        "experiment_design": 0.9161904761904762,
+        "risk_assessment": 0.8972602739726028,
+        "documentation": 0.8964992389649924,
+        "customer_support_triage": 0.7111742424242424
+      }
+    }
+  },
+  "structured": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.8181327206132352,
+      "macro_role_auc": 0.787158840222526,
+      "within_output_auc": 0.8388290588987788,
+      "topk_activation_recall": 0.5348307291666666,
+      "exact_activation_set_topk": 0.26171875,
+      "role_auc": {
+        "code": 0.7456333140543667,
+        "writing": 0.7929515418502202,
+        "math": 0.7753816590156933,
+        "planning": 0.7785876347135564,
+        "research": 0.7539121417797888,
+        "data": 0.6992560245835355,
+        "design": 0.8860688956433638,
+        "operations": 0.8098133484162896,
+        "qa_testing": 0.7529905235358086,
+        "translation": 0.6891518737672584,
+        "financial_analysis": 0.8854097268487675,
+        "database_design": 0.739938080495356,
+        "accessibility_review": 0.9603449808837913,
+        "fact_checking": 0.675133397821949,
+        "requirements_analysis": 0.8268632268632269,
+        "incident_management": 0.7559941797937623,
+        "experiment_design": 0.8024042950513539,
+        "risk_assessment": 0.9090001720874205,
+        "documentation": 0.8126839826839827,
+        "customer_support_triage": 0.6916578045610303
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8350279465601527,
+      "macro_role_auc": 0.8108311126800917,
+      "within_output_auc": 0.8487693700012899,
+      "topk_activation_recall": 0.5725911458333334,
+      "exact_activation_set_topk": 0.359375,
+      "role_auc": {
+        "code": 0.6867419294644523,
+        "writing": 0.6548364648573417,
+        "math": 0.8001163805644458,
+        "planning": 0.8417117813869553,
+        "research": 0.8201944821347806,
+        "data": 0.7624553890078515,
+        "design": 0.9129318394024276,
+        "operations": 0.8623539982030548,
+        "qa_testing": 0.7395189003436426,
+        "translation": 0.837,
+        "financial_analysis": 0.9070652173913043,
+        "database_design": 0.8907517939776004,
+        "accessibility_review": 0.8384103641456583,
+        "fact_checking": 0.7505122950819673,
+        "requirements_analysis": 0.796051338220013,
+        "incident_management": 0.8290523774394742,
+        "experiment_design": 0.8123667377398721,
+        "risk_assessment": 0.9019480519480519,
+        "documentation": 0.7994200220699567,
+        "customer_support_triage": 0.7731828902229846
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.8405471189717497,
+      "macro_role_auc": 0.8215441404493621,
+      "within_output_auc": 0.8578998968008256,
+      "topk_activation_recall": 0.6016666666666667,
+      "exact_activation_set_topk": 0.37,
+      "role_auc": {
+        "code": 0.7783687943262412,
+        "writing": 0.5859375,
+        "math": 0.9035326086956522,
+        "planning": 0.8501960784313726,
+        "research": 0.788125,
+        "data": 0.8654891304347826,
+        "design": 0.9109848484848485,
+        "operations": 0.8311111111111111,
+        "qa_testing": 0.845108695652174,
+        "translation": NaN,
+        "financial_analysis": 0.78888888888888
+
+### artifacts/v7_rolewise_calibration_v1
+
+FILE: artifacts/v7_rolewise_calibration_v1/calibration.json
+TOP KEYS: ['adapter', 'best_loss', 'fit_split', 'objective', 'roles']
+{
+  "adapter": "artifacts/v7_benign_output_sensor_pilot_v1/best_adapter",
+  "fit_split": "dev_512",
+  "objective": "pairwise selected-vs-absent logistic",
+  "best_loss": 0.37188059091567993,
+  "roles": {
+    "code": {
+      "scale": 0.6510404348373413,
+      "bias": -1.663529396057129
+    },
+    "writing": {
+      "scale": 0.544903576374054,
+      "bias": -1.9402530193328857
+    },
+    "math": {
+      "scale": 0.43985575437545776,
+      "bias": -2.9238483905792236
+    },
+    "planning": {
+      "scale": 0.6557812690734863,
+      "bias": -1.2682857513427734
+    },
+    "research": {
+      "scale": 0.7048051953315735,
+      "bias": -0.846622109413147
+    },
+    "data": {
+      "scale": 0.48380962014198303,
+      "bias": -2.042891025543213
+    },
+    "design": {
+      "scale": 0.7458513975143433,
+      "bias": -1.9347549676895142
+    },
+    "operations": {
+      "scale": 0.6152356266975403,
+      "bias": -0.8833061456680298
+    },
+    "qa_testing": {
+      "scale": 0.5519309043884277,
+      "bias": -1.974393367767334
+    },
+    "translation": {
+      "scale": 0.6369637250900269,
+      "bias": -4.215433597564697
+    },
+    "financial_analysis": {
+      "scale": 0.6105520725250244,
+      "bias": -2.270977020263672
+    },
+    "database_design": {
+      "scale": 0.6237935423851013,
+      "bias": -2.794412612915039
+    },
+    "accessibility_review": {
+      "scale": 0.7906168699264526,
+      "bias": -3.088174343109131
+    },
+    "fact_checking": {
+      "scale": 0.41412848234176636,
+      "bias": -1.6437045335769653
+    },
+    "requirements_analysis": {
+      "scale": 0.7775838375091553,
+      "bias": -1.5329453945159912
+    },
+    "incident_management": {
+      "scale": 0.626217782497406,
+      "bias": -2.385033130645752
+    },
+    "experiment_design": {
+      "scale": 0.6493557095527649,
+      "bias": -2.192169666290283
+    },
+    "risk_assessment": {
+      "scale": 0.7586121559143066,
+      "bias": -2.150089740753174
+    },
+    "documentation": {
+      "scale": 0.6916701197624207,
+      "bias": -2.1016836166381836
+    },
+    "customer_support_triage": {
+      "scale": 0.5437308549880981,
+      "bias": -1.680497169494629
+    }
+  }
+}
+
+FILE: artifacts/v7_rolewise_calibration_v1/summary.json
+TOP KEYS: ['calibrated', 'calibration_fit_on', 'delta', 'query_used', 'raw', 'sensor']
+{
+  "sensor": "artifacts/v7_benign_output_sensor_pilot_v1/best_adapter",
+  "query_used": false,
+  "calibration_fit_on": "dev only",
+  "raw": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.7808682696048905,
+      "macro_role_auc": 0.7664866193340735,
+      "within_output_auc": 0.8224018465664775,
+      "topk_activation_recall": 0.5270182291666666,
+      "exact_activation_set": 0.263671875,
+      "mean_selected_minus_absent_logit": 2.861386071464497,
+      "role_auc": {
+        "code": 0.7369770580296896,
+        "writing": 0.6871677046939085,
+        "math": 0.7216825024020498,
+        "planning": 0.776347135564379,
+        "research": 0.7665794683257918,
+        "data": 0.7110019408054342,
+        "design": 0.8476443768996961,
+        "operations": 0.7780095211161387,
+        "qa_testing": 0.6711200869970483,
+        "translation": 0.7055226824457593,
+        "financial_analysis": 0.8263379968909615,
+        "database_design": 0.8260382192804526,
+        "accessibility_review": 0.9537654485640615,
+        "fact_checking": 0.6001029737572939,
+        "requirements_analysis": 0.848028548028548,
+        "incident_management": 0.7847472638704371,
+        "experiment_design": 0.7349147992530346,
+        "risk_assessment": 0.8969368439167097,
+        "documentation": 0.8003030303030303,
+        "customer_support_triage": 0.6565047855370436
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8009245022431614,
+      "macro_role_auc": 0.7942231111379954,
+      "within_output_auc": 0.8394895907238993,
+      "topk_activation_recall": 0.5690104166666666,
+      "exact_activation_set": 0.369140625,
+      "mean_selected_minus_absent_logit": 3.151099325685996,
+      "role_auc": {
+        "code": 0.7320862101138272,
+        "writing": 0.6494274688429177,
+        "math": 0.7610319076714189,
+        "planning": 0.8032854974076938,
+        "research": 0.7475237449118046,
+        "data": 0.7322388769926244,
+        "design": 0.8965044351073763,
+        "operations": 0.8952081461515424,
+        "qa_testing": 0.669606720122184,
+        "translation": 0.7086666666666667,
+        "financial_analysis": 0.8934364548494983,
+        "database_design": 0.8362953524243847,
+        "accessibility_review": 0.9195845004668534,
+        "fact_checking": 0.7834272540983607,
+        "requirements_analysis": 0.7970904597410622,
+        "incident_management": 0.858225471128697,
+        "experiment_design": 0.8117469132741607,
+        "risk_assessment": 0.8922943722943723,
+        "documentation": 0.794005183873534,
+        "customer_support_triage": 0.7027765866209262
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.8164601657217114,
+      "macro_role_auc": 0.800097156171857,
+      "within_output_auc": 0.843016425868593,
+      "topk_activation_recall": 0.5583333333333333,
+      "exact_activation_set": 0.33,
+      "mean_selected_minus_absent_logit": 3.211912268030713,
+      "role_auc": {
+        "code": 0.6702127659574468,
+        "writing": 0.6236979166666666,
+        "math": 0.876358695652174,
+        "planning": 0.876078431372549,
+        "research": 0.786875,
+        "data": 0.7105978260869565,
+        "design": 0.8854166666666666,
+        "operations": 0.82,
+        "qa_testing": 0.8648097826086957,
+        "translation": NaN,
+        "financial_analysis": 0.7616666666666667,
+        "database_design": 0.9432624113475178,
+        "accessibility_review": 0.8702757916241062,
+        "fact_checking": 0.3957894736842105,
+        "requirements_analysis": 0.7009966777408638,
+        "incident_management": 0.9452631578947368,
+        "experiment_design": 0.9293394777265745,
+        "risk_assessment": 0.909035409035409,
+        "documentation": 0.9199823165340407,
+        "customer_support_triage": 0.7121875
+      }
+    },
+    "strict_82": {
+      "rows": 82,
+      "micro_auc": 0.7918318436977894,
+      "macro_role_auc": 0.7782078299165152,
+      "within_output_auc": 0.8266311552434411,
+      "topk_activation_recall": 0.5182926829268293,
+      "exact_activation_set": 0.2804878048780488,
+      "mean_selected_minus_absent_logit": 2.8976731712951147,
+      "role_auc": {
+        "code": 0.4935897435897436,
+        "writing": 0.7447257383966245,
+        "math": 0.8628571428571429,
+        "planning": 0.8220230473751601,
+        "research": 0.7725806451612903,
+        "data": 0.6685714285714286,
+        "design": 0.8858447488584474,
+        "operations": 0.8028919330289194,
+        "qa_testing": 0.8555743243243243,
+        "translation": NaN,
+        "financial_analysis": 0.5441558441558442,
+        "database_design": 0.9294871794871795,
+        "accessibility_review": 0.8506944444444444,
+        "fact_checking": 0.4551282051282051,
+        "requirements_analysis": 0.6767001114827201,
+        "incident_management": 1.0,
+        "experiment_design": 0.9161904761904762,
+        "risk_assessment": 0.8972602739726028,
+        "documentation": 0.8964992389649924,
+        "customer_support_triage": 0.7111742424242424
+      }
+    }
+  },
+  "calibrated": {
+    "dev": {
+      "rows": 512,
+      "micro_auc": 0.8171484876540602,
+      "macro_role_auc": 0.7664866193340735,
+      "within_output_auc": 0.8541500378934468,
+      "topk_activation_recall": 0.5481770833333333,
+      "exact_activation_set": 0.27734375,
+      "mean_selected_minus_absent_logit": 2.3034658163842305,
+      "role_auc": {
+        "code": 0.7369770580296896,
+        "writing": 0.6871677046939085,
+        "math": 0.7216825024020498,
+        "planning": 0.776347135564379,
+        "research": 0.7665794683257918,
+        "data": 0.7110019408054342,
+        "design": 0.8476443768996961,
+        "operations": 0.7780095211161387,
+        "qa_testing": 0.6711200869970483,
+        "translation": 0.7055226824457593,
+        "financial_analysis": 0.8263379968909615,
+        "database_design": 0.8260382192804526,
+        "accessibility_review": 0.9537654485640615,
+        "fact_checking": 0.6001029737572939,
+        "requirements_analysis": 0.848028548028548,
+        "incident_management": 0.7847472638704371,
+        "experiment_design": 0.7349147992530346,
+        "risk_assessment": 0.8969368439167097,
+        "documentation": 0.8003030303030303,
+        "customer_support_triage": 0.6565047855370436
+      }
+    },
+    "test": {
+      "rows": 512,
+      "micro_auc": 0.8179373567878986,
+      "macro_role_auc": 0.7942231111379954,
+      "within_output_auc": 0.8519402586966804,
+      "topk_activation_recall": 0.5810546875,
+      "exact_activation_set": 0.36328125,
+      "mean_selected_minus_absent_logit": 2.3351087854975496,
+      "role_auc": {
+        "code": 0.7320862101138272,
+        "writing": 0.6494274688429177,
+        "math": 0.7610319076714189,
+        "planning": 0.8032854974076938,
+        "research": 0.7475237449118046,
+        "data": 0.7322388769926244,
+        "design": 0.8965044351073763,
+        "operations": 0.8952081461515424,
+        "qa_testing": 0.669606720122184,
+        "translation": 0.7086666666666667,
+        "financial_analysis": 0.8934364548494983,
+        "database_design": 0.8362953524243847,
+        "accessibility_review": 0.9195845004668534,
+        "fact_checking": 0.7834272540983607,
+        "requirements_analysis": 0.7970904597410622,
+        "incident_management": 0.858225471128697,
+        "experiment_design": 0.8117469132741607,
+        "risk_assessment": 0.8922943722943723,
+        "documentation": 0.794005183873534,
+        "customer_support_triage": 0.7027765866209262
+      }
+    },
+    "audited_100": {
+      "rows": 100,
+      "micro_auc": 0.8389032151632762,
+      "macro_role_auc": 0.800097156171857,
+      "within_output_auc": 0.860184898520812,
+      "topk_activation_recall": 0.5616666666666666,
+      "exact_activation_set": 0.32,
+      "mean_selected_minus_absent_logit": 2.369035396755827,
+      "role_auc": {
+        "code": 0.6702127659574468,
+        "writing": 0.6236979166666666,
+        "math": 0.876358695652174,
+        "planning": 0.876078431372549,
+    
+
+### artifacts/v7_targeted_toprank_v1
+
+FILE: artifacts/v7_targeted_toprank_v1/summary.json
+TOP KEYS: ['all_runs', 'baseline_calibrated', 'dev_blend_metrics', 'experiment', 'qwen_calls', 'selected_blend_alpha', 'selected_only_on_dev', 'selected_training_config', 'targeted_final']
+{
+  "experiment": "v7_targeted_toprank_v1",
+  "qwen_calls": 0,
+  "selected_only_on_dev": true,
+  "selected_training_config": {
+    "seed": 20261040,
+    "lr": 0.003,
+    "hard_weight": 1.0,
+    "buried_weight": 1.0,
+    "worst_weight": 0.5,
+    "best_epoch": 5,
+    "dev": {
+      "within_auc": 0.8390281002751978,
+      "recall_at_3": 0.5598526703499079,
+      "recall_at_5": 0.6666666666666666,
+      "recall_at_7": 0.7532228360957642,
+      "recall_at_8": 0.7928176795580111,
+      "oracle_k_recall": 0.5193370165745856,
+      "oracle_k_exact": 0.28125,
+      "oracle_k_fp_per_output": 1.01953125
+    }
+  },
+  "selected_blend_alpha": 0.74,
+  "dev_blend_metrics": {
+    "within_auc": 0.8470260362917097,
+    "recall_at_3": 0.5662983425414365,
+    "recall_at_5": 0.6740331491712708,
+    "recall_at_7": 0.7670349907918969,
+    "recall_at_8": 0.8011049723756906,
+    "oracle_k_recall": 0.5239410681399632,
+    "oracle_k_exact": 0.287109375,
+    "oracle_k_fp_per_output": 1.009765625
+  },
+  "baseline_calibrated": {
+    "dev": {
+      "within_auc": 0.8462733743442552,
+      "recall_at_3": 0.56353591160221,
+      "recall_at_5": 0.6712707182320442,
+      "recall_at_7": 0.7605893186003683,
+      "recall_at_8": 0.8011049723756906,
+      "oracle_k_recall": 0.511049723756906,
+      "oracle_k_exact": 0.275390625,
+      "oracle_k_fp_per_output": 1.037109375
+    },
+    "test": {
+      "within_auc": 0.8380537213514793,
+      "recall_at_3": 0.5762538382804504,
+      "recall_at_5": 0.6806550665301945,
+      "recall_at_7": 0.7553735926305015,
+      "recall_at_8": 0.7942681678607983,
+      "oracle_k_recall": 0.5066530194472876,
+      "oracle_k_exact": 0.3203125,
+      "oracle_k_fp_per_output": 0.94140625
+    },
+    "strict_82": {
+      "within_auc": 0.8519930864943325,
+      "recall_at_3": 0.6242038216560509,
+      "recall_at_5": 0.7261146496815286,
+      "recall_at_7": 0.7579617834394905,
+      "recall_at_8": 0.7898089171974523,
+      "oracle_k_recall": 0.5414012738853503,
+      "oracle_k_exact": 0.32926829268292684,
+      "oracle_k_fp_per_output": 0.8780487804878049
+    }
+  },
+  "targeted_final": {
+    "dev": {
+      "within_auc": 0.8470260362917097,
+      "recall_at_3": 0.5662983425414365,
+      "recall_at_5": 0.6740331491712708,
+      "recall_at_7": 0.7670349907918969,
+      "recall_at_8": 0.8011049723756906,
+      "oracle_k_recall": 0.5239410681399632,
+      "oracle_k_exact": 0.287109375,
+      "oracle_k_fp_per_output": 1.009765625
+    },
+    "test": {
+      "within_auc": 0.8448977212869797,
+      "recall_at_3": 0.5946775844421699,
+      "recall_at_5": 0.6960081883316275,
+      "recall_at_7": 0.7717502558853634,
+      "recall_at_8": 0.7963152507676561,
+      "oracle_k_recall": 0.5363357215967247,
+      "oracle_k_exact": 0.36328125,
+      "oracle_k_fp_per_output": 0.884765625
+    },
+    "strict_82": {
+      "within_auc": 0.8434351061776869,
+      "recall_at_3": 0.5987261146496815,
+      "recall_at_5": 0.7006369426751592,
+      "recall_at_7": 0.7452229299363057,
+      "recall_at_8": 0.7643312101910829,
+      "oracle_k_recall": 0.554140127388535,
+      "oracle_k_exact": 0.34146341463414637,
+      "oracle_k_fp_per_output": 0.8536585365853658
+    }
+  },
+  "all_runs": [
+    {
+      "seed": 20261026,
+      "lr": 0.001,
+      "hard_weight": 1.0,
+      "buried_weight": 1.0,
+      "worst_weight": 0.1,
+      "best_epoch": 20,
+      "dev": {
+        "within_auc": 0.8362887198464912,
+        "recall_at_3": 0.5543278084714549,
+        "recall_at_5": 0.6602209944751382,
+        "recall_at_7": 0.7596685082872928,
+        "recall_at_8": 0.7946593001841621,
+        "oracle_k_recall": 0.509208103130755,
+        "oracle_k_exact": 0.275390625,
+        "oracle_k_fp_per_output": 1.041015625
+      }
+    },
+    {
+      "seed": 20261027,
+      "lr": 0.001,
+      "hard_weight": 1.0,
+      "buried_weight": 1.0,
+      "worst_weight": 0.25,
+      "best_epoch": 15,
+      "dev": {
+        "within_auc": 0.8401796848125216,
+        "recall_at_3": 0.5589318600368324,
+        "recall_at_5": 0.6639042357274402,
+        "recall_at_7": 0.7688766114180479,
+        "recall_at_8": 0.8029465930018416,
+        "oracle_k_recall": 0.5156537753222836,
+        "oracle_k_exact": 0.28125,
+        "oracle_k_fp_per_output": 1.02734375
+      }
+    },
+    {
+      "seed": 20261028,
+      "lr": 0.001,
+      "hard_weight": 1.0,
+      "buried_weight": 1.0,
+      "worst_weight": 0.5,
+      "best_epoch": 25,
+      "dev": {
+        "within_auc": 0.8391193065767975,
+        "recall_at_3": 0.5561694290976059,
+        "recall_at_5": 0.6685082872928176,
+        "recall_at_7": 0.7642725598526704,
+        "recall_at_8": 0.7900552486187845,
+        "oracle_k_recall": 0.5165745856353591,
+        "oracle_k_exact": 0.294921875,
+        "oracle_k_fp_per_output": 1.025390625
+      }
+    },
+    {
+      "seed": 20261029,
+      "lr": 0.001,
+      "hard_weight": 1.0,
+      "buried_weight": 2.0,
+      "worst_weight": 0.1,
+      "best_epoch": 5,
+      "dev": {
+        "within_auc": 0.8399433546719126,
+        "recall_at_3": 0.5589318600368324,
+        "recall_at_5": 0.6749539594843462,
+        "recall_at_7": 0.7596685082872928,
+        "recall_at_8": 0.7974217311233885,
+        "oracle_k_recall": 0.507366482504604,
+        "oracle_k_exact": 0.265625,
+        "oracle_k_fp_per_output": 1.044921875
+      }
+    },
+    {
+      "seed": 20261030,
+      "lr": 0.001,
+      "hard_weight": 1.0,
+      "buried_weight": 2.0,
+      "worst_weight": 0.25,
+      "best_epoch": 5,
+      "dev": {
+        "within_auc": 0.8381625642307362,
+        "recall_at_3": 0.5524861878453039,
+        "recall_at_5": 0.6703499079189686,
+        "recall_at_7": 0.7541436464088398,
+        "recall_at_8": 0.7909760589318601,
+        "oracle_k_recall": 0.507366482504604,
+        "oracle_k_exact": 0.267578125,
+        "oracle_k_fp_per_output": 1.044921875
+      }
+    },
+    {
+      "seed": 20261031,
+      "lr": 0.001,
+      "hard_weight": 1.0,
+      "buried_weight": 2.0,
+      "worst_weight": 0.5,
+      "best_epoch": 20,
+      "dev": {
+        "within_auc": 0.8368893712912797,
+        "recall_at_3": 0.5515653775322283,
+        "recall_at_5": 0.6602209944751382,
+        "recall_at_7": 0.7504604051565378,
+        "recall_at_8": 0.787292817679558,
+        "oracle_k_recall": 0.509208103130755,
+        "oracle_k_exact": 0.27734375,
+        "oracle_k_fp_per_output": 1.041015625
+      }
+    },
+    {
+      "seed": 20261032,
+      "lr": 0.001,
+      "hard_weight": 2.0,
+      "buried_weight": 1.0,
+      "worst_weight": 0.1,
+      "best_epoch": 5,
+      "dev": {
+        "within_auc": 0.8395807130417956,
+        "recall_at_3": 0.56353591160221,
+        "recall_at_5": 0.6712707182320442,
+        "recall_at_7": 0.7605893186003683,
+        "recall_at_8": 0.7983425414364641,
+        "oracle_k_recall": 0.5138121546961326,
+        "oracle_k_exact": 0.26953125,
+        "oracle_k_fp_per_output": 1.03125
+      }
+    },
+    {
+      "seed": 20261033,
+      "lr": 0.001,
+      "hard_weight": 2.0,
+      "buried_weight": 1.0,
+      "worst_weight": 0.25,
+      "best_epoch": 5,
+      "dev": {
+        "within_auc": 0.8402376335676814,
+        "recall_at_3": 0.5543278084714549,
+        "recall_at_5": 0.6740331491712708,
+        "recall_at_7": 0.7670349907918969,
+        "recall_at_8": 0.8057090239410681,
+        "oracle_k_recall": 0.509208103130755,
+        "oracle_k_exact": 0.267578125,
+        "oracle_k_fp_per_output": 1.041015625
+      }
+    },
+    {
+      "seed": 20261034,
+      "lr": 0.001,
+      "hard_weight": 2.0,
+      "buried_weight": 1.0,
+      "worst_weight": 0.5,
+      "best_epoch": 15,
+      "dev": {
+        "within_auc": 0.8368267194487444,
+        "recall_at_3": 0.5589318600368324,
+        "recall_at_5": 0.6602209944751382,
+        "recall_at_7": 0.7523020257826888,
+        "recall_at_8": 0.787292817679558,
+        "oracle_k_recall": 0.5128913443830571,
+        "oracle_k_exact": 0.28125,
+        "oracle_k_fp_per_output": 1.033203125
+      }
+    },
+    {
+      "seed": 20261035,
+      "lr": 0.001,
+      "hard_w
+
+===== TARGETED RANKER PT KEYS =====
+type: <class 'dict'>
+keys: ['blend_alpha', 'feature_mean', 'feature_std', 'model_state', 'selected_config']
+model_state dict keys= ['hidden.weight', 'hidden.bias', 'out.weight', 'out.bias']
+feature_mean shape= (60,) dtype= float32
+feature_std shape= (60,) dtype= float32
+blend_alpha 0.74
+selected_config dict keys= ['seed', 'lr', 'hard_weight', 'buried_weight', 'worst_weight', 'best_epoch', 'dev']
+
+===== ADAPTER CONFIG =====
+{
+  "alora_invocation_tokens": null,
+  "alpha_pattern": {},
+  "arrow_config": null,
+  "auto_mapping": null,
+  "base_model_name_or_path": "Qwen/Qwen2.5-3B-Instruct",
+  "bias": "none",
+  "corda_config": null,
+  "ensure_weight_tying": false,
+  "eva_config": null,
+  "exclude_modules": null,
+  "fan_in_fan_out": false,
+  "inference_mode": true,
+  "init_lora_weights": true,
+  "layer_replication": null,
+  "layers_pattern": null,
+  "layers_to_transform": null,
+  "loftq_config": {},
+  "lora_alpha": 64,
+  "lora_bias": false,
+  "lora_dropout": 0.05,
+  "lora_ga_config": null,
+  "megatron_config": null,
+  "megatron_core": "megatron.core",
+  "modules_to_save": [
+    "score",
+    "classifier",
+    "score",
+    "classifier",
+    "score",
+    "classifier",
+    "score"
+  ],
+  "monteclora_config": null,
+  "peft_type": "LORA",
+  "peft_version": "0.20.0",
+  "qalora_group_size": 16,
+  "r": 32,
+  "rank_pattern": {},
+  "revision": null,
+  "target_modules": [
+    "q_proj",
+    "v_proj",
+    "k_proj",
+    "o_proj"
+  ],
+  "target_parameters": null,
+  "task_type": "SEQ_CLS",
+  "trainable_token_indices": null,
+  "use_bdlora": null,
+  "use_dora": false,
+  "use_qalora": false,
+  "use_rslora": false,
+  "velora_config": null
+}
+
+===== ONE SYSTEM DEMO FULL SOURCE =====
+#!/usr/bin/env python3
+from __future__ import annotations
+import argparse, json, os, random, sys
+from pathlib import Path
+import numpy as np
+import torch
+from sentence_transformers import SentenceTransformer
+
+sys.path.insert(0,str(Path(".").resolve()))
+sys.path.insert(0,str(Path("analysis").resolve()))
+
+import observation_model_v1 as om
+import visible_adaptive_bridge_v1 as vb
+from adaptive_v11_active.reward import surface_valid
+from adaptive_v11_active.schema import PublicBeliefState
+from adaptive_v11_curriculum.policy import CurriculumAdaptiveProbePolicyV11
+from targets.single_router_zoo_v11 import validate_v11_design
+validate_v11_design()
+from targets.single_router_fanout_mas import SingleRouterFanoutMAS, SingleRouterSystemSpec
+from v11.role_universe import TRAIN_ROLES
+
+TRUE_ROLES=("code","planning","research")
+KS=(3,4,5,6)
+
+def norm(w):
+    w=np.asarray(w,float); return w/max(w.sum(),1e-12)
+
+def k_probs(W,K):
+    return {str(k):float(W[K==k].sum()) for k in KS}
+
+def role_probs(W,Z,roles):
+    p=W@Z
+    return {r:float(p[i]) for i,r in enumerate(roles)}
+
+def show(rnd,kp,rp):
+    print("\n"+"="*88)
+    print(f"POSTERIOR AFTER ROUND {rnd}")
+    print("P(K):","  ".join(f"K={k}: {kp.get(str(k),0):.4f}" for k in KS))
+    print("Role probabilities:")
+    for r,p in sorted(rp.items(),key=lambda x:-x[1]):
+        mark="  <-- TRUE" if r in TRUE_ROLES else ""
+        print(f"  {r:<28} {p:.4f}{mark}")
+
+def make_state(sid,rnd,kp,rp,history):
+    # schema history format is easiest to preserve by round-tripping prior public dict.
+    return {
+      "session_id":sid,"split":"dev","round_index":rnd,
+      "k_probs":kp,"role_probs":rp,"history":history
+    }
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--adapter",default="artifacts/robust_visible_generator_v1/policy")
+    ap.add_argument("--rounds",type=int,default=5)
+    ap.add_argument("--group-size",type=int,default=8)
+    ap.add_argument("--particles-per-k",type=int,default=128)
+    ap.add_argument("--mode",default="mixed",choices=["single","fanout2","fanout3","mixed"])
+    ap.add_argument("--style",default="s1")
+    ap.add_argument("--model",default=None)
+    ap.add_argument("--seed",type=int,default=20260923)
+    ap.add_argument("--out",default="artifacts/one_system_k3_demo")
+    a=ap.parse_args()
+    if not os.getenv("OPENAI_API_KEY"):
+        raise SystemExit("OPENAI_API_KEY missing; source .env first")
+    out=Path(a.out); out.mkdir(parents=True,exist_ok=True)
+
+    # Universe is exactly the 20 TRAIN_ROLES used by the current observation model.
+    roles=list(TRAIN_ROLES)
+    assert len(roles)==20, len(roles)
+    assert set(TRUE_ROLES)<=set(roles)
+    ri={r:i for i,r in enumerate(roles)}
+
+    # Load historical corpus only to train the already-defined visible detector.
+    root=Path("artifacts/adaptive_v11_curriculum_v2")
+    obsdir=Path("artifacts/observation_model_v1")
+    visdir=Path("artifacts/visible_output_fingerprint_v1")
+    caldir=Path("artifacts/calibrated_bayes_diag_v1")
+    examples,obs_roles,_,_=om.collect_examples(root)
+    if list(obs_roles)!=roles:
+        raise RuntimeError(f"role ordering mismatch\nobs={obs_roles}\nuniverse={roles}")
+    split=json.loads((obsdir/"split_systems.json").read_text())
+    trsys=set(map(str,split["train"])); vasys=set(map(str,split["val"]))
+    tri=np.array([i for i,x in enumerate(examples) if str(x["system_id"]) in trsys],int)
+    vai=np.array([i for i,x in enumerate(examples) if str(x["system_id"]) in vasys],int)
+    Qhist=np.load(obsdir/"query_embeddings.npy").astype(np.float32)
+    Ohist=np.load(visdir/"output_embeddings.npy").astype(np.float32)
+    Xhist=np.concatenate([Qhist,Ohist],axis=1)
+    Yhist=vb.labels(examples,roles,"selected_roles")
+    fp_models,fp_cals,thr,tpr,fpr,_=vb.fit_visible_detector(Xhist,Yhist,tri,vai)
+
+    # Same embedding model used to create stored embeddings.
+    embedder=SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+
+    ckpt=torch.load(obsdir/"model.pt",map_location="cpu")
+    fwd=om.ObservationNet(qdim=ckpt["query_embedding_dim"],n_roles=len(roles),
+                          hidden=ckpt["hidden"],dropout=ckpt["dropout"])
+    fwd.load_state_dict(ckpt["state_dict"]); fwd.eval()
+    pos=np.zeros(len(roles),float)
+    for i in tri:
+        for r in examples[i]["selected_roles"]: pos[ri[r]]+=1
+    posw=np.clip((len(tri)-pos)/np.maximum(pos,1.0),1.0,20.0)
+    log_posw=np.log(posw)
+    cs=json.loads((caldir/"summary.json").read_text())
+    T=float(cs["true_Z_probability_calibration"]["corrected_plus_temperature"]["best_T"])
+    beta=float(cs["validation_posterior_update"]["selected_beta_by_validation_log_gain"])
+
+    # Initial belief: uniform K over 3..6, exchangeable role marginals E[K]/20.
+    kp0={str(k):1/len(KS) for k in KS}
+    p0=sum(k*kp0[str(k)] for k in KS)/len(roles)
+    rp0={r:p0 for r in roles}
+    rng=np.random.default_rng(a.seed)
+    Z,W,Klabels,Kprior=vb.stratified_particles(kp0,rp0,roles,a.particles_per_k,rng)
+    W=norm(W)
+
+    policy=CurriculumAdaptiveProbePolicyV11(
+        "Qwen/Qwen2.5-1.5B-Instruct",adapter_path=a.adapter,
+        trainable=False,use_4bit=False,max_seq_length=4096)
+
+    sid="fun_k3_code_planning_research"
+    spec=SingleRouterSystemSpec(system_id=sid,split="demo",execution_mode=a.mode,
+                                style=a.style,worker_roles=TRUE_ROLES)
+    target=SingleRouterFanoutMAS(spec,model=a.model)
+
+    history=[]
+    records=[]
+    max_round=max(int(x["round"]) for x in examples)
+
+    print("\nTRUE K=3; TRUE ROLES =",TRUE_ROLES)
+    print("Inference sees only query + final output. Trace is evaluation-only.\n")
+
+    for rnd in range(1,a.rounds+1):
+        kp=k_probs(W,Klabels); rp=role_probs(W,Z,roles)
+        public=make_state(sid,rnd-1,kp,rp,history)
+        st=PublicBeliefState.from_public_dict(public)
+        seen=[h.query for h in st.history]
+
+        candidates=[]
+        for j in range(a.group_size):
+            last=None
+            for retry in range(12):
+                seed=a.seed+100000*rnd+100*j+retry
+                random.seed(seed); torch.manual_seed(seed)
+                if torch.cuda.is_available(): torch.cuda.manual_seed_all(seed)
+                sample=policy.sample_probe(
+                    {"belief_state":st.to_public_dict(),"candidate_index":j,"max_history_turns":5},
+                    temperature=.85,top_p=.95,max_new_tokens=192)
+                q=str(sample.query or "").strip()
+                ok,why=surface_valid(q)
+                valid=bool(sample.valid) and ok and q not in seen and all(q!=x for x in candidates)
+                last=(q,valid,why)
+                if valid: break
+            q,valid,why=last
+            if valid: candidates.append(q)
+        if not candidates: raise RuntimeError("generator produced no valid candidates")
+
+        Q=np.asarray(embedder.encode(candidates,convert_to_numpy=True),np.float32)
+        belief=np.array([rp[r] for r in roles],np.float32)
+        kvec=np.array([kp[str(k)] for k in KS],np.float32)
+        rnorm=float(rnd/max(max_round,1))
+        L=vb.particle_logits(fwd,Q,belief,kvec,rnorm,Z,"cpu",4096)
+        pY=vb.calibrated_hidden_probs(L,log_posw,T)
+        pE=vb.detector_channel_probs(pY,tpr,fpr)
+        mi=np.asarray(vb.mi_k(pE,W,Klabels,kp),float)
+        chosen=int(np.argmax(mi)); q=candidates[chosen]
+
+        print("\n"+"-"*88)
+        print(f"ROUND {rnd}: {len(candidates)} candidates")
+        for j,(qq,s) in enumerate(zip(candidates,mi)):
+            star=" <-- CHOSEN" if j==chosen else ""
+            print(f"[{j}] visible-MI={s:.6f}{star}\n    {qq}")
+        print("\nSENDING:",q)
+
+        output=str(target.query(q))
+        # EVAL ONLY. Never enters fingerprint/update.
+        tr=getattr(target,"_last_trace",None)
+        selected_eval=list(map(str,getattr(tr,"selected_roles",()))) if tr else []
+
+        qemb=np.asarray(embedder.encode([q],convert_to_numpy=True),np.float32)
+        oemb=np.asarray(embedder.encode([output],convert_to_numpy=True),np.float32)
+        X=np.concatenate([qemb,oemb],axis=1)
+        P=vb.visible_probs(fp_models,fp_cals,X)[0]
+        E=(P>=thr).astype(np.float64)
+
+        # Bayes update from VISIBLE fingerprint only.
+        W=vb.update_weights(pE[chosen],E,W,beta)
+        W=norm(W)
+        kp2=k_probs(W,Klabels); rp2=role_probs(W,Z,roles)
+
+        print("\nVISIBLE OUTPUT:\n",output)
+        print("\nVISIBLE FINGERPRINT top probabilities:")
+        for r,p in sorted(zip(roles,P),key=lambda x:-x[1])[:8]:
+            print(f"  {r:<28} {p:.4f}")
+        print("\n[EVAL ONLY selected_roles trace]:",selected_eval)
+        show(rnd,kp2,rp2)
+
+        # Build history using schema's own history-frame shape by copying a known
+        # compatible frame when possible; otherwise keep history empty for generator.
+        # We still adapt generator through posterior belief even if schema history
+        # construction differs across repo revisions.
+        records.append({
+            "round":rnd,"candidates":candidates,"visible_mi":mi.tolist(),
+            "chosen_index":chosen,"query":q,"final_output":output,
+            "selected_roles_eval_only":selected_eval,
+            "visible_fingerprint_probs":{r:float(P[i]) for i,r in enumerate(roles)},
+            "k_probs_after":kp2,"role_probs_after":rp2,
+        })
+        # Robust cross-version history: inspect schema class if available.
+        try:
+            from adaptive_v11_active.schema import HistoryFrame
+            frame=HistoryFrame(query=q, response=output)
+            history=[*st.history,frame]
+        except Exception:
+            # Belief adaptation is the critical part; do not fabricate schema fields.
+            history=list(st.history)
+
+        (out/"trajectory.json").write_text(json.dumps(records,indent=2),encoding="utf-8")
+
+    kp=k_probs(W,Klabels); rp=role_probs(W,Z,roles)
+    predk=int(max(kp,key=kp.get))
+    top3=[r for r,_ in sorted(rp.items(),key=lambda x:-x[1])[:3]]
+    summary={
+      "true_k":3,"pred_k":predk,"p_k3":kp["3"],
+      "true_roles":list(TRUE_ROLES),"top3_predicted":top3,
+      "k_correct":predk==3,"top3_exact":set(top3)==set(TRUE_ROLES),
+      "final_k_probs":kp,"final_role_probs":rp,
+      "rounds":a.rounds,"group_size":a.group_size,"mode":a.mode,
+      "adapter":a.adapter,
+      "inference_inputs":"query + final_output only",
+      "trace_usage":"evaluation only"
+    }
+    (out/"summary.json").write_text(json.dumps(summary,indent=2),encoding="utf-8")
+    print("\n"+"#"*88)
+    print("FINAL")
+    print("#"*88)
+    print(json.dumps(summary,indent=2))
+
+if __name__=="__main__":
+    main()
+
+===== TARGET CLASS RELEVANT SOURCE =====
+36:class SingleRouterSystemSpec:
+39:    execution_mode: str
+41:    worker_roles: Tuple[str, ...]
+47:        return len(self.worker_roles)
+51:        return {"single": 2, "fanout2": 4, "fanout3": 5, "mixed": 5}[self.execution_mode]
+62:    execution_mode: str
+64:    selected_roles: Tuple[str, ...]
+78:        return self.selected_roles[0] if self.selected_roles else ""
+81:class SingleRouterFanoutMAS:
+84:    def __init__(self, spec: SingleRouterSystemSpec, *, model: Optional[str] = None, client=None):
+85:        if spec.execution_mode not in VALID_MODES:
+86:            raise ValueError(f"unknown execution_mode: {spec.execution_mode}")
+87:        if len(spec.worker_roles) < 3:
+89:        unknown = set(spec.worker_roles) - set(ROLE_PROMPTS)
+99:        self.worker_ids = tuple(f"w{i}" for i in range(len(spec.worker_roles)))
+100:        self.role_by_worker = dict(zip(self.worker_ids, spec.worker_roles))
+105:        mode = self.system.execution_mode
+122:        }[self.system.execution_mode]
+205:        if self.system.execution_mode != "single":
+209:    def query(self, query: str) -> str:
+213:        selected_roles = tuple(self.role_by_worker[w] for w in selected)
+221:        if self.system.execution_mode != "single":
+229:            execution_mode=self.system.execution_mode,
+231:            selected_roles=selected_roles,
+237:            true_roles=tuple(self.system.worker_roles),
+241:    def privileged_last_trace(self) -> PrivilegedFanoutTrace:
+249:        return {"single": 2, "fanout2": 4, "fanout3": 5, "mixed": 5}[self.system.execution_mode]
+
+===== V7 SENSOR IMPORTANT SOURCE WINDOWS =====
+
+====================================================================================================
+analysis/train_v7_benign_output_sensor_pilot_v1.py
+====================================================================================================
+
+--- lines 336-360 ---
+  336:     return pairs, audit
+  337: 
+  338: 
+  339: class PairDataset(Dataset):
+  340:     def __init__(
+  341:         self,
+  342:         pairs,
+  343:     ):
+  344:         self.pairs = pairs
+  345: 
+  346:     def __len__(self):
+  347:         return len(
+  348:             self.pairs
+  349:         )
+  350: 
+  351:     def __getitem__(
+  352:         self,
+  353:         idx,
+  354:     ):
+  355:         return self.pairs[
+  356:             idx
+  357:         ]
+  358: 
+  359: 
+  360: def make_collate(
+
+--- lines 357-398 ---
+  357:         ]
+  358: 
+  359: 
+  360: def make_collate(
+  361:     tok,
+  362:     max_length,
+  363: ):
+  364:     def collate(batch):
+  365:         pos = [
+  366:             x["positive_text"]
+  367:             for x in batch
+  368:         ]
+  369: 
+  370:         neg = [
+  371:             x["negative_text"]
+  372:             for x in batch
+  373:         ]
+  374: 
+  375:         texts = (
+  376:             pos + neg
+  377:         )
+  378: 
+  379:         enc = tok(
+  380:             texts,
+  381:             return_tensors="pt",
+  382:             padding=True,
+  383:             truncation=True,
+  384:             max_length=max_length,
+  385:         )
+  386: 
+  387:         return {
+  388:             "enc":
+  389:                 enc,
+  390: 
+  391:             "n":
+  392:                 len(batch),
+  393:         }
+  394: 
+  395:     return collate
+  396: 
+  397: 
+  398: # ============================================================
+
+--- lines 399-483 ---
+  399: # MODEL
+  400: # ============================================================
+  401: 
+  402: def load_model():
+  403:     cfg = PeftConfig.from_pretrained(
+  404:         str(INIT_ADAPTER)
+  405:     )
+  406: 
+  407:     base_name = (
+  408:         cfg.base_model_name_or_path
+  409:     )
+  410: 
+  411:     print(
+  412:         "[model] base:",
+  413:         base_name,
+  414:         flush=True,
+  415:     )
+  416: 
+  417:     print(
+  418:         "[model] adapter:",
+  419:         INIT_ADAPTER,
+  420:         flush=True,
+  421:     )
+  422: 
+  423:     tok = AutoTokenizer.from_pretrained(
+  424:         str(INIT_ADAPTER)
+  425:     )
+  426: 
+  427:     if tok.pad_token_id is None:
+  428:         tok.pad_token = (
+  429:             tok.eos_token
+  430:         )
+  431: 
+  432:     tok.padding_side = "right"
+  433:     tok.truncation_side = "right"
+  434: 
+  435:     base = (
+  436:         AutoModelForSequenceClassification
+  437:         .from_pretrained(
+  438:             base_name,
+  439:             num_labels=1,
+  440:             torch_dtype=torch.bfloat16,
+  441:         )
+  442:     )
+  443: 
+  444:     base.config.pad_token_id = (
+  445:         tok.pad_token_id
+  446:     )
+  447: 
+  448:     base.config.use_cache = False
+  449: 
+  450:     model = PeftModel.from_pretrained(
+  451:         base,
+  452:         str(INIT_ADAPTER),
+  453:         is_trainable=True,
+  454:     )
+  455: 
+  456:     trainable = sum(
+  457:         p.numel()
+  458:         for p in model.parameters()
+  459:         if p.requires_grad
+  460:     )
+  461: 
+  462:     total = sum(
+  463:         p.numel()
+  464:         for p in model.parameters()
+  465:     )
+  466: 
+  467:     print(
+  468:         "[model] trainable:",
+  469:         trainable,
+  470:         "/",
+  471:         total,
+  472:         f"({100.0*trainable/total:.4f}%)",
+  473:         flush=True,
+  474:     )
+  475: 
+  476:     return (
+  477:         tok,
+  478:         model,
+  479:         base_name,
+  480:     )
+  481: 
+  482: 
+  483: # ============================================================
+
+--- lines 571-632 ---
+  571: # ============================================================
+  572: 
+  573: @torch.inference_mode()
+  574: def score_texts(
+  575:     model,
+  576:     tok,
+  577:     texts,
+  578:     device,
+  579:     max_length,
+  580:     batch_size,
+  581: ):
+  582:     scores = []
+  583: 
+  584:     model.eval()
+  585: 
+  586:     for start in range(
+  587:         0,
+  588:         len(texts),
+  589:         batch_size,
+  590:     ):
+  591:         batch = texts[
+  592:             start:
+  593:             start + batch_size
+  594:         ]
+  595: 
+  596:         enc = tok(
+  597:             batch,
+  598:             return_tensors="pt",
+  599:             padding=True,
+  600:             truncation=True,
+  601:             max_length=max_length,
+  602:         )
+  603: 
+  604:         enc = {
+  605:             k: v.to(device)
+  606:             for k, v in enc.items()
+  607:         }
+  608: 
+  609:         logits = model(
+  610:             **enc
+  611:         ).logits
+  612: 
+  613:         logits = (
+  614:             logits
+  615:             .float()
+  616:             .view(-1)
+  617:             .cpu()
+  618:             .numpy()
+  619:             .tolist()
+  620:         )
+  621: 
+  622:         scores.extend(
+  623:             logits
+  624:         )
+  625: 
+  626:     return np.asarray(
+  627:         scores,
+  628:         dtype=np.float64,
+  629:     )
+  630: 
+  631: 
+  632: def evaluate(
+
+--- lines 629-902 ---
+  629:     )
+  630: 
+  631: 
+  632: def evaluate(
+  633:     model,
+  634:     tok,
+  635:     rows,
+  636:     roles,
+  637:     role_desc,
+  638:     device,
+  639:     max_length,
+  640:     batch_size,
+  641:     limit,
+  642:     seed,
+  643: ):
+  644:     rng = random.Random(
+  645:         seed
+  646:     )
+  647: 
+  648:     rows = list(
+  649:         rows
+  650:     )
+  651: 
+  652:     if (
+  653:         limit is not None
+  654:         and len(rows) > limit
+  655:     ):
+  656:         rows = rng.sample(
+  657:             rows,
+  658:             limit,
+  659:         )
+  660: 
+  661:     texts = []
+  662:     labels = []
+  663:     row_index = []
+  664:     role_index = []
+  665: 
+  666:     for i, row in enumerate(
+  667:         rows
+  668:     ):
+  669:         selected = set(
+  670:             get_selected(row)
+  671:         )
+  672: 
+  673:         answer = get_answer(
+  674:             row
+  675:         )
+  676: 
+  677:         for j, role in enumerate(
+  678:             roles
+  679:         ):
+  680:             texts.append(
+  681:                 sensor_text(
+  682:                     role,
+  683:                     role_desc[role],
+  684:                     answer,
+  685:                 )
+  686:             )
+  687: 
+  688:             labels.append(
+  689:                 1
+  690:                 if role in selected
+  691:                 else 0
+  692:             )
+  693: 
+  694:             row_index.append(
+  695:                 i
+  696:             )
+  697: 
+  698:             role_index.append(
+  699:                 j
+  700:             )
+  701: 
+  702:     scores = score_texts(
+  703:         model,
+  704:         tok,
+  705:         texts,
+  706:         device,
+  707:         max_length,
+  708:         batch_size,
+  709:     )
+  710: 
+  711:     labels_np = np.asarray(
+  712:         labels,
+  713:         dtype=np.int64,
+  714:     )
+  715: 
+  716:     micro_auc = binary_auc(
+  717:         labels_np,
+  718:         scores,
+  719:     )
+  720: 
+  721:     # --------------------------------------------------------
+  722:     # Per-role AUC
+  723:     # --------------------------------------------------------
+  724: 
+  725:     role_aucs = {}
+  726: 
+  727:     for j, role in enumerate(
+  728:         roles
+  729:     ):
+  730:         mask = (
+  731:             np.asarray(
+  732:                 role_index
+  733:             )
+  734:             == j
+  735:         )
+  736: 
+  737:         role_aucs[
+  738:             role
+  739:         ] = binary_auc(
+  740:             labels_np[mask],
+  741:             scores[mask],
+  742:         )
+  743: 
+  744:     valid_role_auc = [
+  745:         x
+  746:         for x in role_aucs.values()
+  747:         if math.isfinite(x)
+  748:     ]
+  749: 
+  750:     macro_role_auc = (
+  751:         float(
+  752:             np.mean(
+  753:                 valid_role_auc
+  754:             )
+  755:         )
+  756:         if valid_role_auc
+  757:         else float("nan")
+  758:     )
+  759: 
+  760:     # --------------------------------------------------------
+  761:     # Within-output metrics
+  762:     # --------------------------------------------------------
+  763: 
+  764:     matrix = scores.reshape(
+  765:         len(rows),
+  766:         len(roles),
+  767:     )
+  768: 
+  769:     within_aucs = []
+  770:     topk_recalls = []
+  771:     exact_sets = []
+  772:     margins = []
+  773: 
+  774:     for i, row in enumerate(
+  775:         rows
+  776:     ):
+  777:         selected = set(
+  778:             get_selected(row)
+  779:         )
+  780: 
+  781:         y = np.asarray([
+  782:             1 if r in selected else 0
+  783:             for r in roles
+  784:         ])
+  785: 
+  786:         s = matrix[
+  787:             i
+  788:         ]
+  789: 
+  790:         auc = binary_auc(
+  791:             y,
+  792:             s,
+  793:         )
+  794: 
+  795:         if math.isfinite(
+  796:             auc
+  797:         ):
+  798:             within_aucs.append(
+  799:                 auc
+  800:             )
+  801: 
+  802:         k = len(
+  803:             selected
+  804:         )
+  805: 
+  806:         if k > 0:
+  807:             top_idx = np.argsort(
+  808:                 -s
+  809:             )[:k]
+  810: 
+  811:             predicted = {
+  812:                 roles[j]
+  813:                 for j in top_idx
+  814:             }
+  815: 
+  816:             topk_recalls.append(
+  817:                 len(
+  818:                     predicted
+  819:                     & selected
+  820:                 )
+  821:                 / k
+  822:             )
+  823: 
+  824:             exact_sets.append(
+  825:                 float(
+  826:                     predicted
+  827:                     == selected
+  828:                 )
+  829:             )
+  830: 
+  831:         pos_scores = s[
+  832:             y == 1
+  833:         ]
+  834: 
+  835:         neg_scores = s[
+  836:             y == 0
+  837:         ]
+  838: 
+  839:         if (
+  840:             len(pos_scores)
+  841:             and len(neg_scores)
+  842:         ):
+  843:             margins.append(
+  844:                 float(
+  845:                     pos_scores.mean()
+  846:                     - neg_scores.mean()
+  847:                 )
+  848:             )
+  849: 
+  850:     metrics = {
+  851:         "rows":
+  852:             len(rows),
+  853: 
+  854:         "candidate_scores":
+  855:             len(scores),
+  856: 
+  857:         "micro_auc":
+  858:             float(
+  859:                 micro_auc
+  860:             ),
+  861: 
+  862:         "macro_role_auc":
+  863:             float(
+  864:                 macro_role_auc
+  865:             ),
+  866: 
+  867:         "within_output_auc":
+  868:             float(
+  869:                 np.mean(
+  870:                     within_aucs
+  871:                 )
+  872:             ),
+  873: 
+  874:         "topk_activation_recall":
+  875:             float(
+  876:                 np.mean(
+  877:                     topk_recalls
+  878:                 )
+  879:             ),
+  880: 
+  881:         "exact_activation_set":
+  882:             float(
+  883:                 np.mean(
+  884:                     exact_sets
+  885:                 )
+  886:             ),
+  887: 
+  888:         "mean_selected_minus_absent_logit":
+  889:             float(
+  890:                 np.mean(
+  891:                     margins
+  892:                 )
+  893:             ),
+  894: 
+  895:         "role_auc":
+  896:             role_aucs,
+  897:     }
+  898: 
+  899:     return metrics
+  900: 
+  901: 
+  902: # ============================================================
+
+--- lines 903-1306 ---
+  903: # TRAIN
+  904: # ============================================================
+  905: 
+  906: def train(args):
+  907:     random.seed(
+  908:         args.seed
+  909:     )
+  910: 
+  911:     np.random.seed(
+  912:         args.seed
+  913:     )
+  914: 
+  915:     torch.manual_seed(
+  916:         args.seed
+  917:     )
+  918: 
+  919:     OUT.mkdir(
+  920:         parents=True,
+  921:         exist_ok=True,
+  922:     )
+  923: 
+  924:     train_rows = read_jsonl(
+  925:         DATA_ROOT / "train.jsonl"
+  926:     )
+  927: 
+  928:     dev_rows = read_jsonl(
+  929:         DATA_ROOT / "dev.jsonl"
+  930:     )
+  931: 
+  932:     test_rows = read_jsonl(
+  933:         DATA_ROOT / "test.jsonl"
+  934:     )
+  935: 
+  936:     role_desc = dict(
+  937:         tr.ROLE_DESCRIPTIONS
+  938:     )
+  939: 
+  940:     roles = list(
+  941:         role_desc.keys()
+  942:     )
+  943: 
+  944:     print(
+  945:         "[data] roles:",
+  946:         len(roles),
+  947:         flush=True,
+  948:     )
+  949: 
+  950:     print(
+  951:         "[data] train/dev/test:",
+  952:         len(train_rows),
+  953:         len(dev_rows),
+  954:         len(test_rows),
+  955:         flush=True,
+  956:     )
+  957: 
+  958:     pairs, audit = build_pairs(
+  959:         train_rows,
+  960:         roles,
+  961:         role_desc,
+  962:         args.pairs_per_role,
+  963:         args.seed,
+  964:     )
+  965: 
+  966:     dump(
+  967:         OUT / "train_audit.json",
+  968:         audit,
+  969:     )
+  970: 
+  971:     print(
+  972:         "===== TRAIN AUDIT =====",
+  973:         flush=True,
+  974:     )
+  975: 
+  976:     print(
+  977:         json.dumps(
+  978:             audit,
+  979:             indent=2,
+  980:         ),
+  981:         flush=True,
+  982:     )
+  983: 
+  984:     tok, model, base_name = (
+  985:         load_model()
+  986:     )
+  987: 
+  988:     device = torch.device(
+  989:         "cuda"
+  990:         if torch.cuda.is_available()
+  991:         else "cpu"
+  992:     )
+  993: 
+  994:     model.to(
+  995:         device
+  996:     )
+  997: 
+  998:     ds = PairDataset(
+  999:         pairs
+ 1000:     )
+ 1001: 
+ 1002:     loader = DataLoader(
+ 1003:         ds,
+ 1004:         batch_size=args.batch_size,
+ 1005:         shuffle=True,
+ 1006:         num_workers=0,
+ 1007:         collate_fn=make_collate(
+ 1008:             tok,
+ 1009:             args.max_length,
+ 1010:         ),
+ 1011:     )
+ 1012: 
+ 1013:     params = [
+ 1014:         p
+ 1015:         for p in model.parameters()
+ 1016:         if p.requires_grad
+ 1017:     ]
+ 1018: 
+ 1019:     opt = AdamW(
+ 1020:         params,
+ 1021:         lr=args.lr,
+ 1022:         weight_decay=0.01,
+ 1023:     )
+ 1024: 
+ 1025:     model.train()
+ 1026: 
+ 1027:     opt.zero_grad(
+ 1028:         set_to_none=True
+ 1029:     )
+ 1030: 
+ 1031:     running = 0.0
+ 1032:     optimizer_steps = 0
+ 1033: 
+ 1034:     print(
+ 1035:         "\n===== TRAINING =====",
+ 1036:         flush=True,
+ 1037:     )
+ 1038: 
+ 1039:     for step, batch in enumerate(
+ 1040:         loader,
+ 1041:         1,
+ 1042:     ):
+ 1043:         enc = {
+ 1044:             k: v.to(device)
+ 1045:             for k, v in batch[
+ 1046:                 "enc"
+ 1047:             ].items()
+ 1048:         }
+ 1049: 
+ 1050:         n = int(
+ 1051:             batch["n"]
+ 1052:         )
+ 1053: 
+ 1054:         logits = model(
+ 1055:             **enc
+ 1056:         ).logits
+ 1057: 
+ 1058:         logits = (
+ 1059:             logits
+ 1060:             .float()
+ 1061:             .view(-1)
+ 1062:         )
+ 1063: 
+ 1064:         pos = logits[
+ 1065:             :n
+ 1066:         ]
+ 1067: 
+ 1068:         neg = logits[
+ 1069:             n:
+ 1070:         ]
+ 1071: 
+ 1072:         rank_loss = F.softplus(
+ 1073:             args.margin
+ 1074:             - (
+ 1075:                 pos - neg
+ 1076:             )
+ 1077:         ).mean()
+ 1078: 
+ 1079:         bce_logits = torch.cat(
+ 1080:             [
+ 1081:                 pos,
+ 1082:                 neg,
+ 1083:             ],
+ 1084:             dim=0,
+ 1085:         )
+ 1086: 
+ 1087:         bce_targets = torch.cat(
+ 1088:             [
+ 1089:                 torch.ones_like(
+ 1090:                     pos
+ 1091:                 ),
+ 1092:                 torch.zeros_like(
+ 1093:                     neg
+ 1094:                 ),
+ 1095:             ],
+ 1096:             dim=0,
+ 1097:         )
+ 1098: 
+ 1099:         bce_loss = (
+ 1100:             F.binary_cross_entropy_with_logits(
+ 1101:                 bce_logits,
+ 1102:                 bce_targets,
+ 1103:             )
+ 1104:         )
+ 1105: 
+ 1106:         loss = (
+ 1107:             rank_loss
+ 1108:             + args.bce_weight
+ 1109:             * bce_loss
+ 1110:         )
+ 1111: 
+ 1112:         (
+ 1113:             loss
+ 1114:             / args.grad_accum
+ 1115:         ).backward()
+ 1116: 
+ 1117:         running += float(
+ 1118:             loss.detach().cpu()
+ 1119:         )
+ 1120: 
+ 1121:         do_step = (
+ 1122:             step % args.grad_accum
+ 1123:             == 0
+ 1124:             or step == len(loader)
+ 1125:         )
+ 1126: 
+ 1127:         if do_step:
+ 1128:             torch.nn.utils.clip_grad_norm_(
+ 1129:                 params,
+ 1130:                 1.0,
+ 1131:             )
+ 1132: 
+ 1133:             opt.step()
+ 1134: 
+ 1135:             opt.zero_grad(
+ 1136:                 set_to_none=True
+ 1137:             )
+ 1138: 
+ 1139:             optimizer_steps += 1
+ 1140: 
+ 1141:         if (
+ 1142:             step % args.log_every == 0
+ 1143:             or step == len(loader)
+ 1144:         ):
+ 1145:             print(
+ 1146:                 f"[train] batch "
+ 1147:                 f"{step}/{len(loader)} "
+ 1148:                 f"loss={running/step:.5f} "
+ 1149:                 f"opt_steps={optimizer_steps}",
+ 1150:                 flush=True,
+ 1151:             )
+ 1152: 
+ 1153:     last_dir = (
+ 1154:         OUT / "last_adapter"
+ 1155:     )
+ 1156: 
+ 1157:     shutil.rmtree(
+ 1158:         last_dir,
+ 1159:         ignore_errors=True,
+ 1160:     )
+ 1161: 
+ 1162:     model.save_pretrained(
+ 1163:         last_dir
+ 1164:     )
+ 1165: 
+ 1166:     tok.save_pretrained(
+ 1167:         last_dir
+ 1168:     )
+ 1169: 
+ 1170:     print(
+ 1171:         "\n===== DEV EVAL =====",
+ 1172:         flush=True,
+ 1173:     )
+ 1174: 
+ 1175:     dev_metrics = evaluate(
+ 1176:         model,
+ 1177:         tok,
+ 1178:         dev_rows,
+ 1179:         roles,
+ 1180:         role_desc,
+ 1181:         device,
+ 1182:         args.max_length,
+ 1183:         args.eval_batch_size,
+ 1184:         args.dev_limit,
+ 1185:         args.seed + 101,
+ 1186:     )
+ 1187: 
+ 1188:     print(
+ 1189:         json.dumps(
+ 1190:             dev_metrics,
+ 1191:             indent=2,
+ 1192:         ),
+ 1193:         flush=True,
+ 1194:     )
+ 1195: 
+ 1196:     best_dir = (
+ 1197:         OUT / "best_adapter"
+ 1198:     )
+ 1199: 
+ 1200:     shutil.rmtree(
+ 1201:         best_dir,
+ 1202:         ignore_errors=True,
+ 1203:     )
+ 1204: 
+ 1205:     model.save_pretrained(
+ 1206:         best_dir
+ 1207:     )
+ 1208: 
+ 1209:     tok.save_pretrained(
+ 1210:         best_dir
+ 1211:     )
+ 1212: 
+ 1213:     print(
+ 1214:         "\n===== HELD-OUT TEST EVAL =====",
+ 1215:         flush=True,
+ 1216:     )
+ 1217: 
+ 1218:     test_metrics = evaluate(
+ 1219:         model,
+ 1220:         tok,
+ 1221:         test_rows,
+ 1222:         roles,
+ 1223:         role_desc,
+ 1224:         device,
+ 1225:         args.max_length,
+ 1226:         args.eval_batch_size,
+ 1227:         args.test_limit,
+ 1228:         args.seed + 202,
+ 1229:     )
+ 1230: 
+ 1231:     print(
+ 1232:         json.dumps(
+ 1233:             test_metrics,
+ 1234:             indent=2,
+ 1235:         ),
+ 1236:         flush=True,
+ 1237:     )
+ 1238: 
+ 1239:     summary = {
+ 1240:         "experiment":
+ 1241:             "v7_benign_output_sensor_pilot_v1",
+ 1242: 
+ 1243:         "input_variables": [
+ 1244:             "candidate_role",
+ 1245:             "role_description",
+ 1246:             "final_output",
+ 1247:         ],
+ 1248: 
+ 1249:         "query_used":
+ 1250:             False,
+ 1251: 
+ 1252:         "initial_adapter":
+ 1253:             str(
+ 1254:                 INIT_ADAPTER
+ 1255:             ),
+ 1256: 
+ 1257:         "base_model":
+ 1258:             base_name,
+ 1259: 
+ 1260:         "train_rows_available":
+ 1261:             len(train_rows),
+ 1262: 
+ 1263:         "train_pairs":
+ 1264:             len(pairs),
+ 1265: 
+ 1266:         "pairs_per_role":
+ 1267:             args.pairs_per_role,
+ 1268: 
+ 1269:         "dev_rows_available":
+ 1270:             len(dev_rows),
+ 1271: 
+ 1272:         "test_rows_available":
+ 1273:             len(test_rows),
+ 1274: 
+ 1275:         "dev_metrics":
+ 1276:             dev_metrics,
+ 1277: 
+ 1278:         "test_metrics":
+ 1279:             test_metrics,
+ 1280: 
+ 1281:         "best_adapter":
+ 1282:             str(
+ 1283:                 best_dir
+ 1284:             ),
+ 1285:     }
+ 1286: 
+ 1287:     dump(
+ 1288:         OUT / "metrics.json",
+ 1289:         summary,
+ 1290:     )
+ 1291: 
+ 1292:     print(
+ 1293:         "\n===== FINAL SUMMARY =====",
+ 1294:         flush=True,
+ 1295:     )
+ 1296: 
+ 1297:     print(
+ 1298:         json.dumps(
+ 1299:             summary,
+ 1300:             indent=2,
+ 1301:         ),
+ 1302:         flush=True,
+ 1303:     )
+ 1304: 
+ 1305: 
+ 1306: def parse_args():
+
+====================================================================================================
+analysis/v7_structured_reranker_v1.py
+====================================================================================================
+
+--- lines 121-170 ---
+  121:     )
+  122: 
+  123: 
+  124: def load_sensor():
+  125:     cfg = PeftConfig.from_pretrained(
+  126:         str(ADAPTER)
+  127:     )
+  128: 
+  129:     base_name = (
+  130:         cfg.base_model_name_or_path
+  131:     )
+  132: 
+  133:     tok = AutoTokenizer.from_pretrained(
+  134:         str(ADAPTER)
+  135:     )
+  136: 
+  137:     if tok.pad_token_id is None:
+  138:         tok.pad_token = tok.eos_token
+  139: 
+  140:     tok.padding_side = "right"
+  141:     tok.truncation_side = "right"
+  142: 
+  143:     base = (
+  144:         AutoModelForSequenceClassification
+  145:         .from_pretrained(
+  146:             base_name,
+  147:             num_labels=1,
+  148:             torch_dtype=torch.bfloat16,
+  149:         )
+  150:     )
+  151: 
+  152:     base.config.pad_token_id = (
+  153:         tok.pad_token_id
+  154:     )
+  155: 
+  156:     base.config.use_cache = False
+  157: 
+  158:     model = PeftModel.from_pretrained(
+  159:         base,
+  160:         str(ADAPTER),
+  161:         is_trainable=False,
+  162:     )
+  163: 
+  164:     model.eval()
+  165:     model.to("cuda")
+  166: 
+  167:     return tok, model
+  168: 
+  169: 
+  170: @torch.inference_mode()
+
+--- lines 517-579 ---
+  517: # selection explicitly chooses a worse checkpoint.
+  518: # ============================================================
+  519: 
+  520: class StructuredReranker(nn.Module):
+  521:     def __init__(
+  522:         self,
+  523:         n_roles,
+  524:         mean,
+  525:         std,
+  526:     ):
+  527:         super().__init__()
+  528: 
+  529:         self.delta = nn.Parameter(
+  530:             torch.zeros(
+  531:                 n_roles,
+  532:                 n_roles,
+  533:             )
+  534:         )
+  535: 
+  536:         self.bias = nn.Parameter(
+  537:             torch.zeros(
+  538:                 n_roles
+  539:             )
+  540:         )
+  541: 
+  542:         self.register_buffer(
+  543:             "mean",
+  544:             torch.tensor(
+  545:                 mean,
+  546:                 dtype=torch.float32,
+  547:             )
+  548:         )
+  549: 
+  550:         self.register_buffer(
+  551:             "std",
+  552:             torch.tensor(
+  553:                 std,
+  554:                 dtype=torch.float32,
+  555:             )
+  556:         )
+  557: 
+  558:     def forward(
+  559:         self,
+  560:         scores,
+  561:     ):
+  562:         x = (
+  563:             scores
+  564:             - self.mean
+  565:         ) / self.std
+  566: 
+  567:         correction = (
+  568:             x
+  569:             @ self.delta.t()
+  570:         )
+  571: 
+  572:         return (
+  573:             scores
+  574:             + correction
+  575:             + self.bias
+  576:         )
+  577: 
+  578: 
+  579: def pairwise_loss(
+
+====================================================================================================
+analysis/v7_rolewise_calibration_v1.py
+====================================================================================================
+
+--- lines 82-126 ---
+   82:     ).lower()
+   83: 
+   84: 
+   85: def load_adapter(path):
+   86:     cfg = PeftConfig.from_pretrained(
+   87:         str(path)
+   88:     )
+   89: 
+   90:     base_name = cfg.base_model_name_or_path
+   91: 
+   92:     tok = AutoTokenizer.from_pretrained(
+   93:         str(path)
+   94:     )
+   95: 
+   96:     if tok.pad_token_id is None:
+   97:         tok.pad_token = tok.eos_token
+   98: 
+   99:     tok.padding_side = "right"
+  100:     tok.truncation_side = "right"
+  101: 
+  102:     base = (
+  103:         AutoModelForSequenceClassification
+  104:         .from_pretrained(
+  105:             base_name,
+  106:             num_labels=1,
+  107:             torch_dtype=torch.bfloat16,
+  108:         )
+  109:     )
+  110: 
+  111:     base.config.pad_token_id = tok.pad_token_id
+  112:     base.config.use_cache = False
+  113: 
+  114:     model = PeftModel.from_pretrained(
+  115:         base,
+  116:         str(path),
+  117:         is_trainable=False,
+  118:     )
+  119: 
+  120:     model.eval()
+  121:     model.to("cuda")
+  122: 
+  123:     return tok, model
+  124: 
+  125: 
+  126: @torch.inference_mode()
+
+--- lines 124-163 ---
+  124: 
+  125: 
+  126: @torch.inference_mode()
+  127: def score_rows(
+  128:     model,
+  129:     tok,
+  130:     rows,
+  131:     roles,
+  132:     role_desc,
+  133: ):
+  134:     texts = []
+  135: 
+  136:     for row in rows:
+  137:         answer = bos.get_answer(row)
+  138: 
+  139:         for role in roles:
+  140:             texts.append(
+  141:                 bos.sensor_text(
+  142:                     role,
+  143:                     role_desc[role],
+  144:                     answer,
+  145:                 )
+  146:             )
+  147: 
+  148:     scores = bos.score_texts(
+  149:         model,
+  150:         tok,
+  151:         texts,
+  152:         torch.device("cuda"),
+  153:         MAX_LENGTH,
+  154:         BATCH_SIZE,
+  155:     )
+  156: 
+  157:     return scores.reshape(
+  158:         len(rows),
+  159:         len(roles),
+  160:     )
+  161: 
+  162: 
+  163: def labels_matrix(
+
+--- lines 340-503 ---
+  340:     )
+  341: 
+  342: 
+  343: def fit_calibration(
+  344:     scores_np,
+  345:     labels_np,
+  346:     steps=2500,
+  347:     lr=0.03,
+  348: ):
+  349:     device = torch.device("cpu")
+  350: 
+  351:     scores = torch.tensor(
+  352:         scores_np,
+  353:         dtype=torch.float32,
+  354:         device=device,
+  355:     )
+  356: 
+  357:     labels = torch.tensor(
+  358:         labels_np,
+  359:         dtype=torch.float32,
+  360:         device=device,
+  361:     )
+  362: 
+  363:     n_roles = scores.shape[1]
+  364: 
+  365:     # a_r = exp(log_a_r), guaranteeing positive scale.
+  366:     log_a = torch.zeros(
+  367:         n_roles,
+  368:         dtype=torch.float32,
+  369:         requires_grad=True,
+  370:         device=device,
+  371:     )
+  372: 
+  373:     bias = torch.zeros(
+  374:         n_roles,
+  375:         dtype=torch.float32,
+  376:         requires_grad=True,
+  377:         device=device,
+  378:     )
+  379: 
+  380:     (
+  381:         pair_row,
+  382:         pair_pos,
+  383:         pair_neg,
+  384:     ) = build_pair_indices(
+  385:         labels_np
+  386:     )
+  387: 
+  388:     pair_row = pair_row.to(device)
+  389:     pair_pos = pair_pos.to(device)
+  390:     pair_neg = pair_neg.to(device)
+  391: 
+  392:     opt = torch.optim.Adam(
+  393:         [log_a, bias],
+  394:         lr=lr,
+  395:     )
+  396: 
+  397:     best_loss = float("inf")
+  398:     best = None
+  399: 
+  400:     for step in range(
+  401:         1,
+  402:         steps + 1,
+  403:     ):
+  404:         opt.zero_grad()
+  405: 
+  406:         scale = torch.exp(
+  407:             log_a
+  408:         )
+  409: 
+  410:         calibrated = (
+  411:             scores
+  412:             * scale.unsqueeze(0)
+  413:             + bias.unsqueeze(0)
+  414:         )
+  415: 
+  416:         pos_s = calibrated[
+  417:             pair_row,
+  418:             pair_pos,
+  419:         ]
+  420: 
+  421:         neg_s = calibrated[
+  422:             pair_row,
+  423:             pair_neg,
+  424:         ]
+  425: 
+  426:         # Pairwise logistic surrogate for within-output AUC.
+  427:         pair_loss = F.softplus(
+  428:             -(pos_s - neg_s)
+  429:         ).mean()
+  430: 
+  431:         # Small BCE term prevents pathological score geometry.
+  432:         bce_loss = (
+  433:             F.binary_cross_entropy_with_logits(
+  434:                 calibrated.reshape(-1),
+  435:                 labels.reshape(-1),
+  436:             )
+  437:         )
+  438: 
+  439:         # Keep calibration conservative.
+  440:         reg = (
+  441:             0.0025
+  442:             * (log_a ** 2).mean()
+  443:             +
+  444:             0.0005
+  445:             * (bias ** 2).mean()
+  446:         )
+  447: 
+  448:         loss = (
+  449:             pair_loss
+  450:             + 0.05 * bce_loss
+  451:             + reg
+  452:         )
+  453: 
+  454:         loss.backward()
+  455:         opt.step()
+  456: 
+  457:         x = float(
+  458:             loss.detach()
+  459:         )
+  460: 
+  461:         if x < best_loss:
+  462:             best_loss = x
+  463: 
+  464:             best = {
+  465:                 "log_a":
+  466:                     log_a.detach()
+  467:                     .clone(),
+  468: 
+  469:                 "bias":
+  470:                     bias.detach()
+  471:                     .clone(),
+  472:             }
+  473: 
+  474:         if (
+  475:             step % 250 == 0
+  476:             or step == 1
+  477:         ):
+  478:             print(
+  479:                 f"[cal] step={step:4d} "
+  480:                 f"loss={x:.6f} "
+  481:                 f"pair={float(pair_loss):.6f} "
+  482:                 f"bce={float(bce_loss):.6f}",
+  483:                 flush=True,
+  484:             )
+  485: 
+  486:     scale = torch.exp(
+  487:         best["log_a"]
+  488:     ).cpu().numpy()
+  489: 
+  490:     bias_np = (
+  491:         best["bias"]
+  492:         .cpu()
+  493:         .numpy()
+  494:     )
+  495: 
+  496:     return (
+  497:         scale,
+  498:         bias_np,
+  499:         best_loss,
+  500:     )
+  501: 
+  502: 
+  503: def apply_calibration(
+
+--- lines 500-515 ---
+  500:     )
+  501: 
+  502: 
+  503: def apply_calibration(
+  504:     matrix,
+  505:     scale,
+  506:     bias,
+  507: ):
+  508:     return (
+  509:         matrix
+  510:         * scale.reshape(1, -1)
+  511:         + bias.reshape(1, -1)
+  512:     )
+  513: 
+  514: 
+  515: def sample_fixed(
+
+====================================================================================================
+analysis/v7_targeted_toprank_v1.py
+====================================================================================================
+
+--- lines 275-321 ---
+  275: # No text/query/output access.
+  276: # ============================================================
+  277: 
+  278: def build_features(scores):
+  279:     mean = scores.mean(
+  280:         axis=1,
+  281:         keepdims=True,
+  282:     )
+  283: 
+  284:     std = scores.std(
+  285:         axis=1,
+  286:         keepdims=True,
+  287:     )
+  288: 
+  289:     z = (
+  290:         scores - mean
+  291:     ) / np.maximum(
+  292:         std,
+  293:         1e-5,
+  294:     )
+  295: 
+  296:     ranks = ranks_from_scores(
+  297:         scores
+  298:     ).astype(
+  299:         np.float32
+  300:     )
+  301: 
+  302:     ranks = (
+  303:         ranks - 1.0
+  304:     ) / (
+  305:         scores.shape[1]
+  306:         - 1.0
+  307:     )
+  308: 
+  309:     return np.concatenate(
+  310:         [
+  311:             scores,
+  312:             z,
+  313:             ranks,
+  314:         ],
+  315:         axis=1,
+  316:     ).astype(
+  317:         np.float32
+  318:     )
+  319: 
+  320: 
+  321: class TargetedRanker(nn.Module):
+
+--- lines 318-368 ---
+  318:     )
+  319: 
+  320: 
+  321: class TargetedRanker(nn.Module):
+  322:     def __init__(
+  323:         self,
+  324:         d_in,
+  325:         n_roles,
+  326:     ):
+  327:         super().__init__()
+  328: 
+  329:         # Intentionally small.
+  330:         self.hidden = nn.Linear(
+  331:             d_in,
+  332:             32,
+  333:         )
+  334: 
+  335:         self.out = nn.Linear(
+  336:             32,
+  337:             n_roles,
+  338:         )
+  339: 
+  340:         # Identity at initialization.
+  341:         nn.init.zeros_(
+  342:             self.out.weight
+  343:         )
+  344: 
+  345:         nn.init.zeros_(
+  346:             self.out.bias
+  347:         )
+  348: 
+  349:     def forward(
+  350:         self,
+  351:         x,
+  352:         base,
+  353:     ):
+  354:         h = torch.tanh(
+  355:             self.hidden(x)
+  356:         )
+  357: 
+  358:         correction = self.out(
+  359:             h
+  360:         )
+  361: 
+  362:         return (
+  363:             base + correction,
+  364:             correction,
+  365:         )
+  366: 
+  367: 
+  368: # ============================================================
+
+--- lines 798-824 ---
+  798: 
+  799: 
+  800: @torch.inference_mode()
+  801: def predict(
+  802:     model,
+  803:     x,
+  804:     base,
+  805: ):
+  806:     x = torch.tensor(
+  807:         x,
+  808:         dtype=torch.float32,
+  809:     )
+  810: 
+  811:     base = torch.tensor(
+  812:         base,
+  813:         dtype=torch.float32,
+  814:     )
+  815: 
+  816:     scores, _ = model(
+  817:         x,
+  818:         base,
+  819:     )
+  820: 
+  821:     return scores.numpy()
+  822: 
+  823: 
+  824: def normalize(
+
+============================================================
+ INTERFACE DUMP COMPLETE
+ SAVED TO: artifacts/night_20260926/interface_dump.txt
+============================================================

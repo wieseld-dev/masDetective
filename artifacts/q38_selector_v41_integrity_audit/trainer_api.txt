@@ -1,0 +1,473 @@
+TRAINER = analysis/train_q38_selector_v41.py
+  135 read_jsonl(path)
+  143 dump(path, obj)
+  154 stable_seed()
+  245 apply_chat(user)
+  314 role_block(g)
+  338 render_user(g, order, history_chars, query_chars)
+  401 make_prompt(g, order)
+  581 collate(batch)
+  727 restricted_scores(logits, n_candidates)
+  752 selector_loss(scores, utilities, state_weight)
+  919 rankdata(a)
+  964 spearman(x, y)
+  986 score_group(g, tag)
+ 1084 evaluate(groups, name)
+ 1334 clone_adapter()
+
+===== IMPORTANT FUNCTION BODIES =====
+
+====================================================================================================
+FUNCTION render_user
+====================================================================================================
+def render_user(
+    g,
+    order,
+    history_chars,
+    query_chars,
+):
+    history = " ".join(
+        str(
+            g.get(
+                "history_text",
+                "- none",
+            )
+        ).split()
+    )
+
+    if len(history) > history_chars:
+        history = (
+            history[:history_chars]
+            + "..."
+        )
+
+    candidates = []
+
+    for display_i, original_i in enumerate(
+        order
+    ):
+        q = " ".join(
+            str(
+                g["queries"][
+                    original_i
+                ]
+            ).split()
+        )
+
+        if len(q) > query_chars:
+            q = (
+                q[:query_chars]
+                + "..."
+            )
+
+        candidates.append(
+            f"{LETTERS[display_i]}. {q}"
+        )
+
+    return (
+        "CURRENT ROLE BELIEF\n"
+        + role_block(g)
+        + "\n\n"
+        + "RECENT PUBLIC HISTORY\n"
+        + history
+        + "\n\n"
+        + "CANDIDATES\n"
+        + "\n".join(candidates)
+        + "\n\n"
+        + "Rank these probes comparatively. "
+          "Prefer the probe most likely to resolve current ambiguity, "
+          "distinguish competing role configurations, or elicit "
+          "distinctive behavior visible in the final response. "
+          "Do not prefer a probe merely because its topic resembles "
+          "a likely role."
+    )
+
+====================================================================================================
+FUNCTION make_prompt
+====================================================================================================
+def make_prompt(g, order):
+    # NEVER silently truncate away belief/candidates.
+    # Reduce optional history first.
+    settings = [
+        (1200, 320),
+        (900, 300),
+        (650, 280),
+        (400, 260),
+        (200, 240),
+        (0, 220),
+    ]
+
+    for hchars, qchars in settings:
+
+        user = render_user(
+            g,
+            order,
+            hchars,
+            qchars,
+        )
+
+        text = apply_chat(
+            user
+        )
+
+        ids = tokenizer.encode(
+            text,
+            add_special_tokens=False,
+        )
+
+        if len(ids) <= MAX_LEN:
+            return (
+                text,
+                ids,
+                hchars,
+                qchars,
+            )
+
+    raise RuntimeError(
+        f"Prompt cannot fit MAX_LEN={MAX_LEN}: "
+        f"state={g['state_id']}"
+    )
+
+====================================================================================================
+FUNCTION restricted_scores
+====================================================================================================
+def restricted_scores(
+    logits,
+    n_candidates,
+):
+    # logits: vocab scores for NEXT generated token
+    ids = torch.tensor(
+        [
+            label_ids[
+                LETTERS[i]
+            ]
+            for i
+            in range(
+                n_candidates
+            )
+        ],
+        device=logits.device,
+        dtype=torch.long,
+    )
+
+    return logits.index_select(
+        0,
+        ids,
+    ).float()
+
+====================================================================================================
+FUNCTION score_group
+====================================================================================================
+def score_group(
+    g,
+    tag,
+):
+    model.eval()
+
+    n = len(
+        g["queries"]
+    )
+
+    aggregate = np.zeros(
+        n,
+        dtype=np.float64,
+    )
+
+    for p in range(
+        EVAL_PERMS
+    ):
+        order = list(
+            range(n)
+        )
+
+        rng = random.Random(
+            stable_seed(
+                g["state_id"],
+                tag,
+                p,
+            )
+        )
+
+        rng.shuffle(
+            order
+        )
+
+        _, ids, _, _ = make_prompt(
+            g,
+            order,
+        )
+
+        input_ids = torch.tensor(
+            [ids],
+            dtype=torch.long,
+            device="cuda",
+        )
+
+        attention = torch.ones_like(
+            input_ids
+        )
+
+        out = model(
+            input_ids=input_ids,
+            attention_mask=attention,
+        )
+
+        raw = restricted_scores(
+            out.logits[
+                0,
+                -1,
+                :
+            ],
+            n,
+        )
+
+        raw = (
+            raw
+            - raw.mean()
+        )
+
+        sd = raw.std(
+            unbiased=False
+        )
+
+        if float(sd) > 1e-6:
+            raw = raw / sd
+
+        raw = (
+            raw.detach()
+            .cpu()
+            .numpy()
+        )
+
+        # Map display positions back to original candidate.
+        for display_i, original_i in enumerate(
+            order
+        ):
+            aggregate[
+                original_i
+            ] += raw[
+                display_i
+            ]
+
+    return (
+        aggregate
+        / EVAL_PERMS
+    )
+
+====================================================================================================
+FUNCTION evaluate
+====================================================================================================
+def evaluate(
+    groups,
+    name,
+):
+    selected = []
+    random_gain = []
+    oracle_gain = []
+
+    top1 = []
+    top2 = []
+    rhos = []
+
+    pair_correct = 0
+    pair_total = 0
+
+    for gi, g in enumerate(
+        groups,
+        1,
+    ):
+
+        scores = score_group(
+            g,
+            name,
+        )
+
+        gains = np.asarray(
+            g["auc_gains"],
+            dtype=float,
+        )
+
+        pick = int(
+            np.argmax(
+                scores
+            )
+        )
+
+        selected.append(
+            float(
+                gains[pick]
+            )
+        )
+
+        random_gain.append(
+            float(
+                np.mean(gains)
+            )
+        )
+
+        best = float(
+            np.max(gains)
+        )
+
+        oracle_gain.append(
+            best
+        )
+
+        best_set = {
+            i
+            for i, z
+            in enumerate(gains)
+            if abs(
+                z - best
+            ) < 1e-12
+        }
+
+        rank = list(
+            np.argsort(
+                scores
+            )[::-1]
+        )
+
+        top1.append(
+            float(
+                pick in best_set
+            )
+        )
+
+        top2.append(
+            float(
+                any(
+                    x in best_set
+                    for x
+                    in rank[:2]
+                )
+            )
+        )
+
+        rho = spearman(
+            scores,
+            gains,
+        )
+
+        if rho is not None:
+            rhos.append(
+                rho
+            )
+
+        n = len(gains)
+
+        for i in range(n):
+            for j in range(
+                i + 1,
+                n,
+            ):
+
+                d = (
+                    gains[i]
+                    - gains[j]
+                )
+
+                if abs(d) < 1e-12:
+                    continue
+
+                pair_correct += int(
+                    d
+                    * (
+                        scores[i]
+                        - scores[j]
+                    )
+                    > 0
+                )
+
+                pair_total += 1
+
+        if (
+            gi % 100 == 0
+            or gi == len(groups)
+        ):
+            print(
+                f"[{name}] "
+                f"{gi}/{len(groups)}",
+                flush=True,
+            )
+
+    ms = float(
+        np.mean(selected)
+    )
+
+    mr = float(
+        np.mean(random_gain)
+    )
+
+    mo = float(
+        np.mean(oracle_gain)
+    )
+
+    result = {
+        "states":
+            len(groups),
+
+        "mean_selected_gain":
+            ms,
+
+        "mean_random_gain":
+            mr,
+
+        "mean_oracle_gain":
+            mo,
+
+        "mean_regret":
+            mo - ms,
+
+        "oracle_top1_hit":
+            float(
+                np.mean(top1)
+            ),
+
+        "oracle_top2_hit":
+            float(
+                np.mean(top2)
+            ),
+
+        "mean_spearman":
+            (
+                float(
+                    np.mean(rhos)
+                )
+                if rhos
+                else None
+            ),
+
+        "mean_pair_accuracy":
+            (
+                pair_correct
+                / max(
+                    1,
+                    pair_total,
+                )
+            ),
+
+        "oracle_signal_captured":
+            (
+                (ms - mr)
+                / (mo - mr)
+                if (
+                    mo
+                    > mr
+                    + 1e-12
+                )
+                else None
+            ),
+    }
+
+    print()
+    print(
+        name,
+        json.dumps(
+            result,
+            indent=2,
+        ),
+        flush=True,
+    )
+
+    return result

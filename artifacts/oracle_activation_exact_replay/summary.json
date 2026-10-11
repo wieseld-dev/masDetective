@@ -1,0 +1,913 @@
+{
+  "hypotheses": 60249,
+  "true_roles": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "activation_union": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "activation_union_size": 3,
+  "results": {
+    "0.1": {
+      "beta": 0.1,
+      "pred_k": 6,
+      "p_k3": 0.14347379986516218,
+      "k_correct": false,
+      "top3": [
+        "research",
+        "planning",
+        "code"
+      ],
+      "top3_exact": true,
+      "true_composition_mass": 0.01066395200762277,
+      "final_k_probs": {
+        "3": 0.14347379986516218,
+        "4": 0.2057494910953661,
+        "5": 0.2805354589218813,
+        "6": 0.3702412501175904
+      },
+      "final_role_probs": {
+        "code": 0.4206919531845514,
+        "writing": 0.18829275420856936,
+        "math": 0.19734957563554817,
+        "planning": 0.6724147456752293,
+        "research": 0.8896660012093326,
+        "data": 0.10894150766289101,
+        "design": 0.16955350794851623,
+        "operations": 0.1747945346081571,
+        "qa_testing": 0.20081731734424693,
+        "translation": 0.19363506770324596,
+        "financial_analysis": 0.19930604990614434,
+        "database_design": 0.09390206620192669,
+        "accessibility_review": 0.16961510556459766,
+        "fact_checking": 0.18646612208279548,
+        "requirements_analysis": 0.14143882964685522,
+        "incident_management": 0.17909155985740163,
+        "experiment_design": 0.18577720304948384,
+        "risk_assessment": 0.16707532885897441,
+        "documentation": 0.16909903169280388,
+        "customer_support_triage": 0.1696158972506283
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Do you have experience designing and implementing databases?",
+          "selected_roles_eval_only": [
+            "code",
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.21298480236477194,
+            "4": 0.2363336539478999,
+            "5": 0.2618074433697636,
+            "6": 0.28887410031756455
+          },
+          "role_probs": {
+            "code": 0.4823705521059624,
+            "writing": 0.21361823268129113,
+            "math": 0.21318826878616123,
+            "planning": 0.45566890585254793,
+            "research": 0.20368458261136316,
+            "data": 0.18025262424272512,
+            "design": 0.19601976117369624,
+            "operations": 0.20613438847053947,
+            "qa_testing": 0.21505857124768285,
+            "translation": 0.21544899848761723,
+            "financial_analysis": 0.2163541649956443,
+            "database_design": 0.1568971883638362,
+            "accessibility_review": 0.20989041782327456,
+            "fact_checking": 0.21442345121352843,
+            "requirements_analysis": 0.19462817679771793,
+            "incident_management": 0.2097396516657009,
+            "experiment_design": 0.21071215092223894,
+            "risk_assessment": 0.21028607357607404,
+            "documentation": 0.20765074538873984,
+            "customer_support_triage": 0.21454393523377746
+          },
+          "true_composition_mass": 0.0011505369424767503
+        },
+        {
+          "round": 2,
+          "query": "Do these tasks involve understanding complex queries or needing to know specific fields from databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.1925672353972679,
+            "4": 0.22566973999347617,
+            "5": 0.2667302064321707,
+            "6": 0.3150328181770853
+          },
+          "role_probs": {
+            "code": 0.46141462800191435,
+            "writing": 0.20872274919467865,
+            "math": 0.20962573294997805,
+            "planning": 0.45776322287766136,
+            "research": 0.4540339689560693,
+            "data": 0.15482378330956192,
+            "design": 0.1939531372539859,
+            "operations": 0.206155468577213,
+            "qa_testing": 0.21222675368327473,
+            "translation": 0.20972373700275113,
+            "financial_analysis": 0.21378055309412733,
+            "database_design": 0.1297992291485205,
+            "accessibility_review": 0.1947611149749422,
+            "fact_checking": 0.20761307046896557,
+            "requirements_analysis": 0.1796732744186726,
+            "incident_management": 0.19790119437759351,
+            "experiment_design": 0.20649047421305874,
+            "risk_assessment": 0.20101468835165875,
+            "documentation": 0.1960971720293631,
+            "customer_support_triage": 0.20865465450508225
+          },
+          "true_composition_mass": 0.0027461835412519718
+        },
+        {
+          "round": 3,
+          "query": "Do these tasks require significant knowledge of databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.1706166812808594,
+            "4": 0.2158488634908455,
+            "5": 0.272550671398999,
+            "6": 0.34098378382929606
+          },
+          "role_probs": {
+            "code": 0.4415424115735294,
+            "writing": 0.20244411047441152,
+            "math": 0.20577510905684582,
+            "planning": 0.4432719797939779,
+            "research": 0.7390956135291871,
+            "data": 0.13219213214990744,
+            "design": 0.19098874063048057,
+            "operations": 0.19687282165070974,
+            "qa_testing": 0.2074889984902041,
+            "translation": 0.2031485000314931,
+            "financial_analysis": 0.2098002119225507,
+            "database_design": 0.10642753563440122,
+            "accessibility_review": 0.18475192517035002,
+            "fact_checking": 0.1965194723266414,
+            "requirements_analysis": 0.16278774356206127,
+            "incident_management": 0.1885979597859991,
+            "experiment_design": 0.20176950761937862,
+            "risk_assessment": 0.1835532353751829,
+            "documentation": 0.18556380922858193,
+            "customer_support_triage": 0.20130973977083788
+          },
+          "true_composition_mass": 0.004754205004137975
+        },
+        {
+          "round": 4,
+          "query": "Do you have experience working with large datasets?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.160049704274752,
+            "4": 0.21202041386544113,
+            "5": 0.2756684856087207,
+            "6": 0.35226139625108616
+          },
+          "role_probs": {
+            "code": 0.4314502883640727,
+            "writing": 0.19579673279312504,
+            "math": 0.20189132775393104,
+            "planning": 0.429275795476801,
+            "research": 0.9064415172987138,
+            "data": 0.11377393215704225,
+            "design": 0.18908403799966333,
+            "operations": 0.18397932497038555,
+            "qa_testing": 0.20494706152329362,
+            "translation": 0.20049526508896465,
+            "financial_analysis": 0.20713109137964586,
+            "database_design": 0.09668447358280315,
+            "accessibility_review": 0.1807960904863667,
+            "fact_checking": 0.1912519638990965,
+            "requirements_analysis": 0.1515652696707942,
+            "incident_management": 0.18357817266989795,
+            "experiment_design": 0.19796019210510404,
+            "risk_assessment": 0.1739214423850103,
+            "documentation": 0.18158972221528244,
+            "customer_support_triage": 0.19852787201614755
+          },
+          "true_composition_mass": 0.006077681379793128
+        },
+        {
+          "round": 5,
+          "query": "Which type of expertise would you like me to assist you with today?",
+          "selected_roles_eval_only": [
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.14347379986516218,
+            "4": 0.2057494910953661,
+            "5": 0.2805354589218813,
+            "6": 0.3702412501175904
+          },
+          "role_probs": {
+            "code": 0.4206919531845514,
+            "writing": 0.18829275420856936,
+            "math": 0.19734957563554817,
+            "planning": 0.6724147456752293,
+            "research": 0.8896660012093326,
+            "data": 0.10894150766289101,
+            "design": 0.16955350794851623,
+            "operations": 0.1747945346081571,
+            "qa_testing": 0.20081731734424693,
+            "translation": 0.19363506770324596,
+            "financial_analysis": 0.19930604990614434,
+            "database_design": 0.09390206620192669,
+            "accessibility_review": 0.16961510556459766,
+            "fact_checking": 0.18646612208279548,
+            "requirements_analysis": 0.14143882964685522,
+            "incident_management": 0.17909155985740163,
+            "experiment_design": 0.18577720304948384,
+            "risk_assessment": 0.16707532885897441,
+            "documentation": 0.16909903169280388,
+            "customer_support_triage": 0.1696158972506283
+          },
+          "true_composition_mass": 0.01066395200762277
+        }
+      ]
+    },
+    "0.25": {
+      "beta": 0.25,
+      "pred_k": 6,
+      "p_k3": 0.10907197735523019,
+      "k_correct": false,
+      "top3": [
+        "research",
+        "planning",
+        "code"
+      ],
+      "top3_exact": true,
+      "true_composition_mass": 0.05446232736418146,
+      "final_k_probs": {
+        "3": 0.10907197735523019,
+        "4": 0.20104642351906937,
+        "5": 0.29605322181524185,
+        "6": 0.39382837731045856
+      },
+      "final_role_probs": {
+        "code": 0.7591603728517322,
+        "writing": 0.17068318011382103,
+        "math": 0.17751871920575996,
+        "planning": 0.9750432315629647,
+        "research": 0.9985361693671668,
+        "data": 0.05180332246212456,
+        "design": 0.11660220693298198,
+        "operations": 0.11515197798695744,
+        "qa_testing": 0.1876994747196895,
+        "translation": 0.1832007194429459,
+        "financial_analysis": 0.17225598934358977,
+        "database_design": 0.035778475391363,
+        "accessibility_review": 0.12173481142251619,
+        "fact_checking": 0.1744937962709369,
+        "requirements_analysis": 0.06813015444159501,
+        "incident_management": 0.15392325808194948,
+        "experiment_design": 0.150917205149041,
+        "risk_assessment": 0.12722513044739214,
+        "documentation": 0.11000956789719386,
+        "customer_support_triage": 0.12477023598920557
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Do you have experience designing and implementing databases?",
+          "selected_roles_eval_only": [
+            "code",
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.16703259607546656,
+            "4": 0.2236031998748943,
+            "5": 0.278507599688863,
+            "6": 0.33085660436077624
+          },
+          "role_probs": {
+            "code": 0.8379876990606456,
+            "writing": 0.19411898579015371,
+            "math": 0.19328716820281733,
+            "planning": 0.799654338373983,
+            "research": 0.16168474982468617,
+            "data": 0.12042629796168661,
+            "design": 0.15091262147509582,
+            "operations": 0.16808827200449616,
+            "qa_testing": 0.19646508924358363,
+            "translation": 0.19930222366261935,
+            "financial_analysis": 0.19832321075361395,
+            "database_design": 0.08505037065311798,
+            "accessibility_review": 0.193789409345187,
+            "fact_checking": 0.19549367020517455,
+            "requirements_analysis": 0.14539971935105733,
+            "incident_management": 0.19426834274442142,
+            "experiment_design": 0.18269175548026895,
+            "risk_assessment": 0.18906087148862052,
+            "documentation": 0.1746492810509757,
+            "customer_support_triage": 0.19253413566274594
+          },
+          "true_composition_mass": 0.00431776946864077
+        },
+        {
+          "round": 2,
+          "query": "Do these tasks involve understanding complex queries or needing to know specific fields from databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.11575485731384894,
+            "4": 0.19335771891651654,
+            "5": 0.2892429983036589,
+            "6": 0.4016444254659756
+          },
+          "role_probs": {
+            "code": 0.8030258389971681,
+            "writing": 0.17920800710993742,
+            "math": 0.18128649733359478,
+            "planning": 0.782668094223687,
+            "research": 0.7513173768832858,
+            "data": 0.08968897470010692,
+            "design": 0.1447679780126837,
+            "operations": 0.15801963004257438,
+            "qa_testing": 0.18679984051256726,
+            "translation": 0.1839038835246018,
+            "financial_analysis": 0.18793786351541278,
+            "database_design": 0.05553937579683044,
+            "accessibility_review": 0.1572339213802243,
+            "fact_checking": 0.1815883395470633,
+            "requirements_analysis": 0.1098698497632399,
+            "incident_management": 0.16717385499743423,
+            "experiment_design": 0.17040212212451322,
+            "risk_assessment": 0.16148034201837902,
+            "documentation": 0.1516415244425352,
+            "customer_support_triage": 0.17322367699592123
+          },
+          "true_composition_mass": 0.02234739827585813
+        },
+        {
+          "round": 3,
+          "query": "Do these tasks require significant knowledge of databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.10428422965850603,
+            "4": 0.18843608858540895,
+            "5": 0.292457882778467,
+            "6": 0.41482179897761795
+          },
+          "role_probs": {
+            "code": 0.7791558612000757,
+            "writing": 0.172493661566906,
+            "math": 0.1804346118257589,
+            "planning": 0.7678878203417526,
+            "research": 0.9822404926187288,
+            "data": 0.07040698653473274,
+            "design": 0.14317867018802866,
+            "operations": 0.14403332641109517,
+            "qa_testing": 0.18570855707623157,
+            "translation": 0.18225414370164678,
+            "financial_analysis": 0.18663047716374237,
+            "database_design": 0.04092979523542267,
+            "accessibility_review": 0.14428901104654268,
+            "fact_checking": 0.17503391431796203,
+            "requirements_analysis": 0.08947995971752262,
+            "incident_management": 0.15748476728436964,
+            "experiment_design": 0.16856527829951012,
+            "risk_assessment": 0.1431886339993769,
+            "documentation": 0.1360171633203181,
+            "customer_support_triage": 0.16840411922547394
+          },
+          "true_composition_mass": 0.031888858031032336
+        },
+        {
+          "round": 4,
+          "query": "Do you have experience working with large datasets?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.11107111851489988,
+            "4": 0.1935639685593881,
+            "5": 0.29167193928331514,
+            "6": 0.4036929736423969
+          },
+          "role_probs": {
+            "code": 0.7702376806347128,
+            "writing": 0.17028358024718512,
+            "math": 0.18366799232767395,
+            "planning": 0.7623372944286109,
+            "research": 0.9990047982533695,
+            "data": 0.05609947544086001,
+            "design": 0.14529871107170111,
+            "operations": 0.13268618653031225,
+            "qa_testing": 0.18963974745353585,
+            "translation": 0.18479518037595372,
+            "financial_analysis": 0.18480609000072315,
+            "database_design": 0.037225101918463836,
+            "accessibility_review": 0.14085466019134005,
+            "fact_checking": 0.17449967338800745,
+            "requirements_analysis": 0.08171321469413242,
+            "incident_management": 0.15556243462582275,
+            "experiment_design": 0.1726927935784157,
+            "risk_assessment": 0.1387407597027209,
+            "documentation": 0.13191089495219394,
+            "customer_support_triage": 0.1759304982374726
+          },
+          "true_composition_mass": 0.03416889414111308
+        },
+        {
+          "round": 5,
+          "query": "Which type of expertise would you like me to assist you with today?",
+          "selected_roles_eval_only": [
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.10907197735523019,
+            "4": 0.20104642351906937,
+            "5": 0.29605322181524185,
+            "6": 0.39382837731045856
+          },
+          "role_probs": {
+            "code": 0.7591603728517322,
+            "writing": 0.17068318011382103,
+            "math": 0.17751871920575996,
+            "planning": 0.9750432315629647,
+            "research": 0.9985361693671668,
+            "data": 0.05180332246212456,
+            "design": 0.11660220693298198,
+            "operations": 0.11515197798695744,
+            "qa_testing": 0.1876994747196895,
+            "translation": 0.1832007194429459,
+            "financial_analysis": 0.17225598934358977,
+            "database_design": 0.035778475391363,
+            "accessibility_review": 0.12173481142251619,
+            "fact_checking": 0.1744937962709369,
+            "requirements_analysis": 0.06813015444159501,
+            "incident_management": 0.15392325808194948,
+            "experiment_design": 0.150917205149041,
+            "risk_assessment": 0.12722513044739214,
+            "documentation": 0.11000956789719386,
+            "customer_support_triage": 0.12477023598920557
+          },
+          "true_composition_mass": 0.05446232736418146
+        }
+      ]
+    },
+    "0.5": {
+      "beta": 0.5,
+      "pred_k": 6,
+      "p_k3": 0.12983374772069922,
+      "k_correct": false,
+      "top3": [
+        "research",
+        "planning",
+        "code"
+      ],
+      "top3_exact": true,
+      "true_composition_mass": 0.12196277457284763,
+      "final_k_probs": {
+        "3": 0.12983374772069922,
+        "4": 0.2381267526058862,
+        "5": 0.30114478709074305,
+        "6": 0.33089471258267134
+      },
+      "final_role_probs": {
+        "code": 0.9755943867107345,
+        "writing": 0.16989798381667534,
+        "math": 0.17042738446101616,
+        "planning": 0.9998301434207,
+        "research": 0.9999990955070928,
+        "data": 0.01625454446460979,
+        "design": 0.07589523973792826,
+        "operations": 0.0718798558666075,
+        "qa_testing": 0.19642358041035876,
+        "translation": 0.1899035649091909,
+        "financial_analysis": 0.14671712790210606,
+        "database_design": 0.00889812470385308,
+        "accessibility_review": 0.07707270553932374,
+        "fact_checking": 0.17952446916573983,
+        "requirements_analysis": 0.027512101368649147,
+        "incident_management": 0.14122512055853623,
+        "experiment_design": 0.12990051829242474,
+        "risk_assessment": 0.09697551356951321,
+        "documentation": 0.06431554278289323,
+        "customer_support_triage": 0.09485346134743011
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Do you have experience designing and implementing databases?",
+          "selected_roles_eval_only": [
+            "code",
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.1765074215432857,
+            "4": 0.2386014277636637,
+            "5": 0.28010702560135736,
+            "6": 0.3047841250916933
+          },
+          "role_probs": {
+            "code": 0.9897347520615036,
+            "writing": 0.18536619013518565,
+            "math": 0.18489299846988133,
+            "planning": 0.9834829156569057,
+            "research": 0.11965880757221496,
+            "data": 0.06561687282287892,
+            "design": 0.10465680046546122,
+            "operations": 0.12980626681902427,
+            "qa_testing": 0.19106374017996722,
+            "translation": 0.19695483316778678,
+            "financial_analysis": 0.19057802149264233,
+            "database_design": 0.03240884141481577,
+            "accessibility_review": 0.1954997163478314,
+            "fact_checking": 0.18709708035610892,
+            "requirements_analysis": 0.0974307421770186,
+            "incident_management": 0.19751466939836046,
+            "experiment_design": 0.15879589989758613,
+            "risk_assessment": 0.17931355655433392,
+            "documentation": 0.14338082931205673,
+            "customer_support_triage": 0.17991431993989437
+          },
+          "true_composition_mass": 0.007232097645294351
+        },
+        {
+          "round": 2,
+          "query": "Do these tasks involve understanding complex queries or needing to know specific fields from databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.08176635070548381,
+            "4": 0.19037757865050015,
+            "5": 0.30731780333165915,
+            "6": 0.4205382673123568
+          },
+          "role_probs": {
+            "code": 0.9839588005107979,
+            "writing": 0.15978585979577428,
+            "math": 0.16270264518944955,
+            "planning": 0.97750415200713,
+            "research": 0.964428626286649,
+            "data": 0.04244329552730512,
+            "design": 0.09745946148315003,
+            "operations": 0.11021838670594318,
+            "qa_testing": 0.17521489714906965,
+            "translation": 0.17254990312886925,
+            "financial_analysis": 0.1709824888563673,
+            "database_design": 0.015321165332533315,
+            "accessibility_review": 0.13367697577678758,
+            "fact_checking": 0.168095094453685,
+            "requirements_analysis": 0.05251177741627671,
+            "incident_management": 0.15587613637421327,
+            "experiment_design": 0.13359718778630064,
+            "risk_assessment": 0.1354108032324198,
+            "documentation": 0.11198587690231437,
+            "customer_support_triage": 0.14290445333585253
+          },
+          "true_composition_mass": 0.06789054083391972
+        },
+        {
+          "round": 3,
+          "query": "Do these tasks require significant knowledge of databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.08859713722986154,
+            "4": 0.1992082953560243,
+            "5": 0.30758534511772834,
+            "6": 0.4046092222963858
+          },
+          "role_probs": {
+            "code": 0.980654841181012,
+            "writing": 0.1542385270056479,
+            "math": 0.1696904659347333,
+            "planning": 0.9768153480630893,
+            "research": 0.9998616504611749,
+            "data": 0.030346707633693744,
+            "design": 0.09760462024440682,
+            "operations": 0.09785168231436132,
+            "qa_testing": 0.18273866603189706,
+            "translation": 0.17800366756667518,
+            "financial_analysis": 0.1697484473422019,
+            "database_design": 0.011099306416138967,
+            "accessibility_review": 0.115482938969865,
+            "fact_checking": 0.17039750181461963,
+            "requirements_analysis": 0.04042813338980148,
+            "incident_management": 0.14519776185840438,
+            "experiment_design": 0.13988535431556748,
+            "risk_assessment": 0.12212617364578271,
+            "documentation": 0.09521864435679386,
+            "customer_support_triage": 0.15081621393477268
+          },
+          "true_composition_mass": 0.07969360470079534
+        },
+        {
+          "round": 4,
+          "query": "Do you have experience working with large datasets?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.0973175725876953,
+            "4": 0.20783097342272028,
+            "5": 0.30688243809937926,
+            "6": 0.38796901589020516
+          },
+          "role_probs": {
+            "code": 0.9781582266383742,
+            "writing": 0.14824373686972375,
+            "math": 0.17425053161093434,
+            "planning": 0.9750854471769739,
+            "research": 0.9999994661430714,
+            "data": 0.020839780003347047,
+            "design": 0.09852246161888509,
+            "operations": 0.08323571077116958,
+            "qa_testing": 0.1885493508099933,
+            "translation": 0.18099810567169541,
+            "financial_analysis": 0.16176349488719508,
+            "database_design": 0.009828555369757847,
+            "accessibility_review": 0.10589986443218527,
+            "fact_checking": 0.17053392580280163,
+            "requirements_analysis": 0.03373520948693957,
+            "incident_management": 0.14052306092533182,
+            "experiment_design": 0.14509754072212988,
+            "risk_assessment": 0.11718075393949812,
+            "documentation": 0.0882190927240312,
+            "customer_support_triage": 0.16483858168806054
+          },
+          "true_composition_mass": 0.08667352426878536
+        },
+        {
+          "round": 5,
+          "query": "Which type of expertise would you like me to assist you with today?",
+          "selected_roles_eval_only": [
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.12983374772069922,
+            "4": 0.2381267526058862,
+            "5": 0.30114478709074305,
+            "6": 0.33089471258267134
+          },
+          "role_probs": {
+            "code": 0.9755943867107345,
+            "writing": 0.16989798381667534,
+            "math": 0.17042738446101616,
+            "planning": 0.9998301434207,
+            "research": 0.9999990955070928,
+            "data": 0.01625454446460979,
+            "design": 0.07589523973792826,
+            "operations": 0.0718798558666075,
+            "qa_testing": 0.19642358041035876,
+            "translation": 0.1899035649091909,
+            "financial_analysis": 0.14671712790210606,
+            "database_design": 0.00889812470385308,
+            "accessibility_review": 0.07707270553932374,
+            "fact_checking": 0.17952446916573983,
+            "requirements_analysis": 0.027512101368649147,
+            "incident_management": 0.14122512055853623,
+            "experiment_design": 0.12990051829242474,
+            "risk_assessment": 0.09697551356951321,
+            "documentation": 0.06431554278289323,
+            "customer_support_triage": 0.09485346134743011
+          },
+          "true_composition_mass": 0.12196277457284763
+        }
+      ]
+    },
+    "1.0": {
+      "beta": 1.0,
+      "pred_k": 4,
+      "p_k3": 0.23923573042596635,
+      "k_correct": false,
+      "top3": [
+        "research",
+        "planning",
+        "code"
+      ],
+      "top3_exact": true,
+      "true_composition_mass": 0.23915345006128805,
+      "final_k_probs": {
+        "3": 0.23923573042596635,
+        "4": 0.3068181412250207,
+        "5": 0.2605433893283429,
+        "6": 0.19340273902067012
+      },
+      "final_role_probs": {
+        "code": 0.9998384389975337,
+        "writing": 0.15304924653940957,
+        "math": 0.16034256407889835,
+        "planning": 0.9999999934514157,
+        "research": 0.9999999999997575,
+        "data": 0.0012551866975952825,
+        "design": 0.03191042162333588,
+        "operations": 0.023940607438289255,
+        "qa_testing": 0.20873740917227238,
+        "translation": 0.19387054326581266,
+        "financial_analysis": 0.10754792547068728,
+        "database_design": 0.00042309689859918527,
+        "accessibility_review": 0.03428418324030947,
+        "fact_checking": 0.1701666591934403,
+        "requirements_analysis": 0.00408696909582196,
+        "incident_management": 0.11712907907986156,
+        "experiment_design": 0.08426610424463842,
+        "risk_assessment": 0.05000878139658192,
+        "documentation": 0.021469857318060358,
+        "customer_support_triage": 0.04578606974138456
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "query": "Do you have experience designing and implementing databases?",
+          "selected_roles_eval_only": [
+            "code",
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.25967460436112827,
+            "4": 0.2732171649528334,
+            "5": 0.25148646011483144,
+            "6": 0.21562177057120693
+          },
+          "role_probs": {
+            "code": 0.9999718594589817,
+            "writing": 0.17819857620223503,
+            "math": 0.18382807375654334,
+            "planning": 0.9999322017072698,
+            "research": 0.0728676817798158,
+            "data": 0.020096829319252246,
+            "design": 0.05263127960214551,
+            "operations": 0.08393204217247557,
+            "qa_testing": 0.19755819347783568,
+            "translation": 0.20869284129035662,
+            "financial_analysis": 0.1869383359221022,
+            "database_design": 0.004725493993647002,
+            "accessibility_review": 0.21373600987853944,
+            "fact_checking": 0.18371632808291025,
+            "requirements_analysis": 0.04716420424292111,
+            "incident_management": 0.21146306720792415,
+            "experiment_design": 0.1312835816553944,
+            "risk_assessment": 0.16591500709085552,
+            "documentation": 0.10451738777717834,
+            "customer_support_triage": 0.17588640227773158
+          },
+          "true_composition_mass": 0.007383191968867991
+        },
+        {
+          "round": 2,
+          "query": "Do these tasks involve understanding complex queries or needing to know specific fields from databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.12473179770450331,
+            "4": 0.24023756668936375,
+            "5": 0.30542202852214884,
+            "6": 0.3296086070839839
+          },
+          "role_probs": {
+            "code": 0.9999377510031647,
+            "writing": 0.1521639197578143,
+            "math": 0.15942624920268358,
+            "planning": 0.9998761267200387,
+            "research": 0.9996605083311584,
+            "data": 0.01001418705277771,
+            "design": 0.05517895178461977,
+            "operations": 0.0673178631216898,
+            "qa_testing": 0.18615491299560932,
+            "translation": 0.17887153718896187,
+            "financial_analysis": 0.17024744722183482,
+            "database_design": 0.0012886745387163095,
+            "accessibility_review": 0.11667229379838585,
+            "fact_checking": 0.16828517851453914,
+            "requirements_analysis": 0.01553790798554089,
+            "incident_management": 0.1560504502642309,
+            "experiment_design": 0.09941249649968732,
+            "risk_assessment": 0.11059554796918761,
+            "documentation": 0.07496151907761124,
+            "customer_support_triage": 0.11825392195736395
+          },
+          "true_composition_mass": 0.12459316886663131
+        },
+        {
+          "round": 3,
+          "query": "Do these tasks require significant knowledge of databases?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.1463806779778054,
+            "4": 0.2562125673226807,
+            "5": 0.2983576782292034,
+            "6": 0.2990490764703105
+          },
+          "role_probs": {
+            "code": 0.9999088817742562,
+            "writing": 0.13925433831433706,
+            "math": 0.171211431600411,
+            "planning": 0.999864841504239,
+            "research": 0.9999999948159319,
+            "data": 0.00510566327396765,
+            "design": 0.054671570402045684,
+            "operations": 0.051453014577145614,
+            "qa_testing": 0.1982712806987271,
+            "translation": 0.1865703107110195,
+            "financial_analysis": 0.16119645511532513,
+            "database_design": 0.0007434932907567088,
+            "accessibility_review": 0.0871360690873023,
+            "fact_checking": 0.16945373568214173,
+            "requirements_analysis": 0.009654512559325795,
+            "incident_management": 0.13526184374105532,
+            "experiment_design": 0.10650192645387872,
+            "risk_assessment": 0.08991279534717318,
+            "documentation": 0.053652465270164436,
+            "customer_support_triage": 0.13025052897280598
+          },
+          "true_composition_mass": 0.14631299281601756
+        },
+        {
+          "round": 4,
+          "query": "Do you have experience working with large datasets?",
+          "selected_roles_eval_only": [
+            "research"
+          ],
+          "k_probs": {
+            "3": 0.1622897056949489,
+            "4": 0.2677971942056034,
+            "5": 0.29290162526494745,
+            "6": 0.2770114748345003
+          },
+          "role_probs": {
+            "code": 0.9998799934602107,
+            "writing": 0.1267656452006169,
+            "math": 0.17561471964344352,
+            "planning": 0.9998374559682052,
+            "research": 0.9999999999999164,
+            "data": 0.0024187040594245072,
+            "design": 0.05423539304266129,
+            "operations": 0.03573219502040686,
+            "qa_testing": 0.20526536999467948,
+            "translation": 0.18857429852011487,
+            "financial_analysis": 0.14015725897375722,
+            "database_design": 0.0005932622921707135,
+            "accessibility_review": 0.0715821049068499,
+            "fact_checking": 0.16564848973742374,
+            "requirements_analysis": 0.006654679056805392,
+            "incident_management": 0.12530138480316746,
+            "experiment_design": 0.1097204400098964,
+            "risk_assessment": 0.0809911196330526,
+            "documentation": 0.04503229396727231,
+            "customer_support_triage": 0.1506300609489173
+          },
+          "true_composition_mass": 0.16219547847928004
+        },
+        {
+          "round": 5,
+          "query": "Which type of expertise would you like me to assist you with today?",
+          "selected_roles_eval_only": [
+            "planning"
+          ],
+          "k_probs": {
+            "3": 0.23923573042596635,
+            "4": 0.3068181412250207,
+            "5": 0.2605433893283429,
+            "6": 0.19340273902067012
+          },
+          "role_probs": {
+            "code": 0.9998384389975337,
+            "writing": 0.15304924653940957,
+            "math": 0.16034256407889835,
+            "planning": 0.9999999934514157,
+            "research": 0.9999999999997575,
+            "data": 0.0012551866975952825,
+            "design": 0.03191042162333588,
+            "operations": 0.023940607438289255,
+            "qa_testing": 0.20873740917227238,
+            "translation": 0.19387054326581266,
+            "financial_analysis": 0.10754792547068728,
+            "database_design": 0.00042309689859918527,
+            "accessibility_review": 0.03428418324030947,
+            "fact_checking": 0.1701666591934403,
+            "requirements_analysis": 0.00408696909582196,
+            "incident_management": 0.11712907907986156,
+            "experiment_design": 0.08426610424463842,
+            "risk_assessment": 0.05000878139658192,
+            "documentation": 0.021469857318060358,
+            "customer_support_triage": 0.04578606974138456
+          },
+          "true_composition_mass": 0.23915345006128805
+        }
+      ]
+    }
+  },
+  "note": "EVALUATION-ONLY replay using true selected roles. No visible outputs or traces are permitted in deployment inference."
+}

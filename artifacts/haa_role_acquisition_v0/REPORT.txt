@@ -1,0 +1,93 @@
+====================================================================================================
+HAA-V0 — HYPOTHESIS-AWARE ACTIVE PROBE ACQUISITION
+====================================================================================================
+candidate rows=167 | systems=24 | evaluated groups=51
+Primary endpoint: rounds 2-3 (post-initial-belief / non-symmetric states)
+
+----------------------------------------------------------------------------------------------------
+COLD_ROUND1 | groups=23 systems=23 mean-candidates=3.217391304347826
+  random expected utility = +0.006015
+  oracle best utility     = +0.028707
+
+  policy_logp      U=-0.000467 gain/random=-0.006482 CI=[-0.014121,+0.001229] p=0.94030 regret=0.606 top1=0.217 top2=0.565 conc=0.543
+  uncertainty      U=+0.015475 gain/random=+0.009460 CI=[-0.000194,+0.019553] p=0.04020 regret=0.419 top1=0.391 top2=0.826 conc=0.514
+  q_only           U=+0.009648 gain/random=+0.003634 CI=[-0.003705,+0.011887] p=0.20086 regret=0.477 top1=0.261 top2=0.652 conc=0.529
+  direct_belief    U=+0.015964 gain/random=+0.009950 CI=[+0.000919,+0.019635] p=0.02556 regret=0.384 top1=0.435 top2=0.783 conc=0.565
+  haa_full         U=+0.009076 gain/random=+0.003062 CI=[-0.005844,+0.012933] p=0.26973 regret=0.549 top1=0.261 top2=0.696 conc=0.500
+  haa_focus        U=+0.011556 gain/random=+0.005541 CI=[-0.003388,+0.015291] p=0.13448 regret=0.506 top1=0.304 top2=0.739 conc=0.507
+
+  HAA-FOCUS PAIRED COMPARISONS
+    vs policy_logp   : delta-U=+0.012023 CI=[+0.000036,+0.024782] one-sided-p=0.03574
+    vs uncertainty   : delta-U=-0.003919 CI=[-0.010248,+0.000253] one-sided-p=0.93722
+    vs q_only        : delta-U=+0.001907 CI=[-0.006375,+0.010956] one-sided-p=0.33045
+    vs direct_belief : delta-U=-0.004409 CI=[-0.013362,+0.004274] one-sided-p=0.81654
+    vs haa_full      : delta-U=+0.002479 CI=[+0.000000,+0.007438] one-sided-p=0.49637
+
+----------------------------------------------------------------------------------------------------
+ROUND2 | groups=24 systems=24 mean-candidates=3.125
+  random expected utility = +0.000663
+  oracle best utility     = +0.020354
+
+  policy_logp      U=-0.006447 gain/random=-0.007109 CI=[-0.017988,+0.001548] p=0.91234 regret=0.621 top1=0.250 top2=0.625 conc=0.403
+  uncertainty      U=-0.000539 gain/random=-0.001201 CI=[-0.012361,+0.007527] p=0.56057 regret=0.450 top1=0.417 top2=0.750 conc=0.583
+  q_only           U=+0.004030 gain/random=+0.003367 CI=[-0.004714,+0.012529] p=0.24098 regret=0.525 top1=0.375 top2=0.708 conc=0.521
+  direct_belief    U=+0.001496 gain/random=+0.000834 CI=[-0.007406,+0.009983] p=0.43361 regret=0.511 top1=0.375 top2=0.708 conc=0.562
+  haa_full         U=+0.009088 gain/random=+0.008426 CI=[+0.000177,+0.017292] p=0.03546 regret=0.352 top1=0.583 top2=0.792 conc=0.618
+  haa_focus        U=+0.009088 gain/random=+0.008426 CI=[+0.000177,+0.017292] p=0.03546 regret=0.352 top1=0.583 top2=0.792 conc=0.604
+
+  HAA-FOCUS PAIRED COMPARISONS
+    vs policy_logp   : delta-U=+0.015535 CI=[+0.002309,+0.032934] one-sided-p=0.02014
+    vs uncertainty   : delta-U=+0.009627 CI=[-0.001984,+0.026737] one-sided-p=0.11654
+    vs q_only        : delta-U=+0.005059 CI=[-0.002071,+0.013064] one-sided-p=0.11180
+    vs direct_belief : delta-U=+0.007592 CI=[-0.001937,+0.018214] one-sided-p=0.08382
+    vs haa_full      : delta-U=+0.000000 CI=[+0.000000,+0.000000] one-sided-p=1.00000
+
+----------------------------------------------------------------------------------------------------
+ROUND3 | groups=4 systems=4 mean-candidates=2.5
+  random expected utility = -0.005650
+  oracle best utility     = -0.000799
+
+  policy_logp      U=-0.005941 gain/random=-0.000291 CI=[-0.004136,+0.003554] p=0.64706 regret=0.445 top1=0.500 top2=0.750 conc=0.542
+  uncertainty      U=-0.004354 gain/random=+0.001296 CI=[-0.003554,+0.006147] p=0.35294 regret=0.500 top1=0.500 top2=1.000 conc=0.500
+  q_only           U=-0.010336 gain/random=-0.004686 CI=[-0.006544,-0.003333] p=1.00000 regret=1.000 top1=0.000 top2=0.750 conc=0.083
+  direct_belief    U=-0.004013 gain/random=+0.001637 CI=[-0.002231,+0.003961] p=0.29412 regret=0.326 top1=0.500 top2=1.000 conc=0.708
+  haa_full         U=-0.003478 gain/random=+0.002172 CI=[-0.001242,+0.004182] p=0.17647 regret=0.326 top1=0.500 top2=1.000 conc=0.625
+  haa_focus        U=-0.003478 gain/random=+0.002172 CI=[-0.001242,+0.004182] p=0.17647 regret=0.326 top1=0.500 top2=1.000 conc=0.625
+
+  HAA-FOCUS PAIRED COMPARISONS
+    vs policy_logp   : delta-U=+0.002463 CI=[-0.003019,+0.007945] one-sided-p=0.29412
+    vs uncertainty   : delta-U=+0.000875 CI=[-0.003507,+0.006134] one-sided-p=0.52941
+    vs q_only        : delta-U=+0.006858 CI=[+0.002137,+0.010073] one-sided-p=0.17647
+    vs direct_belief : delta-U=+0.000535 CI=[-0.004529,+0.006134] one-sided-p=0.52941
+    vs haa_full      : delta-U=+0.000000 CI=[+0.000000,+0.000000] one-sided-p=1.00000
+
+----------------------------------------------------------------------------------------------------
+CORE_ROUNDS2_3 | groups=28 systems=24 mean-candidates=3.0357142857142856
+  random expected utility = -0.000239
+  oracle best utility     = +0.017332
+
+  policy_logp      U=-0.006374 gain/random=-0.006135 CI=[-0.012178,+0.001686] p=0.90898 regret=0.596 top1=0.286 top2=0.643 conc=0.423
+  uncertainty      U=-0.001084 gain/random=-0.000844 CI=[-0.005393,+0.007940] p=0.34403 regret=0.457 top1=0.429 top2=0.786 conc=0.571
+  q_only           U=+0.001977 gain/random=+0.002216 CI=[-0.005609,+0.008338] p=0.37361 regret=0.593 top1=0.321 top2=0.714 conc=0.458
+  direct_belief    U=+0.000709 gain/random=+0.000948 CI=[-0.008189,+0.005902] p=0.62883 regret=0.485 top1=0.393 top2=0.750 conc=0.583
+  haa_full         U=+0.007293 gain/random=+0.007532 CI=[+0.000072,+0.014126] p=0.03288 regret=0.348 top1=0.571 top2=0.821 conc=0.619
+  haa_focus        U=+0.007293 gain/random=+0.007532 CI=[+0.000072,+0.014126] p=0.03288 regret=0.348 top1=0.571 top2=0.821 conc=0.607
+
+  HAA-FOCUS PAIRED COMPARISONS
+    vs policy_logp   : delta-U=+0.012073 CI=[+0.002646,+0.022903] one-sided-p=0.01480
+    vs uncertainty   : delta-U=+0.005667 CI=[-0.001978,+0.015146] one-sided-p=0.12574
+    vs q_only        : delta-U=+0.005900 CI=[-0.001045,+0.013753] one-sided-p=0.07466
+    vs direct_belief : delta-U=+0.008273 CI=[-0.000867,+0.018679] one-sided-p=0.06124
+    vs haa_full      : delta-U=+0.000000 CI=[+0.000000,+0.000000] one-sided-p=1.00000
+
+====================================================================================================
+DECISION
+====================================================================================================
+VERDICT: STRONG_GO
+Explicit hypothesis-conditioned acquisition adds value beyond random, q-only informativeness, and a direct q+belief utility predictor.
+
+Interpretation rule:
+STRONG_GO = HAA-focus improves probe selection beyond random, q-only, and the direct q+belief utility predictor.
+PARTIAL_GO = useful active ranking exists, but explicit hypothesis modeling is not yet justified over direct utility learning.
+NO_GO = do not spend new black-box queries on this version.
+====================================================================================================

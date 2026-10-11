@@ -1,0 +1,184 @@
+{
+  "qwen_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "qwen_layer": 24,
+  "mistral_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "mistral_layers_tested": [
+    1,
+    5,
+    10,
+    14,
+    19,
+    23,
+    28,
+    32
+  ],
+  "best_mistral_layer_train_only": 32,
+  "train": {
+    "qwen": {
+      "name": "qwen_L24",
+      "global_spearman": 0.13102585929288932,
+      "mean_within_system_spearman": 0.16229678890087745,
+      "selected_mean_reward": 0.2876102902987511,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.3208083629861121,
+      "selected_positive_fraction": 0.75
+    },
+    "mistral_layers": [
+      {
+        "name": "mistral_L01",
+        "global_spearman": 0.10246021565426977,
+        "mean_within_system_spearman": 0.12800101114838439,
+        "selected_mean_reward": 0.06856172861830064,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.09937873291792823,
+        "selected_positive_fraction": 0.4583333333333333,
+        "layer": 1
+      },
+      {
+        "name": "mistral_L05",
+        "global_spearman": 0.13201901559105955,
+        "mean_within_system_spearman": 0.14807087356781345,
+        "selected_mean_reward": 0.129023364055488,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.1604975892366668,
+        "selected_positive_fraction": 0.625,
+        "layer": 5
+      },
+      {
+        "name": "mistral_L10",
+        "global_spearman": 0.13756048689031078,
+        "mean_within_system_spearman": 0.16390489847781708,
+        "selected_mean_reward": 0.1293452584226684,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.16082298261108102,
+        "selected_positive_fraction": 0.5833333333333334,
+        "layer": 10
+      },
+      {
+        "name": "mistral_L14",
+        "global_spearman": 0.14370568041915727,
+        "mean_within_system_spearman": 0.17896656291175708,
+        "selected_mean_reward": 0.29359994768679387,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.32686312823768343,
+        "selected_positive_fraction": 0.8333333333333334,
+        "layer": 14
+      },
+      {
+        "name": "mistral_L19",
+        "global_spearman": 0.12018748977137365,
+        "mean_within_system_spearman": 0.13847224693457927,
+        "selected_mean_reward": 0.10792888340883133,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.13917381057208167,
+        "selected_positive_fraction": 0.625,
+        "layer": 19
+      },
+      {
+        "name": "mistral_L23",
+        "global_spearman": 0.09364380672785036,
+        "mean_within_system_spearman": 0.11748345979730096,
+        "selected_mean_reward": 0.24789980622203234,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.28066622403993746,
+        "selected_positive_fraction": 0.6666666666666666,
+        "layer": 23
+      },
+      {
+        "name": "mistral_L28",
+        "global_spearman": 0.10922246486161541,
+        "mean_within_system_spearman": 0.13138867530759105,
+        "selected_mean_reward": 0.3716788712428012,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.40579077344336156,
+        "selected_positive_fraction": 0.8333333333333334,
+        "layer": 28
+      },
+      {
+        "name": "mistral_L32",
+        "global_spearman": 0.15662626683363154,
+        "mean_within_system_spearman": 0.18920427442157536,
+        "selected_mean_reward": 0.13255594759716113,
+        "random_mean_reward": -0.029748368818048144,
+        "oracle_mean_reward": 0.9594984705186741,
+        "headroom_capture": 0.1640685721311299,
+        "selected_positive_fraction": 0.625,
+        "layer": 32
+      }
+    ],
+    "consensus": {
+      "name": "qwen_mistral_mean_rank",
+      "global_spearman": 0.1815069256906127,
+      "mean_within_system_spearman": 0.22404627786251638,
+      "selected_mean_reward": 0.18767342190458858,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.2197851760319147,
+      "selected_positive_fraction": 0.75
+    },
+    "agreement": {
+      "name": "qwen_mistral_agreement_rank",
+      "global_spearman": 0.18242928274374956,
+      "mean_within_system_spearman": 0.22396624179218708,
+      "selected_mean_reward": 0.19800033387888552,
+      "random_mean_reward": -0.029748368818048144,
+      "oracle_mean_reward": 0.9594984705186741,
+      "headroom_capture": 0.23022434203543815,
+      "selected_positive_fraction": 0.75
+    }
+  },
+  "external_dev": {
+    "rows": 46,
+    "systems": 8,
+    "results": [
+      {
+        "name": "qwen_L24",
+        "global_spearman": 0.17336346192792243,
+        "mean_within_system_spearman": 0.17500000000000002,
+        "selected_mean_reward": 0.25707427643153535,
+        "random_mean_reward": 0.07052446777099379,
+        "oracle_mean_reward": 0.5311678260761323,
+        "headroom_capture": 0.40497665991955445,
+        "selected_positive_fraction": 0.625
+      },
+      {
+        "name": "mistral_L32",
+        "global_spearman": 0.09801511820206533,
+        "mean_within_system_spearman": 0.10714285714285719,
+        "selected_mean_reward": 0.19359798161226557,
+        "random_mean_reward": 0.07052446777099379,
+        "oracle_mean_reward": 0.5311678260761323,
+        "headroom_capture": 0.26717744133791604,
+        "selected_positive_fraction": 0.5
+      },
+      {
+        "name": "qwen_mistral_mean_rank",
+        "global_spearman": 0.13571932763876832,
+        "mean_within_system_spearman": 0.07239095326064239,
+        "selected_mean_reward": 0.3699462043208749,
+        "random_mean_reward": 0.07052446777099379,
+        "oracle_mean_reward": 0.5311678260761323,
+        "headroom_capture": 0.650007714539843,
+        "selected_positive_fraction": 0.875
+      },
+      {
+        "name": "qwen_mistral_agreement_rank",
+        "global_spearman": 0.12017243624839595,
+        "mean_within_system_spearman": 0.07711105283905934,
+        "selected_mean_reward": 0.3699462043208749,
+        "random_mean_reward": 0.07052446777099379,
+        "oracle_mean_reward": 0.5311678260761323,
+        "headroom_capture": 0.650007714539843,
+        "selected_positive_fraction": 0.875
+      }
+    ]
+  }
+}

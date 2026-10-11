@@ -1,0 +1,83 @@
+{
+  "system_id": "mas01_code_plan_research",
+  "true_roles": [
+    "code",
+    "planning",
+    "research"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.21643480610558763,
+    "4": 0.24433387559561592,
+    "5": 0.24922945342731145,
+    "6": 0.29000186487148516
+  },
+  "final_role_probs": {
+    "code": 0.2042585633814143,
+    "writing": 0.22722210035153953,
+    "math": 0.2016752916209174,
+    "planning": 0.1984011283417413,
+    "research": 0.3219848365086293,
+    "data": 0.19251696966745158,
+    "design": 0.24397236699626637,
+    "operations": 0.2329451844107563,
+    "qa_testing": 0.23680339511783216,
+    "translation": 0.3008907910992402,
+    "financial_analysis": 0.20846776037912,
+    "database_design": 0.20570912522301213,
+    "accessibility_review": 0.19657836292003197,
+    "fact_checking": 0.19603674034920576,
+    "requirements_analysis": 0.32253850734290174,
+    "incident_management": 0.2621169901777941,
+    "experiment_design": 0.3003239353550123,
+    "risk_assessment": 0.1493441255997206,
+    "documentation": 0.1966315654797512,
+    "customer_support_triage": 0.2143806367423564
+  },
+  "belief_auc": 0.5294117647058822,
+  "present_vs_absent_correct": 27,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.5294117647058824,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "requirements_analysis",
+    "research",
+    "translation"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.1984011283417413,
+  "max_false_belief": 0.32253850734290174,
+  "ranking": [
+    "requirements_analysis",
+    "research",
+    "translation",
+    "experiment_design",
+    "incident_management",
+    "design",
+    "qa_testing",
+    "operations",
+    "writing",
+    "customer_support_triage",
+    "financial_analysis",
+    "database_design",
+    "code",
+    "math",
+    "planning",
+    "documentation",
+    "accessibility_review",
+    "fact_checking",
+    "data",
+    "risk_assessment"
+  ],
+  "predicted_k": 6,
+  "predicted_k_correct": false
+}

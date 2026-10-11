@@ -1,0 +1,5750 @@
+{
+  "known_pairs": [
+    {
+      "minus_roles": [
+        "documentation",
+        "incident_management",
+        "experiment_design"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "ab28781c61255c25",
+      "plus_roles": [
+        "documentation",
+        "incident_management",
+        "math"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "incident_management",
+        "math"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "customer_support_triage",
+        "math"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "c6119355df1de8cf",
+      "plus_roles": [
+        "documentation",
+        "incident_management",
+        "math"
+      ],
+      "sham_roles": [
+        "code",
+        "incident_management",
+        "math"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "code",
+        "incident_management",
+        "math"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "b1c7b42e7492848e",
+      "plus_roles": [
+        "documentation",
+        "incident_management",
+        "math"
+      ],
+      "sham_roles": [
+        "documentation",
+        "incident_management",
+        "customer_support_triage"
+      ],
+      "target": "documentation"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "data",
+        "customer_support_triage",
+        "planning"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "6f315ef67c01c955",
+      "plus_roles": [
+        "requirements_analysis",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "sham_roles": [
+        "requirements_analysis",
+        "math",
+        "writing",
+        "planning"
+      ],
+      "target": "writing"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "data",
+        "writing",
+        "risk_assessment"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "bf6bd0b30760b9e6",
+      "plus_roles": [
+        "requirements_analysis",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "sham_roles": [
+        "customer_support_triage",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "target": "planning"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "financial_analysis",
+        "writing",
+        "planning"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "f611e56e91c5656f",
+      "plus_roles": [
+        "requirements_analysis",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "sham_roles": [
+        "requirements_analysis",
+        "data",
+        "incident_management",
+        "planning"
+      ],
+      "target": "data"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "e98555ec8f5f3d76",
+      "plus_roles": [
+        "requirements_analysis",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "sham_roles": [
+        "requirements_analysis",
+        "data",
+        "code",
+        "planning"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "documentation"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "a7f7b0089054d37b",
+      "plus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "target": "translation"
+    },
+    {
+      "minus_roles": [
+        "incident_management",
+        "requirements_analysis",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "a5d3e66151b73569",
+      "plus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "sham_roles": [
+        "documentation",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "target": "database_design"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "34786a657270e349",
+      "plus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "sham_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "code"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "financial_analysis",
+        "translation"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "34359a199a9e8d5a",
+      "plus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "sham_roles": [
+        "incident_management",
+        "database_design",
+        "research",
+        "risk_assessment",
+        "translation"
+      ],
+      "target": "risk_assessment"
+    },
+    {
+      "minus_roles": [
+        "incident_management",
+        "database_design",
+        "operations",
+        "risk_assessment",
+        "translation"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "11fc1b1e880414bb",
+      "plus_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "sham_roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "financial_analysis",
+        "translation"
+      ],
+      "target": "customer_support_triage"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "planning",
+        "customer_support_triage",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "0c31b08fdf918e64",
+      "plus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "accessibility_review"
+      ],
+      "target": "writing"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "accessibility_review",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "3eb0102517cbbbab",
+      "plus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "target": "planning"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "10971d481442ec35",
+      "plus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "design",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "target": "research"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "accessibility_review",
+        "requirements_analysis",
+        "research"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "fbbe83d004027131",
+      "plus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "planning",
+        "experiment_design",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "target": "data"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "design",
+        "research"
+      ],
+      "negative_replacement": "design",
+      "pair_id": "1ca2d9823e81da9f",
+      "plus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "documentation",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "69a6e3ffbf6e903a",
+      "plus_roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "planning",
+        "customer_support_triage",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "target": "risk_assessment"
+    },
+    {
+      "minus_roles": [
+        "code",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "c9f5b166a3447fe8",
+      "plus_roles": [
+        "qa_testing",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "incident_management",
+        "accessibility_review"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "fact_checking",
+        "design"
+      ],
+      "negative_replacement": "design",
+      "pair_id": "d57791262fd6c435",
+      "plus_roles": [
+        "qa_testing",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "sham_roles": [
+        "database_design",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "target": "accessibility_review"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "data",
+        "accessibility_review"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "2e1681313a45011d",
+      "plus_roles": [
+        "qa_testing",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "sham_roles": [
+        "database_design",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "target": "fact_checking"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "c924fdd9c22ae50c",
+      "plus_roles": [
+        "math",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "sham_roles": [
+        "math",
+        "customer_support_triage",
+        "risk_assessment",
+        "operations"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "customer_support_triage",
+        "translation",
+        "accessibility_review"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "f0aa30dcba8e1bc8",
+      "plus_roles": [
+        "math",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "target": "operations"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "customer_support_triage",
+        "writing",
+        "operations"
+      ],
+      "negative_replacement": "writing",
+      "pair_id": "7d5210e429e0b371",
+      "plus_roles": [
+        "math",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "sham_roles": [
+        "fact_checking",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "target": "translation"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "incident_management",
+        "translation",
+        "operations"
+      ],
+      "negative_replacement": "incident_management",
+      "pair_id": "a6b3a858d31f62fa",
+      "plus_roles": [
+        "math",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "sham_roles": [
+        "research",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "target": "customer_support_triage"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "documentation",
+        "writing"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "3065f9de24467092",
+      "plus_roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "sham_roles": [
+        "accessibility_review",
+        "qa_testing",
+        "code",
+        "writing"
+      ],
+      "target": "code"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "code",
+        "documentation"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "d15d1eee61e40096",
+      "plus_roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "target": "writing"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "fc32dae6235cd263",
+      "plus_roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "sham_roles": [
+        "accessibility_review",
+        "research",
+        "code",
+        "writing"
+      ],
+      "target": "accessibility_review"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "qa_testing",
+        "code",
+        "writing"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "f0d4b696261ecb4a",
+      "plus_roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "data",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "fd95fd40ab35ca7e",
+      "plus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "database_design"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "accessibility_review",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "54b181256a10285f",
+      "plus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "math",
+        "design",
+        "incident_management",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "target": "design"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "design",
+        "data",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "0966f97ddb397a2a",
+      "plus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "experiment_design"
+      ],
+      "target": "fact_checking"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "incident_management",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "incident_management",
+      "pair_id": "a2e5da65250fe083",
+      "plus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "math",
+        "design",
+        "requirements_analysis",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "target": "risk_assessment"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "operations"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "72b5ed85f8322c09",
+      "plus_roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "target": "customer_support_triage"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "negative_replacement": "translation",
+      "pair_id": "64420ac475395b66",
+      "plus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "sham_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "database_design"
+      ],
+      "target": "writing"
+    },
+    {
+      "minus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "data"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "3cc5a0b29c0894c4",
+      "plus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "sham_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "fact_checking",
+        "research"
+      ],
+      "target": "research"
+    },
+    {
+      "minus_roles": [
+        "writing",
+        "requirements_analysis",
+        "documentation",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "70c82b6f2c19381a",
+      "plus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "sham_roles": [
+        "writing",
+        "math",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "code",
+        "research"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "8d24603602294149",
+      "plus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "target": "accessibility_review"
+    },
+    {
+      "minus_roles": [
+        "writing",
+        "code",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "8eaae9e2b9728584",
+      "plus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "sham_roles": [
+        "writing",
+        "requirements_analysis",
+        "documentation",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "customer_support_triage",
+        "accessibility_review",
+        "research"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "76da85926aab98cd",
+      "plus_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "sham_roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "translation"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "financial_analysis",
+        "fact_checking"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "635c0c165397dd74",
+      "plus_roles": [
+        "translation",
+        "financial_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "code",
+        "financial_analysis",
+        "research"
+      ],
+      "target": "research"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "financial_analysis",
+        "research"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "2ed82cb8d292180c",
+      "plus_roles": [
+        "translation",
+        "financial_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "translation",
+        "planning",
+        "research"
+      ],
+      "target": "translation"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "data",
+        "research"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "42d80b426844b5d0",
+      "plus_roles": [
+        "translation",
+        "financial_analysis",
+        "research"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "financial_analysis",
+        "research"
+      ],
+      "target": "financial_analysis"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "financial_analysis",
+        "design"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "d8ada933de17a4fb",
+      "plus_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "sham_roles": [
+        "code",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "planning"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "8e6583f3ec36836d",
+      "plus_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "data",
+        "design"
+      ],
+      "target": "design"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "6ba633f1c5460679",
+      "plus_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "fact_checking"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "documentation",
+        "math",
+        "design"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "24d177062f6b6193",
+      "plus_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "requirements_analysis",
+        "design"
+      ],
+      "target": "customer_support_triage"
+    },
+    {
+      "minus_roles": [
+        "database_design",
+        "documentation",
+        "research",
+        "experiment_design",
+        "operations"
+      ],
+      "negative_replacement": "research",
+      "pair_id": "ec7494cc9d50afb0",
+      "plus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "sham_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "qa_testing",
+        "operations"
+      ],
+      "target": "data"
+    },
+    {
+      "minus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "planning"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "0664c9a8d69f372e",
+      "plus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "sham_roles": [
+        "database_design",
+        "fact_checking",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "target": "operations"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "a43701d7d55bd23a",
+      "plus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "sham_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "writing",
+        "operations"
+      ],
+      "target": "database_design"
+    },
+    {
+      "minus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "math",
+        "operations"
+      ],
+      "negative_replacement": "math",
+      "pair_id": "6bf3970281b88159",
+      "plus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "sham_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "research"
+      ],
+      "target": "experiment_design"
+    },
+    {
+      "minus_roles": [
+        "database_design",
+        "writing",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "negative_replacement": "writing",
+      "pair_id": "77999f9dbea28838",
+      "plus_roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "sham_roles": [
+        "math",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "target": "documentation"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "data",
+        "risk_assessment",
+        "documentation",
+        "incident_management"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "840a1dd39f914f43",
+      "plus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "data",
+        "planning",
+        "writing",
+        "incident_management"
+      ],
+      "target": "planning"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "financial_analysis",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "3b1e278f98b3d396",
+      "plus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "fact_checking"
+      ],
+      "target": "data"
+    },
+    {
+      "minus_roles": [
+        "writing",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "negative_replacement": "writing",
+      "pair_id": "a42aed665045d461",
+      "plus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "data",
+        "planning",
+        "operations",
+        "incident_management"
+      ],
+      "target": "translation"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "operations"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "06a2fc8b95fb07dc",
+      "plus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "data",
+        "planning",
+        "database_design",
+        "incident_management"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "writing",
+        "incident_management"
+      ],
+      "negative_replacement": "writing",
+      "pair_id": "7cfce3781d12572c",
+      "plus_roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "math",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "target": "documentation"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "data",
+        "experiment_design"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "70bf91b47fb64744",
+      "plus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "sham_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "target": "financial_analysis"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "data",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "5b76b5564b367ade",
+      "plus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "sham_roles": [
+        "fact_checking",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "target": "database_design"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "database_design",
+        "design",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "negative_replacement": "design",
+      "pair_id": "cfdc30cfa421660e",
+      "plus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "sham_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "code",
+        "experiment_design"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "math"
+      ],
+      "negative_replacement": "math",
+      "pair_id": "855452a77d2ddfa7",
+      "plus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "sham_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "accessibility_review",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "target": "experiment_design"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "eb657f30e4748a9a",
+      "plus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "sham_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "writing"
+      ],
+      "target": "documentation"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "accessibility_review",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "9dd4924ef7bd7f04",
+      "plus_roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "sham_roles": [
+        "documentation",
+        "research",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "target": "customer_support_triage"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "data",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "9377beb930c823cd",
+      "plus_roles": [
+        "operations",
+        "data",
+        "writing"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "data",
+        "writing"
+      ],
+      "target": "writing"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "research",
+        "writing"
+      ],
+      "negative_replacement": "research",
+      "pair_id": "e7152582d4c0716c",
+      "plus_roles": [
+        "operations",
+        "data",
+        "writing"
+      ],
+      "sham_roles": [
+        "translation",
+        "data",
+        "writing"
+      ],
+      "target": "data"
+    },
+    {
+      "minus_roles": [
+        "incident_management",
+        "data",
+        "writing"
+      ],
+      "negative_replacement": "incident_management",
+      "pair_id": "17479bfdc5098b1c",
+      "plus_roles": [
+        "operations",
+        "data",
+        "writing"
+      ],
+      "sham_roles": [
+        "operations",
+        "financial_analysis",
+        "writing"
+      ],
+      "target": "operations"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "8ecd7bcef3858f72",
+      "plus_roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "accessibility_review",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "target": "translation"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "customer_support_triage",
+        "math",
+        "incident_management"
+      ],
+      "negative_replacement": "math",
+      "pair_id": "245333a470e053f2",
+      "plus_roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "code"
+      ],
+      "target": "financial_analysis"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "operations"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "027d9af402edd791",
+      "plus_roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "code",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "translation",
+        "operations",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "4d0d560cb69a3bcd",
+      "plus_roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "sham_roles": [
+        "translation",
+        "customer_support_triage",
+        "experiment_design",
+        "incident_management"
+      ],
+      "target": "customer_support_triage"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "operations"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "1337fd2b86b1d854",
+      "plus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "sham_roles": [
+        "documentation",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "target": "planning"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "requirements_analysis",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "2e4f8b8fdce1437a",
+      "plus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "design",
+        "translation",
+        "experiment_design",
+        "planning"
+      ],
+      "target": "design"
+    },
+    {
+      "minus_roles": [
+        "documentation",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "f46a9d4fbc6e9b44",
+      "plus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "design",
+        "data",
+        "experiment_design",
+        "planning"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "design",
+        "code",
+        "experiment_design",
+        "planning"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "7346a146b07ce2d4",
+      "plus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "research",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "target": "accessibility_review"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "math",
+        "planning"
+      ],
+      "negative_replacement": "math",
+      "pair_id": "475ed8338b9cba7a",
+      "plus_roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "sham_roles": [
+        "qa_testing",
+        "data",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "target": "experiment_design"
+    },
+    {
+      "minus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "translation",
+        "operations"
+      ],
+      "negative_replacement": "translation",
+      "pair_id": "af95e0a11faa9c25",
+      "plus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "sham_roles": [
+        "design",
+        "database_design",
+        "math",
+        "fact_checking",
+        "writing",
+        "operations"
+      ],
+      "target": "writing"
+    },
+    {
+      "minus_roles": [
+        "design",
+        "database_design",
+        "financial_analysis",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "0ee7e6a36ddf4eba",
+      "plus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "sham_roles": [
+        "design",
+        "database_design",
+        "math",
+        "translation",
+        "writing",
+        "operations"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "c0d7a08122904b57",
+      "plus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "sham_roles": [
+        "design",
+        "database_design",
+        "experiment_design",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "target": "design"
+    },
+    {
+      "minus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "f18b5d0bb8768b16",
+      "plus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "sham_roles": [
+        "design",
+        "database_design",
+        "planning",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "target": "operations"
+    },
+    {
+      "minus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "documentation",
+        "writing",
+        "operations"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "dc2d6d3aaab7ff53",
+      "plus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "sham_roles": [
+        "fact_checking",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "design",
+        "code",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "6a269190fa5eb177",
+      "plus_roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "sham_roles": [
+        "fact_checking",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "target": "database_design"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "documentation"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "351d39d7a213900c",
+      "plus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "sham_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "qa_testing",
+        "requirements_analysis",
+        "code"
+      ],
+      "target": "code"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "incident_management",
+        "data",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "2bfaa5ef25d17458",
+      "plus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "sham_roles": [
+        "translation",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "customer_support_triage",
+        "requirements_analysis",
+        "code"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "dd647efe470577ff",
+      "plus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "sham_roles": [
+        "translation",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "target": "planning"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "4b4f5675b78a4151",
+      "plus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "sham_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "design"
+      ],
+      "target": "operations"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "accessibility_review",
+        "code"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "11cf6db9152e391c",
+      "plus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "sham_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "qa_testing",
+        "requirements_analysis",
+        "code"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "accessibility_review",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "dd7776ba57ccc1c2",
+      "plus_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "sham_roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "financial_analysis",
+        "code"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "code",
+        "fact_checking"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "89bd5c82525776f6",
+      "plus_roles": [
+        "financial_analysis",
+        "qa_testing",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "qa_testing",
+        "risk_assessment"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "qa_testing",
+        "fact_checking"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "f57a84c6549d71d7",
+      "plus_roles": [
+        "financial_analysis",
+        "qa_testing",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "qa_testing",
+        "customer_support_triage"
+      ],
+      "target": "financial_analysis"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "qa_testing",
+        "documentation"
+      ],
+      "negative_replacement": "documentation",
+      "pair_id": "3d6a8fbc08bac603",
+      "plus_roles": [
+        "financial_analysis",
+        "qa_testing",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "math",
+        "qa_testing",
+        "fact_checking"
+      ],
+      "target": "fact_checking"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "accessibility_review",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "c106269183f079ec",
+      "plus_roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "incident_management",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "target": "design"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "b47160c574f16cc5",
+      "plus_roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "operations",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "target": "qa_testing"
+    },
+    {
+      "minus_roles": [
+        "math",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "negative_replacement": "math",
+      "pair_id": "7c72ac8dc79ad754",
+      "plus_roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "requirements_analysis"
+      ],
+      "target": "financial_analysis"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "design",
+        "planning",
+        "qa_testing"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "2e5058947c6ac59e",
+      "plus_roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "research",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "target": "risk_assessment"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "bb873bf6489de952",
+      "plus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "fact_checking",
+        "planning"
+      ],
+      "target": "planning"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "research",
+      "pair_id": "3aef6cc8b69ea891",
+      "plus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "customer_support_triage",
+        "data",
+        "planning"
+      ],
+      "target": "data"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "design",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "negative_replacement": "design",
+      "pair_id": "a36dfa3be6e6a11c",
+      "plus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "database_design",
+        "planning"
+      ],
+      "target": "accessibility_review"
+    },
+    {
+      "minus_roles": [
+        "code",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "317c2e5828dfe4db",
+      "plus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "fact_checking",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "target": "experiment_design"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "code",
+        "data",
+        "planning"
+      ],
+      "negative_replacement": "code",
+      "pair_id": "1170a35c5f15401c",
+      "plus_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "qa_testing"
+      ],
+      "target": "documentation"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "database_design"
+      ],
+      "negative_replacement": "database_design",
+      "pair_id": "bd4e223602a9ceac",
+      "plus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "math",
+        "research",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "target": "code"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "experiment_design",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "53c5295cfabb47a7",
+      "plus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "sham_roles": [
+        "fact_checking",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "target": "math"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "accessibility_review",
+        "documentation",
+        "code"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "c40788b0bb671e38",
+      "plus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "math",
+        "operations",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "target": "translation"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "math",
+        "operations",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "94b99cbaba9dbd63",
+      "plus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "financial_analysis",
+        "code"
+      ],
+      "target": "incident_management"
+    },
+    {
+      "minus_roles": [
+        "planning",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "1b816b32275fd4ac",
+      "plus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "data",
+        "code"
+      ],
+      "target": "risk_assessment"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "requirements_analysis",
+        "code"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "b3c55df7ab3a7a47",
+      "plus_roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "writing",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "target": "documentation"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "accessibility_review",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "0452321f69d3f069",
+      "plus_roles": [
+        "requirements_analysis",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "code",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "target": "database_design"
+    },
+    {
+      "minus_roles": [
+        "planning",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "9f6076fd34101b3c",
+      "plus_roles": [
+        "requirements_analysis",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "requirements_analysis",
+        "operations",
+        "customer_support_triage"
+      ],
+      "target": "requirements_analysis"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "database_design",
+        "operations"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "14cb73a9aa91a3c5",
+      "plus_roles": [
+        "requirements_analysis",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "sham_roles": [
+        "requirements_analysis",
+        "financial_analysis",
+        "customer_support_triage"
+      ],
+      "target": "customer_support_triage"
+    }
+  ],
+  "known_per_mode": 6,
+  "known_seed": 24681357,
+  "known_specs": [
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "documentation",
+        "incident_management",
+        "math"
+      ],
+      "system_id": "v112eval_known_24681357_000_single_k3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "requirements_analysis",
+        "data",
+        "writing",
+        "planning"
+      ],
+      "system_id": "v112eval_known_24681357_001_single_k4"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "incident_management",
+        "database_design",
+        "customer_support_triage",
+        "risk_assessment",
+        "translation"
+      ],
+      "system_id": "v112eval_known_24681357_002_single_k5"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "risk_assessment",
+        "planning",
+        "writing",
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "system_id": "v112eval_known_24681357_003_single_k6"
+    },
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "qa_testing",
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "system_id": "v112eval_known_24681357_004_single_k3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "math",
+        "customer_support_triage",
+        "translation",
+        "operations"
+      ],
+      "system_id": "v112eval_known_24681357_005_single_k4"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "requirements_analysis",
+        "code",
+        "writing"
+      ],
+      "system_id": "v112eval_known_24681357_006_fanout2_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "math",
+        "design",
+        "fact_checking",
+        "risk_assessment",
+        "customer_support_triage"
+      ],
+      "system_id": "v112eval_known_24681357_007_fanout2_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "writing",
+        "requirements_analysis",
+        "qa_testing",
+        "incident_management",
+        "accessibility_review",
+        "research"
+      ],
+      "system_id": "v112eval_known_24681357_008_fanout2_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "translation",
+        "financial_analysis",
+        "research"
+      ],
+      "system_id": "v112eval_known_24681357_009_fanout2_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "qa_testing",
+        "customer_support_triage",
+        "math",
+        "design"
+      ],
+      "system_id": "v112eval_known_24681357_010_fanout2_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "database_design",
+        "documentation",
+        "data",
+        "experiment_design",
+        "operations"
+      ],
+      "system_id": "v112eval_known_24681357_011_fanout2_k5"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "translation",
+        "data",
+        "planning",
+        "documentation",
+        "incident_management"
+      ],
+      "system_id": "v112eval_known_24681357_012_fanout3_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "documentation",
+        "database_design",
+        "requirements_analysis",
+        "customer_support_triage",
+        "financial_analysis",
+        "experiment_design"
+      ],
+      "system_id": "v112eval_known_24681357_013_fanout3_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "operations",
+        "data",
+        "writing"
+      ],
+      "system_id": "v112eval_known_24681357_014_fanout3_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "translation",
+        "customer_support_triage",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "system_id": "v112eval_known_24681357_015_fanout3_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "qa_testing",
+        "design",
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "system_id": "v112eval_known_24681357_016_fanout3_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "design",
+        "database_design",
+        "math",
+        "qa_testing",
+        "writing",
+        "operations"
+      ],
+      "system_id": "v112eval_known_24681357_017_fanout3_k6"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "operations",
+        "incident_management",
+        "math",
+        "planning",
+        "requirements_analysis",
+        "code"
+      ],
+      "system_id": "v112eval_known_24681357_018_mixed_k6"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "financial_analysis",
+        "qa_testing",
+        "fact_checking"
+      ],
+      "system_id": "v112eval_known_24681357_019_mixed_k3"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "financial_analysis",
+        "design",
+        "risk_assessment",
+        "qa_testing"
+      ],
+      "system_id": "v112eval_known_24681357_020_mixed_k4"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "experiment_design",
+        "accessibility_review",
+        "documentation",
+        "data",
+        "planning"
+      ],
+      "system_id": "v112eval_known_24681357_021_mixed_k5"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "risk_assessment",
+        "math",
+        "incident_management",
+        "translation",
+        "documentation",
+        "code"
+      ],
+      "system_id": "v112eval_known_24681357_022_mixed_k6"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "requirements_analysis",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "system_id": "v112eval_known_24681357_023_mixed_k3"
+    }
+  ],
+  "notes": {
+    "known": "fresh synthetic compositions generated after V11/V11.2 training design; composition-disjoint from V11 train",
+    "unseen": "the six V11 unseen role types; this is development regression, not a pristine final-paper test"
+  },
+  "sha256": "e9dc3a537b54660c2d57fc78e0526134e2b811af5f8dc39441e11a109fd77fbf",
+  "unseen_pairs": [
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "spreadsheet_audit",
+        "inventory_forecasting"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "37732a15a1e48da5",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "code",
+        "inventory_forecasting"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "financial_analysis",
+        "inventory_forecasting"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "f35fe61b2a8f99fa",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting"
+      ],
+      "sham_roles": [
+        "requirements_analysis",
+        "spreadsheet_audit",
+        "inventory_forecasting"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "data"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "1f96d8c1a1fd9392",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "documentation",
+        "inventory_forecasting"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "caa17bb82b8ad10a",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "accessibility_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "experiment_design",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "6b97a0c0ca7faaaf",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "financial_analysis",
+        "qa_testing"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "financial_analysis",
+        "qa_testing"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "75ecd7ce6a23e537",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "code",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "operations",
+        "fact_checking"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "d7eb3809f69c3562",
+      "plus_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "operations",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "documentation",
+        "fact_checking"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "accessibility_review",
+        "operations",
+        "fact_checking"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "142ae3f962667a58",
+      "plus_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "operations",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "data",
+        "scientific_peer_review",
+        "operations",
+        "fact_checking"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "3d7c7b77be14fb3f",
+      "plus_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "operations",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "customer_support_triage",
+        "fact_checking"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "5e34085878c59cb4",
+      "plus_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "documentation",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "qa_testing",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "35923ae2cb9d1388",
+      "plus_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "data",
+        "experiment_design",
+        "requirements_analysis"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "research",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "research",
+      "pair_id": "e78128e6b8882f80",
+      "plus_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "qa_testing",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "fact_checking"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "bfc73e94363a69ca",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "legal_contract_review"
+      ],
+      "sham_roles": [
+        "writing",
+        "procurement_analysis",
+        "legal_contract_review"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "risk_assessment",
+        "legal_contract_review"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "8836e544feaab88e",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "legal_contract_review"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "financial_analysis"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "procurement_analysis",
+        "legal_contract_review"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "7d66a94de0fef301",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "legal_contract_review"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "financial_analysis",
+        "design"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "db9f3ad94bfc035e",
+      "plus_roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "legal_contract_review"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "experiment_design",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "580336d624a6d0d1",
+      "plus_roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "sham_roles": [
+        "code",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "data",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "bf0b9edc4d9131b3",
+      "plus_roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "requirements_analysis"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "de34c91632f04838",
+      "plus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "documentation"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "risk_assessment",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "9dc38879a2f33ab5",
+      "plus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "spreadsheet_audit"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "operations",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "c59fad7137f2e490",
+      "plus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "writing"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "2f82c8be707de51b",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "design",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "customer_support_triage",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "997d514c081bc618",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "accessibility_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "5c8deb4ae4bbddb3",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "operations",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "requirements_analysis",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "8fac435745a82587",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "database_design",
+        "code"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "data",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "1aa6791f11bc0c3e",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "research",
+        "risk_assessment",
+        "code"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "operations",
+        "risk_assessment",
+        "code"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "001d99cd6381c35a",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "sham_roles": [
+        "data",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "fact_checking",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "5c2fd23aa106df8b",
+      "plus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "database_design",
+        "operations",
+        "code"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "requirements_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "6008c3da56bc335f",
+      "plus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "spreadsheet_audit"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "customer_support_triage",
+        "math",
+        "operations",
+        "code"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "603d5d3e44a5e24a",
+      "plus_roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "sham_roles": [
+        "data",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "fact_checking",
+        "travel_itinerary"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "6b4bf4f03ed1a379",
+      "plus_roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "travel_itinerary"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "math"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "operations"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "f337036676b8edf5",
+      "plus_roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "travel_itinerary"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "documentation",
+        "travel_itinerary"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "legal_contract_review",
+        "travel_itinerary"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "9de92ae131953096",
+      "plus_roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "travel_itinerary"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "translation"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "requirements_analysis",
+        "risk_assessment"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "378a44631dc67f36",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "procurement_analysis",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "procurement_analysis",
+        "incident_management"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "scientific_peer_review",
+        "procurement_analysis",
+        "risk_assessment"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "413f89e2dc45d564",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "procurement_analysis",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "risk_assessment"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "fact_checking",
+        "procurement_analysis",
+        "risk_assessment"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "0c23f520c665bc3b",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "procurement_analysis",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "financial_analysis",
+        "risk_assessment"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "requirements_analysis",
+        "design",
+        "planning"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "9ec609c91500a67c",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "planning"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "operations"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "planning"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "7ec2089004944a34",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "planning"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "operations"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "financial_analysis",
+        "legal_contract_review",
+        "design",
+        "planning"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "610a519f49bb7d41",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "planning"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "math",
+        "design",
+        "planning"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "planning",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "2b04e88ec9039163",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "incident_management",
+        "writing",
+        "risk_assessment"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "30c9aeaa9e09963a",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "fact_checking",
+        "code",
+        "risk_assessment"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "data",
+        "travel_itinerary",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "96f0b507e262c705",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "customer_support_triage",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "risk_assessment",
+        "inventory_forecasting"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "7cd8150bbb7bfea8",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "inventory_forecasting"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "qa_testing",
+        "procurement_analysis",
+        "inventory_forecasting"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "5c98aa0995b305a9",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "inventory_forecasting"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "customer_support_triage",
+        "inventory_forecasting"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "data"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "985b01eaabe8b3e5",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "inventory_forecasting"
+      ],
+      "sham_roles": [
+        "risk_assessment",
+        "procurement_analysis",
+        "inventory_forecasting"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "b2ffbc7812b82915",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "data",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "operations",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "295d92797c143fa7",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "research",
+        "fact_checking"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "travel_itinerary",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "0736ac0ada6ce97d",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "financial_analysis",
+        "fact_checking"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "planning",
+        "scientific_peer_review"
+      ],
+      "negative_replacement": "planning",
+      "pair_id": "67fc672daf9da264",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "travel_itinerary",
+        "scientific_peer_review"
+      ],
+      "sham_roles": [
+        "database_design",
+        "travel_itinerary",
+        "scientific_peer_review"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "travel_itinerary",
+        "scientific_peer_review"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "990632c76cb1edc5",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "travel_itinerary",
+        "scientific_peer_review"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "travel_itinerary",
+        "customer_support_triage"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "spreadsheet_audit",
+        "travel_itinerary",
+        "fact_checking"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "687b7c8ac8e8ab48",
+      "plus_roles": [
+        "spreadsheet_audit",
+        "travel_itinerary",
+        "scientific_peer_review"
+      ],
+      "sham_roles": [
+        "spreadsheet_audit",
+        "planning",
+        "scientific_peer_review"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "customer_support_triage",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "math"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "e65a5539d762e620",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "math"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "math"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "fact_checking",
+        "inventory_forecasting",
+        "math"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "12d35ead38a366d3",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "math"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "accessibility_review"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "financial_analysis",
+        "math"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "4bade9b7d18c7507",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "math"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "research",
+        "inventory_forecasting",
+        "math"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "a13076764ee43e36",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "qa_testing",
+        "code",
+        "design"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "risk_assessment",
+        "code",
+        "design"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "d6cea2c5afec2dbb",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "sham_roles": [
+        "experiment_design",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "data",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "68b0067b255d7685",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "inventory_forecasting"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "risk_assessment",
+        "data",
+        "planning",
+        "design"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "e1a13ec16611b074",
+      "plus_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "design"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "translation"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "design"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "87ee3fec1f1cc21b",
+      "plus_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "design"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "fact_checking",
+        "planning",
+        "design"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "financial_analysis",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "design"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "81f8d7d2b7553467",
+      "plus_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "design"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "writing",
+        "planning",
+        "design"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "64b882f887d8b23d",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "spreadsheet_audit"
+      ],
+      "sham_roles": [
+        "design",
+        "inventory_forecasting",
+        "spreadsheet_audit"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "inventory_forecasting",
+        "spreadsheet_audit"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "c06b9412c5fc4736",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "spreadsheet_audit"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "procurement_analysis",
+        "spreadsheet_audit"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "operations",
+        "spreadsheet_audit"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "5d136e1defab1132",
+      "plus_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "spreadsheet_audit"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "financial_analysis",
+        "travel_itinerary",
+        "scientific_peer_review",
+        "data"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "aeac8f70edb22a2a",
+      "plus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "scientific_peer_review",
+        "data"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "scientific_peer_review",
+        "operations"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "operations",
+        "scientific_peer_review",
+        "data"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "2569580c65ffe07c",
+      "plus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "scientific_peer_review",
+        "data"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "writing",
+        "data"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "fact_checking",
+        "data"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "b57d4b4d01a9a951",
+      "plus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "scientific_peer_review",
+        "data"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "incident_management",
+        "scientific_peer_review",
+        "data"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "risk_assessment",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "e50eb0faa13f7d0a",
+      "plus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "planning"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "scientific_peer_review"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "operations",
+        "legal_contract_review",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "17f1bf8057b6b6c2",
+      "plus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "planning"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "planning"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "976a2a4c0cf5562d",
+      "plus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "planning"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "fact_checking"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "customer_support_triage",
+        "spreadsheet_audit",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "038ca4cd500c3853",
+      "plus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "qa_testing",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "879a53a38b7c8dea",
+      "plus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "research",
+        "planning"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "data",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "60f768b6dd97c2b2",
+      "plus_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "fact_checking",
+        "customer_support_triage",
+        "planning"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "d2b57708a4919522",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "operations"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "customer_support_triage",
+        "procurement_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "c67b13c8b908adeb",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "data"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "experiment_design",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "negative_replacement": "experiment_design",
+      "pair_id": "31e80e68d0213cd4",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "risk_assessment",
+        "fact_checking",
+        "operations"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "customer_support_triage",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "f179984488057e45",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "data",
+        "design",
+        "fact_checking"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "data",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "0d43cedb530ef51a",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "travel_itinerary",
+        "accessibility_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "negative_replacement": "accessibility_review",
+      "pair_id": "e607588fc29004dd",
+      "plus_roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "sham_roles": [
+        "incident_management",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "spreadsheet_audit",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "47e5a20f6f11f6c8",
+      "plus_roles": [
+        "inventory_forecasting",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "sham_roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "qa_testing",
+        "procurement_analysis"
+      ],
+      "negative_replacement": "qa_testing",
+      "pair_id": "cb6b56588a32bdff",
+      "plus_roles": [
+        "inventory_forecasting",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "sham_roles": [
+        "math",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "a9a91362275fa05f",
+      "plus_roles": [
+        "inventory_forecasting",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "risk_assessment",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "0c9f470b82b5911d",
+      "plus_roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "research"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "data",
+        "math"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "76280aa298076320",
+      "plus_roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "requirements_analysis"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "operations",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "d753d9d4f3ddd879",
+      "plus_roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "financial_analysis",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "requirements_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "33e951c5e60c3ef7",
+      "plus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "translation",
+        "risk_assessment"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "customer_support_triage",
+        "inventory_forecasting",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "negative_replacement": "customer_support_triage",
+      "pair_id": "3c8f7a3440af7823",
+      "plus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "data",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "882deb6c18908fe9",
+      "plus_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "fact_checking",
+        "planning"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "fact_checking",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "ad8d9041605dd4f9",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "database_design",
+        "math",
+        "research"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "financial_analysis",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "de5faab6459207c2",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "design",
+        "database_design",
+        "research"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "financial_analysis",
+        "design",
+        "math",
+        "research"
+      ],
+      "negative_replacement": "financial_analysis",
+      "pair_id": "2c2737c522579e02",
+      "plus_roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "sham_roles": [
+        "legal_contract_review",
+        "risk_assessment",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "target": "inventory_forecasting"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "requirements_analysis"
+      ],
+      "negative_replacement": "requirements_analysis",
+      "pair_id": "755f9be16aedf17f",
+      "plus_roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "sham_roles": [
+        "writing",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "target": "legal_contract_review"
+    },
+    {
+      "minus_roles": [
+        "risk_assessment",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "negative_replacement": "risk_assessment",
+      "pair_id": "40bcf9adcdec25f8",
+      "plus_roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "data"
+      ],
+      "target": "procurement_analysis"
+    },
+    {
+      "minus_roles": [
+        "procurement_analysis",
+        "research",
+        "legal_contract_review"
+      ],
+      "negative_replacement": "research",
+      "pair_id": "98d0af7b28cacc1f",
+      "plus_roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "sham_roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "database_design"
+      ],
+      "target": "scientific_peer_review"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "operations",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "negative_replacement": "operations",
+      "pair_id": "ce78e3d6c9a683b2",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "writing"
+      ],
+      "target": "travel_itinerary"
+    },
+    {
+      "minus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "data",
+        "code"
+      ],
+      "negative_replacement": "data",
+      "pair_id": "0a67007b198782a3",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "sham_roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "target": "spreadsheet_audit"
+    },
+    {
+      "minus_roles": [
+        "fact_checking",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "negative_replacement": "fact_checking",
+      "pair_id": "81b50eb2c1f3cdd6",
+      "plus_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "sham_roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "experiment_design"
+      ],
+      "target": "scientific_peer_review"
+    }
+  ],
+  "unseen_specs": [
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting"
+      ],
+      "system_id": "v112eval_unseen_000_single_k3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "qa_testing"
+      ],
+      "system_id": "v112eval_unseen_001_single_k4"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "procurement_analysis",
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "operations",
+        "fact_checking"
+      ],
+      "system_id": "v112eval_unseen_002_single_k5"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "data",
+        "code",
+        "requirements_analysis"
+      ],
+      "system_id": "v112eval_unseen_003_single_k6"
+    },
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "legal_contract_review"
+      ],
+      "system_id": "v112eval_unseen_004_single_k3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "inventory_forecasting",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "design"
+      ],
+      "system_id": "v112eval_unseen_005_single_k4"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "system_id": "v112eval_unseen_006_single_k5"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "math",
+        "writing"
+      ],
+      "system_id": "v112eval_unseen_007_single_k6"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "inventory_forecasting",
+        "risk_assessment",
+        "code"
+      ],
+      "system_id": "v112eval_unseen_008_fanout2_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "legal_contract_review",
+        "procurement_analysis",
+        "travel_itinerary",
+        "math",
+        "operations",
+        "code"
+      ],
+      "system_id": "v112eval_unseen_009_fanout2_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "scientific_peer_review",
+        "legal_contract_review",
+        "travel_itinerary"
+      ],
+      "system_id": "v112eval_unseen_010_fanout2_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "spreadsheet_audit",
+        "scientific_peer_review",
+        "procurement_analysis",
+        "risk_assessment"
+      ],
+      "system_id": "v112eval_unseen_011_fanout2_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "legal_contract_review",
+        "design",
+        "planning"
+      ],
+      "system_id": "v112eval_unseen_012_fanout2_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "travel_itinerary",
+        "fact_checking",
+        "writing",
+        "risk_assessment"
+      ],
+      "system_id": "v112eval_unseen_013_fanout2_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "inventory_forecasting"
+      ],
+      "system_id": "v112eval_unseen_014_fanout2_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "legal_contract_review",
+        "fact_checking"
+      ],
+      "system_id": "v112eval_unseen_015_fanout2_k4"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "spreadsheet_audit",
+        "travel_itinerary",
+        "scientific_peer_review"
+      ],
+      "system_id": "v112eval_unseen_016_fanout3_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "math"
+      ],
+      "system_id": "v112eval_unseen_017_fanout3_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "procurement_analysis",
+        "code",
+        "design"
+      ],
+      "system_id": "v112eval_unseen_018_fanout3_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "procurement_analysis",
+        "spreadsheet_audit",
+        "legal_contract_review",
+        "data",
+        "planning",
+        "design"
+      ],
+      "system_id": "v112eval_unseen_019_fanout3_k6"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "scientific_peer_review",
+        "inventory_forecasting",
+        "spreadsheet_audit"
+      ],
+      "system_id": "v112eval_unseen_020_fanout3_k3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "scientific_peer_review",
+        "data"
+      ],
+      "system_id": "v112eval_unseen_021_fanout3_k4"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "legal_contract_review",
+        "research",
+        "planning"
+      ],
+      "system_id": "v112eval_unseen_022_fanout3_k5"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "inventory_forecasting",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "fact_checking",
+        "research",
+        "planning"
+      ],
+      "system_id": "v112eval_unseen_023_fanout3_k6"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "procurement_analysis",
+        "fact_checking",
+        "operations"
+      ],
+      "system_id": "v112eval_unseen_024_mixed_k5"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "travel_itinerary",
+        "scientific_peer_review",
+        "spreadsheet_audit",
+        "writing",
+        "design",
+        "fact_checking"
+      ],
+      "system_id": "v112eval_unseen_025_mixed_k6"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "inventory_forecasting",
+        "spreadsheet_audit",
+        "procurement_analysis"
+      ],
+      "system_id": "v112eval_unseen_026_mixed_k3"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "inventory_forecasting",
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "math"
+      ],
+      "system_id": "v112eval_unseen_027_mixed_k4"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "procurement_analysis",
+        "travel_itinerary",
+        "inventory_forecasting",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "system_id": "v112eval_unseen_028_mixed_k5"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "legal_contract_review",
+        "spreadsheet_audit",
+        "inventory_forecasting",
+        "design",
+        "math",
+        "research"
+      ],
+      "system_id": "v112eval_unseen_029_mixed_k6"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "procurement_analysis",
+        "scientific_peer_review",
+        "legal_contract_review"
+      ],
+      "system_id": "v112eval_unseen_030_mixed_k3"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "scientific_peer_review",
+        "travel_itinerary",
+        "spreadsheet_audit",
+        "code"
+      ],
+      "system_id": "v112eval_unseen_031_mixed_k4"
+    }
+  ],
+  "version": "v11_2_strong_eval_v1"
+}

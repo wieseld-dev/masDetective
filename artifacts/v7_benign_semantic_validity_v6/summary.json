@@ -1,0 +1,11 @@
+{
+  "input_unique": 26747,
+  "valid_keep": 0,
+  "valid_rate": 0.0,
+  "rejected": 26747,
+  "unique_sessions_valid": 0,
+  "label_counts": {
+    "CAPABILITY": 26747
+  },
+  "selected_role_positive_counts_valid": {}
+}

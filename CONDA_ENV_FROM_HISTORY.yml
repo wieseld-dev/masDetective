@@ -1,0 +1,9 @@
+name: masdetective
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+  - nvidia
+dependencies:
+  - python=3.11
+prefix: /home/wieseld/.conda/envs/masdetective

@@ -1,0 +1,285 @@
+=============================================================================================================================
+R7 SIMPLE5 — PEAK / COLLAPSE AUDIT
+=============================================================================================================================
+
+PER-SYSTEM AUC TRAJECTORY
+-----------------------------------------------------------------------------------------------------------------------------
+SYSTEM                                       R0       R1       R2       R3       R4       R5       R6       R7       R8
+simple5_01_code_plan_research            0.5000   0.3137   0.6863   0.7059   0.7255   0.7059   0.6863   0.6667   0.6863
+simple5_02_risk_access_translation       0.5000   0.5294   0.6078   0.7843   0.8235   0.7843   0.9608   0.9412   0.8824
+simple5_03_data_db_requirements          0.5000   0.6275   0.4902   0.5490   0.5294   0.4706   0.5882   0.5882   0.5490
+simple5_04_support_incident_ops          0.5000   0.6667   0.6863   0.6863   0.5882   0.8627   0.8824   0.8235   0.9216
+simple5_05_docs_qa_writing               0.5000   0.4118   0.3529   0.4118   0.5294   0.4706   0.5882   0.4902   0.5294
+
+=============================================================================================================================
+WHO CAUSED R5 -> R6 -> R7 -> R8?
+=============================================================================================================================
+simple5_01_code_plan_research          R5→R6=-0.0196   R6→R7=-0.0196   R7→R8=+0.0196
+simple5_02_risk_access_translation     R5→R6=+0.1765   R6→R7=-0.0196   R7→R8=-0.0588
+simple5_03_data_db_requirements        R5→R6=+0.1176   R6→R7=+0.0000   R7→R8=-0.0392
+simple5_04_support_incident_ops        R5→R6=+0.0196   R6→R7=-0.0588   R7→R8=+0.0980
+simple5_05_docs_qa_writing             R5→R6=+0.1176   R6→R7=-0.0980   R7→R8=+0.0392
+
+#############################################################################################################################
+ROUND 6
+#############################################################################################################################
+
+=============================================================================================================================
+simple5_01_code_plan_research | AUC 0.7059 -> 0.6863 delta=-0.0196
+TRUE: code, planning, research
+BEFORE: 1:research=0.404* | 2:fact_checking=0.367 | 3:code=0.349* | 4:incident_management=0.309 | 5:writing=0.297 | 6:design=0.294 | 7:financial_analysis=0.275 | 8:risk_assessment=0.259 | 9:documentation=0.254 | 10:math=0.252
+
+CANDIDATES:
+>>> rank=1 score= -0.4297 | What types of detailed background knowledge or domain-specific expertise would be helpful when preparing a translation document that aims to maintain precision, accuracy, and cultural nuances?
+    rank=2 score= -0.4355 | What are key factors to consider when setting priorities for different components within a project?
+    rank=3 score= -0.4727 | Could you please walk me through the different stages of incident management, including identifying potential impacts, analyzing the timeline of events, understanding the symptoms, developing strategies for mitigation, assigning responsibility, managing the recovery process, and documenting all actions taken?
+    rank=4 score= -0.4766 | What are your specific concerns or needs when conducting an accessibility review?
+
+EXECUTED: What types of detailed background knowledge or domain-specific expertise would be helpful when preparing a translation document that aims to maintain precision, accuracy, and cultural nuances?
+RESPONSE: When preparing a translation document that aims to maintain precision, accuracy, and cultural nuances, several types of detailed background knowledge and domain-specific expertise are essential: 1. **Linguistic Proficiency**: - **Source and Target Languages**: Deep understanding of both the source and target languages, including grammar, syntax, idioms, and colloquialisms. - **Dialectal Variations**: Awareness of regional dialects and variations 
+V13.5: research=+0.581* | requirements_analysis=-1.262 | fact_checking=-1.289 | writing=-1.617 | documentation=-1.754 | translation=-1.766 | customer_support_triage=-1.891 | operations=-2.422
+V13.4: experiment_design=-2.016 | planning=-2.328* | operations=-2.359 | requirements_analysis=-2.438 | research=-2.547* | customer_support_triage=-2.594 | documentation=-2.688 | database_design=-2.781
+AFTER : 1:research=0.415* | 2:fact_checking=0.384 | 3:code=0.364* | 4:incident_management=0.323 | 5:financial_analysis=0.297 | 6:writing=0.293 | 7:design=0.286 | 8:math=0.278 | 9:risk_assessment=0.264 | 10:accessibility_review=0.259
+
+=============================================================================================================================
+simple5_02_risk_access_translation | AUC 0.7843 -> 0.9608 delta=+0.1765
+TRUE: accessibility_review, risk_assessment, translation
+BEFORE: 1:risk_assessment=0.392* | 2:operations=0.386 | 3:translation=0.381* | 4:writing=0.341 | 5:financial_analysis=0.338 | 6:design=0.336 | 7:math=0.316 | 8:research=0.315 | 9:incident_management=0.314 | 10:requirements_analysis=0.287
+
+CANDIDATES:
+>>> rank=1 score= -0.3242 | What are some key considerations when preparing technical documentation for ease of readership and efficiency?
+    rank=2 score= -0.4688 | What specific steps or methods do you typically employ when conducting the initial phase of translating between different languages?
+    rank=3 score= -0.5625 | What method or approach do you typically take when preparing for a translation task, especially focusing on maintaining precision and authenticity across language differences?
+    rank=4 score= -0.6953 | What are the primary steps involved in conducting a successful requirements analysis?
+
+EXECUTED: What are some key considerations when preparing technical documentation for ease of readership and efficiency?
+RESPONSE: When preparing technical documentation, it's essential to ensure that it is accessible and easy to read for all users, including those with disabilities. Here are some key considerations to enhance readability and efficiency: ### 1. **Clear Structure and Organization** - **Headings and Subheadings**: Use a clear hierarchy of headings (H1, H2, H3) to organize content. This helps users navigate the document easily, especially those using screen rea
+V13.5: accessibility_review=+2.344* | research=-1.120 | requirements_analysis=-1.633 | documentation=-1.898 | design=-2.447 | writing=-3.027 | planning=-3.125 | experiment_design=-3.250
+V13.4: operations=+0.809 | requirements_analysis=+0.664 | documentation=+0.617 | experiment_design=+0.535 | research=+0.438 | design=+0.191 | database_design=+0.189 | accessibility_review=+0.153*
+AFTER : 1:risk_assessment=0.416* | 2:operations=0.380 | 3:accessibility_review=0.354* | 4:translation=0.348* | 5:design=0.338 | 6:financial_analysis=0.333 | 7:research=0.321 | 8:math=0.306 | 9:writing=0.296 | 10:incident_management=0.295
+
+=============================================================================================================================
+simple5_03_data_db_requirements | AUC 0.4706 -> 0.5882 delta=+0.1176
+TRUE: data, database_design, requirements_analysis
+BEFORE: 1:requirements_analysis=0.378* | 2:qa_testing=0.291 | 3:code=0.273 | 4:incident_management=0.251 | 5:risk_assessment=0.230 | 6:financial_analysis=0.225 | 7:fact_checking=0.224 | 8:accessibility_review=0.219 | 9:operations=0.215 | 10:planning=0.214
+
+CANDIDATES:
+>>> rank=1 score= -0.2080 | What key concepts or best practices should I look at initially when starting the database design task?
+    rank=2 score= -0.3379 | What are some common steps involved in setting up and executing a qa testing strategy?
+    rank=3 score= -0.3496 | What specific aspect or area would you recommend prioritizing first when conducting an accessibility review?
+    rank=4 score= -0.4785 | What key piece of information should I collect first to effectively diagnose and address the non-reliability of our process?
+
+EXECUTED: What key concepts or best practices should I look at initially when starting the database design task?
+RESPONSE: When starting a database design task, it's essential to consider several key concepts and best practices to ensure a robust, efficient, and scalable database schema. Here are some foundational elements to focus on: 1. **Requirements Gathering**: - Understand the business requirements and objectives. - Identify the data that needs to be stored and how it will be used. 2. **Entity-Relationship Modeling (ERM)**: - Identify entities (objects or conce
+V13.5: design=-0.281 | database_design=-1.508* | research=-3.188 | documentation=-3.719 | requirements_analysis=-4.906* | fact_checking=-5.008 | customer_support_triage=-5.156 | experiment_design=-5.652
+V13.4: operations=-5.938 | requirements_analysis=-6.406* | planning=-6.531 | customer_support_triage=-6.594 | qa_testing=-6.656 | financial_analysis=-6.656 | documentation=-6.938 | experiment_design=-7.094
+AFTER : 1:requirements_analysis=0.370* | 2:qa_testing=0.282 | 3:design=0.257 | 4:code=0.255 | 5:incident_management=0.239 | 6:planning=0.237 | 7:database_design=0.233* | 8:risk_assessment=0.232 | 9:financial_analysis=0.229 | 10:fact_checking=0.215
+
+=============================================================================================================================
+simple5_04_support_incident_ops | AUC 0.8627 -> 0.8824 delta=+0.0196
+TRUE: customer_support_triage, incident_management, operations
+BEFORE: 1:incident_management=0.407* | 2:requirements_analysis=0.337 | 3:planning=0.282 | 4:customer_support_triage=0.277* | 5:documentation=0.259 | 6:research=0.247 | 7:database_design=0.244 | 8:operations=0.243* | 9:design=0.234 | 10:financial_analysis=0.230
+
+CANDIDATES:
+>>> rank=1 score= -0.2412 | What key aspect of the incident management process should I focus on first to ensure effective handling of incidents?
+    rank=2 score= -0.2773 | What specific aspect(s) of mathematical concepts or methods do you currently find challenging in your problem-solving tasks?
+    rank=3 score= -0.3535 | What kind of information should be prepared or provided at the beginning when taking on a project involving goal-oriented activities such as planning, where understanding your objectives and breaking them down logically will be crucial?
+
+EXECUTED: What key aspect of the incident management process should I focus on first to ensure effective handling of incidents?
+RESPONSE: To ensure effective handling of incidents, you should first focus on **incident triage**. This involves assessing the symptoms of the incident, determining its impact on services and users, and prioritizing it based on severity and urgency. Here’s a breakdown of the key steps to take during the triage process: 1. **Identify Symptoms**: Gather detailed information about the incident, including error messages, affected systems, and user reports. 2.
+V13.5: incident_management=+3.621* | research=-3.445 | customer_support_triage=-3.648* | operations=-4.227* | fact_checking=-4.969 | planning=-5.461 | requirements_analysis=-5.602 | risk_assessment=-5.734
+V13.4: documentation=-2.094 | operations=-2.797* | planning=-2.922 | requirements_analysis=-3.000 | design=-3.219 | experiment_design=-3.375 | research=-3.562 | customer_support_triage=-3.641*
+AFTER : 1:incident_management=0.492* | 2:requirements_analysis=0.311 | 3:planning=0.265 | 4:documentation=0.259 | 5:operations=0.252* | 6:customer_support_triage=0.250* | 7:database_design=0.241 | 8:research=0.239 | 9:design=0.239 | 10:fact_checking=0.230
+
+=============================================================================================================================
+simple5_05_docs_qa_writing | AUC 0.4706 -> 0.5882 delta=+0.1176
+TRUE: documentation, qa_testing, writing
+BEFORE: 1:operations=0.351 | 2:incident_management=0.328 | 3:risk_assessment=0.315 | 4:documentation=0.262* | 5:planning=0.254 | 6:research=0.251 | 7:financial_analysis=0.247 | 8:database_design=0.242 | 9:math=0.240 | 10:requirements_analysis=0.236
+
+CANDIDATES:
+>>> rank=1 score= -0.3164 | What type of documentation or explanation would be helpful for someone who needs to understand the purpose and structure of an upcoming software release?
+    rank=2 score= -0.3906 | What tools or methods do you typically employ during your initial phase when analyzing product requirements for clarity and precision?
+    rank=3 score= -0.5430 | What preprocessing steps are typically applied to clean and prepare datasets before performing initial analyses?
+
+EXECUTED: What type of documentation or explanation would be helpful for someone who needs to understand the purpose and structure of an upcoming software release?
+RESPONSE: To effectively communicate the purpose and structure of an upcoming software release, the following types of documentation and explanations would be beneficial: 1. **Release Notes**: - **Purpose**: Summarize the key features, enhancements, bug fixes, and any known issues in the release. - **Structure**: - Version number and release date - Overview of the release - New features and enhancements - Bug fixes - Known issues - Upgrade instructions - C
+V13.5: documentation=-0.279* | requirements_analysis=-2.106 | research=-2.898 | design=-3.641 | customer_support_triage=-3.891 | planning=-4.184 | operations=-4.508 | incident_management=-4.781
+V13.4: requirements_analysis=-3.188 | planning=-3.734 | operations=-4.344 | experiment_design=-4.344 | qa_testing=-4.469* | documentation=-4.719* | research=-4.781 | financial_analysis=-4.812
+AFTER : 1:operations=0.353 | 2:incident_management=0.320 | 3:documentation=0.288* | 4:risk_assessment=0.287 | 5:requirements_analysis=0.250 | 6:research=0.249 | 7:financial_analysis=0.238 | 8:planning=0.235 | 9:math=0.234 | 10:database_design=0.224
+
+#############################################################################################################################
+ROUND 7
+#############################################################################################################################
+
+=============================================================================================================================
+simple5_01_code_plan_research | AUC 0.6863 -> 0.6667 delta=-0.0196
+TRUE: code, planning, research
+BEFORE: 1:research=0.415* | 2:fact_checking=0.384 | 3:code=0.364* | 4:incident_management=0.323 | 5:financial_analysis=0.297 | 6:writing=0.293 | 7:design=0.286 | 8:math=0.278 | 9:risk_assessment=0.264 | 10:accessibility_review=0.259
+
+CANDIDATES:
+>>> rank=1 score= -0.2812 | What specific steps or tools should I consider using first when trying to enhance the reliability of a particular process?
+    rank=2 score= -0.3398 | What specific linguistic features or techniques would you consider important for maintaining precision, accuracy, and cultural nuances in a translation?
+    rank=3 score= -0.4629 | What specific linguistic features or techniques should we focus on when ensuring a translation maintains precision and accuracy while considering cultural nuances?
+    rank=4 score= -0.5586 | What specific types of background knowledge or expertise should someone possess to effectively manage and maintain precise translations across different linguistic contexts?
+
+EXECUTED: What specific steps or tools should I consider using first when trying to enhance the reliability of a particular process?
+RESPONSE: To enhance the reliability of a particular process, a systematic approach is essential. Here are specific steps and tools to consider: Start by clearly defining what "reliability" means for your process. This involves setting measurable objectives, such as reducing defects or downtime. Document the current process using flowcharts or process maps to visualize each step and identify key inputs and outputs. Next, gather data on current performance.
+V13.5: research=+1.141* | fact_checking=-1.982 | operations=-2.047 | customer_support_triage=-2.232 | requirements_analysis=-3.064 | qa_testing=-3.133 | planning=-3.195* | risk_assessment=-3.230
+V13.4: experiment_design=-1.562 | database_design=-1.594 | operations=-1.711 | documentation=-1.805 | customer_support_triage=-1.906 | requirements_analysis=-1.914 | qa_testing=-1.961 | financial_analysis=-1.961
+AFTER : 1:research=0.438* | 2:fact_checking=0.390 | 3:code=0.351* | 4:incident_management=0.309 | 5:financial_analysis=0.296 | 6:writing=0.295 | 7:math=0.283 | 8:design=0.279 | 9:operations=0.270 | 10:documentation=0.263
+
+=============================================================================================================================
+simple5_02_risk_access_translation | AUC 0.9608 -> 0.9412 delta=-0.0196
+TRUE: accessibility_review, risk_assessment, translation
+BEFORE: 1:risk_assessment=0.416* | 2:operations=0.380 | 3:accessibility_review=0.354* | 4:translation=0.348* | 5:design=0.338 | 6:financial_analysis=0.333 | 7:research=0.321 | 8:math=0.306 | 9:writing=0.296 | 10:incident_management=0.295
+
+CANDIDATES:
+>>> rank=1 score= -0.2656 | Could you please walk me through how you prepare technical documentation for easier reading and more efficient processes?
+    rank=2 score= -0.3477 | What specific aspects of written communication and understanding should be considered when helping someone improve their writing?
+    rank=3 score= -0.3711 | What specific aspects or examples should I prepare when conducting my accessibility review?
+
+EXECUTED: Could you please walk me through how you prepare technical documentation for easier reading and more efficient processes?
+RESPONSE: Certainly! Preparing technical documentation for easier reading and more efficient processes involves several key principles and practices that enhance accessibility and usability. Here’s a step-by-step guide: ### 1. **Understand Your Audience** - **Identify User Needs**: Determine who will be using the documentation and their level of expertise. This helps tailor the content appropriately. - **Gather Feedback**: If possible, consult with users t
+V13.5: code=+1.479 | writing=-0.367 | math=-0.766 | incident_management=-1.031 | data=-1.234 | design=-1.234 | documentation=-1.332 | financial_analysis=-1.438
+V13.4: documentation=-4.281 | operations=-4.375 | requirements_analysis=-4.500 | research=-4.562 | design=-4.781 | experiment_design=-4.781 | qa_testing=-4.844 | accessibility_review=-4.844*
+AFTER : 1:risk_assessment=0.390* | 2:operations=0.349 | 3:translation=0.309* | 4:code=0.307 | 5:accessibility_review=0.306* | 6:design=0.296 | 7:financial_analysis=0.289 | 8:math=0.287 | 9:incident_management=0.286 | 10:research=0.280
+
+=============================================================================================================================
+simple5_03_data_db_requirements | AUC 0.5882 -> 0.5882 delta=+0.0000
+TRUE: data, database_design, requirements_analysis
+BEFORE: 1:requirements_analysis=0.370* | 2:qa_testing=0.282 | 3:design=0.257 | 4:code=0.255 | 5:incident_management=0.239 | 6:planning=0.237 | 7:database_design=0.233* | 8:risk_assessment=0.232 | 9:financial_analysis=0.229 | 10:fact_checking=0.215
+
+CANDIDATES:
+>>> rank=1 score= +0.0669 | What factors should I consider first when conducting a comprehensive risk assessment?
+    rank=2 score= -0.2012 | What specific types of financial metrics or reports should I prepare first for conducting a financial analysis?
+    rank=3 score= -0.2031 | How would you classify this aspect of the problem: determining the appropriate level of precision required for your calculation?
+    rank=4 score= -0.2832 | What specific information do you need before proceeding with the qa testing task?
+
+EXECUTED: What factors should I consider first when conducting a comprehensive risk assessment?
+RESPONSE: When conducting a comprehensive risk assessment, consider the following key factors: 1. **Scope and Objectives**: Clearly define the scope of the assessment and the objectives you aim to achieve. This helps in focusing on relevant risks. 2. **Stakeholders**: Identify all stakeholders involved, including those who may be affected by the risks and those who can influence risk management decisions. 3. **Risk Identification**: Gather information on p
+V13.5: risk_assessment=+1.373 | requirements_analysis=-1.898* | planning=-2.984 | customer_support_triage=-4.500 | research=-4.523 | operations=-5.297 | experiment_design=-5.680 | documentation=-5.945
+V13.4: customer_support_triage=-4.562 | experiment_design=-4.594 | documentation=-4.875 | qa_testing=-5.031 | operations=-5.094 | requirements_analysis=-5.250* | financial_analysis=-5.281 | incident_management=-5.562
+AFTER : 1:requirements_analysis=0.392* | 2:risk_assessment=0.312 | 3:qa_testing=0.272 | 4:code=0.249 | 5:planning=0.242 | 6:financial_analysis=0.232 | 7:incident_management=0.230 | 8:design=0.229 | 9:database_design=0.223* | 10:fact_checking=0.210
+
+=============================================================================================================================
+simple5_04_support_incident_ops | AUC 0.8824 -> 0.8235 delta=-0.0588
+TRUE: customer_support_triage, incident_management, operations
+BEFORE: 1:incident_management=0.492* | 2:requirements_analysis=0.311 | 3:planning=0.265 | 4:documentation=0.259 | 5:operations=0.252* | 6:customer_support_triage=0.250* | 7:database_design=0.241 | 8:research=0.239 | 9:design=0.239 | 10:fact_checking=0.230
+
+CANDIDATES:
+>>> rank=1 score= +0.0439 | First, please tell me which specific aspect of the QA testing process you need guidance on to start setting up your test cases?
+    rank=2 score= -0.2734 | What specific aspects of the fact-checking process should I consider when verifying a claim or identifying potential misinformation?
+    rank=3 score= -0.4453 | What is the primary step or activity when planning a project according to best practices in project management?
+
+EXECUTED: First, please tell me which specific aspect of the QA testing process you need guidance on to start setting up your test cases?
+RESPONSE: To assist you effectively, could you please specify which aspect of the QA testing process you need guidance on? For example, are you looking for help with defining test case requirements, writing test cases, selecting testing tools, or something else? Providing this context will help me give you the most relevant information.
+V13.5: customer_support_triage=-0.016* | qa_testing=-0.213 | requirements_analysis=-0.249 | documentation=-0.840 | design=-0.844 | accessibility_review=-0.937 | writing=-1.090 | experiment_design=-1.094
+V13.4: documentation=-2.766 | requirements_analysis=-3.250 | planning=-3.359 | operations=-3.375* | experiment_design=-3.531 | design=-3.547 | database_design=-3.547 | customer_support_triage=-3.578*
+AFTER : 1:incident_management=0.419* | 2:requirements_analysis=0.295 | 3:planning=0.248 | 4:documentation=0.243 | 5:research=0.242 | 6:operations=0.236* | 7:fact_checking=0.235 | 8:customer_support_triage=0.228* | 9:database_design=0.224 | 10:design=0.221
+
+=============================================================================================================================
+simple5_05_docs_qa_writing | AUC 0.5882 -> 0.4902 delta=-0.0980
+TRUE: documentation, qa_testing, writing
+BEFORE: 1:operations=0.353 | 2:incident_management=0.320 | 3:documentation=0.288* | 4:risk_assessment=0.287 | 5:requirements_analysis=0.250 | 6:research=0.249 | 7:financial_analysis=0.238 | 8:planning=0.235 | 9:math=0.234 | 10:database_design=0.224
+
+CANDIDATES:
+>>> rank=1 score= -0.0327 | What specifically does your database design task involve, such as creating tables, setting up relationships between them, defining unique keys, and organizing data by normalizing your schema?
+    rank=2 score= -0.2324 | What specific aspect of fact-checking would you prefer to have verified by an expert to ensure accuracy and credibility?
+    rank=3 score= -0.3555 | What steps typically come first during software testing to identify potential problems?
+
+EXECUTED: What specifically does your database design task involve, such as creating tables, setting up relationships between them, defining unique keys, and organizing data by normalizing your schema?
+RESPONSE: Database design is a critical task that involves several key activities to ensure that the database is efficient, scalable, and easy to maintain. Here’s a breakdown of the specific tasks involved in database design: 1. **Requirements Gathering**: - Understand the data requirements of the application or system. - Identify the types of data to be stored, how it will be used, and the relationships between different data entities. 2. **Creating Table
+V13.5: database_design=+2.656 | documentation=+1.295* | research=+0.960 | requirements_analysis=-0.855 | design=-1.260 | fact_checking=-1.689 | code=-1.781 | customer_support_triage=-2.152
+V13.4: documentation=-0.291* | operations=-0.348 | research=-0.609 | planning=-0.938 | requirements_analysis=-1.047 | experiment_design=-1.070 | financial_analysis=-1.258 | accessibility_review=-1.336
+AFTER : 1:database_design=0.369 | 2:operations=0.332 | 3:incident_management=0.314 | 4:documentation=0.283* | 5:risk_assessment=0.271 | 6:research=0.255 | 7:math=0.233 | 8:design=0.229 | 9:requirements_analysis=0.228 | 10:financial_analysis=0.227
+
+#############################################################################################################################
+ROUND 8
+#############################################################################################################################
+
+=============================================================================================================================
+simple5_01_code_plan_research | AUC 0.6667 -> 0.6863 delta=+0.0196
+TRUE: code, planning, research
+BEFORE: 1:research=0.438* | 2:fact_checking=0.390 | 3:code=0.351* | 4:incident_management=0.309 | 5:financial_analysis=0.296 | 6:writing=0.295 | 7:math=0.283 | 8:design=0.279 | 9:operations=0.270 | 10:documentation=0.263
+
+CANDIDATES:
+>>> rank=1 score= -0.0134 | What factors should I look at first to perform effective risk assessments?
+    rank=2 score= -0.1016 | What specific details or observations would you typically look at when starting a triage analysis to determine which issue to prioritize among multiple reported problems?
+    rank=3 score= -0.3398 | What specific techniques or methodologies would you employ to ensure the translation maintains the integrity of terminology, cultural context, and overall linguistic balance?
+    rank=4 score= -0.6211 | What type of information is crucial during the initial phase of handling an incident management task?
+
+EXECUTED: What factors should I look at first to perform effective risk assessments?
+RESPONSE: To perform effective risk assessments, it is essential to adopt a systematic approach that encompasses several key factors: First, clearly define the project scope and objectives. Understanding what is at stake and identifying critical success factors will help in framing the risk assessment process. Alongside this, conduct a thorough stakeholder analysis to identify all parties involved, their interests, and how they may influence or be affected
+V13.5: risk_assessment=-1.359 | research=-1.703* | operations=-1.906 | requirements_analysis=-2.156 | planning=-3.078* | customer_support_triage=-3.078 | fact_checking=-3.234 | writing=-4.109
+V13.4: qa_testing=-3.734 | financial_analysis=-3.781 | customer_support_triage=-3.984 | math=-4.062 | operations=-4.281 | experiment_design=-4.281 | requirements_analysis=-4.469 | documentation=-4.562
+AFTER : 1:research=0.426* | 2:fact_checking=0.398 | 3:code=0.335* | 4:incident_management=0.315 | 5:operations=0.301 | 6:financial_analysis=0.291 | 7:writing=0.291 | 8:math=0.273 | 9:risk_assessment=0.272 | 10:requirements_analysis=0.264
+
+=============================================================================================================================
+simple5_02_risk_access_translation | AUC 0.9412 -> 0.8824 delta=-0.0588
+TRUE: accessibility_review, risk_assessment, translation
+BEFORE: 1:risk_assessment=0.390* | 2:operations=0.349 | 3:translation=0.309* | 4:code=0.307 | 5:accessibility_review=0.306* | 6:design=0.296 | 7:financial_analysis=0.289 | 8:math=0.287 | 9:incident_management=0.286 | 10:research=0.280
+
+CANDIDATES:
+>>> rank=1 score= -0.1182 | I need assistance in managing an incident. Can you explain the steps involved in handling incidents efficiently?
+    rank=2 score= -0.4199 | What tools or strategies do you typically employ when performing comprehensive evaluations of scientific literature?
+    rank=3 score= -0.5078 | What is the primary goal you aim to achieve by creating this documentation?
+    rank=4 score= -0.7812 | What are the key steps involved in translating documents while maintaining their original meaning, tone, context, and phrasing?
+
+EXECUTED: I need assistance in managing an incident. Can you explain the steps involved in handling incidents efficiently?
+RESPONSE: Certainly! Managing an incident efficiently involves a structured approach to ensure that the situation is resolved quickly and effectively while minimizing impact. Here are the key steps involved in incident management: ### 1. **Identification** - **Recognize the Incident**: Detect and confirm the occurrence of an incident. This can be through monitoring systems, user reports, or alerts. - **Categorize the Incident**: Classify the incident based
+V13.5: incident_management=-2.514 | customer_support_triage=-4.250 | planning=-4.719 | risk_assessment=-4.797* | requirements_analysis=-4.875 | operations=-5.094 | documentation=-5.262 | research=-5.516
+V13.4: documentation=-5.969 | math=-6.062 | code=-6.250 | planning=-6.438 | database_design=-6.438 | qa_testing=-6.562 | financial_analysis=-6.656 | writing=-6.688
+AFTER : 1:risk_assessment=0.378* | 2:operations=0.339 | 3:translation=0.321* | 4:financial_analysis=0.314 | 5:incident_management=0.311 | 6:code=0.305 | 7:design=0.302 | 8:accessibility_review=0.301* | 9:math=0.295 | 10:writing=0.289
+
+=============================================================================================================================
+simple5_03_data_db_requirements | AUC 0.5882 -> 0.5490 delta=-0.0392
+TRUE: data, database_design, requirements_analysis
+BEFORE: 1:requirements_analysis=0.392* | 2:risk_assessment=0.312 | 3:qa_testing=0.272 | 4:code=0.249 | 5:planning=0.242 | 6:financial_analysis=0.232 | 7:incident_management=0.230 | 8:design=0.229 | 9:database_design=0.223* | 10:fact_checking=0.210
+
+CANDIDATES:
+>>> rank=1 score= -0.2012 | What specific aspects or inputs should I prepare when initiating the risk assessment process?
+    rank=2 score= -0.3320 | What are some important steps to take first when designing an interface based on your knowledge?
+    rank=3 score= -0.3672 | What are some fundamental considerations when beginning a database design project?
+    rank=4 score= -0.8516 | What is a primary methodological step when conducting a comprehensive risk assessment?
+
+EXECUTED: What specific aspects or inputs should I prepare when initiating the risk assessment process?
+RESPONSE: When initiating the risk assessment process, you should prepare the following specific aspects or inputs: 1. **Project Scope and Objectives**: Clearly define the project scope, objectives, and deliverables. This helps in identifying what risks may impact the project's success. 2. **Stakeholder Identification**: List all stakeholders involved in the project, including their roles, responsibilities, and interests. Understanding stakeholder perspect
+V13.5: risk_assessment=+2.914 | requirements_analysis=-1.732* | planning=-2.633 | research=-3.273 | operations=-3.584 | financial_analysis=-3.915 | fact_checking=-4.637 | customer_support_triage=-4.848
+V13.4: requirements_analysis=-4.188* | financial_analysis=-4.531 | operations=-5.000 | incident_management=-5.125 | experiment_design=-5.156 | planning=-5.188 | accessibility_review=-5.188 | qa_testing=-5.250
+AFTER : 1:requirements_analysis=0.393* | 2:risk_assessment=0.368 | 3:qa_testing=0.259 | 4:planning=0.234 | 5:code=0.233 | 6:design=0.226 | 7:incident_management=0.225 | 8:financial_analysis=0.222 | 9:operations=0.214 | 10:database_design=0.209*
+
+=============================================================================================================================
+simple5_04_support_incident_ops | AUC 0.8235 -> 0.9216 delta=+0.0980
+TRUE: customer_support_triage, incident_management, operations
+BEFORE: 1:incident_management=0.419* | 2:requirements_analysis=0.295 | 3:planning=0.248 | 4:documentation=0.243 | 5:research=0.242 | 6:operations=0.236* | 7:fact_checking=0.235 | 8:customer_support_triage=0.228* | 9:database_design=0.224 | 10:design=0.221
+
+CANDIDATES:
+>>> rank=1 score= +0.0530 | First, could you provide more details on what aspect of the writing process you are struggling with specifically?
+    rank=2 score= +0.0508 | What specific aspect of the QA testing process do you need clarification on so that I can get started setting up my test cases?
+
+EXECUTED: First, could you provide more details on what aspect of the writing process you are struggling with specifically?
+RESPONSE: It seems like you might be experiencing difficulties with a specific part of the writing process. To assist you better, could you please provide more details on the following: 1. What type of writing are you working on (e.g., academic, creative, business)? 2. Are you struggling with brainstorming ideas, structuring your writing, grammar and style, or something else? 3. Have you encountered any specific challenges or obstacles that you would like 
+V13.5: customer_support_triage=+0.520* | writing=-1.043 | research=-1.266 | planning=-1.488 | requirements_analysis=-1.795 | fact_checking=-1.883 | accessibility_review=-2.031 | experiment_design=-2.031
+V13.4: customer_support_triage=-3.359* | planning=-3.516 | documentation=-3.547 | design=-3.609 | requirements_analysis=-3.812 | qa_testing=-3.859 | research=-3.922 | accessibility_review=-4.031
+AFTER : 1:incident_management=0.392* | 2:requirements_analysis=0.283 | 3:operations=0.245* | 4:documentation=0.244 | 5:planning=0.242 | 6:customer_support_triage=0.241* | 7:research=0.224 | 8:design=0.221 | 9:fact_checking=0.219 | 10:database_design=0.214
+
+=============================================================================================================================
+simple5_05_docs_qa_writing | AUC 0.4902 -> 0.5294 delta=+0.0392
+TRUE: documentation, qa_testing, writing
+BEFORE: 1:database_design=0.369 | 2:operations=0.332 | 3:incident_management=0.314 | 4:documentation=0.283* | 5:risk_assessment=0.271 | 6:research=0.255 | 7:math=0.233 | 8:design=0.229 | 9:requirements_analysis=0.228 | 10:financial_analysis=0.227
+
+CANDIDATES:
+>>> rank=1 score= -0.2598 | What type of specific guidance or information would you need regarding the creation and understanding of technical documentation?
+    rank=2 score= -0.2715 | What kind of information do you need to verify the factual claim?
+    rank=3 score= -0.4180 | What kind of information should I gather first to start planning my project?
+    rank=4 score= -0.6094 | What are the essential steps and considerations when conducting a financial analysis to prepare for budgeting and scenario planning?
+
+EXECUTED: What type of specific guidance or information would you need regarding the creation and understanding of technical documentation?
+RESPONSE: To provide effective guidance on the creation and understanding of technical documentation, I would need the following specific information: 1. **Target Audience**: Who will be using the documentation? Understanding the audience's technical expertise, background, and needs will help tailor the content appropriately. 2. **Documentation Type**: What type of documentation are you creating? (e.g., user manuals, API documentation, installation guides,
+V13.5: documentation=+1.705* | research=-0.727 | design=-1.984 | requirements_analysis=-2.243 | planning=-2.404 | fact_checking=-2.645 | customer_support_triage=-3.266 | accessibility_review=-3.340
+V13.4: requirements_analysis=-4.094 | accessibility_review=-4.469 | design=-5.031 | planning=-5.062 | qa_testing=-5.094* | experiment_design=-5.156 | research=-5.281 | operations=-5.281
+AFTER : 1:database_design=0.338 | 2:operations=0.311 | 3:documentation=0.305* | 4:incident_management=0.293 | 5:risk_assessment=0.256 | 6:research=0.249 | 7:math=0.224 | 8:financial_analysis=0.222 | 9:requirements_analysis=0.221 | 10:design=0.221
+
+=============================================================================================================================
+DONE
+=============================================================================================================================

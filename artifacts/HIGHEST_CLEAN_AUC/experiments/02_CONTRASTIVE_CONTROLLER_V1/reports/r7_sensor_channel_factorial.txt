@@ -1,0 +1,35 @@
+===== INPUT SANITY =====
+systems     = 5
+candidates  = 5
+responses   = 5
+scores      = 5
+new_frames  = 5
+belief      = artifacts/HIGHEST_CLEAN_AUC/models/frozen_belief.joblib
+
+===== R7 SENSOR CHANNEL FACTORIAL =====
+SYSTEM                                      R6      OO  NEW135  NEW134    BOTH
+------------------------------------------------------------------------------
+simple5_01_code_plan_research            0.588   0.549   0.569   0.490   0.529
+simple5_02_risk_access_translation       0.569   0.549   0.549   0.588   0.549
+simple5_03_data_db_requirements          0.882   0.843   0.843   0.882   0.882
+simple5_04_support_incident_ops          0.765   0.804   0.765   0.824   0.784
+simple5_05_docs_qa_writing               0.667   0.588   0.549   0.608   0.510
+
+===== MEAN WITHIN-MAS AUC =====
+R6 NO APPEND          = 0.694118
+OO old135 + old134    = 0.666667
+NO NEW135 + old134    = 0.654902
+ON old135 + NEW134    = 0.678431
+NN NEW135 + NEW134    = 0.650980
+
+===== CHANNEL EFFECTS =====
+V135 effect | V134 old = -0.011765
+V134 effect | V135 old = +0.011765
+V135 effect | V134 new = -0.027451
+V134 effect | V135 new = -0.003922
+
+===== REPRODUCTION CHECK =====
+Expected actual Contrastive R7 = 0.650980
+Factorial BOTH                = 0.650980
+Absolute difference           = 0.000000000000
+REPRODUCTION = EXACT PASS

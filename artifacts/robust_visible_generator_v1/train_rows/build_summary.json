@@ -1,0 +1,26 @@
+{
+  "source_cycle": "artifacts/adaptive_v11_curriculum_v2/stage_10/cycle_02",
+  "source_policy_that_generated_rows": "artifacts/adaptive_v11_curriculum_v2/checkpoints/stage_10_cycle_01/policy",
+  "systems_split": "observation_model_v1 TRAIN systems only",
+  "rows": 2112,
+  "groups": 264,
+  "particles_per_K": 8,
+  "candidate_score": "expected visible fingerprint mutual information about K",
+  "actual_output_used_for_reward": false,
+  "true_K_used_for_reward": false,
+  "selected_roles_used_for_reward": false,
+  "robust_advantages": {
+    "bottom_quartile": -1.75,
+    "lower_middle": -0.25,
+    "upper_middle": 0.75,
+    "top_quartile": 1.25,
+    "per_group_centered": true
+  },
+  "mi_distribution": {
+    "mean": 0.09495886485839465,
+    "p10": 0.06504057559841439,
+    "p25": 0.07724209715698271,
+    "median": 0.09356379146686811,
+    "p75": 0.11159909805235646
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "n": 320,
+  "global_installed_oof_auc": 0.7261111111111109,
+  "global_activation_auc_using_installed_sensor_score": 0.8761037400027738,
+  "roles": {
+    "code": {
+      "present_n": 20,
+      "routing_hits": 8,
+      "routing_hit_rate": 0.4,
+      "installed_presence_auc": 0.35,
+      "activation_auc_using_installed_sensor_score": 0.78515625,
+      "selected_present_vs_absent_auc": 0.69375,
+      "missed_present_vs_absent_auc": 0.12083333333333333,
+      "routing_only_oracle_auc": 0.7,
+      "mean_score_selected_present": 1.814905196428299,
+      "mean_score_missed_present": -1.6992733081181843,
+      "mean_score_absent": 0.5687526814639569,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 3,
+          "present_n": 10,
+          "routing_hits": 2,
+          "routing_hit_rate": 0.2,
+          "installed_auc": 0.0
+        },
+        {
+          "family": "intake",
+          "rep": 6,
+          "present_n": 10,
+          "routing_hits": 6,
+          "routing_hit_rate": 0.6,
+          "installed_auc": 0.61
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 10,
+          "routing_hits": 5,
+          "routing_hit_rate": 0.5,
+          "installed_auc": 0.4699999999999999
+        },
+        {
+          "style": "s2",
+          "present_n": 10,
+          "routing_hits": 3,
+          "routing_hit_rate": 0.3,
+          "installed_auc": 0.20999999999999996
+        }
+      ]
+    },
+    "writing": {
+      "present_n": 16,
+      "routing_hits": 16,
+      "routing_hit_rate": 1.0,
+      "installed_presence_auc": 0.8697916666666667,
+      "activation_auc_using_installed_sensor_score": 0.8697916666666667,
+      "selected_present_vs_absent_auc": 0.8697916666666667,
+      "missed_present_vs_absent_auc": null,
+      "routing_only_oracle_auc": 1.0,
+      "mean_score_selected_present": 0.8455910244956613,
+      "mean_score_missed_present": null,
+      "mean_score_absent": -1.4280943038562934,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 6,
+          "present_n": 8,
+          "routing_hits": 8,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.96875
+        },
+        {
+          "family": "intake",
+          "rep": 5,
+          "present_n": 8,
+          "routing_hits": 8,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.7291666666666666
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 8,
+          "routing_hits": 8,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.96875
+        },
+        {
+          "style": "s2",
+          "present_n": 8,
+          "routing_hits": 8,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.7708333333333334
+        }
+      ]
+    },
+    "math": {
+      "present_n": 16,
+      "routing_hits": 8,
+      "routing_hit_rate": 0.5,
+      "installed_presence_auc": 0.609375,
+      "activation_auc_using_installed_sensor_score": 0.86328125,
+      "selected_present_vs_absent_auc": 0.8385416666666667,
+      "missed_present_vs_absent_auc": 0.38020833333333337,
+      "routing_only_oracle_auc": 0.75,
+      "mean_score_selected_present": 1.7403707951307297,
+      "mean_score_missed_present": -1.7929978743195534,
+      "mean_score_absent": -0.7712662518024445,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 5,
+          "present_n": 8,
+          "routing_hits": 7,
+          "routing_hit_rate": 0.875,
+          "installed_auc": 0.9479166666666667
+        },
+        {
+          "family": "intake",
+          "rep": 0,
+          "present_n": 8,
+          "routing_hits": 1,
+          "routing_hit_rate": 0.125,
+          "installed_auc": 0.10416666666666667
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 8,
+          "routing_hits": 5,
+          "routing_hit_rate": 0.625,
+          "installed_auc": 0.7083333333333333
+        },
+        {
+          "style": "s2",
+          "present_n": 8,
+          "routing_hits": 3,
+          "routing_hit_rate": 0.375,
+          "installed_auc": 0.5
+        }
+      ]
+    },
+    "planning": {
+      "present_n": 20,
+      "routing_hits": 20,
+      "routing_hit_rate": 1.0,
+      "installed_presence_auc": 0.9650000000000001,
+      "activation_auc_using_installed_sensor_score": 0.9650000000000001,
+      "selected_present_vs_absent_auc": 0.9650000000000001,
+      "missed_present_vs_absent_auc": null,
+      "routing_only_oracle_auc": 1.0,
+      "mean_score_selected_present": 1.7702207311987876,
+      "mean_score_missed_present": null,
+      "mean_score_absent": -1.106993355602026,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 7,
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.99
+        },
+        {
+          "family": "intake",
+          "rep": 3,
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.97
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.9400000000000001
+        },
+        {
+          "style": "s2",
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.99
+        }
+      ]
+    },
+    "research": {
+      "present_n": 20,
+      "routing_hits": 20,
+      "routing_hit_rate": 1.0,
+      "installed_presence_auc": 0.9450000000000001,
+      "activation_auc_using_installed_sensor_score": 0.9450000000000001,
+      "selected_present_vs_absent_auc": 0.9450000000000001,
+      "missed_present_vs_absent_auc": null,
+      "routing_only_oracle_auc": 1.0,
+      "mean_score_selected_present": 1.8545068740844726,
+      "mean_score_missed_present": null,
+      "mean_score_absent": -1.452564324438572,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 1,
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.96
+        },
+        {
+          "family": "intake",
+          "rep": 3,
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.92
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.9600000000000001
+        },
+        {
+          "style": "s2",
+          "present_n": 10,
+          "routing_hits": 10,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.93
+        }
+      ]
+    },
+    "data": {
+      "present_n": 16,
+      "routing_hits": 14,
+      "routing_hit_rate": 0.875,
+      "installed_presence_auc": 0.921875,
+      "activation_auc_using_installed_sensor_score": 1.0,
+      "selected_present_vs_absent_auc": 1.0,
+      "missed_present_vs_absent_auc": 0.375,
+      "routing_only_oracle_auc": 0.9375,
+      "mean_score_selected_present": 2.458160928317479,
+      "mean_score_missed_present": -2.8199825286865234,
+      "mean_score_absent": -2.0551939215511084,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 1,
+          "present_n": 8,
+          "routing_hits": 6,
+          "routing_hit_rate": 0.75,
+          "installed_auc": 0.7916666666666666
+        },
+        {
+          "family": "intake",
+          "rep": 1,
+          "present_n": 8,
+          "routing_hits": 8,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 1.0
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 8,
+          "routing_hits": 7,
+          "routing_hit_rate": 0.875,
+          "installed_auc": 0.9166666666666666
+        },
+        {
+          "style": "s2",
+          "present_n": 8,
+          "routing_hits": 7,
+          "routing_hit_rate": 0.875,
+          "installed_auc": 0.9270833333333334
+        }
+      ]
+    },
+    "design": {
+      "present_n": 16,
+      "routing_hits": 1,
+      "routing_hit_rate": 0.0625,
+      "installed_presence_auc": 0.38020833333333337,
+      "activation_auc_using_installed_sensor_score": 0.20512820512820518,
+      "selected_present_vs_absent_auc": 0.125,
+      "missed_present_vs_absent_auc": 0.39722222222222225,
+      "routing_only_oracle_auc": 0.53125,
+      "mean_score_selected_present": -1.95844566822052,
+      "mean_score_missed_present": -1.2802678068478903,
+      "mean_score_absent": -0.6364625270167986,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 7,
+          "present_n": 8,
+          "routing_hits": 1,
+          "routing_hit_rate": 0.125,
+          "installed_auc": 0.7083333333333334
+        },
+        {
+          "family": "intake",
+          "rep": 5,
+          "present_n": 8,
+          "routing_hits": 0,
+          "routing_hit_rate": 0.0,
+          "installed_auc": 0.10416666666666667
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 8,
+          "routing_hits": 0,
+          "routing_hit_rate": 0.0,
+          "installed_auc": 0.42708333333333326
+        },
+        {
+          "style": "s2",
+          "present_n": 8,
+          "routing_hits": 1,
+          "routing_hit_rate": 0.125,
+          "installed_auc": 0.34375
+        }
+      ]
+    },
+    "operations": {
+      "present_n": 16,
+      "routing_hits": 10,
+      "routing_hit_rate": 0.625,
+      "installed_presence_auc": 0.5651041666666667,
+      "activation_auc_using_installed_sensor_score": 0.6,
+      "selected_present_vs_absent_auc": 0.5958333333333332,
+      "missed_present_vs_absent_auc": 0.5138888888888888,
+      "routing_only_oracle_auc": 0.8125,
+      "mean_score_selected_present": -0.15014662742614746,
+      "mean_score_missed_present": -0.7642877002557119,
+      "mean_score_absent": -0.7087200122574965,
+      "probes": [
+        {
+          "family": "ambiguity",
+          "rep": 4,
+          "present_n": 8,
+          "routing_hits": 2,
+          "routing_hit_rate": 0.25,
+          "installed_auc": 0.3125
+        },
+        {
+          "family": "intake",
+          "rep": 1,
+          "present_n": 8,
+          "routing_hits": 8,
+          "routing_hit_rate": 1.0,
+          "installed_auc": 0.8333333333333333
+        }
+      ],
+      "styles": [
+        {
+          "style": "s1",
+          "present_n": 8,
+          "routing_hits": 5,
+          "routing_hit_rate": 0.625,
+          "installed_auc": 0.5625
+        },
+        {
+          "style": "s2",
+          "present_n": 8,
+          "routing_hits": 5,
+          "routing_hit_rate": 0.625,
+          "installed_auc": 0.59375
+        }
+      ]
+    }
+  }
+}

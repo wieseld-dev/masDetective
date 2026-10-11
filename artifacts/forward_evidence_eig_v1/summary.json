@@ -1,0 +1,57 @@
+{
+  "experiment": "forward_evidence_eig_v1",
+  "selector_uses_truth": false,
+  "forward_model_training_uses_truth_z": true,
+  "decision_time_inputs": [
+    "current role belief",
+    "public history",
+    "candidate query",
+    "posterior-sampled Z hypotheses"
+  ],
+  "fit_systems": 403,
+  "internal_dev_systems": 70,
+  "final_val_systems": 84,
+  "aligned_train_rows": 18184,
+  "aligned_val_rows": 3200,
+  "public_forward_prediction": {
+    "rmse": 1.6189420223236084,
+    "mae": 1.205761432647705,
+    "mean_dim_r2": 0.5675714806249836,
+    "mean_dim_corr": 0.7515970470403944
+  },
+  "z_conditioned_forward_prediction": {
+    "rmse": 1.6300381422042847,
+    "mae": 1.2243976593017578,
+    "mean_dim_r2": 0.5633991489823249,
+    "mean_dim_corr": 0.7493336648644215
+  },
+  "public_internal_best_loss": 0.28148236870765686,
+  "z_internal_best_loss": 0.2840222716331482,
+  "eig_selection": {
+    "groups": 424,
+    "mean_selected_gain": 0.021252009875067594,
+    "mean_random_gain": 0.0255567500305335,
+    "mean_oracle_gain": 0.13306689815802952,
+    "mean_regret": 0.11181488828296193,
+    "top1": 0.17452830188679244,
+    "oracle_headroom_captured": -0.04004031461626231,
+    "bootstrap": {
+      "delta_selected_minus_random": -0.00430474015546591,
+      "cluster_ci95": [
+        -0.012507785117275004,
+        0.0039009826212141963
+      ],
+      "p_boot_gt_zero": 0.1557
+    }
+  },
+  "reference_v41_original_val": {
+    "selected": 0.04231024657686006,
+    "random": 0.0255567500305335,
+    "oracle": 0.13306689815802952
+  },
+  "reference_v41_perm_a": {
+    "selected": 0.03439551705116009,
+    "random": 0.0255567500305335,
+    "oracle": 0.13306689815802952
+  }
+}

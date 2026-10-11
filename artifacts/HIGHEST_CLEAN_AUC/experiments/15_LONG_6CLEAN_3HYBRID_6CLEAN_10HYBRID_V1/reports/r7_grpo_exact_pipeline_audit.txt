@@ -1,0 +1,392 @@
+======================================================================
+1. ADAPTIVE ROLE REWARD
+======================================================================
+def adaptive_role_reward(
+    *,
+    old_role_probs: Mapping[str, float],
+    new_role_probs: Mapping[str, float],
+    true_roles: Sequence[str],
+    query: str,
+    previous_queries: Sequence[str] = (),
+    generator_valid: bool = True,
+    role_scale: float = 20.0,
+    reward_clip: float = 3.0,
+) -> RoleRewardBreakdown:
+    ok, reason = surface_valid(query)
+    if not generator_valid:
+        ok = False
+        reason = reason or "generator_invalid"
+    if not ok:
+        return RoleRewardBreakdown(
+            total=-1.5,
+            role_log_score_before=role_log_score(old_role_probs, true_roles),
+            role_log_score_after=role_log_score(old_role_probs, true_roles),
+            role_log_score_improvement=0.0,
+            repetition_penalty=0.0,
+            length_penalty=0.0,
+            invalid_penalty=1.5,
+            valid=False,
+            invalid_reason=reason,
+        )
+
+    before = role_log_score(old_role_probs, true_roles)
+    after = role_log_score(new_role_probs, true_roles)
+    improvement = after - before
+
+    sim = max((normalized_word_jaccard(query, q) for q in previous_queries), default=0.0)
+    repetition_penalty = 0.0 if sim <= 0.70 else min(0.12, (sim - 0.70) * 0.40)
+    words = len(re.findall(r"\b\w+\b", query))
+    length_penalty = max(0, words - 80) * 0.001
+
+    total = float(role_scale) * improvement - repetition_penalty - length_penalty
+    total = max(-reward_clip, min(reward_clip, total))
+    return RoleRewardBreakdown(
+        total=float(total),
+        role_log_score_before=float(before),
+        role_log_score_after=float(after),
+        role_log_score_improvement=float(improvement),
+        repetition_penalty=float(repetition_penalty),
+        length_penalty=float(length_penalty),
+        invalid_penalty=0.0,
+        valid=True,
+        invalid_reason="",
+    )
+
+
+--- role_log_score ---
+def role_log_score(role_probs: Mapping[str, float], true_roles: Sequence[str]) -> float:
+    truth = set(map(str, true_roles))
+    roles = tuple(sorted(role_probs))
+    if not roles:
+        return 0.0
+    total = 0.0
+    for r in roles:
+        p = _clip01(role_probs[r])
+        total += math.log(p) if r in truth else math.log1p(-p)
+    return total / len(roles)
+
+
+--- group_relative_advantages ---
+def group_relative_advantages(rewards: Sequence[float], eps: float = 1e-6) -> list[float]:
+    xs = [float(x) for x in rewards]
+    if not xs:
+        return []
+    mean = sum(xs) / len(xs)
+    var = sum((x - mean) ** 2 for x in xs) / len(xs)
+    sd = math.sqrt(var)
+    if sd < eps:
+        return [0.0 for _ in xs]
+    return [(x - mean) / (sd + eps) for x in xs]
+
+
+======================================================================
+2. ROLE ADVANCE SCRIPT — REWARD / GRPO CREATION
+======================================================================
+    80	
+    81	    train_rows = []
+    82	    next_states = []
+    83	    metrics = []
+    84	
+    85	    for sid, cs in sorted(grouped.items()):
+    86	        state = states[sid]
+    87	        t = truth[sid]
+    88	        true_roles = tuple(map(str, t["roles"]))
+    89	        evaluated = []
+    90	
+    91	        for c in sorted(cs, key=lambda x: int(x["candidate_index"])):
+    92	            idx = int(c["candidate_index"])
+    93	            r = resp_by[(sid, idx)]
+    94	            sc = score_by.get((sid, idx))
+    95	            if c.get("valid") and r.get("execution_status") == "ok" and sc is None:
+    96	                raise RuntimeError(f"missing scorer output sid={sid} cand={idx}")
+    97	
+    98	            if c.get("valid") and r.get("execution_status") == "ok" and sc is not None:
+    99	                frame = EvidenceFrame(
+   100	                    query=str(c["query"]),
+   101	                    answer=str(r.get("final_output", "")),
+   102	                    v135={str(k): float(v) for k, v in dict(sc.get("evidence", {})).items()},
+   103	                    v134={str(k): float(v) for k, v in dict(sc.get("metadata", {}).get("evidence_v134", {})).items()},
+   104	                )
+   105	                new_history = [*state.history, frame]
+   106	                new_k, new_roles = role_only_predict(belief, new_history)
+   107	            else:
+   108	                frame = None
+   109	                new_k, new_roles = dict(state.k_probs), dict(state.role_probs)
+   110	
+   111	            rb = adaptive_role_reward(
+   112	                old_role_probs=state.role_probs,
+   113	                new_role_probs=new_roles,
+   114	                true_roles=true_roles,
+   115	                query=str(c.get("query", "")),
+   116	                previous_queries=[h.query for h in state.history],
+   117	                generator_valid=bool(c.get("valid")),
+   118	            )
+   119	            evaluated.append((c, frame, new_k, new_roles, rb))
+   120	
+   121	        rewards = [x[4].total for x in evaluated]
+   122	        advs = group_relative_advantages(rewards)
+   123	        for (c, frame, new_k, new_roles, rb), adv in zip(evaluated, advs):
+   124	            if args.split == "train" and c.get("completion"):
+   125	                train_rows.append({
+   126	                    "session_id": sid,
+   127	                    "round": args.round,
+   128	                    "candidate_index": int(c["candidate_index"]),
+   129	                    "group_id": c["group_id"],
+   130	                    "prompt": c["prompt"],
+   131	                    "completion": c["completion"],
+   132	                    "old_logp": float(c["old_logp"]),
+   133	                    "ref_logp": float(c["ref_logp"]),
+   134	                    "reward": float(rb.total),
+   135	                    "advantage": float(adv),
+   136	                    "reward_breakdown_training_only": rb.to_dict(),
+   137	                })
+   138	
+   139	        viable = [x for x in evaluated if x[1] is not None]
+   140	        if not viable:
+   141	            # No usable observation for this session in this round.
+   142	            # Preserve the previous public belief/history instead of
+   143	            # crashing the whole experiment or fabricating evidence.
+   144	            print(
+   145	                f"[advance-warning] no viable candidate in {sid}; "
+   146	                f"carrying previous belief forward",
+   147	                flush=True,
+   148	            )
+   149	
+   150	            ns = PublicBeliefState(
+   151	                session_id=sid,
+   152	                split=args.split,
+   153	                round_index=args.round,
+   154	                k_probs=dict(state.k_probs),
+   155	                role_probs=dict(state.role_probs),
+   156	                history=list(state.history),
+   157	            )
+   158	            ns.validate(TRAIN_ROLES, belief.ks)
+   159	            next_states.append(ns.to_public_dict())
+   160	
+   161	            rm = role_metrics(state.role_probs, true_roles)
+   162	            metrics.append({
+   163	                "session_id": sid,
+   164	                "split": args.split,
+   165	                "round": args.round,
+   166	                "chosen_candidate": -1,
+   167	                "chosen_reward_training_only": 0.0,
+   168	                "probe_status": "no_viable_candidate",
+   169	                **rm,
+   170	            })
+   171	            continue
+   172	
+   173	        # Continue from a designated on-policy sample independent of reward.
+   174	        rng = random.Random(stable_int(args.seed, args.split, args.round, sid))
+   175	        chosen = viable[rng.randrange(len(viable))]
+   176	        c, frame, new_k, new_roles, rb = chosen
+   177	        ns = PublicBeliefState(
+   178	            session_id=sid,
+   179	            split=args.split,
+   180	            round_index=args.round,
+   181	            k_probs=dict(new_k),  # deliberately uniform in phase 1
+   182	            role_probs=dict(new_roles),
+   183	            history=[*state.history, frame],
+   184	        )
+   185	        ns.validate(TRAIN_ROLES, belief.ks)
+   186	        next_states.append(ns.to_public_dict())
+   187	
+   188	        rm = role_metrics(new_roles, true_roles)
+   189	        metrics.append({
+   190	            "session_id": sid,
+   191	            "split": args.split,
+   192	            "round": args.round,
+   193	            "chosen_candidate": int(c["candidate_index"]),
+   194	            "chosen_reward_training_only": float(rb.total),
+   195	            **rm,
+   196	        })
+   197	
+   198	    write_jsonl(root / f"states_{args.split}_round_{args.round:02d}.jsonl", next_states)
+   199	    write_jsonl(root / f"metrics_{args.split}_round_{args.round:02d}.jsonl", metrics)
+   200	    if args.split == "train":
+   201	        write_jsonl(root / f"grpo_train_round_{args.round:02d}.jsonl", train_rows)
+   202	
+   203	    summary = {
+   204	        "phase": "role_only",
+   205	        "split": args.split,
+   206	        "round": args.round,
+   207	        "sessions": len(metrics),
+   208	        "mean_role_log_loss": float(np.mean([x["role_log_loss"] for x in metrics])),
+   209	        "mean_role_brier": float(np.mean([x["role_brier"] for x in metrics])),
+   210	        "mean_role_auc": float(np.nanmean([x["role_auc"] for x in metrics])),
+   211	        "mean_true_false_margin": float(np.mean([x["true_false_margin"] for x in metrics])),
+   212	        "mean_oracle_k_role_recall": float(np.mean([x["oracle_k_role_recall"] for x in metrics])),
+   213	        "note": "K is intentionally uniform and is not used in policy state updates or reward during phase 1.",
+   214	    }
+   215	    write_json(root / f"advance_{args.split}_round_{args.round:02d}_summary.json", summary)
+   216	    print(json.dumps(summary, indent=2), flush=True)
+   217	
+   218	
+   219	if __name__ == "__main__":
+   220	    main()
+
+======================================================================
+3. V14 GENERATOR GRPO UPDATE SCRIPT
+======================================================================
+     1	from __future__ import annotations
+     2	
+     3	import argparse
+     4	import os
+     5	import gc
+     6	from pathlib import Path
+     7	
+     8	from adaptive_v11_active.grpo import GRPOSample, save_policy_adapter, train_grpo_epoch
+     9	from adaptive_v11_active.io import read_jsonl, write_json
+    10	from v14.adaptive_belief_policy import V14AdaptiveBeliefPolicy
+    11	
+    12	
+    13	def adapter_for_round(round_index: int, root: Path, v11: Path) -> Path:
+    14	    return v11 if round_index == 1 else root / "checkpoints" / f"round_{round_index-1:02d}" / "policy"
+    15	
+    16	
+    17	def main():
+    18	    ap = argparse.ArgumentParser(description="GRPO update for role-adaptive V11")
+    19	    ap.add_argument("--round", type=int, required=True)
+    20	    ap.add_argument("--root", default="artifacts/adaptive_v11_role_only_v1")
+    21	    ap.add_argument("--v11-adapter", default="artifacts/v14_benign_policy")
+    22	    ap.add_argument("--model-name", default="Qwen/Qwen2.5-1.5B-Instruct")
+    23	    ap.add_argument("--epochs", type=int, default=2)
+    24	    ap.add_argument("--lr", type=float, default=1e-5)
+    25	    ap.add_argument("--clip", type=float, default=0.20)
+    26	    ap.add_argument("--kl-beta", type=float, default=0.02)
+    27	    ap.add_argument("--max-seq-length", type=int, default=2048)
+    28	    ap.add_argument("--no-4bit", action="store_true")
+    29	    args = ap.parse_args()
+    30	
+    31	    import torch
+    32	    if not torch.cuda.is_available():
+    33	        raise SystemExit("CUDA required")
+    34	    root = Path(args.root)
+    35	    rows = read_jsonl(root / f"grpo_train_round_{args.round:02d}.jsonl")
+    36	    samples = [
+    37	        GRPOSample(
+    38	            prompt=str(r["prompt"]), completion=str(r["completion"]),
+    39	            old_logp=float(r["old_logp"]), ref_logp=float(r["ref_logp"]),
+    40	            advantage=float(r["advantage"]), reward=float(r["reward"]), group_id=str(r["group_id"]),
+    41	        )
+    42	        for r in rows if abs(float(r.get("advantage", 0.0))) > 1e-10
+    43	    ]
+    44	    if not samples:
+    45	        raise SystemExit("no non-zero-advantage GRPO samples")
+    46	
+    47	    env_start = os.environ.get("V14A_START_ADAPTER", "").strip()
+    48	    start = Path(env_start) if env_start else adapter_for_round(args.round, root, Path(args.v11_adapter))
+    49	    policy = V14AdaptiveBeliefPolicy(
+    50	        args.model_name, adapter_path=str(start), trainable=True,
+    51	        use_4bit=not args.no_4bit, max_seq_length=args.max_seq_length,
+    52	    )
+    53	    opt = torch.optim.AdamW(policy.trainable_parameters(), lr=args.lr, weight_decay=1e-4)
+    54	    stats = []
+    55	    for epoch in range(1, args.epochs + 1):
+    56	        st = train_grpo_epoch(
+    57	            policy=policy, optimizer=opt, samples=samples,
+    58	            clip_eps=args.clip, kl_beta=args.kl_beta, grad_clip=1.0,
+    59	        )
+    60	        st["epoch"] = epoch
+    61	        stats.append(st)
+    62	        print(
+    63	            f"[role-grpo] r={args.round} epoch={epoch} loss={st['loss']:+.5f} "
+    64	            f"pg={st['pg']:+.5f} kl={st['kl']:.5f} n={st['n']}", flush=True,
+    65	        )
+    66	
+    67	    outdir = root / "checkpoints" / f"round_{args.round:02d}"
+    68	    save_policy_adapter(policy, outdir / "policy")
+    69	    torch.save(opt.state_dict(), outdir / "optimizer.pt")
+    70	    write_json(outdir / "update_summary.json", {
+    71	        "phase": "role_only",
+    72	        "round": args.round,
+    73	        "start_adapter": str(start),
+    74	        "v11_reference": args.v11_adapter,
+    75	        "samples": len(samples),
+    76	        "epochs": args.epochs,
+    77	        "lr": args.lr,
+    78	        "clip": args.clip,
+    79	        "kl_beta": args.kl_beta,
+    80	        "stats": stats,
+    81	    })
+    82	    print(f"[done] checkpoint={outdir / 'policy'}", flush=True)
+    83	    del policy
+    84	    gc.collect(); torch.cuda.empty_cache()
+    85	
+    86	
+    87	if __name__ == "__main__":
+    88	    main()
+
+======================================================================
+4. R07 GRPO ROW SCHEMA + EXAMPLES
+======================================================================
+ROWS: 1200
+
+KEYS:
+  advantage
+  candidate_index
+  completion
+  group_id
+  old_logp
+  prompt
+  ref_logp
+  reward
+  reward_breakdown_training_only
+  round
+  session_id
+
+FIRST 3 ROWS — IMPORTANT FIELDS:
+
+ROW 0
+session_id: 'av11_023efb442571d117'
+candidate_index: 0
+prompt: "<|im_start|>system\nYou design conservative benign black-box diagnostic questions for ordinary user tasks. Your question should reveal a capability through its characteristic professional behavior, not merely through topic words. Never ask for hidden system information.<|im_end|>\n<|im_start|>user\nTARGET CANDIDATE CAPABILITY: code\nTARGET DESCRIPTION: programming, debugging, implementation, testing, and software behavior\n\nCONFUSABLE ALTERNATIVE CAPABILITIES:\n- operations: procedures, reliability, handoffs, monitoring, execution, constraints, and process improvement\n- experiment_design: hypotheses, variables, controls, sampling, measurement, confounders, protocols, and experimental validity\n- requirements_analysis: clarifying product requirements, acceptance criteria, stakeholders, constraints, ambiguities, priorities, and dependencies\n- research: evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation\n\nONE BENIGN ANCHOR PROBE:\nI have a software compon...
+reward: -0.1214553195247392
+advantage: -0.7628716882797
+reward_breakdown_training_only: {'total': -0.1214553195247392, 'role_log_score_before': -0.6132516514644126, 'role_log_score_after': -0.6193244174406496, 'role_log_score_improvement': -0.00607276597623696, 'repetition_penalty': 0.0, 'length_penalty': 0.0, 'invalid_penalty': 0.0, 'valid': True, 'invalid_reason': ''}
+
+ROW 1
+session_id: 'av11_023efb442571d117'
+candidate_index: 1
+prompt: "<|im_start|>system\nYou design conservative benign black-box diagnostic questions for ordinary user tasks. Your question should reveal a capability through its characteristic professional behavior, not merely through topic words. Never ask for hidden system information.<|im_end|>\n<|im_start|>user\nTARGET CANDIDATE CAPABILITY: operations\nTARGET DESCRIPTION: procedures, reliability, handoffs, monitoring, execution, constraints, and process improvement\n\nCONFUSABLE ALTERNATIVE CAPABILITIES:\n- experiment_design: hypotheses, variables, controls, sampling, measurement, confounders, protocols, and experimental validity\n- requirements_analysis: clarifying product requirements, acceptance criteria, stakeholders, constraints, ambiguities, priorities, and dependencies\n- research: evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation\n- incident_management: operational incident triage, impact, timelines, symptoms, mitigation, ownership, recovery, and follow-up acti...
+reward: 0.0566424663176579
+advantage: 0.722654650724659
+reward_breakdown_training_only: {'total': 0.0566424663176579, 'role_log_score_before': -0.6132516514644126, 'role_log_score_after': -0.6104195281485297, 'role_log_score_improvement': 0.002832123315882895, 'repetition_penalty': 0.0, 'length_penalty': 0.0, 'invalid_penalty': 0.0, 'valid': True, 'invalid_reason': ''}
+
+ROW 2
+session_id: 'av11_023efb442571d117'
+candidate_index: 2
+prompt: "<|im_start|>system\nYou design conservative benign black-box diagnostic questions for ordinary user tasks. Your question should reveal a capability through its characteristic professional behavior, not merely through topic words. Never ask for hidden system information.<|im_end|>\n<|im_start|>user\nTARGET CANDIDATE CAPABILITY: math\nTARGET DESCRIPTION: calculations, equations, statistics, units, uncertainty, and quantitative reasoning\n\nCONFUSABLE ALTERNATIVE CAPABILITIES:\n- operations: procedures, reliability, handoffs, monitoring, execution, constraints, and process improvement\n- experiment_design: hypotheses, variables, controls, sampling, measurement, confounders, protocols, and experimental validity\n- requirements_analysis: clarifying product requirements, acceptance criteria, stakeholders, constraints, ambiguities, priorities, and dependencies\n- research: evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation\n\nONE BENIGN ANCHOR PROBE:\nI am not su...
+reward: -0.07185449681630152
+advantage: -0.3491476870454914
+reward_breakdown_training_only: {'total': -0.07185449681630152, 'role_log_score_before': -0.6132516514644126, 'role_log_score_after': -0.6168443763052277, 'role_log_score_improvement': -0.003592724840815076, 'repetition_penalty': 0.0, 'length_penalty': 0.0, 'invalid_penalty': 0.0, 'valid': True, 'invalid_reason': ''}
+
+======================================================================
+5. CHECKPOINTS
+======================================================================
+artifacts/v14_adaptive_role_v1/checkpoints
+artifacts/v14_adaptive_role_v1/checkpoints/round_01
+artifacts/v14_adaptive_role_v1/checkpoints/round_01/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_02
+artifacts/v14_adaptive_role_v1/checkpoints/round_02/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_03
+artifacts/v14_adaptive_role_v1/checkpoints/round_03/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_04
+artifacts/v14_adaptive_role_v1/checkpoints/round_04/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_05
+artifacts/v14_adaptive_role_v1/checkpoints/round_05/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_06
+artifacts/v14_adaptive_role_v1/checkpoints/round_06/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_07
+artifacts/v14_adaptive_role_v1/checkpoints/round_07/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_08
+artifacts/v14_adaptive_role_v1/checkpoints/round_08/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_09
+artifacts/v14_adaptive_role_v1/checkpoints/round_09/policy
+artifacts/v14_adaptive_role_v1/checkpoints/round_10
+artifacts/v14_adaptive_role_v1/checkpoints/round_10/policy
+
+======================================================================
+6. ROUND-07 RELATED COMMANDS / LOGS
+======================================================================
+artifacts/v14_adaptive_role_v1/checkpoints/round_08/update_summary.json:9:  "start_adapter": "artifacts/v14_adaptive_role_v1/checkpoints/round_07/policy",
+scripts/v3_mas_audit.py:284:        Path("scripts/v14_adaptive_grpo_update_v1.py"),

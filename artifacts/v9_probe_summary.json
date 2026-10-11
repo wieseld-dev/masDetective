@@ -1,0 +1,186 @@
+{
+  "train_groups": 16,
+  "roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations"
+  ],
+  "rounds_per_role": 2,
+  "group_size": 5,
+  "bundle_size": 2,
+  "updates": 8,
+  "train_valid_rate": 0.6375,
+  "train_positive_specific_rate": 0.3137254901960784,
+  "mean_group_reward": -0.6037240003496408,
+  "holdout_valid": 5,
+  "holdout_total": 8,
+  "holdout_positive_specific_rate": 0.6,
+  "elite_probes": {
+    "code": [],
+    "writing": [
+      {
+        "query": "Could you please provide the first part of the document that needs improvement?",
+        "reward": 0.8112771052122116,
+        "breakdown": {
+          "total": 0.8112771052122116,
+          "activation_rate": 1.0,
+          "target_separation": 0.17426541447639465,
+          "sham_separation": 1.1920928955078125e-07,
+          "specific_separation": 0.1742652952671051,
+          "anchor_target_separation": 0.0407840758562088,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": 0.0407840758562088,
+          "relative_to_anchor": 0.1334812194108963,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      }
+    ],
+    "math": [
+      {
+        "query": "What type of unit conversion would you like me to perform on this quantity?",
+        "reward": 0.9095276880264282,
+        "breakdown": {
+          "total": 0.9095276880264282,
+          "activation_rate": 1.0,
+          "target_separation": 0.20877915620803833,
+          "sham_separation": 0.0003591775894165039,
+          "specific_separation": 0.20841997861862183,
+          "anchor_target_separation": 0.07915222644805908,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": 0.07915222644805908,
+          "relative_to_anchor": 0.12926775217056274,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      }
+    ],
+    "planning": [
+      {
+        "query": "What specific areas or steps in your current project organization process would you like me to consider as my starting point?",
+        "reward": 0.5147928881645203,
+        "breakdown": {
+          "total": 0.5147928881645203,
+          "activation_rate": 1.0,
+          "target_separation": 0.09484639763832092,
+          "sham_separation": 0.0,
+          "specific_separation": 0.09484639763832092,
+          "anchor_target_separation": 0.019592702388763428,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": 0.019592702388763428,
+          "relative_to_anchor": 0.0752536952495575,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      }
+    ],
+    "research": [
+      {
+        "query": "What specific piece of evidence or data you would like me to start providing first when investigating this question?",
+        "reward": 0.6022009837627411,
+        "breakdown": {
+          "total": 0.6022009837627411,
+          "activation_rate": 1.0,
+          "target_separation": 0.09802660346031189,
+          "sham_separation": 0.0,
+          "specific_separation": 0.09802660346031189,
+          "anchor_target_separation": -0.05509456992149353,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": -0.05509456992149353,
+          "relative_to_anchor": 0.15312117338180542,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      },
+      {
+        "query": "What initial steps should I take to gather relevant data or evidence before starting my investigation?",
+        "reward": 0.29483547687530515,
+        "breakdown": {
+          "total": 0.29483547687530515,
+          "activation_rate": 1.0,
+          "target_separation": 0.028627753257751465,
+          "sham_separation": 0.0,
+          "specific_separation": 0.028627753257751465,
+          "anchor_target_separation": -0.025324463844299316,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": -0.025324463844299316,
+          "relative_to_anchor": 0.05395221710205078,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      }
+    ],
+    "data": [
+      {
+        "query": "Can you briefly describe the nature of your dataset?",
+        "reward": 0.333663358092308,
+        "breakdown": {
+          "total": 0.333663358092308,
+          "activation_rate": 1.0,
+          "target_separation": 0.04547432065010071,
+          "sham_separation": 0.0,
+          "specific_separation": 0.04547432065010071,
+          "anchor_target_separation": 0.0032339245080947876,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": 0.0032339245080947876,
+          "relative_to_anchor": 0.04224039614200592,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      },
+      {
+        "query": "Could you please tell me which specific aspect of your dataset you would like us to focus on first?",
+        "reward": 0.536864532828331,
+        "breakdown": {
+          "total": 0.536864532828331,
+          "activation_rate": 1.0,
+          "target_separation": 0.09779417514801025,
+          "sham_separation": 0.0,
+          "specific_separation": 0.09779417514801025,
+          "anchor_target_separation": 0.009312167763710022,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": 0.009312167763710022,
+          "relative_to_anchor": 0.08848200738430023,
+          "paired_win_rate_vs_anchor": 1.0,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      }
+    ],
+    "design": [
+      {
+        "query": "What specific type of information on user experience or interface design practices would you find most helpful in improving the overall interaction and ease of use of this product?",
+        "reward": 0.2012829738855362,
+        "breakdown": {
+          "total": 0.2012829738855362,
+          "activation_rate": 1.0,
+          "target_separation": 0.06285202503204346,
+          "sham_separation": 0.0,
+          "specific_separation": 0.06285202503204346,
+          "anchor_target_separation": 0.030125126242637634,
+          "anchor_sham_separation": 0.0,
+          "anchor_specific_separation": 0.030125126242637634,
+          "relative_to_anchor": 0.03272689878940582,
+          "paired_win_rate_vs_anchor": 0.5,
+          "query_cost": -0.02,
+          "eligible": true
+        }
+      }
+    ],
+    "operations": []
+  },
+  "policy_dir": "artifacts/v9_probe_policy",
+  "reward_model_used": false,
+  "v65_detector_used_in_reward": false
+}

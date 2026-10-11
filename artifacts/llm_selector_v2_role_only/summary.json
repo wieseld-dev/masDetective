@@ -1,0 +1,85 @@
+{
+  "version": "llm_selector_v1",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "best_epoch": 1,
+  "selection_metric": "VAL role mean_regret",
+  "role_target": "role_brier_gain_training_only",
+  "k_target": "k_brier_gain_training_only",
+  "loss": "role(listwise + 0.5 pairwise + 0.2 Huber) + lambda_k * K(same)",
+  "lambda_k": 0.0,
+  "target_stats": {
+    "role_mu": 0.0739955653108904,
+    "role_sd": 0.08586484002612076,
+    "k_mu": 0.002006963486412764,
+    "k_sd": 0.018048066969531804
+  },
+  "train": {
+    "rows": 1560,
+    "states": 390,
+    "systems": 390
+  },
+  "val": {
+    "rows": 388,
+    "states": 97,
+    "systems": 97,
+    "metrics": {
+      "role": {
+        "states": 97,
+        "mean_selected_gain": 0.0961568601772413,
+        "mean_random_gain": 0.07727918618260124,
+        "mean_oracle_gain": 0.1688410692161197,
+        "mean_regret": 0.0726842090388784,
+        "oracle_top1_hit": 0.3402061855670103,
+        "oracle_top2_hit": 0.6082474226804123,
+        "mean_spearman": 0.16288659793814433,
+        "mean_pair_accuracy": 0.5687285223367697,
+        "oracle_signal_captured": 0.20617393798825032
+      },
+      "K": {
+        "states": 97,
+        "mean_selected_gain": 0.0007653502277805261,
+        "mean_random_gain": 0.0017866078038556769,
+        "mean_oracle_gain": 0.01706840231278614,
+        "mean_regret": 0.016303052085005616,
+        "oracle_top1_hit": 0.1958762886597938,
+        "oracle_top2_hit": 0.4948453608247423,
+        "mean_spearman": -0.049484536082474204,
+        "mean_pair_accuracy": 0.48367697594501724,
+        "oracle_signal_captured": -0.06682838036320553
+      }
+    }
+  },
+  "historical_challenge": {
+    "note": "Existing visible_realized_gain_v3/val split. Not used for training or model selection. Not treated as untouched final TEST.",
+    "rows": 524,
+    "states": 70,
+    "metrics": {
+      "role": {
+        "states": 70,
+        "mean_selected_gain": 0.09133850089924159,
+        "mean_random_gain": 0.07435241332196418,
+        "mean_oracle_gain": 0.19569593918449363,
+        "mean_regret": 0.10435743828525208,
+        "oracle_top1_hit": 0.2,
+        "oracle_top2_hit": 0.3,
+        "mean_spearman": 0.1117687074829932,
+        "mean_pair_accuracy": 0.5443537414965985,
+        "oracle_signal_captured": 0.1399834680633972
+      },
+      "K": {
+        "states": 70,
+        "mean_selected_gain": 0.002236678699863253,
+        "mean_random_gain": 0.001597356198634373,
+        "mean_oracle_gain": 0.01894756273705927,
+        "mean_regret": 0.016710884037196016,
+        "oracle_top1_hit": 0.11428571428571428,
+        "oracle_top2_hit": 0.2714285714285714,
+        "mean_spearman": 0.0012244897959183638,
+        "mean_pair_accuracy": 0.49464285714285716,
+        "oracle_signal_captured": 0.03684812050006408
+      }
+    }
+  },
+  "internal_test_used": false,
+  "runtime_hours": 0.1358456629514694
+}

@@ -1,0 +1,88 @@
+======================================================================================================================
+EXHAUSTIVE CHAIN MECHANISM AUDIT V2
+======================================================================================================================
+DATA MODE: FROZEN_60_DEV_157_EXTERNAL
+train=60 | test=157 | primary_dim=16
+
+SYNTHETIC GROUND-TRUTH TEST
+  mean rho = +1.0000
+  min rho  = +1.0000
+
+PRIMARY ORDER REPRODUCTION
+  common-SUFFIX: rho=+0.3313 lift=1.712x oracle=2.522x
+  common-PREFIX: rho=+0.1056 lift=1.120x oracle=2.604x
+  combined order rho ~= +0.2184
+
+REPRESENTATION AUDIT
+  same spectral score vs FULL384 target: rho ~= +0.0491
+
+PAIR-SENSITIVITY EXPLANATION
+  direct pair-map transfer macro rho ~= +0.0281
+  actual pair->triple rho:
+    ABC_vs_BAC      +0.9516
+    ACB_vs_CAB      +0.6462
+    BCA_vs_CBA      +0.8592
+    ABC_vs_ACB      +0.2538
+    BAC_vs_BCA      +0.4406
+    CAB_vs_CBA      +0.3328
+
+COUNT / INSERTION
+  insert_first    rho=+0.1357 lift=1.338x oracle=2.550x
+  insert_middle   rho=+0.0325 lift=1.060x oracle=2.559x
+  insert_last     rho=+0.0004 lift=0.943x oracle=2.807x
+  insertion macro rho ~= +0.0562
+
+15-TRIPLE STRUCTURAL GENERALIZATION
+  common_prefix          n= 3 rho=+0.1056 lift=1.120x
+  common_suffix          n= 3 rho=+0.3313 lift=1.712x
+  no_common_endpoint     n= 9 rho=+0.3202 lift=1.616x
+  kendall_1              n= 6 rho=+0.2184 lift=1.416x
+  kendall_2              n= 6 rho=+0.3117 lift=1.632x
+  kendall_3              n= 3 rho=+0.3370 lift=1.586x
+
+AGENT-LABEL PERMUTATION CONTROL
+  correct labeling rank among 6 = 2
+  best mapping rho = +0.2364
+  correct mapping rho = +0.2184
+
+NULL CONTROLS
+  shuffle rho: mean=+0.0003, 95th=+0.0533
+  random-K rho: mean=-0.0004, 95th=+0.0726
+
+BOOTSTRAP — six primary order contrasts
+  rho mean=+0.2165 95%CI=[+0.1427, +0.2888] positive=1.000
+
+DIMENSION SWEEP
+  d= 8 | suffix=-0.066 | prefix=-0.095 | all-order=-0.080 | insert=-0.015
+  d=16 | suffix=+0.332 | prefix=+0.107 | all-order=+0.219 | insert=+0.056
+  d=32 | suffix=+0.199 | prefix=+0.077 | all-order=+0.138 | insert=+0.062
+  d=64 | suffix=+0.053 | prefix=+0.090 | all-order=+0.072 | insert=+0.059
+
+SEMANTIC CLUSTER STABILITY
+  cluster 0: n=13, rho=+0.378
+  cluster 1: n=12, rho=+0.077
+  cluster 2: n=23, rho=+0.394
+  cluster 3: n=26, rho=-0.046
+  cluster 4: n=18, rho=+0.003
+  cluster 5: n=9, rho=+0.239
+  cluster 6: n=33, rho=+0.108
+  cluster 7: n=23, rho=+0.151
+
+======================================================================================================================
+MECHANISM FLAGS
+======================================================================================================================
+synthetic implementation valid : True
+order signal survives          : True
+survives FULL384 evaluation    : False
+count/insertion signal         : False
+pair-only baseline explains it : False
+correct agent labels rank #1   : False
+
+Interpretation:
+- synthetic=False => implementation/identifiability problem; do not interpret real-data failures.
+- order=True + pair-only-explains=False + label-specific=True => strongest evidence for real compositional algebra.
+- order=True + pair-only-explains=True => Chain result may mostly be transfer of pair order-sensitivity.
+- PCA positive but FULL384 weak => representation/evaluation-space artifact risk.
+- order=True + insertion=True => evidence extends beyond commutator/order into agent insertion/count.
+- order=True + insertion=False => current algebra appears order-specific.
+======================================================================================================================

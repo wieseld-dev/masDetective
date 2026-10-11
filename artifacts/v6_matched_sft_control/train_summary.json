@@ -1,0 +1,59 @@
+{
+  "mode": "sft",
+  "input_adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "output_adapter": "artifacts/v6_matched_sft_control/policy",
+  "positives": 17,
+  "preferences": 122,
+  "preference_families": {
+    "DIRECTION": 58,
+    "META": 64
+  },
+  "pref_dataset_sha256": "11829d804c9f7519cec76f50aab173d4b73615cccac411a81425ae3cb4b59498",
+  "epochs": 3,
+  "slots_per_epoch": 122,
+  "microbatches": 366,
+  "optimizer_steps": 92,
+  "expected_optimizer_steps": 92,
+  "grad_accum": 4,
+  "lr": 2e-06,
+  "sft_weight": 1.0,
+  "pref_weight": 0.5,
+  "dpo_beta": 1.0,
+  "anchor_weight": 0.05,
+  "mean_train_sft": 1.5609204234972678,
+  "mean_train_anchor": 0.004933178750543646,
+  "mean_train_dpo": 0.0,
+  "mean_train_weighted_dpo": 0.0,
+  "mean_positive_lp_gain": 0.16075942095588236,
+  "min_positive_lp_gain": 0.087890625,
+  "mean_preference_margin_gain": 0.10297131147540983,
+  "weighted_preference_margin_gain": 0.10073194316789223,
+  "direction_margin_gain": 0.10846578663793104,
+  "meta_margin_gain": 0.097991943359375,
+  "weighted_direction_margin_gain": 0.10600789388020827,
+  "weighted_meta_margin_gain": 0.09604220920138885,
+  "input_adapter_sha256": "6f4e0d2e03b048eb5333199f18a0ba74562ee8abf4a7bfdcee7a380e764dde68",
+  "schedule_audit": [
+    {
+      "epoch": 1,
+      "slots": 122,
+      "positive_exposure_min": 7,
+      "positive_exposure_max": 8,
+      "preference_unique": 122
+    },
+    {
+      "epoch": 2,
+      "slots": 122,
+      "positive_exposure_min": 7,
+      "positive_exposure_max": 8,
+      "preference_unique": 122
+    },
+    {
+      "epoch": 3,
+      "slots": 122,
+      "positive_exposure_min": 7,
+      "positive_exposure_max": 8,
+      "preference_unique": 122
+    }
+  ]
+}

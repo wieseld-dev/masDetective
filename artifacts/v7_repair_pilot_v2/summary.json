@@ -1,0 +1,16 @@
+{
+  "sources": 48,
+  "candidates": 384,
+  "benign_ok": 303,
+  "topic_ok": 220,
+  "eligible": 166,
+  "eligible_rate": 0.4322916666666667,
+  "sources_with_eligible": 32,
+  "failure_reasons": {
+    "reversed_direction": 30,
+    "multiple_questions": 13,
+    "system_self": 13,
+    "not_question": 2,
+    "dangling": 27
+  }
+}

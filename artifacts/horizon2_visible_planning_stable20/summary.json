@@ -1,0 +1,36 @@
+{
+  "setting": {
+    "round_only": 1,
+    "states": 20,
+    "particles_per_k": 32,
+    "branches": 32,
+    "gamma": 1.0,
+    "objective": "mi_z",
+    "hybrid_alpha": 0.5,
+    "real_belief_mutated_during_planning": false,
+    "simulated_beliefs_discarded_after_scoring": true,
+    "q2_bank": "remaining candidates from same pre-execution state",
+    "counterfactual_limitation": "Recorded q2 visible evidence was generated from the original state, not after counterfactual q1. This is a fixed-bank offline planning diagnostic, not final sequential deployment.",
+    "truth_used_for_candidate_scoring": false,
+    "truth_used_for_retrospective_evaluation_only": true
+  },
+  "q1_difference_rate": 0.55,
+  "role_brier_gain": {
+    "greedy": 0.0009762914560560283,
+    "horizon2": 0.0009637538003748877,
+    "oracle_fixed_bank": 0.006023965380540493
+  },
+  "k_brier_gain": {
+    "greedy": -0.011701326547237111,
+    "horizon2": -0.01140473522766694,
+    "oracle_fixed_bank": 0.006670625195807234
+  },
+  "p_true_k_gain": {
+    "greedy": -0.005676883736599446,
+    "horizon2": -0.005530961772418101
+  },
+  "p_true_z_gain": {
+    "greedy": 7.899063814890278e-05,
+    "horizon2": 7.734361495632487e-05
+  }
+}

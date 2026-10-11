@@ -1,0 +1,347 @@
+
+========================================================================================================================
+SYSTEM = simple5_01_code_plan_research
+TARGET = fact_checking
+QUERY = What specific facts or claims from recent news articles or social media posts should I provide first so you can start verifying their accuracy?
+ORIGINAL ROLES = ['code', 'planning', 'research']
+CF ROLES       = ['code', 'fact_checking', 'research']
+
+PRESENT TRACE = ['fact_checking']
+ABSENT TRACE  = ['research']
+V13.5 PRESENT=+3.2891 ABSENT=+3.8516 DELTA=-0.5625
+
+----- PRESENT FINAL RESPONSE -----
+To assist you in verifying the accuracy of specific facts or claims, please provide the following details:
+
+1. **Exact Claim or Statement**: The specific fact or claim you want to verify.
+2. **Source**: Where you found the claim (e.g., news article, social media post, etc.), including the publication date and author if available.
+3. **Context**: Any additional context that might help in understanding the claim (e.g., related events, specific individuals involved).
+4. **Key Entities**: Names of people, organizations, or locations mentioned in the claim.
+
+With this information, I can help you assess the accuracy and reliability of the claim.
+
+----- ABSENT FINAL RESPONSE -----
+To help verify the accuracy of specific facts or claims from recent news articles or social media posts, please provide the following information:
+
+1. **Exact Claims or Facts**: Share the specific statements or claims you want to verify. This could include statistics, quotes, or assertions about events.
+
+2. **Source Information**: Provide details about where you found the information, such as the name of the news outlet, the title of the article, the date of publication, or the social media platform and account that posted it.
+
+3. **Context**: If available, include any relevant context surrounding the claim, such as the topic being discussed, the individuals or organizations involved, or any related events.
+
+4. **Links or References**: If possible, include links to the articles or posts for direct access to the original content.
+
+5. **Specific Areas of Concern**: Indicate if there are particular aspects of the claim that you find questionable or if you have specific doubts about its accuracy.
+
+Once you provide this information, I can assist you in verifying the claims, finding credible sources, and evaluating the evidence.
+
+
+========================================================================================================================
+SYSTEM = simple5_02_risk_access_translation
+TARGET = financial_analysis
+QUERY = What specific financial data and analysis tools should I provide first to get started with a financial comparison?
+ORIGINAL ROLES = ['risk_assessment', 'accessibility_review', 'translation']
+CF ROLES       = ['risk_assessment', 'financial_analysis', 'translation']
+
+PRESENT TRACE = ['financial_analysis']
+ABSENT TRACE  = ['risk_assessment']
+V13.5 PRESENT=+2.8125 ABSENT=-1.6562 DELTA=+4.4688
+
+----- PRESENT FINAL RESPONSE -----
+To conduct a financial comparison effectively, you should gather the following specific financial data and utilize relevant analysis tools:
+
+### Financial Data to Provide:
+1. **Income Statements**: For the periods you want to compare (e.g., quarterly or annually). This should include:
+   - Revenue
+   - Cost of Goods Sold (COGS)
+   - Gross Profit
+   - Operating Expenses
+   - Net Income
+
+2. **Balance Sheets**: For the same periods, including:
+   - Total Assets
+   - Total Liabilities
+   - Shareholder Equity
+
+3. **Cash Flow Statements**: To analyze cash inflows and outflows, including:
+   - Operating Cash Flow
+   - Investing Cash Flow
+   - Financing Cash Flow
+
+4. **Key Financial Ratios**: Such as:
+   - Gross Margin
+   - Operating Margin
+   - Net Profit Margin
+   - Return on Assets (ROA)
+   - Return on Equity (ROE)
+
+5. **Budget Data**: If available, provide budgeted figures for comparison against actual performance.
+
+6. **Market Data**: If comparing against competitors, include industry benchmarks or competitor financials.
+
+### Analysis Tools to Use:
+1. **Excel or Spreadsheet Software**: For calculations, creating financial models, and visualizing data through charts and graphs.
+
+2. **Financial Ratios Analysis**: Use formulas to calculate key ratios for both periods or entities being compared.
+
+3. **Variance Analysis**: To assess the differences between budgeted and actual figures.
+
+4. **Trend Analysis**: To observe performance over time by plotting key metrics.
+
+5. **Scenario Analysis**: To evaluate how different assumptions impact financial outcomes.
+
+6. **SWOT Analysis**: To understand the strengths, weaknesses, opportunities, and threats related to the financial performance.
+
+### Steps to Get Started:
+1. **Define the Scope**: Determine what entities or periods you are comparing.
+2. **Collect Data**: Gather the financial statements and any other relevant data.
+3. **Choose Metrics**: Decide which financial metrics are most relevant for your comparison.
+4. **Perform Calculations**: Use the data to calculate ratios and perform variance analysis.
+5. **Visualize Results**: Create charts or graphs to illustrate findings clearly.
+
+Once you have this data and tools ready, you can proceed with the financial comparison analysis. If you need help with specific calculations or interpretations, feel free to ask!
+
+----- ABSENT FINAL RESPONSE -----
+To effectively conduct a financial comparison, you should gather specific financial data and utilize appropriate analysis tools. Here’s a structured approach to get started:
+
+### Financial Data to Collect:
+
+1. **Historical Financial Statements:**
+   - Income Statements (Profit & Loss)
+   - Balance Sheets
+   - Cash Flow Statements
+
+2. **Key Financial Metrics:**
+   - Revenue Growth Rate
+   - Gross Profit Margin
+   - Operating Margin
+   - Net Profit Margin
+   - Return on Assets (ROA)
+   - Return on Equity (ROE)
+   - Current Ratio
+   - Debt-to-Equity Ratio
+
+3. **Market Data:**
+   - Industry benchmarks
+   - Competitor financials (if available)
+   - Economic indicators relevant to the sector
+
+4. **Forecast Data:**
+   - Projected revenues and expenses
+   - Future cash flow projections
+   - Capital expenditure plans
+
+5. **Risk Factors:**
+   - Identified risks that could impact financial performance (e.g., market volatility, regulatory changes)
+
+### Analysis Tools to Utilize:
+
+1. **Spreadsheet Software (e.g., Excel, Google Sheets):**
+   - For data organization, calculations, and basic financial modeling.
+   - Use pivot tables for summarizing data and creating comparative analyses.
+
+2. **Financial Analysis Software:**
+   - Tools like Tableau or Power BI for data visualization and trend analysis.
+   - Financial modeling software for scenario analysis and forecasting.
+
+3. **Ratio Analysis Tools:**
+   - Use financial ratio calculators to compare key metrics across different entities or time periods.
+
+4. **Scenario Analysis Tools:**
+   - Tools that allow you to model different financial scenarios based on varying assumptions (e.g., Monte Carlo simulations).
+
+5. **Benchmarking Tools:**
+   - Platforms that provide industry benchmarks for comparison against competitors.
+
+### Steps to Conduct the Financial Comparison:
+
+1. **Define Objectives:**
+   - Clearly outline what you are comparing (e.g., company performance, investment opportunities).
+
+2. **Collect and Organize Data:**
+   - Gather the financial data mentioned above and organize it for analysis.
+
+3. **Perform Ratio Analysis:**
+   - Calculate key financial ratios for the entities being compared.
+
+4. **Conduct Trend Analysis:**
+   - Analyze historical data to identify trends over time.
+
+5. **Visualize Data:**
+   - Use charts and graphs to present findings clearly.
+
+6. **Interpret Results:**
+   - Assess the implications of the financial comparisons and identify strengths, weaknesses, opportunities, and threats (SWOT analysis).
+
+7. **Document Assumptions and Risks:**
+   - Clearly state any assumptions made during the analysis and identify potential risks that could affect the outcomes.
+
+By following this structured approach, you will be well-equipped to conduct a thorough financial comparison that is decision-relevant and insightful.
+
+
+========================================================================================================================
+SYSTEM = simple5_03_data_db_requirements
+TARGET = requirements_analysis
+QUERY = What specific information should I clarify first so you can perform a requirements analysis more efficiently?
+ORIGINAL ROLES = ['data', 'database_design', 'requirements_analysis']
+CF ROLES       = ['data', 'database_design', 'experiment_design']
+
+PRESENT TRACE = ['requirements_analysis']
+ABSENT TRACE  = ['data']
+V13.5 PRESENT=+4.5977 ABSENT=-4.7480 DELTA=+9.3457
+
+----- PRESENT FINAL RESPONSE -----
+To perform a requirements analysis more efficiently, please clarify the following specific information:
+
+1. **Project Overview**: What is the overall goal or purpose of the project? What problem are we trying to solve?
+
+2. **Stakeholders**: Who are the key stakeholders involved? What are their roles and interests in the project?
+
+3. **Scope**: What are the boundaries of the project? What is included and what is explicitly excluded?
+
+4. **Requirements**: What are the high-level requirements or features you envision? Are there any specific functionalities that must be included?
+
+5. **Acceptance Criteria**: What criteria will be used to determine if the requirements have been met? How will success be measured?
+
+6. **Constraints**: Are there any limitations or constraints (e.g., budget, time, technology) that we need to consider?
+
+7. **Dependencies**: Are there any dependencies on other projects, systems, or teams that we need to be aware of?
+
+8. **Priorities**: What are the priorities among the requirements? Which features are must-haves versus nice-to-haves?
+
+9. **Ambiguities**: Are there any areas of the project that are unclear or need further definition?
+
+10. **Target Audience**: Who will be the end-users of the product or service? What are their needs and expectations?
+
+Providing detailed information on these aspects will help in transforming vague needs into clear, testable requirements.
+
+----- ABSENT FINAL RESPONSE -----
+To perform a requirements analysis efficiently, please clarify the following specific information:
+
+1. **Objective**: What is the primary goal of the analysis? Are you looking to generate insights, create reports, or support decision-making?
+
+2. **Data Sources**: What datasets are you working with? Please provide details about their origin, format (e.g., CSV, SQL, JSON), and any relevant documentation.
+
+3. **Data Structure**: What is the schema of the datasets? Include information about the tables, fields, data types, and relationships between datasets.
+
+4. **Key Metrics**: What specific metrics or KPIs are you interested in analyzing? Are there any calculations or aggregations needed?
+
+5. **Target Audience**: Who will be using the results of the analysis? Understanding the audience can help tailor the output to their needs.
+
+6. **Data Quality**: Are there known issues with the data quality? This includes missing values, duplicates, or inconsistencies.
+
+7. **Transformations**: What specific transformations or cleaning steps do you anticipate needing? For example, do you need to normalize data, handle outliers, or create derived fields?
+
+8. **Tools and Technologies**: What tools or technologies are you planning to use for the analysis (e.g., Python, R, SQL, Excel)?
+
+9. **Timeline**: What is the timeline for the analysis? Are there any deadlines or milestones to consider?
+
+10. **Compliance and Privacy**: Are there any compliance or privacy considerations related to the data (e.g., GDPR, HIPAA)?
+
+By providing clarity on these points, I can assist you more effectively in your requirements analysis.
+
+
+========================================================================================================================
+SYSTEM = simple5_04_support_incident_ops
+TARGET = incident_management
+QUERY = First, could you please share the error message or any other symptom that is occurring?
+ORIGINAL ROLES = ['customer_support_triage', 'incident_management', 'operations']
+CF ROLES       = ['customer_support_triage', 'experiment_design', 'operations']
+
+PRESENT TRACE = ['customer_support_triage']
+ABSENT TRACE  = ['customer_support_triage']
+V13.5 PRESENT=+0.8477 ABSENT=+0.9707 DELTA=-0.1230
+
+----- PRESENT FINAL RESPONSE -----
+Sure! Please provide the error message or describe the symptoms you are experiencing. This will help me understand the issue better and assist you effectively.
+
+----- ABSENT FINAL RESPONSE -----
+Sure! Please provide the error message you are encountering or describe the symptoms you are experiencing. This will help me understand the issue better.
+
+
+========================================================================================================================
+SYSTEM = simple5_05_docs_qa_writing
+TARGET = research
+QUERY = I need help starting my research by providing some initial evidence to better understand the topic. Can you suggest where I should begin looking?
+ORIGINAL ROLES = ['documentation', 'qa_testing', 'writing']
+CF ROLES       = ['documentation', 'research', 'writing']
+
+PRESENT TRACE = ['research']
+ABSENT TRACE  = ['writing']
+V13.5 PRESENT=+1.9961 ABSENT=+0.5234 DELTA=+1.4727
+
+----- PRESENT FINAL RESPONSE -----
+Certainly! To effectively start your research, it's important to first define your topic clearly. However, I can provide you with a general approach and some resources that are commonly useful across various fields of study. Here’s a structured way to begin your research:
+
+### 1. **Define Your Research Question**
+   - Clearly articulate what you want to investigate. A well-defined question will guide your research process.
+
+### 2. **Initial Background Reading**
+   - **Encyclopedias and Reference Books**: Start with general sources like encyclopedias (e.g., Britannica, Stanford Encyclopedia of Philosophy) to get an overview of your topic.
+   - **Textbooks**: Look for introductory textbooks in your field that cover the basics and provide context.
+
+### 3. **Academic Databases**
+   - **Google Scholar**: A great starting point for finding scholarly articles, theses, and books.
+   - **JSTOR**: Offers access to thousands of academic journals and books across various disciplines.
+   - **PubMed**: If your topic is related to health or life sciences, this is a key resource for peer-reviewed articles.
+   - **ERIC**: For education-related topics, this database provides access to education literature and resources.
+
+### 4. **Library Resources**
+   - **University Libraries**: If you have access to a university library, utilize their catalog and databases. Librarians can also assist you in finding relevant materials.
+   - **Interlibrary Loan**: If you find a book or article that is not available in your library, consider using interlibrary loan services.
+
+### 5. **Government and Institutional Reports**
+   - Look for reports from government agencies (e.g., CDC, WHO, UNESCO) or reputable organizations (e.g., Pew Research Center) that provide data and insights on various topics.
+
+### 6. **News Articles and Magazines**
+   - For current events or contemporary issues, reputable news sources (e.g., The New York Times, The Guardian) and magazines (e.g., The Atlantic, Scientific American) can provide context and recent developments.
+
+### 7. **Comparative Studies**
+   - If applicable, look for comparative studies that analyze different perspectives or case studies related to your topic. This can help you understand the scope and implications of your research.
+
+### 8. **Synthesis of Information**
+   - As you gather information, start synthesizing it by identifying key themes, arguments, and gaps in the literature. This will help you formulate your own thesis or hypothesis.
+
+### 9. **Evaluation of Claims**
+   - Critically evaluate the sources you find. Consider the credibility of the authors, the methodology used in studies, and the relevance of the findings to your research question.
+
+### 10. **Organize Your Findings**
+   - Keep track of your sources and notes. Tools like Zotero or Mendeley can help you manage citations and organize your research.
+
+### Conclusion
+By following these steps, you can build a solid foundation for your research. If you have a specific topic in mind, I can provide more tailored suggestions for sources and methods.
+
+----- ABSENT FINAL RESPONSE -----
+Absolutely! To effectively start your research, it’s important to identify credible sources and relevant materials. Here are some steps and resources to consider:
+
+1. **Define Your Topic**: Clearly outline what you want to research. This will help you narrow down your search for evidence.
+
+2. **Academic Databases**: Utilize academic databases for peer-reviewed articles and journals. Some popular databases include:
+   - **Google Scholar**: A free search engine for scholarly articles.
+   - **JSTOR**: A digital library for academic journals, books, and primary sources.
+   - **PubMed**: For topics related to health and medicine.
+   - **ERIC**: For education-related research.
+
+3. **Library Resources**: Check your local or university library for access to books, journals, and research papers. Many libraries also offer online access to databases.
+
+4. **Government and Institutional Reports**: Look for reports from government agencies or reputable organizations related to your topic. Websites like:
+   - **CDC** (Centers for Disease Control and Prevention)
+   - **WHO** (World Health Organization)
+   - **Pew Research Center** often provide valuable data and insights.
+
+5. **Books and E-books**: Search for books that cover your topic in depth. Use platforms like:
+   - **Google Books**: To preview and find relevant sections.
+   - **Project Gutenberg**: For free e-books, especially classic literature.
+
+6. **Theses and Dissertations**: Explore databases like **ProQuest Dissertations & Theses** for in-depth research conducted by graduate students.
+
+7. **Online Forums and Communities**: Engage with communities on platforms like **ResearchGate** or **Academia.edu** where researchers share their work and findings.
+
+8. **News Articles and Magazines**: For current events or contemporary issues, reputable news sources like **The New York Times**, **The Guardian**, or specialized magazines can provide context and recent developments.
+
+9. **Citations and References**: Once you find initial sources, check their references and citations to discover more related research.
+
+10. **Interviews and Expert Opinions**: If applicable, consider reaching out to experts in the field for interviews or insights.
+
+By starting with these resources, you can gather initial evidence and build a solid foundation for your research. If you have a specific topic in mind, I can help you refine your search further!
+

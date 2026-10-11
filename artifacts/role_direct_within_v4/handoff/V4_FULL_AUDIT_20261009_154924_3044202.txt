@@ -1,0 +1,780 @@
+
+================== PROJECT AND ISOLATION ==================
+Project: /home/wieseld/mas_rl_detective
+Timestamp: 2026-10-09T15:49:24.263774
+Host: slurm-login-04.auth.ad.bgu.ac.il
+Git commit: 
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Tracked changes:
+
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+analysis/role_direct_within_v4: exists=True
+Children: datasets
+cluster/role_direct_within_v4: exists=True
+Children: 
+artifacts/role_direct_within_v4: exists=True
+Children: baseline_sensor_adapter, checkpoints, datasets, experiments, handoff, reports
+analysis/role_direct_adaptive_v3: exists=True
+Children: __pycache__, attack.py
+artifacts/role_direct_sensor_final_v1/adapter: exists=True
+Children: README.md, adapter_config.json, adapter_model.safetensors, chat_template.jinja, tokenizer.json, tokenizer_config.json
+
+================== SLURM AND GPU CAPACITY ==================
+Partitions:
+main | nodes=1 | gres=gpu:rtx_4090:2(S:0) | features=gpu,rtx_4090 | limit=7-00:00:00
+main | nodes=2 | gres=gpu:rtx_3090:8(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+main | nodes=13 | gres=gpu:rtx_2080:1(S:1) | features=gpu,rtx_2080 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_3090:4(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+main | nodes=7 | gres=gpu:rtx_pro_6000:8(S:0-1) | features=gpu,rtx_pro_6000 | limit=7-00:00:00
+main | nodes=6 | gres=gpu:rtx_2080:4(S:0-1) | features=gpu,rtx_2080 | limit=7-00:00:00
+main | nodes=4 | gres=gpu:rtx_3090:8(S:0) | features=gpu,rtx_3090 | limit=7-00:00:00
+main | nodes=30 | gres=gpu:rtx_4090:3(S:0) | features=gpu,rtx_4090 | limit=7-00:00:00
+main | nodes=12 | gres=gpu:rtx_6000:8(S:0-1) | features=gpu,rtx_6000 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_6000:1(S:0) | features=gpu,rtx_6000 | limit=7-00:00:00
+main | nodes=2 | gres=gpu:rtx_6000:8 | features=gpu,l40s | limit=7-00:00:00
+main | nodes=1 | gres=gpu:gtx_1080:2 | features=gpu,gtx_1080 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_2080:3(S:0-1) | features=gpu,rtx_2080 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_3090:4(S:0) | features=gpu,rtx_3090 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_3090:1(S:1) | features=gpu,rtx_3090 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_3090:2(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_6000:4(S:0-1) | features=gpu,rtx_6000 | limit=7-00:00:00
+main | nodes=9 | gres=gpu:rtx_6000:1(S:0) | features=cpu,cpu256,gpu,rtx_6000,ymeir-cpu256 | limit=7-00:00:00
+main | nodes=22 | gres=gpu:rtx_6000:1(S:0) | features=cpu,cpu256,gpu,rtx_6000 | limit=7-00:00:00
+main | nodes=33 | gres=(null) | features=cpu | limit=7-00:00:00
+main | nodes=23 | gres=gpu:rtx_3090:1(S:0),gpu:gtx_1080:1(S:0) | features=gpu,rtx_3090,gtx_1080 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_2080:2(S:0-1) | features=gpu,rtx_2080 | limit=7-00:00:00
+main | nodes=12 | gres=(null) | features=cpu,cpu128 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_2080:1(S:0),gpu:gtx_1080:1(S:0) | features=gpu,rtx_2080,gtx_1080 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:gtx_1080:3 | features=gpu,gtx_1080 | limit=7-00:00:00
+main | nodes=3 | gres=gpu:gtx_1080:4 | features=gpu,gtx_1080 | limit=7-00:00:00
+main | nodes=1 | gres=gpu:rtx_2080:8(S:0) | features=gpu,rtx_2080 | limit=7-00:00:00
+debug | nodes=2 | gres=gpu:rtx_3090:8(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+debug | nodes=13 | gres=gpu:rtx_2080:1(S:1) | features=gpu,rtx_2080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_3090:4(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+debug | nodes=6 | gres=gpu:rtx_2080:4(S:0-1) | features=gpu,rtx_2080 | limit=7-00:00:00
+debug | nodes=4 | gres=gpu:rtx_3090:8(S:0) | features=gpu,rtx_3090 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:gtx_1080:2 | features=gpu,gtx_1080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_2080:3(S:0-1) | features=gpu,rtx_2080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_3090:4(S:0) | features=gpu,rtx_3090 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_3090:1(S:1) | features=gpu,rtx_3090 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_3090:2(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+debug | nodes=23 | gres=gpu:rtx_3090:1(S:0),gpu:gtx_1080:1(S:0) | features=gpu,rtx_3090,gtx_1080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_2080:2(S:0-1) | features=gpu,rtx_2080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_2080:1(S:0),gpu:gtx_1080:1(S:0) | features=gpu,rtx_2080,gtx_1080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:gtx_1080:3 | features=gpu,gtx_1080 | limit=7-00:00:00
+debug | nodes=3 | gres=gpu:gtx_1080:4 | features=gpu,gtx_1080 | limit=7-00:00:00
+debug | nodes=1 | gres=gpu:rtx_2080:8(S:0) | features=gpu,rtx_2080 | limit=7-00:00:00
+cpu | nodes=9 | gres=gpu:rtx_6000:1(S:0) | features=cpu,cpu256,gpu,rtx_6000,ymeir-cpu256 | limit=7-00:00:00
+cpu | nodes=22 | gres=gpu:rtx_6000:1(S:0) | features=cpu,cpu256,gpu,rtx_6000 | limit=7-00:00:00
+cpu | nodes=33 | gres=(null) | features=cpu | limit=7-00:00:00
+cpu | nodes=12 | gres=(null) | features=cpu,cpu128 | limit=7-00:00:00
+gpu | nodes=1 | gres=gpu:rtx_4090:2(S:0) | features=gpu,rtx_4090 | limit=7-00:00:00
+gpu | nodes=2 | gres=gpu:rtx_3090:8(S:0-1) | features=gpu,rtx_3090 | limit=7-00:00:00
+gpu | nodes=13 | gres=gpu:rtx_2080:1(S:1) | features=gpu,rtx_2080 | limit=7-00:00:00
+GPU nodes:
+cs-1080-01 | gpu:gtx_1080:3 | gpu,gtx_1080 | idle
+cs-1080-01 | gpu:gtx_1080:3 | gpu,gtx_1080 | idle
+cs-1080-01 | gpu:gtx_1080:3 | gpu,gtx_1080 | idle
+cs-1080-01 | gpu:gtx_1080:3 | gpu,gtx_1080 | idle
+cs-1080-01 | gpu:gtx_1080:3 | gpu,gtx_1080 | idle
+cs-1080-02 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-02 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-02 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-02 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-02 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-04 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-04 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-04 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-04 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-04 | gpu:gtx_1080:4 | gpu,gtx_1080 | idle
+cs-1080-05 | gpu:gtx_1080:4 | gpu,gtx_1080 | mixed
+cs-1080-05 | gpu:gtx_1080:4 | gpu,gtx_1080 | mixed
+cs-1080-05 | gpu:gtx_1080:4 | gpu,gtx_1080 | mixed
+cs-1080-05 | gpu:gtx_1080:4 | gpu,gtx_1080 | mixed
+cs-1080-05 | gpu:gtx_1080:4 | gpu,gtx_1080 | mixed
+cs-2080-01 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-01 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-01 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-01 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-01 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-02 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-02 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-02 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-02 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-02 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-03 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-03 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-03 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-03 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-03 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-04 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-04 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-04 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-04 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-04 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-05 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-05 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-05 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-05 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-2080-05 | gpu:rtx_2080:4(S:0-1) | gpu,rtx_2080 | mixed
+cs-3090-01 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-01 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-01 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-01 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-02 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-02 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-02 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-02 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-03 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | down*
+cs-3090-03 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | down*
+cs-3090-03 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | down*
+cs-3090-03 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | down*
+cs-3090-04 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-04 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-04 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-04 | gpu:rtx_3090:8(S:0) | gpu,rtx_3090 | mixed
+cs-3090-05 | gpu:rtx_3090:8(S:0-1) | gpu,rtx_3090 | down$
+cs-3090-05 | gpu:rtx_3090:8(S:0-1) | gpu,rtx_3090 | down$
+cs-3090-05 | gpu:rtx_3090:8(S:0-1) | gpu,rtx_3090 | down$
+cs-3090-05 | gpu:rtx_3090:8(S:0-1) | gpu,rtx_3090 | down$
+Current jobs:
+(empty)
+Login-node GPUs:
+Unavailable: FileNotFoundError: [Errno 2] No such file or directory: 'nvidia-smi'
+
+================== PYTHON ENVIRONMENT ==================
+Login Python package versions:
+torch                     NOT INSTALLED
+transformers              NOT INSTALLED
+peft                      NOT INSTALLED
+trl                       NOT INSTALLED
+bitsandbytes              NOT INSTALLED
+accelerate                NOT INSTALLED
+datasets                  NOT INSTALLED
+safetensors               NOT INSTALLED
+huggingface-hub           NOT INSTALLED
+vllm                      NOT INSTALLED
+sentence-transformers     NOT INSTALLED
+scikit-learn              NOT INSTALLED
+numpy                     1.23.5
+Environment /home/wieseld/.conda/envs/masdetective/bin/python: exists=True
+torch 2.14.0+cu126
+transformers 5.16.1
+peft 0.20.0
+trl 1.12.0
+bitsandbytes 0.50.2
+accelerate 1.14.0
+datasets 5.0.1
+vllm NOT INSTALLED
+Environment /home/wieseld/.conda/envs/masdetective_v4/bin/python: exists=False
+Cached Qwen models in /home/wieseld/.cache/huggingface/hub:
+  models--Qwen--Qwen2.5-1.5B-Instruct
+  models--Qwen--Qwen2.5-3B-Instruct
+  models--Qwen--Qwen2.5-7B-Instruct
+  models--Qwen--Qwen3.8-27B
+
+================== SENSOR ADAPTER CONFIG ==================
+artifacts/role_direct_sensor_final_v1/adapter/adapter_config.json
+  base_model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+  peft_type: LORA
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules: ['v_proj', 'up_proj', 'down_proj', 'k_proj', 'q_proj', 'o_proj', 'gate_proj']
+  task_type: SEQ_CLS
+artifacts/role_direct_sensor_final_v1/adapter/tokenizer_config.json
+  model_max_length: 131072
+  tokenizer_class: Qwen2Tokenizer
+
+================== TARGET MAS MODEL INDICATORS ==================
+targets/single_router_fanout_mas.py
+  36: class SingleRouterSystemSpec:
+  81: class SingleRouterFanoutMAS:
+  94:         self.model = model or os.environ.get("MAS_MODEL", "gpt-4o-mini")
+targets/single_router_zoo_v11.py
+analysis/role_direct_approach/train_role_direct_sensor_v1.py
+  68: def render_text(
+
+================== RELEVANT SOURCE CODE ==================
+adaptive_v11_active/io.py | bytes=1569 | lines=53
+  Functions/classes: read_jsonl@10, write_jsonl@19, write_json@29, sha256_json@37, stable_int@42, first_existing@48
+analysis/belief_targeted_selector_v1.py | bytes=38090 | lines=2139
+  Functions/classes: read_jsonl@138, encode_unique@160, entropy01@217, belief_vector@237, build_feature@253, pack_groups@377, SelectorNet@526, group_losses@582, rank_eval@799, cluster_bootstrap@1082, heuristic_scores@1202, train_seed@1281, score_model@1507, main@1528
+analysis/expected_information_gain_selector_v1.py | bytes=16870 | lines=461
+  Functions/classes: seed_all@47, load_obs_module@51, suffix_esym@57, sample_fixed_k@68, stratified_particles@90, hbin@119, safe_spearman@124, particle_predictions@139, mi_scores@165, summarize@216, main@232
+analysis/posterior_observation_selector_v1.py | bytes=13927 | lines=304
+  Functions/classes: seed_all@14, load_modules@17, suffix_esym@23, sample_fixed_k_subset@33, sample_particles@49, bern_entropy@65, safe_spearman@69, marginal_exposure@81, covariance_scores@100, choose@115, summarize@118, main@133
+analysis/role_direct_adaptive_v3/attack.py | bytes=16105 | lines=268
+  Functions/classes: calibrate@12, rank_score@55, scores_and_rankings@60, preflight@71, generate@83, select@151, auc@188, report@191
+analysis/role_direct_approach/__init__.py | bytes=0 | lines=0
+  Functions/classes: 
+analysis/role_direct_approach/build_matched_cf_v1.py | bytes=12849 | lines=744
+  Functions/classes: read_jsonl@47, compatible_backgrounds@122
+analysis/role_direct_approach/build_sealed_matched_v1.py | bytes=9257 | lines=486
+  Functions/classes: read_jsonl@68, write_jsonl@76
+analysis/role_direct_approach/cv_role_calibration_v1.py | bytes=6552 | lines=384
+  Functions/classes: evaluate@100
+analysis/role_direct_approach/diagnose_absolute_shift_v1.py | bytes=1104 | lines=55
+  Functions/classes: 
+analysis/role_direct_approach/diagnose_sealed_shift_v1.py | bytes=3808 | lines=223
+  Functions/classes: win@24, stats@32
+analysis/role_direct_approach/eval_absolute_role_direct_v1.py | bytes=12818 | lines=780
+  Functions/classes: read_jsonl@18, balanced_accuracy@30, choose_threshold@74, aggregate@204, classification_metrics@280
+analysis/role_direct_approach/eval_final_sensor_simple5_v1.py | bytes=15739 | lines=974
+  Functions/classes: read_jsonl@43
+analysis/role_direct_approach/eval_query_normalization_v1.py | bytes=13073 | lines=790
+  Functions/classes: read_jsonl@20, balanced_accuracy@28, choose_threshold@54, aggregate@135, metrics@189, exact_pair@273, pair_ranking@301
+analysis/role_direct_approach/eval_simple5_role_calibrated_v1.py | bytes=15888 | lines=833
+  Functions/classes: read_jsonl@38, set_metrics@46, evaluate@566
+analysis/role_direct_approach/expand_shared_panel_v1.py | bytes=3826 | lines=215
+  Functions/classes: main@15
+analysis/role_direct_approach/fit_sealed_calibration_v1.py | bytes=4872 | lines=327
+  Functions/classes: read_jsonl@22, ba@30, choose_threshold@56, aggregate@139
+analysis/role_direct_approach/generate_direct_panel_v1.py | bytes=22518 | lines=1077
+  Functions/classes: clean_question@334, query_safe@398, prompt_for@463, main@571
+analysis/role_direct_approach/generate_fresh_sealed_panels_v1.py | bytes=7100 | lines=344
+  Functions/classes: read_jsonl@61, norm@69, toks@78, jaccard@82, acceptable@92
+analysis/role_direct_approach/generate_role_direct_v1.py | bytes=16924 | lines=819
+  Functions/classes: sha256@31, extract_target_role@44, main@60
+analysis/role_direct_approach/open_sealed_test_v1.py | bytes=11098 | lines=628
+  Functions/classes: read_jsonl@19, sha256_file@27, win@38, aggregate@46, classification_metrics@90, exact_pair_rate@135, matched_pair_ranking@165, bootstrap_primary@194
+analysis/role_direct_approach/report_matched_cf_v1.py | bytes=15580 | lines=983
+  Functions/classes: read_jsonl@18, sid@30, win@42, bootstrap_win_ci@50
+analysis/role_direct_approach/report_role_direct_sensor_v1.py | bytes=8577 | lines=624
+  Functions/classes: read_jsonl@21, win@33, bootstrap@41
+analysis/role_direct_approach/report_role_direct_v1.py | bytes=23709 | lines=1215
+  Functions/classes: safe_auc@21, mean_or_none@50, pair_aggregate@68, per_role_metrics@257, macro_auc@376, system_auc@404, main@478
+analysis/role_direct_approach/report_routing_pilot_v1.py | bytes=2770 | lines=160
+  Functions/classes: 
+analysis/role_direct_approach/report_sensor_pilot_v1.py | bytes=7777 | lines=352
+  Functions/classes: read_jsonl@11, sid@19, pair_auc@26, macro@263
+analysis/role_direct_approach/score_direct_sensor_trainfold_v1.py | bytes=4041 | lines=246
+  Functions/classes: write_jsonl@31, main@46
+analysis/role_direct_approach/score_query_baseline_v1.py | bytes=4028 | lines=248
+  Functions/classes: read_jsonl@33
+analysis/role_direct_approach/score_sealed_final_sensor_v1.py | bytes=4817 | lines=302
+  Functions/classes: read_jsonl@37
+analysis/role_direct_approach/train_role_direct_sensor_final_v1.py | bytes=6103 | lines=342
+  Functions/classes: 
+analysis/role_direct_approach/train_role_direct_sensor_v1.py | bytes=21037 | lines=1238
+  Functions/classes: read_jsonl@49, sid@59, render_text@68, build_examples@95, win@299, score_examples@310, metrics@446, main@563
+cluster/role_direct_adaptive_v3/cpu.sbatch | bytes=623 | lines=25
+cluster/role_direct_adaptive_v3/gpu.sbatch | bytes=663 | lines=23
+cluster/role_direct_adaptive_v3/submit.sh | bytes=1606 | lines=64
+cluster/role_direct_approach/eval_final_sensor_simple5_4090.sbatch | bytes=573 | lines=24
+cluster/role_direct_approach/eval_simple5_role_calibrated_4090.sbatch | bytes=570 | lines=24
+cluster/role_direct_approach/execute_cpu.sbatch | bytes=586 | lines=30
+cluster/role_direct_approach/fit_sealed_calibration_cpu.sbatch | bytes=450 | lines=20
+cluster/role_direct_approach/generate_4090.sbatch | bytes=936 | lines=38
+cluster/role_direct_approach/generate_direct_4090.sbatch | bytes=949 | lines=39
+cluster/role_direct_approach/generate_fresh_sealed_4090.sbatch | bytes=570 | lines=24
+cluster/role_direct_approach/matched_cf_execute_cpu.sbatch | bytes=757 | lines=35
+cluster/role_direct_approach/matched_cf_report_cpu.sbatch | bytes=448 | lines=20
+cluster/role_direct_approach/report_cpu.sbatch | bytes=503 | lines=23
+cluster/role_direct_approach/report_direct_sensor_cpu.sbatch | bytes=462 | lines=20
+cluster/role_direct_approach/routing_pilot_cpu.sbatch | bytes=796 | lines=39
+cluster/role_direct_approach/score_4090.sbatch | bytes=609 | lines=29
+cluster/role_direct_approach/score_direct_sensor_calibration_4090.sbatch | bytes=669 | lines=30
+cluster/role_direct_approach/score_query_baseline_4090.sbatch | bytes=559 | lines=24
+cluster/role_direct_approach/score_sealed_final_4090.sbatch | bytes=579 | lines=24
+cluster/role_direct_approach/sealed_execute_cpu.sbatch | bytes=755 | lines=35
+cluster/role_direct_approach/simple5_full8_missing_execute_cpu.sbatch | bytes=767 | lines=35
+cluster/role_direct_approach/submit_directprompt_v1.sh | bytes=1506 | lines=78
+cluster/role_direct_approach/submit_v1.sh | bytes=1535 | lines=79
+cluster/role_direct_approach/train_direct_sensor_4090.sbatch | bytes=887 | lines=40
+cluster/role_direct_approach/train_final_sensor_4090.sbatch | bytes=640 | lines=25
+scripts/adaptive_v11_execute_round.py | bytes=6522 | lines=151
+  Functions/classes: cache_key@19, load_cache@23, append_jsonl@29, _execute_one@36, main@62
+scripts/av11_controller_generate.py | bytes=8598 | lines=229
+  Functions/classes: binary_entropy@15, static_role_order@20, previous_targets@28, choose_target@43, main@84
+targets/single_router_fanout_mas.py | bytes=9523 | lines=249
+  Functions/classes: SingleRouterSystemSpec@36, PrivilegedFanoutTrace@55, SingleRouterFanoutMAS@81
+targets/single_router_zoo_v11.py | bytes=8145 | lines=202
+  Functions/classes: _composition_key@25, _choose_balanced@29, _make_train_specs@49, _make_dev_specs@85, get_v11_split@142, _coverage@151, validate_v11_design@164
+
+================== HISTORICAL ACTIVATION / GRPO SEARCH ==================
+analysis/activation_external_dev_v1.py
+analysis/activation_incremental_v1.py
+analysis/activation_installed_only_audit_v1.py
+analysis/activation_predictor_v1.py
+analysis/activation_reward_layer_sweep_v1.py
+analysis/audit_activation_coverage_matrix.py
+analysis/audit_k32_generator.py
+analysis/audit_selector_true_focus_ranks.py
+analysis/belief_targeted_selector_v1.py
+analysis/benign_generator_ab_v1.py
+analysis/build_llm_selector_v3_auc_dataset.py
+analysis/build_q38_selector_v41_dataset.py
+analysis/build_q38_selector_v4_listwise.py
+analysis/build_robust_visible_generator_rows_v1.py
+analysis/build_selector_v3_multiround_dataset.py
+analysis/e2e_probe_tournament_v1.py
+analysis/eval_robust_visible_generator_v1.py
+analysis/expected_information_gain_selector_v1.py
+analysis/frozen_probe_auc_decomp_v1.py
+analysis/frozen_probe_auc_decomp_v2.py
+analysis/frozen_probe_auc_v1.py
+analysis/frozen_probe_auc_v2.py
+analysis/generate_general_role_v14_probes_v1.py
+analysis/generate_general_role_v14_probes_v2.py
+analysis/generate_general_role_v14_probes_v3.py
+analysis/generator_v12_10_clean_elicitation.py
+analysis/generator_v12_10b_clean_rerank.py
+analysis/generator_v12_10c_clean_rerank.py
+analysis/generator_v12_10d_scientific_rerank.py
+analysis/generator_v12_11_missing_roles.py
+analysis/generator_v12_1_offline_audit.py
+analysis/generator_v12_2_targeted_bank.py
+analysis/generator_v12_3_base_vs_adapter.py
+analysis/generator_v12_4_ranked_bank.py
+analysis/generator_v12_5_elicitation_bank.py
+analysis/generator_v12_6_elicitation_only.py
+analysis/generator_v12_7_scenario_shell.py
+analysis/generator_v12_8_direct_scenarios.py
+analysis/generator_v12_9_anchor_elicitation.py
+analysis/generator_v12_offline_audit.py
+analysis/generic_activation_teacher_v1.py
+analysis/gpt4omini_selector_poc.py
+analysis/horizon2_value_selector_v3_diag.py
+analysis/jev_selector_poc.py
+analysis/jev_selector_poc_v2.py
+analysis/jev_selector_poc_v3.py
+analysis/jev_selector_poc_v4.py
+analysis/k3_benign_probe_matrix_v2.py
+analysis/learned_visible_probe_ranker_v1.py
+analysis/matrix_selector_oracle_diag.py
+analysis/oracle_activation_exact_replay.py
+analysis/oracle_activation_mediator_audit_v1.py
+analysis/oracle_selector_k_replay.py
+analysis/posterior_observation_selector_v1.py
+analysis/probe_router_tournament_v1.py
+analysis/q38_vs_r7_generator_ab_v1.py
+analysis/repeat_probe_stability_analyze_v1.py
+analysis/repeat_probe_stability_execute_v1.py
+analysis/small_k_existing_policy_audit.py
+analysis/stage10_generator_selector_audit_v1.py
+analysis/train_llm_selector_v1.py
+analysis/train_llm_selector_v3_auc.py
+analysis/train_q38_selector_v41.py
+analysis/train_q38_selector_v4_listwise.py
+analysis/train_v13_6_activation_judge.py
+analysis/train_v13_6b_activation_judge.py
+analysis/train_value_selector_v3.py
+analysis/train_visible_selector_v2_pairwise.py
+analysis/v137_freeze_probe_bank_v1.py
+analysis/v14_generator_ab_pilot_v1.py
+analysis/v14a_g50_reward_audit.py
+analysis/v3_coverage_policy.py
+analysis/v7_benign_reward_audit.py
+analysis/watch_simple5_cleanr7_selector.py
+cluster/activation_external_dev_v1_4090.sbatch
+cluster/activation_incremental_v1_cpu.sbatch
+cluster/activation_installed_only_audit_v1_4090.sbatch
+cluster/activation_predictor_v1_4090.sbatch
+cluster/activation_reward_sweep_v1_4090.sbatch
+cluster/audit_activation_coverage_matrix_cpu.sbatch
+cluster/belief_targeted_selector_v1_4090.sbatch
+cluster/benign_intake_generator_pilot_v1.sbatch
+cluster/benign_taskonly_generator_pilot_v1.sbatch
+cluster/build_selector_v3_dataset.sbatch
+cluster/ctrl_advance_cpu.sbatch
+cluster/ctrl_execute_cpu.sbatch
+cluster/ctrl_generate_4090.sbatch
+cluster/ctrl_report_cpu.sbatch
+cluster/ctrl_score_4090.sbatch
+cluster/ctrl_seed_arms_cpu.sbatch
+cluster/e2e_probe_tournament_v1.sbatch
+cluster/frozen_probe_auc_decomp_v1.sbatch
+cluster/frozen_probe_auc_decomp_v2.sbatch
+cluster/frozen_probe_auc_v1.sbatch
+cluster/frozen_probe_auc_v2.sbatch
+cluster/general_role_v14_probes_v1_4090.sbatch
+cluster/general_role_v14_probes_v2_4090.sbatch
+cluster/general_role_v14_probes_v3_4090.sbatch
+cluster/generator_v12_10_clean_elicitation.sbatch
+cluster/generator_v12_11_missing_roles.sbatch
+cluster/generator_v12_1_smoke.sbatch
+cluster/generator_v12_2_targeted_bank.sbatch
+cluster/generator_v12_3_base_vs_adapter.sbatch
+cluster/generator_v12_4_ranked_bank.sbatch
+cluster/generator_v12_5_elicitation_bank.sbatch
+cluster/generator_v12_6_elicitation_only.sbatch
+cluster/generator_v12_7_scenario_shell.sbatch
+cluster/generator_v12_8_direct_scenarios.sbatch
+cluster/generator_v12_9_anchor_elicitation.sbatch
+cluster/generator_v12_audit.sbatch
+cluster/generic_activation_mistral_preflight_4090.sbatch
+cluster/generic_activation_teacher_v1_4090.sbatch
+cluster/jev_activation_cpu.sbatch
+cluster/llm_selector_v1_4090.sbatch
+cluster/llm_selector_v2_roleonly_4090.sbatch
+cluster/oracle_activation_exact_replay.sbatch
+cluster/oracle_activation_mediator_v1_4090.sbatch
+cluster/oracle_selector_k_replay_cpu.sbatch
+cluster/prepare_adaptive_v11_active_v1.sh
+cluster/probe_router_tournament_v1.sbatch
+cluster/q38_selector_v41_blackwell.sbatch
+cluster/q38_selector_v41_data_cpu.sbatch
+cluster/q38_selector_v4_listwise_overnight.sbatch
+cluster/q38_vs_r7_generator_ab_v1.sbatch
+cluster/selector_v3_auc_3b_4090.sbatch
+cluster/selector_v3_auc_build_cpu.sbatch
+cluster/stage10_generator_selector_audit_cpu.sbatch
+cluster/submit_adaptive_v11_active_v1.sh
+cluster/train_selector_v3_cpu.sbatch
+cluster/train_selector_v4_cpu.sbatch
+cluster/train_selector_v5_router_cpu.sbatch
+cluster/v13_6_activation_4090.sbatch
+cluster/v13_6b_activation_3b_4090.sbatch
+cluster/v14_benign_grpo_4090.sbatch
+cluster/v14_generator_ab_pilot_v1_4090.sbatch
+Total matching filenames: 150
+
+================== DATASET INVENTORY ==================
+
+DATA ROOT: artifacts/role_direct_matched_cf_v1
+  artifacts/role_direct_matched_cf_v1/candidates_dev_round_01.jsonl | rows=600 | sizeMB=0.4
+    keys: background_roles, candidate_index, chosen_for_continuation, condition, direct_probe_rank, generator_mode, group_id, invalid_reason, pair_id, pair_index, phase, probe_strategy, query, round, session_id, source_probe_index, split, substitute_role, target_role, valid
+    labels: [('split=dev', 600), ('condition=TARGET_PRESENT', 300), ('condition=TARGET_ABSENT', 300)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 200), ('CONSTRAINED TASK', 200), ('SPECIALIST DELIVERABLE', 200)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_matched_cf_v1/matched_pair_results.jsonl | rows=100 | sizeMB=0.0
+    keys: pair_id, target_role, v134_delta_k1, v134_delta_k2, v134_delta_k3, v134_win_k1, v134_win_k2, v134_win_k3, v135_delta_k1, v135_delta_k2, v135_delta_k3, v135_win_k1, v135_win_k2, v135_win_k3
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/role_direct_matched_cf_v1/matched_pairs.jsonl | rows=100 | sizeMB=0.0
+    keys: background_roles, mode, negative_system, pair_id, positive_system, style, substitute_role, target_role
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/role_direct_matched_cf_v1/matched_probe_comparisons.jsonl | rows=300 | sizeMB=0.1
+    keys: exclusive_target_pos, pair_id, probe_rank, query, substitute_routed_neg, target_role, target_routed_pos, v134_delta, v134_neg, v134_pos, v134_win, v135_delta, v135_neg, v135_pos, v135_win
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_matched_cf_v1/responses_dev_round_01.jsonl | rows=600 | sizeMB=5.7
+    keys: action, answer, background_roles, cache_hit, candidate_index, chosen_for_continuation, condition, direct_probe_rank, execution_status, final_output, generator_mode, group_id, invalid_reason, manifest_sha256, mode, output, pair_id, pair_index, phase, probe_strategy, query, retries_used, round, selected_roles_training_only, session_id, source_probe_index, split, substitute_role, system_id, target_role, truth_roles_training_only, valid
+    labels: [('split=dev', 600), ('condition=TARGET_PRESENT', 300), ('condition=TARGET_ABSENT', 300)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 200), ('CONSTRAINED TASK', 200), ('SPECIALIST DELIVERABLE', 200)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_matched_cf_v1/score_input_dev_round_01.jsonl | rows=600 | sizeMB=5.7
+    keys: action, answer, background_roles, cache_hit, candidate_index, chosen_for_continuation, condition, direct_probe_rank, execution_status, final_output, generator_mode, group_id, invalid_reason, manifest_sha256, mode, output, pair_id, pair_index, phase, probe_strategy, query, retries_used, round, selected_roles_training_only, session_id, source_probe_index, split, substitute_role, system_id, target_role, truth_roles_training_only, valid
+    labels: [('split=dev', 600), ('condition=TARGET_PRESENT', 300), ('condition=TARGET_ABSENT', 300)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 200), ('CONSTRAINED TASK', 200), ('SPECIALIST DELIVERABLE', 200)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_matched_cf_v1/scored_dev_round_01.jsonl | rows=600 | sizeMB=1.1
+    keys: action, evidence, metadata, method, query, response_id, split, system_id, system_metadata, truth_roles
+    labels: [('split=dev', 600)]
+    role_count=0 strategies=[]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_matched_cf_v1/target_public_cache.jsonl | rows=600 | sizeMB=1.8
+    keys: key, output, query, session_id
+    labels: []
+    role_count=0 strategies=[]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_matched_cf_v1/target_truth_cache_training_only.jsonl | rows=600 | sizeMB=0.2
+    keys: key, query_hash, selected_roles, session_id, true_roles
+    labels: []
+    role_count=0 strategies=[]
+  manifest=manifest_privileged.json systems=200 keys=['notes', 'seed', 'sha256', 'systems', 'version']
+    system_keys: ['background_roles', 'condition', 'k', 'mode', 'pair_id', 'pair_index', 'roles', 'session_id', 'split', 'style', 'substitute_role', 'target_role']
+    system_ids: ['rdcf_00_p01_POS', 'rdcf_00_p01_NEG', 'rdcf_00_p02_POS', 'rdcf_00_p02_NEG', 'rdcf_00_p03_POS', 'rdcf_00_p03_NEG', 'rdcf_00_p04_POS', 'rdcf_00_p04_NEG', 'rdcf_00_p05_POS', 'rdcf_00_p05_NEG', 'rdcf_01_p01_POS', 'rdcf_01_p01_NEG']
+  report=matched_cf_report.json
+    keys=['experiment', 'roles', 'matched_pairs', 'mas_responses', 'matched_probe_comparisons', 'routing_target_present', 'routing_exclusive_present', 'routing_substitute_absent', 'v135_probe_matched_win', 'v134_probe_matched_win', 'v135_macro_role_pair_mean_win', 'v134_macro_role_pair_mean_win', 'accumulation', 'per_role']
+
+DATA ROOT: artifacts/role_direct_sealed_v1
+  artifacts/role_direct_sealed_v1/candidates_dev_round_01.jsonl | rows=1200 | sizeMB=1.0
+    keys: background_roles, candidate_index, chosen_for_continuation, condition, direct_probe_rank, generator_mode, group_id, invalid_reason, pair_id, pair_index, panel, phase, probe_strategy, query, round, session_id, source_probe_index, split, substitute_role, system_id, target_role, valid
+    labels: [('split=dev', 1200), ('condition=TARGET_PRESENT', 600), ('condition=TARGET_ABSENT', 600)]
+    role_count=20 strategies=[('DIAGNOSIS', 200), ('VERIFICATION', 200), ('TRADEOFF', 200), ('TRANSFORMATION', 200), ('EDGE CASE', 200), ('COMPARATIVE REVIEW', 200)]
+    sample_query: 'Can you provide guidance on how to optimize the performance and efficiency of my Java-based e-commerce platform by scrutinizing the inner workings of its product listings to identify potential areas for enhancement?'
+  artifacts/role_direct_sealed_v1/final_sensor_scores.jsonl | rows=1200 | sizeMB=4.2
+    keys: answer, condition, label, logit, pair_id, pair_index, panel, prob, probe_rank, probe_strategy, query, target_role
+    labels: [('label=1', 600), ('condition=TARGET_PRESENT', 600), ('label=0', 600), ('condition=TARGET_ABSENT', 600)]
+    role_count=20 strategies=[('DIAGNOSIS', 200), ('VERIFICATION', 200), ('TRADEOFF', 200), ('TRANSFORMATION', 200), ('EDGE CASE', 200), ('COMPARATIVE REVIEW', 200)]
+    sample_query: 'Can you provide guidance on how to optimize the performance and efficiency of my Java-based e-commerce platform by scrutinizing the inner workings of its product listings to identify potential areas for enhancement?'
+  artifacts/role_direct_sealed_v1/fresh_panels.jsonl | rows=120 | sizeMB=0.0
+    keys: panel, probe_rank, probe_strategy, query, seed, target_role
+    labels: []
+    role_count=20 strategies=[('DIAGNOSIS', 20), ('VERIFICATION', 20), ('TRADEOFF', 20), ('TRANSFORMATION', 20), ('EDGE CASE', 20), ('COMPARATIVE REVIEW', 20)]
+    sample_query: 'Can you provide guidance on how to optimize the performance and efficiency of my Java-based e-commerce platform by scrutinizing the inner workings of its product listings to identify potential areas for enhancement?'
+  artifacts/role_direct_sealed_v1/matched_pairs.jsonl | rows=200 | sizeMB=0.1
+    keys: background_roles, mode, negative_roles, negative_session_id, pair_id, pair_index, panel, positive_roles, positive_session_id, split, style, substitute_role, target_role
+    labels: [('split=dev', 200)]
+    role_count=20 strategies=[]
+  artifacts/role_direct_sealed_v1/query_baseline_scores.jsonl | rows=120 | sizeMB=0.0
+    keys: panel, probe_rank, probe_strategy, query, query_baseline_logit, target_role
+    labels: []
+    role_count=20 strategies=[('DIAGNOSIS', 20), ('VERIFICATION', 20), ('TRADEOFF', 20), ('TRANSFORMATION', 20), ('EDGE CASE', 20), ('COMPARATIVE REVIEW', 20)]
+    sample_query: 'Can you provide guidance on how to optimize the performance and efficiency of my Java-based e-commerce platform by scrutinizing the inner workings of its product listings to identify potential areas for enhancement?'
+  artifacts/role_direct_sealed_v1/responses_dev_round_01.jsonl | rows=1200 | sizeMB=12.3
+    keys: action, answer, background_roles, cache_hit, candidate_index, chosen_for_continuation, condition, direct_probe_rank, execution_status, final_output, generator_mode, group_id, invalid_reason, manifest_sha256, mode, output, pair_id, pair_index, panel, phase, probe_strategy, query, retries_used, round, selected_roles_training_only, session_id, source_probe_index, split, substitute_role, system_id, target_role, truth_roles_training_only, valid
+    labels: [('split=dev', 1200), ('condition=TARGET_PRESENT', 600), ('condition=TARGET_ABSENT', 600)]
+    role_count=20 strategies=[('DIAGNOSIS', 200), ('VERIFICATION', 200), ('TRADEOFF', 200), ('TRANSFORMATION', 200), ('EDGE CASE', 200), ('COMPARATIVE REVIEW', 200)]
+    sample_query: 'Can you provide guidance on how to optimize the performance and efficiency of my Java-based e-commerce platform by scrutinizing the inner workings of its product listings to identify potential areas for enhancement?'
+  artifacts/role_direct_sealed_v1/target_public_cache.jsonl | rows=1200 | sizeMB=4.0
+    keys: key, output, query, session_id
+    labels: []
+    role_count=0 strategies=[]
+    sample_query: "How can I effectively test and verify the performance of my Python script's code without relying on external tools?"
+  artifacts/role_direct_sealed_v1/target_truth_cache_training_only.jsonl | rows=1200 | sizeMB=0.4
+    keys: key, query_hash, selected_roles, session_id, true_roles
+    labels: []
+    role_count=0 strategies=[]
+  manifest=manifest_privileged.json systems=400 keys=['notes', 'seed', 'sha256', 'systems', 'version', 'experiment']
+    system_keys: ['background_roles', 'condition', 'mode', 'pair_id', 'pair_index', 'panel', 'roles', 'session_id', 'split', 'style', 'substitute_role', 'system_id', 'target_role']
+    system_ids: ['rdseal_61f1901106af_POS', 'rdseal_61f1901106af_NEG', 'rdseal_5d49719bdf02_POS', 'rdseal_5d49719bdf02_NEG', 'rdseal_ee6183f8a9d8_POS', 'rdseal_ee6183f8a9d8_NEG', 'rdseal_c03906f4a3a0_POS', 'rdseal_c03906f4a3a0_NEG', 'rdseal_66faf9495ab8_POS', 'rdseal_66faf9495ab8_NEG', 'rdseal_d0371c1994ae_POS', 'rdseal_d0371c1994ae_NEG']
+  report=sealed_test_report.json
+    keys=['experiment', 'sealed_test_opened', 'protocol', 'provenance', 'primary_result', 'results']
+
+DATA ROOT: artifacts/role_direct_routing_pilot_v1
+  artifacts/role_direct_routing_pilot_v1/candidates_dev_round_01.jsonl | rows=300 | sizeMB=0.2
+    keys: candidate_index, chosen_for_continuation, group_id, invalid_reason, phase, probe_index, probe_strategy, query, round, session_id, split, target_role, valid
+    labels: [('split=dev', 300)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 100), ('CONSTRAINED TASK', 100), ('SPECIALIST DELIVERABLE', 100)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_routing_pilot_v1/responses_dev_round_01.jsonl | rows=300 | sizeMB=2.7
+    keys: action, answer, cache_hit, candidate_index, chosen_for_continuation, execution_status, final_output, group_id, invalid_reason, manifest_sha256, mode, output, phase, probe_index, probe_strategy, query, retries_used, round, selected_roles_training_only, session_id, split, system_id, target_role, truth_roles_training_only, valid
+    labels: [('split=dev', 300)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 100), ('CONSTRAINED TASK', 100), ('SPECIALIST DELIVERABLE', 100)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_routing_pilot_v1/role_direct_probe_panel.jsonl | rows=60 | sizeMB=0.0
+    keys: decision_inputs, generation_attempt, generator_adapter, generator_mode, generator_model, generator_seed, probe_index, query, raw_completion, strategy, target_role
+    labels: []
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 20), ('CONSTRAINED TASK', 20), ('SPECIALIST DELIVERABLE', 20)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_routing_pilot_v1/score_input_dev_round_01.jsonl | rows=300 | sizeMB=2.7
+    keys: action, answer, cache_hit, candidate_index, chosen_for_continuation, execution_status, final_output, group_id, invalid_reason, manifest_sha256, mode, output, phase, probe_index, probe_strategy, query, retries_used, round, selected_roles_training_only, session_id, split, system_id, target_role, truth_roles_training_only, valid
+    labels: [('split=dev', 300)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 100), ('CONSTRAINED TASK', 100), ('SPECIALIST DELIVERABLE', 100)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_routing_pilot_v1/scored_dev_round_01.jsonl | rows=300 | sizeMB=0.6
+    keys: action, evidence, metadata, method, query, response_id, split, system_id, system_metadata, truth_roles
+    labels: [('split=dev', 300)]
+    role_count=0 strategies=[]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_routing_pilot_v1/target_public_cache.jsonl | rows=300 | sizeMB=0.9
+    keys: key, output, query, session_id
+    labels: []
+    role_count=0 strategies=[]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_routing_pilot_v1/target_truth_cache_training_only.jsonl | rows=300 | sizeMB=0.1
+    keys: key, query_hash, selected_roles, session_id, true_roles
+    labels: []
+    role_count=0 strategies=[]
+  report=final_sensor_simple5_eval.json
+    keys=['experiment', 'note', 'systems', 'roles', 'probes_per_role', 'response_rows', 'candidate_file', 'training_composition_overlap', 'routing_target_given_present', 'global_auc', 'macro_role_auc', 'role_top1_accuracy', 'evaluable_roles', 'oracle_k3', 'role_auc', 'role_top1', 'per_system']
+  manifest=manifest_privileged.json systems=5 keys=['version', 'seed', 'systems', 'sha256', 'notes']
+    system_keys: ['k', 'mode', 'roles', 'session_id', 'split', 'style']
+    system_ids: ['simple5_01_code_plan_research', 'simple5_02_risk_access_translation', 'simple5_03_data_db_requirements', 'simple5_04_support_incident_ops', 'simple5_05_docs_qa_writing']
+  report=sensor_pilot_report.json
+    keys=['rows', 'evaluable_roles', 'routing_target_when_present', 'macro_probe_auc_v135', 'macro_query_matched_win_v135', 'macro_system_mean_auc_v135', 'macro_probe_auc_v134', 'macro_query_matched_win_v134', 'macro_system_mean_auc_v134', 'per_role']
+
+DATA ROOT: artifacts/role_direct_approach_directprompt_v1_fix1
+  artifacts/role_direct_approach_directprompt_v1_fix1/candidates_dev_round_01.jsonl | rows=800 | sizeMB=0.5
+    keys: candidate_index, chosen_for_continuation, generator_mode, group_id, invalid_reason, phase, probe_index, probe_strategy, query, round, session_id, split, target_role, valid
+    labels: [('split=dev', 800)]
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 100), ('DIAGNOSIS', 100), ('VERIFICATION', 100), ('TRADEOFF', 100), ('TRANSFORMATION', 100), ('EDGE CASE', 100), ('CONSTRAINED TASK', 100), ('SPECIALIST DELIVERABLE', 100)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_approach_directprompt_v1_fix1/role_direct_probe_panel.jsonl | rows=160 | sizeMB=0.1
+    keys: decision_inputs, generation_attempt, generator_adapter, generator_mode, generator_model, generator_seed, probe_index, query, raw_completion, strategy, target_role
+    labels: []
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 20), ('DIAGNOSIS', 20), ('VERIFICATION', 20), ('TRADEOFF', 20), ('TRANSFORMATION', 20), ('EDGE CASE', 20), ('CONSTRAINED TASK', 20), ('SPECIALIST DELIVERABLE', 20)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  manifest=manifest_privileged.json systems=5 keys=['version', 'seed', 'systems', 'sha256', 'notes']
+    system_keys: ['k', 'mode', 'roles', 'session_id', 'split', 'style']
+    system_ids: ['simple5_01_code_plan_research', 'simple5_02_risk_access_translation', 'simple5_03_data_db_requirements', 'simple5_04_support_incident_ops', 'simple5_05_docs_qa_writing']
+
+DATA ROOT: artifacts/v137_presence_v1
+  artifacts/v137_presence_v1/dataset_v1/dev_v137.jsonl | rows=760 | sizeMB=4.9
+    keys: K_eval_only, dataset_split, example_id, final_output, label, model_input, pair_id, probe_family, public_role_description, query, sample_weight, system_id, target_role
+    labels: [('label=0', 632), ('label=1', 128)]
+    role_count=20 strategies=[]
+    sample_query: 'Review an account-settings modal with tab controls, text inputs, Save and Cancel buttons, and validation messages. Identify concrete keyboard, focus, labeling, and screen-reader improvements.'
+  artifacts/v137_presence_v1/dataset_v1/train_v137.jsonl | rows=910 | sizeMB=5.5
+    keys: dataset_split, example_id, final_output, label, model_input, pair_id, probe_family, public_role_description, query, sample_weight, system_id, target_role
+    labels: [('label=0', 644), ('label=1', 266)]
+    role_count=20 strategies=[]
+    sample_query: 'Review this login form with Email, Password, Remember me, and Sign in fields. What concrete changes would improve keyboard and screen-reader accessibility?'
+  artifacts/v137_presence_v1/execution_plan_v1/dev_small_d_plan.jsonl | rows=760 | sizeMB=0.6
+    keys: K_training_only, candidate_path, dataset_split, execute_now, label_target_installed, manifest, mode_training_only, pair_id, pair_side, probe_family, public_role_description, query, source_root, system_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: 'Review an account-settings modal with tab controls, text inputs, Save and Cancel buttons, and validation messages. Identify concrete keyboard, focus, labeling, and screen-reader improvements.'
+  artifacts/v137_presence_v1/execution_plan_v1/execute_now_plan.jsonl | rows=950 | sizeMB=0.8
+    keys: K_training_only, candidate_path, dataset_split, execute_now, label_target_installed, manifest, match_exact_one_role_swap, match_other_role_jaccard, match_overlap_other_roles, mode_training_only, pair_id, pair_side, probe_family, public_role_description, query, source_root, system_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: 'A report says a product entered beta in November 2023 and also claims it had eighteen months of beta usage by March 2024. Assess the consistency and state what evidence should be checked.'
+  artifacts/v137_presence_v1/execution_plan_v1/internal_test_small_t_plan.jsonl | rows=760 | sizeMB=0.7
+    keys: K_training_only, candidate_path, dataset_split, execute_now, label_target_installed, manifest, mode_training_only, pair_id, pair_side, probe_family, public_role_description, query, source_root, system_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: 'Assess a checkout page containing an address form, delivery options, an order summary, and error banners. Recommend concrete accessibility improvements for keyboard navigation, focus, labels, and assistive technologies.'
+  artifacts/v137_presence_v1/execution_plan_v1/train_pairs.jsonl | rows=95 | sizeMB=0.0
+    keys: K, exact_one_role_swap, mode, negative_system, other_role_jaccard, overlap_other_roles, pair_id, pair_index, positive_system, role
+    labels: []
+    role_count=0 strategies=[]
+  artifacts/v137_presence_v1/execution_plan_v1/train_t1_plan.jsonl | rows=190 | sizeMB=0.2
+    keys: K_training_only, candidate_path, dataset_split, execute_now, label_target_installed, manifest, match_exact_one_role_swap, match_other_role_jaccard, match_overlap_other_roles, mode_training_only, pair_id, pair_side, probe_family, public_role_description, query, source_root, system_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: 'A report says a product entered beta in November 2023 and also claims it had eighteen months of beta usage by March 2024. Assess the consistency and state what evidence should be checked.'
+  artifacts/v137_presence_v1/frozen_decoder_v1/dev_system_results_calibrated.jsonl | rows=38 | sizeMB=0.1
+    keys: posterior_K, pred_K, pred_roles, role_probabilities, system_id, true_K, true_roles
+    labels: []
+    role_count=0 strategies=[]
+  artifacts/v137_presence_v1/model_v1/dev_predictions.jsonl | rows=760 | sizeMB=0.2
+    keys: K_eval_only, example_id, logit, prob_installed_raw, system_id, target_role, true_label
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/v137_presence_v1/model_v1/dev_system_K_raw.jsonl | rows=38 | sizeMB=0.1
+    keys: posterior_K_raw, pred_K_raw, pred_roles_top_raw_K, role_probabilities_raw, system_id, true_K, true_installed_roles
+    labels: []
+    role_count=0 strategies=[]
+  artifacts/v137_presence_v1/oof_role_calibration_v1/oof_predictions.jsonl | rows=760 | sizeMB=0.2
+    keys: example_id, p_global_platt, p_raw, p_role_intercept, p_role_slope_intercept, raw_logit, system_id, target_role, true_K, true_label
+    labels: []
+    role_count=20 strategies=[]
+
+DATA ROOT: artifacts/role_direct_sensor_v1
+  artifacts/role_direct_sensor_v1/fold_1/calibration_train_predictions.jsonl | rows=480 | sizeMB=0.2
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 240), ('label=0', 240)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 160), ('CONSTRAINED TASK', 160), ('SPECIALIST DELIVERABLE', 160)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_1/test_predictions.jsonl | rows=120 | sizeMB=0.0
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 60), ('label=0', 60)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 40), ('CONSTRAINED TASK', 40), ('SPECIALIST DELIVERABLE', 40)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_2/calibration_train_predictions.jsonl | rows=480 | sizeMB=0.2
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 240), ('label=0', 240)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 160), ('CONSTRAINED TASK', 160), ('SPECIALIST DELIVERABLE', 160)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_2/test_predictions.jsonl | rows=120 | sizeMB=0.0
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 60), ('label=0', 60)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 40), ('CONSTRAINED TASK', 40), ('SPECIALIST DELIVERABLE', 40)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_3/calibration_train_predictions.jsonl | rows=480 | sizeMB=0.2
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 240), ('label=0', 240)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 160), ('CONSTRAINED TASK', 160), ('SPECIALIST DELIVERABLE', 160)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_3/test_predictions.jsonl | rows=120 | sizeMB=0.0
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 60), ('label=0', 60)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 40), ('CONSTRAINED TASK', 40), ('SPECIALIST DELIVERABLE', 40)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_4/calibration_train_predictions.jsonl | rows=480 | sizeMB=0.2
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 240), ('label=0', 240)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 160), ('CONSTRAINED TASK', 160), ('SPECIALIST DELIVERABLE', 160)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_4/test_predictions.jsonl | rows=120 | sizeMB=0.0
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 60), ('label=0', 60)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 40), ('CONSTRAINED TASK', 40), ('SPECIALIST DELIVERABLE', 40)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_5/calibration_train_predictions.jsonl | rows=480 | sizeMB=0.2
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 240), ('label=0', 240)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 160), ('CONSTRAINED TASK', 160), ('SPECIALIST DELIVERABLE', 160)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  artifacts/role_direct_sensor_v1/fold_5/test_predictions.jsonl | rows=120 | sizeMB=0.0
+    keys: label, logit, pair_id, pair_index, prob, probe_rank, query, role, strategy
+    labels: [('label=1', 60), ('label=0', 60)]
+    role_count=0 strategies=[('CONCRETE ARTIFACT', 40), ('CONSTRAINED TASK', 40), ('SPECIALIST DELIVERABLE', 40)]
+    sample_query: "What specific algorithm should I implement to enhance the accuracy of the chatbot's response time estimation?"
+  report=oof_report.json
+    keys=['experiment', 'oof_rows', 'oof_matched_queries', 'oof_matched_system_pairs', 'global_auc', 'matched_probe_win', 'macro_role_auc', 'macro_role_pair3_win', 'accumulation', 'per_role', 'baselines']
+
+DATA ROOT: artifacts/role_direct_sensor_final_v1
+
+DATA ROOT: artifacts/role_direct_adaptive_v3_20261009_141345_2884083
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/candidates_dev_round_01.jsonl | rows=100 | sizeMB=0.1
+    keys: attempts, candidate_index, conditioning_hash, query, round, selection_score, selector, session_id, strategy, target_role, valid
+    labels: []
+    role_count=20 strategies=[('DIAGNOSIS', 18), ('TRADEOFF', 16), ('VERIFICATION', 15), ('SPECIALIST DELIVERABLE', 13), ('CONSTRAINED TASK', 11), ('EDGE CASE', 11), ('TRANSFORMATION', 9), ('CONCRETE ARTIFACT', 7)]
+    sample_query: 'As part of my ongoing project ensuring accessibility compliance according to WCAG standards, can you please provide an example where improper label placement negatively impacts the usability of a form field and how it affects user'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/candidates_dev_round_02.jsonl | rows=100 | sizeMB=0.1
+    keys: attempts, candidate_index, conditioning_hash, query, round, selection_score, selector, session_id, strategy, target_role, valid
+    labels: []
+    role_count=20 strategies=[('TRADEOFF', 21), ('DIAGNOSIS', 19), ('VERIFICATION', 19), ('SPECIALIST DELIVERABLE', 12), ('CONCRETE ARTIFACT', 9), ('CONSTRAINED TASK', 8), ('EDGE CASE', 6), ('TRANSFORMATION', 6)]
+    sample_query: 'Does the improper placement of labels in a form affect the overall ease of use for screen reader users compared to those without disabilities?'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/evidence_public_dev_round_01.jsonl | rows=100 | sizeMB=0.0
+    keys: logit, query_sha256, round, session_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/evidence_public_dev_round_02.jsonl | rows=100 | sizeMB=0.0
+    keys: logit, query_sha256, round, session_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/pool_public_dev_round_01.jsonl | rows=800 | sizeMB=0.4
+    keys: attempts, candidate_index, conditioning_hash, query, round, session_id, strategy, target_role, valid
+    labels: []
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 100), ('DIAGNOSIS', 100), ('VERIFICATION', 100), ('TRADEOFF', 100), ('TRANSFORMATION', 100), ('EDGE CASE', 100), ('CONSTRAINED TASK', 100), ('SPECIALIST DELIVERABLE', 100)]
+    sample_query: 'Is there an error in this piece of JavaScript code that I can identify as a logical issue?'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/pool_public_dev_round_02.jsonl | rows=800 | sizeMB=0.4
+    keys: attempts, candidate_index, conditioning_hash, query, round, session_id, strategy, target_role, valid
+    labels: []
+    role_count=20 strategies=[('CONCRETE ARTIFACT', 100), ('DIAGNOSIS', 100), ('VERIFICATION', 100), ('TRADEOFF', 100), ('TRANSFORMATION', 100), ('EDGE CASE', 100), ('CONSTRAINED TASK', 100), ('SPECIALIST DELIVERABLE', 100)]
+    sample_query: 'How do I effectively troubleshoot and fix runtime errors in Python applications, specifically focusing on handling exceptions, managing global state, and resolving infinite loops?'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/responses_dev_round_01.jsonl | rows=100 | sizeMB=0.9
+    keys: action, answer, attempts, cache_hit, candidate_index, conditioning_hash, execution_status, final_output, manifest_sha256, mode, output, query, retries_used, round, selected_roles_training_only, selection_score, selector, session_id, strategy, system_id, target_role, truth_roles_training_only, valid
+    labels: []
+    role_count=20 strategies=[('DIAGNOSIS', 18), ('TRADEOFF', 16), ('VERIFICATION', 15), ('SPECIALIST DELIVERABLE', 13), ('CONSTRAINED TASK', 11), ('EDGE CASE', 11), ('TRANSFORMATION', 9), ('CONCRETE ARTIFACT', 7)]
+    sample_query: 'As part of my ongoing project ensuring accessibility compliance according to WCAG standards, can you please provide an example where improper label placement negatively impacts the usability of a form field and how it affects user'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/responses_dev_round_02.jsonl | rows=100 | sizeMB=0.9
+    keys: action, answer, attempts, cache_hit, candidate_index, conditioning_hash, execution_status, final_output, manifest_sha256, mode, output, query, retries_used, round, selected_roles_training_only, selection_score, selector, session_id, strategy, system_id, target_role, truth_roles_training_only, valid
+    labels: []
+    role_count=20 strategies=[('TRADEOFF', 21), ('DIAGNOSIS', 19), ('VERIFICATION', 19), ('SPECIALIST DELIVERABLE', 12), ('CONCRETE ARTIFACT', 9), ('CONSTRAINED TASK', 8), ('EDGE CASE', 6), ('TRANSFORMATION', 6)]
+    sample_query: 'Does the improper placement of labels in a form affect the overall ease of use for screen reader users compared to those without disabilities?'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/responses_public_dev_round_01.jsonl | rows=100 | sizeMB=0.3
+    keys: cache_hit, execution_status, final_output, query, session_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: 'As part of my ongoing project ensuring accessibility compliance according to WCAG standards, can you please provide an example where improper label placement negatively impacts the usability of a form field and how it affects user'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/responses_public_dev_round_02.jsonl | rows=100 | sizeMB=0.3
+    keys: cache_hit, execution_status, final_output, query, session_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+    sample_query: 'Does the improper placement of labels in a form affect the overall ease of use for screen reader users compared to those without disabilities?'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/selection_public_dev_round_01.jsonl | rows=100 | sizeMB=0.0
+    keys: chosen_index, scores, session_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/selection_public_dev_round_02.jsonl | rows=100 | sizeMB=0.0
+    keys: chosen_index, scores, session_id, target_role
+    labels: []
+    role_count=20 strategies=[]
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/target_public_cache.jsonl | rows=200 | sizeMB=0.6
+    keys: key, output, query, session_id
+    labels: []
+    role_count=0 strategies=[]
+    sample_query: 'As part of my ongoing project ensuring accessibility compliance according to WCAG standards, can you please provide an example where improper label placement negatively impacts the usability of a form field and how it affects user'
+  artifacts/role_direct_adaptive_v3_20261009_141345_2884083/target_truth_cache_training_only.jsonl | rows=200 | sizeMB=0.1
+    keys: key, query_hash, selected_roles, session_id, true_roles
+    labels: []
+    role_count=0 strategies=[]
+  report=final_report.json
+    keys=['round1_raw', 'round2_raw', 'two_round_raw_mean', 'round1_frozen_calibrated', 'round2_frozen_calibrated', 'two_round_frozen_calibrated', 'protocol']
+    round1_raw: within_auc=0.6784313725490196 top3=0 f1=0.39999999999999997
+    round2_raw: within_auc=0.6352941176470588 top3=0 f1=0.26666666666666666
+    two_round_raw_mean: within_auc=0.6666666666666666 top3=0 f1=0.13333333333333333
+    round1_frozen_calibrated: within_auc=0.6941176470588235 top3=0 f1=0.39999999999999997
+    round2_frozen_calibrated: within_auc=0.592156862745098 top3=0 f1=0.19999999999999998
+    two_round_frozen_calibrated: within_auc=0.6588235294117647 top3=0 f1=0.13333333333333333
+
+================== TRAINING SAFETY CHECKLIST ==================
+Check MAS-composition-level train/validation/test splits
+Check cross-role labels for all 20 roles
+Check unique candidate-response joins
+Treat V3 and Simple5 as development data
+Freeze existing adapters and checkpoints
+Write all new outputs only under role_direct_within_v4
+Validate GPU resources before Slurm submission
+Do not read .env or private model weights

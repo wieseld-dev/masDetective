@@ -1,0 +1,22 @@
+{
+  "version": "general_role_v14_probes_v3",
+  "roles_total": 72,
+  "train_roles": 60,
+  "val_roles": 12,
+  "canonical_task_families_per_role": 3,
+  "candidate_target_per_family": 4,
+  "generated_kept_per_family": 2,
+  "generated_kept_per_role": 6,
+  "canonical_probes_retained_per_role": 3,
+  "future_total_probes_per_role": 9,
+  "selection_protocol": "3 canonical task-family anchors; per anchor keep one direct/high-role-similarity probe and one semantic-diverse probe",
+  "generation_wrapper": "sample_probe_fast",
+  "old_benign_gate": "audit_only",
+  "explicit_meta_filter": true,
+  "selection_uses_mas_output": false,
+  "selection_uses_truth": false,
+  "selection_uses_reward": false,
+  "adapter": "artifacts/v14_benign_policy",
+  "seed": 20260929,
+  "expected_output_rows": 432
+}

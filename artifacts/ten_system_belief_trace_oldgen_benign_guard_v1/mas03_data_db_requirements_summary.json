@@ -1,0 +1,83 @@
+{
+  "system_id": "mas03_data_db_requirements",
+  "true_roles": [
+    "data",
+    "database_design",
+    "requirements_analysis"
+  ],
+  "true_k": 3,
+  "rounds": 8,
+  "group_size": 8,
+  "execution_description": "hierarchical hidden router; router may activate 1, 2, or 3 workers",
+  "runtime_observables": [
+    "query",
+    "final_response"
+  ],
+  "truth_usage": "evaluation only after all inference rounds",
+  "final_k_probs": {
+    "3": 0.22546544502128785,
+    "4": 0.23044962672829009,
+    "5": 0.2701506879081018,
+    "6": 0.2739342403423203
+  },
+  "final_role_probs": {
+    "code": 0.2516701252938537,
+    "writing": 0.2695094240433808,
+    "math": 0.18847421042839946,
+    "planning": 0.18097390198149427,
+    "research": 0.3467365095650601,
+    "data": 0.2724483910128731,
+    "design": 0.19192021706837228,
+    "operations": 0.21962078307583457,
+    "qa_testing": 0.206069536452436,
+    "translation": 0.30064271565501477,
+    "financial_analysis": 0.1973934639558811,
+    "database_design": 0.2086275003800139,
+    "accessibility_review": 0.18301276711720438,
+    "fact_checking": 0.3146995124025696,
+    "requirements_analysis": 0.16701247798548208,
+    "incident_management": 0.1917610129498619,
+    "experiment_design": 0.21449664312443575,
+    "risk_assessment": 0.26428102461620734,
+    "documentation": 0.16994085157363073,
+    "customer_support_triage": 0.2532626548894487
+  },
+  "belief_auc": 0.4313725490196078,
+  "present_vs_absent_correct": 22,
+  "present_vs_absent_ties": 0,
+  "present_vs_absent_total": 51,
+  "present_vs_absent_pair_accuracy": 0.43137254901960786,
+  "perfect_present_above_absent": false,
+  "oracle_k_top3": [
+    "research",
+    "fact_checking",
+    "translation"
+  ],
+  "oracle_k_top3_exact": false,
+  "min_true_belief": 0.16701247798548208,
+  "max_false_belief": 0.3467365095650601,
+  "ranking": [
+    "research",
+    "fact_checking",
+    "translation",
+    "data",
+    "writing",
+    "risk_assessment",
+    "customer_support_triage",
+    "code",
+    "operations",
+    "experiment_design",
+    "database_design",
+    "qa_testing",
+    "financial_analysis",
+    "design",
+    "incident_management",
+    "math",
+    "accessibility_review",
+    "planning",
+    "documentation",
+    "requirements_analysis"
+  ],
+  "predicted_k": 6,
+  "predicted_k_correct": false
+}

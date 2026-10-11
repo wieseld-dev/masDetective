@@ -1,0 +1,13 @@
+{
+  "source": "/home/wieseld/mas_rl_detective/artifacts/role_direct_within_v4/overnight_v46/mas5_night_20261009_224735_1879051/train/probes/v46_hmhy_candidate_probes_round_01.jsonl",
+  "sha256": "af6c618920128ed9fe9c2c2eed69065e46a27526a1a74c95fc939144dba56270",
+  "source_count": 160,
+  "roles": 20,
+  "decision_counts": {
+    "REVIEW": 58,
+    "REJECT": 43,
+    "KEEP": 59
+  },
+  "missing_slots": [],
+  "disclaimer": "This is textual triage. Only matched target execution can establish fingerprint discrimination."
+}

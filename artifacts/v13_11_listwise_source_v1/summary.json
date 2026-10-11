@@ -1,0 +1,561 @@
+{
+  "protocol": "v13_11_listwise_source_v1",
+  "initial_adapter": "artifacts/v13_8b_balanced_repair_2048_run1/best_adapter",
+  "train_outputs_available": 1440,
+  "train_samples_used": 512,
+  "val_outputs": 216,
+  "eligible_listwise_roles": [
+    "code",
+    "writing",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations",
+    "qa_testing",
+    "translation",
+    "database_design",
+    "accessibility_review",
+    "fact_checking",
+    "requirements_analysis",
+    "incident_management",
+    "experiment_design",
+    "risk_assessment",
+    "documentation"
+  ],
+  "missing_positive_roles": [
+    "math",
+    "financial_analysis",
+    "customer_support_triage"
+  ],
+  "listwise_denominator": 17,
+  "baseline_val": {
+    "n": 216,
+    "top1": 0.5925925925925926,
+    "top3": 0.7685185185185185,
+    "mrr": 0.7054387806123917,
+    "mean_rank": 2.865740740740741,
+    "median_rank": 1.0,
+    "pairwise_accuracy": 0.8194444444444444,
+    "rank_histogram": {
+      "1": 128,
+      "2": 25,
+      "3": 13,
+      "4": 9,
+      "5": 8,
+      "6": 3,
+      "7": 6,
+      "8": 6,
+      "9": 5,
+      "10": 4,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 2,
+      "15": 1,
+      "16": 1,
+      "18": 1,
+      "20": 1
+    },
+    "by_true_role": {
+      "accessibility_review": {
+        "n": 6,
+        "top1": 1.0,
+        "top3": 1.0,
+        "mrr": 1.0,
+        "mean_rank": 1.0
+      },
+      "code": {
+        "n": 12,
+        "top1": 0.25,
+        "top3": 0.4166666666666667,
+        "mrr": 0.3851220538720539,
+        "mean_rank": 6.666666666666667
+      },
+      "data": {
+        "n": 12,
+        "top1": 0.3333333333333333,
+        "top3": 0.6666666666666666,
+        "mrr": 0.5250992063492063,
+        "mean_rank": 3.3333333333333335
+      },
+      "database_design": {
+        "n": 18,
+        "top1": 0.5555555555555556,
+        "top3": 0.7777777777777778,
+        "mrr": 0.6914351851851852,
+        "mean_rank": 3.0
+      },
+      "design": {
+        "n": 6,
+        "top1": 0.3333333333333333,
+        "top3": 0.3333333333333333,
+        "mrr": 0.43333333333333335,
+        "mean_rank": 5.333333333333333
+      },
+      "documentation": {
+        "n": 12,
+        "top1": 0.08333333333333333,
+        "top3": 0.5833333333333334,
+        "mrr": 0.3849206349206349,
+        "mean_rank": 3.5833333333333335
+      },
+      "experiment_design": {
+        "n": 12,
+        "top1": 0.6666666666666666,
+        "top3": 0.8333333333333334,
+        "mrr": 0.7537037037037037,
+        "mean_rank": 2.6666666666666665
+      },
+      "fact_checking": {
+        "n": 18,
+        "top1": 0.6111111111111112,
+        "top3": 0.8333333333333334,
+        "mrr": 0.7638888888888888,
+        "mean_rank": 1.7222222222222223
+      },
+      "incident_management": {
+        "n": 6,
+        "top1": 0.16666666666666666,
+        "top3": 0.3333333333333333,
+        "mrr": 0.32764550264550263,
+        "mean_rank": 7.166666666666667
+      },
+      "operations": {
+        "n": 6,
+        "top1": 0.6666666666666666,
+        "top3": 0.6666666666666666,
+        "mrr": 0.7142857142857143,
+        "mean_rank": 3.0
+      },
+      "planning": {
+        "n": 30,
+        "top1": 0.7333333333333333,
+        "top3": 0.8666666666666667,
+        "mrr": 0.8128703703703704,
+        "mean_rank": 2.2333333333333334
+      },
+      "qa_testing": {
+        "n": 6,
+        "top1": 0.6666666666666666,
+        "top3": 0.8333333333333334,
+        "mrr": 0.7708333333333334,
+        "mean_rank": 2.3333333333333335
+      },
+      "requirements_analysis": {
+        "n": 12,
+        "top1": 0.5,
+        "top3": 0.75,
+        "mrr": 0.6513888888888888,
+        "mean_rank": 2.3333333333333335
+      },
+      "research": {
+        "n": 30,
+        "top1": 0.7,
+        "top3": 0.8333333333333334,
+        "mrr": 0.7737810337810338,
+        "mean_rank": 2.933333333333333
+      },
+      "risk_assessment": {
+        "n": 6,
+        "top1": 1.0,
+        "top3": 1.0,
+        "mrr": 1.0,
+        "mean_rank": 1.0
+      },
+      "translation": {
+        "n": 6,
+        "top1": 0.8333333333333334,
+        "top3": 1.0,
+        "mrr": 0.9166666666666666,
+        "mean_rank": 1.1666666666666667
+      },
+      "writing": {
+        "n": 18,
+        "top1": 0.7777777777777778,
+        "top3": 0.8888888888888888,
+        "mrr": 0.8444444444444444,
+        "mean_rank": 1.6666666666666667
+      }
+    },
+    "confusion": {
+      "code": {
+        "accessibility_review": 1,
+        "code": 3,
+        "writing": 2,
+        "documentation": 3,
+        "translation": 1,
+        "data": 1,
+        "operations": 1
+      },
+      "planning": {
+        "documentation": 2,
+        "planning": 22,
+        "code": 1,
+        "writing": 2,
+        "financial_analysis": 1,
+        "customer_support_triage": 1,
+        "risk_assessment": 1
+      },
+      "qa_testing": {
+        "qa_testing": 4,
+        "operations": 1,
+        "code": 1
+      },
+      "database_design": {
+        "database_design": 10,
+        "operations": 2,
+        "writing": 1,
+        "fact_checking": 2,
+        "code": 1,
+        "documentation": 2
+      },
+      "research": {
+        "writing": 4,
+        "research": 21,
+        "code": 2,
+        "fact_checking": 1,
+        "customer_support_triage": 1,
+        "risk_assessment": 1
+      },
+      "risk_assessment": {
+        "risk_assessment": 6
+      },
+      "requirements_analysis": {
+        "requirements_analysis": 6,
+        "writing": 2,
+        "documentation": 2,
+        "research": 1,
+        "design": 1
+      },
+      "fact_checking": {
+        "fact_checking": 11,
+        "data": 2,
+        "research": 3,
+        "writing": 1,
+        "experiment_design": 1
+      },
+      "experiment_design": {
+        "experiment_design": 8,
+        "research": 2,
+        "documentation": 1,
+        "writing": 1
+      },
+      "writing": {
+        "fact_checking": 1,
+        "writing": 14,
+        "translation": 3
+      },
+      "data": {
+        "code": 1,
+        "writing": 1,
+        "data": 4,
+        "documentation": 3,
+        "qa_testing": 1,
+        "research": 1,
+        "fact_checking": 1
+      },
+      "documentation": {
+        "writing": 8,
+        "translation": 1,
+        "documentation": 1,
+        "planning": 1,
+        "requirements_analysis": 1
+      },
+      "translation": {
+        "translation": 5,
+        "code": 1
+      },
+      "design": {
+        "accessibility_review": 1,
+        "writing": 1,
+        "code": 1,
+        "design": 2,
+        "planning": 1
+      },
+      "accessibility_review": {
+        "accessibility_review": 6
+      },
+      "operations": {
+        "operations": 4,
+        "documentation": 1,
+        "design": 1
+      },
+      "incident_management": {
+        "operations": 2,
+        "incident_management": 1,
+        "fact_checking": 1,
+        "planning": 1,
+        "design": 1
+      }
+    }
+  },
+  "best_epoch": 1,
+  "best_val": {
+    "n": 216,
+    "top1": 0.6064814814814815,
+    "top3": 0.7824074074074074,
+    "mrr": 0.7231755724607032,
+    "mean_rank": 2.6805555555555554,
+    "median_rank": 1.0,
+    "pairwise_accuracy": 0.8055555555555556,
+    "rank_histogram": {
+      "1": 131,
+      "2": 31,
+      "3": 7,
+      "4": 9,
+      "5": 9,
+      "6": 6,
+      "7": 2,
+      "8": 5,
+      "9": 5,
+      "10": 3,
+      "12": 2,
+      "13": 2,
+      "14": 1,
+      "17": 1,
+      "18": 1,
+      "20": 1
+    },
+    "by_true_role": {
+      "accessibility_review": {
+        "n": 6,
+        "top1": 1.0,
+        "top3": 1.0,
+        "mrr": 1.0,
+        "mean_rank": 1.0
+      },
+      "code": {
+        "n": 12,
+        "top1": 0.25,
+        "top3": 0.4166666666666667,
+        "mrr": 0.39107142857142857,
+        "mean_rank": 6.5
+      },
+      "data": {
+        "n": 12,
+        "top1": 0.5,
+        "top3": 0.8333333333333334,
+        "mrr": 0.6611111111111111,
+        "mean_rank": 2.6666666666666665
+      },
+      "database_design": {
+        "n": 18,
+        "top1": 0.6111111111111112,
+        "top3": 0.8888888888888888,
+        "mrr": 0.7588235294117647,
+        "mean_rank": 2.6666666666666665
+      },
+      "design": {
+        "n": 6,
+        "top1": 0.3333333333333333,
+        "top3": 0.3333333333333333,
+        "mrr": 0.4569444444444444,
+        "mean_rank": 4.166666666666667
+      },
+      "documentation": {
+        "n": 12,
+        "top1": 0.08333333333333333,
+        "top3": 0.5,
+        "mrr": 0.37857142857142856,
+        "mean_rank": 4.0
+      },
+      "experiment_design": {
+        "n": 12,
+        "top1": 0.75,
+        "top3": 0.8333333333333334,
+        "mrr": 0.8092592592592592,
+        "mean_rank": 2.5
+      },
+      "fact_checking": {
+        "n": 18,
+        "top1": 0.6111111111111112,
+        "top3": 0.8333333333333334,
+        "mrr": 0.7638888888888888,
+        "mean_rank": 1.7222222222222223
+      },
+      "incident_management": {
+        "n": 6,
+        "top1": 0.16666666666666666,
+        "top3": 0.3333333333333333,
+        "mrr": 0.3365740740740741,
+        "mean_rank": 6.166666666666667
+      },
+      "operations": {
+        "n": 6,
+        "top1": 0.6666666666666666,
+        "top3": 0.6666666666666666,
+        "mrr": 0.7333333333333334,
+        "mean_rank": 2.3333333333333335
+      },
+      "planning": {
+        "n": 30,
+        "top1": 0.7666666666666667,
+        "top3": 0.8666666666666667,
+        "mrr": 0.8372863247863248,
+        "mean_rank": 2.0
+      },
+      "qa_testing": {
+        "n": 6,
+        "top1": 0.6666666666666666,
+        "top3": 0.8333333333333334,
+        "mrr": 0.7777777777777777,
+        "mean_rank": 2.0
+      },
+      "requirements_analysis": {
+        "n": 12,
+        "top1": 0.5,
+        "top3": 0.9166666666666666,
+        "mrr": 0.6875,
+        "mean_rank": 1.9166666666666667
+      },
+      "research": {
+        "n": 30,
+        "top1": 0.6666666666666666,
+        "top3": 0.8,
+        "mrr": 0.7551302401302402,
+        "mean_rank": 2.966666666666667
+      },
+      "risk_assessment": {
+        "n": 6,
+        "top1": 1.0,
+        "top3": 1.0,
+        "mrr": 1.0,
+        "mean_rank": 1.0
+      },
+      "translation": {
+        "n": 6,
+        "top1": 0.8333333333333334,
+        "top3": 1.0,
+        "mrr": 0.9166666666666666,
+        "mean_rank": 1.1666666666666667
+      },
+      "writing": {
+        "n": 18,
+        "top1": 0.7222222222222222,
+        "top3": 0.8333333333333334,
+        "mrr": 0.8092592592592592,
+        "mean_rank": 1.8333333333333333
+      }
+    },
+    "confusion": {
+      "code": {
+        "accessibility_review": 1,
+        "code": 3,
+        "writing": 2,
+        "documentation": 2,
+        "translation": 1,
+        "data": 1,
+        "operations": 1,
+        "qa_testing": 1
+      },
+      "planning": {
+        "documentation": 1,
+        "planning": 23,
+        "code": 1,
+        "writing": 2,
+        "financial_analysis": 1,
+        "customer_support_triage": 1,
+        "risk_assessment": 1
+      },
+      "qa_testing": {
+        "qa_testing": 4,
+        "operations": 1,
+        "code": 1
+      },
+      "database_design": {
+        "database_design": 11,
+        "operations": 2,
+        "writing": 1,
+        "fact_checking": 1,
+        "data": 1,
+        "code": 1,
+        "documentation": 1
+      },
+      "research": {
+        "planning": 1,
+        "research": 20,
+        "writing": 3,
+        "code": 2,
+        "fact_checking": 1,
+        "customer_support_triage": 1,
+        "risk_assessment": 1,
+        "database_design": 1
+      },
+      "risk_assessment": {
+        "risk_assessment": 6
+      },
+      "requirements_analysis": {
+        "requirements_analysis": 6,
+        "documentation": 3,
+        "research": 1,
+        "writing": 1,
+        "design": 1
+      },
+      "fact_checking": {
+        "fact_checking": 11,
+        "data": 2,
+        "research": 4,
+        "experiment_design": 1
+      },
+      "experiment_design": {
+        "experiment_design": 9,
+        "documentation": 1,
+        "writing": 1,
+        "research": 1
+      },
+      "writing": {
+        "fact_checking": 1,
+        "writing": 13,
+        "translation": 3,
+        "design": 1
+      },
+      "data": {
+        "code": 1,
+        "data": 6,
+        "documentation": 2,
+        "qa_testing": 1,
+        "research": 1,
+        "fact_checking": 1
+      },
+      "documentation": {
+        "writing": 6,
+        "accessibility_review": 1,
+        "translation": 1,
+        "documentation": 1,
+        "planning": 2,
+        "requirements_analysis": 1
+      },
+      "translation": {
+        "translation": 5,
+        "code": 1
+      },
+      "design": {
+        "accessibility_review": 1,
+        "writing": 1,
+        "code": 1,
+        "design": 2,
+        "planning": 1
+      },
+      "accessibility_review": {
+        "accessibility_review": 6
+      },
+      "operations": {
+        "operations": 4,
+        "documentation": 1,
+        "design": 1
+      },
+      "incident_management": {
+        "operations": 3,
+        "incident_management": 1,
+        "planning": 1,
+        "design": 1
+      }
+    }
+  },
+  "delta_top1": 0.01388888888888895,
+  "delta_mrr": 0.01773679184831145,
+  "locked_test_used": false,
+  "api_calls": 0,
+  "mas_calls": 0
+}

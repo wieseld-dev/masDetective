@@ -1,0 +1,97 @@
+==========================================================================================
+SEMANTIC INTERFERENCE BATTERY V1
+==========================================================================================
+pair records: 288
+privileged selected-role query rows discovered: 496
+
+A) CAUSAL INTERFERENCE VS ABSOLUTE COMPOSITION
+  [numbered]
+    V135 anti=0.5189 nonadd=0.8436 centered-order-cos=0.4752
+    V134 anti=0.3553 nonadd=0.7850 centered-order-cos=0.7539
+    V135-V134 anti delta=+0.1636 exact-p=0.00781
+    V135-V134 nonadd delta=+0.0586 exact-p=0.01562
+  [requirements]
+    V135 anti=0.5937 nonadd=0.8734 centered-order-cos=0.2857
+    V134 anti=0.3877 nonadd=0.7354 centered-order-cos=0.6844
+    V135-V134 anti delta=+0.2060 exact-p=0.00781
+    V135-V134 nonadd delta=+0.1379 exact-p=0.01562
+
+B) CROSS-WRAPPER INVARIANCE
+  [v135]
+    anti same-pair cosine=0.1062 perm-p=0.00785 rank-rho=0.1643
+    residual same-pair cosine=0.3331 perm-p=0.00005 rank-rho=0.4786
+  [v134]
+    anti same-pair cosine=0.2160 perm-p=0.00005 rank-rho=0.3357
+    residual same-pair cosine=0.2538 perm-p=0.00005 rank-rho=0.1571
+  [concat]
+    anti same-pair cosine=0.3211 perm-p=0.00005 rank-rho=0.3500
+    residual same-pair cosine=0.8152 perm-p=0.00005 rank-rho=0.8857
+
+C) HIGHER-ORDER / PAIRWISE CLOSURE
+  numbered     v135  : all4~first=0.1340 all4~pairclosure=0.3988 closure-resid=0.8487
+  numbered     v134  : all4~first=0.6085 all4~pairclosure=0.8276 closure-resid=0.5029
+  numbered     concat: all4~first=0.2951 all4~pairclosure=0.9783 closure-resid=0.1968
+  requirements v135  : all4~first=0.2536 all4~pairclosure=0.4068 closure-resid=0.8784
+  requirements v134  : all4~first=0.5874 all4~pairclosure=0.7217 closure-resid=0.5265
+  requirements concat: all4~first=0.3542 all4~pairclosure=0.9080 closure-resid=0.3658
+
+D) INTERFERENCE LOCALIZATION ON TRUE ROLES
+  numbered     v135: true-false anti=-0.038523328782908824 p=0.4765625 true-false residual=0.0993265612983052 p=0.171875
+  numbered     v134: true-false anti=-0.00681520919728568 p=0.6875 true-false residual=-0.0004915313873950205 p=0.9765625
+  requirements v135: true-false anti=-0.025610958315939913 p=0.5859375 true-false residual=0.003123436005129066 p=0.9765625
+  requirements v134: true-false anti=0.01323691082267868 p=0.546875 true-false residual=0.0046210621720548135 p=0.8515625
+
+E) ONE-CALL COMPRESSED ROLE EXTRACTION
+  [v135]
+    four_individual_calls_mean             AUC=0.6358 AP=0.4320 oracleK-recall=0.4104
+    numbered_all4_ONE_CALL_fwd             AUC=0.6033 AP=0.3092 oracleK-recall=0.3438
+    numbered_all4_ONE_CALL_rev             AUC=0.4931 AP=0.2495 oracleK-recall=0.2354
+    numbered_all4_TWO_CALL_avg             AUC=0.5697 AP=0.2903 oracleK-recall=0.2729
+    requirements_all4_ONE_CALL_fwd         AUC=0.5977 AP=0.3474 oracleK-recall=0.3208
+    requirements_all4_ONE_CALL_rev         AUC=0.6151 AP=0.3644 oracleK-recall=0.4229
+    requirements_all4_TWO_CALL_avg         AUC=0.6421 AP=0.3693 oracleK-recall=0.3896
+  [v134]
+    four_individual_calls_mean             AUC=0.4673 AP=0.2754 oracleK-recall=0.2896
+    numbered_all4_ONE_CALL_fwd             AUC=0.4916 AP=0.2901 oracleK-recall=0.2479
+    numbered_all4_ONE_CALL_rev             AUC=0.5523 AP=0.3552 oracleK-recall=0.3604
+    numbered_all4_TWO_CALL_avg             AUC=0.5393 AP=0.3367 oracleK-recall=0.2729
+    requirements_all4_ONE_CALL_fwd         AUC=0.4735 AP=0.2459 oracleK-recall=0.2375
+    requirements_all4_ONE_CALL_rev         AUC=0.5129 AP=0.2554 oracleK-recall=0.2562
+    requirements_all4_TWO_CALL_avg         AUC=0.4640 AP=0.2471 oracleK-recall=0.2771
+
+F) STRICT LOSO DEMULTIPLEXING
+  [v135]
+    numbered_to_numbered                         learned-top1=0.5000 fixed-top1=0.5000 learned-margin=-0.1668
+    requirements_to_requirements                 learned-top1=0.2500 fixed-top1=0.3125 learned-margin=-0.4638
+    numbered_to_REQUIREMENTS_cross_wrapper       learned-top1=0.4688 fixed-top1=0.3125 learned-margin=-0.2962
+    requirements_to_NUMBERED_cross_wrapper       learned-top1=0.3125 fixed-top1=0.5000 learned-margin=-0.3713
+  [v134]
+    numbered_to_numbered                         learned-top1=0.3438 fixed-top1=0.4688 learned-margin=-0.3942
+    requirements_to_requirements                 learned-top1=0.2188 fixed-top1=0.4062 learned-margin=-0.7366
+    numbered_to_REQUIREMENTS_cross_wrapper       learned-top1=0.3125 fixed-top1=0.4062 learned-margin=-0.4770
+    requirements_to_NUMBERED_cross_wrapper       learned-top1=0.4062 fixed-top1=0.4688 learned-margin=-0.6718
+  [concat]
+    numbered_to_numbered                         learned-top1=0.5000 fixed-top1=0.6250 learned-margin=-0.0664
+    requirements_to_requirements                 learned-top1=0.3438 fixed-top1=0.4062 learned-margin=-0.4734
+    numbered_to_REQUIREMENTS_cross_wrapper       learned-top1=0.2500 fixed-top1=0.4062 learned-margin=-0.3968
+    requirements_to_NUMBERED_cross_wrapper       learned-top1=0.3438 fixed-top1=0.6250 learned-margin=-0.4396
+
+G) OUTPUT-SURFACE CONFOUND CHECK
+  numbered: anti~TFIDF-distance rho=-0.12700825010855404 p=0.38965933948740167 | anti~length rho=0.02920104211897525 p=0.843812019972141
+  requirements: anti~TFIDF-distance rho=-0.06144159791576204 p=0.6782506764695346 | anti~length rho=-0.09829836896718518 p=0.5062475662511333
+
+H) PRIVILEGED ROUTING-TRACE VALIDATION
+  selected query rows found=496, usable pair rows=96
+  numbered: anti~actual-route-change rho=0.1460387355874841 p=0.32195975784960734 | nonadd~basis-route-diff rho=0.03398282589499031 p=0.8186357880661393
+  requirements: anti~actual-route-change rho=0.03634842478157071 p=0.8062457351089553 | nonadd~basis-route-diff rho=-0.10720355385429933 p=0.46830240346165186
+
+I) EXECUTION-STRUCTURE FINGERPRINT (EXPLORATORY)
+  n=8 mode-1NN-LOSO=0.3750 perm-p=0.18368
+  K-LOSO-MAE=1.2677 mean-baseline-MAE=0.8571
+
+==========================================================================================
+DECISION LOGIC
+==========================================================================================
+Strongest evidence for real structural interference would be: (1) V135 anti/nonadditivity > V134 under paired system-level tests; (2) same signed interference survives wrapper change; (3) it localizes to true roles or correlates with privileged route changes; (4) cross-wrapper LOSO decoding remains > 0.25; and (5) the effect is not explained mainly by output length/text distance.
+If only numbered decoding survives while cross-wrapper anti/residual alignment is null, treat V0 as a wrapper-specific prompt-composition artifact rather than a new MAS mechanism.
+==========================================================================================

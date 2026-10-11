@@ -1,0 +1,365 @@
+{
+  "protocol": "v139_same_query_causal_repair_pilot",
+  "initial_adapter": "artifacts/v13_8b_balanced_repair_2048_run1/best_adapter",
+  "causal_mass": 0.65,
+  "samples_per_epoch": 2048,
+  "epochs": 2,
+  "train_causal_pairs": 1440,
+  "val_causal_pairs": 216,
+  "test_locked_used": false,
+  "base_new": {
+    "n": 216,
+    "accuracy": 0.8333333333333334,
+    "mean_margin": 4.130594889322917,
+    "by_stratum": {
+      "a_dominant": {
+        "n": 122,
+        "accuracy": 0.8360655737704918,
+        "mean_margin": 4.356327244492828
+      },
+      "b_dominant": {
+        "n": 60,
+        "accuracy": 0.8166666666666667,
+        "mean_margin": 3.5321370442708333
+      },
+      "uncertain": {
+        "n": 20,
+        "accuracy": 0.9,
+        "mean_margin": 5.511962890625
+      },
+      "overlap": {
+        "n": 12,
+        "accuracy": 0.8333333333333334,
+        "mean_margin": 3.2127888997395835
+      },
+      "neither": {
+        "n": 2,
+        "accuracy": 0.5,
+        "mean_margin": 0.0078125
+      }
+    }
+  },
+  "base_old": {
+    "by_type": {
+      "activation_cf_plus_minus": {
+        "n": 196,
+        "accuracy": 0.7091836734693877,
+        "mean_margin": 2.088399595143844,
+        "median_margin": 0.765625
+      },
+      "activation_cf_sham_minus": {
+        "n": 256,
+        "accuracy": 0.64453125,
+        "mean_margin": 1.779092013835907,
+        "median_margin": 0.689453125
+      },
+      "within_answer_hard_neighbor_absent": {
+        "n": 206,
+        "accuracy": 0.6650485436893204,
+        "mean_margin": 1.0650824389411409,
+        "median_margin": 1.041015625
+      },
+      "within_answer_probe_target_absent": {
+        "n": 181,
+        "accuracy": 0.7569060773480663,
+        "mean_margin": 2.584261477981483,
+        "median_margin": 1.923828125
+      }
+    },
+    "same_role_cf_micro": 0.6768574617346939,
+    "same_role_cf_role_macro": 0.6614572135881231,
+    "same_role_cf_by_role": {
+      "code": {
+        "n": 19,
+        "accuracy": 0.631578947368421,
+        "mean_margin": 0.2977487664473684,
+        "median_margin": 0.203125
+      },
+      "writing": {
+        "n": 3,
+        "accuracy": 0.6666666666666666,
+        "mean_margin": -0.028645833333333332,
+        "median_margin": 0.0234375
+      },
+      "math": {
+        "n": 6,
+        "accuracy": 0.3333333333333333,
+        "mean_margin": 0.5950520833333334,
+        "median_margin": -0.21875
+      },
+      "planning": {
+        "n": 31,
+        "accuracy": 0.7741935483870968,
+        "mean_margin": 2.5964788621471775,
+        "median_margin": 1.4287109375
+      },
+      "research": {
+        "n": 43,
+        "accuracy": 0.7209302325581395,
+        "mean_margin": 3.387013634970022,
+        "median_margin": 1.42578125
+      },
+      "data": {
+        "n": 26,
+        "accuracy": 0.5,
+        "mean_margin": 0.9842341496394231,
+        "median_margin": 0.11328125
+      },
+      "operations": {
+        "n": 26,
+        "accuracy": 0.7692307692307693,
+        "mean_margin": 1.0990224984975963,
+        "median_margin": 0.27264404296875
+      },
+      "qa_testing": {
+        "n": 29,
+        "accuracy": 0.3448275862068966,
+        "mean_margin": -0.21541621767241378,
+        "median_margin": -0.326171875
+      },
+      "translation": {
+        "n": 3,
+        "accuracy": 1.0,
+        "mean_margin": 0.6465657552083334,
+        "median_margin": 0.58984375
+      },
+      "financial_analysis": {
+        "n": 46,
+        "accuracy": 0.6956521739130435,
+        "mean_margin": 1.8343563079833984,
+        "median_margin": 0.9375
+      },
+      "database_design": {
+        "n": 24,
+        "accuracy": 0.7083333333333334,
+        "mean_margin": 1.5548350016276042,
+        "median_margin": 0.90234375
+      },
+      "accessibility_review": {
+        "n": 44,
+        "accuracy": 0.75,
+        "mean_margin": 4.866844870827415,
+        "median_margin": 5.078125
+      },
+      "fact_checking": {
+        "n": 36,
+        "accuracy": 0.7777777777777778,
+        "mean_margin": 1.5893079969618056,
+        "median_margin": 1.33544921875
+      },
+      "requirements_analysis": {
+        "n": 22,
+        "accuracy": 0.7272727272727273,
+        "mean_margin": 1.1368297230113635,
+        "median_margin": 0.513671875
+      },
+      "incident_management": {
+        "n": 20,
+        "accuracy": 0.7,
+        "mean_margin": 1.672119140625,
+        "median_margin": 2.1337890625
+      },
+      "risk_assessment": {
+        "n": 45,
+        "accuracy": 0.6222222222222222,
+        "mean_margin": 2.323470052083333,
+        "median_margin": 0.6015625
+      },
+      "documentation": {
+        "n": 19,
+        "accuracy": 0.6842105263157895,
+        "mean_margin": 0.7856481451737253,
+        "median_margin": 0.33734130859375
+      },
+      "customer_support_triage": {
+        "n": 6,
+        "accuracy": 0.5,
+        "mean_margin": 0.20221964518229166,
+        "median_margin": 0.008026123046875
+      }
+    },
+    "target_absent_role_macro": 0.7457164545980335,
+    "target_absent_by_absent_role": {
+      "planning": {
+        "n": 21,
+        "accuracy": 0.7142857142857143,
+        "mean_margin": 2.95164308093843,
+        "median_margin": 2.02734375
+      },
+      "data": {
+        "n": 15,
+        "accuracy": 0.6666666666666666,
+        "mean_margin": 0.8814778645833333,
+        "median_margin": 1.0078125
+      },
+      "operations": {
+        "n": 24,
+        "accuracy": 0.9166666666666666,
+        "mean_margin": 3.1759033203125,
+        "median_margin": 2.71435546875
+      },
+      "qa_testing": {
+        "n": 20,
+        "accuracy": 0.6,
+        "mean_margin": 0.1891845703125,
+        "median_margin": 0.326171875
+      },
+      "financial_analysis": {
+        "n": 35,
+        "accuracy": 0.8285714285714286,
+        "mean_margin": 3.029441615513393,
+        "median_margin": 1.9921875
+      },
+      "database_design": {
+        "n": 21,
+        "accuracy": 0.6666666666666666,
+        "mean_margin": 3.260009765625,
+        "median_margin": 1.829833984375
+      },
+      "accessibility_review": {
+        "n": 26,
+        "accuracy": 0.7307692307692307,
+        "mean_margin": 4.002209003155048,
+        "median_margin": 3.74609375
+      },
+      "fact_checking": {
+        "n": 19,
+        "accuracy": 0.8421052631578947,
+        "mean_margin": 1.7890098973324424,
+        "median_margin": 1.43994140625
+      }
+    },
+    "hard_neighbor_role_macro": 0.6597032353611301,
+    "hard_neighbor_by_absent_role": {
+      "code": {
+        "n": 36,
+        "accuracy": 0.9166666666666666,
+        "mean_margin": 2.3273111979166665,
+        "median_margin": 2.05078125
+      },
+      "research": {
+        "n": 38,
+        "accuracy": 0.6842105263157895,
+        "mean_margin": 1.3765114232113487,
+        "median_margin": 1.06201171875
+      },
+      "database_design": {
+        "n": 24,
+        "accuracy": 0.9166666666666666,
+        "mean_margin": 2.1571451822916665,
+        "median_margin": 2.185546875
+      },
+      "requirements_analysis": {
+        "n": 24,
+        "accuracy": 0.2916666666666667,
+        "mean_margin": -1.1647542317708333,
+        "median_margin": -1.646484375
+      },
+      "incident_management": {
+        "n": 24,
+        "accuracy": 0.9166666666666666,
+        "mean_margin": 1.8401285807291667,
+        "median_margin": 1.13671875
+      },
+      "risk_assessment": {
+        "n": 44,
+        "accuracy": 0.45454545454545453,
+        "mean_margin": 0.3975705233487216,
+        "median_margin": -0.1484375
+      },
+      "documentation": {
+        "n": 16,
+        "accuracy": 0.4375,
+        "mean_margin": -0.13482666015625,
+        "median_margin": -0.33984375
+      }
+    },
+    "pair_floor": 0.64453125,
+    "pair_mean": 0.6939173861266936,
+    "selection_score": 0.6879423262398205
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7469386348049625,
+      "new_val": {
+        "n": 216,
+        "accuracy": 0.8425925925925926,
+        "mean_margin": 3.704853623001664,
+        "by_stratum": {
+          "a_dominant": {
+            "n": 122,
+            "accuracy": 0.8524590163934426,
+            "mean_margin": 3.88662844798604
+          },
+          "b_dominant": {
+            "n": 60,
+            "accuracy": 0.8166666666666667,
+            "mean_margin": 3.1489542643229167
+          },
+          "uncertain": {
+            "n": 20,
+            "accuracy": 0.85,
+            "mean_margin": 5.012451171875
+          },
+          "overlap": {
+            "n": 12,
+            "accuracy": 0.9166666666666666,
+            "mean_margin": 3.037994384765625
+          },
+          "neither": {
+            "n": 2,
+            "accuracy": 0.5,
+            "mean_margin": 0.21875
+          }
+        }
+      },
+      "old_selection_score": 0.7054670123588911,
+      "eligible_old_regression": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7402420129241136,
+      "new_val": {
+        "n": 216,
+        "accuracy": 0.8425925925925926,
+        "mean_margin": 3.635664763274016,
+        "by_stratum": {
+          "a_dominant": {
+            "n": 122,
+            "accuracy": 0.8442622950819673,
+            "mean_margin": 3.7972602218878073
+          },
+          "b_dominant": {
+            "n": 60,
+            "accuracy": 0.8333333333333334,
+            "mean_margin": 3.095528157552083
+          },
+          "uncertain": {
+            "n": 20,
+            "accuracy": 0.85,
+            "mean_margin": 4.9813720703125
+          },
+          "overlap": {
+            "n": 12,
+            "accuracy": 0.9166666666666666,
+            "mean_margin": 3.038818359375
+          },
+          "neither": {
+            "n": 2,
+            "accuracy": 0.5,
+            "mean_margin": 0.1064453125
+          }
+        }
+      },
+      "old_selection_score": 0.7010501849025298,
+      "eligible_old_regression": true
+    }
+  ],
+  "best": {
+    "epoch": 1,
+    "score": 0.8425925925925926,
+    "old_selection_score": 0.7054670123588911
+  },
+  "api_calls": 0
+}

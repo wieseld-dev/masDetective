@@ -1,0 +1,172 @@
+{
+  "setting": {
+    "selection_uses_true_Z": false,
+    "hidden_selected_roles_used_only_for_evaluation": true,
+    "posterior_particles": 64,
+    "test_systems": 139,
+    "test_rows": 5350,
+    "teacher_forced_state_history": true
+  },
+  "round_1_clean": {
+    "methods": {
+      "exposure": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8992805755395683,
+        "reward_optimal_hit_rate": 0.9136690647482014,
+        "exact_oracle_candidate_match_rate": 0.14388489208633093,
+        "mean_regret": 0.09352517985611511,
+        "mean_within_group_spearman": 0.024213691375305418,
+        "spearman_groups": 20
+      },
+      "uncertainty": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8992805755395683,
+        "reward_optimal_hit_rate": 0.9136690647482014,
+        "exact_oracle_candidate_match_rate": 0.14388489208633093,
+        "mean_regret": 0.09352517985611511,
+        "mean_within_group_spearman": 0.024213691375305418,
+        "spearman_groups": 20
+      },
+      "entropy": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8992805755395683,
+        "reward_optimal_hit_rate": 0.9136690647482014,
+        "exact_oracle_candidate_match_rate": 0.14388489208633093,
+        "mean_regret": 0.09352517985611511,
+        "mean_within_group_spearman": 0.024213691375305418,
+        "spearman_groups": 20
+      },
+      "belief_novelty": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8992805755395683,
+        "reward_optimal_hit_rate": 0.9136690647482014,
+        "exact_oracle_candidate_match_rate": 0.14388489208633093,
+        "mean_regret": 0.09352517985611511,
+        "mean_within_group_spearman": 0.024213691375305418,
+        "spearman_groups": 20
+      },
+      "count_cov": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8992805755395683,
+        "reward_optimal_hit_rate": 0.9136690647482014,
+        "exact_oracle_candidate_match_rate": 0.1366906474820144,
+        "mean_regret": 0.09352517985611511,
+        "mean_within_group_spearman": 0.0038630818737624877,
+        "spearman_groups": 20
+      },
+      "identity_cov": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.870503597122302,
+        "reward_optimal_hit_rate": 0.8992805755395683,
+        "exact_oracle_candidate_match_rate": 0.10071942446043165,
+        "mean_regret": 0.1223021582733813,
+        "mean_within_group_spearman": 0.0837676334509134,
+        "spearman_groups": 20
+      },
+      "eig1_cov": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8776978417266188,
+        "reward_optimal_hit_rate": 0.9064748201438849,
+        "exact_oracle_candidate_match_rate": 0.1223021582733813,
+        "mean_regret": 0.11510791366906475,
+        "mean_within_group_spearman": 0.08230670577959248,
+        "spearman_groups": 20
+      }
+    },
+    "baselines": {
+      "random_mean_reward": 1.8732014388489209,
+      "existing_selector_mean_reward": 1.856115107913669,
+      "actual_chosen_mean_reward": 1.8633093525179856
+    }
+  },
+  "all_rounds_one_step_conditional_on_actual_history": {
+    "methods": {
+      "exposure": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7132667617689016,
+        "reward_optimal_hit_rate": 0.5991440798858774,
+        "exact_oracle_candidate_match_rate": 0.12553495007132667,
+        "mean_regret": 0.4450784593437946,
+        "mean_within_group_spearman": 0.006341627869052429,
+        "spearman_groups": 448
+      },
+      "uncertainty": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7089871611982882,
+        "reward_optimal_hit_rate": 0.5948644793152639,
+        "exact_oracle_candidate_match_rate": 0.12553495007132667,
+        "mean_regret": 0.44935805991440797,
+        "mean_within_group_spearman": -0.01658599095316657,
+        "spearman_groups": 448
+      },
+      "entropy": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7075606276747504,
+        "reward_optimal_hit_rate": 0.5962910128388017,
+        "exact_oracle_candidate_match_rate": 0.11982881597717546,
+        "mean_regret": 0.4507845934379458,
+        "mean_within_group_spearman": -0.014814900185633053,
+        "spearman_groups": 448
+      },
+      "belief_novelty": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7218259629101283,
+        "reward_optimal_hit_rate": 0.6062767475035663,
+        "exact_oracle_candidate_match_rate": 0.1355206847360913,
+        "mean_regret": 0.43651925820256776,
+        "mean_within_group_spearman": 0.027086919931173698,
+        "spearman_groups": 448
+      },
+      "count_cov": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7332382310984308,
+        "reward_optimal_hit_rate": 0.6105563480741797,
+        "exact_oracle_candidate_match_rate": 0.1326676176890157,
+        "mean_regret": 0.42510699001426533,
+        "mean_within_group_spearman": 0.02958933703738627,
+        "spearman_groups": 448
+      },
+      "identity_cov": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.644793152639087,
+        "reward_optimal_hit_rate": 0.5620542082738944,
+        "exact_oracle_candidate_match_rate": 0.12696148359486448,
+        "mean_regret": 0.5135520684736091,
+        "mean_within_group_spearman": -0.10386725845303935,
+        "spearman_groups": 448
+      },
+      "eig1_cov": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.6718972895863052,
+        "reward_optimal_hit_rate": 0.5691868758915835,
+        "exact_oracle_candidate_match_rate": 0.1312410841654779,
+        "mean_regret": 0.4864479315263909,
+        "mean_within_group_spearman": -0.06925882963039799,
+        "spearman_groups": 448
+      }
+    },
+    "baselines": {
+      "random_mean_reward": 0.704945316214931,
+      "existing_selector_mean_reward": 0.7089871611982882,
+      "actual_chosen_mean_reward": 0.7018544935805991
+    }
+  },
+  "notes": {
+    "important": "Candidate scores marginalize the trained observation model over posterior-sampled hidden maps. Ground-truth Z is NOT an input to the selector at evaluation time.",
+    "next_if_good": "Replace heuristic exposure scores with Monte-Carlo Expected Information Gain over K and/or Z."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tier_a_input": 175,
+  "final_eligible": 169,
+  "selected": 122,
+  "selected_by_family": {
+    "DIRECTION": 58,
+    "META": 64
+  },
+  "selected_by_gold": {
+    "2": 8,
+    "6": 8,
+    "8": 8,
+    "9": 4,
+    "10": 8,
+    "16": 8,
+    "23": 8,
+    "24": 8,
+    "26": 8,
+    "27": 8,
+    "32": 6,
+    "33": 6,
+    "35": 8,
+    "37": 5,
+    "39": 7,
+    "43": 8,
+    "44": 6
+  },
+  "cells": {
+    "G02:DIRECTION": 4,
+    "G02:META": 4,
+    "G06:DIRECTION": 4,
+    "G06:META": 4,
+    "G08:DIRECTION": 4,
+    "G08:META": 4,
+    "G09:DIRECTION": 0,
+    "G09:META": 4,
+    "G10:DIRECTION": 4,
+    "G10:META": 4,
+    "G16:DIRECTION": 4,
+    "G16:META": 4,
+    "G23:DIRECTION": 4,
+    "G23:META": 4,
+    "G24:DIRECTION": 4,
+    "G24:META": 4,
+    "G26:DIRECTION": 4,
+    "G26:META": 4,
+    "G27:DIRECTION": 4,
+    "G27:META": 4,
+    "G32:DIRECTION": 2,
+    "G32:META": 4,
+    "G33:DIRECTION": 2,
+    "G33:META": 4,
+    "G35:DIRECTION": 4,
+    "G35:META": 4,
+    "G37:DIRECTION": 3,
+    "G37:META": 2,
+    "G39:DIRECTION": 3,
+    "G39:META": 4,
+    "G43:DIRECTION": 4,
+    "G43:META": 4,
+    "G44:DIRECTION": 4,
+    "G44:META": 2
+  },
+  "zero_cells": [
+    "G09:DIRECTION"
+  ],
+  "removed": {
+    "META:not_strong_self_reference": 6
+  },
+  "cap_per_cell": 4
+}

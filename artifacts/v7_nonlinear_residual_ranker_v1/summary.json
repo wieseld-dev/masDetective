@@ -1,0 +1,148 @@
+{
+  "experiment": "v7_nonlinear_residual_ranker_v1",
+  "query_used": false,
+  "qwen_calls": 0,
+  "training_rows": 2048,
+  "seed_reports": [
+    {
+      "seed": 20260937,
+      "best_epoch": 5,
+      "best_dev_auc": 0.8398210744001547,
+      "best_dev_oracle_k_recall": 0.505524861878453
+    },
+    {
+      "seed": 20260948,
+      "best_epoch": 5,
+      "best_dev_auc": 0.8391324080344857,
+      "best_dev_oracle_k_recall": 0.5082872928176796
+    },
+    {
+      "seed": 20260959,
+      "best_epoch": 5,
+      "best_dev_auc": 0.8403256484885621,
+      "best_dev_oracle_k_recall": 0.5064456721915286
+    },
+    {
+      "seed": 20260970,
+      "best_epoch": 5,
+      "best_dev_auc": 0.8404047611369109,
+      "best_dev_oracle_k_recall": 0.509208103130755
+    },
+    {
+      "seed": 20260981,
+      "best_epoch": 5,
+      "best_dev_auc": 0.8408258554244066,
+      "best_dev_oracle_k_recall": 0.509208103130755
+    }
+  ],
+  "selected_alpha_on_dev": 0.78,
+  "dev_blend_selection": {
+    "alpha": 0.78,
+    "within_auc": 0.8416289075937392,
+    "oracle_k_recall": 0.507366482504604,
+    "oracle_k_exact": 0.265625
+  },
+  "dev_threshold_operating_point": {
+    "threshold": -1.574521780014038,
+    "precision": 0.21236559139784947,
+    "recall": 0.8001841620626151,
+    "fpr": 0.3520865195542932,
+    "avg_fp_per_output": 6.294921875,
+    "avg_fn_per_output": 0.423828125,
+    "exact_set": 0.0
+  },
+  "structured_baseline": {
+    "dev": {
+      "within_auc": 0.8388290588987788,
+      "oracle_k": {
+        "precision": 0.505524861878453,
+        "recall": 0.505524861878453,
+        "fpr": 0.05866287961546865,
+        "avg_fp_per_output": 1.048828125,
+        "avg_fn_per_output": 1.048828125,
+        "exact_set": 0.26171875
+      }
+    },
+    "test": {
+      "within_auc": 0.8487693700012899,
+      "oracle_k": {
+        "precision": 0.534288638689867,
+        "recall": 0.534288638689867,
+        "fpr": 0.049120155457195294,
+        "avg_fp_per_output": 0.888671875,
+        "avg_fn_per_output": 0.888671875,
+        "exact_set": 0.359375
+      }
+    },
+    "strict_82": {
+      "within_auc": 0.8423349442472752,
+      "oracle_k": {
+        "precision": 0.5286624203821656,
+        "recall": 0.5286624203821656,
+        "fpr": 0.049898853674983146,
+        "avg_fp_per_output": 0.9024390243902439,
+        "avg_fn_per_output": 0.9024390243902439,
+        "exact_set": 0.3170731707317073
+      }
+    }
+  },
+  "nonlinear_residual": {
+    "dev": {
+      "within_auc": 0.8416289075937392,
+      "oracle_k": {
+        "precision": 0.507366482504604,
+        "recall": 0.507366482504604,
+        "fpr": 0.05844439589250601,
+        "avg_fp_per_output": 1.044921875,
+        "avg_fn_per_output": 1.044921875,
+        "exact_set": 0.265625
+      },
+      "matched_recall_threshold": {
+        "precision": 0.21236559139784947,
+        "recall": 0.8001841620626151,
+        "fpr": 0.3520865195542932,
+        "avg_fp_per_output": 6.294921875,
+        "avg_fn_per_output": 0.423828125,
+        "exact_set": 0.0
+      }
+    },
+    "test": {
+      "within_auc": 0.8477823935221018,
+      "oracle_k": {
+        "precision": 0.5353121801432958,
+        "recall": 0.5353121801432958,
+        "fpr": 0.049012199071575085,
+        "avg_fp_per_output": 0.88671875,
+        "avg_fn_per_output": 0.88671875,
+        "exact_set": 0.3671875
+      },
+      "matched_recall_threshold": {
+        "precision": 0.19518190757128812,
+        "recall": 0.812691914022518,
+        "fpr": 0.3534492065205657,
+        "avg_fp_per_output": 6.39453125,
+        "avg_fn_per_output": 0.357421875,
+        "exact_set": 0.0
+      }
+    },
+    "strict_82": {
+      "within_auc": 0.8402499853171906,
+      "oracle_k": {
+        "precision": 0.5477707006369427,
+        "recall": 0.5477707006369427,
+        "fpr": 0.04787592717464599,
+        "avg_fp_per_output": 0.8658536585365854,
+        "avg_fn_per_output": 0.8658536585365854,
+        "exact_set": 0.34146341463414637
+      },
+      "matched_recall_threshold": {
+        "precision": 0.18674698795180722,
+        "recall": 0.7898089171974523,
+        "fpr": 0.3641267700606878,
+        "avg_fp_per_output": 6.585365853658536,
+        "avg_fn_per_output": 0.4024390243902439,
+        "exact_set": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source_rows": 12864,
+  "groups": 240,
+  "pairs_total": 320,
+  "train_pairs": 287,
+  "val_pairs": 33,
+  "mean_chosen_words": 16.2625,
+  "mean_rejected_words": 23.403125,
+  "mean_reward_gap": 1.8816502429634003
+}

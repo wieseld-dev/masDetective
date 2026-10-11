@@ -1,0 +1,133 @@
+{
+  "setting": {
+    "true_Z_used_for_scoring": false,
+    "selected_roles_used_only_for_evaluation": true,
+    "particles_per_K": 32,
+    "hybrid_alpha": 0.7,
+    "test_systems": 139
+  },
+  "round_1_clean": {
+    "methods": {
+      "mi_k": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.870503597122302,
+        "reward_optimal_hit_rate": 0.8920863309352518,
+        "exact_oracle_candidate_match_rate": 0.22302158273381295,
+        "mean_regret": 0.1223021582733813,
+        "mean_within_group_spearman": 0.009420492930260612,
+        "spearman_groups": 20
+      },
+      "mi_identity": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8920863309352518,
+        "reward_optimal_hit_rate": 0.9064748201438849,
+        "exact_oracle_candidate_match_rate": 0.15827338129496402,
+        "mean_regret": 0.10071942446043165,
+        "mean_within_group_spearman": -0.005073525254790194,
+        "spearman_groups": 20
+      },
+      "mi_z": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8920863309352518,
+        "reward_optimal_hit_rate": 0.9064748201438849,
+        "exact_oracle_candidate_match_rate": 0.15827338129496402,
+        "mean_regret": 0.10071942446043165,
+        "mean_within_group_spearman": 0.000381922001109615,
+        "spearman_groups": 20
+      },
+      "hybrid": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8920863309352518,
+        "reward_optimal_hit_rate": 0.9064748201438849,
+        "exact_oracle_candidate_match_rate": 0.14388489208633093,
+        "mean_regret": 0.10071942446043165,
+        "mean_within_group_spearman": 0.006356345185177402,
+        "spearman_groups": 20
+      },
+      "exposure": {
+        "groups": 139,
+        "mean_oracle_reward": 1.9928057553956835,
+        "mean_selected_reward": 1.8920863309352518,
+        "reward_optimal_hit_rate": 0.9064748201438849,
+        "exact_oracle_candidate_match_rate": 0.15827338129496402,
+        "mean_regret": 0.10071942446043165,
+        "mean_within_group_spearman": 0.019769126176766037,
+        "spearman_groups": 20
+      }
+    },
+    "baselines": {
+      "random_mean_reward": 1.8732014388489209,
+      "existing_selector_mean_reward": 1.856115107913669,
+      "actual_chosen_mean_reward": 1.8633093525179856
+    }
+  },
+  "all_rounds_one_step_conditional_on_actual_history": {
+    "methods": {
+      "mi_k": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7417974322396577,
+        "reward_optimal_hit_rate": 0.6205420827389444,
+        "exact_oracle_candidate_match_rate": 0.16833095577746077,
+        "mean_regret": 0.4165477888730385,
+        "mean_within_group_spearman": 0.013719271262583805,
+        "spearman_groups": 448
+      },
+      "mi_identity": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7289586305278174,
+        "reward_optimal_hit_rate": 0.6077032810271041,
+        "exact_oracle_candidate_match_rate": 0.12553495007132667,
+        "mean_regret": 0.42938659058487877,
+        "mean_within_group_spearman": 0.025997157403030498,
+        "spearman_groups": 448
+      },
+      "mi_z": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7332382310984308,
+        "reward_optimal_hit_rate": 0.609129814550642,
+        "exact_oracle_candidate_match_rate": 0.12696148359486448,
+        "mean_regret": 0.42510699001426533,
+        "mean_within_group_spearman": 0.02506819925091935,
+        "spearman_groups": 448
+      },
+      "hybrid": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7332382310984308,
+        "reward_optimal_hit_rate": 0.609129814550642,
+        "exact_oracle_candidate_match_rate": 0.12553495007132667,
+        "mean_regret": 0.42510699001426533,
+        "mean_within_group_spearman": 0.02744267023893591,
+        "spearman_groups": 448
+      },
+      "exposure": {
+        "groups": 701,
+        "mean_oracle_reward": 1.158345221112696,
+        "mean_selected_reward": 0.7161198288159771,
+        "reward_optimal_hit_rate": 0.5977175463623395,
+        "exact_oracle_candidate_match_rate": 0.1326676176890157,
+        "mean_regret": 0.442225392296719,
+        "mean_within_group_spearman": -0.002466683898706797,
+        "spearman_groups": 448
+      }
+    },
+    "baselines": {
+      "random_mean_reward": 0.704945316214931,
+      "existing_selector_mean_reward": 0.7089871611982882,
+      "actual_chosen_mean_reward": 0.7018544935805991
+    }
+  },
+  "interpretation": {
+    "mi_k": "Approximate I(K;Y|q,D) using per-role Bernoulli marginals.",
+    "mi_identity": "Approximate I(Z;Y|K,q,D), identity information after conditioning on count.",
+    "mi_z": "Approximate total I(Z;Y|q,D) = MI_K + MI_identity under the factorized approximation.",
+    "critical_difference": "Unlike the previous selector, this preserves per-particle disagreement instead of averaging P(Y|Z,q) before scoring."
+  }
+}

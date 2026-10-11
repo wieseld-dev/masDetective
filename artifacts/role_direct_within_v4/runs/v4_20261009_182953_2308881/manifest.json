@@ -1,0 +1,51 @@
+{
+  "status": "READY_OFFLINE",
+  "generator_parent": "/home/wieseld/mas_rl_detective/artifacts/v14_benign_policy",
+  "sensor_parent": "/home/wieseld/mas_rl_detective/artifacts/role_direct_sensor_final_v1/adapter",
+  "source_sha256": {
+    "artifacts/v137_presence_v1/dataset_v1/train_v137.jsonl": "8188e116603ed1ed83df898fddf72040765a3f9e4aaa1a466076267d5b62d586",
+    "artifacts/v137_presence_v1/dataset_v1/dev_v137.jsonl": "388552d85a68a0db5f186c8e87df88679ff1bfb48ab29854cfa8902bfec40fce",
+    "artifacts/role_direct_matched_cf_v1/responses_dev_round_01.jsonl": "3ed0ab009034cb0bcfaf8aca1a0c75c3c323cce49b90ce8e1a6f3aa09c4e4f4c",
+    "artifacts/role_direct_matched_cf_v1/matched_probe_comparisons.jsonl": "257f1a354c7239b281168289de516308841afc30190b08d968c4d362e2e56aa8",
+    "artifacts/role_direct_sensor_final_v1/adapter/adapter_config.json": "452f7e0d0ab734cf81f80083ec7beabf22cc20a0772042a9dcefede762ce0e7a",
+    "artifacts/v14_benign_policy/adapter_config.json": "44efa7bd08676fa7e41e46f7c9fb71c3f4e2058509274a778fab1fd20b0b0555"
+  },
+  "train_rows": 910,
+  "dev_rows": 760,
+  "train_systems": 226,
+  "dev_systems": 38,
+  "training_generator_probes": 59,
+  "training_generator_roles": [
+    "accessibility_review",
+    "code",
+    "customer_support_triage",
+    "data",
+    "database_design",
+    "design",
+    "documentation",
+    "experiment_design",
+    "fact_checking",
+    "financial_analysis",
+    "incident_management",
+    "math",
+    "operations",
+    "planning",
+    "qa_testing",
+    "requirements_analysis",
+    "research",
+    "risk_assessment",
+    "translation",
+    "writing"
+  ],
+  "training_routing_counts": {
+    "positive_total": 300,
+    "target_routed": 293,
+    "not_target_routed": 7,
+    "reject_duplicate": 229,
+    "reject_generic_advice": 5
+  },
+  "selector_proxy_rows": 300,
+  "no_api": true,
+  "generator_objective": "target activation verified SFT; NOT yet GRPO/validated present-absent gain",
+  "selector_objective": "OLD-sensor matched win proxy, not true expected information gain"
+}

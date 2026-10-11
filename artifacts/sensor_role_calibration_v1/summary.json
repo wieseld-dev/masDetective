@@ -1,0 +1,2161 @@
+{
+  "version": "sensor_role_calibration_v1",
+  "internal_test_used": false,
+  "data": {
+    "t0_rows": 720,
+    "t0_systems": 36,
+    "t1_rows": 190,
+    "t1_pairs": 95,
+    "val_rows": 760,
+    "val_systems": 38
+  },
+  "calibration": {
+    "direction_source": "TRAIN labels only",
+    "direction_rule": "sign(mean_positive_score - mean_negative_score)",
+    "robust_scale": "max(role_all_score_sd, 0.25*global_score_sd, 1e-3)"
+  },
+  "t0_grouped_oof": {
+    "raw": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.5266779577967383,
+      "per_role_auc": {
+        "accessibility_review": 0.6218181818181818,
+        "code": 0.41769547325102885,
+        "customer_support_triage": 0.7767857142857142,
+        "data": 0.6076923076923078,
+        "database_design": 0.8192307692307692,
+        "design": 0.2666666666666666,
+        "documentation": 0.45267489711934156,
+        "experiment_design": 0.10555555555555554,
+        "fact_checking": 0.09375,
+        "financial_analysis": 0.3993055555555556,
+        "incident_management": 0.47096774193548385,
+        "math": 0.38839285714285715,
+        "operations": 0.4774193548387097,
+        "planning": 0.46538461538461534,
+        "qa_testing": 0.5357142857142858,
+        "requirements_analysis": 0.5192307692307692,
+        "research": 0.5461538461538462,
+        "risk_assessment": 0.47736625514403286,
+        "translation": 0.3392857142857143,
+        "writing": 0.39655172413793105
+      },
+      "mean_role_auc": 0.4588821142571682,
+      "median_role_auc": 0.46817617866004957,
+      "mean_within_system_auc": 0.5337917886171564,
+      "mean_system_pair_accuracy": 0.5337917886171564,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.6613927752607398,
+      "median_full_separation_margin": -0.573166698217392
+    },
+    "sign_calibrated": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.547438724315342,
+      "per_role_auc": {
+        "accessibility_review": 0.6218181818181818,
+        "code": 0.44650205761316875,
+        "customer_support_triage": 0.7767857142857142,
+        "data": 0.6076923076923078,
+        "database_design": 0.8192307692307692,
+        "design": 0.7333333333333334,
+        "documentation": 0.5308641975308642,
+        "experiment_design": 0.8944444444444445,
+        "fact_checking": 0.90625,
+        "financial_analysis": 0.3993055555555556,
+        "incident_management": 0.47096774193548385,
+        "math": 0.6651785714285715,
+        "operations": 0.3548387096774194,
+        "planning": 0.46538461538461534,
+        "qa_testing": 0.5357142857142858,
+        "requirements_analysis": 0.4653846153846154,
+        "research": 0.5461538461538462,
+        "risk_assessment": 0.5308641975308642,
+        "translation": 0.3392857142857143,
+        "writing": 0.3522167487684729
+      },
+      "mean_role_auc": 0.5731107803884113,
+      "median_role_auc": 0.533289241622575,
+      "mean_within_system_auc": 0.5533005002214562,
+      "mean_system_pair_accuracy": 0.5533005002214562,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.5374079969608121,
+      "median_full_separation_margin": -0.5230555981397629
+    },
+    "robust_role_calibrated": {
+      "rows": 720,
+      "systems": 36,
+      "global_auc": 0.6096890678426485,
+      "per_role_auc": {
+        "accessibility_review": 0.6290909090909091,
+        "code": 0.6851851851851852,
+        "customer_support_triage": 0.8973214285714286,
+        "data": 0.6653846153846154,
+        "database_design": 0.8076923076923077,
+        "design": 0.6888888888888889,
+        "documentation": 0.5596707818930041,
+        "experiment_design": 0.861111111111111,
+        "fact_checking": 0.890625,
+        "financial_analysis": 0.5347222222222223,
+        "incident_management": 0.6193548387096774,
+        "math": 0.29910714285714285,
+        "operations": 0.34838709677419355,
+        "planning": 0.6423076923076924,
+        "qa_testing": 0.6363636363636364,
+        "requirements_analysis": 0.38076923076923075,
+        "research": 0.5923076923076924,
+        "risk_assessment": 0.4814814814814815,
+        "translation": 0.5,
+        "writing": 0.24384236453201968
+      },
+      "mean_role_auc": 0.5981806813071219,
+      "median_role_auc": 0.6242228739002933,
+      "mean_within_system_auc": 0.6219677908556585,
+      "mean_system_pair_accuracy": 0.6219677908556585,
+      "perfect_order_rate": 0.027777777777777776,
+      "exact_topK_oracleK_rate": 0.027777777777777776,
+      "mean_full_separation_margin": -2.2216616392631767,
+      "median_full_separation_margin": -2.1240030607843425
+    }
+  },
+  "direction_stability_across_folds": {
+    "accessibility_review": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "code": {
+      "fold_directions": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 5,
+      "negative_folds": 1,
+      "consistency": 0.8333333333333334,
+      "majority_direction": 1
+    },
+    "customer_support_triage": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "data": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "database_design": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "design": {
+      "fold_directions": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "positive_folds": 0,
+      "negative_folds": 6,
+      "consistency": 1.0,
+      "majority_direction": -1
+    },
+    "documentation": {
+      "fold_directions": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "positive_folds": 1,
+      "negative_folds": 5,
+      "consistency": 0.8333333333333334,
+      "majority_direction": -1
+    },
+    "experiment_design": {
+      "fold_directions": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "positive_folds": 2,
+      "negative_folds": 4,
+      "consistency": 0.6666666666666666,
+      "majority_direction": -1
+    },
+    "fact_checking": {
+      "fold_directions": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "positive_folds": 0,
+      "negative_folds": 6,
+      "consistency": 1.0,
+      "majority_direction": -1
+    },
+    "financial_analysis": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "incident_management": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "math": {
+      "fold_directions": [
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "positive_folds": 3,
+      "negative_folds": 3,
+      "consistency": 0.5,
+      "majority_direction": 1
+    },
+    "operations": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "positive_folds": 5,
+      "negative_folds": 1,
+      "consistency": 0.8333333333333334,
+      "majority_direction": 1
+    },
+    "planning": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "qa_testing": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "requirements_analysis": {
+      "fold_directions": [
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "positive_folds": 3,
+      "negative_folds": 3,
+      "consistency": 0.5,
+      "majority_direction": 1
+    },
+    "research": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "risk_assessment": {
+      "fold_directions": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "positive_folds": 1,
+      "negative_folds": 5,
+      "consistency": 0.8333333333333334,
+      "majority_direction": -1
+    },
+    "translation": {
+      "fold_directions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 6,
+      "negative_folds": 0,
+      "consistency": 1.0,
+      "majority_direction": 1
+    },
+    "writing": {
+      "fold_directions": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "positive_folds": 4,
+      "negative_folds": 2,
+      "consistency": 0.6666666666666666,
+      "majority_direction": 1
+    }
+  },
+  "t0_full_calibration_stats": {
+    "accessibility_review": {
+      "positive_n": 11,
+      "negative_n": 25,
+      "positive_mean": 0.054809400981122795,
+      "negative_mean": -0.03715541899204254,
+      "train_delta": 0.09196481997316533,
+      "direction": 1,
+      "role_sd": 0.13828084022192308,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.13828084022192308,
+      "train_auc_raw": 0.6727272727272727
+    },
+    "code": {
+      "positive_n": 9,
+      "negative_n": 27,
+      "positive_mean": 0.010648131370544434,
+      "negative_mean": -0.017005251513587102,
+      "train_delta": 0.027653382884131536,
+      "direction": 1,
+      "role_sd": 0.040648860868669846,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.7592592592592592
+    },
+    "customer_support_triage": {
+      "positive_n": 8,
+      "negative_n": 28,
+      "positive_mean": 0.012134204618632793,
+      "negative_mean": -0.0871542575103896,
+      "train_delta": 0.0992884621290224,
+      "direction": 1,
+      "role_sd": 0.053517131758153764,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.053517131758153764,
+      "train_auc_raw": 0.9776785714285714
+    },
+    "data": {
+      "positive_n": 10,
+      "negative_n": 26,
+      "positive_mean": 0.04324045777320862,
+      "negative_mean": -0.08836663972872955,
+      "train_delta": 0.13160709750193816,
+      "direction": 1,
+      "role_sd": 0.13577414882079974,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.13577414882079974,
+      "train_auc_raw": 0.6807692307692308
+    },
+    "database_design": {
+      "positive_n": 10,
+      "negative_n": 26,
+      "positive_mean": 0.5465690642595291,
+      "negative_mean": 0.1854765655902716,
+      "train_delta": 0.3610924986692575,
+      "direction": 1,
+      "role_sd": 0.28243671533150866,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.28243671533150866,
+      "train_auc_raw": 0.8115384615384615
+    },
+    "design": {
+      "positive_n": 6,
+      "negative_n": 30,
+      "positive_mean": -0.004799616833527883,
+      "negative_mean": 0.05449117869138718,
+      "train_delta": -0.05929079552491506,
+      "direction": -1,
+      "role_sd": 0.07589136889376202,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.07589136889376202,
+      "train_auc_raw": 0.2944444444444444
+    },
+    "documentation": {
+      "positive_n": 9,
+      "negative_n": 27,
+      "positive_mean": -0.1653507865137524,
+      "negative_mean": -0.14890574415524802,
+      "train_delta": -0.016445042358504386,
+      "direction": -1,
+      "role_sd": 0.04696674303534554,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.38271604938271603
+    },
+    "experiment_design": {
+      "positive_n": 6,
+      "negative_n": 30,
+      "positive_mean": -0.17155158519744873,
+      "negative_mean": -0.12436038081844648,
+      "train_delta": -0.04719120437900225,
+      "direction": -1,
+      "role_sd": 0.04848621348339386,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.2222222222222222
+    },
+    "fact_checking": {
+      "positive_n": 4,
+      "negative_n": 32,
+      "positive_mean": -0.512641966342926,
+      "negative_mean": -0.32959227822721004,
+      "train_delta": -0.18304968811571598,
+      "direction": -1,
+      "role_sd": 0.11537899445477447,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.11537899445477447,
+      "train_auc_raw": 0.1171875
+    },
+    "financial_analysis": {
+      "positive_n": 12,
+      "negative_n": 24,
+      "positive_mean": 0.1057799073557059,
+      "negative_mean": 0.09222593034307162,
+      "train_delta": 0.013553977012634277,
+      "direction": 1,
+      "role_sd": 0.07912482023765352,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.07912482023765352,
+      "train_auc_raw": 0.5208333333333333
+    },
+    "incident_management": {
+      "positive_n": 5,
+      "negative_n": 31,
+      "positive_mean": 0.14207393527030945,
+      "negative_mean": -0.002142406279040921,
+      "train_delta": 0.14421634154935037,
+      "direction": 1,
+      "role_sd": 0.17309845895454534,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.17309845895454534,
+      "train_auc_raw": 0.7032258064516129
+    },
+    "math": {
+      "positive_n": 8,
+      "negative_n": 28,
+      "positive_mean": -0.07046206295490265,
+      "negative_mean": -0.06949263172490257,
+      "train_delta": -0.0009694312300000812,
+      "direction": -1,
+      "role_sd": 0.015897574733799366,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.5535714285714286
+    },
+    "operations": {
+      "positive_n": 5,
+      "negative_n": 31,
+      "positive_mean": -0.016447879374027252,
+      "negative_mean": -0.030543717886171034,
+      "train_delta": 0.014095838512143782,
+      "direction": 1,
+      "role_sd": 0.053090593044901345,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.053090593044901345,
+      "train_auc_raw": 0.5741935483870968
+    },
+    "planning": {
+      "positive_n": 10,
+      "negative_n": 26,
+      "positive_mean": -0.1717380940914154,
+      "negative_mean": -0.19226811482356146,
+      "train_delta": 0.020530020732146048,
+      "direction": 1,
+      "role_sd": 0.04750336897714874,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.6269230769230769
+    },
+    "qa_testing": {
+      "positive_n": 14,
+      "negative_n": 22,
+      "positive_mean": 0.08152022851364953,
+      "negative_mean": 0.03224918686530807,
+      "train_delta": 0.04927104164834146,
+      "direction": 1,
+      "role_sd": 0.0916446588550601,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.0916446588550601,
+      "train_auc_raw": 0.6331168831168832
+    },
+    "requirements_analysis": {
+      "positive_n": 10,
+      "negative_n": 26,
+      "positive_mean": 0.09109903872013092,
+      "negative_mean": 0.09518662782815787,
+      "train_delta": -0.004087589108026951,
+      "direction": -1,
+      "role_sd": 0.11133950867552131,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.11133950867552131,
+      "train_auc_raw": 0.5153846153846153
+    },
+    "research": {
+      "positive_n": 10,
+      "negative_n": 26,
+      "positive_mean": 0.4139768689870834,
+      "negative_mean": 0.32218268456367344,
+      "train_delta": 0.09179418442340997,
+      "direction": 1,
+      "role_sd": 0.18913586330386825,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.18913586330386825,
+      "train_auc_raw": 0.6153846153846154
+    },
+    "risk_assessment": {
+      "positive_n": 9,
+      "negative_n": 27,
+      "positive_mean": -0.2519095407591926,
+      "negative_mean": -0.2238573029085442,
+      "train_delta": -0.028052237850648393,
+      "direction": -1,
+      "role_sd": 0.11567572225493533,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.11567572225493533,
+      "train_auc_raw": 0.4526748971193416
+    },
+    "translation": {
+      "positive_n": 8,
+      "negative_n": 28,
+      "positive_mean": 0.3439245820045471,
+      "negative_mean": 0.3439245820045471,
+      "train_delta": 0.0,
+      "direction": 1,
+      "role_sd": 1.0323827311807139e-07,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.5
+    },
+    "writing": {
+      "positive_n": 7,
+      "negative_n": 29,
+      "positive_mean": 0.008696781737463815,
+      "negative_mean": 0.003925002340612741,
+      "train_delta": 0.004771779396851074,
+      "direction": 1,
+      "role_sd": 0.028954918663716172,
+      "global_sd": 0.20809454516258552,
+      "robust_scale": 0.05202363629064638,
+      "train_auc_raw": 0.5344827586206897
+    }
+  },
+  "d_transfer": {
+    "raw": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.47446721716772156,
+      "per_role_auc": {
+        "accessibility_review": 0.5285714285714286,
+        "code": 0.625,
+        "customer_support_triage": 0.16666666666666666,
+        "data": 0.5151515151515151,
+        "database_design": 0.7647058823529411,
+        "design": 0.6102941176470589,
+        "documentation": 0.10294117647058826,
+        "experiment_design": 0.45,
+        "fact_checking": 0.5517241379310345,
+        "financial_analysis": 0.4769585253456221,
+        "incident_management": 0.4095238095238095,
+        "math": 0.5990783410138248,
+        "operations": 0.5325670498084291,
+        "planning": 0.10416666666666666,
+        "qa_testing": 0.935483870967742,
+        "requirements_analysis": 0.4117647058823529,
+        "research": 0.21354166666666666,
+        "risk_assessment": 0.7428571428571429,
+        "translation": 0.9705882352941176,
+        "writing": 0.6083333333333333
+      },
+      "mean_role_auc": 0.5159959136075469,
+      "median_role_auc": 0.5305692391899288,
+      "mean_within_system_auc": 0.4763528766769865,
+      "mean_system_pair_accuracy": 0.4763528766769865,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.6638857518371782,
+      "median_full_separation_margin": -0.6625646501779556
+    },
+    "t0_sign_calibrated": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.4756292029272151,
+      "per_role_auc": {
+        "accessibility_review": 0.5285714285714286,
+        "code": 0.625,
+        "customer_support_triage": 0.16666666666666666,
+        "data": 0.5151515151515151,
+        "database_design": 0.7647058823529411,
+        "design": 0.3897058823529412,
+        "documentation": 0.8970588235294117,
+        "experiment_design": 0.55,
+        "fact_checking": 0.4482758620689655,
+        "financial_analysis": 0.4769585253456221,
+        "incident_management": 0.4095238095238095,
+        "math": 0.40092165898617516,
+        "operations": 0.5325670498084291,
+        "planning": 0.10416666666666666,
+        "qa_testing": 0.935483870967742,
+        "requirements_analysis": 0.588235294117647,
+        "research": 0.21354166666666666,
+        "risk_assessment": 0.2571428571428571,
+        "translation": 0.9705882352941176,
+        "writing": 0.6083333333333333
+      },
+      "mean_role_auc": 0.5191299514273467,
+      "median_role_auc": 0.5218614718614718,
+      "mean_within_system_auc": 0.4702496130030959,
+      "mean_system_pair_accuracy": 0.4702496130030959,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -0.6178032477435312,
+      "median_full_separation_margin": -0.5947323143482208
+    },
+    "t0_robust_calibrated": {
+      "rows": 760,
+      "systems": 38,
+      "global_auc": 0.48858410799050633,
+      "per_role_auc": {
+        "accessibility_review": 0.5285714285714286,
+        "code": 0.625,
+        "customer_support_triage": 0.16666666666666666,
+        "data": 0.5151515151515151,
+        "database_design": 0.7647058823529411,
+        "design": 0.3897058823529412,
+        "documentation": 0.8970588235294117,
+        "experiment_design": 0.55,
+        "fact_checking": 0.4482758620689655,
+        "financial_analysis": 0.4769585253456221,
+        "incident_management": 0.4095238095238095,
+        "math": 0.40092165898617516,
+        "operations": 0.5325670498084291,
+        "planning": 0.10416666666666666,
+        "qa_testing": 0.935483870967742,
+        "requirements_analysis": 0.588235294117647,
+        "research": 0.21354166666666666,
+        "risk_assessment": 0.2571428571428571,
+        "translation": 0.9705882352941176,
+        "writing": 0.6083333333333333
+      },
+      "mean_role_auc": 0.5191299514273467,
+      "median_role_auc": 0.5218614718614718,
+      "mean_within_system_auc": 0.4813032120743033,
+      "mean_system_pair_accuracy": 0.4813032120743033,
+      "perfect_order_rate": 0.0,
+      "exact_topK_oracleK_rate": 0.0,
+      "mean_full_separation_margin": -7.033581957988884,
+      "median_full_separation_margin": -6.667408117187447
+    }
+  },
+  "t1_matched_transfer": {
+    "raw": {
+      "pairs": 95,
+      "pair_accuracy": 0.5421052631578948,
+      "mean_margin": 0.01834914699981087,
+      "median_margin": 0.0027332305908203125,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.1164730079472065,
+          "observed_direction": 1
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.04291951656341553,
+          "observed_direction": -1
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.00804632343351841,
+          "observed_direction": -1
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.00045645982027053833,
+          "observed_direction": 1
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.14871451258659363,
+          "observed_direction": -1
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.8333333333333334,
+          "mean_margin": 0.08279350027441978,
+          "observed_direction": 1
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 0.0,
+          "mean_margin": -0.1288774535059929,
+          "observed_direction": -1
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.8333333333333334,
+          "mean_margin": 0.01298635204633077,
+          "observed_direction": 1
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.040183231234550476,
+          "observed_direction": -1
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.03184373676776886,
+          "observed_direction": 1
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 0.18512202586446488,
+          "observed_direction": 1
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.029821693897247314,
+          "observed_direction": 1
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.42857142857142855,
+          "mean_margin": 0.030185339706284658,
+          "observed_direction": 1
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.03165796399116516,
+          "observed_direction": -1
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.10178790241479874,
+          "observed_direction": 1
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.015407249331474304,
+          "observed_direction": 1
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.020052604377269745,
+          "observed_direction": 1
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.07370653375983238,
+          "observed_direction": 1
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0,
+          "observed_direction": 1
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.1,
+          "mean_margin": -0.026905906200408936,
+          "observed_direction": -1
+        }
+      }
+    },
+    "t0_sign_calibrated": {
+      "pairs": 95,
+      "pair_accuracy": 0.45789473684210524,
+      "mean_margin": 0.013855560202347605,
+      "median_margin": -0.002115011215209961,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.1164730042219162,
+          "observed_direction": 1
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.04291951656341553,
+          "observed_direction": -1
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.00804632343351841,
+          "observed_direction": -1
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.00045645982027053833,
+          "observed_direction": 1
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.14871451258659363,
+          "observed_direction": -1
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.08279350027441978,
+          "observed_direction": -1
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.1288774535059929,
+          "observed_direction": 1
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.01298635204633077,
+          "observed_direction": -1
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.040183231234550476,
+          "observed_direction": 1
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.03184373676776886,
+          "observed_direction": 1
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 0.1851220237357276,
+          "observed_direction": 1
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.029821693897247314,
+          "observed_direction": -1
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.42857142857142855,
+          "mean_margin": 0.030185339706284658,
+          "observed_direction": 1
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.03165796399116516,
+          "observed_direction": -1
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 0.10178790241479874,
+          "observed_direction": 1
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.015407249331474304,
+          "observed_direction": -1
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.020052604377269745,
+          "observed_direction": 1
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.07370653375983238,
+          "observed_direction": -1
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0,
+          "observed_direction": 1
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.1,
+          "mean_margin": -0.026905906200408936,
+          "observed_direction": -1
+        }
+      }
+    },
+    "t0_robust_calibrated": {
+      "pairs": 95,
+      "pair_accuracy": 0.45789473684210524,
+      "mean_margin": 0.1005734360011887,
+      "median_margin": -0.04065481319671305,
+      "per_role": {
+        "accessibility_review": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.8422931480239195,
+          "observed_direction": 1
+        },
+        "code": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.8250003195399906,
+          "observed_direction": -1
+        },
+        "customer_support_triage": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.1503504236714347,
+          "observed_direction": -1
+        },
+        "data": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0033619052244841727,
+          "observed_direction": 1
+        },
+        "database_design": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.5265410072909279,
+          "observed_direction": -1
+        },
+        "design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -1.0909475146023502,
+          "observed_direction": -1
+        },
+        "documentation": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 2.4772865315676613,
+          "observed_direction": 1
+        },
+        "experiment_design": {
+          "pairs": 6,
+          "pair_accuracy": 0.16666666666666666,
+          "mean_margin": -0.24962407421462118,
+          "observed_direction": -1
+        },
+        "fact_checking": {
+          "pairs": 8,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.3482716366565427,
+          "observed_direction": 1
+        },
+        "financial_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.75,
+          "mean_margin": 0.40244940427195064,
+          "observed_direction": 1
+        },
+        "incident_management": {
+          "pairs": 7,
+          "pair_accuracy": 0.7142857142857143,
+          "mean_margin": 1.0694608424234417,
+          "observed_direction": 1
+        },
+        "math": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.5732335535070839,
+          "observed_direction": -1
+        },
+        "operations": {
+          "pairs": 7,
+          "pair_accuracy": 0.42857142857142855,
+          "mean_margin": 0.5685628653790967,
+          "observed_direction": 1
+        },
+        "planning": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.6085303959588293,
+          "observed_direction": -1
+        },
+        "qa_testing": {
+          "pairs": 4,
+          "pair_accuracy": 1.0,
+          "mean_margin": 1.1106801387714325,
+          "observed_direction": 1
+        },
+        "requirements_analysis": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": -0.1383807914616899,
+          "observed_direction": -1
+        },
+        "research": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.10602222141790718,
+          "observed_direction": 1
+        },
+        "risk_assessment": {
+          "pairs": 4,
+          "pair_accuracy": 0.25,
+          "mean_margin": -0.6371823950871219,
+          "observed_direction": -1
+        },
+        "translation": {
+          "pairs": 4,
+          "pair_accuracy": 0.5,
+          "mean_margin": 0.0,
+          "observed_direction": 1
+        },
+        "writing": {
+          "pairs": 5,
+          "pair_accuracy": 0.1,
+          "mean_margin": -0.5171861891792923,
+          "observed_direction": -1
+        }
+      }
+    }
+  },
+  "per_role_auc": {
+    "t0_oof_raw": {
+      "accessibility_review": {
+        "n": 36,
+        "auc": 0.6218181818181818,
+        "orientation_free_auc": 0.6218181818181818,
+        "observed_direction": 1
+      },
+      "code": {
+        "n": 36,
+        "auc": 0.41769547325102885,
+        "orientation_free_auc": 0.5823045267489712,
+        "observed_direction": -1
+      },
+      "customer_support_triage": {
+        "n": 36,
+        "auc": 0.7767857142857142,
+        "orientation_free_auc": 0.7767857142857142,
+        "observed_direction": 1
+      },
+      "data": {
+        "n": 36,
+        "auc": 0.6076923076923078,
+        "orientation_free_auc": 0.6076923076923078,
+        "observed_direction": 1
+      },
+      "database_design": {
+        "n": 36,
+        "auc": 0.8192307692307692,
+        "orientation_free_auc": 0.8192307692307692,
+        "observed_direction": 1
+      },
+      "design": {
+        "n": 36,
+        "auc": 0.2666666666666666,
+        "orientation_free_auc": 0.7333333333333334,
+        "observed_direction": -1
+      },
+      "documentation": {
+        "n": 36,
+        "auc": 0.45267489711934156,
+        "orientation_free_auc": 0.5473251028806585,
+        "observed_direction": -1
+      },
+      "experiment_design": {
+        "n": 36,
+        "auc": 0.10555555555555554,
+        "orientation_free_auc": 0.8944444444444445,
+        "observed_direction": -1
+      },
+      "fact_checking": {
+        "n": 36,
+        "auc": 0.09375,
+        "orientation_free_auc": 0.90625,
+        "observed_direction": -1
+      },
+      "financial_analysis": {
+        "n": 36,
+        "auc": 0.3993055555555556,
+        "orientation_free_auc": 0.6006944444444444,
+        "observed_direction": -1
+      },
+      "incident_management": {
+        "n": 36,
+        "auc": 0.47096774193548385,
+        "orientation_free_auc": 0.5290322580645161,
+        "observed_direction": -1
+      },
+      "math": {
+        "n": 36,
+        "auc": 0.38839285714285715,
+        "orientation_free_auc": 0.6116071428571428,
+        "observed_direction": -1
+      },
+      "operations": {
+        "n": 36,
+        "auc": 0.4774193548387097,
+        "orientation_free_auc": 0.5225806451612903,
+        "observed_direction": -1
+      },
+      "planning": {
+        "n": 36,
+        "auc": 0.46538461538461534,
+        "orientation_free_auc": 0.5346153846153847,
+        "observed_direction": -1
+      },
+      "qa_testing": {
+        "n": 36,
+        "auc": 0.5357142857142858,
+        "orientation_free_auc": 0.5357142857142858,
+        "observed_direction": 1
+      },
+      "requirements_analysis": {
+        "n": 36,
+        "auc": 0.5192307692307692,
+        "orientation_free_auc": 0.5192307692307692,
+        "observed_direction": 1
+      },
+      "research": {
+        "n": 36,
+        "auc": 0.5461538461538462,
+        "orientation_free_auc": 0.5461538461538462,
+        "observed_direction": 1
+      },
+      "risk_assessment": {
+        "n": 36,
+        "auc": 0.47736625514403286,
+        "orientation_free_auc": 0.5226337448559671,
+        "observed_direction": -1
+      },
+      "translation": {
+        "n": 36,
+        "auc": 0.3392857142857143,
+        "orientation_free_auc": 0.6607142857142857,
+        "observed_direction": -1
+      },
+      "writing": {
+        "n": 36,
+        "auc": 0.39655172413793105,
+        "orientation_free_auc": 0.603448275862069,
+        "observed_direction": -1
+      }
+    },
+    "d_raw": {
+      "accessibility_review": {
+        "n": 38,
+        "auc": 0.5285714285714286,
+        "orientation_free_auc": 0.5285714285714286,
+        "observed_direction": 1
+      },
+      "code": {
+        "n": 38,
+        "auc": 0.625,
+        "orientation_free_auc": 0.625,
+        "observed_direction": 1
+      },
+      "customer_support_triage": {
+        "n": 38,
+        "auc": 0.16666666666666666,
+        "orientation_free_auc": 0.8333333333333334,
+        "observed_direction": -1
+      },
+      "data": {
+        "n": 38,
+        "auc": 0.5151515151515151,
+        "orientation_free_auc": 0.5151515151515151,
+        "observed_direction": 1
+      },
+      "database_design": {
+        "n": 38,
+        "auc": 0.7647058823529411,
+        "orientation_free_auc": 0.7647058823529411,
+        "observed_direction": 1
+      },
+      "design": {
+        "n": 38,
+        "auc": 0.6102941176470589,
+        "orientation_free_auc": 0.6102941176470589,
+        "observed_direction": 1
+      },
+      "documentation": {
+        "n": 38,
+        "auc": 0.10294117647058826,
+        "orientation_free_auc": 0.8970588235294117,
+        "observed_direction": -1
+      },
+      "experiment_design": {
+        "n": 38,
+        "auc": 0.45,
+        "orientation_free_auc": 0.55,
+        "observed_direction": -1
+      },
+      "fact_checking": {
+        "n": 38,
+        "auc": 0.5517241379310345,
+        "orientation_free_auc": 0.5517241379310345,
+        "observed_direction": 1
+      },
+      "financial_analysis": {
+        "n": 38,
+        "auc": 0.4769585253456221,
+        "orientation_free_auc": 0.5230414746543779,
+        "observed_direction": -1
+      },
+      "incident_management": {
+        "n": 38,
+        "auc": 0.4095238095238095,
+        "orientation_free_auc": 0.5904761904761905,
+        "observed_direction": -1
+      },
+      "math": {
+        "n": 38,
+        "auc": 0.5990783410138248,
+        "orientation_free_auc": 0.5990783410138248,
+        "observed_direction": 1
+      },
+      "operations": {
+        "n": 38,
+        "auc": 0.5325670498084291,
+        "orientation_free_auc": 0.5325670498084291,
+        "observed_direction": 1
+      },
+      "planning": {
+        "n": 38,
+        "auc": 0.10416666666666666,
+        "orientation_free_auc": 0.8958333333333334,
+        "observed_direction": -1
+      },
+      "qa_testing": {
+        "n": 38,
+        "auc": 0.935483870967742,
+        "orientation_free_auc": 0.935483870967742,
+        "observed_direction": 1
+      },
+      "requirements_analysis": {
+        "n": 38,
+        "auc": 0.4117647058823529,
+        "orientation_free_auc": 0.5882352941176471,
+        "observed_direction": -1
+      },
+      "research": {
+        "n": 38,
+        "auc": 0.21354166666666666,
+        "orientation_free_auc": 0.7864583333333334,
+        "observed_direction": -1
+      },
+      "risk_assessment": {
+        "n": 38,
+        "auc": 0.7428571428571429,
+        "orientation_free_auc": 0.7428571428571429,
+        "observed_direction": 1
+      },
+      "translation": {
+        "n": 38,
+        "auc": 0.9705882352941176,
+        "orientation_free_auc": 0.9705882352941176,
+        "observed_direction": 1
+      },
+      "writing": {
+        "n": 38,
+        "auc": 0.6083333333333333,
+        "orientation_free_auc": 0.6083333333333333,
+        "observed_direction": 1
+      }
+    }
+  },
+  "direction_transfer": {
+    "accessibility_review": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": true,
+      "train_matches_t1": true
+    },
+    "code": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": true,
+      "train_matches_t1": false
+    },
+    "customer_support_triage": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": false,
+      "train_matches_t1": false
+    },
+    "data": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": true,
+      "train_matches_t1": true
+    },
+    "database_design": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": true,
+      "train_matches_t1": false
+    },
+    "design": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": false,
+      "train_matches_t1": false
+    },
+    "documentation": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": true,
+      "train_matches_t1": true
+    },
+    "experiment_design": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": true,
+      "train_matches_t1": false
+    },
+    "fact_checking": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": false,
+      "train_matches_t1": true
+    },
+    "financial_analysis": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": false,
+      "train_matches_t1": true
+    },
+    "incident_management": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": false,
+      "train_matches_t1": true
+    },
+    "math": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": false,
+      "train_matches_t1": false
+    },
+    "operations": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": true,
+      "train_matches_t1": true
+    },
+    "planning": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": false,
+      "train_matches_t1": false
+    },
+    "qa_testing": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": true,
+      "train_matches_t1": true
+    },
+    "requirements_analysis": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": true,
+      "train_matches_t1": false
+    },
+    "research": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": 1,
+      "d_observed_direction": -1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": false,
+      "train_matches_t1": true
+    },
+    "risk_assessment": {
+      "t0_train_learned_direction": -1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": true,
+      "train_matches_d": false,
+      "train_matches_t1": false
+    },
+    "translation": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": 1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": true,
+      "train_matches_t1": true
+    },
+    "writing": {
+      "t0_train_learned_direction": 1,
+      "t0_oof_observed_direction": -1,
+      "d_observed_direction": 1,
+      "t1_observed_direction": -1,
+      "train_matches_t0_oof": false,
+      "train_matches_d": true,
+      "train_matches_t1": false
+    }
+  },
+  "direction_agreement_summary": {
+    "train_vs_t0_oof": 0.6,
+    "train_vs_d": 0.55,
+    "train_vs_t1": 0.5
+  },
+  "fold_reports": [
+    {
+      "fold": 1,
+      "train_systems": 30,
+      "heldout_systems": 6,
+      "raw": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.6065416065416065,
+        "per_role_auc": {
+          "accessibility_review": 1.0,
+          "code": 1.0,
+          "customer_support_triage": 0.8,
+          "data": 0.4,
+          "database_design": 0.8,
+          "documentation": 0.4,
+          "fact_checking": 0.19999999999999996,
+          "financial_analysis": 0.6666666666666667,
+          "planning": 0.5,
+          "qa_testing": 0.75,
+          "research": 0.625,
+          "risk_assessment": 1.0,
+          "translation": 0.5,
+          "writing": 1.0
+        },
+        "mean_role_auc": 0.6886904761904763,
+        "median_role_auc": 0.7083333333333334,
+        "mean_within_system_auc": 0.5829248366013072,
+        "mean_system_pair_accuracy": 0.5829248366013072,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.6212795823812485,
+        "median_full_separation_margin": -0.5878055095672607
+      },
+      "sign": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5983645983645983,
+        "per_role_auc": {
+          "accessibility_review": 1.0,
+          "code": 1.0,
+          "customer_support_triage": 0.8,
+          "data": 0.4,
+          "database_design": 0.8,
+          "documentation": 0.6,
+          "fact_checking": 0.8,
+          "financial_analysis": 0.6666666666666667,
+          "planning": 0.5,
+          "qa_testing": 0.75,
+          "research": 0.625,
+          "risk_assessment": 0.0,
+          "translation": 0.5,
+          "writing": 0.0
+        },
+        "mean_role_auc": 0.6029761904761904,
+        "median_role_auc": 0.6458333333333334,
+        "mean_within_system_auc": 0.5751633986928104,
+        "mean_system_pair_accuracy": 0.5751633986928104,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.5169651880860329,
+        "median_full_separation_margin": -0.437329962849617
+      },
+      "robust": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5728715728715729,
+        "per_role_auc": {
+          "accessibility_review": 1.0,
+          "code": 1.0,
+          "customer_support_triage": 0.8,
+          "data": 0.4,
+          "database_design": 0.8,
+          "documentation": 0.6,
+          "fact_checking": 0.8,
+          "financial_analysis": 0.6666666666666667,
+          "planning": 0.5,
+          "qa_testing": 0.75,
+          "research": 0.625,
+          "risk_assessment": 0.0,
+          "translation": 0.5,
+          "writing": 0.0
+        },
+        "mean_role_auc": 0.6029761904761904,
+        "median_role_auc": 0.6458333333333334,
+        "mean_within_system_auc": 0.6184129901960784,
+        "mean_system_pair_accuracy": 0.6184129901960784,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -2.3558517839448405,
+        "median_full_separation_margin": -2.2524046114289167
+      }
+    },
+    {
+      "fold": 2,
+      "train_systems": 30,
+      "heldout_systems": 6,
+      "raw": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.3905555555555556,
+        "per_role_auc": {
+          "accessibility_review": 0.875,
+          "code": 0.75,
+          "customer_support_triage": 1.0,
+          "data": 0.6,
+          "database_design": 0.7777777777777778,
+          "design": 0.4,
+          "documentation": 0.75,
+          "experiment_design": 0.11111111111111112,
+          "fact_checking": 0.0,
+          "math": 0.375,
+          "operations": 0.0,
+          "planning": 0.33333333333333337,
+          "qa_testing": 0.6,
+          "requirements_analysis": 0.8,
+          "research": 1.0,
+          "risk_assessment": 0.6666666666666666,
+          "translation": 0.5
+        },
+        "mean_role_auc": 0.5611111111111111,
+        "median_role_auc": 0.6,
+        "mean_within_system_auc": 0.39047181372549017,
+        "mean_system_pair_accuracy": 0.39047181372549017,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -1.0060481776793797,
+        "median_full_separation_margin": -0.9759912490844727
+      },
+      "sign": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.6042592592592593,
+        "per_role_auc": {
+          "accessibility_review": 0.875,
+          "code": 0.25,
+          "customer_support_triage": 1.0,
+          "data": 0.6,
+          "database_design": 0.7777777777777778,
+          "design": 0.6,
+          "documentation": 0.25,
+          "experiment_design": 0.888888888888889,
+          "fact_checking": 1.0,
+          "math": 0.375,
+          "operations": 0.0,
+          "planning": 0.33333333333333337,
+          "qa_testing": 0.6,
+          "requirements_analysis": 0.19999999999999996,
+          "research": 1.0,
+          "risk_assessment": 0.3333333333333333,
+          "translation": 0.5
+        },
+        "mean_role_auc": 0.5637254901960784,
+        "median_role_auc": 0.6,
+        "mean_within_system_auc": 0.5704656862745098,
+        "mean_system_pair_accuracy": 0.5704656862745098,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.7000113924344381,
+        "median_full_separation_margin": -0.7077092826366425
+      },
+      "robust": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.595,
+        "per_role_auc": {
+          "accessibility_review": 0.875,
+          "code": 0.25,
+          "customer_support_triage": 1.0,
+          "data": 0.6,
+          "database_design": 0.7777777777777778,
+          "design": 0.6,
+          "documentation": 0.25,
+          "experiment_design": 0.888888888888889,
+          "fact_checking": 1.0,
+          "math": 0.375,
+          "operations": 0.0,
+          "planning": 0.33333333333333337,
+          "qa_testing": 0.6,
+          "requirements_analysis": 0.19999999999999996,
+          "research": 1.0,
+          "risk_assessment": 0.3333333333333333,
+          "translation": 0.5
+        },
+        "mean_role_auc": 0.5637254901960784,
+        "median_role_auc": 0.6,
+        "mean_within_system_auc": 0.5967626633986928,
+        "mean_system_pair_accuracy": 0.5967626633986928,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -2.332253271055691,
+        "median_full_separation_margin": -2.042222788592923
+      }
+    },
+    {
+      "fold": 3,
+      "train_systems": 30,
+      "heldout_systems": 6,
+      "raw": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5122105263157896,
+        "per_role_auc": {
+          "accessibility_review": 0.625,
+          "code": 0.75,
+          "customer_support_triage": 0.625,
+          "database_design": 0.875,
+          "design": 0.0,
+          "documentation": 0.4,
+          "experiment_design": 0.375,
+          "fact_checking": 0.0,
+          "financial_analysis": 0.19999999999999996,
+          "incident_management": 0.625,
+          "operations": 1.0,
+          "planning": 0.19999999999999996,
+          "qa_testing": 0.625,
+          "requirements_analysis": 0.625,
+          "research": 0.19999999999999996,
+          "writing": 0.6875
+        },
+        "mean_role_auc": 0.48828125,
+        "median_role_auc": 0.625,
+        "mean_within_system_auc": 0.4772336017740429,
+        "mean_system_pair_accuracy": 0.4772336017740429,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.9337836503982544,
+        "median_full_separation_margin": -0.8628852367401123
+      },
+      "sign": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.47726315789473683,
+        "per_role_auc": {
+          "accessibility_review": 0.625,
+          "code": 0.75,
+          "customer_support_triage": 0.625,
+          "database_design": 0.875,
+          "design": 1.0,
+          "documentation": 0.4,
+          "experiment_design": 0.625,
+          "fact_checking": 1.0,
+          "financial_analysis": 0.19999999999999996,
+          "incident_management": 0.625,
+          "operations": 1.0,
+          "planning": 0.19999999999999996,
+          "qa_testing": 0.625,
+          "requirements_analysis": 0.625,
+          "research": 0.19999999999999996,
+          "writing": 0.3125
+        },
+        "mean_role_auc": 0.60546875,
+        "median_role_auc": 0.625,
+        "mean_within_system_auc": 0.48835728201537026,
+        "mean_system_pair_accuracy": 0.48835728201537026,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.7645784541964531,
+        "median_full_separation_margin": -0.7092258259654045
+      },
+      "robust": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5854736842105264,
+        "per_role_auc": {
+          "accessibility_review": 0.625,
+          "code": 0.75,
+          "customer_support_triage": 0.625,
+          "database_design": 0.875,
+          "design": 1.0,
+          "documentation": 0.4,
+          "experiment_design": 0.625,
+          "fact_checking": 1.0,
+          "financial_analysis": 0.19999999999999996,
+          "incident_management": 0.625,
+          "operations": 1.0,
+          "planning": 0.19999999999999996,
+          "qa_testing": 0.625,
+          "requirements_analysis": 0.625,
+          "research": 0.19999999999999996,
+          "writing": 0.3125
+        },
+        "mean_role_auc": 0.60546875,
+        "median_role_auc": 0.625,
+        "mean_within_system_auc": 0.6161948753860518,
+        "mean_system_pair_accuracy": 0.6161948753860519,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -1.98918184253558,
+        "median_full_separation_margin": -1.8077812265627056
+      }
+    },
+    {
+      "fold": 4,
+      "train_systems": 30,
+      "heldout_systems": 6,
+      "raw": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5366387893269613,
+        "per_role_auc": {
+          "accessibility_review": 0.5,
+          "data": 0.7777777777777778,
+          "design": 0.625,
+          "documentation": 0.625,
+          "experiment_design": 0.0,
+          "financial_analysis": 0.375,
+          "math": 0.6666666666666667,
+          "operations": 0.19999999999999996,
+          "planning": 1.0,
+          "qa_testing": 0.4,
+          "requirements_analysis": 0.0,
+          "research": 0.75,
+          "risk_assessment": 0.25,
+          "translation": 0.5
+        },
+        "mean_role_auc": 0.47638888888888886,
+        "median_role_auc": 0.5,
+        "mean_within_system_auc": 0.5603211637218989,
+        "mean_system_pair_accuracy": 0.5603211637218989,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.49846474329630536,
+        "median_full_separation_margin": -0.5535476207733154
+      },
+      "sign": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5621266427718041,
+        "per_role_auc": {
+          "accessibility_review": 0.5,
+          "data": 0.7777777777777778,
+          "design": 0.375,
+          "documentation": 0.375,
+          "experiment_design": 1.0,
+          "financial_analysis": 0.375,
+          "math": 0.33333333333333337,
+          "operations": 0.19999999999999996,
+          "planning": 1.0,
+          "qa_testing": 0.4,
+          "requirements_analysis": 0.0,
+          "research": 0.75,
+          "risk_assessment": 0.75,
+          "translation": 0.5
+        },
+        "mean_role_auc": 0.5240079365079365,
+        "median_role_auc": 0.45,
+        "mean_within_system_auc": 0.5765628366731308,
+        "mean_system_pair_accuracy": 0.5765628366731308,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.37865673502286273,
+        "median_full_separation_margin": -0.35019074380397797
+      },
+      "robust": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.6314217443249701,
+        "per_role_auc": {
+          "accessibility_review": 0.5,
+          "data": 0.7777777777777778,
+          "design": 0.375,
+          "documentation": 0.375,
+          "experiment_design": 1.0,
+          "financial_analysis": 0.375,
+          "math": 0.33333333333333337,
+          "operations": 0.19999999999999996,
+          "planning": 1.0,
+          "qa_testing": 0.4,
+          "requirements_analysis": 0.0,
+          "research": 0.75,
+          "risk_assessment": 0.75,
+          "translation": 0.5
+        },
+        "mean_role_auc": 0.5240079365079365,
+        "median_role_auc": 0.45,
+        "mean_within_system_auc": 0.6404072847087553,
+        "mean_system_pair_accuracy": 0.6404072847087553,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -2.090106335267117,
+        "median_full_separation_margin": -2.2050219031130673
+      }
+    },
+    {
+      "fold": 5,
+      "train_systems": 30,
+      "heldout_systems": 6,
+      "raw": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.552374048568322,
+        "per_role_auc": {
+          "accessibility_review": 0.0,
+          "code": 0.375,
+          "customer_support_triage": 1.0,
+          "data": 0.625,
+          "database_design": 1.0,
+          "design": 0.0,
+          "documentation": 0.5,
+          "incident_management": 1.0,
+          "math": 0.875,
+          "operations": 0.6,
+          "planning": 0.8,
+          "qa_testing": 0.7777777777777778,
+          "requirements_analysis": 0.7777777777777779,
+          "research": 0.5,
+          "risk_assessment": 0.5,
+          "translation": 0.5,
+          "writing": 0.625
+        },
+        "mean_role_auc": 0.6150326797385621,
+        "median_role_auc": 0.625,
+        "mean_within_system_auc": 0.5441030578898226,
+        "mean_system_pair_accuracy": 0.5441030578898226,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.4975728417436282,
+        "median_full_separation_margin": -0.5172210335731506
+      },
+      "sign": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5150416817687568,
+        "per_role_auc": {
+          "accessibility_review": 0.0,
+          "code": 0.375,
+          "customer_support_triage": 1.0,
+          "data": 0.625,
+          "database_design": 1.0,
+          "design": 1.0,
+          "documentation": 0.5,
+          "incident_management": 1.0,
+          "math": 0.125,
+          "operations": 0.6,
+          "planning": 0.8,
+          "qa_testing": 0.7777777777777778,
+          "requirements_analysis": 0.22222222222222224,
+          "research": 0.5,
+          "risk_assessment": 0.5,
+          "translation": 0.5,
+          "writing": 0.625
+        },
+        "mean_role_auc": 0.5970588235294116,
+        "median_role_auc": 0.6,
+        "mean_within_system_auc": 0.5381652661064426,
+        "mean_system_pair_accuracy": 0.5381652661064426,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.44207119817535084,
+        "median_full_separation_margin": -0.42311444878578186
+      },
+      "robust": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.6295759333091699,
+        "per_role_auc": {
+          "accessibility_review": 0.0,
+          "code": 0.375,
+          "customer_support_triage": 1.0,
+          "data": 0.625,
+          "database_design": 1.0,
+          "design": 1.0,
+          "documentation": 0.5,
+          "incident_management": 1.0,
+          "math": 0.125,
+          "operations": 0.6,
+          "planning": 0.8,
+          "qa_testing": 0.7777777777777778,
+          "requirements_analysis": 0.22222222222222224,
+          "research": 0.5,
+          "risk_assessment": 0.5,
+          "translation": 0.5,
+          "writing": 0.625
+        },
+        "mean_role_auc": 0.5970588235294116,
+        "median_role_auc": 0.6,
+        "mean_within_system_auc": 0.6187193627450981,
+        "mean_system_pair_accuracy": 0.6187193627450981,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -2.1121225473404674,
+        "median_full_separation_margin": -2.1000104567287217
+      }
+    },
+    {
+      "fold": 6,
+      "train_systems": 30,
+      "heldout_systems": 6,
+      "raw": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.648811462064474,
+        "per_role_auc": {
+          "accessibility_review": 0.125,
+          "code": 0.9375,
+          "customer_support_triage": 1.0,
+          "data": 0.5555555555555556,
+          "database_design": 0.888888888888889,
+          "documentation": 0.19999999999999996,
+          "financial_analysis": 0.5,
+          "incident_management": 0.875,
+          "math": 0.6,
+          "operations": 1.0,
+          "planning": 1.0,
+          "qa_testing": 0.2,
+          "requirements_analysis": 0.5,
+          "research": 0.5,
+          "risk_assessment": 0.19999999999999996,
+          "translation": 0.5,
+          "writing": 0.0
+        },
+        "mean_role_auc": 0.5636437908496733,
+        "median_role_auc": 0.5,
+        "mean_within_system_auc": 0.6476962579903757,
+        "mean_system_pair_accuracy": 0.6476962579903757,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.411207656065623,
+        "median_full_separation_margin": -0.4541872441768646
+      },
+      "sign": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.5729404102898079,
+        "per_role_auc": {
+          "accessibility_review": 0.125,
+          "code": 0.9375,
+          "customer_support_triage": 1.0,
+          "data": 0.5555555555555556,
+          "database_design": 0.888888888888889,
+          "documentation": 0.8,
+          "financial_analysis": 0.5,
+          "incident_management": 0.875,
+          "math": 0.6,
+          "operations": 0.0,
+          "planning": 1.0,
+          "qa_testing": 0.2,
+          "requirements_analysis": 0.5,
+          "research": 0.5,
+          "risk_assessment": 0.19999999999999996,
+          "translation": 0.5,
+          "writing": 0.0
+        },
+        "mean_role_auc": 0.5401143790849674,
+        "median_role_auc": 0.5,
+        "mean_within_system_auc": 0.5710885315664728,
+        "mean_system_pair_accuracy": 0.5710885315664728,
+        "perfect_order_rate": 0.0,
+        "exact_topK_oracleK_rate": 0.0,
+        "mean_full_separation_margin": -0.42216501384973526,
+        "median_full_separation_margin": -0.4541872441768646
+      },
+      "robust": {
+        "rows": 120,
+        "systems": 6,
+        "global_auc": 0.599316183653533,
+        "per_role_auc": {
+          "accessibility_review": 0.125,
+          "code": 0.9375,
+          "customer_support_triage": 1.0,
+          "data": 0.5555555555555556,
+          "database_design": 0.888888888888889,
+          "documentation": 0.8,
+          "financial_analysis": 0.5,
+          "incident_management": 0.875,
+          "math": 0.6,
+          "operations": 0.0,
+          "planning": 1.0,
+          "qa_testing": 0.2,
+          "requirements_analysis": 0.5,
+          "research": 0.5,
+          "risk_assessment": 0.19999999999999996,
+          "translation": 0.5,
+          "writing": 0.0
+        },
+        "mean_role_auc": 0.5401143790849674,
+        "median_role_auc": 0.5,
+        "mean_within_system_auc": 0.6413095686992746,
+        "mean_system_pair_accuracy": 0.6413095686992746,
+        "perfect_order_rate": 0.16666666666666666,
+        "exact_topK_oracleK_rate": 0.16666666666666666,
+        "mean_full_separation_margin": -2.450454055435363,
+        "median_full_separation_margin": -2.525121207702603
+      }
+    }
+  ]
+}

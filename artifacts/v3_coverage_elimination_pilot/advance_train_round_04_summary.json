@@ -1,0 +1,15 @@
+{
+  "split": "train",
+  "round": 4,
+  "systems": 16,
+  "valid_state_updates": 16,
+  "mean_k_map_acc": 0.25,
+  "mean_gap_k_acc": 0.375,
+  "mean_top_true_k_exact": 0.0625,
+  "mean_p_true_k": 0.250636281846212,
+  "mean_p_true_composition": 0.00015036390531871424,
+  "mean_coverage": 0.3003573045702685,
+  "mean_chosen_reward": 0.0032990810416975622,
+  "visible_beta": 0.1,
+  "truth_boundary": "truth only used in reward/metrics; state update uses visible query+final_output fingerprint"
+}

@@ -1,0 +1,4215 @@
+{
+  "notes": {
+    "design": "Matched counterfactual ROLE DIRECT evaluation",
+    "k": 3,
+    "pair_difference": "TARGET_PRESENT replaces matched confusable substitute; background/mode/style fixed",
+    "pairs_per_role": 5,
+    "privileged": true,
+    "target_roles": 20
+  },
+  "seed": 20261008,
+  "sha256": "db23c327fb5c20a5df70aa015bf8665349e4ded71a50d8fe788967b8c2dc7d57",
+  "systems": [
+    {
+      "background_roles": [
+        "financial_analysis",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "operations",
+        "code"
+      ],
+      "session_id": "rdcf_00_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "operations",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_00_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p02",
+      "pair_index": 2,
+      "roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "code"
+      ],
+      "session_id": "rdcf_00_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "database_design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p02",
+      "pair_index": 2,
+      "roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "database_design"
+      ],
+      "session_id": "rdcf_00_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "database_design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "operations",
+        "code"
+      ],
+      "session_id": "rdcf_00_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "operations",
+        "data"
+      ],
+      "session_id": "rdcf_00_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p04",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "customer_support_triage",
+        "code"
+      ],
+      "session_id": "rdcf_00_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p04",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "customer_support_triage",
+        "design"
+      ],
+      "session_id": "rdcf_00_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "research",
+        "planning"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "planning",
+        "code"
+      ],
+      "session_id": "rdcf_00_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "research",
+        "planning"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "code__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "planning",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_00_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "code"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "planning"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p01",
+      "pair_index": 1,
+      "roles": [
+        "experiment_design",
+        "planning",
+        "writing"
+      ],
+      "session_id": "rdcf_01_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "planning"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p01",
+      "pair_index": 1,
+      "roles": [
+        "experiment_design",
+        "planning",
+        "documentation"
+      ],
+      "session_id": "rdcf_01_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p02",
+      "pair_index": 2,
+      "roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "writing"
+      ],
+      "session_id": "rdcf_01_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "translation",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p02",
+      "pair_index": 2,
+      "roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "translation"
+      ],
+      "session_id": "rdcf_01_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "translation",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p03",
+      "pair_index": 3,
+      "roles": [
+        "risk_assessment",
+        "incident_management",
+        "writing"
+      ],
+      "session_id": "rdcf_01_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p03",
+      "pair_index": 3,
+      "roles": [
+        "risk_assessment",
+        "incident_management",
+        "research"
+      ],
+      "session_id": "rdcf_01_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "customer_support_triage",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p04",
+      "pair_index": 4,
+      "roles": [
+        "customer_support_triage",
+        "risk_assessment",
+        "writing"
+      ],
+      "session_id": "rdcf_01_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "customer_support_triage",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p04",
+      "pair_index": 4,
+      "roles": [
+        "customer_support_triage",
+        "risk_assessment",
+        "design"
+      ],
+      "session_id": "rdcf_01_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p05",
+      "pair_index": 5,
+      "roles": [
+        "financial_analysis",
+        "incident_management",
+        "writing"
+      ],
+      "session_id": "rdcf_01_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "writing__p05",
+      "pair_index": 5,
+      "roles": [
+        "financial_analysis",
+        "incident_management",
+        "documentation"
+      ],
+      "session_id": "rdcf_01_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "writing"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "qa_testing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p01",
+      "pair_index": 1,
+      "roles": [
+        "planning",
+        "qa_testing",
+        "math"
+      ],
+      "session_id": "rdcf_02_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "qa_testing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p01",
+      "pair_index": 1,
+      "roles": [
+        "planning",
+        "qa_testing",
+        "data"
+      ],
+      "session_id": "rdcf_02_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "documentation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p02",
+      "pair_index": 2,
+      "roles": [
+        "accessibility_review",
+        "documentation",
+        "math"
+      ],
+      "session_id": "rdcf_02_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "documentation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p02",
+      "pair_index": 2,
+      "roles": [
+        "accessibility_review",
+        "documentation",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_02_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p03",
+      "pair_index": 3,
+      "roles": [
+        "qa_testing",
+        "operations",
+        "math"
+      ],
+      "session_id": "rdcf_02_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p03",
+      "pair_index": 3,
+      "roles": [
+        "qa_testing",
+        "operations",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_02_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p04",
+      "pair_index": 4,
+      "roles": [
+        "writing",
+        "requirements_analysis",
+        "math"
+      ],
+      "session_id": "rdcf_02_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p04",
+      "pair_index": 4,
+      "roles": [
+        "writing",
+        "requirements_analysis",
+        "code"
+      ],
+      "session_id": "rdcf_02_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p05",
+      "pair_index": 5,
+      "roles": [
+        "accessibility_review",
+        "translation",
+        "math"
+      ],
+      "session_id": "rdcf_02_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "math__p05",
+      "pair_index": 5,
+      "roles": [
+        "accessibility_review",
+        "translation",
+        "data"
+      ],
+      "session_id": "rdcf_02_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "math"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p01",
+      "pair_index": 1,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "planning"
+      ],
+      "session_id": "rdcf_03_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p01",
+      "pair_index": 1,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "operations"
+      ],
+      "session_id": "rdcf_03_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p02",
+      "pair_index": 2,
+      "roles": [
+        "writing",
+        "translation",
+        "planning"
+      ],
+      "session_id": "rdcf_03_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p02",
+      "pair_index": 2,
+      "roles": [
+        "writing",
+        "translation",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_03_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "qa_testing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p03",
+      "pair_index": 3,
+      "roles": [
+        "documentation",
+        "qa_testing",
+        "planning"
+      ],
+      "session_id": "rdcf_03_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "qa_testing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p03",
+      "pair_index": 3,
+      "roles": [
+        "documentation",
+        "qa_testing",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_03_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "writing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p04",
+      "pair_index": 4,
+      "roles": [
+        "documentation",
+        "writing",
+        "planning"
+      ],
+      "session_id": "rdcf_03_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "writing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p04",
+      "pair_index": 4,
+      "roles": [
+        "documentation",
+        "writing",
+        "incident_management"
+      ],
+      "session_id": "rdcf_03_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "writing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p05",
+      "pair_index": 5,
+      "roles": [
+        "fact_checking",
+        "writing",
+        "planning"
+      ],
+      "session_id": "rdcf_03_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "writing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "planning__p05",
+      "pair_index": 5,
+      "roles": [
+        "fact_checking",
+        "writing",
+        "operations"
+      ],
+      "session_id": "rdcf_03_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "planning"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p01",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "database_design",
+        "research"
+      ],
+      "session_id": "rdcf_04_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p01",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "database_design",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_04_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p02",
+      "pair_index": 2,
+      "roles": [
+        "database_design",
+        "incident_management",
+        "research"
+      ],
+      "session_id": "rdcf_04_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p02",
+      "pair_index": 2,
+      "roles": [
+        "database_design",
+        "incident_management",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_04_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p03",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "research"
+      ],
+      "session_id": "rdcf_04_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p03",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "data"
+      ],
+      "session_id": "rdcf_04_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "code",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p04",
+      "pair_index": 4,
+      "roles": [
+        "code",
+        "database_design",
+        "research"
+      ],
+      "session_id": "rdcf_04_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "code",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p04",
+      "pair_index": 4,
+      "roles": [
+        "code",
+        "database_design",
+        "writing"
+      ],
+      "session_id": "rdcf_04_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "design",
+        "code"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p05",
+      "pair_index": 5,
+      "roles": [
+        "design",
+        "code",
+        "research"
+      ],
+      "session_id": "rdcf_04_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "design",
+        "code"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "research__p05",
+      "pair_index": 5,
+      "roles": [
+        "design",
+        "code",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_04_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "research"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "documentation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p01",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "documentation",
+        "data"
+      ],
+      "session_id": "rdcf_05_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "documentation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p01",
+      "pair_index": 1,
+      "roles": [
+        "incident_management",
+        "documentation",
+        "math"
+      ],
+      "session_id": "rdcf_05_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "customer_support_triage",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p02",
+      "pair_index": 2,
+      "roles": [
+        "customer_support_triage",
+        "risk_assessment",
+        "data"
+      ],
+      "session_id": "rdcf_05_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "database_design",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "customer_support_triage",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p02",
+      "pair_index": 2,
+      "roles": [
+        "customer_support_triage",
+        "risk_assessment",
+        "database_design"
+      ],
+      "session_id": "rdcf_05_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "database_design",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p03",
+      "pair_index": 3,
+      "roles": [
+        "translation",
+        "design",
+        "data"
+      ],
+      "session_id": "rdcf_05_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p03",
+      "pair_index": 3,
+      "roles": [
+        "translation",
+        "design",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_05_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "planning"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p04",
+      "pair_index": 4,
+      "roles": [
+        "accessibility_review",
+        "planning",
+        "data"
+      ],
+      "session_id": "rdcf_05_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "planning"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p04",
+      "pair_index": 4,
+      "roles": [
+        "accessibility_review",
+        "planning",
+        "research"
+      ],
+      "session_id": "rdcf_05_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p05",
+      "pair_index": 5,
+      "roles": [
+        "qa_testing",
+        "incident_management",
+        "data"
+      ],
+      "session_id": "rdcf_05_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "data__p05",
+      "pair_index": 5,
+      "roles": [
+        "qa_testing",
+        "incident_management",
+        "math"
+      ],
+      "session_id": "rdcf_05_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "data"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p01",
+      "pair_index": 1,
+      "roles": [
+        "planning",
+        "data",
+        "design"
+      ],
+      "session_id": "rdcf_06_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "accessibility_review",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p01",
+      "pair_index": 1,
+      "roles": [
+        "planning",
+        "data",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_06_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "accessibility_review",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p02",
+      "pair_index": 2,
+      "roles": [
+        "financial_analysis",
+        "translation",
+        "design"
+      ],
+      "session_id": "rdcf_06_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p02",
+      "pair_index": 2,
+      "roles": [
+        "financial_analysis",
+        "translation",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_06_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "qa_testing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p03",
+      "pair_index": 3,
+      "roles": [
+        "planning",
+        "qa_testing",
+        "design"
+      ],
+      "session_id": "rdcf_06_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "qa_testing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p03",
+      "pair_index": 3,
+      "roles": [
+        "planning",
+        "qa_testing",
+        "writing"
+      ],
+      "session_id": "rdcf_06_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "planning"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p04",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "planning",
+        "design"
+      ],
+      "session_id": "rdcf_06_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "planning"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p04",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "planning",
+        "code"
+      ],
+      "session_id": "rdcf_06_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "research",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "data",
+        "design"
+      ],
+      "session_id": "rdcf_06_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "accessibility_review",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "research",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "design__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "data",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_06_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "accessibility_review",
+      "target_role": "design"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p01",
+      "pair_index": 1,
+      "roles": [
+        "accessibility_review",
+        "database_design",
+        "operations"
+      ],
+      "session_id": "rdcf_07_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p01",
+      "pair_index": 1,
+      "roles": [
+        "accessibility_review",
+        "database_design",
+        "planning"
+      ],
+      "session_id": "rdcf_07_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p02",
+      "pair_index": 2,
+      "roles": [
+        "documentation",
+        "database_design",
+        "operations"
+      ],
+      "session_id": "rdcf_07_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p02",
+      "pair_index": 2,
+      "roles": [
+        "documentation",
+        "database_design",
+        "incident_management"
+      ],
+      "session_id": "rdcf_07_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p03",
+      "pair_index": 3,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "operations"
+      ],
+      "session_id": "rdcf_07_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p03",
+      "pair_index": 3,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_07_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p04",
+      "pair_index": 4,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "operations"
+      ],
+      "session_id": "rdcf_07_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p04",
+      "pair_index": 4,
+      "roles": [
+        "writing",
+        "experiment_design",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_07_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "research",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "translation",
+        "operations"
+      ],
+      "session_id": "rdcf_07_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "research",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "operations__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "translation",
+        "planning"
+      ],
+      "session_id": "rdcf_07_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "operations"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p01",
+      "pair_index": 1,
+      "roles": [
+        "risk_assessment",
+        "research",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_08_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p01",
+      "pair_index": 1,
+      "roles": [
+        "risk_assessment",
+        "research",
+        "code"
+      ],
+      "session_id": "rdcf_08_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p02",
+      "pair_index": 2,
+      "roles": [
+        "documentation",
+        "translation",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_08_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p02",
+      "pair_index": 2,
+      "roles": [
+        "documentation",
+        "translation",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_08_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p03",
+      "pair_index": 3,
+      "roles": [
+        "writing",
+        "math",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_08_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p03",
+      "pair_index": 3,
+      "roles": [
+        "writing",
+        "math",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_08_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p04",
+      "pair_index": 4,
+      "roles": [
+        "database_design",
+        "experiment_design",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_08_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p04",
+      "pair_index": 4,
+      "roles": [
+        "database_design",
+        "experiment_design",
+        "incident_management"
+      ],
+      "session_id": "rdcf_08_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "research",
+        "writing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "writing",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_08_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "research",
+        "writing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "qa_testing__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "writing",
+        "code"
+      ],
+      "session_id": "rdcf_08_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "qa_testing"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p01",
+      "pair_index": 1,
+      "roles": [
+        "planning",
+        "data",
+        "translation"
+      ],
+      "session_id": "rdcf_09_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p01",
+      "pair_index": 1,
+      "roles": [
+        "planning",
+        "data",
+        "writing"
+      ],
+      "session_id": "rdcf_09_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p02",
+      "pair_index": 2,
+      "roles": [
+        "risk_assessment",
+        "experiment_design",
+        "translation"
+      ],
+      "session_id": "rdcf_09_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p02",
+      "pair_index": 2,
+      "roles": [
+        "risk_assessment",
+        "experiment_design",
+        "documentation"
+      ],
+      "session_id": "rdcf_09_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p03",
+      "pair_index": 3,
+      "roles": [
+        "database_design",
+        "data",
+        "translation"
+      ],
+      "session_id": "rdcf_09_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "accessibility_review",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p03",
+      "pair_index": 3,
+      "roles": [
+        "database_design",
+        "data",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_09_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "accessibility_review",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p04",
+      "pair_index": 4,
+      "roles": [
+        "planning",
+        "database_design",
+        "translation"
+      ],
+      "session_id": "rdcf_09_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p04",
+      "pair_index": 4,
+      "roles": [
+        "planning",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_09_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p05",
+      "pair_index": 5,
+      "roles": [
+        "planning",
+        "risk_assessment",
+        "translation"
+      ],
+      "session_id": "rdcf_09_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "translation__p05",
+      "pair_index": 5,
+      "roles": [
+        "planning",
+        "risk_assessment",
+        "writing"
+      ],
+      "session_id": "rdcf_09_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "translation"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p01",
+      "pair_index": 1,
+      "roles": [
+        "writing",
+        "research",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_10_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p01",
+      "pair_index": 1,
+      "roles": [
+        "writing",
+        "research",
+        "math"
+      ],
+      "session_id": "rdcf_10_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p02",
+      "pair_index": 2,
+      "roles": [
+        "documentation",
+        "requirements_analysis",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_10_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p02",
+      "pair_index": 2,
+      "roles": [
+        "documentation",
+        "requirements_analysis",
+        "data"
+      ],
+      "session_id": "rdcf_10_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "research",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_10_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "research",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_10_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p04",
+      "pair_index": 4,
+      "roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_10_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "customer_support_triage"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p04",
+      "pair_index": 4,
+      "roles": [
+        "experiment_design",
+        "customer_support_triage",
+        "planning"
+      ],
+      "session_id": "rdcf_10_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p05",
+      "pair_index": 5,
+      "roles": [
+        "translation",
+        "research",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_10_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "financial_analysis__p05",
+      "pair_index": 5,
+      "roles": [
+        "translation",
+        "research",
+        "math"
+      ],
+      "session_id": "rdcf_10_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "financial_analysis"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p01",
+      "pair_index": 1,
+      "roles": [
+        "risk_assessment",
+        "fact_checking",
+        "database_design"
+      ],
+      "session_id": "rdcf_11_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p01",
+      "pair_index": 1,
+      "roles": [
+        "risk_assessment",
+        "fact_checking",
+        "data"
+      ],
+      "session_id": "rdcf_11_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "operations",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p02",
+      "pair_index": 2,
+      "roles": [
+        "operations",
+        "research",
+        "database_design"
+      ],
+      "session_id": "rdcf_11_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "operations",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p02",
+      "pair_index": 2,
+      "roles": [
+        "operations",
+        "research",
+        "code"
+      ],
+      "session_id": "rdcf_11_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p03",
+      "pair_index": 3,
+      "roles": [
+        "incident_management",
+        "risk_assessment",
+        "database_design"
+      ],
+      "session_id": "rdcf_11_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "incident_management",
+        "risk_assessment"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p03",
+      "pair_index": 3,
+      "roles": [
+        "incident_management",
+        "risk_assessment",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_11_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p04",
+      "pair_index": 4,
+      "roles": [
+        "qa_testing",
+        "experiment_design",
+        "database_design"
+      ],
+      "session_id": "rdcf_11_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p04",
+      "pair_index": 4,
+      "roles": [
+        "qa_testing",
+        "experiment_design",
+        "design"
+      ],
+      "session_id": "rdcf_11_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p05",
+      "pair_index": 5,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "database_design"
+      ],
+      "session_id": "rdcf_11_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "operations"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "database_design__p05",
+      "pair_index": 5,
+      "roles": [
+        "accessibility_review",
+        "operations",
+        "data"
+      ],
+      "session_id": "rdcf_11_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "database_design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "math",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_12_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "math",
+        "design"
+      ],
+      "session_id": "rdcf_12_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "operations",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p02",
+      "pair_index": 2,
+      "roles": [
+        "operations",
+        "database_design",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_12_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "operations",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p02",
+      "pair_index": 2,
+      "roles": [
+        "operations",
+        "database_design",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_12_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "math",
+        "code"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p03",
+      "pair_index": 3,
+      "roles": [
+        "math",
+        "code",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_12_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "math",
+        "code"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p03",
+      "pair_index": 3,
+      "roles": [
+        "math",
+        "code",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_12_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "financial_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p04",
+      "pair_index": 4,
+      "roles": [
+        "experiment_design",
+        "financial_analysis",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_12_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "financial_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p04",
+      "pair_index": 4,
+      "roles": [
+        "experiment_design",
+        "financial_analysis",
+        "writing"
+      ],
+      "session_id": "rdcf_12_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "research",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "experiment_design",
+        "accessibility_review"
+      ],
+      "session_id": "rdcf_12_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "research",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "accessibility_review__p05",
+      "pair_index": 5,
+      "roles": [
+        "research",
+        "experiment_design",
+        "design"
+      ],
+      "session_id": "rdcf_12_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "accessibility_review"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "code"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p01",
+      "pair_index": 1,
+      "roles": [
+        "documentation",
+        "code",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_13_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "code"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p01",
+      "pair_index": 1,
+      "roles": [
+        "documentation",
+        "code",
+        "research"
+      ],
+      "session_id": "rdcf_13_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "data",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p02",
+      "pair_index": 2,
+      "roles": [
+        "data",
+        "translation",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_13_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "data",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p02",
+      "pair_index": 2,
+      "roles": [
+        "data",
+        "translation",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_13_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "design",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p03",
+      "pair_index": 3,
+      "roles": [
+        "design",
+        "database_design",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_13_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "design",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p03",
+      "pair_index": 3,
+      "roles": [
+        "design",
+        "database_design",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_13_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "experiment_design",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "customer_support_triage",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p04",
+      "pair_index": 4,
+      "roles": [
+        "customer_support_triage",
+        "database_design",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_13_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "customer_support_triage",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p04",
+      "pair_index": 4,
+      "roles": [
+        "customer_support_triage",
+        "database_design",
+        "writing"
+      ],
+      "session_id": "rdcf_13_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "code"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p05",
+      "pair_index": 5,
+      "roles": [
+        "database_design",
+        "code",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_13_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "database_design",
+        "code"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "fact_checking__p05",
+      "pair_index": 5,
+      "roles": [
+        "database_design",
+        "code",
+        "research"
+      ],
+      "session_id": "rdcf_13_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "fact_checking"
+    },
+    {
+      "background_roles": [
+        "code",
+        "fact_checking"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p01",
+      "pair_index": 1,
+      "roles": [
+        "code",
+        "fact_checking",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_14_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "code",
+        "fact_checking"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p01",
+      "pair_index": 1,
+      "roles": [
+        "code",
+        "fact_checking",
+        "planning"
+      ],
+      "session_id": "rdcf_14_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "translation"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p02",
+      "pair_index": 2,
+      "roles": [
+        "financial_analysis",
+        "translation",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_14_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "translation"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p02",
+      "pair_index": 2,
+      "roles": [
+        "financial_analysis",
+        "translation",
+        "design"
+      ],
+      "session_id": "rdcf_14_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "design",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "incident_management",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_14_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "incident_management",
+        "documentation"
+      ],
+      "session_id": "rdcf_14_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "documentation",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "code",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p04",
+      "pair_index": 4,
+      "roles": [
+        "code",
+        "math",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_14_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "code",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p04",
+      "pair_index": 4,
+      "roles": [
+        "code",
+        "math",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_14_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "code"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p05",
+      "pair_index": 5,
+      "roles": [
+        "writing",
+        "code",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_14_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "writing",
+        "code"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "requirements_analysis__p05",
+      "pair_index": 5,
+      "roles": [
+        "writing",
+        "code",
+        "planning"
+      ],
+      "session_id": "rdcf_14_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "requirements_analysis"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p01",
+      "pair_index": 1,
+      "roles": [
+        "documentation",
+        "math",
+        "incident_management"
+      ],
+      "session_id": "rdcf_15_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p01",
+      "pair_index": 1,
+      "roles": [
+        "documentation",
+        "math",
+        "operations"
+      ],
+      "session_id": "rdcf_15_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p02",
+      "pair_index": 2,
+      "roles": [
+        "accessibility_review",
+        "database_design",
+        "incident_management"
+      ],
+      "session_id": "rdcf_15_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p02",
+      "pair_index": 2,
+      "roles": [
+        "accessibility_review",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_15_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "customer_support_triage",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "math",
+        "incident_management"
+      ],
+      "session_id": "rdcf_15_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p03",
+      "pair_index": 3,
+      "roles": [
+        "fact_checking",
+        "math",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_15_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "risk_assessment",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p04",
+      "pair_index": 4,
+      "roles": [
+        "requirements_analysis",
+        "fact_checking",
+        "incident_management"
+      ],
+      "session_id": "rdcf_15_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p04",
+      "pair_index": 4,
+      "roles": [
+        "requirements_analysis",
+        "fact_checking",
+        "code"
+      ],
+      "session_id": "rdcf_15_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "data",
+        "financial_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p05",
+      "pair_index": 5,
+      "roles": [
+        "data",
+        "financial_analysis",
+        "incident_management"
+      ],
+      "session_id": "rdcf_15_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "data",
+        "financial_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "incident_management__p05",
+      "pair_index": 5,
+      "roles": [
+        "data",
+        "financial_analysis",
+        "operations"
+      ],
+      "session_id": "rdcf_15_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "incident_management"
+    },
+    {
+      "background_roles": [
+        "code",
+        "qa_testing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p01",
+      "pair_index": 1,
+      "roles": [
+        "code",
+        "qa_testing",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_16_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "code",
+        "qa_testing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p01",
+      "pair_index": 1,
+      "roles": [
+        "code",
+        "qa_testing",
+        "research"
+      ],
+      "session_id": "rdcf_16_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p02",
+      "pair_index": 2,
+      "roles": [
+        "planning",
+        "design",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_16_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p02",
+      "pair_index": 2,
+      "roles": [
+        "planning",
+        "design",
+        "data"
+      ],
+      "session_id": "rdcf_16_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "data",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "requirements_analysis",
+        "planning"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p03",
+      "pair_index": 3,
+      "roles": [
+        "requirements_analysis",
+        "planning",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_16_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "requirements_analysis",
+        "planning"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p03",
+      "pair_index": 3,
+      "roles": [
+        "requirements_analysis",
+        "planning",
+        "math"
+      ],
+      "session_id": "rdcf_16_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "math",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p04",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_16_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p04",
+      "pair_index": 4,
+      "roles": [
+        "financial_analysis",
+        "requirements_analysis",
+        "fact_checking"
+      ],
+      "session_id": "rdcf_16_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "fact_checking",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "qa_testing"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p05",
+      "pair_index": 5,
+      "roles": [
+        "translation",
+        "qa_testing",
+        "experiment_design"
+      ],
+      "session_id": "rdcf_16_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "qa_testing"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "experiment_design__p05",
+      "pair_index": 5,
+      "roles": [
+        "translation",
+        "qa_testing",
+        "research"
+      ],
+      "session_id": "rdcf_16_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "research",
+      "target_role": "experiment_design"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p01",
+      "pair_index": 1,
+      "roles": [
+        "fact_checking",
+        "requirements_analysis",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_17_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "requirements_analysis"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p01",
+      "pair_index": 1,
+      "roles": [
+        "fact_checking",
+        "requirements_analysis",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_17_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p02",
+      "pair_index": 2,
+      "roles": [
+        "translation",
+        "math",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_17_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p02",
+      "pair_index": 2,
+      "roles": [
+        "translation",
+        "math",
+        "incident_management"
+      ],
+      "session_id": "rdcf_17_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "experiment_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p03",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "experiment_design",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_17_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "accessibility_review",
+        "experiment_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p03",
+      "pair_index": 3,
+      "roles": [
+        "accessibility_review",
+        "experiment_design",
+        "planning"
+      ],
+      "session_id": "rdcf_17_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "planning",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "fact_checking"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p04",
+      "pair_index": 4,
+      "roles": [
+        "translation",
+        "fact_checking",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_17_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "translation",
+        "fact_checking"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p04",
+      "pair_index": 4,
+      "roles": [
+        "translation",
+        "fact_checking",
+        "operations"
+      ],
+      "session_id": "rdcf_17_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p05",
+      "pair_index": 5,
+      "roles": [
+        "fact_checking",
+        "accessibility_review",
+        "risk_assessment"
+      ],
+      "session_id": "rdcf_17_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "risk_assessment__p05",
+      "pair_index": 5,
+      "roles": [
+        "fact_checking",
+        "accessibility_review",
+        "financial_analysis"
+      ],
+      "session_id": "rdcf_17_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "financial_analysis",
+      "target_role": "risk_assessment"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "incident_management"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p01",
+      "pair_index": 1,
+      "roles": [
+        "qa_testing",
+        "incident_management",
+        "documentation"
+      ],
+      "session_id": "rdcf_18_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "qa_testing",
+        "incident_management"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p01",
+      "pair_index": 1,
+      "roles": [
+        "qa_testing",
+        "incident_management",
+        "writing"
+      ],
+      "session_id": "rdcf_18_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "data",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p02",
+      "pair_index": 2,
+      "roles": [
+        "data",
+        "math",
+        "documentation"
+      ],
+      "session_id": "rdcf_18_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "data",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p02",
+      "pair_index": 2,
+      "roles": [
+        "data",
+        "math",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_18_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "design",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p03",
+      "pair_index": 3,
+      "roles": [
+        "design",
+        "math",
+        "documentation"
+      ],
+      "session_id": "rdcf_18_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "translation",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "design",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p03",
+      "pair_index": 3,
+      "roles": [
+        "design",
+        "math",
+        "translation"
+      ],
+      "session_id": "rdcf_18_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "translation",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p04",
+      "pair_index": 4,
+      "roles": [
+        "fact_checking",
+        "accessibility_review",
+        "documentation"
+      ],
+      "session_id": "rdcf_18_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "accessibility_review"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p04",
+      "pair_index": 4,
+      "roles": [
+        "fact_checking",
+        "accessibility_review",
+        "code"
+      ],
+      "session_id": "rdcf_18_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "code",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p05",
+      "pair_index": 5,
+      "roles": [
+        "planning",
+        "data",
+        "documentation"
+      ],
+      "session_id": "rdcf_18_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "planning",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "documentation__p05",
+      "pair_index": 5,
+      "roles": [
+        "planning",
+        "data",
+        "writing"
+      ],
+      "session_id": "rdcf_18_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "writing",
+      "target_role": "documentation"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "research",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_19_p01_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "financial_analysis",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p01",
+      "pair_index": 1,
+      "roles": [
+        "financial_analysis",
+        "research",
+        "incident_management"
+      ],
+      "session_id": "rdcf_19_p01_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "data"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p02",
+      "pair_index": 2,
+      "roles": [
+        "fact_checking",
+        "data",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_19_p02_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "fact_checking",
+        "data"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p02",
+      "pair_index": 2,
+      "roles": [
+        "fact_checking",
+        "data",
+        "operations"
+      ],
+      "session_id": "rdcf_19_p02_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "operations",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "research"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p03",
+      "pair_index": 3,
+      "roles": [
+        "experiment_design",
+        "research",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_19_p03_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "research"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p03",
+      "pair_index": 3,
+      "roles": [
+        "experiment_design",
+        "research",
+        "requirements_analysis"
+      ],
+      "session_id": "rdcf_19_p03_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "requirements_analysis",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "database_design"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p04",
+      "pair_index": 4,
+      "roles": [
+        "experiment_design",
+        "database_design",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_19_p04_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "experiment_design",
+        "database_design"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p04",
+      "pair_index": 4,
+      "roles": [
+        "experiment_design",
+        "database_design",
+        "qa_testing"
+      ],
+      "session_id": "rdcf_19_p04_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "qa_testing",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "math"
+      ],
+      "condition": "TARGET_PRESENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p05",
+      "pair_index": 5,
+      "roles": [
+        "documentation",
+        "math",
+        "customer_support_triage"
+      ],
+      "session_id": "rdcf_19_p05_POS",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "customer_support_triage"
+    },
+    {
+      "background_roles": [
+        "documentation",
+        "math"
+      ],
+      "condition": "TARGET_ABSENT",
+      "k": 3,
+      "mode": "mixed",
+      "pair_id": "customer_support_triage__p05",
+      "pair_index": 5,
+      "roles": [
+        "documentation",
+        "math",
+        "incident_management"
+      ],
+      "session_id": "rdcf_19_p05_NEG",
+      "split": "dev",
+      "style": "s1",
+      "substitute_role": "incident_management",
+      "target_role": "customer_support_triage"
+    }
+  ],
+  "version": "role_direct_matched_cf_v1"
+}

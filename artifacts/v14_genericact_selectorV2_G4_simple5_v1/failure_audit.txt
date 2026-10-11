@@ -1,0 +1,362 @@
+==============================================================================================================
+GENERICACT SIMPLE5 FAILURE AUDIT
+==============================================================================================================
+
+ROUND-BY-ROUND MEAN AUC
+--------------------------------------------------------------------------------------------------------------
+ROUND        GENERICACT        CONTROL          DELTA
+R0             0.500000       0.500000      +0.000000
+R1             0.596078       0.537255      +0.058824
+R2             0.650980       0.623529      +0.027451
+R3             0.654902       0.694118      -0.039216
+R4             0.666667       0.647059      +0.019608
+R5             0.674510       0.615686      +0.058824
+R6             0.647059       0.650980      -0.003922
+
+==============================================================================================================
+PER-MAS TRAJECTORIES
+==============================================================================================================
+
+##############################################################################################################
+SYSTEM: simple5_01_code_plan_research
+TRUE: ['code', 'planning', 'research']
+##############################################################################################################
+R0: AUC=0.5000 dAUC=+0.0000 | code=0.225* | writing=0.225 | math=0.225 | planning=0.225* | research=0.225* | data=0.225
+R1: AUC=0.3725 dAUC=-0.1275 | incident_management=0.443 | database_design=0.430 | code=0.416* | accessibility_review=0.379 | math=0.356 | customer_support_triage=0.338
+    EXECUTED: What specific evidence or methodological approach would you like to use when researching topics related to **evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation**?
+    RESPONSE: When researching topics related to evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation, a structured methodological approach is essential. Here’s a breakdown of specific evidence and methodological approaches tha
+R2: AUC=0.4706 dAUC=+0.0980 | incident_management=0.476 | code=0.474* | database_design=0.460 | accessibility_review=0.425 | math=0.374 | documentation=0.344
+    EXECUTED: What kind of data gathering strategy would you employ during your experiment design?
+    RESPONSE: When designing an experiment, a comprehensive data gathering strategy is essential for ensuring the validity and reliability of the results. Here’s a structured approach to developing an effective strategy: First, clearly define the objecti
+R3: AUC=0.7059 dAUC=+0.2353 | incident_management=0.417 | code=0.403* | database_design=0.378 | accessibility_review=0.347 | math=0.332 | risk_assessment=0.315
+    EXECUTED: What key factors should I consider before starting my project planning?
+    RESPONSE: Before starting your project planning, consider the following key factors: 1. **Project Objectives and Goals**: - Clearly define what you want to achieve. Ensure that your goals are SMART (Specific, Measurable, Achievable, Relevant, Time-bo
+R4: AUC=0.4314 dAUC=-0.2745 | incident_management=0.414 | database_design=0.366 | code=0.356* | documentation=0.352 | risk_assessment=0.345 | accessibility_review=0.332
+    EXECUTED: What type of experimental design protocol or methodology do you plan to use?
+    RESPONSE: The choice of experimental design protocol or methodology depends on the specific research question, objectives, and the nature of the data being collected. Here are some common types of experimental designs and methodologies, along with th
+R5: AUC=0.5098 dAUC=+0.0784 | incident_management=0.389 | math=0.371 | database_design=0.362 | code=0.334* | documentation=0.324 | data=0.320
+    EXECUTED: What aspects of professional writing and communication practices do you find particularly challenging?
+    RESPONSE: Professional writing and communication practices encompass a wide range of skills and techniques, and several aspects can be particularly challenging. Here are some key challenges, along with evidence, sources, and methods for addressing th
+R6: AUC=0.3725 dAUC=-0.1373 | incident_management=0.393 | math=0.372 | database_design=0.368 | code=0.341* | requirements_analysis=0.338 | data=0.334
+    EXECUTED: Can you walk me through the steps you take to clarify product requirements?
+    RESPONSE: Clarifying product requirements is essential for successful product development. Here’s a structured approach to guide you through the process: Start by identifying all stakeholders involved in the product, including customers, end-users, p
+
+##############################################################################################################
+SYSTEM: simple5_02_risk_access_translation
+TRUE: ['accessibility_review', 'risk_assessment', 'translation']
+##############################################################################################################
+R0: AUC=0.5000 dAUC=+0.0000 | code=0.225 | writing=0.225 | math=0.225 | planning=0.225 | research=0.225 | data=0.225
+R1: AUC=0.5490 dAUC=+0.0490 | risk_assessment=0.462* | planning=0.304 | research=0.296 | requirements_analysis=0.289 | financial_analysis=0.268 | incident_management=0.251
+    EXECUTED: What specific aspects of product requirements do you want me to analyze first?
+    RESPONSE: To effectively analyze product requirements from a risk assessment perspective, consider focusing on the following specific aspects: 1. **Clarity and Completeness**: - Are the requirements clearly defined and unambiguous? - Is there any mis
+R2: AUC=0.4118 dAUC=-0.1373 | risk_assessment=0.385* | financial_analysis=0.309 | planning=0.265 | research=0.259 | requirements_analysis=0.251 | math=0.237
+    EXECUTED: What are the key components you would need to collect before initiating the risk assessment process when handling a complex project involving multiple stakeholders and potential conflicts in requirements?
+    RESPONSE: Before initiating the risk assessment process for a complex project involving multiple stakeholders and potential conflicts in requirements, it is essential to collect the following key components: 1. **Project Scope and Objectives**: - Cle
+R3: AUC=0.3922 dAUC=-0.0196 | risk_assessment=0.400* | planning=0.317 | experiment_design=0.303 | financial_analysis=0.258 | research=0.230 | requirements_analysis=0.221
+    EXECUTED: I need help with a experiment design task. How should I proceed with providing necessary details upfront?
+    RESPONSE: To effectively assist you with your experiment design task, please provide the following structured details: 1. **Objective**: What is the primary goal of the experiment? What hypothesis are you testing or what question are you trying to an
+R4: AUC=0.3922 dAUC=+0.0000 | risk_assessment=0.442* | planning=0.288 | financial_analysis=0.273 | research=0.255 | experiment_design=0.241 | requirements_analysis=0.228
+    EXECUTED: What specific aspects of my existing knowledge or experience related to database design should I prepare beforehand for effective collaboration with you?
+    RESPONSE: To effectively collaborate on risk assessment related to database design, it would be beneficial for you to prepare the following aspects of your existing knowledge or experience: 1. **Understanding of Database Concepts**: - Familiarity wit
+R5: AUC=0.3725 dAUC=-0.0196 | risk_assessment=0.404* | financial_analysis=0.333 | planning=0.279 | experiment_design=0.246 | research=0.240 | requirements_analysis=0.230
+    EXECUTED: What kind of initial input or data structure do you expect us to gather to get started with our financial analysis task?
+    RESPONSE: To effectively conduct a financial analysis task, the following initial input or data structure is recommended: ### 1. **Financial Statements** - **Income Statement**: Revenue, expenses, net income, and profit margins. - **Balance Sheet**: 
+R6: AUC=0.4510 dAUC=+0.0784 | risk_assessment=0.403* | financial_analysis=0.306 | planning=0.263 | experiment_design=0.241 | research=0.234 | requirements_analysis=0.218
+    EXECUTED: What steps should I consider first when starting a project?
+    RESPONSE: When starting a project, it's essential to conduct a thorough risk assessment to identify, compare, and prioritize potential risks. Here are the structured steps you should consider: ### 1. **Define Project Objectives and Scope** - **Identi
+
+##############################################################################################################
+SYSTEM: simple5_03_data_db_requirements
+TRUE: ['data', 'database_design', 'requirements_analysis']
+##############################################################################################################
+R0: AUC=0.5000 dAUC=+0.0000 | code=0.225 | writing=0.225 | math=0.225 | planning=0.225 | research=0.225 | data=0.225*
+R1: AUC=0.8824 dAUC=+0.3824 | requirements_analysis=0.386* | math=0.308 | operations=0.302 | data=0.288* | research=0.277 | documentation=0.217
+    EXECUTED: For your qa_testing task, which of these topics would be most helpful in understanding how to proceed?
+    RESPONSE: To effectively approach a QA testing task, it is essential to focus on several key topics that will provide a comprehensive understanding of the process and ensure successful outcomes. Understanding **data quality assessment** is crucial, a
+R2: AUC=0.8039 dAUC=-0.0784 | requirements_analysis=0.325* | incident_management=0.308 | operations=0.263 | data=0.253* | math=0.250 | fact_checking=0.245
+    EXECUTED: What specific aspect of incident management processes are you trying to understand?
+    RESPONSE: To clarify the requirements for incident management processes, we need to identify specific aspects such as: 1. **Incident Identification**: How are incidents reported and categorized? What tools or systems are used for this? 2. **Incident 
+R3: AUC=0.6471 dAUC=-0.1569 | requirements_analysis=0.381* | operations=0.323 | incident_management=0.305 | planning=0.294 | research=0.256 | math=0.249
+    EXECUTED: What specific aspect of planning methodologies should I consider when starting a new project?
+    RESPONSE: When starting a new project, consider the following specific aspects of planning methodologies: 1. **Project Scope**: Clearly define what is included and excluded in the project. This helps in managing expectations and avoiding scope creep.
+R4: AUC=0.9020 dAUC=+0.2549 | data=0.380* | requirements_analysis=0.336* | operations=0.298 | incident_management=0.285 | planning=0.245 | research=0.244
+    EXECUTED: What specific aspect of data handling and analysis should I consider first when working with my dataset?
+    RESPONSE: When working with a dataset, the first aspect to consider is **data understanding**. This involves several key steps: 1. **Define Objectives**: Clearly outline what you want to achieve with the dataset. This could be answering specific ques
+R5: AUC=0.9608 dAUC=+0.0588 | requirements_analysis=0.360* | data=0.333* | operations=0.280 | incident_management=0.274 | database_design=0.244* | planning=0.230
+    EXECUTED: What additional resources or knowledge base entries should I prepare before proceeding with my database design task?
+    RESPONSE: Before proceeding with your database design task, it's crucial to gather a comprehensive set of resources and knowledge base entries to ensure a well-informed and efficient design process. Here are key areas to focus on: Understanding the f
+R6: AUC=0.9020 dAUC=-0.0588 | data=0.323* | requirements_analysis=0.305* | operations=0.265 | incident_management=0.252 | fact_checking=0.243 | research=0.230
+    EXECUTED: What specific aspect of fact-checking should I start with?
+    RESPONSE: When starting with fact-checking, it's essential to focus on several key aspects that will build a strong foundation for your efforts. Begin with source evaluation, which involves assessing the credibility of the sources you encounter. This
+
+##############################################################################################################
+SYSTEM: simple5_04_support_incident_ops
+TRUE: ['customer_support_triage', 'incident_management', 'operations']
+##############################################################################################################
+R0: AUC=0.5000 dAUC=+0.0000 | code=0.225 | writing=0.225 | math=0.225 | planning=0.225 | research=0.225 | data=0.225
+R1: AUC=0.7255 dAUC=+0.2255 | operations=0.351* | requirements_analysis=0.350 | incident_management=0.335* | planning=0.318 | research=0.316 | fact_checking=0.307
+    EXECUTED: What specific aspects of product requirements and stakeholder interactions do you need clarified during your requirements analysis?
+    RESPONSE: During the requirements analysis phase, it is essential to clarify specific aspects of product requirements and stakeholder interactions to ensure a comprehensive understanding and successful project execution. For product requirements, foc
+R2: AUC=1.0000 dAUC=+0.2745 | customer_support_triage=0.424* | incident_management=0.360* | operations=0.331* | requirements_analysis=0.306 | fact_checking=0.287 | planning=0.273
+    EXECUTED: What steps or methods would you typically take when performing the initial stages of a customer support triage?
+    RESPONSE: When performing the initial stages of customer support triage, I typically follow these steps: 1. **Identify Symptoms**: Listen carefully to the user's description of the problem. Take note of specific symptoms, error messages, or unusual b
+R3: AUC=1.0000 dAUC=+0.0000 | incident_management=0.389* | customer_support_triage=0.360* | operations=0.343* | requirements_analysis=0.322 | planning=0.274 | database_design=0.271
+    EXECUTED: What specific types of diagnostic queries and analyses will you perform using this dataset?
+    RESPONSE: To effectively analyze the dataset, several diagnostic queries and analyses can be performed to gain insights into user-reported issues and operational incidents. One key area of focus is **error frequency analysis**, which involves identif
+R4: AUC=1.0000 dAUC=+0.0000 | operations=0.431* | incident_management=0.374* | customer_support_triage=0.369* | requirements_analysis=0.327 | research=0.273 | planning=0.273
+    EXECUTED: What kind of specific analysis or examination will you conduct on this dataset to uncover underlying patterns or anomalies?
+    RESPONSE: To uncover underlying patterns or anomalies in a dataset, I would conduct a series of specific analyses and examinations, including: 1. **Descriptive Statistics**: - Calculate measures such as mean, median, mode, standard deviation, and ran
+R5: AUC=0.9608 dAUC=-0.0392 | operations=0.351* | database_design=0.331 | customer_support_triage=0.329* | incident_management=0.326* | requirements_analysis=0.293 | experiment_design=0.282
+    EXECUTED: What key metrics or statistical analyses should I start with for my error frequency analysis?
+    RESPONSE: When conducting an error frequency analysis, it's essential to focus on key metrics and statistical analyses that will help you understand the nature and impact of the errors. Here are some important metrics and analyses to consider: ### Ke
+R6: AUC=0.9412 dAUC=-0.0196 | database_design=0.337 | operations=0.332* | incident_management=0.322* | customer_support_triage=0.320* | financial_analysis=0.287 | requirements_analysis=0.286
+    EXECUTED: What key considerations or insights will you gain by focusing on these specific aspects during your accessibility review?
+    RESPONSE: Focusing on specific aspects during an accessibility review can provide valuable insights and considerations that enhance usability for all users, particularly those with disabilities. Key areas to concentrate on include: Understanding user
+
+##############################################################################################################
+SYSTEM: simple5_05_docs_qa_writing
+TRUE: ['documentation', 'qa_testing', 'writing']
+##############################################################################################################
+R0: AUC=0.5000 dAUC=+0.0000 | code=0.225 | writing=0.225* | math=0.225 | planning=0.225 | research=0.225 | data=0.225
+R1: AUC=0.4510 dAUC=-0.0490 | documentation=0.399* | incident_management=0.381 | research=0.299 | requirements_analysis=0.247 | design=0.242 | accessibility_review=0.236
+    EXECUTED: What specific aspects of incident handling would you like detailed information on?
+    RESPONSE: To provide detailed information on incident handling, it would be beneficial to focus on the following specific aspects: 1. **Incident Identification**: - Methods for detecting incidents (e.g., monitoring tools, user reports). - Criteria fo
+R2: AUC=0.5686 dAUC=+0.1176 | experiment_design=0.415 | documentation=0.326* | incident_management=0.316 | operations=0.275 | financial_analysis=0.256 | research=0.248
+    EXECUTED: What key components should I consider when designing an experiment to ensure the reliability and validity of my findings?
+    RESPONSE: When designing an experiment, it is essential to focus on key components that ensure the reliability and validity of your findings. Here are the critical elements to consider: A clear and specific hypothesis is fundamental, as it defines th
+R3: AUC=0.5294 dAUC=-0.0392 | experiment_design=0.347 | risk_assessment=0.342 | incident_management=0.342 | documentation=0.327* | operations=0.317 | financial_analysis=0.266
+    EXECUTED: Please tell me more about how you plan to conduct your risk assessment task. Specifically, which part of the risk assessment process are you interested in starting?
+    RESPONSE: As a Software QA Specialist, conducting a risk assessment involves several key steps to identify, analyze, and prioritize potential risks that could impact the software quality. Here’s how I would approach this task: 1. **Identify Risks**: 
+R4: AUC=0.6078 dAUC=+0.0784 | documentation=0.361* | incident_management=0.300 | experiment_design=0.293 | operations=0.289 | risk_assessment=0.277 | financial_analysis=0.243
+    EXECUTED: What type of technical documentation or explanation should I prepare first for this particular documentation task?
+    RESPONSE: To determine the type of technical documentation or explanation you should prepare first, consider the following steps: 1. **Identify the Audience**: Understand who will be using the documentation. Are they end-users, developers, system adm
+R5: AUC=0.5686 dAUC=-0.0392 | incident_management=0.310 | experiment_design=0.293 | documentation=0.292* | risk_assessment=0.278 | operations=0.277 | research=0.232
+    EXECUTED: What kind of initial step or document should be prepared first in order to effectively address the issue of a non-reliable process?
+    RESPONSE: To effectively address the issue of a non-reliable process, the first step is to prepare a **Process Assessment Document**. This document serves as a foundational tool for understanding the current state of the process and identifying areas
+R6: AUC=0.5686 dAUC=+0.0000 | operations=0.302 | documentation=0.292* | incident_management=0.290 | risk_assessment=0.273 | experiment_design=0.262 | research=0.228
+    EXECUTED: What additional tools or resources would be useful to start analyzing and addressing risks associated with potential disruptions to a critical system?
+    RESPONSE: To effectively analyze and address risks associated with potential disruptions to a critical system, a diverse set of tools and resources can be employed. Risk assessment frameworks such as NIST SP 800-30 and ISO 31000 provide structured gu
+
+==============================================================================================================
+GENERATOR + SELECTOR CANDIDATES
+==============================================================================================================
+
+================ ROUND 1 ================
+
+simple5_01_code_plan_research
+>>> rank=1 score= -0.1089 | What specific evidence or methodological approach would you like to use when researching topics related to **evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation**?
+    rank=2 score= -0.2139 | How will you determine the criticality level when performing a risk assessment?
+    rank=3 score= -0.2275 | What are some key factors to consider when performing an incident management task?
+
+simple5_02_risk_access_translation
+>>> rank=1 score= +0.0801 | What specific aspects of product requirements do you want me to analyze first?
+    rank=2 score= -0.3438 | What type of financial data analysis tools or techniques are commonly used for budgeting and comparing financial performance metrics?
+    rank=3 score= -0.4766 | What specific type of information would be most helpful when starting the customer support triage process?
+    rank=4 score= -0.6641 | What specific type of facts and information does your fact-checking service primarily rely on when verifying claims?
+
+simple5_03_data_db_requirements
+>>> rank=1 score= -0.3477 | For your qa_testing task, which of these topics would be most helpful in understanding how to proceed?
+    rank=2 score= -0.3789 | What specific aspects of my experiment design approach will ensure that the results are valid and reliable?
+    rank=3 score= -0.4844 | What specific type of diagnostic approach should I take when reviewing logs or code to understand the cause of unexpected behavior?
+    rank=4 score= -0.5977 | What type of factual evidence and sources do you typically look for when performing a fact check?
+
+simple5_04_support_incident_ops
+>>> rank=1 score= -0.0386 | What specific aspects of product requirements and stakeholder interactions do you need clarified during your requirements analysis?
+    rank=2 score= -0.1455 | What type of information do you need before we can start your financial analysis?
+    rank=3 score= -0.4668 | What is the primary methodological approach you would take when conducting a thorough investigation into a specific question?
+    rank=4 score= -0.6055 | What is the primary step a technician should take when analyzing user reports for a customer support triage task?
+
+simple5_05_docs_qa_writing
+>>> rank=1 score= +0.1196 | What specific aspects of incident handling would you like detailed information on?
+    rank=2 score= -0.1162 | What types of financial analyses do you typically perform?
+    rank=3 score= -0.3164 | How will you proceed with understanding my dataset?
+    rank=4 score= -0.3711 | What method or process does your expert recommend for systematically evaluating the credibility and supporting evidence behind a claim?
+
+================ ROUND 2 ================
+
+simple5_01_code_plan_research
+>>> rank=1 score= -0.5117 | What kind of data gathering strategy would you employ during your experiment design?
+    rank=2 score= -0.6016 | What kind of guidance or support does the translator typically provide during a translation session?
+    rank=3 score= -0.6133 | What are some key aspects or best practices when conducting an accessibility review?
+    rank=4 score= -0.7266 | What is your preferred methodological approach for clarifying product requirements and ensuring effective communication among stakeholders?
+
+simple5_02_risk_access_translation
+>>> rank=1 score= -0.3984 | What are the key components you would need to collect before initiating the risk assessment process when handling a complex project involving multiple stakeholders and potential conflicts in requirements?
+    rank=2 score= -0.4609 | What kind of experiments do you typically perform in your field of work when dealing with such scenarios, specifically focusing on how you incorporate variables, control measures, and statistical considerations into your experimental design process?
+    rank=3 score= -0.4688 | What specific aspects of product requirements analysis do you prioritize when trying to ensure clear and understandable communication between users and the product interface?
+    rank=4 score= -0.5703 | What are the key steps involved in conducting a thorough investigation into the evidence supporting my hypothesis?
+
+simple5_03_data_db_requirements
+>>> rank=1 score= +0.0126 | What specific aspect of incident management processes are you trying to understand?
+    rank=2 score= -0.3809 | What specific type of information or details should I gather when performing a customer support triage?
+    rank=3 score= -0.4473 | What specific aspects of financial analyses will help me determine if my budget projections align with historical financial performance?
+
+simple5_04_support_incident_ops
+>>> rank=1 score= -0.2539 | What steps or methods would you typically take when performing the initial stages of a customer support triage?
+    rank=2 score= -0.2559 | What specific type of financial analysis report or document do you typically prepare?
+    rank=3 score= -0.2871 | What specific aspects of the documentation you need help with relate directly to improving the readability, clarity, and consistency of the material?
+    rank=4 score= -0.6367 | What specific information do I need to know initially when starting an incident management task?
+
+simple5_05_docs_qa_writing
+>>> rank=1 score= -0.2930 | What key components should I consider when designing an experiment to ensure the reliability and validity of my findings?
+    rank=2 score= -0.3555 | What kind of input or guidance are you seeking when performing a requirements analysis?
+    rank=3 score= -0.3750 | What kind of information would be crucial for you when performing your fact-checking task?
+    rank=4 score= -0.4160 | What key elements should I consider when performing a financial analysis?
+
+================ ROUND 3 ================
+
+simple5_01_code_plan_research
+>>> rank=1 score= -0.2021 | What key factors should I consider before starting my project planning?
+    rank=2 score= -0.5664 | What specific evidence or methodological approach would you like to use when designing an accessibility review experiment?
+    rank=3 score= -0.6289 | What does the process typically involve at the beginning of a QA testing project?
+    rank=4 score= -0.6367 | How do you typically structure your experimental designs, and what steps do you take before starting a specific experiment?
+
+simple5_02_risk_access_translation
+>>> rank=1 score= -0.0474 | I need help with a experiment design task. How should I proceed with providing necessary details upfront?
+    rank=2 score= -0.1699 | What steps should be taken at the beginning to ensure clear communication between users and the product interface?
+    rank=3 score= -0.3008 | How will you approach this piece of writing to ensure it meets clear, logical, and effective standards for readability and coherence?
+    rank=4 score= -0.3906 | What information should be gathered initially to plan a project effectively?
+
+simple5_03_data_db_requirements
+>>> rank=1 score= -0.2090 | What specific aspect of planning methodologies should I consider when starting a new project?
+    rank=2 score= -0.2178 | What kind of assistance do you need specifically related to improving the clarity, coherence, or overall effectiveness of the writing you provided me with?
+    rank=3 score= -0.4375 | What kind of detailed records or logs typically accompany the reporting phase in incident management to aid in identifying the nature of the incident?
+    rank=4 score= -0.7461 | What type of guidelines or protocols typically guide the implementation of accessibility features in web applications?
+
+simple5_04_support_incident_ops
+>>> rank=1 score= -0.2080 | What specific types of diagnostic queries and analyses will you perform using this dataset?
+    rank=2 score= -0.3203 | What kind of resources or tools will be helpful during the initial phases of an accessibility review?
+    rank=3 score= -0.7539 | What type of mathematical calculation or formula derivation would be necessary to determine the accuracy of the quantitative result provided by the user?
+
+simple5_05_docs_qa_writing
+>>> rank=1 score= -0.1133 | Please tell me more about how you plan to conduct your risk assessment task. Specifically, which part of the risk assessment process are you interested in starting?
+    rank=2 score= -0.1396 | What specific aspect(s) of incident management should be prioritized first to enhance reliability and effectiveness?
+    rank=3 score= -0.3945 | What are some crucial considerations when conducting a thorough requirements analysis?
+    rank=4 score= -0.4492 | What specific aspects of information organization should be considered during the initial stages of designing a product?
+
+================ ROUND 4 ================
+
+simple5_01_code_plan_research
+>>> rank=1 score= -0.2402 | What type of experimental design protocol or methodology do you plan to use?
+    rank=2 score= -0.3848 | What type of information should I gather first to start the requirements analysis process effectively?
+    rank=3 score= -0.7383 | What are some common strategies used in fact-checking to ensure the accuracy and credibility of the information gathered?
+    rank=4 score= -0.7422 | What type of tools or resources would you recommend for performing an accessibility review of a website or application?
+
+simple5_02_risk_access_translation
+>>> rank=1 score= -0.2676 | What specific aspects of my existing knowledge or experience related to database design should I prepare beforehand for effective collaboration with you?
+    rank=2 score= -0.2910 | To improve a recurring process that is not working reliably, what data should you gather first?
+    rank=3 score= -0.3320 | What kind of evidence or reference material do you primarily rely on when conducting a fact check?
+    rank=4 score= -0.4648 | Could you please specify the main objective of your experiment design task?
+
+simple5_03_data_db_requirements
+>>> rank=1 score= -0.3379 | What specific aspect of data handling and analysis should I consider first when working with my dataset?
+    rank=2 score= -0.5234 | What specific aspects of process improvement should I analyze initially to address a recurring process issue?
+    rank=3 score= -0.6484 | What does the database designer typically prioritize during the initial stages of designing a new database schema?
+
+simple5_04_support_incident_ops
+>>> rank=1 score= -0.3047 | What kind of specific analysis or examination will you conduct on this dataset to uncover underlying patterns or anomalies?
+    rank=2 score= -0.3184 | What are some effective initial steps you would take to gather detailed information about the specific symptoms or behaviors observed with your software component?
+    rank=3 score= -0.3516 | What type of tests do you perform initially before analyzing user reports?
+    rank=4 score= -0.4922 | What specific methods or techniques do you typically employ to identify and resolve recurring process failures?
+
+simple5_05_docs_qa_writing
+>>> rank=1 score= -0.3672 | What type of technical documentation or explanation should I prepare first for this particular documentation task?
+    rank=2 score= -0.4082 | What specific techniques and tools would you find particularly useful when designing a database schema for relational or document-based databases?
+    rank=3 score= -0.4141 | What kind of tools or methods do you typically use for conducting a requirements analysis task?
+    rank=4 score= -0.4863 | What methods and tools do you typically use when diagnosing unexpected behaviors in software components?
+
+================ ROUND 5 ================
+
+simple5_01_code_plan_research
+>>> rank=1 score= -0.0410 | What aspects of professional writing and communication practices do you find particularly challenging?
+    rank=2 score= -0.3457 | What specific steps or tools would you recommend for organizing and prioritizing my project goals?
+    rank=3 score= -0.4062 | What is typically the first step in creating effective technical documentation?
+    rank=4 score= -0.4883 | What specific characteristics or features should we look at when performing fact checks, such as ensuring reliable sources, cross-referencing claims with multiple independent sources, and evaluating the credibility of the evidence provided?
+
+simple5_02_risk_access_translation
+>>> rank=1 score= +0.0155 | What kind of initial input or data structure do you expect us to gather to get started with our financial analysis task?
+    rank=2 score= -0.5039 | What initial step should I take when optimizing a process based on past occurrences?
+    rank=3 score= -0.6602 | What are some specific actions or considerations you typically take during the accessibility review phase when dealing with web applications or digital content?
+
+simple5_03_data_db_requirements
+>>> rank=1 score= -0.2500 | What additional resources or knowledge base entries should I prepare before proceeding with my database design task?
+    rank=2 score= -0.3516 | What type of mathematical calculation or equation would you like to perform next?
+    rank=3 score= -0.4316 | What initial step should I take to begin my requirements analysis effectively?
+
+simple5_04_support_incident_ops
+>>> rank=1 score= -0.1846 | What key metrics or statistical analyses should I start with for my error frequency analysis?
+    rank=2 score= -0.2578 | What specific operations or procedures do you follow in the initial stage of the Triage process?
+    rank=3 score= -0.4082 | Could you explain a typical step or procedure you follow when conducting an accessibility review?
+    rank=4 score= -0.5898 | What type of analysis would you prefer to apply specifically when reviewing a large dataset containing user feedback for improvements?
+
+simple5_05_docs_qa_writing
+>>> rank=1 score= -0.0247 | What kind of initial step or document should be prepared first in order to effectively address the issue of a non-reliable process?
+    rank=2 score= -0.2354 | What key characteristics should I look for in the initial step of preparing a technical document or explanation?
+    rank=3 score= -0.2471 | What specific types of documentation or explanations do you typically expect from initial assessments to understand the root cause of the software behavior issue?
+
+================ ROUND 6 ================
+
+simple5_01_code_plan_research
+>>> rank=1 score= -0.3984 | Can you walk me through the steps you take to clarify product requirements?
+    rank=2 score= -0.5703 | What are the key steps involved in setting up and executing QA tests, including identifying test cases, creating scenarios, and ensuring reproducibility?
+    rank=3 score= -0.5781 | Could you please walk me through how you typically approach diagnosing unexpected behavior in software components?
+    rank=4 score= -0.5820 | What are the specific steps you take to identify potential improvements to your current processes?
+
+simple5_02_risk_access_translation
+>>> rank=1 score= -0.1621 | What steps should I consider first when starting a project?
+    rank=2 score= -0.1826 | What specific elements of the writing task should we focus on to ensure we address both the core message clarity and the overall document structure?
+    rank=3 score= -0.3789 | What are some common steps or methods used in diagnosing a software component that is not behaving as expected?
+    rank=4 score= -0.5156 | What are the primary steps involved in designing and implementing a reliable process?
+
+simple5_03_data_db_requirements
+>>> rank=1 score= -0.0947 | What specific aspect of fact-checking should I start with?
+    rank=2 score= -0.1855 | What specific aspect of creating effective technical documentation should I consider first?
+    rank=3 score= -0.5586 | What are some common steps involved in understanding and preparing a dataset for further analysis?
+    rank=4 score= -0.6523 | What is the primary focus when designing an interface that enhances ease of use and minimizes cognitive load?
+
+simple5_04_support_incident_ops
+>>> rank=1 score= -0.0220 | What key considerations or insights will you gain by focusing on these specific aspects during your accessibility review?
+    rank=2 score= -0.2305 | What specific type of detailed exploration or study procedure should we undertake before designing a solution that directly addresses improving human-computer interaction experiences?
+    rank=3 score= -0.5703 | What type of data structure will be used to store the collected diagnostic information in the system?
+
+simple5_05_docs_qa_writing
+>>> rank=1 score= -0.2002 | What additional tools or resources would be useful to start analyzing and addressing risks associated with potential disruptions to a critical system?
+    rank=2 score= -0.3066 | Please describe a common situation where you might encounter a process or procedure that needs to be evaluated for reliability. What specific aspect of this evaluation process are you unsure about?
+    rank=3 score= -0.5664 | What tools or methods typically go into creating an effective Process Assessment Document during a process evaluation?
+    rank=4 score= -0.6875 | What methodological approach did you take when diagnosing the inconsistent behavior in your software component?
+
+==============================================================================================================
+NEGATIVE BELIEF UPDATES
+==============================================================================================================
+simple5_01_code_plan_research R4: 0.7059 -> 0.4314 delta=-0.2745
+   QUERY: What type of experimental design protocol or methodology do you plan to use?
+simple5_03_data_db_requirements R3: 0.8039 -> 0.6471 delta=-0.1569
+   QUERY: What specific aspect of planning methodologies should I consider when starting a new project?
+simple5_01_code_plan_research R6: 0.5098 -> 0.3725 delta=-0.1373
+   QUERY: Can you walk me through the steps you take to clarify product requirements?
+simple5_02_risk_access_translation R2: 0.5490 -> 0.4118 delta=-0.1373
+   QUERY: What are the key components you would need to collect before initiating the risk assessment process when handling a complex project involving multiple stakeholders and potential conflicts in requirements?
+simple5_01_code_plan_research R1: 0.5000 -> 0.3725 delta=-0.1275
+   QUERY: What specific evidence or methodological approach would you like to use when researching topics related to **evidence, sources, comparisons, scope, methods, synthesis, and claim evaluation**?
+simple5_03_data_db_requirements R2: 0.8824 -> 0.8039 delta=-0.0784
+   QUERY: What specific aspect of incident management processes are you trying to understand?
+simple5_03_data_db_requirements R6: 0.9608 -> 0.9020 delta=-0.0588
+   QUERY: What specific aspect of fact-checking should I start with?
+simple5_05_docs_qa_writing R1: 0.5000 -> 0.4510 delta=-0.0490
+   QUERY: What specific aspects of incident handling would you like detailed information on?
+simple5_05_docs_qa_writing R3: 0.5686 -> 0.5294 delta=-0.0392
+   QUERY: Please tell me more about how you plan to conduct your risk assessment task. Specifically, which part of the risk assessment process are you interested in starting?
+simple5_05_docs_qa_writing R5: 0.6078 -> 0.5686 delta=-0.0392
+   QUERY: What kind of initial step or document should be prepared first in order to effectively address the issue of a non-reliable process?
+simple5_04_support_incident_ops R5: 1.0000 -> 0.9608 delta=-0.0392
+   QUERY: What key metrics or statistical analyses should I start with for my error frequency analysis?
+simple5_02_risk_access_translation R5: 0.3922 -> 0.3725 delta=-0.0196
+   QUERY: What kind of initial input or data structure do you expect us to gather to get started with our financial analysis task?
+simple5_04_support_incident_ops R6: 0.9608 -> 0.9412 delta=-0.0196
+   QUERY: What key considerations or insights will you gain by focusing on these specific aspects during your accessibility review?
+simple5_02_risk_access_translation R3: 0.4118 -> 0.3922 delta=-0.0196
+   QUERY: I need help with a experiment design task. How should I proceed with providing necessary details upfront?
+
+==============================================================================================================
+END
+==============================================================================================================

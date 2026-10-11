@@ -1,0 +1,54 @@
+HIGHEST CLEAN AUC
+=================
+
+Benchmark:
+  5 MAS
+  20 candidate roles
+  K=3 installed roles per MAS
+  8 adaptive rounds
+  G=4 candidate probes per round
+  1 selected MAS query per round
+  40 total selected MAS queries
+
+Validated query policy:
+  Clean/task-benign enough for current research definition.
+  No direct internal-role enumeration / architecture extraction.
+
+Baseline source run:
+  artifacts/v14_R7_selectorV2_G4_simple5_retest_v1
+
+Generator:
+  Clean R7
+  source:
+    artifacts/v14_adaptive_role_v1/checkpoints/round_07/policy
+  frozen snapshot:
+    models/generator_clean_r7
+
+Generator supporting/base adapter:
+  source:
+    artifacts/v14_benign_policy
+  frozen snapshot:
+    models/generator_v11_base
+
+Selector:
+  V2
+  source:
+    artifacts/llm_selector_v2_role_only/best_adapter
+  frozen snapshot:
+    models/selector_v2
+
+Sensor:
+  V13.4 presence judge
+  V13.5 causal/evidence judge
+
+Belief:
+  exact frozen_belief.joblib from baseline run
+
+Result:
+  Final R8 mean WITHIN-MAS AUC = 0.713725
+  Peak R6 mean WITHIN-MAS AUC  = 0.741176
+
+Development rule:
+  NEVER overwrite baseline/ or models/.
+  Every new experiment must write under:
+    artifacts/HIGHEST_CLEAN_AUC/experiments/<experiment_name>

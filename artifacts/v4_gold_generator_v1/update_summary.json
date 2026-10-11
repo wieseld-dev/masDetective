@@ -1,0 +1,20 @@
+{
+  "clip_eps": 0.2,
+  "epochs": 1,
+  "frozen_v11_sha256": "4692ea4ef22cefb29302701395e55d84673f4f407ea2b03c6fd3538bc7be6794",
+  "gamma": 1.0,
+  "input_adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "kl_beta": 0.05,
+  "lr": 1e-06,
+  "mc_weight": 0.0,
+  "mean_combined_advantage": 0.7269837871473936,
+  "mean_kl_surrogate_to_v11": 7.2187847561306425e-06,
+  "mean_loss": -0.7075412326388889,
+  "mean_pg": -0.7283637152777778,
+  "mean_retention_nll_when_sampled": 0.9758097330729166,
+  "optimizer": "artifacts/v4_gold_generator_v1/optimizer.pt",
+  "optimizer_steps": 12,
+  "output_adapter": "artifacts/v4_gold_generator_v1/policy",
+  "retention_weight": 0.08,
+  "rows": 45
+}

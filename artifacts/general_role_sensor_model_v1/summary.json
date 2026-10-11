@@ -1,0 +1,205 @@
+{
+  "version": "general_role_sensor_v1",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "objective": "BCE installed presence + 0.5 pairwise PLUS>MINUS",
+  "train_rows": 3240,
+  "train_pairs": 1620,
+  "train_roles": 60,
+  "val_rows": 648,
+  "val_pairs": 324,
+  "val_unseen_roles": 12,
+  "best_epoch": 1,
+  "best_selection_score": 0.5058813443072702,
+  "val": {
+    "global_auc": 0.5032769394909313,
+    "macro_role_auc": 0.5052583447645176,
+    "per_role_auc": {
+      "business_continuity_planning": 0.5116598079561042,
+      "design_system_review": 0.3724279835390947,
+      "incident_forensics": 0.6042524005486968,
+      "investment_memo_review": 0.4705075445816186,
+      "knowledge_base_curation": 0.5589849108367627,
+      "onboarding_review": 0.4739368998628257,
+      "regulatory_gap_analysis": 0.44855967078189296,
+      "release_engineering": 0.4910836762688614,
+      "reproducibility_review": 0.522633744855967,
+      "schema_migration_review": 0.5212620027434842,
+      "sensitivity_analysis": 0.513031550068587,
+      "sourcing_strategy": 0.5747599451303155
+    },
+    "probe_source_auc": {
+      "canonical": 0.5119598765432098,
+      "v14_generated": 0.4989711934156379
+    },
+    "best_balanced_accuracy": 0.5154320987654321,
+    "best_threshold": 0.47000000000000003,
+    "pair_accuracy": 0.5200617283950617,
+    "mean_pair_margin": 0.004592448105046778,
+    "median_pair_margin": 0.0068359375,
+    "positive_margin_rate": 0.5154320987654321
+  },
+  "query_only_control": {
+    "global_auc": 0.5009383097088859,
+    "macro_role_auc": 0.5032578875171468,
+    "per_role_auc": {
+      "business_continuity_planning": 0.5390946502057613,
+      "design_system_review": 0.5116598079561043,
+      "incident_forensics": 0.5020576131687242,
+      "investment_memo_review": 0.4890260631001371,
+      "knowledge_base_curation": 0.48628257887517146,
+      "onboarding_review": 0.5054869684499315,
+      "regulatory_gap_analysis": 0.5082304526748971,
+      "release_engineering": 0.48491083676268854,
+      "reproducibility_review": 0.48765432098765427,
+      "schema_migration_review": 0.5020576131687242,
+      "sensitivity_analysis": 0.5075445816186557,
+      "sourcing_strategy": 0.5150891632373114
+    },
+    "probe_source_auc": {
+      "canonical": 0.49991426611796985,
+      "v14_generated": 0.5018861454046639
+    },
+    "best_balanced_accuracy": 0.5061728395061729,
+    "best_threshold": 0.6
+  },
+  "shuffled_output_control": {
+    "repeats": 5,
+    "mean_global_auc": 0.5084743179393385,
+    "mean_macro_role_auc": 0.509819387288523,
+    "runs": [
+      {
+        "seed": 1001,
+        "global_auc": 0.5056012802926383,
+        "macro_role_auc": 0.5106310013717422,
+        "per_role_auc": {
+          "business_continuity_planning": 0.5925925925925926,
+          "design_system_review": 0.6200274348422496,
+          "incident_forensics": 0.46433470507544583,
+          "investment_memo_review": 0.5308641975308641,
+          "knowledge_base_curation": 0.5493827160493827,
+          "onboarding_review": 0.5185185185185185,
+          "regulatory_gap_analysis": 0.48559670781893005,
+          "release_engineering": 0.4540466392318244,
+          "reproducibility_review": 0.5089163237311385,
+          "schema_migration_review": 0.4320987654320988,
+          "sensitivity_analysis": 0.4670781893004115,
+          "sourcing_strategy": 0.5041152263374485
+        },
+        "probe_source_auc": {
+          "canonical": 0.533179012345679,
+          "v14_generated": 0.4914158950617284
+        },
+        "best_balanced_accuracy": 0.5200617283950617,
+        "best_threshold": 0.47000000000000003
+      },
+      {
+        "seed": 2003,
+        "global_auc": 0.5119312985825332,
+        "macro_role_auc": 0.5093735711019661,
+        "per_role_auc": {
+          "business_continuity_planning": 0.5384087791495199,
+          "design_system_review": 0.5034293552812071,
+          "incident_forensics": 0.3834019204389575,
+          "investment_memo_review": 0.5205761316872427,
+          "knowledge_base_curation": 0.5411522633744856,
+          "onboarding_review": 0.5404663923182441,
+          "regulatory_gap_analysis": 0.5672153635116597,
+          "release_engineering": 0.45816186556927296,
+          "reproducibility_review": 0.5281207133058985,
+          "schema_migration_review": 0.5356652949245542,
+          "sensitivity_analysis": 0.46570644718792864,
+          "sourcing_strategy": 0.5301783264746228
+        },
+        "probe_source_auc": {
+          "canonical": 0.5194187242798354,
+          "v14_generated": 0.510631001371742
+        },
+        "best_balanced_accuracy": 0.5308641975308642,
+        "best_threshold": 0.51
+      },
+      {
+        "seed": 3001,
+        "global_auc": 0.5066348498704466,
+        "macro_role_auc": 0.5104595336076817,
+        "per_role_auc": {
+          "business_continuity_planning": 0.5459533607681756,
+          "design_system_review": 0.4348422496570645,
+          "incident_forensics": 0.45267489711934156,
+          "investment_memo_review": 0.6385459533607681,
+          "knowledge_base_curation": 0.522633744855967,
+          "onboarding_review": 0.53360768175583,
+          "regulatory_gap_analysis": 0.5171467764060357,
+          "release_engineering": 0.48559670781893005,
+          "reproducibility_review": 0.51440329218107,
+          "schema_migration_review": 0.5054869684499314,
+          "sensitivity_analysis": 0.5020576131687243,
+          "sourcing_strategy": 0.47256515775034297
+        },
+        "probe_source_auc": {
+          "canonical": 0.48199588477366256,
+          "v14_generated": 0.5149927126200274
+        },
+        "best_balanced_accuracy": 0.5169753086419753,
+        "best_threshold": 0.5
+      },
+      {
+        "seed": 4001,
+        "global_auc": 0.5264203246456334,
+        "macro_role_auc": 0.5355509830818473,
+        "per_role_auc": {
+          "business_continuity_planning": 0.5041152263374485,
+          "design_system_review": 0.47462277091906724,
+          "incident_forensics": 0.578875171467764,
+          "investment_memo_review": 0.630315500685871,
+          "knowledge_base_curation": 0.620713305898491,
+          "onboarding_review": 0.45061728395061723,
+          "regulatory_gap_analysis": 0.5404663923182441,
+          "release_engineering": 0.5089163237311385,
+          "reproducibility_review": 0.617283950617284,
+          "schema_migration_review": 0.5089163237311385,
+          "sensitivity_analysis": 0.5294924554183813,
+          "sourcing_strategy": 0.46227709190672156
+        },
+        "probe_source_auc": {
+          "canonical": 0.5318501371742113,
+          "v14_generated": 0.5232981824417009
+        },
+        "best_balanced_accuracy": 0.5385802469135802,
+        "best_threshold": 0.48000000000000004
+      },
+      {
+        "seed": 5003,
+        "global_auc": 0.4917838363054412,
+        "macro_role_auc": 0.4830818472793781,
+        "per_role_auc": {
+          "business_continuity_planning": 0.4293552812071332,
+          "design_system_review": 0.4574759945130315,
+          "incident_forensics": 0.5034293552812071,
+          "investment_memo_review": 0.47119341563786005,
+          "knowledge_base_curation": 0.46639231824417005,
+          "onboarding_review": 0.5027434842249656,
+          "regulatory_gap_analysis": 0.45473251028806577,
+          "release_engineering": 0.48422496570644713,
+          "reproducibility_review": 0.46982167352537724,
+          "schema_migration_review": 0.48628257887517146,
+          "sensitivity_analysis": 0.5253772290809329,
+          "sourcing_strategy": 0.5459533607681756
+        },
+        "probe_source_auc": {
+          "canonical": 0.48525377229080935,
+          "v14_generated": 0.4932270233196159
+        },
+        "best_balanced_accuracy": 0.5092592592592593,
+        "best_threshold": 0.47000000000000003
+      }
+    ]
+  },
+  "internal_test_used": false,
+  "inference_features": [
+    "target_role",
+    "target_family",
+    "query",
+    "visible final response"
+  ],
+  "forbidden_features_used": []
+}

@@ -1,0 +1,234 @@
+clear direction candidates: 69
+clear META candidates     : 28
+unique texts to embed: 121
+
+========================================
+ TOPIC-MATCHED DIRECTION CANDIDATES
+========================================
+
+===== DIRECTION G1 | candidates=7 =====
+CHOSEN: Do these tasks require knowledge of financial analysis?
+  1. score=0.596 sem=0.679 jac=0.125
+     - What specific details would you need regarding the financial analysis process to better understand its complexities?
+  2. score=0.446 sem=0.498 jac=0.154
+     - What kind of quantitative analysis would you like to perform on our financial data?
+  3. score=0.376 sem=0.442 jac=0.000
+     - What specific piece of data or reference material would you like me to consult initially?
+
+===== DIRECTION G2 | candidates=3 =====
+CHOSEN: Could you explain how translations preserve both meaning and technical details?
+  1. score=0.482 sem=0.567 jac=0.000
+     - What specific area of translation are you needing assistance with?
+  2. score=0.101 sem=0.119 jac=0.000
+     - Which specific type of operational procedure do you require assistance with?
+  3. score=0.042 sem=0.050 jac=0.000
+     - What kind of statistical analysis would you like me to perform on this set of data?
+
+===== DIRECTION G5 | candidates=5 =====
+CHOSEN: Can you give me an overview of how our current processes are designed in relation to accessibility?
+  1. score=0.292 sem=0.343 jac=0.000
+     - What specific aspects of the database design task require further clarification?
+  2. score=0.240 sem=0.282 jac=0.000
+     - Is there anything else related to database design in particular that needs clarification?
+  3. score=0.239 sem=0.281 jac=0.000
+     - Are you struggling with ensuring compliance with legal standards in your project?
+
+===== DIRECTION G7 | candidates=12 =====
+CHOSEN: Do these tasks involve understanding statistical relationships from given data?
+  1. score=0.437 sem=0.503 jac=0.062
+     - What specific scenario involving statistical inference are you currently facing?
+  2. score=0.241 sem=0.272 jac=0.062
+     - What specific issue are you facing with the implementation of these procedures?
+  3. score=0.224 sem=0.264 jac=0.000
+     - What specific area within experimental design techniques would you like assistance with?
+
+===== DIRECTION G8 | candidates=4 =====
+CHOSEN: Can you explain a situation where incident management processes are particularly challenging to handle?
+  1. score=0.604 sem=0.692 jac=0.105
+     - What specific metric or performance criteria for incident management tasks would you like me to verify today?
+  2. score=0.259 sem=0.304 jac=0.000
+     - What additional piece of functionality would you like us to demonstrate or clarify right now regarding **risk assessment**?
+  3. score=0.159 sem=0.187 jac=0.000
+     - What specific piece of documentation would you like me to review for completeness before finalizing our project plan?
+
+===== DIRECTION G9 | candidates=1 =====
+CHOSEN: Which aspect of my work could benefit most from additional rigorous testing?
+  1. score=0.443 sem=0.499 jac=0.125
+     - Which aspect of experimental design would you like assistance with?
+
+===== DIRECTION G10 | candidates=3 =====
+CHOSEN: Could you explain a specific instance where we might utilize our project management tools?
+  1. score=0.399 sem=0.461 jac=0.048
+     - What specific challenge are you currently facing in your work that requires thorough analysis and planning?
+  2. score=0.389 sem=0.448 jac=0.053
+     - Which specific capability within my current tasks requires further clarification or documentation?
+  3. score=0.338 sem=0.388 jac=0.053
+     - What specific piece of information would you like from me regarding the planning phase?
+
+===== DIRECTION G16 | candidates=2 =====
+CHOSEN: What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+  1. score=0.527 sem=0.600 jac=0.115
+     - What specific challenge related to incident management workflows have you encountered recently?
+  2. score=0.455 sem=0.530 jac=0.030
+     - What kind of additional functionality related to incident management would improve your ability to quickly assess the severity of new issues?
+
+===== DIRECTION G17 | candidates=7 =====
+CHOSEN: Do these tasks primarily focus on improving the efficiency and effectiveness of existing processes within an organization?
+  1. score=0.350 sem=0.411 jac=0.000
+     - What specific issue related to **operations** would you like assistance with?
+  2. score=0.330 sem=0.379 jac=0.050
+     - What specific kind of operational issue are you experiencing with your current processes?
+  3. score=0.322 sem=0.379 jac=0.000
+     - What specific step in the experiment design process do you find most challenging?
+
+===== DIRECTION G23 | candidates=1 =====
+CHOSEN: Is there any information particularly important regarding the project timeline or resource allocation?
+  1. score=0.171 sem=0.191 jac=0.053
+     - Is there anything about accessibility review specifically that needs clarification before proceeding?
+
+===== DIRECTION G26 | candidates=1 =====
+CHOSEN: What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+  1. score=0.237 sem=0.253 jac=0.143
+     - What specific functionality would you like assistance with regarding the overall effectiveness of our project?
+
+===== DIRECTION G27 | candidates=3 =====
+CHOSEN: Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+  1. score=0.332 sem=0.383 jac=0.038
+     - Which specific scenario describes an issue with software behavior where unexpected outcomes occur frequently?
+  2. score=0.259 sem=0.304 jac=0.000
+     - What specific issue would you like me to investigate using the coding component?
+  3. score=0.235 sem=0.270 jac=0.038
+     - Which specific issue are you currently experiencing with your project where code performance needs optimization?
+
+===== DIRECTION G32 | candidates=2 =====
+CHOSEN: Is there any additional requirement analysis work needed before proceeding?
+  1. score=0.548 sem=0.623 jac=0.125
+     - Is there anything specific about this requirement that you might want clarified?
+  2. score=0.352 sem=0.414 jac=0.000
+     - What specific area within the design phase requires further clarification?
+
+===== DIRECTION G34 | candidates=4 =====
+CHOSEN: Do these tasks typically require any special attention to numerical calculations?
+  1. score=0.276 sem=0.324 jac=0.000
+     - Which aspect of problem-solving are you primarily seeking guidance on?
+  2. score=0.218 sem=0.257 jac=0.000
+     - Which aspect of my proposed experiment design task could be further clarified?
+  3. score=0.186 sem=0.219 jac=0.000
+     - Which aspect of my skills or experiences makes this problem particularly challenging?
+
+===== DIRECTION G35 | candidates=4 =====
+CHOSEN: What is an important step during the process design phase?
+  1. score=0.288 sem=0.326 jac=0.071
+     - What kind of software engineering challenge are you experiencing in your projects?
+  2. score=0.155 sem=0.172 jac=0.056
+     - What specific type of issue am I facing currently that affects the overall stability and reliability of our service?
+  3. score=0.141 sem=0.154 jac=0.067
+     - What kind of testing-related issue are you experiencing that needs immediate attention?
+
+===== DIRECTION G37 | candidates=1 =====
+CHOSEN: What specific challenge might arise in implementing effective customer support triage?
+  1. score=0.264 sem=0.310 jac=0.000
+     - Which aspect of project documentation would you like me to evaluate further?
+
+===== DIRECTION G38 | candidates=2 =====
+CHOSEN: Which scenario exemplifies an issue related to **incident management**?
+  1. score=0.377 sem=0.418 jac=0.143
+     - What specific issue are you currently facing related to customer service triage?
+  2. score=0.328 sem=0.377 jac=0.048
+     - What specific task or challenge are you currently facing that aligns best with a role-playing scenario involving customer interactions?
+
+===== DIRECTION G39 | candidates=1 =====
+CHOSEN: What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+  1. score=0.127 sem=0.150 jac=0.000
+     - Is there any specific aspect related to 'mathematics' that requires further clarification?
+
+===== DIRECTION G43 | candidates=5 =====
+CHOSEN: Can you explain how to prioritize and manage multiple incidents simultaneously?
+  1. score=0.512 sem=0.602 jac=0.000
+     - What specific area within incident management are you struggling with currently?
+  2. score=0.502 sem=0.590 jac=0.000
+     - What challenge are you currently facing related to incident management that warrants immediate attention?
+  3. score=0.215 sem=0.253 jac=0.000
+     - What specific problem are you currently facing during customer support triage?
+
+===== DIRECTION G44 | candidates=1 =====
+CHOSEN: Is there anything specific about 'experiment planning' that I should consider before proceeding?
+  1. score=0.165 sem=0.194 jac=0.000
+     - Which part of our current project documentation seems most unclear or incomplete?
+
+========================================
+ TOPIC-MATCHED META CANDIDATES
+========================================
+
+===== META G1 | candidates=1 =====
+CHOSEN: Do these tasks require knowledge of financial analysis?
+  1. score=0.459 sem=0.510 jac=0.167
+     - Can you explain your approach to handling large datasets for financial analysis?
+
+===== META G5 | candidates=2 =====
+CHOSEN: Can you give me an overview of how our current processes are designed in relation to accessibility?
+  1. score=0.311 sem=0.365 jac=0.000
+     - Can you explain how your systems handle unexpected incidents in real-time?
+  2. score=0.235 sem=0.277 jac=0.000
+     - Can you provide me with some details about how your application handles user registration?
+
+===== META G6 | candidates=1 =====
+CHOSEN: What specific piece of information could improve my assessment of the current state of accessibility compliance?
+  1. score=0.186 sem=0.211 jac=0.043
+     - Can you provide insights into your current approach to ensuring mathematical accuracy and verifying the logic in computational work?
+
+===== META G7 | candidates=1 =====
+CHOSEN: Do these tasks involve understanding statistical relationships from given data?
+  1. score=0.160 sem=0.188 jac=0.000
+     - Can you explain how you verify customer-reported problems in your workflow?
+
+===== META G8 | candidates=1 =====
+CHOSEN: Can you explain a situation where incident management processes are particularly challenging to handle?
+  1. score=0.197 sem=0.232 jac=0.000
+     - What steps have you taken to ensure that your software consistently meets performance standards under pressure?
+
+===== META G10 | candidates=5 =====
+CHOSEN: Could you explain a specific instance where we might utilize our project management tools?
+  1. score=0.457 sem=0.505 jac=0.188
+     - Could you explain how you typically prioritize and manage deadlines during project phases?
+  2. score=0.442 sem=0.484 jac=0.200
+     - Could you explain how you typically prioritize resource allocation within a project?
+  3. score=0.349 sem=0.390 jac=0.118
+     - Could you explain how you typically handle unexpected bugs during software development?
+
+===== META G23 | candidates=8 =====
+CHOSEN: Is there any information particularly important regarding the project timeline or resource allocation?
+  1. score=0.179 sem=0.210 jac=0.000
+     - Which aspect of the system currently poses the biggest challenge in ensuring seamless interactions?
+  2. score=0.164 sem=0.192 jac=0.000
+     - Can you explain in detail how the system analyzes and verifies translations?
+  3. score=0.150 sem=0.176 jac=0.000
+     - Can you explain the steps involved in your translation process?
+
+===== META G32 | candidates=5 =====
+CHOSEN: Is there any additional requirement analysis work needed before proceeding?
+  1. score=0.538 sem=0.611 jac=0.125
+     - Can you describe in detail how your system handles ambiguity identification during requirement analysis?
+  2. score=0.262 sem=0.308 jac=0.000
+     - Does your expertise cover the topic of **database optimization** by analyzing complex queries for efficiency improvements?
+  3. score=0.119 sem=0.139 jac=0.000
+     - Can you describe the process you use to ensure translations are accurate across different languages?
+
+===== META G35 | candidates=1 =====
+CHOSEN: What is an important step during the process design phase?
+  1. score=0.247 sem=0.290 jac=0.000
+     - Can you give me an overview of how you typically identify and prioritize user-reported problems?
+
+===== META G37 | candidates=1 =====
+CHOSEN: What specific challenge might arise in implementing effective customer support triage?
+  1. score=0.146 sem=0.172 jac=0.000
+     - Does your current approach for translating text into another language address all relevant nuances and accuracy concerns?
+
+===== META G44 | candidates=2 =====
+CHOSEN: Is there anything specific about 'experiment planning' that I should consider before proceeding?
+  1. score=0.113 sem=0.132 jac=0.000
+     - Does the system have the ability to implement automated tests to ensure the reliability of its APIs during development?
+  2. score=0.033 sem=0.039 jac=0.000
+     - Could you please explain how you verify the performance metrics reported by our software?
+
+wrote: artifacts/v4_final_dpo/topic_match_rankings.jsonl

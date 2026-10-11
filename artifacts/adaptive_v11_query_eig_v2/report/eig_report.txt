@@ -1,0 +1,87 @@
+QUERY-UTILITY ADAPTIVE CONTROLLER V2
+delta = first arm minus second arm; lower is better for log-loss/Brier
+
+ROUND 1 paired=32
+  utility vs maxent
+    role_log_loss          delta=+0.000000 CI95=[+0.000000,+0.000000]
+    role_brier             delta=+0.000000 CI95=[+0.000000,+0.000000]
+    role_auc               delta=+0.000000 CI95=[+0.000000,+0.000000]
+    true_false_margin      delta=+0.000000 CI95=[+0.000000,+0.000000]
+    oracle_k_role_recall   delta=+0.000000 CI95=[+0.000000,+0.000000]
+  utility vs static
+    role_log_loss          delta=+0.000000 CI95=[+0.000000,+0.000000]
+    role_brier             delta=+0.000000 CI95=[+0.000000,+0.000000]
+    role_auc               delta=+0.000000 CI95=[+0.000000,+0.000000]
+    true_false_margin      delta=+0.000000 CI95=[+0.000000,+0.000000]
+    oracle_k_role_recall   delta=+0.000000 CI95=[+0.000000,+0.000000]
+
+ROUND 2 paired=32
+  utility vs maxent
+    role_log_loss          delta=-0.004321 CI95=[-0.014218,+0.005143]
+    role_brier             delta=-0.001984 CI95=[-0.005785,+0.001640]
+    role_auc               delta=+0.023878 CI95=[-0.028742,+0.078896]
+    true_false_margin      delta=+0.002528 CI95=[-0.008218,+0.013019]
+    oracle_k_role_recall   delta=+0.025000 CI95=[-0.055208,+0.107292]
+  utility vs static
+    role_log_loss          delta=-0.001677 CI95=[-0.009479,+0.006143]
+    role_brier             delta=-0.000252 CI95=[-0.003190,+0.002752]
+    role_auc               delta=+0.018793 CI95=[-0.035004,+0.073780]
+    true_false_margin      delta=-0.000833 CI95=[-0.010639,+0.009205]
+    oracle_k_role_recall   delta=+0.039063 CI95=[-0.026562,+0.105208]
+
+ROUND 3 paired=32
+  utility vs maxent
+    role_log_loss          delta=-0.008938 CI95=[-0.020311,+0.001612]
+    role_brier             delta=-0.003566 CI95=[-0.008039,+0.000781]
+    role_auc               delta=+0.040481 CI95=[-0.019027,+0.098788]
+    true_false_margin      delta=+0.010777 CI95=[-0.004475,+0.028318]
+    oracle_k_role_recall   delta=+0.056771 CI95=[-0.027083,+0.138542]
+  utility vs static
+    role_log_loss          delta=-0.003698 CI95=[-0.013565,+0.006026]
+    role_brier             delta=-0.001685 CI95=[-0.005689,+0.002307]
+    role_auc               delta=+0.003658 CI95=[-0.052449,+0.061883]
+    true_false_margin      delta=+0.010275 CI95=[-0.003497,+0.025188]
+    oracle_k_role_recall   delta=+0.001562 CI95=[-0.076563,+0.078646]
+
+ROUND 4 paired=32
+  utility vs maxent
+    role_log_loss          delta=-0.006071 CI95=[-0.020267,+0.007650]
+    role_brier             delta=-0.002159 CI95=[-0.007708,+0.003197]
+    role_auc               delta=+0.020581 CI95=[-0.049862,+0.092361]
+    true_false_margin      delta=+0.003920 CI95=[-0.015165,+0.023124]
+    oracle_k_role_recall   delta=+0.066667 CI95=[-0.011992,+0.145833]
+  utility vs static
+    role_log_loss          delta=-0.003442 CI95=[-0.012877,+0.005915]
+    role_brier             delta=-0.001431 CI95=[-0.005179,+0.002352]
+    role_auc               delta=+0.014813 CI95=[-0.041721,+0.075704]
+    true_false_margin      delta=+0.008168 CI95=[-0.003843,+0.020502]
+    oracle_k_role_recall   delta=+0.017187 CI95=[-0.053125,+0.088542]
+
+ROUND 5 paired=32
+  utility vs maxent
+    role_log_loss          delta=-0.006359 CI95=[-0.019462,+0.006264]
+    role_brier             delta=-0.002454 CI95=[-0.007476,+0.002537]
+    role_auc               delta=+0.024961 CI95=[-0.045195,+0.097586]
+    true_false_margin      delta=+0.006156 CI95=[-0.009309,+0.022380]
+    oracle_k_role_recall   delta=+0.056771 CI95=[-0.028646,+0.145833]
+  utility vs static
+    role_log_loss          delta=+0.001476 CI95=[-0.008813,+0.012804]
+    role_brier             delta=+0.000399 CI95=[-0.003590,+0.004801]
+    role_auc               delta=-0.003742 CI95=[-0.065349,+0.051103]
+    true_false_margin      delta=+0.002811 CI95=[-0.010323,+0.015404]
+    oracle_k_role_recall   delta=+0.003646 CI95=[-0.061458,+0.067187]
+
+ROUND 6 paired=32
+  utility vs maxent
+    role_log_loss          delta=-0.005672 CI95=[-0.020568,+0.009200]
+    role_brier             delta=-0.002171 CI95=[-0.008121,+0.003721]
+    role_auc               delta=+0.024521 CI95=[-0.044053,+0.093981]
+    true_false_margin      delta=+0.007373 CI95=[-0.009418,+0.024990]
+    oracle_k_role_recall   delta=+0.048958 CI95=[-0.040104,+0.141667]
+  utility vs static
+    role_log_loss          delta=+0.001973 CI95=[-0.010096,+0.014397]
+    role_brier             delta=+0.000730 CI95=[-0.003984,+0.005520]
+    role_auc               delta=-0.004773 CI95=[-0.071135,+0.059983]
+    true_false_margin      delta=+0.005501 CI95=[-0.008789,+0.019989]
+    oracle_k_role_recall   delta=-0.010937 CI95=[-0.077083,+0.056250]
+

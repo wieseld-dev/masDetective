@@ -1,0 +1,190 @@
+{
+  "cycle": 0,
+  "notes": {
+    "policy_must_never_read_this_file": true,
+    "privileged": true,
+    "stage_dev": true
+  },
+  "seed": 20260918,
+  "semantic_rule": "distinct",
+  "sha256": "bc5c4fe082e7bb2a70c7241f4b22464e9df0a17444507d91677dd9cf2089a1c5",
+  "stage": 3,
+  "systems": [
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "planning",
+        "qa_testing",
+        "research"
+      ],
+      "session_id": "av11cur_230f8b065dc6c0e6",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "code",
+        "design",
+        "financial_analysis",
+        "writing"
+      ],
+      "session_id": "av11cur_c917485b664c9c1c",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "accessibility_review",
+        "customer_support_triage",
+        "data",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_43c040a0139981b7",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "code",
+        "fact_checking",
+        "math",
+        "translation"
+      ],
+      "session_id": "av11cur_f826c954ccbab8b1",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "incident_management",
+        "planning",
+        "research"
+      ],
+      "session_id": "av11cur_3e7550493aad8cb7",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "design",
+        "documentation",
+        "math"
+      ],
+      "session_id": "av11cur_5d04f1d1650f46ff",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "experiment_design",
+        "incident_management",
+        "requirements_analysis",
+        "writing"
+      ],
+      "session_id": "av11cur_1389d2f06fe91cbc",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "fact_checking",
+        "financial_analysis",
+        "qa_testing"
+      ],
+      "session_id": "av11cur_57e4970274be3059",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "experiment_design",
+        "operations",
+        "risk_assessment"
+      ],
+      "session_id": "av11cur_20badb8b9ab2f002",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "accessibility_review",
+        "customer_support_triage",
+        "database_design"
+      ],
+      "session_id": "av11cur_2fd7bfa21f50169e",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "design",
+        "documentation",
+        "research"
+      ],
+      "session_id": "av11cur_6fe11143903c574c",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "curriculum_cycle": 0,
+      "curriculum_stage": 3,
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "financial_analysis",
+        "operations",
+        "requirements_analysis",
+        "translation"
+      ],
+      "session_id": "av11cur_a6601cdba2738e68",
+      "split": "dev",
+      "style": "s1"
+    }
+  ],
+  "version": "adaptive_v11_curriculum_manifest_v1"
+}

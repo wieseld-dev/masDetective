@@ -1,0 +1,19 @@
+{
+  "name": "generator_frozen_v2",
+  "status": "FROZEN",
+  "n_roles": 8,
+  "probes_per_role": 2,
+  "n_probes": 16,
+  "development_roles": [
+    "code",
+    "writing",
+    "math",
+    "planning",
+    "research",
+    "data",
+    "design",
+    "operations"
+  ],
+  "research_replacement": "V12.10 research intake rep=3",
+  "sha256": "2167a94e15835a628458972ab2e48a8e5fea224e2afa957225d64025b944a773"
+}

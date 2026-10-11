@@ -1,0 +1,68 @@
+{
+  "neutral": {
+    "dev": {
+      "macro_role_auc": null,
+      "mean_selected_minus_absent_margin": null,
+      "mean_topk_selected_recall": null,
+      "mean_within_row_auc": null,
+      "micro_auc": null,
+      "n_endpoints": 0,
+      "n_rows": 0,
+      "roles_with_auc": 0
+    },
+    "train": {
+      "macro_role_auc": null,
+      "mean_selected_minus_absent_margin": null,
+      "mean_topk_selected_recall": null,
+      "mean_within_row_auc": null,
+      "micro_auc": null,
+      "n_endpoints": 0,
+      "n_rows": 0,
+      "roles_with_auc": 0
+    }
+  },
+  "recorded": {
+    "dev": {
+      "macro_role_auc": null,
+      "mean_selected_minus_absent_margin": null,
+      "mean_topk_selected_recall": null,
+      "mean_within_row_auc": null,
+      "micro_auc": null,
+      "n_endpoints": 0,
+      "n_rows": 0,
+      "roles_with_auc": 0
+    },
+    "train": {
+      "macro_role_auc": null,
+      "mean_selected_minus_absent_margin": null,
+      "mean_topk_selected_recall": null,
+      "mean_within_row_auc": null,
+      "micro_auc": null,
+      "n_endpoints": 0,
+      "n_rows": 0,
+      "roles_with_auc": 0
+    }
+  },
+  "self": {
+    "dev": {
+      "macro_role_auc": null,
+      "mean_selected_minus_absent_margin": null,
+      "mean_topk_selected_recall": null,
+      "mean_within_row_auc": null,
+      "micro_auc": null,
+      "n_endpoints": 0,
+      "n_rows": 0,
+      "roles_with_auc": 0
+    },
+    "train": {
+      "macro_role_auc": null,
+      "mean_selected_minus_absent_margin": null,
+      "mean_topk_selected_recall": null,
+      "mean_within_row_auc": null,
+      "micro_auc": null,
+      "n_endpoints": 0,
+      "n_rows": 0,
+      "roles_with_auc": 0
+    }
+  }
+}

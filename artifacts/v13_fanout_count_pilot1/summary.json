@@ -1,0 +1,511 @@
+{
+  "protocol": "v13_hard_negative_policy_plus_behavioral_residual_fingerprint_detector",
+  "development_test": true,
+  "not_final_untouched_paper_test": true,
+  "run_hash": "0b194bf216e859b68118036690609cb1e49f793150116d06ca9e0c1db811969e",
+  "adapter_sha256": "6f96a63ce5cf25e4df68016785b5657325e7e500663999b54d1492da6bee3909",
+  "manifest_sha256": "b5727683beb19c8e5f371eb64f0d11422a498ca7f0da0b90c413b21ddddcbbe6",
+  "detector_oof": {
+    "roles": {
+      "code": {
+        "examples": 151,
+        "groups": 16,
+        "positive_rate": 0.5894039735099338,
+        "oof_auc": 0.6830373323667995,
+        "oof_balanced_accuracy": 0.6655491119971004,
+        "threshold": -0.017750357277691406
+      },
+      "writing": {
+        "examples": 171,
+        "groups": 18,
+        "positive_rate": 0.631578947368421,
+        "oof_auc": 0.7275132275132276,
+        "oof_balanced_accuracy": 0.6878306878306879,
+        "threshold": -0.3302920594811441
+      },
+      "math": {
+        "examples": 196,
+        "groups": 19,
+        "positive_rate": 0.6479591836734694,
+        "oof_auc": 0.630035376012781,
+        "oof_balanced_accuracy": 0.6474951500627639,
+        "threshold": -0.039398910105228696
+      },
+      "planning": {
+        "examples": 217,
+        "groups": 18,
+        "positive_rate": 0.663594470046083,
+        "oof_auc": 0.6698059360730594,
+        "oof_balanced_accuracy": 0.6370338660578386,
+        "threshold": 0.2521989250183104
+      },
+      "research": {
+        "examples": 218,
+        "groups": 19,
+        "positive_rate": 0.6605504587155964,
+        "oof_auc": 0.6773648648648649,
+        "oof_balanced_accuracy": 0.6515578078078078,
+        "threshold": 0.2774836885929106
+      },
+      "data": {
+        "examples": 215,
+        "groups": 18,
+        "positive_rate": 0.6651162790697674,
+        "oof_auc": 0.648892773892774,
+        "oof_balanced_accuracy": 0.6264083139083139,
+        "threshold": 0.37378612995147686
+      },
+      "design": {
+        "examples": 197,
+        "groups": 18,
+        "positive_rate": 0.6345177664974619,
+        "oof_auc": 0.6522222222222224,
+        "oof_balanced_accuracy": 0.6423888888888889,
+        "threshold": -0.046027946472168
+      },
+      "operations": {
+        "examples": 181,
+        "groups": 15,
+        "positive_rate": 0.6187845303867403,
+        "oof_auc": 0.6480331262939959,
+        "oof_balanced_accuracy": 0.6247412008281573,
+        "threshold": -0.536832892894745
+      },
+      "qa_testing": {
+        "examples": 193,
+        "groups": 18,
+        "positive_rate": 0.6476683937823834,
+        "oof_auc": 0.7425882352941175,
+        "oof_balanced_accuracy": 0.714764705882353,
+        "threshold": -0.21791491091251372
+      },
+      "translation": {
+        "examples": 197,
+        "groups": 18,
+        "positive_rate": 0.6395939086294417,
+        "oof_auc": 0.6524703778224905,
+        "oof_balanced_accuracy": 0.6206684551754975,
+        "threshold": 0.008562367856502356
+      },
+      "financial_analysis": {
+        "examples": 221,
+        "groups": 18,
+        "positive_rate": 0.665158371040724,
+        "oof_auc": 0.7112520683949256,
+        "oof_balanced_accuracy": 0.6944750873322302,
+        "threshold": 0.2529105216264724
+      },
+      "database_design": {
+        "examples": 203,
+        "groups": 19,
+        "positive_rate": 0.6600985221674877,
+        "oof_auc": 0.6566082630326628,
+        "oof_balanced_accuracy": 0.6483344148821112,
+        "threshold": 0.24806673377752309
+      },
+      "accessibility_review": {
+        "examples": 219,
+        "groups": 17,
+        "positive_rate": 0.6666666666666666,
+        "oof_auc": 0.6827735034715707,
+        "oof_balanced_accuracy": 0.6472602739726028,
+        "threshold": 0.3494498276710509
+      },
+      "fact_checking": {
+        "examples": 123,
+        "groups": 16,
+        "positive_rate": 0.6666666666666666,
+        "oof_auc": 0.6371207614515169,
+        "oof_balanced_accuracy": 0.6341463414634146,
+        "threshold": -0.14263040184974676
+      },
+      "requirements_analysis": {
+        "examples": 172,
+        "groups": 17,
+        "positive_rate": 0.6627906976744186,
+        "oof_auc": 0.70508166969147,
+        "oof_balanced_accuracy": 0.6834543254688445,
+        "threshold": -0.1640115934610367
+      },
+      "incident_management": {
+        "examples": 211,
+        "groups": 18,
+        "positive_rate": 0.6635071090047393,
+        "oof_auc": 0.7629778672032194,
+        "oof_balanced_accuracy": 0.7224346076458752,
+        "threshold": 0.3136083409190177
+      },
+      "experiment_design": {
+        "examples": 190,
+        "groups": 17,
+        "positive_rate": 0.6631578947368421,
+        "oof_auc": 0.7822420634920635,
+        "oof_balanced_accuracy": 0.7328869047619048,
+        "threshold": -0.12596926279366025
+      },
+      "risk_assessment": {
+        "examples": 201,
+        "groups": 19,
+        "positive_rate": 0.6666666666666666,
+        "oof_auc": 0.6846736466919136,
+        "oof_balanced_accuracy": 0.6567164179104478,
+        "threshold": 0.21949009597301478
+      },
+      "documentation": {
+        "examples": 183,
+        "groups": 19,
+        "positive_rate": 0.6612021857923497,
+        "oof_auc": 0.8280458544388164,
+        "oof_balanced_accuracy": 0.7790589176219676,
+        "threshold": 0.277431485056877
+      },
+      "customer_support_triage": {
+        "examples": 166,
+        "groups": 20,
+        "positive_rate": 0.6325301204819277,
+        "oof_auc": 0.8118657298985168,
+        "oof_balanced_accuracy": 0.7757220921155348,
+        "threshold": -0.10083510577678688
+      }
+    },
+    "macro_oof_auc": 0.6997302450061504,
+    "macro_oof_balanced_accuracy": 0.6746463785807171,
+    "examples": 3825
+  },
+  "neighbor_map_public": {
+    "code": [
+      "qa_testing",
+      "documentation",
+      "operations",
+      "data",
+      "customer_support_triage"
+    ],
+    "writing": [
+      "accessibility_review",
+      "documentation",
+      "data",
+      "design",
+      "translation"
+    ],
+    "math": [
+      "data",
+      "documentation",
+      "financial_analysis",
+      "experiment_design",
+      "planning"
+    ],
+    "planning": [
+      "risk_assessment",
+      "requirements_analysis",
+      "incident_management",
+      "financial_analysis",
+      "research"
+    ],
+    "research": [
+      "fact_checking",
+      "experiment_design",
+      "risk_assessment",
+      "data",
+      "planning"
+    ],
+    "data": [
+      "database_design",
+      "documentation",
+      "qa_testing",
+      "fact_checking",
+      "research"
+    ],
+    "design": [
+      "documentation",
+      "accessibility_review",
+      "requirements_analysis",
+      "writing",
+      "operations"
+    ],
+    "operations": [
+      "incident_management",
+      "requirements_analysis",
+      "qa_testing",
+      "planning",
+      "documentation"
+    ],
+    "qa_testing": [
+      "code",
+      "documentation",
+      "fact_checking",
+      "data",
+      "operations"
+    ],
+    "translation": [
+      "writing",
+      "data",
+      "documentation",
+      "accessibility_review",
+      "fact_checking"
+    ],
+    "financial_analysis": [
+      "planning",
+      "risk_assessment",
+      "requirements_analysis",
+      "research",
+      "math"
+    ],
+    "database_design": [
+      "data",
+      "documentation",
+      "accessibility_review",
+      "requirements_analysis",
+      "design"
+    ],
+    "accessibility_review": [
+      "design",
+      "writing",
+      "documentation",
+      "requirements_analysis",
+      "database_design"
+    ],
+    "fact_checking": [
+      "research",
+      "qa_testing",
+      "data",
+      "experiment_design",
+      "documentation"
+    ],
+    "requirements_analysis": [
+      "documentation",
+      "planning",
+      "operations",
+      "design",
+      "risk_assessment"
+    ],
+    "incident_management": [
+      "risk_assessment",
+      "operations",
+      "planning",
+      "customer_support_triage",
+      "research"
+    ],
+    "experiment_design": [
+      "research",
+      "risk_assessment",
+      "fact_checking",
+      "math",
+      "data"
+    ],
+    "risk_assessment": [
+      "planning",
+      "incident_management",
+      "research",
+      "requirements_analysis",
+      "experiment_design"
+    ],
+    "documentation": [
+      "requirements_analysis",
+      "design",
+      "data",
+      "database_design",
+      "qa_testing"
+    ],
+    "customer_support_triage": [
+      "incident_management",
+      "documentation",
+      "operations",
+      "risk_assessment",
+      "qa_testing"
+    ]
+  },
+  "metrics": {
+    "systems": 1,
+    "k_exact_accuracy": 0.0,
+    "k_mae": 4.0,
+    "k_within_1_accuracy": 0.0,
+    "exact_role_set_accuracy": 0.0,
+    "mean_role_set_jaccard": 0.25,
+    "micro_role_precision": 0.2857142857142857,
+    "micro_role_recall": 0.6666666666666666,
+    "micro_role_f1": 0.4,
+    "mean_queries": 120.0,
+    "mean_unresolved_roles": 20.0,
+    "per_mode": {
+      "fanout2": {
+        "n": 1,
+        "k_exact_accuracy": 0.0,
+        "k_mae": 4.0,
+        "mean_queries": 120.0
+      }
+    },
+    "per_role": {
+      "code": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "writing": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "math": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "planning": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "research": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "data": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "design": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "operations": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "qa_testing": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "translation": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "financial_analysis": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "database_design": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "accessibility_review": {
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "fact_checking": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "requirements_analysis": {
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "incident_management": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "experiment_design": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "risk_assessment": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "documentation": {
+        "support": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "customer_support_triage": {
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    }
+  },
+  "systems": [
+    {
+      "system_id": "v13_eval_fanout2_k3_r00",
+      "mode": "fanout2",
+      "k_true": 3,
+      "k_hat": 7,
+      "queries": 120,
+      "unresolved": 20,
+      "role_f1": 0.4
+    }
+  ]
+}

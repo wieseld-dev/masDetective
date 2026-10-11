@@ -1,0 +1,3 @@
+ROOT=artifacts/v14a_genericact_eval_r01_v1
+ADAPTER=artifacts/v14_adaptive_g50_genericact_r1_v1/checkpoints/round_01/policy
+REPORT_JOB=22376287

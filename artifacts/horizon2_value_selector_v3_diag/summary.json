@@ -1,0 +1,25 @@
+{
+  "protocol": "horizon2_value_selector_v3_fixed_bank_diag",
+  "states": 70,
+  "branches": 16,
+  "particles_per_k": 32,
+  "gamma": 1.0,
+  "test_used": false,
+  "truth_used_for_selection": false,
+  "real_belief_mutated_during_planning": false,
+  "visible_branch_model": "TRAIN-only empirical V13.8b score bootstrap + continuous LR posterior update",
+  "q1_difference_rate": 0.12857142857142856,
+  "mean_realized_role_gain": {
+    "greedy_q1_value": 0.11187839240957416,
+    "h2_value": 0.10341452139591048,
+    "mi_z": 0.08068961641793368,
+    "random": 0.07435241332196418,
+    "oracle": 0.19569593918449363
+  },
+  "headroom_capture_fraction": {
+    "greedy_q1_value": 0.3092540687347696,
+    "h2_value": 0.23950274946576772,
+    "mi_z": 0.052225308692191275
+  },
+  "important_limitation": "Only q1 has external realized evaluation. q2 is fixed-bank simulated lookahead; this is not yet a real two-step MAS rollout."
+}

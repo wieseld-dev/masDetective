@@ -1,0 +1,90 @@
+======================================================================================================================
+AUGMENTED-STATE SPECTRAL AUDIT — ROLE / COUNT
+======================================================================================================================
+40 cached probes | train=28 | heldout=12 | d=16 | low-rank=4 | ensemble=5
+PRIMARY QUESTION: does q-reinjection h'=A_r h + B_r q + b_r restore model-consistent spectral ranking?
+
+----------------------------------------------------------------------------------------------------------------------
+DIRECT_AFFINE
+----------------------------------------------------------------------------------------------------------------------
+Held-out output MSE       : 0.010686
+Spectral exactness error  : 1.247e-09
+
+EUCLIDEAN actual/predicted separation
+  TYPE   rho=+0.2343 lift=0.831x oracle=2.317x
+  COUNT  rho=+0.2155 lift=1.139x oracle=2.415x
+  GLOBAL rho=+0.2885 lift=0.818x oracle=2.043x
+
+NOISE-AWARE MAHALANOBIS separation
+  TYPE   rho=+0.2273 lift=0.854x oracle=2.314x
+  COUNT  rho=+0.1962 lift=1.051x oracle=2.417x
+  GLOBAL rho=+0.2255 lift=0.799x oracle=2.052x
+
+Adaptive identification (Mahalanobis spectral selection)
+budget | H spec/random | K spec/random | A-pres | B-pres
+     1 | 0.250/0.260     | 0.500/0.500     | 0.438  | 0.375
+     2 | 0.375/0.277     | 0.500/0.509     | 0.500  | 0.500
+     3 | 0.312/0.298     | 0.500/0.510     | 0.562  | 0.438
+     5 | 0.375/0.317     | 0.375/0.488     | 0.500  | 0.562
+    10 | 0.375/0.326     | 0.438/0.446     | 0.500  | 0.750
+
+----------------------------------------------------------------------------------------------------------------------
+CONTEXT_FREE
+----------------------------------------------------------------------------------------------------------------------
+Held-out output MSE       : 0.008760
+Spectral exactness error  : 3.659e-09
+
+EUCLIDEAN actual/predicted separation
+  TYPE   rho=+0.0035 lift=0.781x oracle=2.317x
+  COUNT  rho=-0.0953 lift=0.735x oracle=2.415x
+  GLOBAL rho=-0.0787 lift=0.748x oracle=2.043x
+
+NOISE-AWARE MAHALANOBIS separation
+  TYPE   rho=-0.0542 lift=0.635x oracle=2.327x
+  COUNT  rho=-0.1075 lift=0.765x oracle=2.417x
+  GLOBAL rho=-0.1294 lift=0.695x oracle=2.044x
+
+Adaptive identification (Mahalanobis spectral selection)
+budget | H spec/random | K spec/random | A-pres | B-pres
+     1 | 0.250/0.235     | 0.312/0.387     | 0.500  | 0.500
+     2 | 0.250/0.262     | 0.312/0.357     | 0.500  | 0.500
+     3 | 0.250/0.294     | 0.312/0.367     | 0.500  | 0.500
+     5 | 0.312/0.283     | 0.312/0.338     | 0.500  | 0.562
+    10 | 0.250/0.269     | 0.250/0.281     | 0.500  | 0.500
+
+----------------------------------------------------------------------------------------------------------------------
+AUGMENTED_Q
+----------------------------------------------------------------------------------------------------------------------
+Held-out output MSE       : 0.009941
+Spectral exactness error  : 1.259e-08
+
+EUCLIDEAN actual/predicted separation
+  TYPE   rho=-0.1521 lift=0.912x oracle=2.317x
+  COUNT  rho=-0.1674 lift=0.694x oracle=2.415x
+  GLOBAL rho=-0.4143 lift=0.431x oracle=2.043x
+
+NOISE-AWARE MAHALANOBIS separation
+  TYPE   rho=-0.0559 lift=0.552x oracle=2.438x
+  COUNT  rho=-0.0625 lift=0.800x oracle=2.508x
+  GLOBAL rho=-0.2552 lift=0.636x oracle=2.129x
+
+Adaptive identification (Mahalanobis spectral selection)
+budget | H spec/random | K spec/random | A-pres | B-pres
+     1 | 0.125/0.234     | 0.188/0.396     | 0.500  | 0.375
+     2 | 0.188/0.240     | 0.312/0.383     | 0.562  | 0.438
+     3 | 0.250/0.253     | 0.312/0.384     | 0.562  | 0.500
+     5 | 0.250/0.241     | 0.375/0.360     | 0.562  | 0.438
+    10 | 0.188/0.227     | 0.312/0.322     | 0.500  | 0.438
+
+======================================================================================================================
+DIAGNOSTIC
+======================================================================================================================
+Interpretation rules:
+1) exactness error ~1e-6 or smaller => spectral algebra/code is numerically consistent with model predictions.
+2) AUGMENTED_Q >> CONTEXT_FREE => repeated task injection q was a real missing-state variable.
+3) DIRECT_AFFINE good but AUGMENTED_Q weak => information is predictable, but shared primitive role factorization is still wrong.
+4) DIRECT_AFFINE also weak => current embedding/linear family cannot predict which held-out probes reveal role/count.
+
+VERDICT: SIGNAL_EXISTS_SHARED_FACTORIZATION_STILL_WEAK
+global Mahalanobis rho: context=-0.1294, augmented=-0.2552, direct=+0.2255
+======================================================================================================================

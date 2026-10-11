@@ -1,0 +1,100 @@
+====================================================================================================
+V13.7 LEAVE-ONE-SYSTEM-OUT ROLE-AWARE CALIBRATION
+====================================================================================================
+DEV rows    : 760
+DEV systems : 38
+roles       : 20
+internal test used: NO
+
+K=3 MAJORITY BASELINE: 63.16%
+
+----------------------------------------------------------------------------------------------------
+RAW
+----------------------------------------------------------------------------------------------------
+Presence ROC-AUC : 0.5310
+Presence PR-AUC  : 0.1953
+Presence BalAcc  : 0.4891
+Macro role AUC   : 0.5682
+Exact K          : 0.00%
+K=3 exact        : 0.00%
+K=4 exact        : 0.00%
+K MAE            : 3.7368
+Exact role set   : 0.00%
+Pred K dist      : {'7': 34, '8': 4}
+True -> Pred     : {'3->7': 21, '3->8': 3, '4->7': 13, '4->8': 1}
+Mean sum(p)|K    : {'3': 7.229796943077669, '4': 7.322603462320353}
+
+----------------------------------------------------------------------------------------------------
+GLOBAL_PLATT
+----------------------------------------------------------------------------------------------------
+Presence ROC-AUC : 0.5060
+Presence PR-AUC  : 0.1692
+Presence BalAcc  : 0.5000
+Macro role AUC   : 0.4827
+Exact K          : 63.16%
+K=3 exact        : 100.00%
+K=4 exact        : 0.00%
+K MAE            : 0.3684
+Exact role set   : 0.00%
+Pred K dist      : {'3': 38}
+True -> Pred     : {'3->3': 24, '4->3': 14}
+Mean sum(p)|K    : {'3': 3.3750873140259565, '4': 3.3558473244550298}
+
+----------------------------------------------------------------------------------------------------
+ROLE_INTERCEPT
+----------------------------------------------------------------------------------------------------
+Presence ROC-AUC : 0.5361
+Presence PR-AUC  : 0.2166
+Presence BalAcc  : 0.5000
+Macro role AUC   : 0.3575
+Exact K          : 63.16%
+K=3 exact        : 62.50%
+K=4 exact        : 64.29%
+K MAE            : 0.3684
+Exact role set   : 0.00%
+Pred K dist      : {'3': 20, '4': 18}
+True -> Pred     : {'3->3': 15, '3->4': 9, '4->3': 5, '4->4': 9}
+Mean sum(p)|K    : {'3': 3.7831966745566667, '4': 3.8312284370700818}
+
+----------------------------------------------------------------------------------------------------
+ROLE_SLOPE_INTERCEPT
+----------------------------------------------------------------------------------------------------
+Presence ROC-AUC : 0.5730
+Presence PR-AUC  : 0.2283
+Presence BalAcc  : 0.5000
+Macro role AUC   : 0.3309
+Exact K          : 39.47%
+K=3 exact        : 20.83%
+K=4 exact        : 71.43%
+K MAE            : 0.6053
+Exact role set   : 0.00%
+Pred K dist      : {'3': 9, '4': 29}
+True -> Pred     : {'3->3': 5, '3->4': 19, '4->3': 4, '4->4': 10}
+Mean sum(p)|K    : {'3': 3.9382208033136354, '4': 3.9232806626650296}
+
+====================================================================================================
+ROLE-SLOPE DETAILS
+====================================================================================================
+accessibility_review         AUC=0.4464
+code                         AUC=0.7036
+customer_support_triage      AUC=0.6417
+data                         AUC=0.3212
+database_design              AUC=0.3603
+design                       AUC=0.1912
+documentation                AUC=0.3603
+experiment_design            AUC=0.2833
+fact_checking                AUC=0.4406
+financial_analysis           AUC=0.1982
+incident_management          AUC=0.5524
+math                         AUC=0.5069
+operations                   AUC=0.0498
+planning                     AUC=0.6708
+qa_testing                   AUC=0.2581
+requirements_analysis        AUC=0.6324
+research                     AUC=0.0000
+risk_assessment              AUC=0.0000
+translation                  AUC=0.0000
+writing                      AUC=0.0000
+
+INTERNAL TEST USED: NO
+OOF ROLE-AWARE CALIBRATION: DONE

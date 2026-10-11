@@ -1,0 +1,76 @@
+{
+  "source_direction_meta": 495,
+  "tier_a_eligible": 276,
+  "selected": 175,
+  "selected_by_family": {
+    "DIRECTION": 80,
+    "META": 95
+  },
+  "selected_by_gold": {
+    "2": 12,
+    "6": 12,
+    "8": 12,
+    "9": 6,
+    "10": 12,
+    "16": 12,
+    "23": 11,
+    "24": 12,
+    "26": 12,
+    "27": 12,
+    "32": 8,
+    "33": 8,
+    "35": 11,
+    "37": 5,
+    "39": 9,
+    "43": 12,
+    "44": 9
+  },
+  "cells": {
+    "G02:DIRECTION": 6,
+    "G02:META": 6,
+    "G06:DIRECTION": 6,
+    "G06:META": 6,
+    "G08:DIRECTION": 6,
+    "G08:META": 6,
+    "G09:DIRECTION": 0,
+    "G09:META": 6,
+    "G10:DIRECTION": 6,
+    "G10:META": 6,
+    "G16:DIRECTION": 6,
+    "G16:META": 6,
+    "G23:DIRECTION": 5,
+    "G23:META": 6,
+    "G24:DIRECTION": 6,
+    "G24:META": 6,
+    "G26:DIRECTION": 6,
+    "G26:META": 6,
+    "G27:DIRECTION": 6,
+    "G27:META": 6,
+    "G32:DIRECTION": 2,
+    "G32:META": 6,
+    "G33:DIRECTION": 2,
+    "G33:META": 6,
+    "G35:DIRECTION": 6,
+    "G35:META": 5,
+    "G37:DIRECTION": 3,
+    "G37:META": 2,
+    "G39:DIRECTION": 3,
+    "G39:META": 6,
+    "G43:DIRECTION": 6,
+    "G43:META": 6,
+    "G44:DIRECTION": 5,
+    "G44:META": 4
+  },
+  "zero_cells": [
+    "G09:DIRECTION"
+  ],
+  "rejection_reasons": {
+    "DIRECTION:no_explicit_assistant_cue": 135,
+    "META:no_explicit_self_cue": 82,
+    "DIRECTION:looks_meta": 2
+  },
+  "cap_per_cell": {
+    "DIRECTION": 6,
+    "META": 6
+  }
+}

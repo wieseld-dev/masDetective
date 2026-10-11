@@ -1,0 +1,144 @@
+==========================================================================================
+G50 R1 REWARD AUDIT
+==========================================================================================
+rows               : 1200
+groups             : 24
+group size min/max : 50 / 50
+group size mean    : 50.00
+
+REWARD
+mean/std : -0.1127 / 0.6131
+min/max  : -2.1345 / +1.8266
+positive : 44.9%
+negative : 55.1%
+zero     : 0.0%
++3 clip  : 0.0%
+-3 clip  : 0.0%
+
+ADVANTAGE
+mean/std : -0.0307 / 0.9870
+min/max  : -3.3778 / +2.9432
+positive : 40.8%
+negative : 41.9%
+zero     : 17.3%
+
+REWARD BREAKDOWN NUMERIC KEYS
+['invalid_penalty', 'length_penalty', 'repetition_penalty', 'role_log_score_after', 'role_log_score_before', 'role_log_score_improvement', 'total', 'valid']
+
+invalid_penalty
+  q00: +0.000000
+  q05: +0.000000
+  q10: +0.000000
+  q25: +0.000000
+  q50: +0.000000
+  q75: +0.000000
+  q90: +0.000000
+  q95: +1.500000
+  q100: +1.500000
+
+length_penalty
+  q00: +0.000000
+  q05: +0.000000
+  q10: +0.000000
+  q25: +0.000000
+  q50: +0.000000
+  q75: +0.000000
+  q90: +0.000000
+  q95: +0.000000
+  q100: +0.000000
+
+repetition_penalty
+  q00: +0.000000
+  q05: +0.000000
+  q10: +0.000000
+  q25: +0.000000
+  q50: +0.000000
+  q75: +0.000000
+  q90: +0.000000
+  q95: +0.000000
+  q100: +0.000000
+
+role_log_score_after
+  q00: -0.690483
+  q05: -0.632497
+  q10: -0.622836
+  q25: -0.589312
+  q50: -0.532582
+  q75: -0.486312
+  q90: -0.446104
+  q95: -0.433214
+  q100: -0.365837
+
+role_log_score_before
+  q00: -0.625921
+  q05: -0.625921
+  q10: -0.625921
+  q25: -0.579542
+  q50: -0.533164
+  q75: -0.486785
+  q90: -0.440407
+  q95: -0.440407
+  q100: -0.440407
+
+role_log_score_improvement
+  q00: -0.106724
+  q05: -0.042458
+  q10: -0.033718
+  q25: -0.019203
+  q50: +0.000000
+  q75: +0.015335
+  q90: +0.031359
+  q95: +0.041333
+  q100: +0.091329
+
+total
+  q00: -2.134481
+  q05: -1.500000
+  q10: -0.862613
+  q25: -0.480060
+  q50: -0.077782
+  q75: +0.306691
+  q90: +0.627182
+  q95: +0.826667
+  q100: +1.826582
+
+valid
+  q00: +0.000000
+  q05: +0.000000
+  q10: +1.000000
+  q25: +1.000000
+  q50: +1.000000
+  q75: +1.000000
+  q90: +1.000000
+  q95: +1.000000
+  q100: +1.000000
+
+WITHIN-GROUP HEADROOM
+mean max reward           : +0.9595
+mean median reward        : -0.0737
+mean max-minus-median     : +1.0332
+mean candidates tied max  : 1.00
+mean positive / group     : 22.46
+mean unique rewards/group : 48.17
+
+PER-GROUP QUICK VIEW
+av11_023efb442571d117::r01          n=50 pos=37 neg=13 max=+1.49 med=+0.31 ties_max= 1 unique=49
+av11_0958d195a346cdb1::r01          n=50 pos=10 neg=40 max=+0.41 med=-0.31 ties_max= 1 unique=49
+av11_20f1ec3cfdaa5518::r01          n=50 pos=40 neg=10 max=+1.19 med=+0.41 ties_max= 1 unique=49
+av11_27e20625aee8ca5d::r01          n=50 pos=30 neg=20 max=+1.09 med=+0.16 ties_max= 1 unique=49
+av11_2d355538615f00ff::r01          n=50 pos=13 neg=37 max=+0.69 med=-0.27 ties_max= 1 unique=50
+av11_2d97f9f748e0fb9e::r01          n=50 pos=35 neg=15 max=+0.85 med=+0.18 ties_max= 1 unique=48
+av11_38108c805bd533a1::r01          n=50 pos= 9 neg=41 max=+0.85 med=-0.52 ties_max= 1 unique=49
+av11_486b21e22324059f::r01          n=50 pos=40 neg=10 max=+0.96 med=+0.33 ties_max= 1 unique=50
+av11_5df7e71a9829f052::r01          n=50 pos=18 neg=32 max=+0.94 med=-0.25 ties_max= 1 unique=49
+av11_60adcadf2277b949::r01          n=50 pos=23 neg=27 max=+1.74 med=-0.05 ties_max= 1 unique=47
+av11_6488732ca6cd1f03::r01          n=50 pos=16 neg=34 max=+0.55 med=-0.21 ties_max= 1 unique=50
+av11_8ab66a778c443eeb::r01          n=50 pos=19 neg=31 max=+0.65 med=-0.38 ties_max= 1 unique=50
+av11_93d32f31d67faa9c::r01          n=50 pos=32 neg=18 max=+1.23 med=+0.31 ties_max= 1 unique=48
+av11_953769178d62214f::r01          n=50 pos=21 neg=29 max=+1.02 med=-0.18 ties_max= 1 unique=49
+av11_be75be6f961ea65a::r01          n=50 pos=32 neg=18 max=+1.50 med=+0.29 ties_max= 1 unique=46
+av11_c146ae3a378bfec3::r01          n=50 pos=14 neg=36 max=+0.97 med=-0.29 ties_max= 1 unique=43
+av11_c290a3a477cfe91b::r01          n=50 pos= 4 neg=46 max=+0.21 med=-0.57 ties_max= 1 unique=47
+av11_d0544071f1ec78f2::r01          n=50 pos=18 neg=32 max=+1.49 med=-0.21 ties_max= 1 unique=50
+av11_d7cd28142f2a04b9::r01          n=50 pos=15 neg=35 max=+0.42 med=-0.23 ties_max= 1 unique=47
+av11_da6eb645b311f910::r01          n=50 pos=11 neg=39 max=+0.52 med=-0.42 ties_max= 1 unique=49

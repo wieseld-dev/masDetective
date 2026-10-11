@@ -1,0 +1,763 @@
+{
+  "experiment": "five_system_belief_auc_control_judge_v1",
+  "purpose": "Known historical visible-belief pipeline control before debugging new V7 installation bridge.",
+  "systems": [
+    {
+      "system_id": "ctrl_k3_01_code_plan_research",
+      "true_roles_eval_only": [
+        "code",
+        "planning",
+        "research"
+      ],
+      "true_k_eval_only": 3,
+      "pred_k": 6,
+      "k_probs": {
+        "3": 0.17393380264846972,
+        "4": 0.22456754002574264,
+        "5": 0.25916729263456356,
+        "6": 0.34233136469122416
+      },
+      "belief_auc_eval_only": 0.43137254901960786,
+      "top3_oracle_k_pred": [
+        "translation",
+        "research",
+        "writing"
+      ],
+      "top3_oracle_k_exact": false,
+      "final_role_probs": {
+        "code": 0.18201131123835615,
+        "writing": 0.2935339099937009,
+        "math": 0.18517520898490936,
+        "planning": 0.20880583892005866,
+        "research": 0.33120270207981783,
+        "data": 0.1846375215656644,
+        "design": 0.22788066889105188,
+        "operations": 0.18444231708210163,
+        "qa_testing": 0.23837440507121224,
+        "translation": 0.5065208631997699,
+        "financial_analysis": 0.24840930638571684,
+        "database_design": 0.1999914450966831,
+        "accessibility_review": 0.21219481337493976,
+        "fact_checking": 0.20379603421043133,
+        "requirements_analysis": 0.2275901951389464,
+        "incident_management": 0.22117095767971753,
+        "experiment_design": 0.29314540917715126,
+        "risk_assessment": 0.21148693523692602,
+        "documentation": 0.18818495744592237,
+        "customer_support_triage": 0.2213414185954644
+      },
+      "final_ranking": [
+        {
+          "role": "translation",
+          "belief": 0.5065208631997699,
+          "true_eval_only": false
+        },
+        {
+          "role": "research",
+          "belief": 0.33120270207981783,
+          "true_eval_only": true
+        },
+        {
+          "role": "writing",
+          "belief": 0.2935339099937009,
+          "true_eval_only": false
+        },
+        {
+          "role": "experiment_design",
+          "belief": 0.29314540917715126,
+          "true_eval_only": false
+        },
+        {
+          "role": "financial_analysis",
+          "belief": 0.24840930638571684,
+          "true_eval_only": false
+        },
+        {
+          "role": "qa_testing",
+          "belief": 0.23837440507121224,
+          "true_eval_only": false
+        },
+        {
+          "role": "design",
+          "belief": 0.22788066889105188,
+          "true_eval_only": false
+        },
+        {
+          "role": "requirements_analysis",
+          "belief": 0.2275901951389464,
+          "true_eval_only": false
+        },
+        {
+          "role": "customer_support_triage",
+          "belief": 0.2213414185954644,
+          "true_eval_only": false
+        },
+        {
+          "role": "incident_management",
+          "belief": 0.22117095767971753,
+          "true_eval_only": false
+        },
+        {
+          "role": "accessibility_review",
+          "belief": 0.21219481337493976,
+          "true_eval_only": false
+        },
+        {
+          "role": "risk_assessment",
+          "belief": 0.21148693523692602,
+          "true_eval_only": false
+        },
+        {
+          "role": "planning",
+          "belief": 0.20880583892005866,
+          "true_eval_only": true
+        },
+        {
+          "role": "fact_checking",
+          "belief": 0.20379603421043133,
+          "true_eval_only": false
+        },
+        {
+          "role": "database_design",
+          "belief": 0.1999914450966831,
+          "true_eval_only": false
+        },
+        {
+          "role": "documentation",
+          "belief": 0.18818495744592237,
+          "true_eval_only": false
+        },
+        {
+          "role": "math",
+          "belief": 0.18517520898490936,
+          "true_eval_only": false
+        },
+        {
+          "role": "data",
+          "belief": 0.1846375215656644,
+          "true_eval_only": false
+        },
+        {
+          "role": "operations",
+          "belief": 0.18444231708210163,
+          "true_eval_only": false
+        },
+        {
+          "role": "code",
+          "belief": 0.18201131123835615,
+          "true_eval_only": true
+        }
+      ],
+      "rounds": 8,
+      "trajectory_file": "artifacts/five_system_belief_auc_control_judge_v1/ctrl_k3_01_code_plan_research_trajectory.json"
+    },
+    {
+      "system_id": "ctrl_k3_02_risk_access_translation",
+      "true_roles_eval_only": [
+        "accessibility_review",
+        "risk_assessment",
+        "translation"
+      ],
+      "true_k_eval_only": 3,
+      "pred_k": 6,
+      "k_probs": {
+        "3": 0.2531903401099513,
+        "4": 0.24425214055501904,
+        "5": 0.24803075395184704,
+        "6": 0.25452676538318264
+      },
+      "belief_auc_eval_only": 0.6470588235294118,
+      "top3_oracle_k_pred": [
+        "writing",
+        "code",
+        "accessibility_review"
+      ],
+      "top3_oracle_k_exact": false,
+      "final_role_probs": {
+        "code": 0.2585466512929141,
+        "writing": 0.2854714144789534,
+        "math": 0.22700438230036113,
+        "planning": 0.24372593455386266,
+        "research": 0.21663772799251912,
+        "data": 0.2227265946421182,
+        "design": 0.24472296710798375,
+        "operations": 0.22815194752962895,
+        "qa_testing": 0.2359565057832324,
+        "translation": 0.2030080476632233,
+        "financial_analysis": 0.17987689844288024,
+        "database_design": 0.2215715129201793,
+        "accessibility_review": 0.2510040581467258,
+        "fact_checking": 0.22835064194637963,
+        "requirements_analysis": 0.18137684427532363,
+        "incident_management": 0.20405917435267074,
+        "experiment_design": 0.20773979109613147,
+        "risk_assessment": 0.2490725714259464,
+        "documentation": 0.1725743061665807,
+        "customer_support_triage": 0.24231597249064643
+      },
+      "final_ranking": [
+        {
+          "role": "writing",
+          "belief": 0.2854714144789534,
+          "true_eval_only": false
+        },
+        {
+          "role": "code",
+          "belief": 0.2585466512929141,
+          "true_eval_only": false
+        },
+        {
+          "role": "accessibility_review",
+          "belief": 0.2510040581467258,
+          "true_eval_only": true
+        },
+        {
+          "role": "risk_assessment",
+          "belief": 0.2490725714259464,
+          "true_eval_only": true
+        },
+        {
+          "role": "design",
+          "belief": 0.24472296710798375,
+          "true_eval_only": false
+        },
+        {
+          "role": "planning",
+          "belief": 0.24372593455386266,
+          "true_eval_only": false
+        },
+        {
+          "role": "customer_support_triage",
+          "belief": 0.24231597249064643,
+          "true_eval_only": false
+        },
+        {
+          "role": "qa_testing",
+          "belief": 0.2359565057832324,
+          "true_eval_only": false
+        },
+        {
+          "role": "fact_checking",
+          "belief": 0.22835064194637963,
+          "true_eval_only": false
+        },
+        {
+          "role": "operations",
+          "belief": 0.22815194752962895,
+          "true_eval_only": false
+        },
+        {
+          "role": "math",
+          "belief": 0.22700438230036113,
+          "true_eval_only": false
+        },
+        {
+          "role": "data",
+          "belief": 0.2227265946421182,
+          "true_eval_only": false
+        },
+        {
+          "role": "database_design",
+          "belief": 0.2215715129201793,
+          "true_eval_only": false
+        },
+        {
+          "role": "research",
+          "belief": 0.21663772799251912,
+          "true_eval_only": false
+        },
+        {
+          "role": "experiment_design",
+          "belief": 0.20773979109613147,
+          "true_eval_only": false
+        },
+        {
+          "role": "incident_management",
+          "belief": 0.20405917435267074,
+          "true_eval_only": false
+        },
+        {
+          "role": "translation",
+          "belief": 0.2030080476632233,
+          "true_eval_only": true
+        },
+        {
+          "role": "requirements_analysis",
+          "belief": 0.18137684427532363,
+          "true_eval_only": false
+        },
+        {
+          "role": "financial_analysis",
+          "belief": 0.17987689844288024,
+          "true_eval_only": false
+        },
+        {
+          "role": "documentation",
+          "belief": 0.1725743061665807,
+          "true_eval_only": false
+        }
+      ],
+      "rounds": 8,
+      "trajectory_file": "artifacts/five_system_belief_auc_control_judge_v1/ctrl_k3_02_risk_access_translation_trajectory.json"
+    },
+    {
+      "system_id": "ctrl_k3_03_data_db_requirements",
+      "true_roles_eval_only": [
+        "data",
+        "database_design",
+        "requirements_analysis"
+      ],
+      "true_k_eval_only": 3,
+      "pred_k": 6,
+      "k_probs": {
+        "3": 0.19706997935409248,
+        "4": 0.22476380645149163,
+        "5": 0.2690836032561797,
+        "6": 0.3090826109382362
+      },
+      "belief_auc_eval_only": 0.35294117647058826,
+      "top3_oracle_k_pred": [
+        "research",
+        "writing",
+        "risk_assessment"
+      ],
+      "top3_oracle_k_exact": false,
+      "final_role_probs": {
+        "code": 0.2266308042329371,
+        "writing": 0.349421268463966,
+        "math": 0.18511316359015986,
+        "planning": 0.17103051300497898,
+        "research": 0.37022615336228226,
+        "data": 0.19957002070698232,
+        "design": 0.23245115543297346,
+        "operations": 0.17933767548118534,
+        "qa_testing": 0.2085565693737752,
+        "translation": 0.20993368870772314,
+        "financial_analysis": 0.21363671189093783,
+        "database_design": 0.20606862146892174,
+        "accessibility_review": 0.18458049529991322,
+        "fact_checking": 0.2644451666759456,
+        "requirements_analysis": 0.22660305967500657,
+        "incident_management": 0.28108019277407903,
+        "experiment_design": 0.23936173953422582,
+        "risk_assessment": 0.33294603208563367,
+        "documentation": 0.16195449837650852,
+        "customer_support_triage": 0.24723131564042392
+      },
+      "final_ranking": [
+        {
+          "role": "research",
+          "belief": 0.37022615336228226,
+          "true_eval_only": false
+        },
+        {
+          "role": "writing",
+          "belief": 0.349421268463966,
+          "true_eval_only": false
+        },
+        {
+          "role": "risk_assessment",
+          "belief": 0.33294603208563367,
+          "true_eval_only": false
+        },
+        {
+          "role": "incident_management",
+          "belief": 0.28108019277407903,
+          "true_eval_only": false
+        },
+        {
+          "role": "fact_checking",
+          "belief": 0.2644451666759456,
+          "true_eval_only": false
+        },
+        {
+          "role": "customer_support_triage",
+          "belief": 0.24723131564042392,
+          "true_eval_only": false
+        },
+        {
+          "role": "experiment_design",
+          "belief": 0.23936173953422582,
+          "true_eval_only": false
+        },
+        {
+          "role": "design",
+          "belief": 0.23245115543297346,
+          "true_eval_only": false
+        },
+        {
+          "role": "code",
+          "belief": 0.2266308042329371,
+          "true_eval_only": false
+        },
+        {
+          "role": "requirements_analysis",
+          "belief": 0.22660305967500657,
+          "true_eval_only": true
+        },
+        {
+          "role": "financial_analysis",
+          "belief": 0.21363671189093783,
+          "true_eval_only": false
+        },
+        {
+          "role": "translation",
+          "belief": 0.20993368870772314,
+          "true_eval_only": false
+        },
+        {
+          "role": "qa_testing",
+          "belief": 0.2085565693737752,
+          "true_eval_only": false
+        },
+        {
+          "role": "database_design",
+          "belief": 0.20606862146892174,
+          "true_eval_only": true
+        },
+        {
+          "role": "data",
+          "belief": 0.19957002070698232,
+          "true_eval_only": true
+        },
+        {
+          "role": "math",
+          "belief": 0.18511316359015986,
+          "true_eval_only": false
+        },
+        {
+          "role": "accessibility_review",
+          "belief": 0.18458049529991322,
+          "true_eval_only": false
+        },
+        {
+          "role": "operations",
+          "belief": 0.17933767548118534,
+          "true_eval_only": false
+        },
+        {
+          "role": "planning",
+          "belief": 0.17103051300497898,
+          "true_eval_only": false
+        },
+        {
+          "role": "documentation",
+          "belief": 0.16195449837650852,
+          "true_eval_only": false
+        }
+      ],
+      "rounds": 8,
+      "trajectory_file": "artifacts/five_system_belief_auc_control_judge_v1/ctrl_k3_03_data_db_requirements_trajectory.json"
+    },
+    {
+      "system_id": "ctrl_k3_04_support_incident_ops",
+      "true_roles_eval_only": [
+        "customer_support_triage",
+        "incident_management",
+        "operations"
+      ],
+      "true_k_eval_only": 3,
+      "pred_k": 6,
+      "k_probs": {
+        "3": 0.24012019313432054,
+        "4": 0.2377865727123811,
+        "5": 0.25257099361404145,
+        "6": 0.2695222405392569
+      },
+      "belief_auc_eval_only": 0.6078431372549019,
+      "top3_oracle_k_pred": [
+        "operations",
+        "database_design",
+        "planning"
+      ],
+      "top3_oracle_k_exact": false,
+      "final_role_probs": {
+        "code": 0.2524317421942715,
+        "writing": 0.25230500950094137,
+        "math": 0.2112624409563184,
+        "planning": 0.2720831216142181,
+        "research": 0.16827746936526408,
+        "data": 0.22400336281588568,
+        "design": 0.24321579160812223,
+        "operations": 0.3107922257650548,
+        "qa_testing": 0.18960094108946757,
+        "translation": 0.18978854130742367,
+        "financial_analysis": 0.23368391293646001,
+        "database_design": 0.2904796052803697,
+        "accessibility_review": 0.21296074372272455,
+        "fact_checking": 0.2506777791838658,
+        "requirements_analysis": 0.2644063540369024,
+        "incident_management": 0.22283549939910718,
+        "experiment_design": 0.18863249381006703,
+        "risk_assessment": 0.18742831138149035,
+        "documentation": 0.18780660053646914,
+        "customer_support_triage": 0.1988233350538105
+      },
+      "final_ranking": [
+        {
+          "role": "operations",
+          "belief": 0.3107922257650548,
+          "true_eval_only": true
+        },
+        {
+          "role": "database_design",
+          "belief": 0.2904796052803697,
+          "true_eval_only": false
+        },
+        {
+          "role": "planning",
+          "belief": 0.2720831216142181,
+          "true_eval_only": false
+        },
+        {
+          "role": "requirements_analysis",
+          "belief": 0.2644063540369024,
+          "true_eval_only": false
+        },
+        {
+          "role": "code",
+          "belief": 0.2524317421942715,
+          "true_eval_only": false
+        },
+        {
+          "role": "writing",
+          "belief": 0.25230500950094137,
+          "true_eval_only": false
+        },
+        {
+          "role": "fact_checking",
+          "belief": 0.2506777791838658,
+          "true_eval_only": false
+        },
+        {
+          "role": "design",
+          "belief": 0.24321579160812223,
+          "true_eval_only": false
+        },
+        {
+          "role": "financial_analysis",
+          "belief": 0.23368391293646001,
+          "true_eval_only": false
+        },
+        {
+          "role": "data",
+          "belief": 0.22400336281588568,
+          "true_eval_only": false
+        },
+        {
+          "role": "incident_management",
+          "belief": 0.22283549939910718,
+          "true_eval_only": true
+        },
+        {
+          "role": "accessibility_review",
+          "belief": 0.21296074372272455,
+          "true_eval_only": false
+        },
+        {
+          "role": "math",
+          "belief": 0.2112624409563184,
+          "true_eval_only": false
+        },
+        {
+          "role": "customer_support_triage",
+          "belief": 0.1988233350538105,
+          "true_eval_only": true
+        },
+        {
+          "role": "translation",
+          "belief": 0.18978854130742367,
+          "true_eval_only": false
+        },
+        {
+          "role": "qa_testing",
+          "belief": 0.18960094108946757,
+          "true_eval_only": false
+        },
+        {
+          "role": "experiment_design",
+          "belief": 0.18863249381006703,
+          "true_eval_only": false
+        },
+        {
+          "role": "documentation",
+          "belief": 0.18780660053646914,
+          "true_eval_only": false
+        },
+        {
+          "role": "risk_assessment",
+          "belief": 0.18742831138149035,
+          "true_eval_only": false
+        },
+        {
+          "role": "research",
+          "belief": 0.16827746936526408,
+          "true_eval_only": false
+        }
+      ],
+      "rounds": 8,
+      "trajectory_file": "artifacts/five_system_belief_auc_control_judge_v1/ctrl_k3_04_support_incident_ops_trajectory.json"
+    },
+    {
+      "system_id": "ctrl_k3_05_docs_qa_writing",
+      "true_roles_eval_only": [
+        "documentation",
+        "qa_testing",
+        "writing"
+      ],
+      "true_k_eval_only": 3,
+      "pred_k": 6,
+      "k_probs": {
+        "3": 0.1695953838545008,
+        "4": 0.26628607803710047,
+        "5": 0.23451817353417542,
+        "6": 0.32960036457422337
+      },
+      "belief_auc_eval_only": 0.5882352941176471,
+      "top3_oracle_k_pred": [
+        "translation",
+        "writing",
+        "fact_checking"
+      ],
+      "top3_oracle_k_exact": false,
+      "final_role_probs": {
+        "code": 0.22343316876255273,
+        "writing": 0.4328825808566807,
+        "math": 0.22201714343041773,
+        "planning": 0.13324135800381717,
+        "research": 0.24660199896469642,
+        "data": 0.2607739927882422,
+        "design": 0.15503423670584937,
+        "operations": 0.1732707751987157,
+        "qa_testing": 0.2312107615485163,
+        "translation": 0.6671165929063155,
+        "financial_analysis": 0.16379796503103075,
+        "database_design": 0.2245589658410875,
+        "accessibility_review": 0.22521284287986168,
+        "fact_checking": 0.3163381666425062,
+        "requirements_analysis": 0.16101452295980917,
+        "incident_management": 0.18161753991090784,
+        "experiment_design": 0.20491224360256668,
+        "risk_assessment": 0.1761841085701427,
+        "documentation": 0.15124675897283052,
+        "customer_support_triage": 0.17365779525157463
+      },
+      "final_ranking": [
+        {
+          "role": "translation",
+          "belief": 0.6671165929063155,
+          "true_eval_only": false
+        },
+        {
+          "role": "writing",
+          "belief": 0.4328825808566807,
+          "true_eval_only": true
+        },
+        {
+          "role": "fact_checking",
+          "belief": 0.3163381666425062,
+          "true_eval_only": false
+        },
+        {
+          "role": "data",
+          "belief": 0.2607739927882422,
+          "true_eval_only": false
+        },
+        {
+          "role": "research",
+          "belief": 0.24660199896469642,
+          "true_eval_only": false
+        },
+        {
+          "role": "qa_testing",
+          "belief": 0.2312107615485163,
+          "true_eval_only": true
+        },
+        {
+          "role": "accessibility_review",
+          "belief": 0.22521284287986168,
+          "true_eval_only": false
+        },
+        {
+          "role": "database_design",
+          "belief": 0.2245589658410875,
+          "true_eval_only": false
+        },
+        {
+          "role": "code",
+          "belief": 0.22343316876255273,
+          "true_eval_only": false
+        },
+        {
+          "role": "math",
+          "belief": 0.22201714343041773,
+          "true_eval_only": false
+        },
+        {
+          "role": "experiment_design",
+          "belief": 0.20491224360256668,
+          "true_eval_only": false
+        },
+        {
+          "role": "incident_management",
+          "belief": 0.18161753991090784,
+          "true_eval_only": false
+        },
+        {
+          "role": "risk_assessment",
+          "belief": 0.1761841085701427,
+          "true_eval_only": false
+        },
+        {
+          "role": "customer_support_triage",
+          "belief": 0.17365779525157463,
+          "true_eval_only": false
+        },
+        {
+          "role": "operations",
+          "belief": 0.1732707751987157,
+          "true_eval_only": false
+        },
+        {
+          "role": "financial_analysis",
+          "belief": 0.16379796503103075,
+          "true_eval_only": false
+        },
+        {
+          "role": "requirements_analysis",
+          "belief": 0.16101452295980917,
+          "true_eval_only": false
+        },
+        {
+          "role": "design",
+          "belief": 0.15503423670584937,
+          "true_eval_only": false
+        },
+        {
+          "role": "documentation",
+          "belief": 0.15124675897283052,
+          "true_eval_only": true
+        },
+        {
+          "role": "planning",
+          "belief": 0.13324135800381717,
+          "true_eval_only": false
+        }
+      ],
+      "rounds": 8,
+      "trajectory_file": "artifacts/five_system_belief_auc_control_judge_v1/ctrl_k3_05_docs_qa_writing_trajectory.json"
+    }
+  ],
+  "n_systems": 5,
+  "mean_belief_auc": 0.5254901960784315,
+  "median_belief_auc": 0.5882352941176471,
+  "min_belief_auc": 0.35294117647058826,
+  "max_belief_auc": 0.6470588235294118,
+  "oracle_k_top3_exact": 0,
+  "oracle_k_top3_exact_rate": 0.0,
+  "predicted_k_exact": 0,
+  "predicted_k_exact_rate": 0.0,
+  "mas_calls": 40,
+  "truth_used_in_inference": false,
+  "selected_roles_used_in_update": false
+}

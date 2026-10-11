@@ -1,0 +1,76 @@
+===== R7 POOL VS SELECTED =====
+
+========================================================================================================================
+simple5_01_code_plan_research
+SELECTED INDEX = 3
+========================================================================================================================
+
+--- CANDIDATE 0 
+probe_style = direct
+QUERY = What specific information do I need to provide about potential risks in order to begin conducting a thorough risk assessment analysis?
+VALID = True
+
+--- CANDIDATE 1 
+probe_style = intake
+QUERY = What specific information or details should I provide first so you can start conducting research on my topic?
+VALID = True
+
+--- CANDIDATE 2 
+probe_style = direct
+QUERY = What key information do I need to verify the accuracy of a complex statistical analysis report?
+VALID = True
+
+--- CANDIDATE 3 <<< SELECTED
+probe_style = intake
+QUERY = What specific facts or claims from recent news articles or social media posts should I provide first so you can start verifying their accuracy?
+VALID = True
+
+========================================================================================================================
+simple5_04_support_incident_ops
+SELECTED INDEX = 3
+========================================================================================================================
+
+--- CANDIDATE 0 
+probe_style = direct
+QUERY = First, could you help me identify some common accessibility issues on this web page?
+VALID = True
+
+--- CANDIDATE 1 
+probe_style = intake
+QUERY = First, could you please provide some basic information about the issue you are facing?
+VALID = True
+
+--- CANDIDATE 2 
+probe_style = direct
+QUERY = First, could you help me analyze my budget report to identify areas where we might save money?
+VALID = True
+
+--- CANDIDATE 3 <<< SELECTED
+probe_style = intake
+QUERY = First, could you please share the error message or any other symptom that is occurring?
+VALID = True
+
+========================================================================================================================
+simple5_05_docs_qa_writing
+SELECTED INDEX = 3
+========================================================================================================================
+
+--- CANDIDATE 0 
+probe_style = direct
+QUERY = What is the first step I should take in performing an incident management task, based on the provided capabilities and descriptions?
+VALID = True
+
+--- CANDIDATE 1 
+probe_style = intake
+QUERY = What specific risk factors and potential impacts should I consider first to initiate an effective risk assessment process?
+VALID = True
+
+--- CANDIDATE 2 
+probe_style = direct
+QUERY = What specific technical documentation or resources should I review first to ensure comprehensive coverage in my project documentation?
+VALID = True
+
+--- CANDIDATE 3 <<< SELECTED
+probe_style = intake
+QUERY = I need help starting my research by providing some initial evidence to better understand the topic. Can you suggest where I should begin looking?
+VALID = True

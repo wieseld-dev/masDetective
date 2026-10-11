@@ -1,0 +1,20 @@
+{
+  "strict_gold": 24,
+  "audited_samples": 327,
+  "style_clean_frozen_meta_candidates": 16,
+  "secondary_counts": {
+    "EXTERNAL_DOMAIN|WEAK|HIGH": 2,
+    "SYSTEM_SELF|STRONG|HIGH": 2,
+    "SYSTEM_SELF|STRONG|MEDIUM": 7,
+    "AMBIGUOUS|WEAK|MEDIUM": 1,
+    "EXTERNAL_DOMAIN|WEAK|MEDIUM": 2,
+    "SYSTEM_SELF|EXPLICIT|HIGH": 2
+  },
+  "clear_system_self_negatives": 4,
+  "final_dpo_pairs": 3,
+  "final_gold_coverage": 3,
+  "assistant_direction_candidates": 104,
+  "secondary_input_tokens": 8539,
+  "secondary_output_tokens": 851,
+  "max_meta_pairs_per_gold": 1
+}

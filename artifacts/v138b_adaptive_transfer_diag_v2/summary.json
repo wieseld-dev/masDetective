@@ -1,0 +1,32 @@
+{
+  "neutral": {
+    "macro_role_auc": 0.853703076625387,
+    "mean_selected_minus_absent_margin": 3.9118198317352912,
+    "mean_topk_selected_recall": 0.45,
+    "mean_within_row_auc": 0.8624054007567938,
+    "micro_auc": 0.8525657837223534,
+    "n_endpoints": 400,
+    "n_rows": 20,
+    "roles_with_auc": 16
+  },
+  "recorded": {
+    "macro_role_auc": 0.8495008680555556,
+    "mean_selected_minus_absent_margin": 3.9989160706343254,
+    "mean_topk_selected_recall": 0.39999999999999997,
+    "mean_within_row_auc": 0.8620958032335742,
+    "micro_auc": 0.8465774980330448,
+    "n_endpoints": 400,
+    "n_rows": 20,
+    "roles_with_auc": 16
+  },
+  "self": {
+    "macro_role_auc": 0.8379043983273134,
+    "mean_selected_minus_absent_margin": 3.9519729640502717,
+    "mean_topk_selected_recall": 0.4583333333333333,
+    "mean_within_row_auc": 0.9115110079119366,
+    "micro_auc": 0.868694815980418,
+    "n_endpoints": 400,
+    "n_rows": 20,
+    "roles_with_auc": 16
+  }
+}

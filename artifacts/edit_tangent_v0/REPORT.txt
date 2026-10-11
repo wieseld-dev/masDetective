@@ -1,0 +1,35 @@
+============================================================================================
+STRUCTURAL EDIT TANGENT V0
+============================================================================================
+rows=1334 | V11=827 | V13=507
+
+A) SAME-EDIT REPLICATION
+  PM~SM same pair           = +0.6429 [+0.6298, +0.6558]
+  PM~SM same-role wrong pair= +0.0961
+  paired advantage          = +0.5468 p=0.00005
+
+B) CROSS-SOURCE SAME-EDIT DETECTION
+  query-sim AUC             = 0.8899
+  tangent-sim AUC           = 0.5237
+  tangent | query residual AUC = 0.5185
+  exact-query pairs excluded= 0
+
+C) CROSS-SOURCE EDIT IDENTIFICATION
+  V11 -> V13  : top1=0.1755 MRR=0.3106 margin=-0.1232 chance=0.0500
+                 strict unseen-query top1=0.1755424063116371 MRR=0.3105683719485999 n=507
+  V13 -> V11  : top1=0.1911 MRR=0.3198 margin=-0.1151 chance=0.0500
+                 strict unseen-query top1=0.19105199516324062 MRR=0.3198367676571374 n=827
+
+D) WITHIN-SOURCE LEAVE-QUERY-OUT
+  V11 top1=0.3144 MRR=0.4422 chance=0.0500
+  V13 top1=0.2584 MRR=0.3829 chance=0.0500
+
+E) EDIT-TANGENT GEOMETRY
+  role centroids=20
+  stable rank=11.571
+  effective rank=17.748
+  top singular values=1.277, 1.271, 1.214, 1.194, 1.165, 1.096, 1.073, 1.036, 1.004, 0.951
+
+============================================================================================
+OVERALL: NO-GO — role-edit tangents are not sufficiently stable/transferable to justify Structural Fisher Geometry.
+============================================================================================

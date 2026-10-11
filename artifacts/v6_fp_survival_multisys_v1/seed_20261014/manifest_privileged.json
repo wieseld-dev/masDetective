@@ -1,0 +1,446 @@
+{
+  "notes": {
+    "baseline_manifests_excluded": [
+      "artifacts/adaptive_v1/manifest.json"
+    ],
+    "policy_must_never_read_this_file": true,
+    "privileged": true
+  },
+  "seed": 864209,
+  "sha256": "d5c8915c9273c5ca0e662bf021ee1cb8f5334bad8de3273d1017619ccd27a941",
+  "systems": [
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "experiment_design",
+        "planning",
+        "math"
+      ],
+      "session_id": "av11_d0544071f1ec78f2",
+      "split": "train",
+      "style": "s2"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "operations",
+        "accessibility_review",
+        "research",
+        "data"
+      ],
+      "session_id": "av11_27e20625aee8ca5d",
+      "split": "train",
+      "style": "s3"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "fact_checking",
+        "requirements_analysis",
+        "risk_assessment",
+        "accessibility_review",
+        "writing"
+      ],
+      "session_id": "av11_be75be6f961ea65a",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "single",
+      "roles": [
+        "code",
+        "customer_support_triage",
+        "financial_analysis",
+        "math",
+        "qa_testing"
+      ],
+      "session_id": "av11_953769178d62214f",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "math",
+        "code",
+        "translation",
+        "planning",
+        "documentation"
+      ],
+      "session_id": "av11_60adcadf2277b949",
+      "split": "train",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "single",
+      "roles": [
+        "experiment_design",
+        "incident_management",
+        "design",
+        "risk_assessment",
+        "code",
+        "fact_checking"
+      ],
+      "session_id": "av11_486b21e22324059f",
+      "split": "train",
+      "style": "s3"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "data",
+        "requirements_analysis",
+        "research"
+      ],
+      "session_id": "av11_d7cd28142f2a04b9",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 3,
+      "mode": "fanout2",
+      "roles": [
+        "experiment_design",
+        "documentation",
+        "requirements_analysis"
+      ],
+      "session_id": "av11_38108c805bd533a1",
+      "split": "train",
+      "style": "s3"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "writing",
+        "financial_analysis",
+        "database_design",
+        "translation"
+      ],
+      "session_id": "av11_5df7e71a9829f052",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 4,
+      "mode": "fanout2",
+      "roles": [
+        "risk_assessment",
+        "documentation",
+        "fact_checking",
+        "data"
+      ],
+      "session_id": "av11_fa269d1328d0991f",
+      "split": "train",
+      "style": "s3"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "risk_assessment",
+        "code",
+        "design",
+        "planning",
+        "customer_support_triage"
+      ],
+      "session_id": "av11_6488732ca6cd1f03",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "design",
+        "incident_management",
+        "translation",
+        "experiment_design",
+        "fact_checking",
+        "requirements_analysis"
+      ],
+      "session_id": "av11_2d97f9f748e0fb9e",
+      "split": "train",
+      "style": "s3"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "database_design",
+        "qa_testing",
+        "incident_management"
+      ],
+      "session_id": "av11_c146ae3a378bfec3",
+      "split": "train",
+      "style": "s2"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "translation",
+        "planning",
+        "writing",
+        "research"
+      ],
+      "session_id": "av11_c290a3a477cfe91b",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 4,
+      "mode": "fanout3",
+      "roles": [
+        "math",
+        "accessibility_review",
+        "qa_testing",
+        "planning"
+      ],
+      "session_id": "av11_0958d195a346cdb1",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "experiment_design",
+        "writing",
+        "math",
+        "financial_analysis",
+        "documentation"
+      ],
+      "session_id": "av11_fe6081f59a94aebf",
+      "split": "train",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "data",
+        "research",
+        "design",
+        "translation",
+        "incident_management",
+        "operations"
+      ],
+      "session_id": "av11_023efb442571d117",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 6,
+      "mode": "fanout3",
+      "roles": [
+        "financial_analysis",
+        "experiment_design",
+        "design",
+        "documentation",
+        "qa_testing",
+        "database_design"
+      ],
+      "session_id": "av11_fcbc5e8f6c849e2b",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "accessibility_review",
+        "planning",
+        "code"
+      ],
+      "session_id": "av11_8ab66a778c443eeb",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 3,
+      "mode": "mixed",
+      "roles": [
+        "customer_support_triage",
+        "data",
+        "design"
+      ],
+      "session_id": "av11_da6eb645b311f910",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "customer_support_triage",
+        "code",
+        "documentation",
+        "writing"
+      ],
+      "session_id": "av11_2d355538615f00ff",
+      "split": "train",
+      "style": "s2"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "database_design",
+        "qa_testing",
+        "operations",
+        "requirements_analysis",
+        "accessibility_review"
+      ],
+      "session_id": "av11_20f1ec3cfdaa5518",
+      "split": "train",
+      "style": "s3"
+    },
+    {
+      "k": 5,
+      "mode": "mixed",
+      "roles": [
+        "database_design",
+        "fact_checking",
+        "customer_support_triage",
+        "incident_management",
+        "operations"
+      ],
+      "session_id": "av11_f38ade721933a587",
+      "split": "train",
+      "style": "s1"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "financial_analysis",
+        "translation",
+        "writing",
+        "accessibility_review",
+        "data",
+        "database_design"
+      ],
+      "session_id": "av11_93d32f31d67faa9c",
+      "split": "train",
+      "style": "s2"
+    },
+    {
+      "k": 3,
+      "mode": "single",
+      "roles": [
+        "database_design",
+        "translation",
+        "incident_management"
+      ],
+      "session_id": "av11_a44cacff6e6a0987",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 4,
+      "mode": "single",
+      "roles": [
+        "qa_testing",
+        "operations",
+        "design",
+        "customer_support_triage"
+      ],
+      "session_id": "av11_73d27ce184e11f22",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 5,
+      "mode": "fanout2",
+      "roles": [
+        "accessibility_review",
+        "incident_management",
+        "research",
+        "operations",
+        "writing"
+      ],
+      "session_id": "av11_acb4c27f9f4f9928",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 6,
+      "mode": "fanout2",
+      "roles": [
+        "math",
+        "operations",
+        "data",
+        "financial_analysis",
+        "documentation",
+        "research"
+      ],
+      "session_id": "av11_6f7fdcc524d51e6f",
+      "split": "dev",
+      "style": "s1"
+    },
+    {
+      "k": 3,
+      "mode": "fanout3",
+      "roles": [
+        "accessibility_review",
+        "fact_checking",
+        "financial_analysis"
+      ],
+      "session_id": "av11_45cef9ed95060cb6",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 5,
+      "mode": "fanout3",
+      "roles": [
+        "code",
+        "customer_support_triage",
+        "risk_assessment",
+        "qa_testing",
+        "requirements_analysis"
+      ],
+      "session_id": "av11_88df51dd13b124fb",
+      "split": "dev",
+      "style": "s3"
+    },
+    {
+      "k": 4,
+      "mode": "mixed",
+      "roles": [
+        "experiment_design",
+        "requirements_analysis",
+        "risk_assessment",
+        "fact_checking"
+      ],
+      "session_id": "av11_6ad58795fe81d17f",
+      "split": "dev",
+      "style": "s2"
+    },
+    {
+      "k": 6,
+      "mode": "mixed",
+      "roles": [
+        "experiment_design",
+        "planning",
+        "financial_analysis",
+        "documentation",
+        "design",
+        "risk_assessment"
+      ],
+      "session_id": "av11_c71fb37e10ca9d3a",
+      "split": "dev",
+      "style": "s1"
+    }
+  ],
+  "version": "adaptive_v11_active_manifest_v1"
+}

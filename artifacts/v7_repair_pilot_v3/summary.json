@@ -1,0 +1,25 @@
+{
+  "sources": 48,
+  "eligible": 36,
+  "eligible_rate": 0.75,
+  "by_family": {
+    "DANGLING_BAD": {
+      "n": 16,
+      "eligible": 13
+    },
+    "DIRECTION_BAD": {
+      "n": 16,
+      "eligible": 8
+    },
+    "SYSTEM_SELF_BAD": {
+      "n": 16,
+      "eligible": 15
+    }
+  },
+  "skip_reasons": {
+    "unparsed_direction": 8,
+    "unparsed_system_self": 1,
+    "unparsed_dangling": 2,
+    "generic_dangling_topic": 1
+  }
+}

@@ -1,0 +1,126 @@
+
+====================================================================================================
+G02
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+--- DIRECTION ---
+01 [MINIMAL] What specific aspects of translation do you need help with?
+02 [MINIMAL] Which elements of translations are you looking to understand better?
+03 [MINIMAL] What areas of meaning in translations concern you the most?
+04 [MINIMAL] Could you tell me what you're interested in regarding translations?
+05 [MINIMAL] What aspects of translation would you like me to clarify?
+06 [MINIMAL] What details about translation would you like to discuss?
+07 [DIVERSE] In translations, what specific meaning do you find challenging?
+08 [DIVERSE] What do you want to know more about when it comes to translations?
+09 [DIVERSE] Which translation aspects are you uncertain about?
+10 [DIVERSE] What specific translation issues do you need help understanding?
+
+--- META ---
+01 [MINIMAL] How do you manage translations to maintain accuracy and tone?
+02 [MINIMAL] Can your system provide translations while ensuring meaning is preserved?
+03 [MINIMAL] What is your method for preserving meaning in translations?
+04 [MINIMAL] Does your application handle translations effectively and maintain context?
+05 [MINIMAL] Can you detail your process for translating while keeping terminology consistent?
+06 [MINIMAL] How does your service ensure translations reflect accurate tones in language?
+07 [DIVERSE] What methods do you use to maintain tone and context in translations?
+08 [DIVERSE] Can you share how you approach translations to keep their meaning intact?
+09 [DIVERSE] Do you typically manage translations in a way that preserves important details?
+10 [DIVERSE] How do you ensure that translations maintain the necessary context?
+
+--- DANGLING ---
+01 [MINIMAL] How do translations handle these tasks effectively?
+02 [MINIMAL] Can you describe how this area maintains meaning in translations?
+03 [MINIMAL] What techniques does the current setup use to capture meaning in translations?
+04 [MINIMAL] How can this process ensure the technical details are preserved during translation?
+05 [MINIMAL] What aspects of these skills help maintain nuance in translations?
+06 [MINIMAL] Can you explain how this method maintains both context and meaning?
+07 [DIVERSE] What strategies are used in this area to ensure accurate translations?
+08 [DIVERSE] How do these practices contribute to preserving both meaning and tone?
+09 [DIVERSE] In what ways does this framework assist in maintaining clarity and meaning?
+10 [DIVERSE] How does this approach guarantee accuracy in translations?
+
+====================================================================================================
+G16
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+--- DIRECTION ---
+01 [MINIMAL] What specific aspect of incident management would you like more information about?
+02 [MINIMAL] Which part of risk assessment do you need help understanding?
+03 [MINIMAL] What challenges in your incident management process would you like to improve?
+04 [MINIMAL] What specific information do you think would help clarify risks during implementation?
+05 [MINIMAL] Which discrepancies between incidents and risks do you find most significant?
+06 [MINIMAL] What specific elements of implementation would you like to explore further?
+07 [DIVERSE] In your view, what are common challenges when users report incidents during implementation?
+08 [DIVERSE] What information do you think would be helpful in assessing risks related to incidents?
+09 [DIVERSE] Which challenges do you anticipate in your risk assessment process during implementation?
+10 [DIVERSE] What aspects of incident management reporting do you think are most urgent to address?
+
+--- META ---
+01 [MINIMAL] How do you handle discrepancies in incident reporting?
+02 [MINIMAL] Can you describe your method for managing reported incidents?
+03 [MINIMAL] Does your system have a process for addressing incident discrepancies?
+04 [MINIMAL] What approach does your system take towards incident reports?
+05 [MINIMAL] How does your application manage identified risks in incidents?
+06 [MINIMAL] Can your system provide insights on incident discrepancies?
+07 [DIVERSE] What can your application do in terms of managing incidents?
+08 [DIVERSE] How has your system dealt with incidents in the past?
+09 [DIVERSE] What experience does your program have with reported incidents?
+10 [DIVERSE] Can your system explain its handling of risks associated with incidents?
+
+--- DANGLING ---
+01 [MINIMAL] What specific challenge might arise during these tasks if there were significant discrepancies in reported incidents and identified risks?
+02 [MINIMAL] What specific challenge might arise in the current setup if there are significant discrepancies between reported incidents and risks identified?
+03 [MINIMAL] What specific challenge might arise in this area if there are significant discrepancies in incident reports and risk assessments?
+04 [MINIMAL] What specific challenge might arise before proceeding if discrepancies exist between user-reported incidents and identified risks?
+05 [MINIMAL] What specific challenge might arise in this process if there were discrepancies noted between incidents reported and risks identified?
+06 [MINIMAL] What specific challenge might arise due to the following skills if there are discrepancies between incidents reported and identified risks?
+07 [DIVERSE] How might the challenge of aligning incident reports and risk evaluations be affected by the current approach to user feedback?
+08 [DIVERSE] What specific complications could arise in the next steps if users report incidents that differ significantly from the identified risks?
+09 [DIVERSE] What specific issues could emerge from discrepancies in reported incidents based on the present understanding of risk management?
+10 [DIVERSE] What specific challenge could arise when evaluating incident reports if there are glaring discrepancies in the current analysis framework?
+
+====================================================================================================
+G32
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+--- DIRECTION ---
+01 [MINIMAL] What specific details do you need regarding the requirements analysis?
+02 [MINIMAL] Which part of the requirements analysis do you want to discuss further?
+03 [MINIMAL] What are the requirements you'd like to clarify for the analysis?
+04 [MINIMAL] What kind of information do you think might be helpful for the requirements analysis?
+05 [MINIMAL] Do you need assistance identifying specific requirements for the analysis?
+06 [MINIMAL] What aspects of the requirements analysis would you like me to help with?
+07 [DIVERSE] Can you specify which requirements you're unsure about for your analysis?
+08 [DIVERSE] What additional input do you believe is critical for this requirements analysis?
+09 [DIVERSE] What parts of the requirements analysis are you finding challenging?
+10 [DIVERSE] How can I assist you in understanding your requirements for the analysis?
+
+--- META ---
+01 [MINIMAL] How do you typically conduct requirement analysis?
+02 [MINIMAL] Can you explain your method for requirement analysis?
+03 [MINIMAL] Do you have experience with requirement analysis tasks?
+04 [MINIMAL] How does your system accomplish requirement analysis?
+05 [MINIMAL] What is your process for requirement analysis?
+06 [MINIMAL] Can you describe your approach to requirement analysis?
+07 [DIVERSE] What methods do you apply for requirement analysis tasks?
+08 [DIVERSE] What is your system's history with requirement analysis?
+09 [DIVERSE] Does your system deal with requirement analysis effectively?
+10 [DIVERSE] How does your system apply requirement analysis techniques?
+
+--- DANGLING ---
+01 [MINIMAL] What do we need to address regarding these tasks?
+02 [MINIMAL] Is there anything else that should be considered for the current setup?
+03 [MINIMAL] Could you clarify anything related to this area before proceeding?
+04 [MINIMAL] What additional points should we cover in this process?
+05 [MINIMAL] Are there any further aspects to review regarding the following skills?
+06 [MINIMAL] Is there anything missing before proceeding with this process?
+07 [DIVERSE] Can you help identify gaps in the analysis for these tasks?
+08 [DIVERSE] What needs addressing in the current setup for these tasks?
+09 [DIVERSE] Could you provide insights on this area's further clarification?
+10 [DIVERSE] Are there any insights regarding this process needed before proceeding further?

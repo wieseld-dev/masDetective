@@ -1,0 +1,119 @@
+{
+  "audit_test_rows": 100,
+  "capability_ids_in_test": [
+    28,
+    45,
+    133,
+    179,
+    186
+  ],
+  "direction_ids_in_test": [
+    8,
+    41,
+    81,
+    91,
+    108,
+    112,
+    182,
+    218,
+    247,
+    256,
+    259,
+    273,
+    297
+  ],
+  "subset_sizes": {
+    "ALL_AUDITED_TEST_100": 100,
+    "NO_CAPABILITY": 95,
+    "STRICT_NO_CAP_OR_DIRECTION": 82
+  },
+  "query_used": false,
+  "old_adapter": "artifacts/v13_8b_balanced_repair_2048_run1/best_adapter",
+  "new_adapter": "artifacts/v7_benign_output_sensor_pilot_v1/best_adapter",
+  "metrics": {
+    "ALL_AUDITED_TEST_100": {
+      "old": {
+        "rows": 100,
+        "micro_auc": 0.5792040379834394,
+        "macro_role_auc": 0.604667303174785,
+        "within_output_auc": 0.6124148606811146,
+        "topk_activation_recall": 0.12,
+        "exact_activation_set": 0.04,
+        "mean_selected_minus_absent_logit": 0.22086888342490918
+      },
+      "new": {
+        "rows": 100,
+        "micro_auc": 0.8164601657217114,
+        "macro_role_auc": 0.800097156171857,
+        "within_output_auc": 0.843016425868593,
+        "topk_activation_recall": 0.5583333333333333,
+        "exact_activation_set": 0.33,
+        "mean_selected_minus_absent_logit": 3.211912268030713
+      },
+      "delta_new_minus_old": {
+        "micro_auc": 0.23725612773827198,
+        "macro_role_auc": 0.19542985299707194,
+        "within_output_auc": 0.23060156518747843,
+        "topk_activation_recall": 0.43833333333333335,
+        "exact_activation_set": 0.29000000000000004,
+        "mean_selected_minus_absent_logit": 2.991043384605804
+      }
+    },
+    "NO_CAPABILITY": {
+      "old": {
+        "rows": 95,
+        "micro_auc": 0.5797609819121448,
+        "macro_role_auc": 0.6048012241803372,
+        "within_output_auc": 0.6186464613546251,
+        "topk_activation_recall": 0.12631578947368421,
+        "exact_activation_set": 0.042105263157894736,
+        "mean_selected_minus_absent_logit": 0.23457636440984955
+      },
+      "new": {
+        "rows": 95,
+        "micro_auc": 0.8100258397932817,
+        "macro_role_auc": 0.7987598076355766,
+        "within_output_auc": 0.8389201202179858,
+        "topk_activation_recall": 0.5561403508771929,
+        "exact_activation_set": 0.3263157894736842,
+        "mean_selected_minus_absent_logit": 3.202061603931459
+      },
+      "delta_new_minus_old": {
+        "micro_auc": 0.23026485788113693,
+        "macro_role_auc": 0.19395858345523942,
+        "within_output_auc": 0.2202736588633607,
+        "topk_activation_recall": 0.4298245614035087,
+        "exact_activation_set": 0.28421052631578947,
+        "mean_selected_minus_absent_logit": 2.9674852395216096
+      }
+    },
+    "STRICT_NO_CAP_OR_DIRECTION": {
+      "old": {
+        "rows": 82,
+        "micro_auc": 0.586010883430471,
+        "macro_role_auc": 0.6143446674549761,
+        "within_output_auc": 0.6225563610125265,
+        "topk_activation_recall": 0.1422764227642276,
+        "exact_activation_set": 0.04878048780487805,
+        "mean_selected_minus_absent_logit": 0.250681803130393
+      },
+      "new": {
+        "rows": 82,
+        "micro_auc": 0.7918318436977894,
+        "macro_role_auc": 0.7782078299165152,
+        "within_output_auc": 0.8266311552434411,
+        "topk_activation_recall": 0.5182926829268293,
+        "exact_activation_set": 0.2804878048780488,
+        "mean_selected_minus_absent_logit": 2.8976731712951147
+      },
+      "delta_new_minus_old": {
+        "micro_auc": 0.20582096026731833,
+        "macro_role_auc": 0.1638631624615391,
+        "within_output_auc": 0.20407479423091457,
+        "topk_activation_recall": 0.3760162601626017,
+        "exact_activation_set": 0.23170731707317077,
+        "mean_selected_minus_absent_logit": 2.6469913681647217
+      }
+    }
+  }
+}

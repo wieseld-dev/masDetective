@@ -1,0 +1,8 @@
+{
+  "baseline_cal_selection_score": 0.6615829371258799,
+  "best_adapter_exists": true,
+  "best_selection_score": 0.7001578917222889,
+  "dev87_used_for_model_selection": false,
+  "final_cal_selection_score": 0.7001578917222889,
+  "improved_over_baseline": true
+}

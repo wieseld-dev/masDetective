@@ -1,0 +1,59 @@
+{
+  "mode": "combined",
+  "input_adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "output_adapter": "artifacts/v6_matched_sft_dpo/policy",
+  "positives": 17,
+  "preferences": 122,
+  "preference_families": {
+    "DIRECTION": 58,
+    "META": 64
+  },
+  "pref_dataset_sha256": "11829d804c9f7519cec76f50aab173d4b73615cccac411a81425ae3cb4b59498",
+  "epochs": 3,
+  "slots_per_epoch": 122,
+  "microbatches": 366,
+  "optimizer_steps": 92,
+  "expected_optimizer_steps": 92,
+  "grad_accum": 4,
+  "lr": 2e-06,
+  "sft_weight": 1.0,
+  "pref_weight": 0.5,
+  "dpo_beta": 1.0,
+  "anchor_weight": 0.05,
+  "mean_train_sft": 1.560089278090847,
+  "mean_train_anchor": 0.004977020409589257,
+  "mean_train_dpo": 0.6461922067110656,
+  "mean_train_weighted_dpo": 0.3233125613686817,
+  "mean_positive_lp_gain": 0.16480928308823528,
+  "min_positive_lp_gain": 0.0927734375,
+  "mean_preference_margin_gain": 0.2056064293032787,
+  "weighted_preference_margin_gain": 0.20458266314338253,
+  "direction_margin_gain": 0.2042699353448276,
+  "meta_margin_gain": 0.206817626953125,
+  "weighted_direction_margin_gain": 0.20066833496093742,
+  "weighted_meta_margin_gain": 0.208062065972222,
+  "input_adapter_sha256": "6f4e0d2e03b048eb5333199f18a0ba74562ee8abf4a7bfdcee7a380e764dde68",
+  "schedule_audit": [
+    {
+      "epoch": 1,
+      "slots": 122,
+      "positive_exposure_min": 7,
+      "positive_exposure_max": 8,
+      "preference_unique": 122
+    },
+    {
+      "epoch": 2,
+      "slots": 122,
+      "positive_exposure_min": 7,
+      "positive_exposure_max": 8,
+      "preference_unique": 122
+    },
+    {
+      "epoch": 3,
+      "slots": 122,
+      "positive_exposure_min": 7,
+      "positive_exposure_max": 8,
+      "preference_unique": 122
+    }
+  ]
+}

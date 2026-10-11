@@ -1,0 +1,17 @@
+{
+  "source_rounds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "selection": "top-2 positive-reward probes per group",
+  "train_rows": 265,
+  "val_rows": 22,
+  "groups": 155,
+  "mean_train_reward": 0.3857261696088027,
+  "median_train_reward": 0.3281925337671254
+}

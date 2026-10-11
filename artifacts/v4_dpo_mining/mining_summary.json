@@ -1,0 +1,14 @@
+{
+  "gold_prompts": 45,
+  "samples_per_prompt": 8,
+  "total_samples": 360,
+  "prompt_identity_checks_passed": 360,
+  "valid_samples": 327,
+  "valid_fraction": 0.9083333333333333,
+  "unique_within_prompt_flags": 360,
+  "changed_from_gold": 360,
+  "globally_distinct_nonempty_queries": 327,
+  "adapter": "artifacts/robust_visible_generator_v1_epoch2/policy",
+  "temperature": 1.0,
+  "top_p": 0.95
+}

@@ -1,0 +1,199 @@
+{
+  "version": "role_count_spectral_v1",
+  "seed": 73,
+  "dim": 16,
+  "n_probes": 40,
+  "fixed_R": "requirements_analysis",
+  "fixed_M": "documentation",
+  "pairs": [
+    {
+      "pair_id": "p01",
+      "A": "research",
+      "B": "fact_checking"
+    },
+    {
+      "pair_id": "p02",
+      "A": "code",
+      "B": "qa_testing"
+    },
+    {
+      "pair_id": "p03",
+      "A": "data",
+      "B": "database_design"
+    },
+    {
+      "pair_id": "p04",
+      "A": "operations",
+      "B": "incident_management"
+    }
+  ],
+  "probes": [
+    {
+      "probe_id": "v11_5",
+      "query": "What is the most reliable and widely accessible database for finding authoritative scientific evidence on global health trends?"
+    },
+    {
+      "probe_id": "v11_115",
+      "query": "What key pieces of information should I share before we can start analyzing the requirements for this project?"
+    },
+    {
+      "probe_id": "v11_43",
+      "query": "When diagnosing a hardware issue reported by the user, what key characteristic must I look for before proceeding with the diagnosis?"
+    },
+    {
+      "probe_id": "v11_196",
+      "query": "What steps should I follow to start documenting this process?"
+    },
+    {
+      "probe_id": "v11_13",
+      "query": "What steps or actions specifically related to understanding and validating your dataset would you consider necessary before proceeding further?"
+    },
+    {
+      "probe_id": "v11_155",
+      "query": "What kind of input data might be helpful for me to understand your current issue better?"
+    },
+    {
+      "probe_id": "v11_22",
+      "query": "Could you please provide an excerpt of your current document or piece of writing that needs some improvements?"
+    },
+    {
+      "probe_id": "v11_212",
+      "query": "What types of inconsistencies or errors should I focus on when auditing my spreadsheet to ensure proper data management and accuracy?"
+    },
+    {
+      "probe_id": "v11_58",
+      "query": "What specific aspects of our current database structure would you like us to review or optimize?"
+    },
+    {
+      "probe_id": "v11_68",
+      "query": "Could you please explain the steps involved in solving this equation using your method?"
+    },
+    {
+      "probe_id": "v11_165",
+      "query": "Is there any additional information or context needed from you regarding the following equation?"
+    },
+    {
+      "probe_id": "v11_191",
+      "query": "What type of information would be most helpful for me to know first when beginning a risk assessment task?"
+    },
+    {
+      "probe_id": "v11_24",
+      "query": "How can I identify common mistakes in a paragraph of English language text?"
+    },
+    {
+      "probe_id": "v11_59",
+      "query": "Could you explain how your current database schema handles foreign key relationships among tables?"
+    },
+    {
+      "probe_id": "v11_114",
+      "query": "What specific types of ambiguity or complexity do you anticipate we might encounter during this requirements analysis task?"
+    },
+    {
+      "probe_id": "v11_103",
+      "query": "What type of fact-checking scenario would you like me to verify today?"
+    },
+    {
+      "probe_id": "v11_95",
+      "query": "What steps should I take first to ensure I have all necessary components ready before starting my project?"
+    },
+    {
+      "probe_id": "v11_51",
+      "query": "What type of financial statement am I analyzing—balance sheet, income statement, cash flow statement?"
+    },
+    {
+      "probe_id": "v11_204",
+      "query": "What specific aspects of the vendor options and purchasing process should I consider most critically for my procurement analysis?"
+    },
+    {
+      "probe_id": "v11_119",
+      "query": "What is a few reputable and widely accepted online platforms where I can access comprehensive data on recent advancements in artificial intelligence (AI) technology?"
+    },
+    {
+      "probe_id": "v11_122",
+      "query": "Could you walk me through some typical steps or components involved in performing a financial analysis?"
+    },
+    {
+      "probe_id": "v11_156",
+      "query": "What foundational details should I consider before starting the experiment design process?"
+    },
+    {
+      "probe_id": "v11_93",
+      "query": "How should I start preparing my project plan?"
+    },
+    {
+      "probe_id": "v11_76",
+      "query": "Could you please confirm if you primarily assist with translations into English?"
+    },
+    {
+      "probe_id": "v11_25",
+      "query": "Could you please start by providing a simple sentence or phrase that contains at least three common spelling errors?"
+    },
+    {
+      "probe_id": "v11_108",
+      "query": "**New Question:** When preparing for the QA testing task, which aspect should be most crucial to avoid overlooking any potential issues?"
+    },
+    {
+      "probe_id": "v11_169",
+      "query": "What statistical measures would you like me to examine from this dataset first so that we can more comprehensively analyze its characteristics?"
+    },
+    {
+      "probe_id": "v11_88",
+      "query": "Given that your current software component is not behaving as expected, could you please tell me more about how it fails?"
+    },
+    {
+      "probe_id": "v11_182",
+      "query": "What steps should I take at the very beginning to get started with planning a project?"
+    },
+    {
+      "probe_id": "v11_44",
+      "query": "What type of issue is this—regression, performance bottleneck, missing feature, etc.—that requires immediate attention based on your experience?"
+    },
+    {
+      "probe_id": "v11_216",
+      "query": "What key data points do you need to estimate the inventory forecast?"
+    },
+    {
+      "probe_id": "v11_3",
+      "query": "**Q:** Where can I find reliable studies and papers specifically relevant to understanding the impact of renewable energy technologies on carbon emissions reduction?"
+    },
+    {
+      "probe_id": "v11_91",
+      "query": "What are the main considerations when setting up a development environment before starting a coding project?"
+    },
+    {
+      "probe_id": "v11_211",
+      "query": "What key features or considerations should I look for while auditing my spreadsheet to ensure consistency, reference integrity, suspicious data, logical redundancy, and alignment with overall business processes?"
+    },
+    {
+      "probe_id": "v11_133",
+      "query": "How can I best prepare my data for analysis so we can identify the root cause efficiently?"
+    },
+    {
+      "probe_id": "v11_152",
+      "query": "**New Question:** What type of logging configuration settings should I configure to ensure that my application logs critical errors without cluttering the output during normal operation?"
+    },
+    {
+      "probe_id": "v11_48",
+      "query": "How can I best ensure that users understand the importance of clear and simple communication in designing products?"
+    },
+    {
+      "probe_id": "v11_173",
+      "query": "How can I gather key data points to assess the current status of this process?"
+    },
+    {
+      "probe_id": "v11_195",
+      "query": "What kind of information is essential at the beginning of the risk assessment process to ensure a thorough and accurate assessment?"
+    },
+    {
+      "probe_id": "v11_175",
+      "query": "How can I identify potential issues in a software system that is not functioning as expected?"
+    }
+  ],
+  "hypotheses": {
+    "00": "R -> M",
+    "10": "R -> A -> M",
+    "01": "R -> B -> M",
+    "11": "R -> A -> B -> M"
+  },
+  "note": "Only task text + final output are learner inputs. Role sequence is evaluation/training-system metadata."
+}

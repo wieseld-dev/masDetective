@@ -1,0 +1,143 @@
+==========================================================================================
+CANONICAL SCORE DIAGNOSTICS V2
+==========================================================================================
+rows: 720
+systems: 36
+targets: 20
+
+rows per cohort:
+  high  rows=240 systems=12
+  k3    rows=240 systems=12
+  k4    rows=240 systems=12
+
+canonical role order:
+  00 accessibility_review
+  01 code
+  02 customer_support_triage
+  03 data
+  04 database_design
+  05 design
+  06 documentation
+  07 experiment_design
+  08 fact_checking
+  09 financial_analysis
+  10 incident_management
+  11 math
+  12 operations
+  13 planning
+  14 qa_testing
+  15 requirements_analysis
+  16 research
+  17 risk_assessment
+  18 translation
+  19 writing
+
+INTEGRITY CHECK: PASS
+
+==========================================================================================
+OOF CALIBRATION
+==========================================================================================
+
+A) Decode original ACTIVATION target
+k3    n=240 AUC=0.6634 BalAcc=0.5621 TPR=0.1389 FPR=0.0147
+k4    n=240 AUC=0.5807 BalAcc=0.4974 TPR=0.0000 FPR=0.0052
+high  n=240 AUC=0.6342 BalAcc=0.5380 TPR=0.1279 FPR=0.0519
+all   n=720 AUC=0.6277 BalAcc=0.5361 TPR=0.0941 FPR=0.0218
+
+B) Direct INSTALLED-PRESENCE calibration
+k3    n=240 AUC=0.6619 BalAcc=0.5621 TPR=0.1389 FPR=0.0147
+k4    n=240 AUC=0.5767 BalAcc=0.4948 TPR=0.0000 FPR=0.0104
+high  n=240 AUC=0.6241 BalAcc=0.5371 TPR=0.1264 FPR=0.0523
+all   n=720 AUC=0.6216 BalAcc=0.5349 TPR=0.0936 FPR=0.0237
+
+Presence calibration — per target:
+accessibility_review       n=36 pos=11 auc=0.429 bal=0.500
+code                       n=36 pos= 9 auc=0.000 bal=0.500
+customer_support_triage    n=36 pos= 8 auc=0.768 bal=0.670
+data                       n=36 pos=10 auc=0.000 bal=0.481
+database_design            n=36 pos=10 auc=0.431 bal=0.481
+design                     n=36 pos= 6 auc=0.744 bal=0.550
+documentation              n=36 pos= 9 auc=0.716 bal=0.648
+experiment_design          n=36 pos= 6 auc=0.694 bal=0.650
+fact_checking              n=36 pos= 4 auc=0.000 bal=0.500
+financial_analysis         n=36 pos=12 auc=0.594 bal=0.479
+incident_management        n=36 pos= 5 auc=0.090 bal=0.500
+math                       n=36 pos= 8 auc=0.036 bal=0.500
+operations                 n=36 pos= 5 auc=0.929 bal=0.600
+planning                   n=36 pos=10 auc=0.819 bal=0.781
+qa_testing                 n=36 pos=14 auc=0.302 bal=0.455
+requirements_analysis      n=36 pos=10 auc=0.085 bal=0.500
+research                   n=36 pos=10 auc=0.012 bal=0.500
+risk_assessment            n=36 pos= 9 auc=0.617 bal=0.463
+translation                n=36 pos= 8 auc=0.000 bal=0.500
+writing                    n=36 pos= 7 auc=0.000 bal=0.500
+
+==========================================================================================
+POISSON-BINOMIAL K POSTERIOR
+==========================================================================================
+
+[k3] systems=12
+  Khat_hard_05         exactK=0.0833 MAE=2.3333
+  Khat_poibin_raw      exactK=0.0000 MAE=1.5000
+  Khat_poibin_3_8      exactK=0.0000 MAE=1.5000
+  exact installed role set @0.5 = 0.0000
+
+[k4] systems=12
+  Khat_hard_05         exactK=0.0000 MAE=3.8333
+  Khat_poibin_raw      exactK=0.8333 MAE=0.1667
+  Khat_poibin_3_8      exactK=0.8333 MAE=0.1667
+  exact installed role set @0.5 = 0.0000
+
+[high] systems=12
+  Khat_hard_05         exactK=0.0000 MAE=5.6667
+  Khat_poibin_raw      exactK=0.1667 MAE=2.2500
+  Khat_poibin_3_8      exactK=0.1667 MAE=2.2500
+  exact installed role set @0.5 = 0.0000
+
+[all] systems=36
+  Khat_hard_05         exactK=0.0278 MAE=3.9444
+  Khat_poibin_raw      exactK=0.3333 MAE=1.3056
+  Khat_poibin_3_8      exactK=0.3333 MAE=1.3056
+  exact installed role set @0.5 = 0.0000
+
+==========================================================================================
+DIRECT K FINGERPRINT: K3 vs K4
+==========================================================================================
+systems: 24
+feature_dim: 35
+class counts: {4: 12, 3: 12}
+
+logistic
+  repeated-CV fold accuracy = 0.4033 +/- 0.1456
+  aggregate 25-repeat OOF accuracy = 0.3750
+  confusion [rows=true 3,4; cols=pred 3,4]:
+  [[3, 9], [6, 6]]
+
+extratrees
+  repeated-CV fold accuracy = 0.3917 +/- 0.1552
+  aggregate 25-repeat OOF accuracy = 0.2917
+  confusion [rows=true 3,4; cols=pred 3,4]:
+  [[3, 9], [8, 4]]
+
+randomforest
+  repeated-CV fold accuracy = 0.3717 +/- 0.1647
+  aggregate 25-repeat OOF accuracy = 0.3750
+  confusion [rows=true 3,4; cols=pred 3,4]:
+  [[5, 7], [8, 4]]
+
+==========================================================================================
+LABEL PERMUTATION SANITY — LOGISTIC
+==========================================================================================
+real fixed-CV accuracy = 0.3333
+permutation mean       = 0.4971
+permutation std        = 0.1223
+permutation p          = 0.942116
+
+==========================================================================================
+OUTPUTS
+==========================================================================================
+artifacts/canonical_score_diagnostics_v2/row_oof_predictions.csv
+artifacts/canonical_score_diagnostics_v2/per_role_presence_oof.csv
+artifacts/canonical_score_diagnostics_v2/system_k_oof.csv
+artifacts/canonical_score_diagnostics_v2/direct_k3_k4_predictions.csv
+artifacts/canonical_score_diagnostics_v2/summary.json

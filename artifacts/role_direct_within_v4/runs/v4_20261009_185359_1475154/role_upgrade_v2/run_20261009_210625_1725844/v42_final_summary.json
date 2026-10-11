@@ -1,0 +1,35 @@
+{
+  "sensor": {
+    "status": "COMPLETED_OFFLINE",
+    "selected_model": "within_pair_ranking",
+    "within_mas_auc": 0.5719169246646026,
+    "exact_topk": 0,
+    "gate": "NO_VALIDATED_GAIN_KEEP_PRIORS"
+  },
+  "generator": {
+    "status": "READY_FOR_CONTROLLED_MATCHED_EVALUATION",
+    "candidate_count": 160,
+    "per_role": {
+      "code": 8,
+      "writing": 8,
+      "math": 8,
+      "planning": 8,
+      "research": 8,
+      "data": 8,
+      "design": 8,
+      "operations": 8,
+      "qa_testing": 8,
+      "translation": 8,
+      "financial_analysis": 8,
+      "database_design": 8,
+      "accessibility_review": 8,
+      "fact_checking": 8,
+      "requirements_analysis": 8,
+      "incident_management": 8,
+      "experiment_design": 8,
+      "risk_assessment": 8,
+      "documentation": 8,
+      "customer_support_triage": 8
+    }
+  }
+}

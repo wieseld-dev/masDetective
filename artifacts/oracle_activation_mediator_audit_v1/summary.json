@@ -1,0 +1,295 @@
+{
+  "experiment": "oracle_activation_mediator_audit_v1",
+  "final_val_is_heldout_by_system": true,
+  "truth_activation_used_at_test": true,
+  "truth_activation_role": "ORACLE DIAGNOSTIC ONLY; not deployable selector input",
+  "fit_systems": 403,
+  "internal_dev_systems": 70,
+  "final_val_systems": 84,
+  "train_rows": 18184,
+  "val_rows": 3200,
+  "models": {
+    "M0_PUBLIC": {
+      "rmse": 1.6189420223236084,
+      "mae": 1.205761432647705,
+      "mean_dim_r2": 0.5675714806249836,
+      "mean_dim_corr": 0.7515970470403944,
+      "v135_rmse": 1.7348861694335938,
+      "v135_mae": 1.2580639123916626,
+      "v134_rmse": 1.4940266609191895,
+      "v134_mae": 1.1534591913223267,
+      "internal_dev_best_loss": 0.28148236870765686
+    },
+    "M1_PLUS_INSTALLED_Z": {
+      "rmse": 1.6300381422042847,
+      "mae": 1.2243976593017578,
+      "mean_dim_r2": 0.5633991489823249,
+      "mean_dim_corr": 0.7493336648644215,
+      "v135_rmse": 1.715488314628601,
+      "v135_mae": 1.2546459436416626,
+      "v134_rmse": 1.5398534536361694,
+      "v134_mae": 1.194149374961853,
+      "internal_dev_best_loss": 0.2840222716331482
+    },
+    "M2_PLUS_TRUE_ACTIVATION_A": {
+      "rmse": 1.463621735572815,
+      "mae": 1.1003488302230835,
+      "mean_dim_r2": 0.6453813593943893,
+      "mean_dim_corr": 0.8016730759331855,
+      "v135_rmse": 1.5689120292663574,
+      "v135_mae": 1.1590800285339355,
+      "v134_rmse": 1.3501451015472412,
+      "v134_mae": 1.0416176319122314,
+      "internal_dev_best_loss": 0.24840708076953888
+    },
+    "M3_PLUS_Z_AND_A": {
+      "rmse": 1.517647385597229,
+      "mae": 1.1469030380249023,
+      "mean_dim_r2": 0.6202137293561388,
+      "mean_dim_corr": 0.7857469437695448,
+      "v135_rmse": 1.6029049158096313,
+      "v135_mae": 1.1856694221496582,
+      "v134_rmse": 1.4273061752319336,
+      "v134_mae": 1.108136773109436,
+      "internal_dev_best_loss": 0.25786375999450684
+    }
+  },
+  "comparisons": {
+    "Z_effect_M1_minus_M0": {
+      "delta_r2": -0.004172331642658733,
+      "delta_corr": -0.0022633821759728834,
+      "delta_rmse": 0.01109611988067627
+    },
+    "ACTIVATION_effect_M2_minus_M0": {
+      "delta_r2": 0.0778098787694057,
+      "delta_corr": 0.05007602889279106,
+      "delta_rmse": -0.15532028675079346
+    },
+    "ACTIVATION_given_Z_M3_minus_M1": {
+      "delta_r2": 0.05681458037381393,
+      "delta_corr": 0.03641327890512325,
+      "delta_rmse": -0.11239075660705566
+    },
+    "Z_given_activation_M3_minus_M2": {
+      "delta_r2": -0.02516763003825051,
+      "delta_corr": -0.015926132163640694,
+      "delta_rmse": 0.05402565002441406
+    }
+  },
+  "raw_sensor_activation_relation": {
+    "v135": {
+      "macro_auc": 0.6565408556846809,
+      "per_role": {
+        "code": {
+          "auc": 0.6050377994475795,
+          "mean_active": -3.782334089279175,
+          "mean_inactive": -4.903390407562256
+        },
+        "writing": {
+          "auc": 0.4722590192442749,
+          "mean_active": -3.632280111312866,
+          "mean_inactive": -3.5994794368743896
+        },
+        "math": {
+          "auc": 0.7462008550980574,
+          "mean_active": -1.41157066822052,
+          "mean_inactive": -4.237851142883301
+        },
+        "planning": {
+          "auc": 0.54177812858783,
+          "mean_active": -3.2475802898406982,
+          "mean_inactive": -3.832897424697876
+        },
+        "research": {
+          "auc": 0.7450860507246377,
+          "mean_active": -0.5375134348869324,
+          "mean_inactive": -3.1068968772888184
+        },
+        "data": {
+          "auc": 0.5394811272714333,
+          "mean_active": -3.712787389755249,
+          "mean_inactive": -4.342005729675293
+        },
+        "design": {
+          "auc": 0.7005259026687598,
+          "mean_active": -1.6672419309616089,
+          "mean_inactive": -3.7796871662139893
+        },
+        "operations": {
+          "auc": 0.6481399995158288,
+          "mean_active": -2.44653582572937,
+          "mean_inactive": -3.993929624557495
+        },
+        "qa_testing": {
+          "auc": 0.5504193805921469,
+          "mean_active": -3.726846694946289,
+          "mean_inactive": -4.260948181152344
+        },
+        "translation": {
+          "auc": 0.7460140011102202,
+          "mean_active": -2.095789670944214,
+          "mean_inactive": -4.865623950958252
+        },
+        "financial_analysis": {
+          "auc": 0.7454956807897983,
+          "mean_active": -0.7333838939666748,
+          "mean_inactive": -4.2291765213012695
+        },
+        "database_design": {
+          "auc": 0.6711695274913666,
+          "mean_active": -2.985441207885742,
+          "mean_inactive": -4.8823018074035645
+        },
+        "accessibility_review": {
+          "auc": 0.8052494449187213,
+          "mean_active": -1.203665852546692,
+          "mean_inactive": -4.134824752807617
+        },
+        "fact_checking": {
+          "auc": 0.512558471214779,
+          "mean_active": -3.22007155418396,
+          "mean_inactive": -3.435122013092041
+        },
+        "requirements_analysis": {
+          "auc": 0.7245536928249864,
+          "mean_active": -0.9338322281837463,
+          "mean_inactive": -3.3024675846099854
+        },
+        "incident_management": {
+          "auc": 0.7096217550565377,
+          "mean_active": -1.5658365488052368,
+          "mean_inactive": -4.419692039489746
+        },
+        "experiment_design": {
+          "auc": 0.7086377624556893,
+          "mean_active": -1.3302785158157349,
+          "mean_inactive": -4.199469566345215
+        },
+        "risk_assessment": {
+          "auc": 0.6771105865631106,
+          "mean_active": -2.042334794998169,
+          "mean_inactive": -3.803361415863037
+        },
+        "documentation": {
+          "auc": 0.6157594409465654,
+          "mean_active": -2.462421178817749,
+          "mean_inactive": -3.533538579940796
+        },
+        "customer_support_triage": {
+          "auc": 0.6657184871712978,
+          "mean_active": -1.2325387001037598,
+          "mean_inactive": -2.7697157859802246
+        }
+      }
+    },
+    "v134": {
+      "macro_auc": 0.4697691199281194,
+      "per_role": {
+        "code": {
+          "auc": 0.45677021788826183,
+          "mean_active": -5.895791530609131,
+          "mean_inactive": -5.57381534576416
+        },
+        "writing": {
+          "auc": 0.43037234457619117,
+          "mean_active": -6.240530967712402,
+          "mean_inactive": -5.652493476867676
+        },
+        "math": {
+          "auc": 0.5342103768421269,
+          "mean_active": -5.0265607833862305,
+          "mean_inactive": -5.337460517883301
+        },
+        "planning": {
+          "auc": 0.32729369977037887,
+          "mean_active": -6.4707136154174805,
+          "mean_inactive": -4.967045307159424
+        },
+        "research": {
+          "auc": 0.6003977272727273,
+          "mean_active": -4.673216819763184,
+          "mean_inactive": -5.6707563400268555
+        },
+        "data": {
+          "auc": 0.42916269407418045,
+          "mean_active": -6.283435821533203,
+          "mean_inactive": -5.7176384925842285
+        },
+        "design": {
+          "auc": 0.42582352171637883,
+          "mean_active": -6.137377738952637,
+          "mean_inactive": -5.516192436218262
+        },
+        "operations": {
+          "auc": 0.3529379933383744,
+          "mean_active": -6.274158477783203,
+          "mean_inactive": -4.9832634925842285
+        },
+        "qa_testing": {
+          "auc": 0.35334457847747563,
+          "mean_active": -6.421481609344482,
+          "mean_inactive": -5.144350528717041
+        },
+        "translation": {
+          "auc": 0.4692530685252576,
+          "mean_active": -6.616557598114014,
+          "mean_inactive": -6.340797424316406
+        },
+        "financial_analysis": {
+          "auc": 0.5705234471410943,
+          "mean_active": -4.574282646179199,
+          "mean_inactive": -5.280046463012695
+        },
+        "database_design": {
+          "auc": 0.42628671364303544,
+          "mean_active": -6.119494438171387,
+          "mean_inactive": -5.432755470275879
+        },
+        "accessibility_review": {
+          "auc": 0.3819074562812483,
+          "mean_active": -6.2649407386779785,
+          "mean_inactive": -5.22085428237915
+        },
+        "fact_checking": {
+          "auc": 0.5103559237661783,
+          "mean_active": -5.615232467651367,
+          "mean_inactive": -5.744395732879639
+        },
+        "requirements_analysis": {
+          "auc": 0.5428680415574998,
+          "mean_active": -4.800322532653809,
+          "mean_inactive": -5.193183898925781
+        },
+        "incident_management": {
+          "auc": 0.4578635132982959,
+          "mean_active": -6.132546424865723,
+          "mean_inactive": -5.781098365783691
+        },
+        "experiment_design": {
+          "auc": 0.5048942386350357,
+          "mean_active": -5.375540733337402,
+          "mean_inactive": -5.447787284851074
+        },
+        "risk_assessment": {
+          "auc": 0.5655524251884566,
+          "mean_active": -5.4087934494018555,
+          "mean_inactive": -6.059988021850586
+        },
+        "documentation": {
+          "auc": 0.518827332723558,
+          "mean_active": -4.504832744598389,
+          "mean_inactive": -4.743244647979736
+        },
+        "customer_support_triage": {
+          "auc": 0.5367370838466335,
+          "mean_active": -4.906839370727539,
+          "mean_inactive": -5.251620769500732
+        }
+      }
+    }
+  },
+  "decision": {
+    "verdict": "STRONG_MEDIATOR_SIGNAL",
+    "criterion": "M2 must materially improve held-out evidence prediction over M0."
+  }
+}

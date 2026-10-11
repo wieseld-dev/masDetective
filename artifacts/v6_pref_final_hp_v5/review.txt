@@ -1,0 +1,930 @@
+
+====================================================================================================
+G02 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+lex=0.188
+NEG:
+What details about translations are you unsure of?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.176
+NEG:
+What details regarding translations would you like to discuss?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.176
+NEG:
+What details do you need to understand translations better?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.176
+NEG:
+Which details about translations would you like to clarify?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G02 / META / n=4
+====================================================================================================
+GOLD:
+Could you explain how translations preserve both meaning and technical details?
+
+lex=0.438
+NEG:
+How would you verify that your translations keep both meaning and details?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.353
+NEG:
+How does your system perform translations while preserving both meaning and details?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.333
+NEG:
+Can you describe how you preserve meaning while performing translations?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.312
+NEG:
+How do you ensure that translations do not lose technical details?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G06 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+lex=0.250
+NEG:
+What specific aspect of accessibility compliance do you need help with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.238
+NEG:
+What component of the accessibility review do you need more information on?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.238
+NEG:
+What specific area of accessibility compliance evaluation do you want to explore?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.227
+NEG:
+What specific part of accessibility compliance would you like me to review for you?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G06 / META / n=4
+====================================================================================================
+GOLD:
+What specific piece of information could improve my assessment of the current state of accessibility compliance?
+
+lex=0.333
+NEG:
+How does your system improve the assessment of accessibility compliance?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.278
+NEG:
+How do you manage the assessment of accessibility compliance?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.263
+NEG:
+How does your application evaluate the state of accessibility compliance?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.211
+NEG:
+How do you approach the evaluation of accessibility compliance?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G08 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+lex=0.278
+NEG:
+What incident management topic are you struggling to navigate?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.263
+NEG:
+What specific incident management situation do you want to discuss?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.250
+NEG:
+What specific situation in incident management would you like to address?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.250
+NEG:
+What specific area of incident management are you struggling to manage?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G08 / META / n=4
+====================================================================================================
+GOLD:
+Can you explain a situation where incident management processes are particularly challenging to handle?
+
+lex=0.529
+NEG:
+How do you handle situations where incident management processes are particularly challenging?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.368
+NEG:
+Can you describe how you manage situations where incident management is particularly challenging?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.368
+NEG:
+How do you usually handle situations where incident management processes are complicated?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.350
+NEG:
+How does your system handle situations where incident management processes are particularly difficult?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G09 / META / n=4
+====================================================================================================
+GOLD:
+Which aspect of my work could benefit most from additional rigorous testing?
+
+lex=0.474
+NEG:
+What is your method for recognizing which areas of my work could benefit from additional testing?
+CUE:
+SELF_STRUCTURE
+
+lex=0.421
+NEG:
+How do you typically identify elements of my work that could benefit from additional testing?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.400
+NEG:
+How do you usually assess which areas of my work would benefit from more rigorous testing?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.368
+NEG:
+How do you assess which components of my work might require additional rigorous testing?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G10 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+lex=0.316
+NEG:
+What specific information do you need about our project management tools?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.263
+NEG:
+What specific details do you need regarding project management tools?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.238
+NEG:
+In what way do you want to use our project management tools?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.208
+NEG:
+What specific context or situation do you want to know about concerning project management tools?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G10 / META / n=4
+====================================================================================================
+GOLD:
+Could you explain a specific instance where we might utilize our project management tools?
+
+lex=0.278
+NEG:
+Can you explain how you deal with project management tools?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.222
+NEG:
+How do you typically utilize project management software?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.222
+NEG:
+Can you explain how you handle project management tasks?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.211
+NEG:
+How does your system typically utilize project management tools?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G16 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+lex=0.161
+NEG:
+What specific challenge in the incident management phase do you want help with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.097
+NEG:
+What incidents in the management process do you need to clarify?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.094
+NEG:
+What part of the incident management implementation do you need assistance with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.094
+NEG:
+Which specific step in the incident management implementation are you struggling with?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G16 / META / n=4
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if there were significant discrepancies between actual incidents reported by users and the identified risks?
+
+lex=0.577
+NEG:
+What do you do if significant discrepancies arise between user-reported incidents and the identified risks during the implementation phase?
+CUE:
+WHAT_DO_YOU_DO
+
+lex=0.519
+NEG:
+What do you typically do if discrepancies occur between incidents reported by users and the identified risks during implementation?
+CUE:
+WHAT_DO_YOU_DO
+
+lex=0.483
+NEG:
+How does your application approach the challenge of discrepancies between actual incidents reported by users and identified risks during implementation?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.464
+NEG:
+How would you handle the challenge of discrepancies between incidents reported by users and the identified risks during implementation?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G23 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+lex=0.222
+NEG:
+What information do you require regarding your project timeline?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.190
+NEG:
+What particular detail regarding the project timeline do you want to address?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.150
+NEG:
+Which detail regarding resource allocation do you need assistance with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.150
+NEG:
+What specific detail about the project timeline are you unsure about?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G23 / META / n=4
+====================================================================================================
+GOLD:
+Is there any information particularly important regarding the project timeline or resource allocation?
+
+lex=0.250
+NEG:
+What is your process for handling project resource allocation and timeline adjustments?
+CUE:
+SELF_STRUCTURE
+
+lex=0.182
+NEG:
+How do you evaluate the success of your project timeline and resource management?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.182
+NEG:
+Can you explain how you handle the integration of project timelines with resource allocation?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.174
+NEG:
+How does your system usually evaluate the impact of resource allocation on project timelines?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G24 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+lex=0.389
+NEG:
+What components of the risk assessment process are you interested in?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.316
+NEG:
+What part of the risk assessment process are you unsure about?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.316
+NEG:
+What part of the risk assessment process are you struggling with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.300
+NEG:
+What features of the risk assessment process do you need assistance with?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G24 / META / n=4
+====================================================================================================
+GOLD:
+Can you explain the process of performing a thorough risk assessment in our project?
+
+lex=0.500
+NEG:
+How do you approach the process of risk assessment in our specific project?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.444
+NEG:
+How do you manage the process of risk assessments in our project?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.389
+NEG:
+How do you typically perform a risk assessment in our project?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.389
+NEG:
+Can you describe your approach to risk assessment in our project?
+CUE:
+SELF_STRUCTURE
+
+====================================================================================================
+G26 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+lex=0.185
+NEG:
+What specific part of the QA testing process would you like me to help you with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.185
+NEG:
+What specific aspect of the QA testing process would you like me to elaborate on?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.174
+NEG:
+What specific information do you want regarding your QA testing?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.174
+NEG:
+What aspect of your QA testing implementation are you unsure of?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G26 / META / n=4
+====================================================================================================
+GOLD:
+What specific challenge might arise during the implementation phase if the QA testing functionality were not fully validated?
+
+lex=0.292
+NEG:
+What is your method for managing issues that arise during the QA testing phase?
+CUE:
+SELF_STRUCTURE
+
+lex=0.273
+NEG:
+What do you do when complications occur during the QA testing phase?
+CUE:
+WHAT_DO_YOU_DO
+
+lex=0.273
+NEG:
+How do you address setbacks during the QA testing implementation phase?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.208
+NEG:
+How do you respond to problems encountered during the QA testing phase?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G27 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+lex=0.208
+NEG:
+Which element of my workflow would you like me to explain further?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.167
+NEG:
+What specific part of my workflow are you struggling to understand?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.160
+NEG:
+What specific aspect of my operations do you want me to clarify?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.115
+NEG:
+What part of my operations would you like to explore more deeply?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G27 / META / n=4
+====================================================================================================
+GOLD:
+Which aspect of my workflow might benefit from expert guidance to identify potential issues before they escalate?
+
+lex=0.217
+NEG:
+Does your system assist in pinpointing workflow issues before they escalate?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.217
+NEG:
+How does your system identify workflow issues before they impact progress?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.208
+NEG:
+How do you ensure potential workflow problems are identified before they escalate?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.208
+NEG:
+How do you manage to detect workflow issues before they affect productivity?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G32 / DIRECTION / n=2
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+lex=0.167
+NEG:
+What additional support do you need for your requirement analysis task?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.118
+NEG:
+What particular requirement analysis details should I focus on?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G32 / META / n=4
+====================================================================================================
+GOLD:
+Is there any additional requirement analysis work needed before proceeding?
+
+lex=0.250
+NEG:
+How do you process requirement analysis work before moving ahead?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.200
+NEG:
+What is your approach to conducting requirement analysis?
+CUE:
+SELF_STRUCTURE
+
+lex=0.200
+NEG:
+How do you typically handle requirement analysis work?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.200
+NEG:
+How is requirement analysis executed in your system?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G33 / DIRECTION / n=2
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+lex=0.278
+NEG:
+Which specific customer support triaging scenario do you want to discuss?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.235
+NEG:
+What challenges are you facing regarding customer support triaging?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G33 / META / n=4
+====================================================================================================
+GOLD:
+Can you describe a scenario where customer support triaging plays a crucial role?
+
+lex=0.400
+NEG:
+Can you describe your workflow for customer support triaging?
+CUE:
+SELF_STRUCTURE
+
+lex=0.375
+NEG:
+Can you describe your method for customer support triaging tasks?
+CUE:
+SELF_STRUCTURE
+
+lex=0.375
+NEG:
+Can you describe your procedure for addressing customer support triaging?
+CUE:
+SELF_STRUCTURE
+
+lex=0.333
+NEG:
+Can you explain how you conduct customer support triaging?
+CUE:
+DIRECT_BEHAVIOR
+
+====================================================================================================
+G35 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+lex=0.375
+NEG:
+What step in the process design phase do you need clarification on?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.333
+NEG:
+What information do you need regarding the process design phase?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.333
+NEG:
+What aspect of the process design is unclear to you?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.333
+NEG:
+What step in the process design do you find challenging?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G35 / META / n=4
+====================================================================================================
+GOLD:
+What is an important step during the process design phase?
+
+lex=0.462
+NEG:
+What is your strategy for the process design phase?
+CUE:
+SELF_STRUCTURE
+
+lex=0.400
+NEG:
+What methods does your system adopt during the process design phase?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.375
+NEG:
+What is your process for handling the design phase of a project?
+CUE:
+SELF_STRUCTURE
+
+lex=0.375
+NEG:
+What is your method for addressing steps in the process design phase?
+CUE:
+SELF_STRUCTURE
+
+====================================================================================================
+G37 / DIRECTION / n=3
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+lex=0.375
+NEG:
+Which specific challenge in customer support triage are you unsure about?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.353
+NEG:
+What precise challenge in customer support triage do you want to address?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.353
+NEG:
+What specific detail in customer support triage would you like to resolve?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G37 / META / n=2
+====================================================================================================
+GOLD:
+What specific challenge might arise in implementing effective customer support triage?
+
+lex=0.467
+NEG:
+What challenges might arise in your approach to customer support triage?
+CUE:
+SELF_STRUCTURE
+
+lex=0.312
+NEG:
+What challenges does your system see in customer support triage?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G39 / DIRECTION / n=3
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+lex=0.300
+NEG:
+What part of customer support triaging are you unsure about?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.286
+NEG:
+What particular aspect of customer support triaging are you struggling with?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.273
+NEG:
+What aspects of customer support triaging would you like to clarify further?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G39 / META / n=4
+====================================================================================================
+GOLD:
+What are some key aspects in ensuring the accuracy and consistency of customer support triaging responses?
+
+lex=0.435
+NEG:
+What steps does your system take to ensure the accuracy and consistency of customer support triaging responses?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.429
+NEG:
+How do you typically ensure the accuracy and consistency of customer support triaging responses?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.429
+NEG:
+How does your system manage the accuracy and consistency of customer support triaging responses?
+CUE:
+EXPLICIT_SYSTEM
+
+lex=0.429
+NEG:
+In what way does your system ensure the accuracy of responses in customer support triaging?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G43 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+lex=0.312
+NEG:
+What assistance do you need to effectively manage multiple incidents?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.278
+NEG:
+What specific challenges are you facing when wanting to manage multiple incidents?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.211
+NEG:
+What aspect of handling multiple incidents would you like me to explore?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.211
+NEG:
+What details regarding managing multiple incidents do you need to elaborate on?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G43 / META / n=4
+====================================================================================================
+GOLD:
+Can you explain how to prioritize and manage multiple incidents simultaneously?
+
+lex=0.467
+NEG:
+How do you typically prioritize and manage multiple incidents at once?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.333
+NEG:
+Can you explain your approach to managing overlapping incidents?
+CUE:
+SELF_STRUCTURE
+
+lex=0.333
+NEG:
+How do you typically prioritize incidents that happen simultaneously?
+CUE:
+DIRECT_BEHAVIOR
+
+lex=0.294
+NEG:
+Can you share how your system prioritizes when multiple incidents arise?
+CUE:
+EXPLICIT_SYSTEM
+
+====================================================================================================
+G44 / DIRECTION / n=4
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+lex=0.238
+NEG:
+What challenges are you facing in 'experiment planning' that we should talk about?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.200
+NEG:
+What specific information would you like to share about 'experiment planning'?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.167
+NEG:
+Which details about 'experiment planning' are you unsure about?
+CUE:
+TIER_A_DIRECTION
+
+lex=0.158
+NEG:
+What specific issues are you facing with 'experiment planning'?
+CUE:
+TIER_A_DIRECTION
+
+====================================================================================================
+G44 / META / n=2
+====================================================================================================
+GOLD:
+Is there anything specific about 'experiment planning' that I should consider before proceeding?
+
+lex=0.167
+NEG:
+What is your approach to 'experiment planning' tasks?
+CUE:
+SELF_STRUCTURE
+
+lex=0.167
+NEG:
+What is your method for managing 'experiment planning'?
+CUE:
+SELF_STRUCTURE

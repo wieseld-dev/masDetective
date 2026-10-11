@@ -1,0 +1,8 @@
+{
+  "systems": 12,
+  "planned": 36,
+  "successful": 36,
+  "failed": 0,
+  "model": "gpt-4o-mini",
+  "note": "V4 repair-only; BAD baseline reused from v7_retention_pilot_v1"
+}
