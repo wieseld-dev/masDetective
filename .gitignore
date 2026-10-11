@@ -5,3 +5,56 @@ __pycache__/
 *.pyo
 *.out
 .env
+
+# Secrets / environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+credentials.json
+secrets.json
+
+# SSH keys
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# Tokens / local credentials
+.token
+tokens.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs / runtime outputs
+*.log
+*.out
+*.err
+
+# ML models / checkpoints
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Large/runtime experiment data
+*.jsonl
+*.parquet
+*.npy
+*.npz
+*.sqlite
+*.db
+
+# Local IDE
+.vscode/
+.idea/
